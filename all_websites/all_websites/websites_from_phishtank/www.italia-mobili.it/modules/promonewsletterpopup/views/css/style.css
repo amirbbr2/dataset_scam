@@ -1,0 +1,127 @@
+/**
+ * We offer the best and most useful modules PrestaShop and modifications for your online store. 
+ *
+ * We are experts and professionals in PrestaShop
+ *
+ * @category  PrestaShop
+ * @category  Module
+ * @author    PresTeamShop.com <support@presteamshop.com> 
+ * @copyright 2011-2014 PresTeamShop
+ * @license   see file: LICENSE.txt
+ */
+
+body{
+    position: static;
+}
+ 
+#promonewsletterpopup{
+    z-index: 6002;
+    overflow: hidden;
+    position: fixed;
+    border: none!important;
+    padding-top: 18px;
+}
+
+#promonewsletterpopup input{
+    min-height: 30%!important;
+}
+
+#promonewsletterpopup_content{
+}
+
+#promonewsletterpopup_content img{
+    max-width: 100%;
+    height: auto;
+}
+
+#promonewsletterpopup_controls{
+    position: absolute;
+    width: 48%;
+    height: 20%;
+}
+
+#promonewsletterpopup_controls #txt_email_subscriber{
+    float: left;
+    width: 80%;   
+    margin: 1% 0 1%;
+    height: 30%!important;
+    font-size: 13px;
+    padding: 0 3%;
+}
+
+#promonewsletterpopup_controls #btn_sent{
+    float: left;
+    cursor: pointer;    
+    max-width: 10%;
+    width: 10%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+#promonewsletterpopup_conditions{overflow: auto; padding: 15px; max-height: 500px; height: auto;}
+
+#promonewsletterpopup_check_conditions{
+    width: 100%;
+    padding: 10px 0;
+}
+
+#promonewsletterpopup_check_conditions a#a_show_conditions {
+    float: left;
+}
+
+#promonewsletterpopup_check_conditions,
+#promonewsletterpopup_check_conditions a,
+#promonewsletterpopup_check_conditions input{
+    float: left;
+    border: none;
+}
+
+#promonewsletterpopup_check_conditions a{padding: 2% 0; font-weight: bold; text-decoration: underline; cursor: pointer;margin: 0 3%;font-size: 13px; line-height: 13px;}
+#promonewsletterpopup_check_conditions input{margin: 2% 0 0 0;}
+
+#promonewsletterpopup_close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+#promonewsletterpopup .hidden{
+    display: none;
+}
+ 
+/* Overlays */
+.pnp-ui-widget-overlay { cursor: pointer; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: /*url('ui-bg_diagonals-thick_20_666666_40x40.png') repeat scroll 50% 50%*/ #666666; opacity: .80;filter:Alpha(Opacity=80);}
+.pnp-ui-widget { font-family: Helvetica, Arial, sans-serif; font-size: 1.1em; }
+.pnp-ui-widget-content { border: 1px solid #dddddd; background: #ffffff url('ui-bg_flat_75_ffffff_40x100.png') 50% 50% repeat-x; color: #444444; display: block;}
+/* Corner radius */
+.pnp-ui-corner-all, .pnp-ui-corner-top, .pnp-ui-corner-left, .pnp-ui-corner-tl { -moz-border-radius-topleft: 2px; -webkit-border-top-left-radius: 2px; -khtml-border-top-left-radius: 2px; border-top-left-radius: 2px; }
+.pnp-ui-corner-all, .pnp-ui-corner-top, .pnp-ui-corner-right, .pnp-ui-corner-tr { -moz-border-radius-topright: 2px; -webkit-border-top-right-radius: 2px; -khtml-border-top-right-radius: 2px; border-top-right-radius: 2px; }
+.pnp-ui-corner-all, .pnp-ui-corner-bottom, .pnp-ui-corner-left, .pnp-ui-corner-bl { -moz-border-radius-bottomleft: 2px; -webkit-border-bottom-left-radius: 2px; -khtml-border-bottom-left-radius: 2px; border-bottom-left-radius: 2px; }
+.pnp-ui-corner-all, .pnp-ui-corner-bottom, .pnp-ui-corner-right, .pnp-ui-corner-br { -moz-border-radius-bottomright: 2px; -webkit-border-bottom-right-radius: 2px; -khtml-border-bottom-right-radius: 2px; border-bottom-right-radius: 2px; }
+
+/*Responsive*/
+@media only screen and (max-width: 715px) {
+    #promonewsletterpopup_check_conditions {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 580px) {
+    #promonewsletterpopup_controls #txt_email_subscriber {
+        width: 70%;
+    }
+    #promonewsletterpopup_check_conditions a{
+        font-size: 60%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    #promonewsletterpopup_check_conditions a{
+        font-size: 50%;
+        padding: 1% 0;
+    }
+}
+@media only screen and (max-width: 320px) {
+    #promonewsletterpopup_check_conditions a{
+        font-size: 42%;
+    }
+}

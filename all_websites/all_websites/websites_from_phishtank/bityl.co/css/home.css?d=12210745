@@ -1,0 +1,74 @@
+/* /public/css/.. */
+input {
+    background-image: linear-gradient(141deg, #eff3f5 0%, #e8eff5 51%, #f5f9fc 75%);
+    border: 1px solid #c3dfff;
+    border-radius: 25px;
+}
+input#urlLong {
+    padding: 4px 94px 4px 10px;
+}
+
+input#urlLong:hover {
+    box-shadow: 0 0 5px #6fa8d4;
+}
+
+input#shorten {
+    margin-left: -90px;
+    -webkit-appearance: none;
+    border: 1px solid silver;
+    border-radius: 25px;
+    background-color: #e5ebef;
+    padding: 4px 18px;
+    color: #6d6666;
+    font-family: inherit;
+}
+
+span#urlShort {
+    display: none;
+    /*background-color: rgb(226, 227, 228);*/
+    padding: 4px 38px;
+    font-size: 16px;
+    border-radius: 15px;
+    background-image: linear-gradient(141deg, #e0ecf5 0%, #e1e8ef 51%, #eff0f1 75%);
+}
+
+span#urlShort a {
+    color: #0d5cb1 !important;
+    font-size: large !important;
+    font-weight: 400 !important;
+    text-shadow: 0 0 1.5px #8fc8f9;
+}
+
+span#copyToClip {
+    display: none;
+    cursor: pointer;
+}
+
+.copyToClipImg {
+    opacity: 0.7;
+    width: 21px;
+}
+
+.copyToClipImg:hover {
+    opacity: 1.0;
+}
+
+/* ======================== Custom URL Options - BEGIN ==========================*/
+.input-group {
+    display: inline-flex !important;
+}
+div.gj-datepicker button {
+    font-size: 0.8rem;
+    line-height: 1;
+}
+div.gj-datepicker input.form-control {
+    height: 27px;
+}
+
+/* Input validation */
+input:invalid {
+    border: 1px dashed #ff7f0d;
+}
+input:invalid:focus {
+    background-image: linear-gradient(#fff3f8, #eecbd7);
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bityl - A Cloud URL Shortening Service</title>
+
+    <!--
+    <script defer src="/__/firebase/7.7.0/firebase-app.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.7.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/2.3.2/assets/js/bootstrap-transition.js" crossorigin="anonymous"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+
+    <script src="jsl/db2.js?d=12210745"></script>
+    <script src="jsl/crypt.js?d=12210745"></script>
+    <script src="jsl/sls.js?d=12210745"></script>
+    <script src="jsl/common.js?d=12210745"></script>
+    <script src="jsl/tracking.js?d=12210745"></script>
+    <script src="jsl/home.js?d=12210745"></script>
+    <script src="jsl/notifxapps.js?d=12210745"></script>
+    <link href="css/common.css?d=12210745" rel="stylesheet">
+    <link href="css/home.css?d=12210745" rel="stylesheet">
+    <script src="jsl/login.js?d=12210745"></script>
+    <script src="jsl/notify.min.js"></script>
+
+    <!-- Below two for date/time picker -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <script src="jsl/notify.min.js"></script>
+
+    <style media="screen">
+      /* Something is overriding default styles, to make same as in report.html */
+      body {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+      }
+    </style>
+    <script>
+    </script>
+  </head>
+  <body>
+
+  <!--<div style="display: none; text-align: center; background-color: #f3ddc0; box-shadow: 0 0 5px #ab7737; border-bottom: 1px solid #a35f19;">Due to Bitly.com's API limits, we just built this new <b>FREE</b> service that is more efficient and faster. <a href="http://tiny.cc/appshelp" target="_blank" style="color: #d05a14; font-weight: 400; text-decoration: underline;"> &rArr;Please share your feedback!</a></div>-->
+  <div style="/*display: none;*/ text-align: center; background-color: #f3ddc0; box-shadow: 0 0 5px #ab7737; border-bottom: 1px solid #a35f19;">We just released some new features (social stats, API limits, etc.) and hope they are working. If any errors, please report us at <a href="http://tiny.cc/appshelp" target="_blank" style="color: #d05a14; font-weight: 400; text-decoration: underline;"> &rArr; http://tiny.cc/appshelp</a></div>
+
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <a href="https://bityl.co/" class="mr-md-auto" style="display: contents;">
+      <img src="img/copylink3.png" style="width: 26px;margin-right: 5px;">
+      <h5 class="my-0 mr-md-auto font-weight-normal" style="color: #3c71b9; text-shadow: 0 0 1.5px #8ebbe2; font-family: serif;">Bityl - Short URLs and Analytics</h5>
+    </a>
+      <nav class="my-2 my-md-0 mr-md-3">
+      <!--<a class="p-2 text-dark" href="#">Features</a>-->
+      <a class="btn btn-outline-primary" href="index.html#" id="login">Login</a>&nbsp;&nbsp;
+      <a class="btn btn-outline-primary" href="https://bityl.co/dashboard.html" id="mydb">Dashboard</a>
+    </nav>
+  </div>
+
+  <div class="container" style="">
+    <div class="row">
+      <div class="col-md-12">
+        <!--<h5 class="card-text">URL Shortener</h5>-->
+        <div class="sectionPara" id="amzDiv" style="padding: 50px 0 100px 0; text-align: center;">
+
+          <h5 style="color: #3c71b9; text-shadow: 0 0 1.5px #8ebbe2;">
+            Exclusive URL Shortener for the internet, with smart capabilities.
+          </h5>
+          <p style="display: block; color: #3c71b9; text-shadow: 0 0 1.5px #8ebbe2;">
+            <span id="whatsNewId1" style="cursor: pointer;">What's new?</span>
+            <span id="whatsNewId2" style="display: none;"><br>The existing services`(Bitly, TinyURL,..) short links are generic, hard to predict its target site and may lead to malicious sites.  So, we are offering this brand new service on this dedicated domain (Amz.run) which always redirects to Amazon.com and their affiliated (Amazon.*) websites.
+              <br>
+              <span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext">We are enabling(restricting to only Amazon.com/*) this feature very soon while we finish our testing.</span>
+              </span>
+              <br>
+              It is the <u>only</u> public URL Shortening and Analytics service fully dedicated to Amazon.com.
+            </span>
+          </p>
+          <br>
+          <!--<input id="urlLong" size="80%" placeholder="Enter the long URL..." style="border-radius: 25px; border: 1px solid whitesmoke; padding: 4px 11px;"/>
+          <button title="Click to shorten it" id="shorten" style="border: 1px solid silver; border-radius: 25px; background-color: #e5ebef; padding: 3px 18px; color: #6d6666;font-family: inherit;">Short It</button><br><br>-->
+          <input type="text" id="urlLong" placeholder="Enter the long URL..." style="width: 95%;">
+          <input title="Click to shorten it" id="shorten" type="button" value="Shorten">
+
+          <!--Advanced options BEGIN-->
+          <div style="margin: 20px; color: #3c71b9; text-shadow: 0 0 1.5px #8ebbe2; text-align: center;">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="urlOptionCustHash" value="option1">
+              <label class="form-check-label" for="urlOptionCustHash">Custom URL</label>
+              <span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext">You can give easy to remember custom names for our short link.</span>
+              </span>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="urlOptionDate" value="option2">
+              <label class="form-check-label" for="urlOptionDate">Active Dates</label>
+              <span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext">You can make your links active only within specific time range, instead of forever.</span>
+              </span>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="urlOptionPwd" value="option2">
+              <label class="form-check-label" for="urlOptionPwd">Password</label>
+              <span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext">You protect your short link with a password for only intended users, instead of letting everyone opening it. </span>
+              </span>
+            </div>
+            <br>
+            <div id="urlOptions" class="card" style="width: 620px;display: none;/*inline-block;*/ margin-top: 15px;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" style="display: none;">
+                  Custom URL: <span style="font-size: large; font-weight: bolder;" id="customBaseDomainURL"></span>
+                  <input type="text" id="urlCustom" placeholder="" minlength="4" maxlength="20" size="22" style="">
+                  <button type="button" id="urlCustomKeyCheckBtn" class="btn btn-outline-primary btn-sm" style="padding: 1px 8px; border-radius: 25px; margin-left: 5px;">Check</button>&nbsp;&nbsp;
+                </li>
+                <li class="list-group-item" style="display: none;" >
+                  <!--
+                    Main: https://bootsnipp.com/snippets/xrp5W
+                    Alternative: https://www.malot.fr/bootstrap-datetimepicker/demo.php, https://bit.ly/2O9MGsq, https://www.daterangepicker.com/, https://colorlib.com/wp/bootstrap-datepicker/
+                    Test: https://jsfiddle.net/veeresh/3qov8zmk/1/
+                    Next: Localization: https://gijgo.com/datepicker/example/localization
+                  -->
+                  Active From: <input id="startDate" width="150px" style="display: inline-flex;" />
+                  To: <input id="endDate" width="150px" style="display: inline-flex;" />
+                </li>
+                <li class="list-group-item" style="display: none;">
+                  Password:
+                  <input type="text" id="urlPwd" minlength="4" maxlength="8" size="10" style="width: 150px;">
+                </li>
+              </ul>
+              <a class="btn btn-primary btn-sm" href="index.html#" id="urlCustomOptionsBtn" style="margin: 10px 0px;">Shorten</a>&nbsp;&nbsp;
+            </div>
+          </div>
+
+          <!--Advanced options END-->
+
+          <div style="margin-top: 20px;">
+            <span id="urlShort"></span>
+            <span id="copyToClip">
+              <a href="index.html#"><img class="copyToClipImg" src="img/copylink1.png" title="Copy to clipboard"/></a>
+            </span>
+            <br><br><span id="sharingId"></span>
+          </div>
+
+          <div>
+            <br>
+            <h6>
+              <span class="badge badge-secondary">New</span>&nbsp;&nbsp;
+              We just enhanced our analytics with <u>Device Information</u>
+              <span class="utooltip">
+                <span class="utooltipInfoIcon">ⓘ</span>
+                <span class="utooltiptext">Device information includes Desktops(Windows, Mac, Linux), Mobiles (iPhone, Android) and Browsers (Chrome, Firefox, Edge, Safari and more) in which link's clicks are tracked.</span>
+              </span>
+              , checkout in <a href="https://bityl.co/dashboard.html">dashboard</a>.
+            </h6><br>
+            <img src="img/screens/gif200609.gif" style="box-shadow: 0 0.125rem 1.25rem rgb(175, 203, 224); width: 60%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 column" style="padding-left: 40px;">
+        <div class="view">
+          <h4 style="margin-left: 15px;" class="defaultFont">Features</h4>
+          <ul class="defaultFont">
+            <li>Shortest URLs</li>
+            <li>
+              Ordered (No-random) URLs
+              <!--<span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext">Test</span>
+              </span>-->
+            </li>
+            <li>Custom keyword short links</li>
+            <li>Secured Short URLs
+              <span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext"><b>Coming soon</b><br>One can set password</span>
+              </span>
+            </li>
+            <li>Time-based Short URLs
+              <span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext"><b>Coming soon</b><br>Set start and end date for short link to work</span>
+              </span>
+            </li>
+            <li>Collections and Favorites
+              <span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext"><b>Coming soon</b><br>Better organize links in collections and favorite the important ones</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 column" style="padding-left: 40px;">
+        <div class="view">
+          <h4 style="margin-left: 15px;" class="defaultFont">Technology</h4>
+          <ul class="defaultFont">
+            <li>Cloud-native
+              <span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext">All our services are running completely on cloud with auto-scaling setup to handle billions of URLs.</span>
+              </span>
+            </li>
+            <li>Highly scalable service</li>
+            <li>Guaranteed 99.99% uptime</li>
+            <li>Secured APIs with keys</li>
+            <li>HTTPS and SSL supported</li>
+            <li>Browser Extension
+              <span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext">We are releasing new extensions for Chrome, Edge and Firefox soon.</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 column" style="padding-left: 40px;">
+        <div class="view">
+          <h4 style="margin-left: 15px;" class="defaultFont">Analytics</h4>
+          <ul class="defaultFont">
+            <li>Real-time Stats
+              <span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext">Live reports in seconds.</span>
+              </span>
+            </li>
+            <li>Total clicks per dates</li>
+            <li>Geo location based tracking</li>
+            <li>Clicks from social networks</li>
+            <li>Auto-extraction of URL's title
+              <!--<span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext">We also show the URL's titles dynamically</span>
+              </span>-->
+            </li>
+            <li>Campaigns management
+              <span class="utooltip"><span class="utooltipInfoIcon">&#9432;</span>
+                <span class="utooltiptext"><b>Coming soon..</b><br>Customers can track various campaign aspects with target areas, and manage them in one place.</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container" style="margin-top: 70px;">
+    <div class="row" style="text-align: center; display: block;">
+      <p>
+        Powered by <img src="img/googlecloud.svg"><br>
+        &copy; 2020 |
+        <a href="https://bityl.co/about.html" target="_blank">About</a> |
+        <a href="https://bityl.co/privacy.html" target="_blank">Privacy</a> |
+        <a href="https://bityl.co/terms.html" target="_blank">Terms</a> |
+        <a href="https://bityl.co/analytics.html" target="_blank">Analytics</a> |
+        <a href="https://bityl.co/dev.html" target="_blank">Developers</a> |
+        <a href="index.html#">Blog</a> |
+        <a href="http://tiny.cc/appshelp" target="_blank">Contact</a> |
+        Made With <span style="color: #cd3339;">♥</span> SFO
+      </p>
+    </div>
+  </div>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <!-- Firebase's(Copied from FB Admin) Google Analytics - BEGIN -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+  <script src="jsl/firebase-config.js"></script>
+
+  </body>
+</html>

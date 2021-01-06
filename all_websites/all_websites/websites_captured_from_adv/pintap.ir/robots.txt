@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /signin/
+Disallow: /manage/
+
+Sitemap: https://pintap.ir/sitemap.xml

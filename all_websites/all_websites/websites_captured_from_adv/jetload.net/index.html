@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- BASIC META-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>JetLoad - Next Generation of Hosting</title>
+      <!-- FAVICON -->
+      <link rel="apple-touch-icon" href="https://jetload.net/jet/frontpage/frontpage/asset/img/favicon/apple-touch-icon.png">
+      <link rel="icon" href="https://jetload.net/jet/frontpage/frontpage/asset/img/favicon/favicon.ico">
+      <!-- WEB FONTS  -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+      <!-- BOOTSTRAP MIN CSS -->
+      <link href="jet/frontpage/frontpage/asset/css/bootstrap.min.css" rel="stylesheet">
+      <!-- MC Scroll CSS -->
+      <link href="jet/frontpage/frontpage/asset/css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+      <!-- ALL PLUGINS CSS -->
+      <link href="jet/frontpage/frontpage/asset/css/elements.css" rel="stylesheet">
+      <!-- THEME STYLE CSS -->
+      <link href="jet/frontpage/frontpage/style.css" rel="stylesheet">
+      <!-- RESPONSIVE CSS -->
+      <link href="jet/frontpage/frontpage/responsive.css" rel="stylesheet">
+<style >
+
+
+@media  only screen and (max-width: 767px) {
+.logo {
+    padding-top: 23px;
+}
+}
+
+.header-top-area {
+    background-color: #ffffff;
+    color: #fff;
+    /* padding: 20px; */
+    /* position: relative; */
+    z-index: 99999;
+    /* border-bottom: 1px solid#fff; */
+    margin-top: -1px;
+    margin-bottom: -59px;
+    color: black;
+    margin-left: -25px;
+
+}
+
+.footer-main {
+    padding: 30px 0px 12px 0px !important;
+}
+
+
+
+</style>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+      <script src="ng-visitor/routes.js"></script>
+      <script src="ng-visitor/js/play.js"></script>
+      <script src="ng-visitor/js/download.js"></script>
+      <script src="ng-visitor/js/partner.js"></script>
+      <script src="ng-visitor/js/playtest.js"></script>
+
+
+
+      <script src="jet/ng/functions.js"></script>
+      <!-- Start Alexa Certify Javascript -->
+      <script type="text/javascript">
+      _atrk_opts = { atrk_acct:"nvfou1DlQy20Y8", domain:"jetload.net",dynamic: true};
+      (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+      </script>
+      <noscript><img src="https://certify.alexametrics.com/atrk.gif?account=nvfou1DlQy20Y8" style="display:none" height="1" width="1" alt="" /></noscript>
+      <!-- End Alexa Certify Javascript -->  
+
+   </head>
+
+<script type="text/javascript">
+if (location.protocol != 'https:')
+{
+location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}
+</script>
+   <!-- Chrome, Firefox OS and Opera -->
+   <meta name="theme-color" content="#d99912">
+   <!-- Windows Phone -->
+   <meta name="msapplication-navbutton-color" content="#d99912">
+   <!-- iOS Safari -->
+   <meta name="apple-mobile-web-app-status-bar-style" content="#d99912">
+   <body ng-app="routerApp" ng-controller="MasterController"  class="horizontal-nav skin-megna fixed-layout">
+
+
+
+
+  <div class="preloader-wrapper">
+    <div class="preloder">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+  </div>
+      <!-- HEADER TOP -->
+
+      <div class="full-slider">
+         <header class="header-top-area" style="margin-top: -13px; margin-bottom: 0px;">
+            <div class="container" style="    margin-bottom: -16px;">
+               <div class="row">
+                  <div class="col-xl-5 col-lg-5 col-md-5 col-12">
+
+                     <div class="logo">
+                        <a href="index.html"><img src="jetlogo.png" height="50px" alt="logo"></a>
+                     </div>
+
+                  </div>
+                  <div class="col-xl-7 col-lg-7 col-md-7 col-12">
+                     <div class="header-top-right">
+                        <ul>
+                           <!--<li><a href="#"><span class="ti-comments"></span>live chat</a></li>-->
+                           <li><a ng-bind="trans_register"  data-toggle="modal" data-target="#registerform" class="register-btn"><i class="fa fa-plus-circle"></i> </a></li>
+                           <li><a ng-bind="trans_login" data-toggle="modal" data-target="#signinform"><i class="fa fa-sign-in"></i>  </a></li>
+                            <li><a ng-bind='trans_money'  href="index.html#!/Partner"class="register-btn"><i class="fa fa-money"></i></a></li>
+                           <li>
+                                <select id="lang_section"  class="newstyleform form-control" ng-model="languagesx" ng-change="changeLang()" name="name" id="option">
+                                  <option value="en">EN</option>
+                                  <option value="fr">FR</option>
+                                    <option value="es">ES</option>
+                                  <option value="de">DE</option>
+                                  <option value="it">IT</option>
+                                  <option value="ar">AR</option>
+                            </select>
+                           </li>
+                        </ul>
+
+
+
+                        <style media="screen">
+                          .nice-select{
+                            display: none;
+                          }
+
+                          .newstyleform {
+
+                            background-color: #d89b13;
+                                       border: 1px solid #ea9f09;
+                                       color: black;
+
+                          }
+
+                          .newstyleform:focus {
+
+                            background-color: #672245;
+                                       border: 1px solid #ea9f09;
+                                       color: #ea9f09;
+
+                          }
+                        </style>
+
+                        <style media="screen">
+                        #lang_section{
+
+                              clear: both !important;
+                              display: unset !important;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  outline: none;
+  /* padding-right: 25px; */
+  padding-right: 2px;
+  position: relative;
+  text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: auto;
+  margin: 0 20px;
+                        }
+                        </style>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- Modal Sign in ---->
+          <div class="modal" id="signinform" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 nd-bind="trans_sign_in" class="modal-title" id="exampleModalLongTitle"><i class="fa fa-sign-in"></i>  </a></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="" >
+                    <input type="hidden" name="_csrf" value="WNdeWDiF-swr8nQYMo0tVt969qeod9_3u9LQ">
+                    <div class="row">
+                      <div class="col-md-12">
+                          <div class="form-group">
+
+
+
+                        <div ng-bind="trans_email"></div>      <input type="email" ng-model='login_email' class="form-control" id="Email" name="username">
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="form-group">
+                        <div ng-bind="trans_password"></div>        <input type="password" ng-model='login_password' class="form-control" id="Password" name="password">
+                          </div>
+                      </div>
+                      <div class="col-md-6 text-left">
+                          <div class="form-group">
+                              <input type="checkbox" class="" id="Remember-me" name="remember-me"> <span>Remember me</span>
+                          </div>
+                      </div>
+                      <div class="col-md-6 text-right">
+                          <div class="form-group">
+                              <a href="index.html#">Forgot password ?</a>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="submit-button">
+                              <button ng-bind="trans_login" ng-click='login_user()' type="submit" class="btn btn-blue btn-block"></button>
+                          </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Sign in -->
+          <div class="modal" id="registerform" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 ng-bind="trans_create_account" class="modal-title" id="exampleModalLongTitle"><i class="fa fa-plus-circle"></i></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="" action="https://jetload.net/sign-up" method="POST">
+                    <input type="hidden" name="_csrf" value="WNdeWDiF-swr8nQYMo0tVt969qeod9_3u9LQ">
+                    <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                        <div ng-bind="trans_full_name"></div>  <input type="text" class="form-control" id="Name" name="username"  placeholder="">
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                          <div ng-bind="trans_email"></div>    <input type="email" class="form-control" id="Email" name="email" placeholder="">
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                          <div ng-bind="trans_password"></div>    <input type="password" class="form-control" id="Password" name="password" placeholder="">
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                          <div ng-bind="trans_cpassword"></div>    <input type="password" class="form-control" id="ConfirmPassword" name="confirm_password" placeholder="">
+                          </div>
+                      </div>
+                      <div class="col-md-12 text-left">
+                          <div class="form-group">
+                           <input type="checkbox" class="" id="Remember-me" name="remember-me"> <span ng-bind="trans_agrm"></span>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="submit-button">
+                              <button ng-bind='trans_register' type="submit" class="btn btn-blue btn-block"></button>
+                          </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ng-view></div>
+
+      </div>
+
+    <section class="footer-area">
+       <div class="container">
+          <div class="footer-main ">
+             <div class="row">
+                <div class="col-lg-3 col-md-12 col-12">
+                   <div class="footer-single-item">
+                      <div class="logo">
+                         <a href="index.html"><img src="jet/frontpage/frontpage/asset/img/logo/jetload-logo.png" alt="logo"></a>
+                      </div>
+
+                      <p class="contact-info"><span>Support:</span><a href="mailto:int-support@jetload.net">int-support@jetload.net</a> </p>
+                      <p class="contact-info"><span>Finance:</span><a href="mailto:finance@jetload.net">finance@jetload.net</a> </p>
+                      <p class="contact-info"><span>Admin: <br> </span><a href="mailto:admin@jetload.net">admin@jetload.net</a> </p>
+                      <p class="contact-info"><span>Abuse:</span><a href="mailto:abuse@jetload.net">abuse@jetload.net</a> </p>
+                      <p class="contact-info"><span>Skype</span><a>Jetload.NET Affiliates</a> </p>
+
+
+                   </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12 ">
+                   <div class="single-footer margin-left">
+                      <h2>Services</h2>
+                      <div class="footer-links">
+                         <ul>
+                            <li><a data-toggle="modal" data-target="#signinform" ng-click="topFunction()" href="index.html#">API</a></li>
+                            <li><a href="mailto:int-support@jetload.net">Support</a></li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12 ">
+                   <div class="single-footer">
+                      <h2>Legal</h2>
+                      <div class="footer-links">
+                         <ul>
+                            <li><a ng-click="topFunction()" href="index.html#!/Abuse-report">Report Abuse</a></li>
+                            <li><a ng-click="topFunction()" href="index.html#!/Terms">ToS</a></li>
+                            <li><a ng-click="topFunction()" href="index.html#!/Privacy">Privacy Policy</a></li>
+                            <li><a ng-click="topFunction()" href="index.html#!/DMCA">DMCA</a></li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12">
+                   <div class="single-footer ml">
+                      <h2>Latest News</h2>
+                      <div class="bpws-wrapper footer-sideber">
+                         <div class="footer-single-sideber">
+                            <a href="index.html#"><span>20 April. 2019</span></a>
+                            <a href="index.html#">JetLoad has been born!</a>
+                         </div>
+
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          <div class="foter-botom">
+             <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                   <p> &copy; 2019<a href="index.html">Jetload</a>all right reserved.</p>
+                </div>
+                <!--<div class="col-md-6 col-sm-6 col-xs-12 text-right ">
+                   <div class="social-links">
+                      <a href="#" target="_blank"><span class="ti-facebook"></span></a>
+                      <a href="#" target="_blank"><span class="ti-twitter-alt"></span></a>
+                      <a href="#" target="_blank"><span class="ti-instagram"></span></a>
+                   </div>
+                </div>-->
+             </div>
+          </div>
+          <!--FOOTER-BOTTOM-AREA -->
+       </div>
+    </section>
+    <!--FOOTER AREA  END-->
+
+
+    <script src="ng-visitor/js/master.js"></script>
+
+    <script src="ng-visitor/js/homepage.js"></script>
+    <script src="ng-visitor/js/AbuseController.js"></script>
+      <script src="sub-bundle.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138206240-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138206240-1');
+    </script>
+
+    <script src="jet/frontpage/frontpage/asset/js/jquery.min.js"></script>
+    <script src="jet/frontpage/frontpage/asset/js/bootstrap.min.js"></script>
+    <script src="jet/frontpage/frontpage/asset/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="jet/frontpage/frontpage/asset/js/plugins.js"></script>
+    <script src="jet/frontpage/frontpage/asset/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p2p-media-loader-core@latest/build/p2p-media-loader-core.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@latest/build/p2p-media-loader-hlsjs.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/clappr@latest"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr-stats/dist/clappr-stats.min.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr-nerd-stats/dist/clappr-nerd-stats.min.js"></script>
+    <script type="text/javascript" src="https://tjenkinson.github.io/clappr-thumbnails-plugin/dist/clappr-thumbnails-plugin.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+    <script src="jet/sub.js"></script>
+
+
+
+  </body>
+</html>

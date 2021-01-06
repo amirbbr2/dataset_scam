@@ -1,0 +1,47 @@
+User-agent: AdsBot-Google
+Disallow:
+
+User-Agent: *
+Allow: */statistic/$
+Disallow: */statistic/*
+Disallow: *user*
+Disallow: /?utm*
+Disallow: /?gclid*
+Disallow: */toto/free/view-more*
+Disallow: */goleada/show*
+Disallow: */toto/free/show-coupon*
+Disallow: */errconnect
+Disallow: *?lng=*
+Disallow: *num=*
+Disallow: /ulottery/newyear*
+Disallow: /ulottery/cyberplat*
+Disallow: /ulottery/olympicgames*
+
+User-Agent: googlebot
+Allow: */statistic/$
+Disallow: */statistic/*
+Disallow: *user*
+Disallow: /?utm*
+Disallow: /?gclid*
+Disallow: */toto/free/view-more*
+Disallow: */goleada/show*
+Disallow: */toto/free/show-coupon*
+Disallow: */errconnect
+Disallow: *?lng=*
+Disallow: *num=*
+
+User-Agent: yandex
+Allow: */statistic/$
+Disallow: */statistic/*
+Disallow: /ru/
+Disallow: *user*
+Disallow: /?utm*
+Disallow: /?gclid*
+Disallow: */toto/free/view-more*
+Disallow: */goleada/show*
+Disallow: */toto/free/show-coupon*
+Disallow: */errconnect
+Disallow: *?lng=*
+Disallow: *num=*
+Disallow: */LiveR*
+Host: https://1xbet.ng

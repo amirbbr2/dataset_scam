@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /u/
+
+Sitemap: https://www.warezbook.org/sitemap.xml

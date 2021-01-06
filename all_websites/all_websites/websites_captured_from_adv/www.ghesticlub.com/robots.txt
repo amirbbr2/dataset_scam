@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /pdffactor/
+Disallow: /mpdf/
+Disallow: /SMS/
+Disallow: /SQLS/
+Disallow: /XMLS/
+Sitemap: https://www.ghesticlub.com/sitemap.xml

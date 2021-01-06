@@ -1,0 +1,8 @@
+User-Agent: *
+Host: raymoncompany.com
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Sitemap: http://raymoncompany.com/sitemap_index.xml
+Sitemap: http://raymoncompany.com/post-sitemap.xml
+Sitemap: http://raymoncompany.com/page-sitemap.xml
+Sitemap: http://raymoncompany.com/geo-sitemap.xml

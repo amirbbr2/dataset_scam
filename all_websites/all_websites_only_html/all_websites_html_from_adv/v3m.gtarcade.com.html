@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                <title>Game of Thrones Winter is Coming</title>
+    
+            <script async
+                src="https://www.googletagmanager.com/gtag/js?id=AW-782268634"></script>
+    
+    
+        		        <script type="text/javascript">
+        var isComplete = false;
+        var logUrl = "https://game.gtarcade.com/game?gameId=346&opId=590&sid=", regUrl = "https://game.gtarcade.com/game?source=ad&gameId=346&opId=590&sid=2625310001&adid=1-0-36";
+        window.yz = window.yz || [];
+        window.yz.methods = "_init debug identify track trackLink trackForm page".split(" ");
+        window.yz.factory = function (b) {
+            return function () {
+                var a = Array.prototype.slice.call(arguments);
+                a.unshift(b);
+                window.yz.push(a);
+                return window.yz;
+            }
+        };
+        for (var i = 0; i < window.yz.methods.length; i++) {
+            var key = window.yz.methods[i];
+            window.yz[key] = window.yz.factory(key);
+        }
+        window.yz.load = function (b, x, z) {
+            if (!document.getElementById("yz-js")) {
+                var a = document.createElement("script");
+                var verDate = new Date();
+                var verStr = verDate.getFullYear().toString()
+                    + verDate.getMonth().toString() + verDate.getDate().toString();
+                a.type = "text/javascript";
+                a.id = "yz-js";
+                a.async = !0;
+                a.src = (location.protocol == 'http:' ? "http://apipool.gtarcade.com/sdk/yz.min.js?v=" : 'https://apipool.gtarcade.com/sdk/yz.min.js?v=') + verStr;
+                var c = document.getElementsByTagName("script")[0];
+                c.parentNode.insertBefore(a, c);
+                window.yz._init(b, x, z)
+                window.yz._init(b, x, z)
+            }
+        };
+        window.yz.load('279d34fa1dfd71aa', {
+            "platformId": 3,
+            "gameId": 346,
+            "ip": '40.127.99.71'
+        }, {
+            "business_id": 2251,
+            "supplier_id": 1705,
+            "resource_id": 1171,
+            "campaign_id": 15699,
+            "spread_platform_id":886,
+            "ads_id": 2841279,
+            "materiel_id": '3204',
+            "timezone_id": 4,
+            "language_id": 1,
+            "server_id": '2625310001','kw' : '0', 'target' : '0', 'pl' : 'www.tweaking4all.com', 'creative' : '332679455739', 'gclid' : 'EAIaIQobChMIgNHvvvn77QIVmbJ7Ch1GyA6AEAEYASAAEgJzg_D_BwE'        });
+
+        yz.track("click", {}, {}, function () {
+                    });
+
+        function loadcomplete() {
+            isComplete = true;
+            yz.track('complete', {
+                //pr : {loadtime : getTimestamp() - cts}
+            });
+                    }
+
+        var isclick = true;
+        document.onmousedown = function (event) {
+            if (isclick && isComplete) {
+                var w = (window.innerWidth) ? window.innerWidth : (document.documentElement && document.documentElement.clientWidth) ? document.documentElement.clientWidth : document.body.offsetWidth;
+                var h = (window.innerHeight) ? window.innerHeight : (document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : document.body.offsetHeight;
+                var pageSize = w + "|" + h;
+                var event = event || window.event;
+                var pageX = event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+                var pageY = event.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+                yz.track('materiel-click', {
+                    pr: {
+                        pageX: pageX,
+                        pageY: pageY
+                    }
+                })
+                isclick = false;
+            }
+        };
+
+        //用于微端判断操作系统
+        var isMac = ((navigator.platform == "Mac68K") || (navigator.platform == "MacPPC") || (navigator.platform == "Macintosh") || (navigator.platform == "MacIntel"))?1:0;
+        var downloadMac = isMac === 1 ? 'download_mac' : 'download';
+
+        var airMac = isMac === 1 ? '&os_type=air_mac' : '';
+        var system = isMac === 1 ? 2 : 1;
+
+                window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-782268634');
+        
+                
+        
+                                //yahoo日本
+                
+                        
+                function afterRegister(gameId,gameRoom){
+             if (gameId == 1003702){
+                 var link = document.createElement('a');
+                 link.href = gameRoom;
+                 document.body.appendChild(link);
+                 link.click();
+                 document.body.removeChild(link);
+             }else {
+                 location.href = gameRoom;
+             }
+
+        }
+        function callback(args, serverId, account) {
+                        var gameRoom = regUrl + '&account=' + account +airMac;
+                        if (args == 'login') {
+                                var gameRoom = logUrl + serverId +airMac;
+
+
+                                                                                afterRegister(346,gameRoom);
+
+            } else {
+                
+                                gtag('event', 'conversion', {'send_to': 'AW-782268634/5AnlCLSVl5ABENrxgfUC'});
+
+                                gtag('event', 'page_view', {
+                    'send_to': 'AW-782268634'
+                });
+                                // location.href = gameRoom;
+                afterRegister(346,gameRoom);
+                
+                            }
+        }
+        function callbackMicro(args, serverId, account,downloadUrl) {
+
+            var gameRoom =downloadUrl;
+            if (args == 'login') {
+
+                                                
+                afterRegister(346,gameRoom);
+
+            } else {
+                
+                                gtag('event', 'conversion', {'send_to': 'AW-782268634/5AnlCLSVl5ABENrxgfUC'});
+
+                                gtag('event', 'page_view', {
+                    'send_to': 'AW-782268634'
+                });
+                                // location.href = gameRoom;
+                afterRegister(346,gameRoom);
+                
+                            }
+        }
+        function third_login(args) {
+            ;
+            $.ajax({
+                method: 'POST',
+                url: '//profile.gtarcade.com/site/logout',
+                dataType: 'jsonp',
+                jsonpCallback: 'jsonpCallback',
+                data: {
+                },
+                success: function (response) {
+                    setCookie('registered_third',0);
+                }
+            });
+            window.onbeforeunload = null;
+            setTimeout(function() {
+            if (args == 'facebook') {
+                var successUrl = 'http%3A%2F%2Fv3m.gtarcade.com%2Fthirdlogin.php%3Fq%3D5c4ae404ddb805819608%26kw%3D%26target%3D%26pl%3Dwww.tweaking4all.com%26creative%3D332679455739%26gclid%3DEAIaIQobChMIgNHvvvn77QIVmbJ7Ch1GyA6AEAEYASAAEgJzg_D_BwE%26ea%3Dfb%26is_mic%3D0'+ encodeURIComponent("&os=" +isMac) + '&time=1609545850';
+                window.open('https://osad.gtarcade.com/openid/connect?name=facebook&spreader_id=1&channel_id=2&material_id=36&lang=en-us&successUrl=' + successUrl + '&game_id=346&sign=fac8c73795a6f16db098785d7d45275b', 'oauth2Login_10755', 'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');
+            } else if (args == 'twitter') {
+                var successUrl = 'http%3A%2F%2Fv3m.gtarcade.com%2Fthirdlogin.php%3Fq%3D5c4ae404ddb805819608%26kw%3D%26target%3D%26pl%3Dwww.tweaking4all.com%26creative%3D332679455739%26gclid%3DEAIaIQobChMIgNHvvvn77QIVmbJ7Ch1GyA6AEAEYASAAEgJzg_D_BwE%26ea%3Dtwitter%26is_mic%3D0'+ encodeURIComponent("&os=" +isMac) + '&time=1609545850';
+                window.open('https://osad.gtarcade.com/openid/connect?name=twitter&spreader_id=1&channel_id=2&material_id=36&lang=en-us&successUrl=' + successUrl + '&game_id=346&sign=f3fdd337b4c2c412a4fef9684f7ef14b', 'oauth2Login_10755', 'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');
+            } else if (args == 'google') {
+                var successUrl = 'http%3A%2F%2Fv3m.gtarcade.com%2Fthirdlogin.php%3Fq%3D5c4ae404ddb805819608%26kw%3D%26target%3D%26pl%3Dwww.tweaking4all.com%26creative%3D332679455739%26gclid%3DEAIaIQobChMIgNHvvvn77QIVmbJ7Ch1GyA6AEAEYASAAEgJzg_D_BwE%26ea%3Dgplus%26is_mic%3D0'+ encodeURIComponent("&os=" +isMac) + '&time=1609545850';
+                window.open('https://osad.gtarcade.com/openid/connect?name=google&spreader_id=1&channel_id=2&material_id=36&lang=en-us&successUrl=' + successUrl+'&game_id=346', 'oauth2Login_10755', 'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');
+            } else if (args == 'yahoo') {
+                var successUrl = 'http%3A%2F%2Fv3m.gtarcade.com%2Fthirdlogin.php%3Fq%3D5c4ae404ddb805819608%26kw%3D%26target%3D%26pl%3Dwww.tweaking4all.com%26creative%3D332679455739%26gclid%3DEAIaIQobChMIgNHvvvn77QIVmbJ7Ch1GyA6AEAEYASAAEgJzg_D_BwE%26ea%3Dyahoo%26is_mic%3D0'+ encodeURIComponent("&os=" +isMac) + '&time=1609545850';
+                window.open('https://osad.gtarcade.com/openid/connect?name=yahoo&spreader_id=1&channel_id=2&material_id=36&lang=en-us&successUrl=' + successUrl+'&game_id=346', 'oauth2Login_10755', 'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');
+            }else if (args == 'kakao') {
+                var successUrl = 'http%3A%2F%2Fv3m.gtarcade.com%2Fthirdlogin.php%3Fq%3D5c4ae404ddb805819608%26kw%3D%26target%3D%26pl%3Dwww.tweaking4all.com%26creative%3D332679455739%26gclid%3DEAIaIQobChMIgNHvvvn77QIVmbJ7Ch1GyA6AEAEYASAAEgJzg_D_BwE%26ea%3Dkakao%26is_mic%3D0'+ encodeURIComponent("&os=" +isMac) + '&time=1609545850';
+                window.open('https://osad.gtarcade.com/openid/connect?name=kakao&spreader_id=1&channel_id=2&material_id=36&lang=en-us&successUrl=' + successUrl+'&game_id=346', 'oauth2Login_10755', 'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');
+            }else if (args == 'naver') {
+                var successUrl = 'http%3A%2F%2Fv3m.gtarcade.com%2Fthirdlogin.php%3Fq%3D5c4ae404ddb805819608%26kw%3D%26target%3D%26pl%3Dwww.tweaking4all.com%26creative%3D332679455739%26gclid%3DEAIaIQobChMIgNHvvvn77QIVmbJ7Ch1GyA6AEAEYASAAEgJzg_D_BwE%26ea%3Dnaver%26is_mic%3D0'+ encodeURIComponent("&os=" +isMac) + '&time=1609545850';
+                window.open('https://osad.gtarcade.com/openid/connect?name=naver&spreader_id=1&channel_id=2&material_id=36&lang=en-us&successUrl=' + successUrl+'&game_id=346', 'oauth2Login_10755', 'height=525,width=585, toolbar=no, menubar=no, scrollbars=no, status=no, location=yes, resizable=yes');
+            }
+            }, 800);
+        }
+
+
+                function awtracepost(u, c) {
+            var t, m = Math.round(Math.random() * 9999), n = (new Date()).getTime() + '_' + m,
+                i = window[n] = new Image();
+            i.src = u;
+            i.onerror = function () {
+                window[n] = null;
+                if (c) c && c()
+            };
+            i.onload = i.onreadystatechange = function (e) {
+                if (!this.readyState || this.readyState === 'loaded' || this.readyState === 'complete') {
+                    if (c) c && c();
+                    i.onload = i.onreadystatechange = null
+                }
+            }
+        }
+        
+        function download() {
+            var gameRoom = '/downmicro.php?account=' + getCookie('uuzu_UNICKNAME') + '&game_id=346&serverId=2625310001&os='+isMac+'&user_from=';
+            location = gameRoom;
+        }
+
+        function setCookie(name, value) {
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+            document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+        }
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+            if (arr = document.cookie.match(reg))
+
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+
+    </script>
+    <script language="javascript" type="text/javascript" src="public/js/t.js"></script>
+        <!-- got英雄展示第三方登录-多语言（全） -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="http://www.youzu.com/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://www.youzu.com/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="//flash.gtarcade.net/31/static/usr/uploads/201907/20190729070705_20192/css/main.css?v=0.01">
+    <script type="text/javascript">
+        var game_serverId = "2625310001";
+        var game_id = "346";
+    </script>
+    <script>
+        function third_login_got(fm) {
+            if(!navigator.cookieEnabled){
+                alert("Your Browser's Cookie functionality is turned off. Please turn it on.");
+                return
+            }
+            third_login(fm);
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrapper" id='web'>
+    <div class="dragon"></div>
+    <div class="ferry">
+        <div></div>
+    </div>
+    <div class="tree"></div>
+    <div class="light">
+        <div></div>
+    </div>
+    <div class="main-content">
+        <div class="content-from">
+            <div class="logo"><img src="//flash.gtarcade.net/31/static/usr/uploads/201907/20190729070705_20192/images/logo3.png" alt="logo"></div>
+            <div class="loginBox" style="display: none">
+                <p id="regTip" class="reg-tip" style="display: inline;"></p>
+                <form class="registerForm show" id="registerForm" autocomplete="off">
+                    <div class="registerInput registerEmail">
+                        <input type="text" id='registerEmail' class="remail" placeholder="Email" autocomplete="new-password">
+                    </div>
+                    <div class="registerInput registerPwd">
+                        <input type="password" id='password' class="rpwd" placeholder="Password" autocomplete="new-password">
+                        <div class="eye"></div>
+                    </div>
+                    <div id="reg-err-tips"></div>
+                    <a href="javascript:;" id='registerPlayNow' class="registerPlayNow show">PLAY NOW</a>
+                    <div class="loginBtns" style="font-size:13px;">
+                        <span id="alreadyAccountText1">Already have an account?</span><a class="btn-login login">Login</a>
+                    </div>
+                </form>
+                <form class="loginForm" id="loginForm" autocomplete="off">
+                    <div class="loginInput">
+                        <input type="text" name="" id='login_registerEmail' class="loginEmail" placeholder="Email" autocomplete="off">
+                    </div>
+                    <div class="loginInput">
+                        <input type="password" name="" id='login_password' class="loginPwd" placeholder="Password" autocomplete="off">
+                        <div class="eye"></div>
+                    </div>
+                    <div id="log-err-tips"></div>
+                    <!-- <span class="loginDefault show">PLAY NOW</span> -->
+                    <a href="javascript:;" id='loginPlayNow' class="loginPlayNow show">PLAY NOW</a>
+                    <div class="loginBtns" style="font-size:13px;">
+                        <a href="https://profile.gtarcade.com/password/retrieve" target="_blank" class="forgotPwd">Forgot Password?</a>
+                        <a href="javascript:;" class="btn-register">Register</a>
+                    </div>
+                </form>
+                <div class="or-line"></div>
+                <div class="quickLogin">
+                    <em id="loginWith" style="font-size:18px;">Login with:</em>
+                    <a href="javascript:third_login_got('facebook');" class="facebook"></a>
+                    <a href="javascript:third_login_got('google');" class="google"></a>
+                    <!-- <a href="javascript:;" class="twitter"></a> -->
+                    <!--            <a href="javascript:;" class="yahoo"></a>-->
+                </div>
+            </div>
+            <div class="third-loginBox">
+                <div class="third-bg-fbb">
+                    <p class="play-text" id="playFacebook">Play with Facebook</p>
+                </div>
+                <div class="third-bg-gg">
+                    <p class="play-text" id="playGoogle">Play with Google</p>
+                </div>
+                <div class="or-line"></div>
+                <div class="registerTip" style="font-size:13px;">
+                    <i class="ico"></i> <a id="createAccount">Create a new account with E-mail</a>
+                </div>
+                <div class="loginTip" style="font-size:13px;">
+                    <i class="ico"></i> <span id="alreadyAccountText2">Already have an account?</span> <a class="btn-login2 login">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footInfo">
+        <div class="footCopyRight">
+            <p class="copyRight-img"><img src="//flash.gtarcade.net/31/static/usr/uploads/201907/20190729070705_20192/images/DB.png" alt=""></p>
+        </div>
+        <div id="agreement-box" class="gdpr-agreement-box">
+            <div class="agreement">
+                <div class="agreement-details">
+                    <span class="details box-details" title=""></span>
+                    <a class="box-user-service" href="//www.gtarcade.com/terms.html" target="_blank"></a>
+                    <a class="box-privacy-policy" href="//www.gtarcade.com/privacy.html" target="_blank"></a>
+                </div>
+                <a class="agree-btn" href="javascript:void(0);"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../public/js/multi-language.js?v=0.08" type="text/javascript"></script>
+<script src="../../public/js/jquery-1.7.min.js" type="text/javascript"></script>
+<script src="../../public/js/jquery.cookie.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function getElementsByClassName(node, className) {
+        if (node.getElementsByClassName) {
+            // 使用现有方法
+            return node.getElementsByClassName(className);
+        } else {
+            // 循环遍历所有标签，返回带有相应类名的元素
+            var children = (node || document).getElementsByTagName('*');
+            var elements = new Array();
+            for (var i = 0; i < children.length; i++) {
+                var child = children[i];
+                var classNames = child.className.split(' ');
+                for (var j = 0; j < classNames.length; j++) {
+                    if (classNames[j] == className) {
+                        elements.push(child);
+                        break;
+                    }
+                }
+            }
+            return elements;
+        }
+    }
+
+    function changeLaguage(key) {
+        var obj = key ? multiLanguage[key] : multiLanguage['en-us'];
+        getElementsByClassName(document,'btn-register')[0].innerHTML = obj.registerBtn;
+        getElementsByClassName(document,'btn-login')[0].innerHTML = obj.loginBtn;
+        // document.getElementById('reg-user-error').innerHTML = obj.emailError;
+        // document.getElementById('reg-password-error').innerHTML = obj.pwdError;
+        // document.getElementById('reg-apassword-error').innerHTML = obj.cpwdError;
+        getElementsByClassName(document,'forgotPwd')[0].innerHTML = obj.forgotPwd;
+        /* document.getElementById('loginFailed').innerHTML = obj.loginFailed; */
+        document.getElementById('loginPlayNow').innerHTML = obj.playBtn;
+        document.getElementById('registerPlayNow').innerHTML = obj.playBtn;
+        // getElementsByClassName(document,'registerDefault')[0].innerHTML= obj.playBtn;
+        // getElementsByClassName(document,'loginDefault')[0].innerHTML= obj.playBtn;
+        getElementsByClassName(document, 'remail')[0].setAttribute("placeholder", obj.email);
+        getElementsByClassName(document, 'rpwd')[0].setAttribute("placeholder", obj.Password);
+        // getElementsByClassName(document,'rapwd')[0].setAttribute("placeholder", obj.cPassword);
+        getElementsByClassName(document, 'loginEmail')[0].setAttribute("placeholder", obj.email);
+        getElementsByClassName(document, 'loginPwd')[0].setAttribute("placeholder", obj.Password);
+        $('.box-details').html(obj.boxdetails).attr('title', obj.boxdetails);
+        $('.box-user-service').html(obj.boxUserService);
+        $('.box-privacy-policy').html(obj.boxPrivacyPolicy);
+        document.getElementById('regTip').innerHTML = obj.registerTitle;
+        getElementsByClassName(document,'btn-login2')[0].innerHTML = obj.loginBtn;
+        document.getElementById('alreadyAccountText1').innerHTML = obj.alreadyAccount;
+        document.getElementById('alreadyAccountText2').innerHTML = obj.alreadyAccount;
+        document.getElementById('createAccount').innerHTML = obj.createNewAccount;
+        document.getElementById('playFacebook').innerHTML = obj.playFacebook;
+        document.getElementById('playGoogle').innerHTML = obj.playGoogle;
+        document.getElementById('loginWith').innerHTML = obj.loginWith;
+        
+        return obj;
+    }
+    var languages = changeLaguage('en-us');
+</script>
+<script>
+    $(function() {
+        $(".eye").click(function() {
+            if (!$(this).hasClass("visible")) {
+                $(this).prev().prop("type", "text")
+            } else {
+                $(this).prev().prop("type", "password")
+            }
+            $(this).toggleClass("visible")
+        })
+
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg))
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+
+        function addEventListener(obj, event, fn) {
+            //标准浏览器 obj.addEventListener(event,fn,false)  event 不带on
+            //obj.attachEvent("on" + event,fn) 老版本IE浏览器 事件要带on
+            obj.addEventListener ? obj.addEventListener(event, fn, false) : obj.attachEvent("on" + event, fn);
+        }
+
+        function getElementsByClassName(node, className) {
+            if (node.getElementsByClassName) {
+                // 使用现有方法
+                return node.getElementsByClassName(className);
+            } else {
+                // 循环遍历所有标签，返回带有相应类名的元素
+                var children = (node || document).getElementsByTagName('*');
+                var elements = new Array();
+                for (var i = 0; i < children.length; i++) {
+                    var child = children[i];
+                    var classNames = child.className.split(' ');
+                    for (var j = 0; j < classNames.length; j++) {
+                        if (classNames[j] == className) {
+                            elements.push(child);
+                            break;
+                        }
+                    }
+                }
+                return elements;
+            }
+        }
+
+        //获取元素相对于屏幕绝对位置
+        function getAbsPosition(element) {
+                var abs = { x: 0, y: 0 }
+                //如果浏览器兼容此方法
+                if (document.documentElement.getBoundingClientRect) {
+                    //如果不用jQuery对象，可以使用else分支。
+                    abs.x = element.getBoundingClientRect().left;
+                    abs.y = element.getBoundingClientRect().top;
+                    var screenLeft = window.screenLeft || window.screenX;
+                    var screenTop = window.screenTop || window.screenY;
+                    abs.x += screenLeft +
+                        document.documentElement.scrollLeft -
+                        document.documentElement.clientLeft;
+                    abs.y += screenTop +
+                        document.documentElement.scrollTop -
+                        document.documentElement.clientTop;
+                }
+                //如果浏览器不兼容此方法
+                else {
+                    while (element != document.body) {
+                        abs.x += element.offsetLeft;
+                        abs.y += element.offsetTop;
+                        element = element.offsetParent;
+                    }
+                    //计算想对位置
+                    abs.x += window.screenLeft +
+                        document.body.clientLeft - document.body.scrollLeft;
+                    abs.y += window.screenTop +
+                        document.body.clientTop - document.body.scrollTop;
+                }
+                return abs;
+            }
+
+            //获取元素中心点相对于屏幕的位移
+            function getCenterPosition(element) {
+                center = { x: 0, y: 0 }
+                var leftTop = getAbsPosition(element[0])
+                center.x = leftTop.x + parseInt(element[0].clientWidth) / 2;
+                center.y = leftTop.y + parseInt(element[0].clientHeight) / 2;
+                return center
+            }
+
+            addEventListener(document, 'mousemove', function(e) {
+
+                var treeObj = getElementsByClassName(document, 'tree');
+                var dragonObj = getElementsByClassName(document, 'dragon');
+                var ferryObj = getElementsByClassName(document, 'ferry');
+
+                var TreeCenterPosition = getCenterPosition(treeObj);
+                var DragonCenterPosition = getCenterPosition(dragonObj);
+                var FerryCenterPosition = getCenterPosition(ferryObj);
+
+                var moveYTree = (TreeCenterPosition.x - e.clientX) / 120;
+                var moveYDragon = (DragonCenterPosition.x - e.clientX) / 130;
+                var moveYFerry = (FerryCenterPosition.x - e.clientX) / 60;
+                // console.log(e);
+                treeObj[0].style.transform = 'translateX(' + moveYTree + 'px)';
+                treeObj[0].style.webkitTransform = 'translateX(' + moveYTree + 'px)';
+                treeObj[0].style.mozTransform = 'translateX(' + moveYTree + 'px)';
+
+                dragonObj[0].style.transform = 'translateX(' + moveYDragon + 'px)';
+                dragonObj[0].style.webkitTransform = 'translateX(' + moveYDragon + 'px)';
+                dragonObj[0].style.mozTransform = 'translateX(' + moveYDragon + 'px)';
+
+                ferryObj[0].style.transform = 'translateX(' + moveYFerry + 'px)';
+                ferryObj[0].style.webkitTransform = 'translateX(' + moveYFerry + 'px)';
+                ferryObj[0].style.mozTransform = 'translateX(' + moveYFerry + 'px)';
+            })
+
+        //email 验证
+        function checkusername(params, type) {
+            var username = params;
+            var pattern = /^[A-Za-z\d]+([-_.][A-Za-z\d]+)*@([A-Za-z\d]+[-.])+[A-Za-z\d]{2,4}$/;
+            var userNamePattern = /^([a-zA-Z\d]+[a-zA-Z\d_-])+(.([a-zA-Z\d]+[a-zA-Z\d_-])+){1,2}$/;
+            var userTmpName = username.split("@");
+            if (pattern.test(username) && userNamePattern.test(userTmpName[1])) {
+                return true;
+            } else {
+                if (arguments[1] && arguments[1] === "reg") {
+                    $('#reg-err-tips').text(languages.emailError);
+                    $('#reg-err-tips').show();
+                }
+                if (arguments[1] && arguments[1] === "log") {
+                    $('#log-err-tips').text(languages.emailError);
+                    $('#log-err-tips').show();
+                }
+
+                return false;
+            }
+        }
+
+        //password 验证
+        function checkpassword(params, type) {
+            var password = params;
+            var pattern = /^(\S(?![;"' \u4e00-\u9fa5])){6,20}$/;
+            if (pattern.test(password)) {
+                return true;
+            } else {
+                if (arguments[1] && arguments[1] === "reg") {
+                    $('#reg-err-tips').text(languages.pwdError);
+                    $('#reg-err-tips').show();
+                }
+                if (arguments[1] && arguments[1] === "log") {
+                    $('#log-err-tips').text(languages.pwdError);
+                    $('#log-err-tips').show();
+                }
+                return false;
+            }
+        }
+
+        //apassword 验证
+        function checkapassword(params) {
+            var apassword = params;
+            var password = $('#password').val();
+            var pattern = /^(\S(?![;"' \u4e00-\u9fa5])){6,20}$/;
+            if (pattern.test(apassword)) {
+                if (apassword == password) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        }
+
+        // 注册信息输入全部输入后验证
+        function registerInfoAll() {
+            // if(checkusername($('#registerEmail').val())&&checkpassword($('#password').val())) {
+            //     $('.registerDefault').removeClass('show');
+            //     $('#registerPlayNow').addClass('show');
+            // }else {
+            //     $('#registerPlayNow').removeClass('show');
+            //     $('.registerDefault').addClass('show');
+            // }
+        }
+
+        // 登录信息输入全部输入后验证
+        function loginInfoAll() {
+            // if(checkusername($('#login_registerEmail').val())&&checkpassword($('#login_password').val())) {
+            //     $('.loginDefault').removeClass('show');
+            //     $('#loginPlayNow').addClass('show');
+            // }else {
+            //     $('.loginDefault').addClass('show');
+            //     $('#loginPlayNow').removeClass('show');
+            // }
+        }
+
+        // 注册接口调用
+        function register(isplay) {
+            if(!navigator.cookieEnabled){
+                alert("Your Browser's Cookie functionality is turned off. Please turn it on.");
+                return
+            }
+            var args = {
+                username: $('#registerEmail').val(),
+                passport: $('#password').val(),
+                apassword: $('#apassword').val(),
+                type: isplay ? 'play_now' : 'download'
+            }
+
+            if (checkusername($('#registerEmail').val(), 'reg') && checkpassword($('#password').val(), 'reg')) {
+                $.ajax({
+                    method: 'POST',
+                    url: '//osad.gtarcade.com/user/adregister',
+                    dataType: 'jsonp',
+                    jsonpCallback: 'jsonpCallback',
+                    data: {
+                        username: args.username,
+                        password: hex_md5(args.passport),
+                        apassword: hex_md5(args.passport),
+                        spreaderId: 1
+                    },
+                    beforeSend: function () {
+                        $.cookie('uuzu_UNICKNAME','', {domain:'gtarcade.com',path:'/'});
+                        $.cookie('uuzu_UAUTH','', {domain:'gtarcade.com',path:'/'});
+                    },
+                    success: function (response) {
+                        if (response.retCode == '000') {
+                            yz.track('register', {
+                                account: response.adUserInfoResponse.account.toLowerCase(),
+                                ext_account: args.passport
+                            }, {}, callbackTpl('reg', response, response.adUserInfoResponse.account.toLowerCase(), args.type));
+                        } else {
+                            registerErrorMsg(response.retCode);
+                            //$('#registerFailed').addClass('show');
+                            // alert("registration failed, please try another Email")
+                        }
+                    }
+                });
+                // return true;
+                return false;
+            } else {
+                return false;
+            }
+        }
+
+        // 登录接口调用
+        function login(isplay) {
+            if(!navigator.cookieEnabled){
+                alert("Your Browser's Cookie functionality is turned off. Please turn it on.");
+                return
+            }
+            var args = {
+                username: $('#login_registerEmail').val(),
+                password: $('#login_password').val(),
+                type: isplay ? 'play_now' : 'download'
+            }
+            if (checkusername(args.username, 'log') && checkpassword(args.password, 'log')) {
+                ajaxJsonp({
+                    method: 'POST',
+                    url: '//osad.gtarcade.com/user/adlogin',
+                    jsonp: 'jsonpCallback',
+                    data: {
+                        m: 'login',
+                        username: args.username,
+                        password: hex_md5(args.password),
+                        gameId: game_id
+                    },
+                    success: function(response) {
+                        var account = response.adUserInfoResponse.account;
+                        if (!response.adUserInfoResponse.lastServer) {
+                            var serverId = game_serverId;
+                        } else {
+                            var serverId = response.adUserInfoResponse.lastServer.serverId;
+                            if (response.adUserInfoResponse.lastServer.serverId == undefined) {
+                                var serverId = game_serverId;
+                            }
+                        }
+                        if (response.retCode == '000') {
+                            yz.track('login', {
+                                pr: { account: account.toLowerCase() }
+                            }, {}, callbackTpl('login', serverId, account.toLowerCase(), args.type));
+                        } else {
+                            if (response.retMsg == '') {
+                                loginErrorMsg(response.retCode);
+                            } else {
+                                alert(response.retMsg)
+                            }
+
+                        }
+                    }
+                });
+            } else {
+                return
+            }
+
+        }
+
+        function callbackTpl(args, serverId, account, type) {
+            if (args == 'login') {
+                if (type == 'download') {
+                    $('.loginPage').removeClass('show');
+                    $('.tryAgainPage').addClass('show');
+                }
+            } else {
+                if (type == 'download') {
+                    $('.loginPage').removeClass('show');
+                    $('.tryAgainPage').addClass('show');
+                }
+            }
+            callback(args,serverId,account);
+        }
+
+        $('.third-bg-fbb').click(function() {
+                third_login_got('facebook');
+            });
+
+        $('.third-bg-gg').click(function() {
+            third_login_got('google')
+        });
+        
+        $('.registerTip').click(function() {
+            $('.third-loginBox').hide();
+            $('.loginBox').show();
+            $('.loginBtns a.btn-register').click();
+        });
+
+        $('.loginTip a.login').click(function() {
+            $('.third-loginBox').hide();
+            $('.loginBox').show();
+            $('.loginBtns a.login').click();
+        });
+
+        // tab登录
+        $('.loginBtns a.login').click(function() {
+            document.getElementById('regTip').innerHTML = languages.loginTitle;
+            $(this).addClass('on');
+            $('.loginBtns a.register').removeClass('on');
+            $('#registerForm').removeClass('show');
+            $('#loginForm').addClass('show');
+        });
+
+        // tab注册
+        $('.loginBtns a.btn-register').click(function() {
+            document.getElementById('regTip').innerHTML = languages.registerTitle;
+            $(this).addClass('on');
+            $('.loginBtns a.login').removeClass('on');
+            $('#loginForm').removeClass('show');
+            $('#registerForm').addClass('show');
+        });
+
+        // 注册-邮箱失焦
+        $('#registerEmail').blur(function() {
+            var emailVal = $(this).val();
+            if (checkusername(emailVal)) {
+                $('#reg-err-tips').html(languages.check);
+                $('#reg-err-tips').show();
+                $.ajax({
+                    url: 'http://v3m.gtarcade.com/index.php?m=ex',
+                    type: "post",
+                    dataType: "json",
+                    data: {
+                        plat: 'gtarcade',
+                        passport: emailVal
+                    },
+                    success: function(res) {
+                        console.log(res)
+                        if (res.result == 0) {
+                            $('#reg-err-tips').html(languages.emailExit);
+                            $('#reg-err-tips').show();
+                        } else {
+                            $('#reg-err-tips').hide();
+                        }
+                    },
+                    error: function(err) {
+                        console.log(err);
+                    }
+                })
+            } else {
+                $('#reg-err-tips').text(languages.emailError);
+                $('#reg-err-tips').show();
+            }
+            registerInfoAll();
+
+        });
+
+        // 注册-密码失焦
+        $('#password').blur(function() {
+            var password = $(this).val();
+            if (checkpassword(password)) {
+                $('#reg-err-tips').hide();
+            } else {
+                $('#reg-err-tips').text(languages.pwdError);
+                $('#reg-err-tips').show();
+            }
+            registerInfoAll();
+        });
+
+        // 注册-二次密码失焦
+        $('#apassword').blur(function() {
+            var apassword = $(this).val();
+            if (checkapassword(apassword)) {
+                $('#reg-apassword-error').hide();
+            } else {
+                //$('#reg-apassword-error').text('Passwords do not match');
+                if ($('#apassword').val() == "") {
+                    $('#reg-apassword-error').text(languages.cpwdError);
+                    $('#reg-apassword-error').show();
+                } else {
+                    $('#reg-apassword-error').text(languages.pwdNotMatch);
+                    $('#reg-apassword-error').show();
+                }
+
+            }
+            registerInfoAll();
+        });
+
+        // 注册
+        $('#registerPlayNow').click(function() {
+            register(true);
+        });
+
+        // 登录-邮箱失焦
+        $('#login_registerEmail').blur(function() {
+            var emailVal = $(this).val();
+            if (checkusername(emailVal)) {
+                $('#log-err-tips').hide();
+            } else {
+                $('#log-err-tips').text(languages.emailError);
+                $('#log-err-tips').show();
+            }
+            loginInfoAll();
+        });
+
+        // 登录-密码失焦
+        $('#login_password').blur(function() {
+            var password = $(this).val();
+            if (checkpassword(password)) {
+                $('#log-err-tips').hide();
+            } else {
+                $('#log-err-tips').text(languages.pwdError);
+                $('#log-err-tips').show();
+            }
+            loginInfoAll();
+        });
+
+        // 登录
+        $('#loginPlayNow').click(function() {
+            login(true);
+        });
+
+        // 登录错误提示
+        function loginErrorMsg(code) {
+            switch (code) {
+                case 200:
+                    alert('missing parameter');
+                    break;
+                case 300:
+                    alert('Service errors');
+                    break;
+                case 401:
+                    alert('the account does not exist');
+                    break;
+                case 402:
+                    alert('Account shut down');
+                    break;
+                case 403:
+                    alert('login failed，Email/ invalid password');
+                    break;
+                case 404:
+                    alert('login restricted');
+                    break;
+            }
+
+        }
+
+        // 登录错误提示
+        function registerErrorMsg(code) {
+            switch (code) {
+                case 101:
+                    alert('The account already exists');
+                    break;
+                case 107:
+                    alert('Nickname already exists');
+                    break;
+                case 200:
+                    alert('Lack of parameter');
+                    break;
+                case 210:
+                    alert('The passwords do not match');
+                    break;
+                case 300:
+                    alert('Service errors');
+                    break;
+            }
+
+        }
+
+        // 隐藏协议提示
+        $('#agreement-box .agree-btn').click(function() {
+            $('.gdpr-agreement-box').hide();
+            var account = "" || 'is_guest';
+            getCookie("uuzu_GDPR", account, { path: '/', domain: '.gtarcade.com' });
+        });
+
+    });
+</script>

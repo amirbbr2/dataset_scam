@@ -1,0 +1,8 @@
+.createButton{width:15px;height:15px;padding:2px 5px 0 0;float:left;background:url("https://www.proprofsgames.com/quiz-school/img/manage_top_icons_sprite.png") -7px -1px;}
+.settingButton{width:15px;height:15px;padding:2px 5px 0 0;float:left;background:url("https://www.proprofsgames.com/quiz-school/img/manage_top_icons_sprite.png") -31px 0px;}
+.shareButton{width:15px;height:15px;padding:3px 6px 0 0;float:left;background:url("https://www.proprofsgames.com/quiz-school/img/manage_top_icons_sprite.png") -56px 0px;}
+.previewButton{width:15px;height:15px;padding:5px 6px 0 0;float:left;background:url("https://www.proprofsgames.com/quiz-school/img/manage_top_icons_sprite.png") -101px 1px;}
+.createButton-hover{width:15px;height:15px;padding:0px 5px 0 0;float:left;margin-top:1px;background:url("https://www.proprofsgames.com/quiz-school/img/manage_top_icons_sprite.png") -7px 17px;}
+.settingButton-hover{width:15px;height:15px;padding:3px 5px 0 0;float:left;margin-top:2px;background:url("https://www.proprofsgames.com/quiz-school/img/manage_top_icons_sprite.png") -31px 17px;}.
+shareButton-hover{width:15px;height:15px;padding:3px 6px 0 0;float:left;margin-top:3px;background:url("https://www.proprofsgames.com/quiz-school/img/manage_top_icons_sprite.png") -56px 16px;}
+previewButton-hover{width:15px;height:15px;padding:5px 6px 0 0;float:left;margin-top:2px;background:url("https://www.proprofsgames.com/quiz-school/img/manage_top_icons_sprite.png") -101px 18px;}

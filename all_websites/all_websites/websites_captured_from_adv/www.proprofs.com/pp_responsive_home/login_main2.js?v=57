@@ -1,0 +1,15 @@
+jQuery(document).ready(function($){$("#username_login").live('keypress',function(e){if(e.keyCode==13){$("#LOGIN_user").trigger('click');}});$('#password_login').live('keypress',function(e){if(e.keyCode==13){$("#LOGIN_user").trigger('click');}});$('#LOGIN_user').live("click",function(){$('#loader_button').show();var username=$('#username_login').val();var password=$('#password_login').val();var templete=$('#templete').val();$("#show_error_area").hide();if(username==''&&password=='')
+{$('#show_error_area').html('Please enter your username and password.');$('#show_error_area').show();$('#username_login').attr('style','border:1px solid #FF0000;');$('#password_login').attr('style','border:1px solid #FF0000;');$('#username_login').focus();$('#loader_button').hide();}else if(username!=''&&password=='')
+{$('#show_error_area').html('Please enter your password.');$('#show_error_area').show();$('#username_login').attr('style','1px solid #3B5998;');$('#password_login').attr('style','border:1px solid #FF0000;');$('#password_login').focus();$('#loader_button').hide();}
+else if(username==''&&password!='')
+{$('#show_error_area').html('Please enter your username.');$('#show_error_area').show();$('#password_login').attr('style','1px solid #3B5998;');$('#username_login').attr('style','border:1px solid #FF0000;');$('#username_login').focus();$('#loader_button').hide();}
+else{if(username!=''&&password!='')
+{$.ajax({url:"/pp_responsive_home/login_check.php?username="+username+"&pass="+password,type:'POST',cache:false,async:true,data:$('#login_form').serialize(),beforeSend:function()
+{$('#loader_button').show();},success:function(data)
+{if(data=="##FALSE##")
+{$("#loader_button").css({"dislpay":"none"});$("#show_error_area").html('The username or password you entered is incorrect.');$("#show_error_area").show();$('#username_login').attr('style','border:1px solid #3B5998;');$('#password_login').attr('style','border:1px solid #FF0000;');$('#password_login').focus();$('#loader_button').hide();}
+else
+{var data_array=data.split("=||=");console.log(data);if(data_array[0]=='TM_delay')
+{window.location.href=data_array[1];}
+else
+{$("#main_login_area").html(data_array[0]);$("#show_error_area").hide();$("#login_div").hide();$("#if_user").val("1");}}}});}}});$('.login_closed').live("click",function(){location.reload();});});

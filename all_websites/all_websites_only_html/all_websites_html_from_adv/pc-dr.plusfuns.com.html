@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Darkmoon Realm Play page - The best experience for you - Let's play!</title>
+        <meta name="msvalidate.01" content=""/>
+        <meta name="keywords" content="darkmoon,darkmoon realm,darkmoon realm H5,dark region,darkmoon realm game,darkmoon realm stragy,darkmoon realm online,darkmoon hunting game,darkmoon realm in Plusfuns.com"/>
+        <meta name="description" content="Tons of players worldwide join the mighty adventures of Darkmoon Realm every day.Come and gain your partners from various events.They can offer a huge advantage in battle!"/>
+        <meta name="google-site-verification" content="JO_HZfwYRp8dHhrxYTY8xkQwKM07HL_k8XFHnuC_0hY"/>
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Darkmoon Realm">
+        <meta name="apple-mobile-web-app-title" content="Darkmoon Realm">
+        <meta property="og:image" content="https://officialsource.plusfuns.com/style/official/single_game/dr/lang_common/img/icon-200.png?20200521" />
+        
+        <link rel="icon" sizes="512x512" href="https://officialsource.plusfuns.com/style/official/single_game/dr/lang_common/img/icon-android-512.png?20200521">
+        <link rel="apple-touch-icon" sizes="512x512" href="https://officialsource.plusfuns.com/style/official/single_game/dr/lang_common/img/icon-ios-512.png?20200521">
+        
+        <link rel="manifest" href="/web_resource/chrome_manifest?token=">
+        <link rel="dns-prefetch" href="https://user.pocketgames.me">
+        <link rel="dns-prefetch" href="http://sitesource.oph5.me">
+        <link rel="dns-prefetch" href="https://pay.pocketgames.me">
+        
+        <link type="text/css" rel="stylesheet" href="https://officialsource.plusfuns.com/style/official/common/lang_common/css/official_common.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://officialsource.plusfuns.com/style/official/common/lang_common/css/sign.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://officialsource.plusfuns.com/style/official/single_game/drw/lang_common/css/common.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://officialsource.plusfuns.com/style/common/css/addtohomescreen.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://officialsource.plusfuns.com/plugins/jquery-ui/jquery-ui-1.10.4.custom.min.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://officialsource.plusfuns.com/plugins/fancybox/jquery.fancybox.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://officialsource.plusfuns.com/plugins/jquery-ui/jquery.datetimepicker.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://officialsource.plusfuns.com/plugins/tooltipster/tooltipster.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://officialsource.plusfuns.com/style/official/single_game/drw/lang_common/css/swiper.min.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://officialsource.plusfuns.com/style/official/common/intlTelInput.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://officialsource.plusfuns.com/style/official/single_game/drw/lang_common/css/left_con.css?20200521" />
+
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/js/official/jquery/jquery-1.8.3.min.js?20200521"></script>
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/plugins/jquery-ui/jquery-ui-1.10.4.custom.min.js?20200521"></script>
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/plugins/fancybox/jquery.fancybox.min.js?20200521"></script>
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/plugins/jquery-ui/jquery.datetimepicker.js?20200521"></script>
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/plugins/tooltipster/jquery.tooltipster.min.js?20200521"></script>
+        
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/js/official/common/addtohomescreen.js?20200521"></script>
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/js/official/common/new_official_common.js?20200521"></script>
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/js/official/common/new_register.js?20200521"></script>
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/js/official/common/pc.js?20200521"></script>
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/js/official/swiper/swiper-4.5.0.min.js?20200521"></script>
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/js/official/common/intlTelInput.min.js?20200521"></script>
+        <script type="text/javascript" src="https://officialsource.plusfuns.com/js/official/single_game/drw/common.js?20200521"></script>
+    </head>
+    <body>
+<div class="topbox">
+            <!-- choose language -S -->
+                <div class="languageWrap">
+            <a href="javascript:void(0);" class="default">
+                <img src="https://officialsource.plusfuns.com/style/official/common/lang_common/img/languages/en.gif?20200521"/>
+                English                            </a>
+
+                    </div>
+        <script type="text/javascript">
+        $(function () {
+            $('a.chooseLanguage').click(function () {
+                show_status_dialog('loading', "Switching to the " +  $.trim($(this).text()), true, 2000);
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/static_resource/change_user_language',
+                    data: {
+                        'set_language': $(this).attr('set_language')
+                    },
+                    dataType: 'json',
+                    success: function (data) {
+                        if (true == data.status) {
+                            var current_url = window.location.href;
+                            window.location.href = current_url.replace(/_lang\=([A-Za-z0-9\-]{2,6})([&]{0,1})/, '');
+
+                            //window.location.reload();
+                        }
+                    }
+                });
+
+                return false;
+            });
+        });
+        </script>
+        <!-- choose language -E -->
+        <div class="top">
+        <div class="topleft">
+            <div class="all_hover">
+                <a href="javascript:void(0);" class="all">All Games</a>
+                <ul class="all_game" style="display:none">
+                    <li style="text-indent:999px;"></li>
+                                                                                                                                                                                                                                <li>
+                                <a href="https://dr.plusfuns.com" class="game_120000033"
+                                   title="Darkmoon Realm">Darkmoon Realm</a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://kf.plusfuns.com" class="game_120000037"
+                                   title="Knights of Fantasy">Knights of Fantasy</a>
+                            </li>
+                                                                                                <li>
+                                <a href="https://st2.plusfuns.com" class="game_120000038"
+                                   title="Star Trek">Star Trek</a>
+                            </li>
+                                                            </ul>
+            </div>
+        </div>
+        
+        <div class="top_center">
+            Darkmoon Realm        </div>
+
+        <div class="topright" id="top_right">
+            <!--  email box -S -->
+            <div class="emailInfoTip">
+                
+                <a href="//pc-dr.plusfuns.com" style="display:block; float:right">
+                    <img src="https://officialsource.plusfuns.com/style/official/single_game/drw/lang_common/img/official_logo.png?20200521" title="plusfuns.com" alt="plusfuns.com"/>
+                </a>
+            </div>
+            <!--  email box -E -->
+
+                            <!--  Tip Message -->
+                <script>
+                    var registerTip = new Object();
+                    registerTip.unameCue = "User name between the 6-16 characters.";
+                    registerTip.emailCue = "Please enter a valid Email.";
+                    registerTip.phoneCue = "Please enter a valid mobile number.";
+                    registerTip.passwordCue = "At least 6 numbers and characters!";
+                    registerTip.confirmPasswordCue = "Please enter your password again.";
+
+                    registerTip.unameNull = "User name between the 6-16 characters.";
+                    registerTip.emailNull = "Please enter a valid Email.";
+                    registerTip.passwordNull = "6 to 20 letters, numbers, and special characters!";
+                    registerTip.confirmPasswordNull = "Please enter your password again!";
+
+                    registerTip.checkUname = "Verifying User Name ......";
+                    registerTip.checkEmail = "Verifying Email ......";
+                    registerTip.loading = "Loading.....";
+                    registerTip.wrongPassUsername = "Wrong User Name or Password";
+
+                    registerTip.unameError = "User Name Already Exists!";
+                    registerTip.emailError = "Email already in use Or Error!";
+                    registerTip.passwordError = "6 to 20 letters, numbers, and special characters!";
+                    registerTip.confirmPasswordError = "The Passwords do not match!";
+                    registerTip.registerSuccess = "Register Successfully";
+
+                </script>
+
+                <!--  not login -->
+                <div>
+                    <div class="signbox" style="display:block">
+                        <input type="hidden" id="signin" redirect="1" />
+                        <input type="hidden" id="lottery_login_box" reload="needreload" />
+                        <a href="javascript:void(0);" title="Login"
+                           dialog_type="Login" id="loginInBtn" class="login_btn show_form"
+                           data-type="phone"
+                           link="/static_resource/show_login">Log In</a>
+                        <a href="javascript:void(0);" title="Sign Up"
+                           dialog_type="Sign Up" class="sign_up_btn show_form"
+                           data-type="phone"
+                           link="/static_resource/show_sign_up">Sign Up</a>
+                    </div>
+                    <ul class="toplogos">
+                                            </ul>
+                </div>
+                <div id="dialog_form" showOut="Hide"></div>
+                    </div>
+
+                    <div class="topright" id="ajaxLoginWidget" style="display:none;">
+
+                <!--  email box -S -->
+                <div class="emailInfoTip">
+                    
+                    <a href="/" style="display:block; float:right">
+                        <img src="https://officialsource.plusfuns.com/style/platform_logos/plusfuns.com/official_logo.png?20200521" title="plusfuns.com" alt="plusfuns.com"/>
+                    </a>
+                </div>
+                <!--  email box -E -->
+
+                <!-- login user -->
+                <div>
+                    <div class="user_info">
+                        <span title="" id="bannerEmail" class="left">Hi,&nbsp;</span>
+
+                        <!-- email auth -S -->
+                        <script>
+                            $(function () {
+                                $('.tooltip, .emailNotice').tooltipster({
+                                    animation: 'fade',
+                                    delay: 200,
+                                    theme: 'tooltipster-default',
+                                    touchDevices: false,
+                                    trigger: 'hover',
+                                    timer: 4000,
+                                    onlyOne: true,
+                                    position:'right'
+                                });
+
+                                // class autoDisplay
+                                $('.tooltip').tooltipster('show', testCallBack);
+
+                                function testCallBack() {}
+                            });
+                        </script>
+                        <b class="tipVerityEmail tooltip tooltipstered"></b>
+                        <!-- email auth -E -->
+                        <ul class="logout">
+                            <li style="text-indent:999px;"></li>
+                                                        <li>
+                                <a href="/static_resource/show_user_profile" class="various fancybox.ajax user_infobg1">
+                                    Account Settings                                                                    </a>
+                            </li>
+                                                        <li style="border-bottom:none">
+                                <a href="javascript:void(0);" class="user_infobg2 user_logout_btn">Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+
+    </div>
+</div>
+<script>
+    var changePassword = new Object();
+    changePassword.passwordFormatError = "Please make sure your new password 6 to 16 letters, numbers, and special characters!";
+    changePassword.passwordNotEqual = "The password you input is not the same!";
+    changePassword.passwordEqual = "New password and Old password is the same!";
+    changePassword.needReLogin = "You'll automatically log out!";
+    var accountTip = new Object();
+    accountTip.logOut = "Log Out....";
+    accountTip.logOutError = "Sign Out Error, Try Again";
+    accountTip.loginSuccess = "Login Successfully";
+    
+    var isExecClientInfo = "";
+</script>
+<div class="play_game_center">
+            <iframe src="https://drgamesource.plusfuns.com/en/index.YF_En.html?sdkLang=en&ts=1609906417&jf_iframe=1&media_source=1013&campaign=12015443&site_id=edc24634978a&subject=" style="width:100%; min-width:750px; height:680px;overflow:hidden; border:0;" scrolling="no" scroll="no" frameborder="no"></iframe>
+    </div>
+<div class="play_footer clearfix" id="scrolltop">
+    <div class="play_footer_leftside clearfix">
+    <div class="playTipBg"></div>
+    <ul class="playNav">
+        <li class="n current" style="position:relative;">
+            <a href="javascript:void(0)" class="news"><span class="gameNewCur"></span>News</a>
+        </li>
+        <li>
+            <a href="/guides" class="guides" target="_blank"><span class="gameGuideCur"></span>Guides</a>
+        </li>
+        <li>
+            <a href="Mailto:support@plusfuns.com?subject=Question%2BFor%2BDarkmoon+Realm" class="support openTicket" target="_blank"><span class="gameSupportCur"></span>SUPPORT</a>
+        </li>
+    </ul>
+    <div class="cont">
+        <div class="new_title">
+            <h2>News</h2><a href="javascript:void(0);"></a>
+        </div>
+        <div id="divo">
+            <div id="divt"></div>
+        </div>
+        <div id="divs">
+            <div id="divf">
+                <ul>
+                                        <li>
+                        <a href="/article/aid/669" target="_blank">Server Merge on Dec 30, 2020 (01:00-02:00 am server time)</a>
+                    </li>
+                                        <li>
+                        <a href="/article/aid/659" target="_blank">Server Merge on Dec 9, 2020 (01:00-02:00 am server time)</a>
+                    </li>
+                                        <li>
+                        <a href="/article/aid/656" target="_blank">Server Merge on Dec 2, 2020 (01:00-02:00 am server time)</a>
+                    </li>
+                                        <li>
+                        <a href="/article/aid/642" target="_blank">Server Merge on Nov 18, 2020 (01:00-02:00 am server time)</a>
+                    </li>
+                                        <li>
+                        <a href="/article/aid/635" target="_blank">Server Merge on Nov 11, 2020 (02:00-03:00 am server time)</a>
+                    </li>
+                                        <li>
+                        <a href="/article/aid/617" target="_blank">Server Merge on Oct 21, 2020 (02:00-03:00 am server time)</a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="play_footer_scroll clearfix">
+    <div class="play_footer_news">
+        <div id="scrollDiv">
+                        <a href="https://discord.gg/A3K3zuz" target="_blank" class="froum_btn"></a>
+                    </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" language="javascript">
+    var loginStatus = "nologin";
+    var standalone = "FALSE";
+    var media_source = "media_source=1013&campaign=12015443&site_id=edc24634978a&subject=";
+    var shareId = "";
+    var accountTip = new Object();
+    accountTip.logOut = "Log Out....";
+    accountTip.logOutError = "Sign Out Error, Try Again";
+    accountTip.loginSuccess = "Login Successfully";
+    accountTip.needLoginToAccess = "You must login to receive rewards!";
+
+    var registerTip = new Object();
+    registerTip.unameCue = "User name between the 6-16 characters.";
+    registerTip.emailCue = "Please enter a valid Email.";
+    registerTip.phoneCue = "Please enter a valid mobile number.";
+    registerTip.passwordCue = "At least 6 numbers and characters!";
+    registerTip.confirmPasswordCue = "Please enter your password again.";
+
+    registerTip.unameNull = "User name between the 6-16 characters.";
+    registerTip.emailNull = "Please enter a valid Email.";
+    registerTip.passwordNull = "6 to 20 letters, numbers, and special characters!";
+    registerTip.confirmPasswordNull = "Please enter your password again!";
+
+    registerTip.checkUname = "Verifying User Name ......";
+    registerTip.checkEmail = "Verifying Email ......";
+    registerTip.loading = "Loading.....";
+    registerTip.wrongPassUsername = "Wrong User Name or Password";
+
+    registerTip.unameError = "User Name Already Exists!";
+    registerTip.emailError = "Email already in use Or Error!";
+    registerTip.passwordError = "6 to 20 letters, numbers, and special characters!";
+    registerTip.confirmPasswordError = "The Passwords do not match!";
+    registerTip.registerSuccess = "Register Successfully";
+
+    var changePassword = new Object();
+    changePassword.passwordFormatError = "Please make sure your new password 6 to 16 letters, numbers, and special characters!";
+    changePassword.passwordNotEqual = "The password you input is not the same!";
+    changePassword.passwordEqual = "New password and Old password is the same!";
+    changePassword.needReLogin = "You'll automatically log out!";
+
+    var pageArgu = new Object();
+    pageArgu.noSelectServer = "Please select a server.";
+    pageArgu.copySuccess = "Gift code copied successfully!";
+    pageArgu.noGiftCode = "Gift code is no longer available.";
+    pageArgu.makeGiftCodeFail = "Gift code is no longer available.";
+    pageArgu.zclipSWFPath = "https://officialsource.plusfuns.com/plugins/zclip/ZeroClipboard.swf?20200521";
+    var loginStatus = "nologin";
+    var needLogin = new Object();
+    needLogin.needLoginToAccess = "You must login to receive rewards!";
+        $('.center_aninmatbg').animate({
+        opacity: '1'
+    }, 3000);
+    </script>
+</body>
+</html>
+<script>
+var interval = 900000;
+
+/*始终居于浏览器可视区的底部*/
+var footerBarInterval;
+function setFooterBarPosition() {
+    var footerBar = $('#scrolltop');
+    var scrollTop = $(document).scrollTop();
+    var top;
+
+    if (scrollTop > 0) {
+        top = scrollTop + $(window).height() - footerBar.height();
+    } else {
+        top = $(window).height() - footerBar.height();
+    }
+
+    footerBar.animate({
+        'top': top
+    }, 500, function () {
+        if (footerBar.css('display') == 'none') {
+            footerBar.show();
+        }
+    });
+}
+
+function showPlayHeight() {
+    var topBoxH = $('.topbox').height();
+    var playFooterH = $('.play_footer').height();
+    var height = $(window).height() - topBoxH - playFooterH;
+
+    $('.play_game_center iframe').css({'height': height, 'width': $(window)});
+}
+
+function setBodyHeight() {
+    var topBoxH = $('.topbox').height();
+    var playFooterH = $('.play_footer').height();
+    var gameCenterObj = $('.play_game_center iframe');
+    var totalMinH = topBoxH + playFooterH + parseInt(gameCenterObj.css("min-height"));
+    var setH = topBoxH + playFooterH + gameCenterObj.height();
+    if ($(window).height() < totalMinH && ($('body').height() < setH)) {
+        $('body').height(setH);
+    }
+}
+
+
+$(document).scroll(function () {
+    window.clearInterval(footerBarInterval);
+    footerBarInterval = setTimeout(setFooterBarPosition, 500);
+});
+
+$(window).resize(function () {
+    showPlayHeight();
+    setBodyHeight();
+    window.clearInterval(footerBarInterval);
+    footerBarInterval = setTimeout(setFooterBarPosition, 500);
+});
+
+function AutoScroll(obj) {
+    if ($(obj).find('li').length > 1) {
+        $(obj).find("ul:first").animate({
+            marginTop: "-20px"
+        }, 500, function () {
+            $(this).css({marginTop: "0px"}).find("li:first").appendTo(this);
+        });
+    }
+}
+$(document).ready(function () {
+    showPlayHeight();
+    setBodyHeight();
+    setFooterBarPosition();
+
+    var scollInterval = setInterval('AutoScroll("#scrollDiv")', 2000);
+    $("#scrollDiv li").live('mouseover', function () {
+        window.clearInterval(scollInterval);
+    });
+    $("#scrollDiv li").live('mouseout', function () {
+        scollInterval = setInterval('AutoScroll("#scrollDiv")', 2000);
+    });
+    $("#scrollDiv li").live('click', function () {
+        $(this).remove();
+        var aHtml = $(this).html();
+        var a = $(aHtml).get(0);
+
+        var e = document.createEvent('MouseEvents');
+
+        e.initEvent('click', true, true);
+        a.dispatchEvent(e);
+        return false;
+    });
+
+});
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151229686-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151229686-1');
+</script>

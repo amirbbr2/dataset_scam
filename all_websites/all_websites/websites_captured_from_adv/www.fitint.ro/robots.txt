@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Disallow:
+User-agent: Googlebot-image
+Disallow:
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Allow: /wp-content/
+Allow: /wp-content/uploads/
+Allow: /wp-content/uploads/2019/
+Allow: /wp-content/uploads/2019/10/

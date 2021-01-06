@@ -1,0 +1,62 @@
+function OpenListLink(e){var t=jQuery("#redirect_"+e).attr("href");window.location=t}function OpenVideoBlock(){jQuery("#video_how_it_works").show(300)}function PrepareWebsiteURL(e){if(jQuery("#"+e).val(jQuery("#"+e).val().toLowerCase().replace(/\s+/g,"")),"website_url"==e){var t=jQuery("#"+e).val();(-1==t.indexOf("http")||t.indexOf("http")>1)&&jQuery("#"+e).val("http://"+t)}}function CheckVATnumber(){jQuery("#VATcheck_result").html("... checking ...");jQuery.post("https://www.siteguarding.com/index.php",{no_html:"1",option:"com_securapp",task:"AJAX_CheckVATnumber",tmpl:"component",country_code:jQuery("#country").val(),billing_vat:jQuery("#billing_vat").val()},function(e){var t=JSON.parse(e);jQuery("#VATcheck_result").html(t.status),jQuery("#billing_vat").val(t.billing_vat)}).fail(function(e,t,a){jQuery("#VATcheck_result").html('<span class="error">'+e.responseText+"</span>")})}jQuery(document).ready(function(){jQuery(".rmm-button").click(function(){jQuery(".mobilemenu").toggle().slideDown(slow)}),jQuery("#add_comments").click(function(){jQuery("#add_comments").hide(),jQuery("#div_comments").show()}),jQuery("html").click(function(){jQuery("#language-list").is(":hidden")||jQuery("#language-list").hide()}),jQuery("#language-switch").mouseenter(function(){jQuery("#language-list").show()}),jQuery.validate({form:"#userform"}),jQuery(".website_installation").change(function(){var e=jQuery("#userform input[type='radio']:checked").val();"auto"==e&&(jQuery(".website_installation_fld").attr("data-validation","required"),jQuery("#website_installation_block").show(300)),"manual"==e&&(jQuery(".website_installation_fld").removeAttr("data-validation"),jQuery("#website_installation_block").hide(300))}),jQuery("#website_url").focus(function(){""==jQuery("#website_url").val()&&jQuery("#website_url").val("http://")}),jQuery(".webmaster_payout").change(function(){var e=jQuery("#userform input[type='radio']:checked").val();"paypal"==e&&(jQuery("#paypal_account").attr("data-validation","required"),jQuery("#skrill_account").removeAttr("data-validation"),jQuery("#bank_details").removeAttr("data-validation")),"skrill"==e&&(jQuery("#paypal_account").removeAttr("data-validation"),jQuery("#skrill_account").attr("data-validation","required"),jQuery("#bank_details").removeAttr("data-validation")),"bank"==e&&(jQuery("#paypal_account").removeAttr("data-validation"),jQuery("#skrill_account").removeAttr("data-validation"),jQuery("#bank_details").attr("data-validation","required")),jQuery(".block_all").hide(300),jQuery(".block_"+e).show(300)}),""==jQuery.trim(jQuery("#component_inner").html())&&(jQuery("#component_inner").html("<h1>Error 404</h1><p>Page is absent or moved. Redirecting.....</p>"),jQuery(function(){window.setTimeout(function(){window.location.href="https://www.siteguarding.com/en/services/malware-removal-service"},2e3)}))});
+
+function TabShowBlock(id)
+{
+    jQuery('.tab_txt_block').hide();
+    jQuery('#'+id).show();
+}
+
+function sendrate(page_id, rate_value)
+{
+	jQuery.post("https://www.siteguarding.com/index.php", {
+		    task: "AJAX_review",
+		    option: "com_securapp",
+		    page_id: page_id,
+		    rate_value: rate_value
+		},
+		function(data)
+        {
+            alert(data);
+
+		});
+}
+
+jQuery(document).ready(function(){
+    jQuery( "#topnavmenu2 li.nav1" ).hover(function() 
+    {
+      var pos = jQuery(this).position();
+      var pos_left = pos.left + 20;
+      var screen_w = jQuery(window).width()-4;
+      jQuery("div.nav2nd", this).css("width", screen_w+"px"); 
+      jQuery("div.nav2nd", this).css("left", "-"+pos_left+"px"); 
+    });
+    
+	jQuery('.rmm-button2').click(function(){
+		jQuery(this).toggleClass('open');
+        jQuery(".mobilemenu").toggle("slow");
+	});
+});
+
+function MobileMenuToggle(cls, el)
+{
+    jQuery( "."+cls ).toggle(300);
+    jQuery(el).toggleClass('open-sub');
+}
+
+// Tabs Option AB (1,2,3)
+jQuery(document).ready(function(){
+    
+    jQuery(document).on('click', '.opt_opener',function(event) 
+    {
+        jQuery('.opt_opener').removeClass('c_opened');
+        jQuery(this).addClass('c_opened');
+    });
+    
+    jQuery(document).on('click', '.opt_tabs',function(event) 
+    {
+        var tab_id = jQuery(this).attr('tab-data');
+        jQuery('.tabs_A, .tabs_B').hide();
+        jQuery('.'+tab_id).show();
+    });
+    
+});

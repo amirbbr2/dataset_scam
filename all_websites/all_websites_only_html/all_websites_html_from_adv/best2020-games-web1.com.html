@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+
+      <div class="logo">
+        <!-- <img src="#" alt=""> -->
+      </div>
+
+      <div class="text">
+        <p><b>choose  your  new<br> chick  today !</b> </p>
+      </div>
+
+      <div class="items_row">
+        <div class="items_block">
+          <div class="items ">
+            <a href="#" class="finlink btn1 btn">
+                    		<img src="img/1.png" alt="" class="items_img pic1 gray">
+                    		<span class="items_btn"><p class="btn_span1 mono">Bard</p></span>
+                    	</a>
+          </div>
+
+          <div class="items ">
+            <a href="#" class="finlink btn2 btn">
+                    		<img src="img/2.png" alt="" class="items_img pic2 gray">
+                    		<span class="items_btn"><p class="btn_span2 mono">Death</p></span>
+                    	</a>
+          </div>
+
+          <div class="items ">
+            <a href="#" class="finlink btn3 btn">
+                    		<img src="img/3.png" alt="" class="items_img pic3 gray">
+                    		<span class="items_btn"><p class="btn_span3 mono">Cat</p></span>
+                    	</a>
+          </div>
+
+          <div class="items ">
+            <a href="#" class="finlink btn4 btn">
+                    		<img src="img/4.png" alt="" class="items_img  pic4 gray">
+                            <span class="items_btn"><p class="btn_span4 mono">Bunnygirl</p></span>
+                    	</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn_play">
+        <a href="#" class="finlink bounceIn">Choose</a>
+      </div>
+    </section>
+  </div>
+
+  <script type="text/javascript">
+    var fin_link = decodeURIComponent(getURLParameter('p1'));
+    var links = document.getElementsByClassName('finlink');
+    for (var i = 0; i < links.length; i++) links[i].setAttribute("href", fin_link);
+
+    for (var j = 0; j < links.length; j++) {
+      links[j].addEventListener('click', function() {
+        window.onbeforeunload = null;
+      });
+    }
+
+    function getURLParameter(name) {
+      return decodeURIComponent(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+      );
+    }
+
+    window.onbeforeunload = function(e) {
+      if (true) {
+        s = 'All unsaved data will be lost! Do you really want to quit the site?'
+        e = e || window.event;
+        // For IE and Firefox prior to version 4
+        if (e) {
+          e.returnValue = s;
+        }
+        // For Safari
+        return s;
+      }
+    };
+  </script>
+
+  <script>
+    $(function() {
+      $('.btn1').mouseover(function() {
+        $('.pic1').removeClass('gray');
+        $('.btn_span1 ').removeClass('mono');
+      });
+      $('.btn1').mouseout(function() {
+        $('.pic1').toggleClass('gray');
+        $('.btn_span1').toggleClass('mono');
+      });
+      $('.btn2').mouseover(function() {
+        $('.pic2').removeClass('gray');
+        $('.btn_span2 ').removeClass('mono');
+
+      });
+      $('.btn2').mouseout(function() {
+        $('.pic2').toggleClass('gray');
+        $('.btn_span2').toggleClass('mono');
+      });
+      $('.btn3').mouseover(function() {
+        $('.pic3').removeClass('gray');
+        $('.btn_span3 ').removeClass('mono');
+
+      });
+      $('.btn3').mouseout(function() {
+        $('.pic3').toggleClass('gray');
+        $('.btn_span3').toggleClass('mono');
+      });
+      $('.btn4').mouseover(function() {
+        $('.pic4').removeClass('gray');
+        $('.btn_span4 ').removeClass('mono');
+
+      });
+      $('.btn4').mouseout(function() {
+        $('.pic4').toggleClass('gray');
+        $('.btn_span4').toggleClass('mono');
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>

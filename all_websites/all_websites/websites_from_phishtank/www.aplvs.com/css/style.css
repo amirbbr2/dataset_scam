@@ -1,0 +1,5109 @@
+@charset "UTF-8";
+/*-------------------------------------------------------------------------
+ Setting Import
+--------------------------------------------------------------------------*/
+/* html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+ */
+/*-------------------------------------------------------------------------
+  Reset Styles
+--------------------------------------------------------------------------*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+strong, em {
+    font-style: normal;
+}
+
+img {
+    border: 0;
+    vertical-align: bottom;
+}
+
+/* html5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/*-------------------------------------------------------------------------
+  OnMediaQuery Setting
+--------------------------------------------------------------------------*/
+html {
+    font-family: 'desktop';
+}
+
+body:after {
+    content: 'desktop';
+    display: none;
+}
+
+/*-------------------------------------------------------------------------
+  Global Settings
+--------------------------------------------------------------------------*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #333;
+    background-color: #FFF;
+    font-family: "HiraKakuProN-W3", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    font-size: 1.4rem;
+    min-width: 960px;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Link Style
+--------------------------------------------------------------------------*/
+a {
+    color: #007fcb;
+    text-decoration: underline;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover {
+    color: #26aeff;
+    text-decoration: none;
+}
+
+/* HideStyle
+--------------------------------------------------------------------------*/
+.pc-hide {
+    display: none;
+}
+
+/* Noscript
+--------------------------------------------------------------------------*/
+.ns-attention {
+    background-color: #fff2f2;
+    padding: 2em;
+}
+
+/* TextAlign
+--------------------------------------------------------------------------*/
+.align-lft {
+    text-align: left;
+}
+
+.align-ctr {
+    text-align: center;
+}
+
+.align-rit {
+    text-align: right;
+}
+
+/* TextColor
+--------------------------------------------------------------------------*/
+.cl1 {
+    color: #333;
+}
+
+.cl2 {
+    color: #666;
+}
+
+.cl3 {
+    color: #F00;
+}
+
+/* TextSize
+--------------------------------------------------------------------------*/
+.fs-xxxl {
+    /* XXXL = 24px */
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 1.0;
+}
+
+.fs-xxl {
+    /* XXL = 22px */
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 1.0;
+}
+
+.fs-xl {
+    /* XL = 20px */
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.0;
+}
+
+.fs-l {
+    /* L = 18px */
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.0;
+}
+
+.fs-ml {
+    /* ML = 16px */
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+.fs-m {
+    /* M = 14px */
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.fs-s {
+    /* S = 12px */
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.fs-ms {
+    /* MS = 11px */
+    font-size: 11px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.fs-xs {
+    /* XS = 10px */
+    font-size: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.fs-xxs {
+    /* XXS = 8px */
+    font-size: 8px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.fs-xxxs {
+    /* XXXS = 6px */
+    font-size: 6px;
+    font-size: 0.6rem;
+    line-height: 1.5;
+}
+
+/*-------------------------------------------------------------------------
+  Extend Style
+--------------------------------------------------------------------------*/
+.contents, .hd-utility, .gl-nav, .gl-subnav ul, .topic-path, .ft-group-inner dl, .ft-group-inner dd ul, .rigico, .horizontal, .horizontal-wide, .list-icon-down-arrow, .icon-angle-dfn, .float-dfn, .row, .table-in, .pagetop, .pagetop-en, .tab-list, .t-tab .tab-list, .pdf, .nsa-login-box, .nsa-login-box02, .nsa-login-box03, .bnr-related-site, .bnr155, .bnr155-left, .mneu-list-area, .modu-loan-online, .card-layout, .card-detail-caption, .card-detail-col, .card-detail-collft dl, .top-visual .container, .urgency dl, .ser-mer, .top-pp, .product-info, .product-info-primary-main {
+    *zoom: 1;
+}
+.contents:before, .hd-utility:before, .gl-nav:before, .gl-subnav ul:before, .topic-path:before, .ft-group-inner dl:before, .ft-group-inner dd ul:before, .rigico:before, .horizontal:before, .horizontal-wide:before, .list-icon-down-arrow:before, .icon-angle-dfn:before, .float-dfn:before, .row:before, .table-in:before, .pagetop:before, .pagetop-en:before, .tab-list:before, .pdf:before, .nsa-login-box:before, .nsa-login-box02:before, .nsa-login-box03:before, .bnr-related-site:before, .bnr155:before, .bnr155-left:before, .mneu-list-area:before, .modu-loan-online:before, .card-layout:before, .card-detail-caption:before, .card-detail-col:before, .card-detail-collft dl:before, .top-visual .container:before, .urgency dl:before, .ser-mer:before, .top-pp:before, .product-info:before, .product-info-primary-main:before, .contents:after, .hd-utility:after, .gl-nav:after, .gl-subnav ul:after, .topic-path:after, .ft-group-inner dl:after, .ft-group-inner dd ul:after, .rigico:after, .horizontal:after, .horizontal-wide:after, .list-icon-down-arrow:after, .icon-angle-dfn:after, .float-dfn:after, .row:after, .table-in:after, .pagetop:after, .pagetop-en:after, .tab-list:after, .pdf:after, .nsa-login-box:after, .nsa-login-box02:after, .nsa-login-box03:after, .bnr-related-site:after, .bnr155:after, .bnr155-left:after, .mneu-list-area:after, .modu-loan-online:after, .card-layout:after, .card-detail-caption:after, .card-detail-col:after, .card-detail-collft dl:after, .top-visual .container:after, .urgency dl:after, .ser-mer:after, .top-pp:after, .product-info:after, .product-info-primary-main:after {
+    content: "";
+    display: table;
+}
+.contents:after, .hd-utility:after, .gl-nav:after, .gl-subnav ul:after, .topic-path:after, .ft-group-inner dl:after, .ft-group-inner dd ul:after, .rigico:after, .horizontal:after, .horizontal-wide:after, .list-icon-down-arrow:after, .icon-angle-dfn:after, .float-dfn:after, .row:after, .table-in:after, .pagetop:after, .pagetop-en:after, .tab-list:after, .pdf:after, .nsa-login-box:after, .nsa-login-box02:after, .nsa-login-box03:after, .bnr-related-site:after, .bnr155:after, .bnr155-left:after, .mneu-list-area:after, .modu-loan-online:after, .card-layout:after, .card-detail-caption:after, .card-detail-col:after, .card-detail-collft dl:after, .top-visual .container:after, .urgency dl:after, .ser-mer:after, .top-pp:after, .product-info:after, .product-info-primary-main:after {
+    clear: both;
+}
+
+.hd-logo, .hd-utility li a, .hd-catlabel, .hd-catlabel-ins, .gl-nav li a, .login-box h2, .sub-banner a, .sub-banner2 a, .sub-banner3 a, .sub-utility a, .sub-qr li, .sub-privacy-bn li a .sub-insurance-bn li a, .sub-syukin-bn li a, .sub-sim_kantan-bn li a, .sub-wechatpay-bn li a, .sub-dental-bn li a,sub-isms-bn li a, .tw-fb-btn li a, .sub-jca-bn li a, .sub-address-bn li a, .sub-banner-personal a, .sub-banner-financial a, .icon-jcb,
+.icon-visa,
+.icon-master, .icon-family,
+.icon-etc,
+.icon-quicpay, .pagetop a, .pagetop-en a, .nsalogo-wide, .rep-bnr dl dt, .rep-bnr dl dd, .bnr-related-site li a, .revo li a, .cashing li a, .nsa li a, .point-service li a, .profit-info li a {
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+/*-------------------------------------------------------------------------
+  Layout Style
+--------------------------------------------------------------------------*/
+.main {
+    float: right;
+    width: 700px;
+}
+
+.expand {
+    width: 940px;
+    /*For OneColumn*/
+}
+
+.sub {
+    float: left;
+    width: 200px;
+}
+
+.contents {
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.section-like {
+    margin-bottom: 30px;
+}
+
+.main-img-area {
+    margin-bottom: 30px;
+}
+
+.clause {
+    margin-bottom: 30px;
+}
+
+article p, article ul, article ol {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+article * {
+    background-image: url(http://www.aplvs.com/images/transparent.png);
+    /*android bug*/
+}
+
+.sub p {
+    line-height: 1.5;
+}
+
+/* Insurance Service Laout" */
+.container850 {
+    margin: 0 auto;
+    width: 850px;
+}
+
+.width850 {
+    /* Overwrite Style*/
+    width: 850px !important;
+}
+
+/*-------------------------------------------------------------------------
+  Header Style
+--------------------------------------------------------------------------*/
+header {
+    height: 119px;
+    width: 100%;
+    background: transparent url(http://www.aplvs.com/images/hd-bg.png) repeat-x 0 100%;
+}
+
+header > .container {
+    height: 113px;
+    position: relative;
+    width: 940px;
+}
+
+/* Header Logo
+--------------------------------------------------------------------------*/
+/* Official */
+.hd-logo {
+    background: transparent url(http://www.aplvs.com/images/hd-logo.png) no-repeat 0 0;
+    display: block;
+    height: 55px;
+    left: 31px;
+    position: absolute;
+    top: 33px;
+    width: 128px;
+}
+
+/* PersonalLoan */
+.hd-logo.hd-personal {
+    background: transparent url(http://www.aplvs.com/images/hd-logo-loan.png) no-repeat 0 0;
+    height: 48px;
+    left: 31px;
+    top: 33px;
+    width: 217px;
+}
+
+/* Financial */
+.hd-logo.hd-financial {
+    background: transparent url(http://www.aplvs.com/images/hd-logo-financial.png) no-repeat 0 0;
+    height: 48px;
+    left: 31px;
+    top: 33px;
+    width: 198px;
+}
+
+/* Financial en */
+.hd-logo.hd-financial-en {
+    background: transparent url(http://www.aplvs.com/images/hd-logo-financial-en.png) no-repeat 0 0;
+    height: 48px;
+    left: 31px;
+    top: 33px;
+    width: 219px;
+}
+
+/* Header Utility Menu
+--------------------------------------------------------------------------*/
+.hd-utility {
+    position: absolute;
+    right: 0;
+    top: 16px;
+}
+.hd-utility li {
+    float: left;
+}
+.hd-utility li a {
+    background: transparent url(http://www.aplvs.com/images/hd-utility-bg.png) no-repeat 0 0;
+    display: block;
+}
+.hd-utility li .hd-lost {
+    background-position: 0 0;
+    height: 13px;
+    margin-right: 25px;
+    width: 164px;
+}
+.hd-utility li .hd-lost:hover {
+    background-position: 0 -18px;
+}
+.hd-utility li .hd-faq {
+    background-position: 0 -40px;
+    height: 13px;
+    margin-right: 29px;
+    width: 101px;
+}
+.hd-utility li .hd-faq:hover {
+    background-position: 0 -58px;
+}
+.hd-utility li .hd-company {
+    background-position: 0 -80px;
+    height: 19px;
+    margin-top: -3px;
+    width: 126px;
+}
+.hd-utility li .hd-company:hover {
+    background-position: 0 -104px;
+}
+.hd-utility li .hd-en {
+    background: transparent url(http://www.aplvs.com/images/hd-utility-finacial-bg.png) no-repeat 0 -48px;
+    height: 19px;
+    width: 76px;
+}
+.hd-utility li .hd-en:hover {
+    background-position: 0 -72px;
+}
+.hd-utility li .hd-jp {
+    background: transparent url(http://www.aplvs.com/images/hd-utility-finacial-bg.png) no-repeat 0 0;
+    height: 19px;
+    width: 87px;
+}
+.hd-utility li .hd-jp:hover {
+    background-position: 0 -24px;
+}
+.hd-utility li .hd-personal {
+    background: transparent url(http://www.aplvs.com/images/hd-utility-personal-bg.png) no-repeat 0 0;
+    height: 19px;
+    width: 80px;
+}
+.hd-utility li .hd-personal:hover {
+    background-position: 0 -24px;
+}
+
+/* Header Category Label
+--------------------------------------------------------------------------*/
+.hd-catlabel {
+    background: transparent url(http://www.aplvs.com/images/hd-corp-menber.png) repeat-y 0 0;
+    height: 23px;
+    left: 188px;
+    position: absolute;
+    top: 53px;
+    width: 161px;
+}
+
+.hd-catlabel-ins {
+    background: transparent url(http://www.aplvs.com/images/hd-at-web.png) repeat-y 0 0;
+    height: 14px;
+    left: 186px;
+    position: absolute;
+    top: 45px;
+    width: 122px;
+}
+
+/* Header Google SiteSearch
+--------------------------------------------------------------------------*/
+header .site-search {
+    position: absolute;
+    right: 0;
+    top: 51px;
+}
+header .site-search label {
+    margin-right: 0.5em;
+}
+header .site-search label span {
+    display: none;
+}
+
+header .site-search-input {
+    border: solid 1px #CCC;
+    padding: .5em;
+    width: 200px;
+}
+
+header .site-search-submit {
+    background-color: #221815;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 0.5em;
+    width: 50px;
+    -webkit-appearance: none;
+}
+header .site-search-submit:hover {
+    background-color: #B07D00;
+}
+header .site-search-submit.en-title {
+    padding: 0.5em 0.3em;
+}
+
+/*-------------------------------------------------------------------------
+  GlobalNavigation
+--------------------------------------------------------------------------*/
+.global {
+    background: transparent url(http://www.aplvs.com/images/gloval-bg.png) repeat-x 0 0;
+    margin-bottom: 10px;
+}
+.global ul li .gl-subnav {
+    display: none;
+}
+
+.gl-nav {
+    background-color: #221815;
+    height: 40px;
+    margin: 0 -10px;
+    padding: 0 10px;
+    width: 940px;
+}
+.gl-nav li {
+    float: left;
+    margin-right: 5px;
+}
+.gl-nav li:last-child {
+    margin-right: 0;
+}
+.gl-nav li a {
+    display: block;
+    height: 40px;
+}
+
+/* Credit Directory
+--------------------------------------------------------------------------*/
+.gl-individual a {
+    background: transparent url(http://www.aplvs.com/images/gl-credit-bg.png) no-repeat 0 0;
+    width: 180px;
+}
+
+a.gl-credit {
+    background-position: 0px 0;
+}
+a.gl-credit:hover {
+    background-position: 0px -40px;
+}
+a.gl-credit.gl-active {
+    background-position: 0px -80px;
+}
+
+a.gl-campaign {
+    background-position: -185px 0;
+}
+a.gl-campaign:hover {
+    background-position: -185px -40px;
+}
+a.gl-campaign.gl-active {
+    background-position: -185px -80px;
+}
+
+a.gl-support {
+    background-position: -370px 0;
+}
+a.gl-support:hover {
+    background-position: -370px -40px;
+}
+a.gl-support.gl-active {
+    background-position: -370px -80px;
+}
+
+a.gl-loan {
+    background-position: -555px 0;
+}
+a.gl-loan:hover {
+    background-position: -555px -40px;
+}
+a.gl-loan.gl-active {
+    background-position: -555px -80px;
+}
+
+a.gl-business {
+    background-position: -740px 0;
+}
+a.gl-business:hover {
+    background-position: -740px -40px;
+}
+a.gl-business.gl-active {
+    background-position: -740px -80px;
+}
+
+/* RightmostMenu */
+a.gl-business {
+    background-position: -770px 0;
+    margin-left: 30px;
+    width: 170px;
+}
+a.gl-business:hover {
+    background-position: -770px -40px;
+}
+a.gl-business.gl-current {
+    background-position: -770px -80px;
+}
+
+/* Corporate Directory
+--------------------------------------------------------------------------*/
+.gl-corporate a {
+    background: transparent url(http://www.aplvs.com/images/gl-corporate-bg.png) no-repeat 0 0;
+    width: 240px;
+}
+
+a.gl-solution {
+    background-position: 0px 0;
+}
+a.gl-solution:hover {
+    background-position: 0px -40px;
+}
+a.gl-solution.gl-active {
+    background-position: 0px -80px;
+}
+
+a.gl-partner {
+    background-position: -245px 0;
+}
+a.gl-partner:hover {
+    background-position: -245px -40px;
+}
+a.gl-partner.gl-active {
+    background-position: -245px -80px;
+}
+
+a.gl-contact {
+    background-position: -490px 0;
+}
+a.gl-contact:hover {
+    background-position: -490px -40px;
+}
+a.gl-contact.gl-active {
+    background-position: -490px -80px;
+}
+
+a.gl-individual {
+    background-position: -735px 0;
+}
+a.gl-individual:hover {
+    background-position: -735px -40px;
+}
+a.gl-individual.gl-active {
+    background-position: -735px -80px;
+}
+
+/* RightmostMenu */
+a.gl-individual {
+    background-position: -770px 0;
+    margin-left: 30px;
+    width: 170px;
+}
+a.gl-individual:hover {
+    background-position: -770px -40px;
+}
+a.gl-individual.gl-current {
+    background-position: -770px -80px;
+}
+
+/* Insurance Directory
+--------------------------------------------------------------------------*/
+.gl-insurance a {
+    background: transparent url(http://www.aplvs.com/images/gl-insurance-bg.png) no-repeat 0 0;
+    width: 113px;
+}
+
+a.gl-medicine {
+    background-position: 0px 0;
+}
+a.gl-medicine:hover {
+    background-position: 0px -40px;
+}
+a.gl-medicine.gl-active {
+    background-position: 0px -80px;
+}
+
+a.gl-damage {
+    background-position: -118px 0;
+}
+a.gl-damage:hover {
+    background-position: -118px -40px;
+}
+a.gl-damage.gl-active {
+    background-position: -118px -80px;
+}
+
+a.gl-life {
+    background-position: -236px 0;
+}
+a.gl-life:hover {
+    background-position: -236px -40px;
+}
+a.gl-life.gl-active {
+    background-position: -236px -80px;
+}
+
+a.gl-cancer {
+    background-position: -354px 0;
+}
+a.gl-cancer:hover {
+    background-position: -354px -40px;
+}
+a.gl-cancer.gl-active {
+    background-position: -354px -80px;
+}
+
+a.gl-car {
+    background-position: -472px 0;
+}
+a.gl-car:hover {
+    background-position: -472px -40px;
+}
+a.gl-car.gl-active {
+    background-position: -472px -80px;
+}
+
+a.gl-travel {
+    background-position: -590px 0;
+}
+a.gl-travel:hover {
+    background-position: -590px -40px;
+}
+a.gl-travel.gl-active {
+    background-position: -590px -80px;
+}
+
+a.gl-pet {
+    background-position: -708px 0;
+}
+a.gl-pet:hover {
+    background-position: -708px -40px;
+}
+a.gl-pet.gl-active {
+    background-position: -708px -80px;
+}
+
+a.gl-other {
+    background-position: -826px 0;
+}
+a.gl-other:hover {
+    background-position: -826px -40px;
+}
+a.gl-other.gl-active {
+    background-position: -826px -80px;
+}
+
+/* PersonalLoan Site
+--------------------------------------------------------------------------*/
+.gl-personalloan a {
+    background: transparent url(http://www.aplvs.com/images/gl-personalloan-bg.png) no-repeat 0 0;
+    width: 153px;
+}
+
+a.glp-outline {
+    background-position: 0px 0;
+}
+a.glp-outline:hover {
+    background-position: 0px -40px;
+}
+a.glp-outline.gl-active {
+    background-position: 0px -80px;
+}
+
+a.glp-usepay {
+    background-position: -157px 0;
+    width: 152px;
+}
+a.glp-usepay:hover {
+    background-position: -157px -40px;
+}
+a.glp-usepay.gl-active {
+    background-position: -157px -80px;
+}
+
+a.glp-service {
+    background-position: -316px 0;
+}
+a.glp-service:hover {
+    background-position: -316px -40px;
+}
+a.glp-service.gl-active {
+    background-position: -316px -80px;
+}
+
+a.glp-entry {
+    background-position: -471px 0;
+    width: 152px;
+}
+a.glp-entry:hover {
+    background-position: -471px -40px;
+}
+a.glp-entry.gl-active {
+    background-position: -471px -80px;
+}
+
+a.glp-faq {
+    background-position: -632px 0;
+}
+a.glp-faq:hover {
+    background-position: -632px -40px;
+}
+a.glp-faq.gl-active {
+    background-position: -632px -80px;
+}
+
+a.glp-members {
+    background-position: -785px 0;
+    width: 152px;
+}
+a.glp-members:hover {
+    background-position: -785px -40px;
+}
+a.glp-members.gl-active {
+    background-position: -785px -80px;
+}
+
+/* Financial Site
+--------------------------------------------------------------------------*/
+.gl-financial a {
+    background: transparent url(http://www.aplvs.com/images/gl-financial-bg.png) no-repeat 0 0;
+    width: 310px;
+}
+
+a.glf-info {
+    background-position: 0px 0;
+}
+a.glf-info:hover {
+    background-position: 0px -40px;
+}
+a.glf-info.gl-active {
+    background-position: 0px -80px;
+}
+
+a.glf-about {
+    background-position: -315px 0;
+}
+a.glf-about:hover {
+    background-position: -315px -40px;
+}
+a.glf-about.gl-active {
+    background-position: -315px -80px;
+}
+
+a.glf-news {
+    background-position: -630px 0;
+}
+a.glf-news:hover {
+    background-position: -630px -40px;
+}
+a.glf-news.gl-active {
+    background-position: -630px -80px;
+}
+
+/* Financial Site Global Page
+--------------------------------------------------------------------------*/
+.gl-financial-en a {
+    background: transparent url(http://www.aplvs.com/images/gl-financial-en-bg.png) no-repeat 0 0;
+    width: 310px;
+}
+
+a.gl-en-message {
+    background-position: 0px 0;
+}
+a.gl-en-message:hover {
+    background-position: 0px -40px;
+}
+a.gl-en-message.gl-active {
+    background-position: 0px -80px;
+}
+
+a.gl-en-corporate {
+    background-position: -315px 0;
+}
+a.gl-en-corporate:hover {
+    background-position: -315px -40px;
+}
+a.gl-en-corporate.gl-active {
+    background-position: -315px -80px;
+}
+
+a.gl-en-history {
+    background-position: -630px 0;
+}
+a.gl-en-history:hover {
+    background-position: -630px -40px;
+}
+a.gl-en-history.gl-active {
+    background-position: -630px -80px;
+}
+
+.sd-en-menu {
+    display: none;
+}
+
+/* SubNavigation
+--------------------------------------------------------------------------*/
+.gl-subnav {
+    background: transparent url(http://www.aplvs.com/images/gl-subnav-bg.png) repeat-x 0 100%;
+    padding: 10px 0;
+}
+.gl-subnav ul {
+    margin: 0 auto;
+    padding-left: 30px;
+    width: 910px;
+    /*940*/
+}
+.gl-subnav ul li {
+    background: transparent url(http://www.aplvs.com/images/list-icon-subnav.png) no-repeat 100% 50%;
+    display: inline-block;
+    margin-right: 0.5em;
+    padding-right: 0.8em;
+}
+.gl-subnav ul li:last-child {
+    background-image: none;
+    margin-right: 0;
+}
+.gl-subnav ul li a {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 2.5;
+    padding: 5px;
+    text-decoration: none;
+}
+.gl-subnav ul li a:hover, .gl-subnav ul li a.gl-sub-active {
+    background-color: #D8BC73;
+}
+
+/*-------------------------------------------------------------------------
+  TopicPath
+--------------------------------------------------------------------------*/
+.topic-path {
+    margin: 0 auto 10px;
+    width: 940px;
+    list-style: none;
+    background-image: url(http://www.aplvs.com/images/transparent.png);
+}
+.topic-path li {
+    display: inline;
+    line-height: 1.5;
+    font-size: 12px;
+    font-size: 1.2rem;
+}
+.topic-path li a {
+    background: white url(http://www.aplvs.com/images/list-icon-topicpath.png) no-repeat 100% 0.45em;
+    color: #333;
+    padding-right: 1.5em;
+    margin-right: 0.5em;
+    text-decoration: underline;
+}
+.topic-path li a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+/*-------------------------------------------------------------------------
+  Footer Style
+--------------------------------------------------------------------------*/
+footer {
+    border-top: solid 3px #221815;
+    font-size: 12px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Group Footer
+--------------------------------------------------------------------------*/
+.ft-group {
+    background-color: #eee;
+    padding: 20px 0;
+}
+
+.ft-group-inner h2 {
+    margin-bottom: 1em;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+.ft-group-inner dl {
+    border-top: solid 1px #ddd;
+}
+.ft-group-inner dt {
+    float: left;
+    width: 180px;
+    padding-top: 1em;
+    margin: 0 0 1em 0;
+}
+.ft-group-inner dd {
+    float: left;
+    width: 750px;
+}
+.ft-group-inner dd ul {
+    margin-top: 1em;
+}
+.ft-group-inner dd ul li {
+    background: transparent url(http://www.aplvs.com/images/list-icon-angle-small.png) no-repeat 0 3px;
+    float: left;
+    margin: 0 2em 1em 0;
+    padding-left: 0.8em;
+}
+.ft-group-inner dd ul li:last-child {
+    margin-right: 0;
+}
+.ft-group-inner .note {
+    padding-top: 2em;
+    border-top: solid 1px #ddd;
+}
+
+/* Footer Utility
+--------------------------------------------------------------------------*/
+.ft-utility {
+    width: 940px;
+    margin: 20px auto 0;
+}
+.ft-utility li {
+    background: transparent url(http://www.aplvs.com/images/list-icon-angle-small.png) no-repeat 0 0.45em;
+    display: inline;
+    line-height: 1.5;
+    margin-right: 1.8em;
+    padding-left: 0.8em;
+}
+
+/* Copyright
+--------------------------------------------------------------------------*/
+.ft-copy {
+    text-align: right;
+    line-height: 1.8;
+    width: 940px;
+    margin: 20px auto 0;
+}
+.ft-copy p {
+    margin-bottom: 0;
+}
+
+/*-------------------------------------------------------------------------
+  SubStyle
+--------------------------------------------------------------------------*/
+/*  LocalNavigation
+--------------------------------------------------------------------------*/
+.local-nav {
+    border: solid 3px #CCC;
+    margin-bottom: 1.5em;
+}
+.local-nav li {
+    border-bottom: solid 3px #CCC;
+}
+.local-nav li:last-child {
+    border-bottom: none;
+}
+.local-nav li a {
+    background: transparent url(http://www.aplvs.com/images/list-icon-angle-bk.png) no-repeat 0.5em 1.2em;
+    color: #333;
+    display: block;
+    line-height: 1.5;
+    padding: 10px 5px 10px 20px;
+    text-decoration: none;
+}
+.local-nav li a:hover {
+    background-color: #F5EEDC;
+}
+.local-nav li a.lc-active {
+    background-color: #D8BC73;
+}
+.local-nav li ul li {
+    border-bottom: none;
+    border-top: dotted 1px #999;
+}
+.local-nav li ul li a {
+    background-position: 1.5em 1.2em;
+    padding-left: 35px;
+}
+
+/*  LoginBox for Official Site
+--------------------------------------------------------------------------*/
+.login-box {
+    border: solid 1px #d4d4d4;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    padding: 10px 10px 5px;
+}
+.login-box h2 {
+    background: transparent url(http://www.aplvs.com/images/login-title-bg.png) no-repeat 0 0;
+    height: 38px;
+    margin: 0 auto 0.5em;
+    width: 176px;
+}
+.login-box .btn, .login-box .btn-lftxt {
+    margin-bottom: 0.5em;
+}
+.login-box .btn-login-gold {
+    margin-bottom: 0.3em;
+}
+.login-box .btn-login-ared {
+    margin-bottom: 0.3em;
+}
+.login-box p {
+    font-size: 11px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.top-separator {
+    border-top: solid 1px #d4d4d4;
+    padding-top: 0.5em;
+}
+
+/*  Aside(Banner and Utility) for Official Site
+--------------------------------------------------------------------------*/
+/* Banner Area */
+.sub-banner a {
+    display: block;
+    margin-bottom: 1em;
+    width: 200px;
+}
+.sub-banner a:hover {
+    opacity: 0.8;
+}
+
+.sub-banner2 a {
+    display: block;
+    margin-bottom: 1em;
+    width: 200px;
+}
+.sub-banner2 a:hover {
+    opacity: 0.8;
+}
+
+.sub-banner3 a {
+    display: block;
+    width: 200px;
+}
+.sub-banner3 a:hover {
+    opacity: 0.8;
+}
+
+.sub-tpoint-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-tpoint-bg.png) no-repeat 0 0;
+    height: 86px;
+}
+
+.sub-mycar-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-mycar-bg.jpg) no-repeat 0 0;
+    height: 158px;
+}
+
+/* cashless */
+.sub-cashless-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-cashless-bn.jpg) no-repeat 0 0;
+    width:200px;
+    height: 88px;
+}
+
+/* Revo */
+.sub-revo-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-revo-bn.png) no-repeat 0 0;
+    width:200px;
+    height: 60px;
+}
+
+/* Rebo_YouTube */
+.sub-revo-yt-bn {
+    background: transparent url(http://www.aplvs.com/images/revo-yt.png) no-repeat 0 0;
+    width:200px;
+    height: 114
+}
+
+/* Thanks Program */
+.sub-thanks-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-thanks-bg.jpg) no-repeat 0 0;
+    width:200px;
+    height: 88px;
+}
+
+.sub-thanks-bn a {
+    display: block;
+    width: 200px;
+}
+.sub-thanks-bn a:hover {
+    background-position:right top;
+    text-indent:-9999px;
+}
+
+/* Cashing */
+.sub-cashing-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-cashing-bg.png) no-repeat 0 0;
+    width:200px;
+    height: 86px;
+}
+
+.sub-cashing-bn a {
+    display: block;
+    width: 200px;
+}
+.sub-cashing-bn a:hover {
+    background-position:right top;
+    text-indent:-9999px;
+}
+
+/* Guide */
+
+.sub-carddetail-bn {
+    background: transparent url(http://www.aplvs.com/images/detail_btn.gif) no-repeat 0 0;
+    width:200px;
+    height: 86px;
+}
+
+.sub-guide-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-guide-bg.jpg) no-repeat 0 0;
+    width:200px;
+    height: 88px;
+}
+
+.sub-guide-bn a {
+    display: block;
+    width: 200px;
+}
+.sub-guide-bn a:hover {
+    background-position:right top;
+    text-indent:-9999px;
+}
+
+/* 3D secure */
+.sub-3dsecure-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-3dsecure-bg.jpg) no-repeat 0 0;
+    width:200px;
+    height: 86px;
+}
+
+.sub-3dsecure-bn a {
+    display: block;
+    width: 200px;
+}
+.sub-3dsecure-bn a:hover {
+    background-position:right top;
+    text-indent:-9999px;
+}
+
+/* anshin */
+.sub-anshin-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-anshin-bg.jpg) no-repeat 0 0;
+    width:200px;
+    height: 86px;
+}
+
+.sub-anshin-bn a {
+    display: block;
+    width: 200px;
+}
+.sub-anshin-bn a:hover {
+    background-position:right top;
+    text-indent:-9999px;
+}
+
+/* Apple Pay */
+.sub-apple-pay-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-apple-pay-bg.jpg) no-repeat 0 0;
+    width:200px;
+    height: 80px;
+}
+
+/* NSA */
+.sub-nsa-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-nsa_regi-bg.gif) no-repeat 0 0;
+    width:200px;
+    height: 85px;
+}
+
+/* 公式アプリ */
+.sub-app-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-app_regi-bg.jpg) no-repeat 0 0;
+    width:200px;
+    height: 88px;
+}
+
+/* GAICA */
+.sub-gaica-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-gaica-bg.gif) no-repeat 0 0;
+    width:200px;
+    height: 51px;
+}
+
+.sub-atmdemo-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-atmdemo-bg.png) no-repeat 0 0;
+    height: 53px;
+}
+
+.sub-simulation-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-simulation-bg.png) no-repeat 0 0;
+    height: 86px;
+}
+
+.sub-info-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-info-bg.png) no-repeat 0 0;
+    height: 86px;
+}
+
+.sub-info_home-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-info_home-bg.png) no-repeat 0 0;
+    height: 95px;
+}
+
+.sub-fukkou-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-fukkou-bg.gif) no-repeat 0 0;
+    height: 86px;
+}
+
+.sub-faq-faq_myhome-bn {
+    background: transparent url(http://www.aplvs.com/images/faq_myhome_plan.gif) no-repeat 0 0;
+    height: 48px;
+}
+
+.sub-faq-bridgeloan-bn {
+    background: transparent url(http://www.aplvs.com/images/faq_bridge_loan.gif) no-repeat 0 0;
+    height: 48px;
+}
+
+
+.sub-avatar-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-avatar-bg.png) no-repeat 0 0;
+    height: 86px;
+}
+
+.sub-cab-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-biz-bnr-syukin.png) no-repeat 0 0;
+    height: 60px;
+}
+
+.sub-caranav-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-biz-bnr-carnavi.png) no-repeat 0 0;
+    height: 60px;
+}
+
+.sub-wechatp-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-biz-bnr-wechatpay.png) no-repeat 0 0;
+    height: 86px;
+}
+
+.sub-ins-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-biz-bnr-insurance.png) no-repeat 0 0;
+    height: 86px;
+}
+
+.sub-appm-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-appm-bg.png) no-repeat 0 0;
+    height: 74px;
+}
+
+.sub-appm-bn2 {
+    background-image: none;
+    height: 0px;
+}
+
+.sub-appm-bn3 {
+    background: transparent url(http://www.aplvs.com/images/sub-appm-bg.png) no-repeat 0 0;
+    margin-top: 57px;
+    height: 74px;
+}
+
+/**** Banner Area(loan:tsunagi) *****/
+.sub-fukkou-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-fukkou-bg.gif) no-repeat 0 0;
+    height: 86px;
+}
+
+/**** Banner Area(loan:tsunagi)
+.sub-rule-bn {
+  background: transparent url(../images/sub-rule-bg.jpg) no-repeat 0 0;
+  height: 86px;
+}
+
+.sub-finance_contact-bn {
+  background: transparent url(../images/sub-financ_contact-bg.gif) no-repeat 0 0;
+  height: 86px;
+}
+
+.sub-faq_bridgeloan-bn {
+  background: transparent url(../images/sub-faq_bridgeloan-bg.gif) no-repeat 0 0;
+  height: 86px;
+}
+
+.sub-applicationflow-bn {
+  background: transparent url(../images/sub-applicationflow-bg.gif) no-repeat 0 0;
+  height: 86px;
+}
+
+*************************************************/
+
+
+/* Utility Area */
+.sub-utility {
+    border-bottom: dotted 1px #333;
+    margin-bottom: 1em;
+}
+.sub-utility a {
+    background: transparent url(http://www.aplvs.com/images/sub-aside-bg3.png) no-repeat 0 0;
+    border-top: dotted 1px #333;
+    display: block;
+    height: 48px;
+    width: 200px;
+}
+
+/* Simulation Area */
+.sub-Simulation {
+    margin-bottom: 1em;
+}
+.sub-Simulation a {
+    background: transparent url(http://www.aplvs.com/images/sub-aside-bg3.png) no-repeat 0 0;
+    border-top: dotted 1px #333;
+    display: block;
+    height: 48px;
+    width: 200px;
+}
+
+a.sub-campaign {
+    background-position: 0 0px;
+}
+a.sub-campaign:hover {
+    background-position: -200px 0px;
+}
+
+a.sub-tel-list {
+    background-position: 0 -48px;
+}
+a.sub-tel-list:hover {
+    background-position: -200px -48px;
+}
+a.sub-feedback {
+    height: 60px;
+    background-position: 0 -312px;
+}
+a.sub-feedback:hover {
+    background-position: -200px -312px;
+}
+a.sub-shinsei {
+    background-position: 0 -96px;
+}
+a.sub-shinsei:hover {
+    background-position: -200px -96px;
+}
+
+a.sub-biz {
+    background-position: 0 -144px;
+}
+a.sub-biz:hover {
+    background-position: -200px -144px;
+}
+
+a.sub-mail-list {
+    background-position: 0 -372px;
+}
+a.sub-mail-list:hover {
+    background-position: -200px -372px;
+}
+/* sub-cd-atm */
+a.sub-cd-atm {
+    background-position: 0 -192px;
+}
+a.sub-cd-atm:hover {
+    background-position: -200px -192px;
+}
+
+a.sub-cd-atm {
+    height: 60px;
+    background-position: 0 -192px;
+}
+a.sub-cd-atm:hover {
+    background-position: -200px -192px;
+}
+
+/* sub-cd-count */
+a.sub-cd-count {
+    background-position: 0 -252px;
+}
+a.sub-cd-count:hover {
+    background-position: -200px -252px;
+}
+
+a.sub-cd-count {
+    height: 60px;
+    background-position: 0 -252px;
+}
+a.sub-cd-count:hover {
+    background-position: -200px -252px;
+}
+
+/* Top  insurance */
+.sub-insurance-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-aside-top-insurance.png) no-repeat 0 0;
+    width:200px;
+    height: 96px;
+    display: block;
+    text-indent:-9999px;
+    margin-bottom:0.5em;
+    border-bottom: dotted 1px #333;
+}
+.sub-insurance-bn a {
+    display: block;
+    width: 200px;
+}
+.sub-insurance-bn a:hover {
+    background-position:right top;
+    text-indent:-9999px;
+}
+
+.sub-syukin-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-aside-top-syukin.png) no-repeat 0 0;
+    width:200px;
+    height: 90px;
+    display: block;
+    text-indent:-9999px;
+}
+
+.sub-bankit-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-bankit-bg.jpg) no-repeat 0 0;
+    width:200px;
+    height: 88px;
+    display: block;
+    text-indent:-9999px;
+}
+.sub-syukin-bn a {
+    display: block;
+    width: 200px;
+}
+.sub-syukin-bn a:hover {
+    background-position:right top;
+    text-indent:-9999px;
+}
+
+.sub-wechatpay-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-wechatpay-bg.png) no-repeat 0 0;
+    width:200px;
+    height: 106px;
+    display: block;
+    text-indent:-9999px;
+    margin-bottom:0.5em;
+    border-bottom: dotted 1px #333;
+}
+.sub-wechatpay-bn a {
+    display: block;
+    width: 200px;
+}
+
+/* Top detal image */
+.sub-dental-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-biz-bnr-dental.jpg) no-repeat 0 0;
+    width:200px;
+    height: 70px;
+    display: block;
+    text-indent:-9999px;
+    margin-bottom:1em;
+    border-bottom: dotted 1px #333;
+}
+.sub-dental-bn a {
+    display: block;
+    width: 200px;
+}
+
+/* Top enquete image */
+.sub-enquete-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-enquete-bn.jpg) no-repeat 0 0;
+    width:200px;
+    height: 80px;
+    display: block;
+    text-indent:-9999px;
+    margin-bottom:1em;
+    border-bottom: dotted 1px #333;
+}
+.sub-enquete-bn a {
+    display: block;
+    width: 200px;
+}
+
+
+.sub-sim-kantan-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-sim_kantan-bg.png) no-repeat 0 0;
+    width:200px;
+    height: 80px;
+    display: block;
+    text-indent:-9999px;
+    margin-bottom:0.5em;
+    border-bottom: dotted 1px #333;
+}
+.sub-sim-kantan-bn a {
+    display: block;
+    width: 200px;
+}
+
+.sub-biz-contact-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-biz-contact-bg.png) no-repeat 0 0;
+    　width:200px;
+    height: 80px;
+    display: block;
+    text-indent:-9999px;
+    margin-bottom:0.5em;
+    border-bottom: dotted 1px #333;
+}
+.sub-biz-contact-bn:hover {
+    background: transparent url(http://www.aplvs.com/images/sub-biz-contact-bg2.png) no-repeat 0 0;
+}
+.sub-biz-contact-bn a {
+    display: block;
+    width: 200px;
+}
+
+
+/* Top  privacy Mark image */
+.sub-privacy-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-aside-top-privacy.png) no-repeat 0 0;
+    width:200px;
+    height: 93px;
+    display: block;
+    text-indent:-9999px;
+    margin-bottom:0.5em;
+    border-bottom: dotted 1px #333;
+}
+.sub-privacy-bn a {
+    display: block;
+    width: 200px;
+}
+.sub-privacy-bn a:hover {
+    background-position:right top;
+    text-indent:-9999px;
+}
+
+/* Top JCA Mark image */
+.sub-jca-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-aside-top-jca.jpg) no-repeat 0 0;
+    width:200px;
+    height: 80px;
+    display: block;
+    text-indent:-9999px;
+    margin-bottom:1em;
+    border-bottom: dotted 1px #333;
+}
+.sub-jca-bn a {
+    display: block;
+    width: 200px;
+}
+
+/* Top Address image */
+.sub-adress-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-aside-top-address.png) no-repeat 0 0;
+    width:200px;
+    height: 96px;
+    display: block;
+    text-indent:-9999px;
+    margin-bottom:1em;
+    border-bottom: dotted 1px #333;
+}
+.sub-adress-bn a {
+    display: block;
+    width: 200px;
+}
+
+/* Top  sub-isms image */
+.sub-isms-bn {
+    width:200px;
+    height: 131px;
+    display: block;
+    background: transparent url(http://www.aplvs.com/images/sub-aside-isms.png) no-repeat 0 0;
+    border-bottom: dotted 1px #333;
+    text-indent:-9999px;
+}
+.sub-isms-bn a {
+    display: block;
+    width: 200px;
+}
+.sub-isms-bn a:hover {
+    background-position:right top;
+    text-indent:-9999px;
+}
+
+/* Top  QR Code image */
+.sub-qr li {
+    width: 200px;
+    height: 75px;
+    display: block;
+    background: transparent url(http://www.aplvs.com/images/sub-aside-top-qr.png) no-repeat 0 0;
+    border-bottom: dotted 1px #333;
+}
+
+/* Top  Twitter FaceBook Button */
+.tw-fb-btn li a {
+    display: block;
+}
+
+.tw {
+    background: transparent url(../images/sub-aside-top.png) no-repeat 0 0;
+    width: 200px;
+    height: 46px;
+    /*  margin-top: -10px; */
+}
+.tw:hover {
+    background-position: -200px 0;
+}
+
+.fb {
+    background: transparent url(../images/sub-aside-top.png) no-repeat 0 -46px;
+    width: 200px;
+    height: 33px;
+}
+.fb:hover {
+    background-position: -200px -46px;
+}
+
+.fb-like {
+    width: 200px;
+    text-align: center;
+    margin: -1em 0 0.5em;
+}
+
+.line {
+    background: transparent url(../images/sub-aside-top.png) no-repeat 0 -79px;
+    width: 200px;
+    height: 46px;
+    margin: 0 0 0.5em;
+}
+.line:hover {
+    background-position: -200px -79px;
+}
+
+.ytb {
+    background: transparent url(../images/sub-aside-top.png) no-repeat 0 -125px;
+    width: 200px;
+    height: 46px;
+    margin: 0 0 0.5em;
+}
+.ytb:hover {
+    background-position: -200px -125px;
+}
+
+/*  Aside(Banner and Utility)　For Personal Loan Site
+--------------------------------------------------------------------------*/
+/* Banner Area */
+.sub-banner-personal {
+    margin-bottom: 1em;
+}
+.sub-banner-personal a {
+    display: block;
+    width: 200px;
+    background-image: url(http://www.aplvs.com/images/sub-bnr-personal.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.sub-avatar {
+    background-position: 0 0;
+    height: 86px;
+}
+.sub-avatar:hover {
+    background-position: -200px 0;
+}
+
+.sub-agree {
+    background-position: 0 -96px;
+    height: 109px;
+}
+.sub-agree:hover {
+    background-position: -200px -96px;
+}
+
+.sub-entry {
+    background-position: 0 -215px;
+    height: 50px;
+}
+.sub-entry:hover {
+    background-position: -200px -215px;
+}
+
+/*  Aside(Banner and Utility) for Financial Site
+--------------------------------------------------------------------------*/
+/* Banner Area */
+.sub-banner-financial a {
+    display: block;
+    margin-bottom: 1em;
+    width: 200px;
+}
+.sub-banner-financial a:hover {
+    opacity: 0.8;
+}
+
+.sub-group-bn {
+    background: transparent url(http://www.aplvs.com/images/sub-bnr-financial.png) no-repeat 0 0;
+    height: 70px;
+}
+
+/*-------------------------------------------------------------------------
+  Title Style
+--------------------------------------------------------------------------*/
+.title-lv1 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    border-bottom: solid 3px #333;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    padding-bottom: 0.2em;
+}
+
+.title-lv2, .title-sd-btn {
+    font-size: 22px;
+    font-size: 2.2rem;
+    border-left: solid 6px #55936B;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    padding: 3px 0 0 10px;
+}
+
+.title-lv3 {
+    font-size: 20px;
+    font-size: 2rem;
+    border-left: solid 3px #78B28C;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    padding: 2px 0 0 12px;
+}
+
+.title-lv3-2 {
+    font-size: 20px;
+    font-size: 2rem;
+    border-left: solid 3px #78B28C;
+    line-height: 1.3;
+    margin-bottom: 5px;
+    padding: 2px 0 0 12px;
+}
+
+.title-lv4 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.title-lv4-2 {
+    font-size: 16px;
+    font-size: 1.8rem;
+    border-left: solid 2.5px #55936B;
+    margin-bottom: 20px;
+    padding: 3px 0 0 10px;
+}
+
+.title-lv5 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+}
+
+.title-lv6 {
+    font-size: 14px;
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+.rep-title {
+    font-size: 20px;
+    font-size: 2rem;
+    border-bottom: solid 2px #333;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.mb-20 .btn, .mb-20 .btn-lftxt {
+    margin-bottom: 0;
+}
+
+/* h1 + lead
+--------------------------------------------------------------------------*/
+.lead {
+    margin-bottom: 20px;
+}
+.lead p {
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+}
+
+/* title + right icon
+--------------------------------------------------------------------------*/
+.rigico i {
+    float: right;
+}
+
+/*-------------------------------------------------------------------------
+  ListStyle
+--------------------------------------------------------------------------*/
+/* BasicStyle
+--------------------------------------------------------------------------*/
+.basic {
+    list-style: disc;
+}
+.basic li {
+    margin: 0 0 0.5em 1.5em;
+}
+.basic li ul li {
+    list-style: circle;
+}
+.basic li ul li:last-child {
+    margin-bottom: 0;
+}
+
+.basic .note li {
+    list-style-type: none;
+}
+
+/* NumberList
+--------------------------------------------------------------------------*/
+.num-basic {
+    margin-left: 0.5em;
+}
+.num-basic li {
+    margin: 0 0 0.5em 1.6em;
+}
+.num-basic li:last-child {
+    margin-bottom: 0;
+}
+
+/* CircledNumberList
+--------------------------------------------------------------------------*/
+.num-circle {
+    list-style: none;
+}
+.num-circle li {
+    text-indent: -1em;
+    margin: 0 0 0.5em 1.5em;
+}
+.num-circle li span {
+    margin: 0 0.5em 0 -0.5em;
+}
+.num-circle li:last-child {
+    margin-bottom: 0;
+}
+
+/* ParenthesisNumberList
+--------------------------------------------------------------------------*/
+.num-pare {
+    list-style: none;
+}
+.num-pare li {
+    text-indent: -1em;
+    margin: 0 0 0.5em 2em;
+}
+.num-pare li span {
+    margin: 0 0.5em 0 -1em;
+}
+.num-pare li .num-basic {
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+}
+.num-pare li .num-basic li {
+    text-indent: 0;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+/* ReferenceMark and NumberList
+--------------------------------------------------------------------------*/
+.num-note {
+    list-style: none;
+}
+.num-note li {
+    text-indent: -1em;
+    margin: 0 0 0.5em 2em;
+}
+.num-note li span {
+    margin: 0 0.4em 0 -1em;
+}
+.num-note li:last-child {
+    margin-bottom: 0;
+}
+
+/* ReferenceMark
+--------------------------------------------------------------------------*/
+.note li {
+    text-indent: -1.5em;
+    margin: 0 0 0.5em 1.5em;
+}
+.note li span {
+    margin: 0 0.5em 0 0;
+}
+.note li:last-child {
+    margin-bottom: 0;
+}
+
+/* note-01
+--------------------------------------------------------------------------*/
+.note-01 {
+    text-indent: -0.8em;
+    margin: 0 0 0.7em 0.8em;
+}
+.note-01 span {
+    margin: 0 0.5em 0 -0.5em;
+}
+.note-01 :last-child {
+    margin-bottom: 0;
+}
+
+/*-------------------------------------------------------------------------
+  IconListStyle
+--------------------------------------------------------------------------*/
+/* ListStyle
+--------------------------------------------------------------------------*/
+/* Circle */
+.list-icon-circle li {
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    background: transparent url(http://www.aplvs.com/images/list-icon-circle.png) no-repeat 0 0.3em;
+}
+
+/* Circle small */
+.list-icon-circle_s li {
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    background: transparent url(http://www.aplvs.com/images/list-icon-circle_s.png) no-repeat 0 0.3em;
+}
+
+/* Green Circle */
+.list-icon-grn li {
+    margin-bottom: 0.5em;
+    padding-left: 0.8em;
+    background: transparent url(http://www.aplvs.com/images/list-icon-grn.png) no-repeat 0 0.4em;
+}
+
+/* Angle */
+.list-icon-angle li {
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    background: transparent url(../images/icon-arrow-bk.png) no-repeat 0 0.4em;
+}
+
+/* Horizontal */
+.horizontal li, .horizontal-wide li {
+    float: left;
+    margin-right: 1em;
+}
+.horizontal li.last-child, .horizontal-wide li.last-child {
+    margin-right: 0;
+}
+
+/* Horizontal-WideRange */
+.horizontal-wide li {
+    margin-right: 2em;
+}
+
+/* Dot-Line */
+.dotline-list li {
+    border-bottom: 1px dotted #333;
+    padding-bottom: 0.5em;
+}
+.dotline-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* AnchorLink*/
+.anchor-link {
+    background-color: #EEEBE2;
+    padding: 1em 1em 0;
+    overflow: hidden;
+    margin-bottom: 1em;
+    margin-top: 6em;
+}
+
+.list-icon-down-arrow {
+    line-height: 2.5;
+}
+.list-icon-down-arrow a {
+    background: transparent url(http://www.aplvs.com/images/list-icon-down-arrow.png) no-repeat 0 50%;
+    float: left;
+    margin-right: 2em;
+    padding-left: 1.5em;
+}
+
+.icon-angle-dfn dt {
+    background: transparent url(../images/icon-arrow-bk.png) no-repeat 0 0.4em;
+    padding-left: 1em;
+    margin: 0 2em 1em 0;
+    float: left;
+}
+.icon-angle-dfn dd {
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.box .icon-angle-dfn {
+    margin-bottom: 0;
+}
+
+/* Image Icon
+--------------------------------------------------------------------------*/
+/* Angle */
+.icon-angle {
+    background: transparent url(../images/icon-arrow-bk.png) no-repeat 0 45%;
+    padding-left: 0.8em;
+    vertical-align: middle;
+}
+
+/* PDF icon */
+.icon-pdf-small {
+    margin: -2px 0 0 5px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-pdf-small.png) no-repeat 0 0;
+}
+
+/* External icon Black*/
+.icon-external, .icon-external-gld, .icon-external-wht {
+    margin: -2px 0 0 5px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-external.png) no-repeat 0 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .icon-external, .icon-external-gld, .icon-external-wht {
+        background: transparent url(http://www.aplvs.com/images/icon-external_x2.png) no-repeat;
+        background-position: 0 0;
+        background-size: 14px 52px;
+    }
+}
+
+/* External icon Gold*/
+.icon-external-gld {
+    background-position: 0 -19px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .icon-external-gld {
+        background: transparent url(http://www.aplvs.com/images/icon-external_x2.png) no-repeat;
+        background-position: 0 -19px;
+        background-size: 14px 52px;
+    }
+}
+
+/* External icon white*/
+.icon-external-wht {
+    background-position: 0 -38px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .icon-external-wht {
+        background: transparent url(http://www.aplvs.com/images/icon-external_x2.png) no-repeat;
+        background-position: 0 -38px;
+        background-size: 14px 52px;
+    }
+}
+
+/* Freedial icon */
+.icon-freedial {
+    margin: 0 5px -1px 0;
+    width: 31px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: baseline;
+    background: transparent url(http://www.aplvs.com/images/icon-freedial.png) no-repeat 0 0;
+}
+
+/* Navidial icon */
+.icon-navidial {
+    margin: 0 5px 1px 0;
+    width: 34px;
+    height: 26px;
+    display: inline-block;
+    vertical-align: bottom;
+    background: transparent url(http://www.aplvs.com/images/icon-navidial.png) no-repeat 0 0;
+}
+
+/* T-Point icon */
+.icon-tpoint {
+    margin: -3px 5px 0 0;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-tpoint.png) no-repeat 0 0;
+}
+
+/* T-Point Large icon */
+.icon-tpoint-l {
+    margin: -5px 0.5em 0 0;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-tpoint-large.png) no-repeat 0 0;
+}
+
+/* Nocharge icon */
+.icon-nocharge {
+    margin: -3px 0 0 8px;
+    width: 34px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-nocharge.png) no-repeat 0 0;
+}
+
+.icon-new {
+    margin: -3px 0 0 0.5em;
+    width: 38px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-new.png) no-repeat 0 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .icon-new {
+        background: transparent url(http://www.aplvs.com/images/icon-new_x2.png) no-repeat;
+        background-position: 0 0;
+        background-size: 38px 14px;
+    }
+}
+
+.icon-new-title {
+    margin: -5px 0.5em 0 0;
+    width: 38px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-new.png) no-repeat 0 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .icon-new-title {
+        background: transparent url(http://www.aplvs.com/images/icon-new_x2.png) no-repeat;
+        background-position: 0 0;
+        background-size: 38px 14px;
+    }
+}
+
+.icon-news {
+    margin: -3px 0.5em 0 0;
+    width: 74px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-news-service.png) no-repeat 0 0;
+}
+
+.icon-service {
+    margin: -3px 0.5em 0 0;
+    width: 74px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-news-service.png) no-repeat 0 -19px;
+}
+
+.icon-gold {
+    margin: -3px 0 0 0.5em;
+    width: 31px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-service.png) no-repeat 0 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .icon-gold {
+        background: transparent url(http://www.aplvs.com/images/icon-service_x2.png) no-repeat;
+        background-position: 0 0;
+        background-size: 78px 33px;
+    }
+}
+
+.icon-portion {
+    margin: -3px 0 0 0.5em;
+    width: 78px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-service.png) no-repeat 0 -19px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .icon-portion {
+        background: transparent url(http://www.aplvs.com/images/icon-service_x2.png) no-repeat;
+        background-position: 0 -19px;
+        background-size: 78px 33px;
+    }
+}
+
+.icon-entry {
+    margin: -3px 0 0 0.5em;
+    width: 69px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-cp-entry.png) no-repeat 0 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .icon-entry {
+        background: transparent url(http://www.aplvs.com/images/icon-cp-entry_x2.png) no-repeat;
+        background-position: 0 0;
+        background-size: 69px 33px;
+    }
+}
+
+.icon-noentry {
+    margin: -3px 0 0 0.5em;
+    width: 69px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-cp-entry.png) no-repeat 0 -19px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .icon-noentry {
+        background: transparent url(http://www.aplvs.com/images/icon-cp-entry_x2.png) no-repeat;
+        background-position: 0 -19px;
+        background-size: 69px 33px;
+    }
+}
+
+.icon-chanceup {
+    margin: -3px 0 0 0.5em;
+    width: 90px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-cp-chanceup.png) no-repeat 0 0;
+}
+
+.icon-exclamation {
+    margin: -3px 0.5em 0 0;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-exclamation.png) no-repeat 0 0;
+}
+
+.icon-glass {
+    margin: -3px 0 0 0.5em;
+    width: 10px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon_glass.png) no-repeat 0 0;
+}
+
+.icon-pc-mob {
+    margin-top: 0;
+    width: 74px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-pc-mob.png) no-repeat 0 0;
+}
+
+.icon-pc-mob02 {
+    margin-top: 0;
+    width: 62px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-pc-mob02.png) no-repeat 0 0;
+}
+
+.icon-pc {
+    margin-top: 0;
+    width: 74px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-pc.png) no-repeat 0 0;
+}
+
+.icon-pc02 {
+    margin-top: 0;
+    width: 44px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-pc02.png) no-repeat 0 0;
+}
+
+.icon-no1 {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no1.png) no-repeat 0 0;
+}
+
+.icon-no2 {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no2.png) no-repeat 0 0;
+}
+
+.icon-no3 {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no3.png) no-repeat 0 0;
+}
+
+.icon-no4 {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no4.png) no-repeat 0 0;
+}
+
+.icon-no5 {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no5.png) no-repeat 0 0;
+}
+
+.icon-no6 {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no6.png) no-repeat 0 0;
+}
+
+.icon-no7 {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no7.png) no-repeat 0 0;
+}
+
+.icon-no8 {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no8.png) no-repeat 0 0;
+}
+
+.icon-no1sh {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no1sh.png) no-repeat 0 0;
+}
+
+.icon-no2sh {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no2sh.png) no-repeat 0 0;
+}
+
+.icon-no3sh {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no3sh.png) no-repeat 0 0;
+}
+
+.icon-no4sh {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no4sh.png) no-repeat 0 0;
+}
+
+.icon-no5sh {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no5sh.png) no-repeat 0 0;
+}
+
+.icon-no6sh {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no6sh.png) no-repeat 0 0;
+}
+
+.icon-no7sh {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no7sh.png) no-repeat 0 0;
+}
+
+.icon-no8sh {
+    margin-top: 0;
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-no8sh.png) no-repeat 0 0;
+}
+
+/* Card Bland Icon */
+.icon-jcb,
+.icon-visa,
+.icon-master {
+    /* margin-left: -1em; */
+    width: 75px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon_card_logo.png) no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .icon-jcb,
+    .icon-visa,
+    .icon-master {
+        background: transparent url(http://www.aplvs.com/images/icon_card_logo_x2.png) no-repeat;
+        background-size: 75px 144px;
+    }
+}
+
+.icon-jcb {
+    background-position: 0 0;
+}
+
+.icon-visa {
+    background-position: 0 -48px;
+}
+
+.icon-master {
+    background-position: 0 -96px;
+}
+
+/* Addition Card Icon */
+.icon-family,
+.icon-etc,
+.icon-quicpay {
+    margin-right: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-card-detail.png) no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .icon-family,
+    .icon-etc,
+    .icon-quicpay {
+        background: transparent url(http://www.aplvs.com/images/icon-card-detail_x2.png) no-repeat;
+        background-size: 78px 76px;
+    }
+}
+
+.icon-family {
+    width: 46px;
+    height: 22px;
+    background-position: 0 0;
+}
+
+.icon-etc {
+    width: 46px;
+    height: 22px;
+    background-position: 0 -27px;
+}
+
+.icon-quicpay {
+    width: 78px;
+    height: 22px;
+    background-position: 0 -54px;
+}
+
+.icon-quicpay {
+    width: 78px;
+    height: 22px;
+    background-position: 0 -54px;
+}
+
+.icon-amway {
+    margin: -3px 10px 0 0;
+    width: 170px;
+    height: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent url(http://www.aplvs.com/images/icon-amway.png) no-repeat 0 0;
+}
+
+.middle{
+    vertical-align:middle;
+}
+/*-------------------------------------------------------------------------
+  BoxStyle
+--------------------------------------------------------------------------*/
+.box {
+    padding: 1em 1em 0;
+    margin-bottom: 2em;
+}
+.box.bd1 {
+    border: solid 2px #539469;
+}
+.box.bd2 {
+    border: solid 2px  #af7d00;
+}
+.box.bd3 {
+    border: solid 2px #ff0000;
+}
+.box.bd4 {
+    border: solid 1px #CCC;
+}
+.box.bd5 {
+    border: solid 2px #CCC;
+}
+.box.bd6 {
+    border: dashed 1px #0095ec;
+    background-color: #f4fbff;
+}
+
+.box.bg1 {
+    background-color: #fff9d1;
+    overflow: hidden;
+}
+.box.bg2 {
+    background-color: #fff2f2;
+    overflow: hidden;
+}
+.box.bg3 {
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+.box.bg4 {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.box.bg5 {
+    background-color: #cccccc;
+    overflow: hidden;
+}
+
+.box p, .box ul, .box ol, .box dl {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+.box h3, .box h4, .box h5, .box h6 {
+    margin-bottom: 1em;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+/* Layout in Box
+-------------------------------------- */
+/* Definition List Float */
+.float-dfn {
+    display: table;
+}
+.float-dfn dt {
+    display: table-cell;
+    vertical-align: middle;
+}
+.float-dfn dt img {
+    margin-top: -1em;
+}
+.float-dfn dd {
+    float: left;
+    overflow: hidden;
+    margin-left: 2em;
+}
+
+.box .float-dfn {
+    margin-bottom: 0;
+}
+
+/* External Site Page Box */
+.refreshbox {
+    margin: 40px;
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------------
+  ColumnStyles
+--------------------------------------------------------------------------*/
+.col-2 {
+    width: 100px;
+}
+
+.col-3 {
+    width: 160px;
+}
+.col-3a {
+    width: 170px;
+}
+
+.col-4 {
+    width: 220px;
+}
+
+.col-5 {
+    width: 280px;
+}
+.col-5a {
+    width: 320px;
+}
+.col-6 {
+    width: 340px;
+}
+
+.col-7 {
+    width: 400px;
+}
+
+.col-8 {
+    width: 460px;
+}
+
+.col-9 {
+    width: 520px;
+}
+
+.col-10 {
+    width: 580px;
+}
+
+.col-11 {
+    width: 640px;
+}
+
+.col-12 {
+    width: 700px;
+}
+
+.col-13 {
+    width: 760px;
+}
+
+.col-14 {
+    width: 820px;
+}
+
+.col-15 {
+    width: 880px;
+}
+
+.col-16 {
+    width: 940px;
+}
+
+.row {
+    margin-bottom: 2em;
+}
+.row > div {
+    float: left;
+    margin-right: 20px;
+}
+.row > div:last-child {
+    margin-right: 0;
+}
+.row02 > div {
+    float: left;
+    margin-right: 8px;
+}
+
+/*均等幅　3カラム用*/
+.col-5_5 {
+    width: 300px;
+}
+
+/*1対2幅　2カラム用*/
+.col-10_5 {
+    width: 620px;
+}
+
+/*BOX内　均等レイアウト*/
+.col-box_half {
+    width: 325px;
+}
+
+/*-------------------------------------------------------------------------
+  table Styles
+--------------------------------------------------------------------------*/
+/* Base Style
+--------------------------------------------------------------------------*/
+table {
+    margin-bottom: 1em;
+}
+table th {
+    text-align: left;
+    line-height: 1.3;
+}
+table caption {
+    text-align: left;
+}
+
+.tbl-base {
+    border: solid 1px #bbb;
+    line-height: 1.8;
+    width: 100%;
+}
+.tbl-base th {
+    font-weight: bold;
+}
+.tbl-base th {
+    background-color: #eeebe2;
+}
+.tbl-base th.valign-top, .tbl-base td.valign-top {
+    vertical-align: top;
+}
+.tbl-base th, .tbl-base td {
+    border: solid 1px #bbb;
+    box-sizing: border-box;
+    padding: 10px 10px 9px;
+    vertical-align: middle;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+/*------ notes ------*/
+.tbl-base001 {
+    border: solid 1px #bbb;
+    line-height: 1.6;
+}
+.tbl-base001 th {
+    font-weight: bold;
+}
+.tbl-base001 th {
+    background-color: #eeebe2;
+}
+.tbl-base001 th, .tbl-base001 td {
+    border: solid 1px #bbb;
+    box-sizing: border-box;
+    padding: 7px 10px 7px;
+    vertical-align: middle;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+.tbl-base001 th.valign-top, .tbl-base001 td.valign-top {
+    vertical-align: top;
+}
+
+.tbl-dotline {
+    line-height: 1.8;
+    width: 100%;
+    border-top: dotted 1px #CCC;
+}
+.tbl-dotline th, .tbl-dotline td {
+    border-bottom: dotted 1px #CCC;
+    vertical-align: middle;
+    padding: 1em;
+}
+.tbl-dotline th {
+    text-align: center;
+}
+.tbl-dotline th.txt-only {
+    text-align: left;
+    padding-left: 5em;
+}
+.tbl-dotline td .btn, .tbl-dotline td .btn-lftxt {
+    margin-bottom: 0;
+}
+
+/* th and td widesize
+--------------------------------------------------------------------------*/
+.one-one th, .one-one td {
+    width: 50%;
+}
+
+.one-two th {
+    width: 33%;
+}
+.one-two td {
+    width: 67%;
+}
+
+.one-third th {
+    width: 25%;
+}
+.one-third td {
+    width: 75%;
+}
+
+.one-fourth th {
+    width: 20%;
+}
+.one-fourth td {
+    width: 80%;
+}
+
+.tbl-cell-fixed {
+    table-layout: fixed;
+}
+
+/* cell color
+--------------------------------------------------------------------------*/
+.tbl-base .cellbg01 {
+    background-color: #eee;
+}
+
+/* cell width
+--------------------------------------------------------------------------*/
+.tcell-10 {
+    width: 10%;
+}
+
+.tcell-15 {
+    width: 15%;
+}
+
+.tcell-20 {
+    width: 20%;
+}
+
+.tcell-25 {
+    width: 25%;
+}
+
+.tcell-30 {
+    width: 30%;
+}
+
+.tcell-35 {
+    width: 35%;
+}
+
+.tcell-40 {
+    width: 40%;
+}
+
+.tcell-45 {
+    width: 45%;
+}
+
+.tcell-50 {
+    width: 50%;
+}
+
+.tcell-55 {
+    width: 55%;
+}
+
+.tcell-60 {
+    width: 60%;
+}
+
+.tcell-65 {
+    width: 65%;
+}
+
+.tcell-70 {
+    width: 70%;
+}
+
+.tcell-75 {
+    width: 75%;
+}
+
+.tcell-80 {
+    width: 80%;
+}
+
+.tcell-85 {
+    width: 85%;
+}
+
+.tcell-90 {
+    width: 90%;
+}
+
+/* Table inner Layout
+--------------------------------------------------------------------------*/
+.table-in {
+    line-height: 1.5;
+}
+.table-in dt {
+    width: 210px;
+    float: left;
+    clear: left;
+    margin-bottom: 0.8em;
+}
+.table-in dt:last-of-type {
+    margin-bottom: 0;
+}
+.table-in dd {
+    overflow: hidden;
+    float: left;
+    margin-bottom: 0.8em;
+}
+.table-in dd:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Loan Page Only Table styles
+--------------------------------------------------------------------------*/
+.exp-table th,
+.exp-table td {
+    font-size: 11px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.tcell-11 {
+    width: 11%;
+}
+
+.tcell-12 {
+    width: 12%;
+}
+
+/*-------------------------------------------------------------------------
+  Button Styles
+--------------------------------------------------------------------------*/
+/* Base Style
+--------------------------------------------------------------------------*/
+.btn, .btn-lftxt {
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #333;
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: 1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-lftxt {
+    text-align: left;
+}
+
+.btn-base, .btn-thick {
+    background-color: #fefefe;
+    -moz-box-sizing: border-box;
+    background: -webkit-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: -moz-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: -o-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: linear-gradient(to top, #e7e7e7, #fefefe 45%);
+    border: 1px solid;
+    border-color: #e3e3e3 #b2b2b2 #999 #dedede;
+    color: #333;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 8px;
+}
+.btn-base:hover, .btn-thick:hover {
+    background-color: #e7e7e7;
+    background: -webkit-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: -moz-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: -o-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: linear-gradient(to bottom, #e7e7e7, #fefefe 45%);
+    border: 1px solid #e4e2e2;
+    color: #333;
+}
+.btn-base.btn-disabled, .btn-disabled.btn-thick {
+    opacity: 0.4;
+}
+.btn-base.btn-disabled:hover, .btn-disabled.btn-thick:hover {
+    background-color: #e7e7e7;
+    background: -webkit-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: -moz-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: -o-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: linear-gradient(to top, #e7e7e7, #fefefe 45%);
+    border-color: #e3e3e3 #b2b2b2 #999 #dedede;
+}
+
+.btn-thick {
+    -moz-box-sizing: border-box;
+    padding: 19px 19px 17px;
+}
+
+.btn-primary {
+    background-color: #fff;
+    border: 3px solid #af7e00;
+    color: #af7e00;
+    outline: 1px outset #c39e40;
+    background: -webkit-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: -moz-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: -o-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: linear-gradient(to top, #e7e7e7, #fefefe 45%);
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: 16px 16px 14px;
+}
+.btn-primary:hover {
+    background-color: #e7e7e7;
+    border: 3px solid #af7e00;
+    color: #af7e00;
+    outline: 1px outset #c39e40;
+    background: -webkit-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: -moz-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: -o-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: linear-gradient(to bottom, #e7e7e7, #fefefe 45%);
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+.btn-login-gold {
+    -moz-box-sizing: border-box;
+    background-color: #957114;
+    background: -webkit-linear-gradient(bottom, #957114, #c7a54d);
+    background: -moz-linear-gradient(bottom, #957114, #c7a54d);
+    background: -o-linear-gradient(bottom, #957114, #c7a54d);
+    background: linear-gradient(to top, #957114, #c7a54d);
+    border: 1px solid;
+    border-color: #d7bf80 #a2863d #7c5901 #cdae5e;
+    color: #fff;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding: 15px 0 12px;
+}
+.btn-login-gold:hover {
+    background-color: #c7a54d;
+    background: -webkit-linear-gradient(top, #957114, #c7a54d);
+    background: -moz-linear-gradient(top, #957114, #c7a54d);
+    background: -o-linear-gradient(top, #957114, #c7a54d);
+    background: linear-gradient(to bottom, #957114, #c7a54d);
+    border-color: #d7bf80 #a2863d #7c5901 #cdae5e;
+    color: #fff;
+}
+
+.btn-login {
+    -moz-box-sizing: border-box;
+    background-color: #fefefe;
+    background: -webkit-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: -moz-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: -o-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: linear-gradient(to top, #e7e7e7, #fefefe 45%);
+    border: 1px solid;
+    border-color: #e3e3e3 #b2b2b2 #999 #dedede;
+    color: #af7e00;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding: 15px 0 12px;
+}
+.btn-login:hover {
+    background-color: #e7e7e7;
+    background: -webkit-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: -moz-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: -o-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: linear-gradient(to bottom, #e7e7e7, #fefefe 45%);
+    border: 1px solid #e4e2e2;
+    color: #af7e00;
+}
+
+.btn-tcard {
+    -moz-box-sizing: border-box;
+    background-color: #071d5c;
+    background: -webkit-linear-gradient(bottom, #071d5c, #0b2b8a);
+    background: -moz-linear-gradient(bottom, #071d5c, #0b2b8a);
+    background: -o-linear-gradient(bottom, #071d5c, #0b2b8a);
+    background: linear-gradient(to top, #071d5c, #0b2b8a);
+    border: 1px solid;
+    border-color: #4861aa #071e60 #051440 #2a3f81;
+    color: #fff;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding: 5px 0 8px;
+}
+.btn-tcard span {
+    font-size: 10px;
+    font-size: 1rem;
+    letter-spacing: 0;
+    font-weight: normal;
+    display: inline-block;
+    margin-bottom: 0.8em;
+}
+.btn-tcard:hover {
+    background-color: #0b2b8a;
+    background: -webkit-linear-gradient(top, #071d5c, #0b2b8a);
+    background: -moz-linear-gradient(top, #071d5c, #0b2b8a);
+    background: -o-linear-gradient(top, #071d5c, #0b2b8a);
+    background: linear-gradient(to bottom, #071d5c, #0b2b8a);
+    color: #fff;
+}
+
+.btn-login02 {
+    -moz-box-sizing: border-box;
+    background-color: #fefefe;
+    background: -webkit-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: -moz-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: -o-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+    background: linear-gradient(to top, #e7e7e7, #fefefe 45%);
+    border: 1px solid;
+    border-color: #e3e3e3 #b2b2b2 #999 #dedede;
+    color: #333;
+    padding: 16px 0 15px;
+}
+.btn-login02:hover {
+    background-color: #e7e7e7;
+    background: -webkit-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: -moz-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: -o-linear-gradient(top, #e7e7e7, #fefefe 45%);
+    background: linear-gradient(to bottom, #e7e7e7, #fefefe 45%);
+    border: 1px solid #e4e2e2;
+    color: #333;
+}
+
+.btn-login-ared {
+    -moz-box-sizing: border-box;
+    background-color: #fe1a0e;
+    background: -webkit-linear-gradient(bottom, #fe1a0e, #fe7a73);
+    background: -moz-linear-gradient(bottom, #fe1a0e, #fe7a73);
+    background: -o-linear-gradient(bottom, #fe1a0e, #fe7a73);
+    background: linear-gradient(to top, #fe1a0e, #fe7a73);
+    border: 1px solid;
+    border-color: #ffaba6 #d80c01 #a50901 #ffbbb7;
+    color: #fff;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding: 15px 0 12px;
+}
+.btn-login-ared:hover {
+    background-color: #fe7a73;
+    background: -webkit-linear-gradient(top, #fe1a0e, #fe7a73);
+    background: -moz-linear-gradient(top, #fe1a0e, #fe7a73);
+    background: -o-linear-gradient(top, #fe1a0e, #fe7a73);
+    background: linear-gradient(to bottom, #fe1a0e, #fe7a73);
+    border-color: #ffaba6 #d80c01 #a50901 #ffbbb7;
+    color: #fff;
+}
+
+/* Size Style
+--------------------------------------------------------------------------*/
+.btn-textfit {
+    display: inline-block;
+}
+
+.btn-s {
+    width: 100px;
+}
+
+.btn-m {
+    width: 180px;
+}
+
+.btn-l {
+    width: 260px;
+}
+
+.btn-xl {
+    width: 320px;
+}
+
+.btn-xxl {
+    width: 400px;
+}
+
+.btn-xxxl {
+    width: 480px;
+}
+
+.btn-liquid {
+    width: 100%;
+}
+
+/* Ornament Style
+--------------------------------------------------------------------------*/
+.btn-arw-gd {
+    background: url("http://www.aplvs.com/images/icon-arrow-gld.png"), -webkit-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+    background: url("http://www.aplvs.com/images/icon-arrow-gld.png"), -moz-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+    background: url("http://www.aplvs.com/images/icon-arrow-gld.png"), -o-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+    background: url("http://www.aplvs.com/images/icon-arrow-gld.png"), linear-gradient(to top, #e7e7e7, #fefefe 50%);
+    background-position: 10px 45%,0 0;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+.btn-arw-gd:hover {
+    background: url("http://www.aplvs.com/images/icon-arrow-gld.png"), -webkit-linear-gradient(top, #e7e7e7, #fefefe 50%);
+    background: url("http://www.aplvs.com/images/icon-arrow-gld.png"), -moz-linear-gradient(top, #e7e7e7, #fefefe 50%);
+    background: url("http://www.aplvs.com/images/icon-arrow-gld.png"), -o-linear-gradient(top, #e7e7e7, #fefefe 50%);
+    background: url("http://www.aplvs.com/images/icon-arrow-gld.png"), linear-gradient(to bottom, #e7e7e7, #fefefe 50%);
+    background-position: 10px 45%,0 0;
+    background-repeat: no-repeat;
+}
+
+.btn-arw-bk {
+    background: url("../images/icon-arrow-bk.png"), -webkit-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+    background: url("../images/icon-arrow-bk.png"), -moz-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+    background: url("../images/icon-arrow-bk.png"), -o-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+    background: url("../images/icon-arrow-bk.png"), linear-gradient(to top, #e7e7e7, #fefefe 50%);
+    background-position: 10px 45%,0 0;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+.btn-arw-bk:hover {
+    background: url("../images/icon-arrow-bk.png"), -webkit-linear-gradient(top, #e7e7e7, #fefefe 50%);
+    background: url("../images/icon-arrow-bk.png"), -moz-linear-gradient(top, #e7e7e7, #fefefe 50%);
+    background: url("../images/icon-arrow-bk.png"), -o-linear-gradient(top, #e7e7e7, #fefefe 50%);
+    background: url("../images/icon-arrow-bk.png"), linear-gradient(to bottom, #e7e7e7, #fefefe 50%);
+    background-position: 10px 45%,0 0;
+    background-repeat: no-repeat;
+}
+
+/* Position Style
+--------------------------------------------------------------------------*/
+.btn-right {
+    float: right;
+}
+
+.btn-left {
+    float: left;
+}
+
+/*-------------------------------------------------------------------------
+  Module PageTop Link
+--------------------------------------------------------------------------*/
+.pagetop, .pagetop-en {
+    margin: 0 auto 2em;
+}
+.pagetop a, .pagetop-en a {
+    float: right;
+    width: 121px;
+    height: 13px;
+    display: block;
+    background: transparent url(http://www.aplvs.com/images/pagetop.png) no-repeat 0 0;
+}
+.pagetop a:hover, .pagetop-en a:hover {
+    background-position: 0 -13px;
+}
+
+.pagetop-en a {
+    width: 74px;
+    height: 13px;
+    background: transparent url(http://www.aplvs.com/images/pagetop_en.png) no-repeat 0 0;
+}
+
+/*-------------------------------------------------------------------------
+  Module On Mouse Opacity
+--------------------------------------------------------------------------*/
+.on-opacity:hover {
+    opacity: 0.8;
+}
+
+/*-------------------------------------------------------------------------
+  Module Imagre Baseline Middle
+--------------------------------------------------------------------------*/
+.va-middle {
+    vertical-align: middle;
+}
+
+/*-------------------------------------------------------------------------
+  Module Tab Layout
+--------------------------------------------------------------------------*/
+.tab-container {
+    margin-bottom: 1em;
+}
+
+.tab-list {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    background: transparent url(http://www.aplvs.com/images/tab-bg.png) repeat-x 0 100%;
+}
+.tab-list li {
+    float: left;
+    border: solid 1px #999;
+    border-bottom: none;
+    padding: 10px 20px;
+    margin-right: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #eeeeee url(http://www.aplvs.com/images/tab-bg.png) repeat-x 0 100%;
+}
+.tab-list li:hover, .tab-list li.tab-active {
+    background-image: none;
+    background-color: #FFF;
+    border: solid 1px #999;
+    border-bottom: none;
+}
+
+.tab-contents {
+    margin-bottom: 1em;
+}
+
+.hide-area {
+    display: none;
+}
+
+.tab-but {
+    background-color: #EEE;
+    padding: 16px 10px;
+    margin-bottom: 20px;
+    border: solid 1px #999;
+    border-bottom: none;
+    font-weight: bold;
+    background: #eeeeee url(http://www.aplvs.com/images/tab-bg.png) repeat-x 0 100%;
+}
+
+/* for T-POINT */
+.t-tab .tab-list {
+    margin-bottom: 30px;
+    padding-left: 15px;
+    background: transparent url(http://www.aplvs.com/images/tab-bg-t.png) repeat-x 0 100%;
+}
+.t-tab .tab-list li {
+    float: left;
+    border: solid 1px transparent;
+    border-bottom: none;
+    color: #FFF;
+    padding: 10px 20px;
+    margin-right: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #8fbae9 url(http://www.aplvs.com/images/tab-bg-t.png) repeat-x 0 100%;
+}
+.t-tab .tab-list li:hover, .t-tab .tab-list li.tab-active {
+    background-image: none;
+    background-color: #039;
+    border: solid 1px #039;
+    border-bottom: none;
+    background: -webkit-linear-gradient(top, #003399 35%, #0066cc, white);
+    background: -moz-linear-gradient(top, #003399 35%, #0066cc, white);
+    background: -o-linear-gradient(top, #003399 35%, #0066cc, white);
+    background: linear-gradient(to bottom, #003399 35%, #0066cc, #ffffff);
+}
+.t-tab .tab-but {
+    background-color: #039;
+    color: #FFF;
+    padding: 16px 10px;
+    margin-bottom: 20px;
+    border: solid 1px transparent;
+    border-bottom: none;
+    font-weight: bold;
+    background: #8fbae9 url(http://www.aplvs.com/images/tab-bg-t.png) repeat-x 0 102%;
+}
+
+/* for Use Card Icon */
+.in-icon .tab-list li {
+    padding: 0.1em 1em;
+}
+.in-icon .tab-but {
+    padding: 6px 10px;
+}
+
+/*-------------------------------------------------------------------------
+  Module PDF Download box
+--------------------------------------------------------------------------*/
+.pdf {
+    border: solid 2px  #CCC;
+}
+.pdf img {
+    display: inline-block;
+    margin: 0 0.8em 1em 0;
+    vertical-align: middle;
+}
+.pdf .txt-area {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+}
+.pdf a.icon-angle {
+    background-position: 0 50%;
+}
+
+/*-------------------------------------------------------------------------
+  Module Net station APLUS Login
+--------------------------------------------------------------------------*/
+.nsa-login-box, .nsa-login-box02, .nsa-login-box03 {
+    background-color: #eeebe2;
+    border: solid 2px #d9ccab;
+    padding: 1em 1em 0;
+    margin-bottom: 2em;
+}
+.nsa-login-box p, .nsa-login-box02 p, .nsa-login-box03 p {
+    margin-bottom: 0.5em;
+    line-height: 1;
+}
+
+.nlb-primary {
+    width: 35%;
+    float: left;
+}
+
+.nlb-secondary {
+    width: 62%;
+    float: right;
+}
+.nlb-secondary > div {
+    text-align: center;
+}
+.nlb-secondary > div p {
+    font-size: 16px;
+}
+
+.nlb-login-btn {
+    width: 48%;
+    float: left;
+}
+
+.nlb-regist-btn {
+    width: 48%;
+    float: right;
+}
+
+.nsalogo {
+    text-indent: -9999px;
+    width: 213px;
+    height: 41px;
+    background: transparent url(http://www.aplvs.com/images/nsalogo.png) repeat-x 0 0;
+    margin-bottom: 1em;
+}
+
+.nsalogo-wide {
+    width: 374px;
+    height: 19px;
+    display: block;
+    background: transparent url(http://www.aplvs.com/images/nsalogo-wide.png) repeat-x 0 0;
+}
+
+.nsa-login-box02 {
+    text-align: center;
+}
+.nsa-login-box02 .nsalogo-wide {
+    margin: 0 auto 1em;
+}
+.nsa-login-box02 .nlb-but-area {
+    width: 490px;
+    margin: 0 auto;
+}
+.nsa-login-box02 .nlb-but-area div {
+    float: left;
+}
+.nsa-login-box02 .nlb-but-area div:first-child {
+    margin-right: 20px;
+}
+
+.nsa-login-box03 .nsalogo-wide {
+    float: left;
+    margin: 14px 20px 0 0;
+}
+.nsa-login-box03 .nsa-ctr-box {
+    width: 610px;
+    margin: 0 auto;
+}
+
+.nsa-login-box-ctr {
+    width: 700px;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------------------------------------
+  Module Important Area
+--------------------------------------------------------------------------*/
+.important {
+    position: relative;
+    margin-bottom: 2em;
+}
+.important h2 {
+    border-bottom: solid 2px #F00;
+    padding: 0 1em 0.5em;
+    margin: 0 -1em 1em;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #F00;
+}
+.important .to-list {
+    position: absolute;
+    top: 1.3em;
+    right: 1em;
+}
+.important .to-list a {
+    margin-bottom: 0.5em;
+    padding-left: 0.8em;
+    background: transparent url(../images/icon-arrow-bk.png) no-repeat 0 0.45em;
+}
+.important .box {
+    margin: 0;
+}
+.important .bg2 {
+    margin-bottom: 2px;
+}
+.important dl {
+    line-height: 1.5;
+}
+.important dl dt {
+    float: left;
+    clear: left;
+    width: 125px;
+    margin-right: 0.5em;
+}
+.important dl dd {
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.important02 h2 {
+    border-bottom: solid 2px #F00;
+    padding: 0 1em 0.5em;
+    margin: 0 -1em 1em;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #F00;
+}
+
+/*-------------------------------------------------------------------------
+  Module Info News Area
+--------------------------------------------------------------------------*/
+.info-news, .ir-news {
+    position: relative;
+    margin-bottom: 2em;
+}
+.info-news .info-title, .ir-news .info-title {
+    border-bottom: solid 2px #333;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-size: 20px;
+    font-size: 2rem;
+}
+.info-news .to-list, .ir-news .to-list {
+    position: absolute;
+    top: 0em;
+    right: 0;
+}
+.info-news .to-list a, .ir-news .to-list a {
+    margin-bottom: 0.5em;
+    padding-left: 0.8em;
+    background: transparent url(../images/icon-arrow-bk.png) no-repeat 0 0.45em;
+}
+.info-news dl, .ir-news dl {
+    line-height: 1.5;
+}
+.info-news dl dt, .ir-news dl dt {
+    float: left;
+    clear: left;
+    margin-right: 0.5em;
+    width: 205px;
+}
+.info-news dl dd, .ir-news dl dd {
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+.info-news ul li, .ir-news ul li {
+    margin-bottom: 1em;
+    padding-left: 0.8em;
+    background: transparent url(../images/icon-arrow-bk.png) no-repeat 0 0.45em;
+}
+
+/*-------------------------------------------------------------------------
+  Module IRNews Area
+--------------------------------------------------------------------------*/
+.ir-news dl dt {
+    width: 125px;
+}
+
+/*-------------------------------------------------------------------------
+  Module Replace Image Banner
+--------------------------------------------------------------------------*/
+.rep-bnr {
+    width: 700px;
+    height: 174px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.rep-bnr-atm {
+    background: transparent url(http://www.aplvs.com/img/bg/index_bnr_atm.png) no-repeat 0 0;
+}
+
+/*-------------------------------------------------------------------------
+  Module Related Site Banner
+--------------------------------------------------------------------------*/
+.bnr-related-site {
+    width: 396px;
+    margin: 0 0 2em 0;
+}
+.bnr-related-site li {
+    float: left;
+}
+.bnr-related-site li:last-child {
+    float: right;
+}
+.bnr-related-site li a {
+    display: block;
+    background: transparent url(http://www.aplvs.com/images/bnr-related-site.png) no-repeat 0 0;
+    width: 193px;
+    height: 40px;
+    overflow: hidden;
+}
+.bnr-related-site li a:hover {
+    opacity: 0.7;
+}
+.bnr-related-site li .bnr-official {
+    background-position: 0 0;
+}
+.bnr-related-site li .bnr-financial {
+    background-position: 0 -40px;
+}
+.bnr-related-site li .bnr-personal {
+    background-position: 0 -80px;
+}
+
+/*-------------------------------------------------------------------------
+  Module Lone Page Banner
+--------------------------------------------------------------------------*/
+.bnr155 {
+    width: 340px;
+    margin: 0 auto 1em;
+}
+.bnr155 li {
+    width: 155px;
+    height: 51px;
+    float: left;
+}
+.bnr155 li:last-child {
+    float: right;
+}
+.bnr155 li a:hover {
+    opacity: 0.7;
+}
+
+.bnr155-left {
+    margin: 0 auto 1em;
+}
+.bnr155-left li {
+    width: 155px;
+    height: 51px;
+    float: left;
+    margin-right: 1em;
+}
+.bnr155-left li a:hover {
+    opacity: 0.7;
+}
+
+/*-------------------------------------------------------------------------
+  Module Moviee Page Layout(PIP-Maker)
+--------------------------------------------------------------------------*/
+.avatar {
+    text-align: center;
+}
+
+.avatar div {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.avatar div img {
+    width: 100%;
+    height: auto;
+}
+
+/*-------------------------------------------------------------------------
+  Menu Block Area
+--------------------------------------------------------------------------*/
+.menu-block {
+    border-top: 2px solid #333;
+    padding: 10px;
+    background: -webkit-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+    background: -moz-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+    background: -o-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 3px, #f1f1f1 3px, #ffffff 40px);
+}
+.menu-block p:last-child,
+.menu-block ul:last-child {
+    margin-bottom: 0;
+}
+
+.menu-block-02 {
+    padding: 8px;
+    height:180px;
+
+}
+.menu-block-02 p:last-child,
+.menu-block-02 ul:last-child {
+    margin-bottom: 0;
+}
+
+
+.menu-block-03 {
+    padding: 3px 0 10px 0;
+    border-top: 2px solid #333;
+    background: -webkit-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+    background: -moz-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+    background: -o-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 3px, #f1f1f1 3px, #ffffff 40px);
+}
+.menu-block-03 p:last-child,
+.menu-block-03 ul:last-child {
+    margin-bottom: 0;
+}
+
+
+/*Basic Icon Title*/
+.menu-block-title, .menu-block-title-s, .menu-block-title-o, .menu-block-title-ni {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin: 0 0 1em 0;
+}
+.menu-block-title a, .menu-block-title-s a, .menu-block-title-o a, .menu-block-title-ni a {
+    background: url(http://www.aplvs.com/images/icon-menu-block.png) no-repeat 0 3px;
+    color: #333;
+    padding-left: 20px;
+    text-decoration: none;
+    display: block;
+}
+.menu-block-title a:hover, .menu-block-title-s a:hover, .menu-block-title-o a:hover, .menu-block-title-ni a:hover {
+    color: #af7e00;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    .menu-block-title a, .menu-block-title-s a, .menu-block-title-o a, .menu-block-title-ni a {
+        background: url(http://www.aplvs.com/images/icon-menu-block_x2.png) no-repeat 0 3px;
+        background-size: 15px 15px;
+    }
+}
+
+/* Small Title */
+.menu-block-title-s {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+/* Only Title */
+/* Non Icon Title */
+.menu-block-title-ni {
+    margin-left: 0;
+    text-indent: 0;
+}
+
+/* Trimming Image */
+.menu-block-trimming {
+    margin-bottom: 1em;
+}
+
+/* Symbol Image (Support index)*/
+.menu-block-symbol {
+    width: 104px;
+    height: 104px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin-right: 1em;
+}
+.menu-block-symbol img {
+    position: absolute;
+}
+
+#symbol01 {
+    top: 0px;
+}
+
+#symbol02 {
+    top: -114px;
+}
+
+#symbol03 {
+    top: -228px;
+}
+
+#symbol04 {
+    top: -342px;
+}
+
+#symbol05 {
+    top: -456px;
+}
+
+#symbol06 {
+    top: -570px;
+}
+
+#symbol07 {
+    top: -684px;
+}
+
+#symbol08 {
+    top: -798px;
+}
+
+#symbol09 {
+    top: -912px;
+}
+
+#symbol010 {
+    top: -1026px;
+}
+
+#symbol011 {
+    top: -1140px;
+}
+
+#symbol012 {
+    top: -1254px;
+}
+
+#symbol013 {
+    top: -1368px;
+}
+
+#symbol014 {
+    top: -1482px;
+}
+
+#symbol015 {
+    top: -1596px;
+}
+
+#symbol016 {
+    top: -1710px;
+}
+
+#symbol017 {
+    top: -1824px;
+}
+
+#symbol018 {
+    top: -1938px;
+}
+
+#symbol019 {
+    top: -2052px;
+}
+
+#symbol020 {
+    top: -2166px;
+}
+
+/* Symbol Image (Service Merit index)*/
+.menu-block-symbol-service {
+    width: 86px;
+    height: 86px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin: 0 1.5em 1em 0;
+}
+.menu-block-symbol-service img {
+    position: absolute;
+}
+
+#symbol-service01 {
+    top: 0px;
+}
+
+#symbol-service02 {
+    top: -96px;
+}
+
+#symbol-service03 {
+    top: -192px;
+}
+
+#symbol-service04 {
+    top: -288px;
+}
+
+#symbol-service05 {
+    top: -384px;
+}
+
+#symbol-service06 {
+    top: -480px;
+}
+
+#symbol-service07 {
+    top: -576px;
+}
+
+#symbol-service08 {
+    top: -672px;
+}
+
+#symbol-service09 {
+    top: -768px;
+}
+
+#symbol-service010 {
+    top: -864px;
+}
+
+#symbol-service011 {
+    top: -960px;
+}
+
+#symbol-service012 {
+    top: -1056px;
+}
+
+#symbol-service013 {
+    top: -1152px;
+}
+
+#symbol-service014 {
+    top: -1248px;
+}
+
+#symbol-service015 {
+    top: -1344px;
+}
+
+#symbol-service016 {
+    top: -1440px;
+}
+
+#symbol-service017 {
+    top: -1536px;
+}
+
+#symbol-service018 {
+    top: -1632px;
+}
+
+#symbol-service019 {
+    top: -1728px;
+}
+
+#symbol-service020 {
+    top: -1824px;
+}
+
+/* Symbol Image (Security index)*/
+.menu-block-symbol-security {
+    width: 86px;
+    height: 86px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    margin: 0 1.5em 1em 0;
+}
+.menu-block-symbol-security img {
+    position: absolute;
+}
+
+#symbol-security01 {
+    top: 0px;
+}
+
+#symbol-security02 {
+    top: -96px;
+}
+
+#symbol-security03 {
+    top: -192px;
+}
+
+#symbol-security04 {
+    top: -288px;
+}
+
+#symbol-security05 {
+    top: -384px;
+}
+
+#symbol-security06 {
+    top: -480px;
+}
+
+#symbol-security07 {
+    top: -576px;
+}
+
+#symbol-security08 {
+    top: -672px;
+}
+
+#symbol-security09 {
+    top: -768px;
+}
+
+#symbol-security010 {
+    top: -864px;
+}
+
+#symbol-security011 {
+    top: -960px;
+}
+
+#symbol-security012 {
+    top: -1056px;
+}
+
+#symbol-security013 {
+    top: -1152px;
+}
+
+#symbol-security014 {
+    top: -1248px;
+}
+
+#symbol-security015 {
+    top: -1344px;
+}
+
+#symbol-security016 {
+    top: -1440px;
+}
+
+#symbol-security017 {
+    top: -1536px;
+}
+
+#symbol-security018 {
+    top: -1632px;
+}
+
+#symbol-security019 {
+    top: -1728px;
+}
+
+#symbol-security020 {
+    top: -1824px;
+}
+
+.float-layout {
+    float: left;
+    margin-right: 1em;
+}
+
+.float-layout2 {
+    width:250px;
+    float: left;
+    margin-right: 1em;
+}
+
+.float-layout3 {
+    width:150px;
+    float: left;
+    margin-right: 1em;
+}
+
+.menu-block figure {
+    margin-bottom: 1em;
+}
+
+.menu-block figcaption,
+.menu-block .mneu-list-area,
+.menu-block .mneu-contents-area {
+    overflow: hidden;
+}
+
+.list-dotline li {
+    border-bottom: dotted 1px #333;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+.list-dotline li:last-child {
+    margin-bottom: 0;
+}
+
+/*-------------------------------------------------------------------------
+  Loan Module
+--------------------------------------------------------------------------*/
+.modu-loan-online {
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto 2em;
+}
+.modu-loan-online p, .modu-loan-online ul {
+    margin-bottom: 1em;
+}
+.modu-loan-online .separator-linetop {
+    border-top: solid 1px #CCC;
+    padding-top: 1em;
+}
+.modu-loan-online .horizontal, .modu-loan-online .horizontal-wide {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+.modu-loan-online .horizontal li, .modu-loan-online .horizontal-wide li {
+    float: left;
+    position: relative;
+    left: -50%;
+    padding: 0 0.8em;
+}
+
+/*-------------------------------------------------------------------------
+  Answer List
+--------------------------------------------------------------------------*/
+.list-icon-question li {
+    text-indent: -45px;
+    margin: 0 0 1em 45px;
+}
+.list-icon-question li:last-child {
+    margin-bottom: 0;
+}
+.list-icon-question li i {
+    background: transparent url(http://www.aplvs.com/images/icon-qa.png) no-repeat 0 0;
+    width: 38px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -3px 0.5em 0 0;
+}
+.list-icon-question li i.icon-q01 {
+    background-position: 0 -0px;
+}
+.list-icon-question li i.icon-q02 {
+    background-position: 0 -20px;
+}
+.list-icon-question li i.icon-q03 {
+    background-position: 0 -40px;
+}
+.list-icon-question li i.icon-q04 {
+    background-position: 0 -60px;
+}
+.list-icon-question li i.icon-q05 {
+    background-position: 0 -80px;
+}
+.list-icon-question li i.icon-q06 {
+    background-position: 0 -100px;
+}
+.list-icon-question li i.icon-q07 {
+    background-position: 0 -120px;
+}
+.list-icon-question li i.icon-q08 {
+    background-position: 0 -140px;
+}
+.list-icon-question li i.icon-q09 {
+    background-position: 0 -160px;
+}
+.list-icon-question li i.icon-q10 {
+    background-position: 0 -180px;
+}
+.list-icon-question li i.icon-q11 {
+    background-position: 0 -200px;
+}
+.list-icon-question li i.icon-q12 {
+    background-position: 0 -220px;
+}
+.list-icon-question li i.icon-q13 {
+    background-position: 0 -240px;
+}
+.list-icon-question li i.icon-q14 {
+    background-position: 0 -260px;
+}
+.list-icon-question li i.icon-q15 {
+    background-position: 0 -280px;
+}
+.list-icon-question li i.icon-q16 {
+    background-position: 0 -300px;
+}
+.list-icon-question li i.icon-q17 {
+    background-position: 0 -320px;
+}
+.list-icon-question li i.icon-q18 {
+    background-position: 0 -340px;
+}
+.list-icon-question li i.icon-q19 {
+    background-position: 0 -360px;
+}
+.list-icon-question li i.icon-q20 {
+    background-position: 0 -380px;
+}
+
+.modu-faq {
+    line-height: 1.5;
+}
+.modu-faq dt {
+    text-indent: -45px;
+    margin: 0 0 0.5em 45px;
+    padding-top: 1em;
+}
+.answer dt {
+    font-weight:bold;
+    text-decoration:underline;
+}
+.modu-faq dt i {
+    background: transparent url(http://www.aplvs.com/images/icon-qa.png) no-repeat 0 0;
+    width: 38px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -3px 0.5em 0 0;
+}
+.modu-faq dt i.icon-q01 {
+    background-position: 0 -0px;
+}
+.modu-faq dt i.icon-q02 {
+    background-position: 0 -20px;
+}
+.modu-faq dt i.icon-q03 {
+    background-position: 0 -40px;
+}
+.modu-faq dt i.icon-q04 {
+    background-position: 0 -60px;
+}
+.modu-faq dt i.icon-q05 {
+    background-position: 0 -80px;
+}
+.modu-faq dt i.icon-q06 {
+    background-position: 0 -100px;
+}
+.modu-faq dt i.icon-q07 {
+    background-position: 0 -120px;
+}
+.modu-faq dt i.icon-q08 {
+    background-position: 0 -140px;
+}
+.modu-faq dt i.icon-q09 {
+    background-position: 0 -160px;
+}
+.modu-faq dt i.icon-q10 {
+    background-position: 0 -180px;
+}
+.modu-faq dt i.icon-q11 {
+    background-position: 0 -200px;
+}
+.modu-faq dt i.icon-q12 {
+    background-position: 0 -220px;
+}
+.modu-faq dt i.icon-q13 {
+    background-position: 0 -240px;
+}
+.modu-faq dt i.icon-q14 {
+    background-position: 0 -260px;
+}
+.modu-faq dt i.icon-q15 {
+    background-position: 0 -280px;
+}
+.modu-faq dt i.icon-q16 {
+    background-position: 0 -300px;
+}
+.modu-faq dt i.icon-q17 {
+    background-position: 0 -320px;
+}
+.modu-faq dt i.icon-q18 {
+    background-position: 0 -340px;
+}
+.modu-faq dt i.icon-q19 {
+    background-position: 0 -360px;
+}
+.modu-faq dt i.icon-q20 {
+    background-position: 0 -380px;
+}
+.modu-faq dd {
+    text-indent: -45px;
+    margin: 0 0 42px 45px;
+}
+.modu-faq dd i {
+    background: transparent url(http://www.aplvs.com/images/icon-qa.png) no-repeat -46px 0;
+    width: 38px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -3px 0.5em 0 0;
+}
+.modu-faq dd i.icon-a01 {
+    background-position: -46px -0px;
+}
+.modu-faq dd i.icon-a02 {
+    background-position: -46px -20px;
+}
+.modu-faq dd i.icon-a03 {
+    background-position: -46px -40px;
+}
+.modu-faq dd i.icon-a04 {
+    background-position: -46px -60px;
+}
+.modu-faq dd i.icon-a05 {
+    background-position: -46px -80px;
+}
+.modu-faq dd i.icon-a06 {
+    background-position: -46px -100px;
+}
+.modu-faq dd i.icon-a07 {
+    background-position: -46px -120px;
+}
+.modu-faq dd i.icon-a08 {
+    background-position: -46px -140px;
+}
+.modu-faq dd i.icon-a09 {
+    background-position: -46px -160px;
+}
+.modu-faq dd i.icon-a10 {
+    background-position: -46px -180px;
+}
+.modu-faq dd i.icon-a11 {
+    background-position: -46px -200px;
+}
+.modu-faq dd i.icon-a12 {
+    background-position: -46px -220px;
+}
+.modu-faq dd i.icon-a13 {
+    background-position: -46px -240px;
+}
+.modu-faq dd i.icon-a14 {
+    background-position: -46px -260px;
+}
+.modu-faq dd i.icon-a15 {
+    background-position: -46px -280px;
+}
+.modu-faq dd i.icon-a16 {
+    background-position: -46px -300px;
+}
+.modu-faq dd i.icon-a17 {
+    background-position: -46px -320px;
+}
+.modu-faq dd i.icon-a18 {
+    background-position: -46px -340px;
+}
+.modu-faq dd i.icon-a19 {
+    background-position: -46px -360px;
+}
+.modu-faq dd i.icon-a20 {
+    background-position: -46px -380px;
+}
+
+/*-------------------------------------------------------------------------
+  Campaign Area
+--------------------------------------------------------------------------*/
+.campaign-area .row {
+    padding-bottom: 2em;
+    border-bottom: dotted 1px #333;
+}
+
+.campaign-img img {
+    border: solid 1px #CCC;
+}
+
+/*-------------------------------------------------------------------------
+  Card Area
+--------------------------------------------------------------------------*/
+.sub-lead {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+.card-menu .row {
+    margin-bottom: 1em;
+}
+.card-menu .box.bg1 {
+    margin: 0 -10px;
+    padding: 1.5em 1.5em 0.5em;
+}
+
+.card-layout {
+    margin: 0 -10px;
+}
+
+.card-image {
+    width: 220px;
+    text-align: center;
+    float: left;
+}
+.card-image img {
+    margin-bottom: 1em;
+}
+
+.card-detail {
+    width: 700px;
+    float: right;
+}
+.card-detail .box {
+    margin-bottom: 1em;
+}
+
+.card-detail-caption {
+    margin-bottom: 1em;
+}
+.card-detail-caption .fixbtn {
+    float: right;
+    margin-top: -1.6em;
+}
+.card-detail-caption .fixbtn .btn, .card-detail-caption .fixbtn .btn-lftxt {
+    margin-bottom: 0;
+}
+
+.card-detail-col {
+    line-height: 1.5;
+}
+
+.card-detail-collft {
+    float: left;
+    width: 340px;
+}
+.card-detail-collft dl dt {
+    float: left;
+    margin-right: 1em;
+}
+.card-detail-collft dl dd {
+    overflow: hidden;
+    margin-bottom: 0.5em;
+}
+
+.card-detail-colrgt {
+    float: right;
+    width: 345px;
+    margin-bottom: 1em;
+}
+.card-detail-colrgt dl dt {
+    margin-bottom: 0.5em;
+}
+.card-detail-colrgt dl dd:nth-child(2) {
+    margin-bottom: 1.5em;
+}
+
+/*-------------------------------------------------------------------------
+  Top page
+--------------------------------------------------------------------------*/
+/* Top Main Visual*/
+.top-visual {
+    padding-top: 10px;
+    overflow: hidden;
+    background: transparent url(http://www.aplvs.com/images/gloval-bg.png) repeat-x 0 100%;
+    height: 400px;
+}
+.top-visual .container {
+    padding: 0 10px;
+    background: transparent url(http://www.aplvs.com/images/gloval-bg-inner.png) repeat-x 0 100%;
+}
+
+.top-primary {
+    width: 200px;
+    float: left;
+}
+.top-primary .login-box {
+    background-color: #FFF;
+    line-height: 1.5;
+}
+
+.top-secondary {
+    width: 700px;
+    float: right;
+}
+
+/* Module Urgency-box
+--------------------------------------------------------------------------*/
+.urgency {
+    background: transparent url(http://www.aplvs.com/images/urgency-mark.png) no-repeat 14px 16px;
+}
+.urgency dl {
+    margin-left: 50px;
+}
+.urgency dl dt {
+    float: left;
+    width: 135px;
+}
+.urgency dl dd {
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+.urgency dl dd:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+/* Module Usage-details (Box Transform Button)
+--------------------------------------------------------------------------*/
+.usage-details {
+    border: solid 2px #af7d00;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 1.5em;
+}
+.usage-details a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+.usage-details a span {
+    padding-left: 0.5em;
+    background: transparent url(../images/icon-arrow-bk.png) no-repeat 0 45%;
+}
+.usage-details a:hover {
+    color: #af7e00;
+}
+
+/* Module Top layout
+--------------------------------------------------------------------------*/
+.top-mod {
+    position: relative;
+    margin-bottom: 4em;
+}
+
+.top-mod-title {
+    border-bottom: solid 2px #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-size: 2rem;
+}
+
+.trans-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent url(../images/icon-arrow-bk.png) no-repeat 0 45%;
+    padding-left: 0.8em;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+/* Recommendation */
+.top-rec p {
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+}
+.top-rec .top-rec-img img {
+    width: 220px;
+    height: 90px;
+}
+
+/* Service Merit */
+.ser-mer li {
+    float: left;
+    text-align: center;
+    margin-right: 8px;
+}
+.ser-mer li:last-child {
+    margin-right: 0;
+}
+.ser-mer li a {
+    background: transparent url(../images/index_symbol.png) no-repeat 50% 0;
+    display: block;
+    width: 110px;
+    padding-top: 96px;
+    color: #333;
+    text-decoration: none;
+    height:0px;
+}
+.ser-mer li a:hover {
+    color: #af7e00;
+}
+
+.ser-mer li a.ser-mer-symbol01 {
+    background-position: 50% 0px;
+}
+.ser-mer li a.ser-mer-symbol02 {
+    background-position: 50% -96px;
+}
+.ser-mer li a.ser-mer-symbol03 {
+    background-position: 50% -192px;
+}
+.ser-mer li a.ser-mer-symbol04 {
+    background-position: 50% -288px;
+}
+.ser-mer li a.ser-mer-symbol05 {
+    background-position: 50% -384px;
+}
+.ser-mer li a.ser-mer-symbol06 {
+    background-position: 50% -480px;
+}
+.ser-mer li a.ser-mer-symbol07 {
+    background-position: 50% -576px;
+}
+
+/*-------------------------------------------------------------------------
+ Shopping Revo & Cashing
+--------------------------------------------------------------------------*/
+
+.top-revo {
+    width: 342px;
+    float: left;
+}
+
+.top-nsa {
+    width: 342px;
+    float: right;
+}
+
+.top-cashing {
+    width: 342px;
+    float: left;
+}
+
+/* Shoppping revo */
+.revo {
+    position: relative;
+    height: 113px;
+}
+.revo li a {
+    display: block;
+    width: 342px;
+    height: 103px;
+    background: transparent url(http://www.aplvs.com/images/index_revo.png) no-repeat 0 0;
+    position: absolute;
+}
+.revo li a:hover {
+    opacity: 0.8;
+}
+
+/* NSA */
+.nsa {
+    position: relative;
+    height: 113px;
+}
+.nsa li {
+    margin-bottom: 10px;
+}
+.nsa li a {
+    display: block;
+    width: 342px;
+    height: 103px;
+    background: transparent url(http://www.aplvs.com/images/index_nsa.png) no-repeat 0 0;
+    position: absolute;
+}
+.nsa li a:hover {
+    opacity: 0.8;
+}
+
+/* Cashing */
+.cashing {
+    position: relative;
+    height: 113px;
+}
+.cashing li a {
+    display: block;
+    width: 342px;
+    height: 103px;
+    background: transparent url(../images/index_cashing.png) no-repeat 0 0;
+    position: absolute;
+}
+.cashing li a:hover {
+    opacity: 0.8;
+}
+
+
+/*-------------------------------------------------------------------------
+ Point Service & Profit Info
+--------------------------------------------------------------------------*/
+.top-point {
+    width: 460px;
+    float: left;
+}
+
+.top-profit {
+    width: 225px;
+    float: right;
+}
+
+/* Point Service */
+.point-service {
+    position: relative;
+    height: 170px;
+}
+.point-service li a {
+    display: block;
+}
+.point-service li a:hover {
+    opacity: 0.8;
+}
+.point-service li:nth-child(1) a {
+    width: 225px;
+    height: 100px;
+    background: transparent url(../images/index_point_bnr01.png) no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.point-service li:nth-child(2) a {
+    width: 225px;
+    height: 60px;
+    background: transparent url(../images/index_point_bnr02.png) no-repeat 0 0;
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+.point-service li:nth-child(3) a {
+    width: 225px;
+    height: 100px;
+    background: transparent url(../images/index_point_bnr03.png) no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 235px;
+}
+.point-service li:nth-child(4) a {
+    width: 225px;
+    height: 60px;
+    background: transparent url(../images/index_point_bnr04.png) no-repeat 0 0;
+    position: absolute;
+    top: 110px;
+    left: 235px;
+}
+
+/* Profit Info */
+.profit-info li {
+    margin-bottom: 10px;
+}
+.profit-info li:last-child {
+    margin-bottom: 0;
+}
+.profit-info li a {
+    width: 220px;
+    height: 50px;
+    display: block;
+    background: transparent url(../images/index_profit_bnr.png) no-repeat 0 0;
+}
+.profit-info li a:hover {
+    opacity: 0.8;
+}
+.profit-info li:nth-child(1) a {
+    background-position: 0 0;
+}
+.profit-info li:nth-child(2) a {
+    background-position: 0 -50px;
+}
+.profit-info li:nth-child(3) a {
+    background-position: 0 -100px;
+}
+
+/* Product Info */
+.product-info p {
+    line-height: 1.5;
+}
+
+.product-info-primary {
+    width: 444px;
+    float: left;
+}
+
+.product-info-primary-main {
+    margin-bottom: 2em;
+}
+.product-info-primary-main .product-info-primary-main-img {
+    float: left;
+    margin-right: 2em;
+}
+
+.product-info-secondary {
+    width: 220px;
+    float: right;
+}
+.product-info-secondary img {
+    margin-bottom: 0.5em;
+}
+
+.product-info-secondary-loan {
+    margin-bottom: 2em;
+}
+
+/*  Aside(Banner and Utility) for Official Site Top
+--------------------------------------------------------------------------*/
+/* Banner Area */
+.top-sub {
+    border-bottom: dotted 1px #333;
+}
+.top-sub li {
+    border-top: dotted 1px #333;
+    padding: 15px 0;
+}
+.top-sub li a {
+    margin-bottom: 0;
+}
+
+.top-sub2 {
+    margin-top: -40px;
+    border-bottom: dotted 1px #333;
+}
+.top-sub2 li {
+    border-top: dotted 1px #333;
+    padding: 15px 0;
+}
+.top-sub2 li a {
+    margin-bottom: 0;
+}
+/*-------------------------------------------------------------------------
+  Overwrite Styles
+--------------------------------------------------------------------------*/
+.indent-a   { text-indent: 1em;
+    padding-left: 1em;}
+/*---------- padding-left ----------*/
+.indent-0-5 { padding-left: 0.5em;}
+.indent     { padding-left: 1em;}
+.indent-2   { padding-left: 2em;}
+.indent-3   { padding-left: 3em;}
+.indent-4   { padding-left: 4em;}
+.indent-5   { padding-left: 5em;}
+.indent-6   { padding-left: 6em;}
+.indent-7   { padding-left: 7em;}
+.indent-8   { padding-left: 8em;}
+.indent-8_5 { padding-left: 8.5em;}
+.indent-9   { padding-left: 9em;}
+.pl-3  { padding-left: 3px;}
+.pl-5  { padding-left: 5px;}
+.pl-6  { padding-left: 6px;}
+.pl-7  { padding-left: 7px;}
+.pl-8  { padding-left: 8px;}
+.pl-9  { padding-left: 9px;}
+.pl-10  { padding-left: 10px;}
+.pl-11  { padding-left: 11px;}
+.pl-12  { padding-left: 12px;}
+.pl-13  { padding-left: 13px;}
+.pl-14  { padding-left: 14px;}
+.pl-15  { padding-left: 15px;}
+.pl-18  { padding-left: 18px;}
+.pl-25  { padding-left: 25px;}
+/*---------- padding-bottom ----------*/
+.pb-7  { padding-bottom:7px;}
+.pb-10 { padding-bottom:10px;}
+.pb-15 { padding-bottom:15px;}
+/*---------- padding ----------*/
+.pd-3  { padding: 3px;}
+.pd-5  { padding: 5px;}
+.pd-8  { padding: 8px;}
+.pd-10 { padding:10px;}
+
+/*---------- margin-top ----------*/
+.mt-2  { margin-top: 2px;}
+.mt-3  { margin-top: 3px;}
+.mt-5  { margin-top: 5px;}
+.mt-7  { margin-top: 7px;}
+.mt-10 { margin-top: 10px;}
+.mt-15 { margin-top: 15px;}
+.mt-20 { margin-top: 20px;}
+.mt-30 { margin-top: 30px;}
+.mt-40 { margin-top: 40px;}
+.mt-50 { margin-top: 50px;}
+.mt-60 { margin-top: 60px;}
+/*---------- margin-bottom ----------*/
+.mb-3  { margin-bottom: 3px;}
+.mb-5  { margin-bottom: 5px;}
+.mb-10 { margin-bottom: 10px;}
+.mb-15 { margin-bottom: 15px;}
+.mb-20 { margin-bottom: 20px;}
+.mb-25 { margin-bottom: 25px;}
+.mb-30 { margin-bottom: 30px;}
+.mb-35 { margin-bottom: 35px;}
+.mb-40 { margin-bottom: 40px;}
+.mb-45 { margin-bottom: 45px;}
+.mb-50 { margin-bottom: 50px;}
+.mb-55 { margin-bottom: 55px;}
+.mb-60 { margin-bottom: 60px;}
+.mb-none  { margin-bottom: 0;}
+.mb-none1 { margin-bottom: -10px;}
+/*---------- margin-left ----------*/
+.ml-3  { margin-left: 3px;}
+.ml-5  { margin-left: 5px;}
+.ml-10 { margin-left: 10px;}
+.ml-15 { margin-left: 15px;}
+.ml-20 { margin-left: 20px;}
+.ml-25 { margin-left: 25px;}
+.ml-30 { margin-left: 30px;}
+.ml-35 { margin-left: 35px;}
+.ml-none  {  margin-left: 0;}
+/*-------------------------------------------------------------------------
+  Print Style
+--------------------------------------------------------------------------*/
+@media print {
+    .hd-utility, .site-search, .sub, .global, .gl-spmenu-head, .gl-spmenu-foot, .topic-path, .pagetop, .pagetop-en, .ft-group, .ft-group-btn, .ft-utility {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+}
+
+/*-------------------------------------------------------------------------
+  deals　entertainment
+--------------------------------------------------------------------------*/
+p.search-word01 {
+    background: url("http://www.aplvs.com/campaign/img/search-word03.gif") no-repeat scroll left bottom rgba(0, 0, 0, 0);
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+p.search-word01 span.search-word02 {
+    background-color: #FF9900;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px;
+}
+
+p.search-word1 {
+    background: url("http://www.aplvs.com/campaign/img/search-word03.gif") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+p.search-word1 span.search-word2 {
+    background-color: #FF9900;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px;
+    text-align:left;
+}
+
+/* company/info/inquiry/personal.html
+--------------------------------------------------------------------------*/
+.h01 {
+    height:370px;
+    text-align:left;
+}
+
+.h02 {
+    height:198px;
+    text-align:center;
+}
+
+.note-02{
+    margin:0 10px 0 auto;
+    padding:0;
+}
+
+.va-b{
+    vertical-align:bottom;
+}
+/*centering --------------------------------------------------------------------------*/
+.cent00 {
+    margin:0 auto;
+}
+.cent-c {
+    margin:0 auto;
+    text-align:center;
+}
+.cent-l {
+    margin:0 auto;
+    text-align:left;
+}
+.cent-r {
+    margin:0 auto;
+    text-align:right;
+}
+
+/*   banner add_181212   */
+
+.bnr {
+    background: rgba(255,255,255,0.8);
+    position: fixed;
+    bottom: 0;
+    width: 103%;
+    height: auto;
+    margin: 0 auto 0 -15px;
+    padding: 10px;
+    z-index: 100;
+}
+
+a.bnr_img {
+    background: transparent url(http://www.aplvs.com/shared/img/banner/banner_tcardplus_t_pc.png) no-repeat 0 0;
+    display: block;
+    width: 700px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+    a.bnr_img {
+        background: transparent url(http://www.aplvs.com/images/banner_tcardplus_t_sp.png) no-repeat 0 0;
+        width: 320px;
+        height: 80px;
+    }
+}
+/*   banner add_181212   */
+
+/*   yutoriR35   */
+.sub-info-bn_yutoriR35{
+    background: transparent url(http://www.aplvs.com/images/sub-info-bg_yutoriR35.png) no-repeat 0 0;
+    height: 86px;
+}
+
+/*   /yutoriR35   */

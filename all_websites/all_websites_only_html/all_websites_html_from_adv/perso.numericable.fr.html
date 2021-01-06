@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<HTML>
+
+ <HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=iso-8859-1">
+  <TITLE>Bienvenue</TITLE>
+
+  <META http-equiv="Content-Script-Type" content="text/javascript">
+
+  <SCRIPT TYPE="text/javascript" SRC="Dispatcher.js"></SCRIPT>
+
+  <SCRIPT LANGUAGE="VBScript" SRC="Dispatcher.vbs"></SCRIPT>
+ </HEAD>
+
+
+ <BODY BGCOLOR="#ffffff">
+
+  
+<SCRIPT LANGUAGE="JavaScript">
+
+    MM_FlashDispatch(
+	"sources/intro.htm",
+	"6.0",
+	true,				// don't require latest rev. of plug-in
+	"alternat.html",
+	!MM_FlashUserDemurred(),	// don't install if user said no once
+	"alternat.html",
+	"alternat.html",
+	false,
+	true // disable auto-install
+    );
+
+  </SCRIPT>
+
+ </BODY>
+ 
+</HTML>

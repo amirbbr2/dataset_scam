@@ -1,0 +1,64 @@
+.row-fluid.items_list .news{
+	border-bottom:1px dotted #CCC;
+	padding-bottom:5px;
+	padding:0.5%;
+	line-height:160%;
+}
+.row-fluid.items_list [class*="span"]{
+	float:right;
+	display:block;
+}
+.row-fluid.items_list .news h4{
+	padding:0px;
+	margin:0px;
+	margin-bottom:5px;
+	color:#222;
+}
+.row-fluid.items_list .news img{
+	width:94%;
+	height:auto;
+	margin:auto;
+	display:block;
+	background:url(images/loading_dark.gif) center center no-repeat #EFEFEF;
+	border:1px solid #CCC;
+	padding:1%;
+	margin-left:2%;
+	float:right;
+}
+.row-fluid.items_list .news .date{
+	font-size:11px;
+	color:#999;
+	background:url(images/invoice.png) no-repeat top right;
+	padding-right:20px;
+	line-height:16px;
+}
+.row-fluid.items_list .news .time{
+	font-size:11px;
+	color:#999;
+	background:url(images/full-time.png) no-repeat right top;
+	padding-right:20px;
+	line-height:16px;
+}
+.row-fluid.items_list .news .hits{
+	font-size:11px;
+	color:#999;
+	background:url(images/hits.png) no-repeat right top;
+	padding-right:20px;
+	line-height:16px;
+}
+.row-fluid.items_list .news .owner{
+	font-size:11px;
+	color:#999;
+	background:url(images/users.png) no-repeat right top;
+	padding-right:20px;
+	line-height:16px;
+}
+.row-fluid.items_list .news .desc{
+	font-size:12px;
+	color:#666;
+}
+
+
+
+
+

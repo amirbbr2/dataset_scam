@@ -1,0 +1,123 @@
+.bp-element-counter-box.style-horizontal .counter-boxes .counter-box {
+  display: flex;
+  align-items: flex-end; }
+
+.bp-element-counter-box.layout-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .bp-element-counter-box.layout-1 .item {
+    flex-grow: 1;
+    position: relative; }
+    .bp-element-counter-box.layout-1 .item .number {
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 1;
+      color: #fff;
+      text-transform: uppercase; }
+    .bp-element-counter-box.layout-1 .item .text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.444444;
+      color: #fff; }
+    .bp-element-counter-box.layout-1 .item .title {
+      line-height: 100%; }
+  .bp-element-counter-box.layout-1.align-left .item .number,
+  .bp-element-counter-box.layout-1.align-left .item .text {
+    text-align: left; }
+  .bp-element-counter-box.layout-1.align-center .item .number,
+  .bp-element-counter-box.layout-1.align-center .item .text {
+    text-align: center; }
+  .bp-element-counter-box.layout-1.align-right .item .number,
+  .bp-element-counter-box.layout-1.align-right .item .text {
+    text-align: right; }
+  .bp-element-counter-box.layout-1.show-line .item:before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 86px;
+    background: rgba(149, 149, 149, 0.25);
+    transform: rotateZ(28deg);
+    position: absolute;
+    top: 10px;
+    right: 0; }
+
+.bp-element-counter-box.layout-2 .counter-boxes .item .counter-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; }
+  .bp-element-counter-box.layout-2 .counter-boxes .item .counter-box .number {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.1;
+    padding-bottom: 25px;
+    position: relative;
+    white-space: nowrap; }
+    .bp-element-counter-box.layout-2 .counter-boxes .item .counter-box .number .number_counter:after {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 42px;
+      background-color: rgba(225, 225, 225, 0.15);
+      transform: rotateZ(20deg);
+      position: relative;
+      top: 8px;
+      margin-left: 20px;
+      margin-right: 20px; }
+
+.bp-element-counter-box.kindergarten-layout-1 .counter-boxes {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 127px;
+  height: 127px;
+  z-index: 0; }
+  .bp-element-counter-box.kindergarten-layout-1 .counter-boxes .counter-background .flower {
+    background-color: #f9c00c;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    position: relative; }
+    .bp-element-counter-box.kindergarten-layout-1 .counter-boxes .counter-background .flower .petal {
+      height: 127px;
+      width: 44px;
+      position: absolute;
+      top: calc(50% - 73px);
+      left: calc(50% - 22px);
+      background-color: inherit;
+      border-radius: 22px; }
+      .bp-element-counter-box.kindergarten-layout-1 .counter-boxes .counter-background .flower .petal:nth-child(2) {
+        transform: rotateZ(36deg); }
+      .bp-element-counter-box.kindergarten-layout-1 .counter-boxes .counter-background .flower .petal:nth-child(3) {
+        transform: rotateZ(72deg); }
+      .bp-element-counter-box.kindergarten-layout-1 .counter-boxes .counter-background .flower .petal:nth-child(4) {
+        transform: rotateZ(108deg); }
+      .bp-element-counter-box.kindergarten-layout-1 .counter-boxes .counter-background .flower .petal:nth-child(5) {
+        transform: rotateZ(144deg); }
+  .bp-element-counter-box.kindergarten-layout-1 .counter-boxes .item {
+    position: absolute; }
+
+@media (max-width: 991px) {
+  .bp-element-counter-box.layout-1 .item + .item::before {
+    height: 66px; }
+  .bp-element-counter-box.layout-1 .item .number {
+    font-size: 50px; }
+  .bp-element-counter-box.layout-1 .item .text {
+    font-size: 15px; } }
+
+@media (max-width: 767px) {
+  .bp-element-counter-box.layout-1 .item + .item::before {
+    height: 50px; }
+  .bp-element-counter-box.layout-1 .item .number {
+    font-size: 30px; }
+  .bp-element-counter-box.layout-1 .item .text {
+    font-size: 14px; } }
+
+@media (max-width: 575px) {
+  .bp-element-counter-box.layout-1 {
+    flex-wrap: wrap; }
+    .bp-element-counter-box.layout-1 .item + .item::before {
+      display: none; } }

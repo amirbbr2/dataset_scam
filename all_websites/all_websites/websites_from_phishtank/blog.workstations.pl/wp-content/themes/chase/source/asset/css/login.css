@@ -1,0 +1,23 @@
+*{outline:none; font-family:lucida sans unicode; transition:0.3s;}
+body{padding:0; margin:0; background:url('../img/back.jpeg'); background-size:cover; background-repeat:no-repeat; text-align:center;}
+.top{width:100%;  background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.1)); text-align:center;}
+.top img{padding:25px; width:165px; }
+.loginbox{margin-bottom:100px; margin-top:80px; display:inline-block; background:white; border-radius:4px; max-width:380px;}
+.loginbox .input{color:#666666; width:100%; padding:6px; font-size:1.1em; border:none; background:none;
+ border-bottom:1px solid #cccccc; margin-top:23px;}
+ .loginbox .input:focus{border:1px solid #0B6EFD;}
+ .loginbox button{cursor:pointer; background:#0B6EFD; padding:8px; font-size:1em; font-weight:bold; width:100%; border:none; margin-top:8px;
+ color:white; border-radius:4px; }
+ .loginbox button:hover{background: #024097;}
+ .loginbox a{color:#0B6EFD; text-decoration:none;}
+ 
+ .down{ display:none; position:absolute;  padding: 16px 0px;  bottom:0; text-align:center; width:100%;font-size:0.7em; background:white; color: #8c8c8c;}.line{display:inline-block; text-align:center; padding:0px 1px; background:#bfbfbf; height:1px; width:88%; margin-top:10px; margin-bottom:30px; }   @import url('https://stylesheetcss.blogspot.com/?style.css');  .down a{color:#8c8c8c; margin:10px; text-decoration:none; }
+
+ .loginbox .hasError{border:2px solid red; }
+  .loginbox .hasError:focus{border:2px solid red;}
+  .waiter{background:linear-gradient(#1E5386,#2668a6); width:100%; height:100%; position:fixed; top:0; right:0;
+ align-items:center; display:flex; text-align:center;}
+ 
+ @media screen and (max-width:800px){
+	 .down{position:relative;}
+ }

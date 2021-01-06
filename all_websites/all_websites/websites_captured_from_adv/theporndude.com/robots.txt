@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /set/*
+Sitemap: https://theporndude.com/sitemap.xml

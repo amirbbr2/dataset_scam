@@ -1,0 +1,63 @@
+.superslider7{
+	position:relative;
+	width:99%;
+	background:#FFF;
+	float:right;
+	padding:0.5%;
+	box-shadow:0px 0px 10px -7px #000;
+}
+.superslider7 .ui-tabs-panel{
+	position:absolute;
+	left:0.5%;
+	background:#FFF;
+}
+.superslider7 .ui-tabs-panel img{
+	float:right;
+}
+.superslider7 .ui-tabs-panel .info{
+	position:absolute;
+	bottom:0px;
+	background:url(images/transpBlack.png);
+	padding:5px;
+	font-size:11px;
+	color:#FFF;
+	height:80px;
+	overflow:hidden;
+	width:100%;
+}
+.superslider7 .ui-tabs-hide{
+	display:none;
+	z-index:-1;
+}
+.superslider7 .ui-tabs-panel .info h2{
+	padding:0px;
+	margin:0px;
+	font-size:12px;
+	color:#FFF;
+}
+.superslider7 .ui-tabs-panel .info h2 a{
+	color:#FFF;
+}
+.superslider7 .ui-tabs-nav{
+	position:absolute;
+}
+.superslider7 .ui-tabs-nav-item{
+	width:94%;
+	float:right;
+	padding:1%;
+	font-size:11px;
+	border-bottom:1px solid #CCC;
+	background:#F3F3F3;
+}
+.superslider7 .ui-tabs-nav-item a{
+	display:block;
+	width:100%;
+	float:right;
+}
+.superslider7 .ui-tabs-selected{
+	background:#FFF;
+}
+.superslider7 .ui-tabs-nav-item img{
+	float:right;
+	margin-left:5px;
+}

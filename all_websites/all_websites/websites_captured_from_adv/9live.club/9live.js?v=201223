@@ -1,0 +1,4 @@
+function generatePlayer(url){if(url.indexOf('/vm/')!=-1){$.get(url,function(data){generatePlayer(data);});return;}
+var getUrl=function(){if(url.indexOf('9live.club/channel/')!=-1){return url+'?1&json=1';}
+return[{file:url,type:"hls",}];}
+var options={key:"Vnn7CdANuVWTOVm3s3FoaikdB3wQeM3yDiTG0al5DLuFuLWaWY7UPBzRKV4=",playlist:getUrl(),sharing:{"sites":["reddit","facebook","twitter"]},abouttext:"9Live",aboutlink:"http://9live.club",width:'100%',primary:"html5",autostart:true,aspectratio:"16:9",logo:{file:'/images/overlay.png',position:'top-right',margin:5}};var player=jwplayer("player").setup(options);}

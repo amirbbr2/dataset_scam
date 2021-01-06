@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Free-Litecoin.com Win free Litecoin every hour!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112065124-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112065124-1');
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+
+    <script>
+        var clientrecaptcha = "6LdXC8MUAAAAAJtK8TdBri8nBuj52I4dayHUS6RH";
+        var subaction="";
+    </script>
+
+    <script src='https://www.google.com/recaptcha/api.js?render=6LdXC8MUAAAAAJtK8TdBri8nBuj52I4dayHUS6RH'></script>
+
+        <script src='js/restorepassword.js?v=62"'></script>
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="manifest" href="icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Free-Litecoin.com Win free Litecoin/ltc every hour!">
+    <link rel="stylesheet"  type="text/css" href="css/loginstyle.css?v=56">
+    <meta name="coinzilla" content="coinzilla-303935afa99a2a017c" />
+    <meta name="maValidation" content="1bfc757f25de904c7ddb0cc53a7cbd4a" />
+    <script>var _coinzilla_fbf_id_ = "116425afc5b4f74701";</script>
+
+    <meta name="propeller" content="8cae251fcf6788936c97ba13b087a8d3">
+
+    <script  src="https://coinzillatag.com/lib/floating.js?r=4"></script>
+    <script>window.coinzilla_floating = window.coinzilla_floating || [];function czilla(){coinzilla_floating.push(arguments);}czilla('116425afc5b4f74701');</script>
+
+    <script src='js/login.js?v=62'>
+    </script>
+</head>
+<body>
+
+<div class="modal fade" id="passwordrestore" role="dialog" >
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h3  class="modal-title text-center " style="width: 100%">Forgot your Password?</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">Please type in the email address that you had entered during signup in the box bellow and a password reset link will be sent to you.</p>
+                <p class="text-center">We will turn off two factor authentication when you request password reset.</p>
+                <div style="padding: 10px">
+
+                    <div class="form-group" style="padding: 0 20px">
+                        <label for="usr">Email Address:</label>
+                        <input type="email" name="email" class="form-control" id="restorepasswordmail">
+                    </div>
+
+                    <h2 class="text-center" id="responsemessege"></h2>
+                    <div class="text-center" >
+
+                        <button onclick="passwordrestoreclick()" id="buttonrestorecaptcha" type="submit" class="btn btn-primary" disabled>Send Request</button>  </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>   </div>
+<div class="modal fade" id="termofservice" role="dialog" >
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title text-center " style="width: 100%">Terms of service</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">Please follow this rules when use our website</p>
+                <div class="col-xs-12">
+                    <ol class="list-group">
+                        <li class="list-group-item">
+                            <p>Contact us correctly and don't use strong language.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Don't use bot or apps to send automatized request.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p style="display: inline;">
+                                And other website info about use and condition are</p>
+                            <a style="display: inline;" class="nav-link" href="rulesandcondition">other rules</a>
+                        </li>
+
+                    </ol>
+                </div>
+
+                <br>
+                <p>If we find that you are not following this rules or trying to gain an unfair advantage ,
+                    your account will be disable and your account balance will be frozen (You will lose balance).</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>   </div>
+<nav class="navbar navbar navbar-expand-md  fixed-top bg-dark navbar-dark">
+
+
+    <a class="navbar-brand" href="#">Free-Litecoin	<img src="icon/favicon-96x96.png" alt="Logo" style="width:30px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#Litecoin">Litecoin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#technical">More</a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav  ml-auto">
+            <li class="nav-item active"><a class="nav-link pricemenu">  <img src="icon/favicon-96x96.png" alt="Logo" style="width:30px;">125.9445$</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#"  id="register">Sign Up</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#" id="login" >Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+
+
+<div class="backcontainer">
+    <div class="container" >
+        <div class="row">
+            <div  id="textfirst" class="col-sm-6">
+                <h1>Win free Litecoin</h1><br>
+                <p>Earn free Litecoin</p>
+                <p>Multiply your Litecoin</p>
+                <p>Deposit your Litecoin</p>
+                <p>Withdraw your Litecoin</p>
+
+            </div>
+            <div   class="col-sm-6"  style=" ; padding-top: 70px"  id="registerform">
+                <form class="form"  method="post">
+                    <div id="formitem">
+                        <h2>Sign Up</h2>
+                        <div class="form-group">
+                            <label for="usr">Email</label>
+                            <input type="email"   class="form-control" id="usr4" name="emailreg" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="usr">Password</label>
+                            <input type="password" class="form-control" id="usr24" name="hesloreg" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="usr">Referer</label>
+                            <input name="referer"   class="form-control" id="referer" value="95719" >
+                            <small id="refererinfo" class="form-text text-muted">Optional field</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="usr">Litecoin Withdraw Address</label>
+                            <input name="adresa"    class="form-control" value="">
+                            <small id="adresainfo" class="form-text text-muted">Optional field</small>
+
+                        </div>
+                        <p class="text-center" ><a href="https://www.litevault.net/" target="_blank">Create a litecoin address?</a>
+                            <a data-toggle="modal" href="#" data-target="#termofservice">Terms of service?</a></p>
+                        <p id="messegereg"><b></b></p>
+
+                    </div>
+                    <input  name="recaptchatoken" value="" id="signuprecaptcha" style="display: none;">
+
+                    <div class="text-center">
+                        <button type="submit" id="signupbutton"  class="btn btn-primary text-center btn-lg" disabled>Sign Up</button>
+                    </div>
+
+
+
+                </form>
+            </div>
+
+
+            <div class="col-sm-6"  id="loginform"   style="display: none; ; padding-top: 70px" >
+                <form class="form" method="post">
+                    <h2>Login</h2>
+                    <div class="form-group">
+                        <label for="usr">Email</label>
+                        <input type="email"         class="form-control" id="usr" name="email" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="usr">Password</label>
+                        <input type="password" class="form-control" id="usr2" name="heslo" required autofocus>
+                    </div>
+                    <p  style="text-align: center; color: crimson; font-size: 16px;"><b></b></p>
+
+                    <div class="centerandpadding" style="text-align: center; padding-bottom: 10px">
+                        <a  data-toggle="modal" href="#" data-target="#passwordrestore">Forgot Password?</a>
+                    </div>
+
+                    <input  name="recaptchatoken" value="" id="loginrecaptcha" style="display: none;">
+                    <div style="text-align: center;">
+                        <button type="submit" id="loginbutton"  style="text-align: center;" class="btn btn-primary btn-lg" disabled>Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="smalltopmargin text-center">
+    
+    <!-- <script type="text/javascript">
+         atOptions = {
+             'key' : 'a17b0d5a4377b40211e872a0327592a8',
+             'format' : 'iframe',
+             'height' : 50,
+             'width' : 320,
+             'params' : {}
+         };
+         document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.bcloudhost.com/a17b0d5a4377b40211e872a0327592a8/invoke.js"></scr' + 'ipt>');
+     </script>
+     -->
+    <div class="text-center" id="sitestats">
+
+
+        <div class="row">
+
+
+            <div class="col-sm-4" >
+
+
+                <div class="countclock"> <span class="count">1000000</span>+</div>
+                <h2>User count</h2>
+                <p>All this user are registered in our site</p>
+                </p>
+
+            </div>
+            <div class="col-sm-4" >
+
+
+                <div class="countclock"> <span class="count">15000</span>+<img style='vertical-align:middle; width: 30px;' src='image/ltc.png'></div>
+                <h2>Volume</h2>
+                <p>Litecoins earned and wins</p>
+
+
+            </div>
+            <div class="col-sm-4" >
+
+                <div class="countclock"> <span class="count">6000</span>+<img style='vertical-align:middle; width: 30px;' src='image/ltc.png'></div>
+                <h2>Litecoin earned</h2>
+                <p>All litecoin earned in free section</p>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+        <div class="text-center" id="features">
+            <br>
+        <h2>Features</h2>
+
+        <div class="row">
+
+
+            <div class="col-sm-6" >
+
+                <p>
+                    <div class="iconround">
+                    <img class="floatleft" src="image/money.svg" alt="" width="100" height="100">
+                </div>
+                <h2>Free litecoin</h2>
+                <p>Every hour can earn more than 200$ in litecoin</p>
+                </p>
+
+            </div>
+            <div class="col-sm-6" >
+
+                <p>
+                    <div class="iconround">
+                    <img class="floatleft" src="image/person.svg" alt="" width="100" height="100">
+                </div>
+                <h2>Referer program</h2>
+                <p>Invite user’s to our site and you can earn 50% of the Litecoin they earn</p>
+                </p>
+
+            </div>
+            <div class="col-sm-6" >
+
+                <p>
+                    <div class="iconround">
+                    <img class="floatleft" src="image/moneywithdrawdeposit.svg" alt="" width="100" height="100">
+                </div>
+                <h2>Withdraw Deposit</h2>
+                <p>You can withdraw/deposit your Litecoin without any limits.</p>
+                </p>
+
+            </div>
+            <div class="col-sm-6" >
+
+                <p>
+                    <div class="iconround">
+                    <img class="floatleft" src="image/upicon.svg" alt="" width="100" height="100">
+                </div>
+                <h2>Earn more</h2>
+                <p>You can earn more by playing our fair multiply game or for just keeping your Litecoin in your account here. Yearly interest rate is 8%</p>
+                </p>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div><br>
+    <div class="container text-center">
+
+        <br>
+        <div  id="Litecoin"  style="padding: 10px;width: 100%">
+
+            <h2 class="text-center" style="width: 100%">What is litecoin?</h2>
+            <div class="row" >
+                <div class="coinmarketcap-currency-widget" data-currency="litecoin" data-base="USD" style="width: 100%" data-secondary="BTC"></div>
+                <p>Litecoin is a peer-to-peer cryptocurrency in many regards similar to
+                    Bitcoin. Coins are created and transferred using an open source cryptographic
+                    protocol and are not managed by any central authority. Thanks to the adoption of
+                    Segregated Witness, and the Lightning Network, Litecoin has some technical advantages
+                    over Bitcoin and other major cryptocurrencies. It is capable of handling a greater number
+                    of transactions in a given time and thus reducing potential bottlenecks, as seen with
+                    Bitcoin. Also, payment cost of Litecoin is
+                    nearly zero and it’s payment speed is approximately four times faster than Bitcoin.</p>
+                <br>
+                <!--<ins class="bmadblock-5b0a85c22b2ba20010bf2fd8" style="display:inline-block;width:300px;height:100px;"></ins>-->
+                <br>
+                <iframe class="iframeyoutube" style="" frameBorder="0"
+                        src="https://www.youtube.com/embed/q7B7S88RtV8">
+                </iframe>
+            </div>
+        </div>
+        <div  id="technical"  style="padding: 10px;">
+
+
+            <h3>History?</h3>
+            <p>Litecoin was released via an open-source client on GitHub on October 7, 2011 by Charlie Lee, a former Google employee. The Litecoin network went live on October 13, 2011. It was a fork of the Bitcoin Core client, differing primarily by having a decreased block generation time (2.5 minutes), increased maximum number of coins, different hashing algorithm (scrypt, instead of SHA-256), and a slightly modified GUI.
+                During the month of November 2013, the aggregate value of Litecoin experienced massive growth which included a 100% leap within 24 hours.
+                Litecoin reached a $1 billion market capitalization in November 2013
+            </p>
+            <div>
+                <h3>How Litecoin Is Made?</h3>
+                <p>Like all cryptocurrencies, Litecoin is
+                    not issued by a government, which historically has been the only entity that
+                    society trusts to issue money. Instead of being regulated by a Federal Reserve and coming off a press at the Bureau of Engraving and Printing, Litecoin’s are created by the elaborate procedure called mining, which consists of processing a list of Litecoin transactions. Unlike traditional currencies, the supply of Litecoin’s is fixed. There will ultimately be only 84 million Litecoin’s in circulation and not one more. Every 2.5 minutes (as opposed to 10 minutes for bitcoin) , the Litecoin network generates, what is called a block—a ledger entry of recent Litecoin transactions throughout the world. And here is where Litecoin’s inherent value derives.
+                </p>
+                <p>Read more: <a href="https://www.investopedia.com/articles/investing/040515/what-litecoin-and-how-does-it-work.asp">What Is Litecoin And How Does It Work?</a></p>
+            </div>
+            <div>
+                <h3>Mining for Litecoin?</h3>
+                <p>The incentive for mining is that the first miner to successfully verify a block is
+                    rewarded with 50 Litecoin’s. The number of Litecoin’s awarded for such a task reduces
+                    with time. In October of 2015 it will be halved, and the halving will continue at regular
+                    intervals until the 84,000,000th Litecoin is mined. But could one unscrupulous miner change
+                    the block, enabling the same Litecoin’s to be spent twice? No. The scam would be detected
+                    immediately by some other miner, anonymous to the first. The only way to truly game the
+                    system would be to get a majority of miners to agree to process the false transaction,
+                    which is practically impossible.
+                </p>
+                <p>Read more: <a href="https://www.investopedia.com/articles/investing/040515/what-litecoin-and-how-does-it-work.asp">What Is Litecoin And How Does It Work?</a></p>
+            </div>
+            <div>
+                <h3>Storing your litecoin?</h3>
+                <p>Storing your Litecoin.
+                    If you want to buy Litecoin or you already have some Litecoin you have to
+                    find some safe place where you will put your Litecoin. You have
+                    a lot of option’s. It depends on your idea of what you want done
+                    with your Litecoin. Most common option is putting your Litecoin into a
+                    software wallet. This option is relatively safe but not very practical.
+                    Second most common variant is to put your Litecoin in to some cryptocurrency
+                    stock, where your Litecoin is not secured as it would be in a software wallet.
+                    But, you have more options on what you can do with your Litecoin. You can sell
+                    your Litecoin. You can buy more Litecoin. You can exchange your Litecoin. Or,
+                    you can lend your Litecoin and make some profit off of them. it only depends
+                    on you. Newest way to storing your Litecoin, is to put
+                    your Litecoin into a hardware wallet. Be careful, because there are
+                    differences between hardware and software wallets. In a hardware wallet,
+                    your Litecoin is absolutely safe. No
+                    one could steal your Litecoin unless you lost your hardware wallet. Hardware wallets are technologically similar to a flash drive. If you damage or destroy this hardware wallet you will lose all of your Litecoin. Be careful as this option is not practical. If your main concern is to gain more Litecoin, we recommend you store it on your account here because you will earn yearly interest of 6%. But it only depends on what type of variant is best for you.
+
+                </p>
+            </div>
+            <div>
+                <h3>Different between litecoin and bitcoin?</h3>
+                <p>Litecoin transaction fee’s are mere cents compared to bitcoin transaction fee’s
+                    that can cost dollars. Litecoin has a faster network.
+                    Transaction’s are much faster than they are in the bitcoin
+                    network. An Average Litecoin transaction takes 2 minutes.
+                    An average bitcoin transaction take’s 10 minutes on a good day.
+                    Total amount of bitcoin is 21 million coin. Litecoin has 84
+                    million coins. Litecoin also uses a different algorithm.
+                    Bitcoin use’s Bitcoin’s SHA-256. Litecoin use Litecoin’s Scrypt.
+
+                </p>
+            </div>
+            <div>
+                <h3>The Bottom Line?</h3>
+                <p>Once a currency reaches a critical mass of users who are confident that the
+                    currency is indeed what it represents and probably won’t lose its value,
+                    it can sustain itself as a method of payment. Litecoin isn’t anywhere near
+                    universally accepted, as even its own founders admit that it has fewer
+                    than 100,000 users. (Even bitcoin probably has less than half a
+                    million total users.) But as cryptocurrencies become more readily
+                    accepted and their values stabilize, one or two of them—possibly
+                    including Litecoin—will emerge as the coin(s) of the digital realm.
+                </p>
+                <p>Read more: <a href="https://www.investopedia.com/articles/investing/040515/what-litecoin-and-how-does-it-work.asp">What Is Litecoin And How Does It Work?</a></p>
+
+
+            </div>
+            <div>
+                <h3>Any question or problem?</h3>
+                <p>If you encounter any problems, you can contact us on this mail address <a href="mailto:info@free-litecoin.com">info@free-litecoin.com</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div><br>
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <footer class="container-fluid text-center">
+        <p>Free-Litecoin.com © 2021 All rights reserved </p>
+    </footer>
+
+
+
+</body>
+</html>

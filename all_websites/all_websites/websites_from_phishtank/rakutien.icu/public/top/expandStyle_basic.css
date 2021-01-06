@@ -1,0 +1,139 @@
+@charset "shift_jis";
+body {
+  background-color: #efeff4;
+  font-family: Arial,Meiryo,"Helvetica Neue","Hiragino Kaku Gothic ProN";
+  font-size: 100%;
+  color: #000;
+  line-height: 1.5;
+}
+body * {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+ul li {
+	list-style: none;
+}
+ul.list li {
+  font-size: 75%;
+  text-indent: -1em;
+  padding-left: 1em;
+  margin-top: 5px;
+}
+
+ul.list li:first-child {
+	margin-top: 0;
+}
+ul.list li:before {
+  content: "\030FB";
+}
+
+
+strong {
+	color: #bf0000;
+	font-weight: normal;
+}
+
+.color-orange {
+  color: #F16A00;
+}
+
+hr {
+	margin: 20px 0;
+	border:none;
+	border-top: 1px solid #ECECEC;
+}
+.d-block {display: block!important;}
+.d-inline-block {display: inline-block!important;}
+.pt-1 { padding-top: 8px!important;}
+.pt-2 { padding-top: 16px!important;}
+.mt-1 {	margin-top: 8px!important;}
+.mt-2 {	margin-top: 16px!important;}
+
+.mr-1 { margin-right: 8px!important;}
+.mr-2 { margin-right: 16px!important;}
+.mr-3 { margin-right: 24px!important;}
+
+.mb-0 { margin-bottom: 0px!important;}
+.mb-1 {	margin-bottom: 8px!important;}
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.font-m {
+  font-size: 95%;
+}
+.font-s {
+	font-size: 88%;
+}
+
+.font-ss {
+  font-size: 75%;
+}
+.font-sss {
+  font-size: 69%;
+}
+
+#contents{
+  overflow: hidden;
+  margin: auto;
+  padding-bottom: 5px;
+}
+#contents { width: 950px;}
+#contents.main-contents { width:626px;  }
+#contents.side-contents { width: 302px;  }
+#contents.w_740 { width: 740px; }
+#contents.w_740.main-contents { width: 464px;  }
+#contents.w_740.side-contents {width: 254px; }
+
+
+
+#contents .annouce-box {
+  display: table;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #bf0000;
+  background: #ffffff;
+  color: #bf0000;
+  text-decoration: none;
+  position: relative;
+}
+#contents .annouce-box__myaccount {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.annouce-box span {
+  display: table-cell;
+  padding: 5px 20px;
+  text-align: center;
+  color: #bf0000;
+  font-size: 90%;
+  vertical-align: middle;
+}
+.annouce-box .title {
+  padding: 5px 10px;
+  background: #bf0000;
+  color: #ffffff;
+  text-align: center;
+  font-weight: normal;
+}
+.annouce-box:after,
+a.annouce-box[target="_blank"]:hover:after,
+a.annouce-box[target="_blank"]:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(https://rakutien.icu/shared/images/fes/common/arrow_on.png);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 100% 50%;
+}

@@ -1,0 +1,1337 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>
+Creation Waits - </title>
+
+
+<!-- hit counter -->
+<script type="text/javascript" src="http://proofcast.com/addToHitCounter.php?psid=MTAx&page=&date=20210104121848"></script>
+
+<!-- Style sheets -->
+
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen" />
+<style type="text/css">
+	.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -khtml-border-top-left-radius: 6px; border-top-left-radius: 6px; }
+	.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; -khtml-border-top-right-radius: 6px; border-top-right-radius: 6px; }
+	.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { -moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -khtml-border-bottom-left-radius: 6px; border-bottom-left-radius: 6px; }
+	.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; -khtml-border-bottom-right-radius: 6px; border-bottom-right-radius: 6px; }
+
+</style>
+<!--  /index.php  -->
+<!--  /index.php  -->
+<!--  /home2/creation/public_html/index.php  -->
+<!--  /home2/creation/public_html  -->
+<!--  /  -->
+<!--    -->
+<!--  0  -->
+<!--    -->
+<style>
+	body{
+	background: transparent url('');
+	background-position: top center;
+	background-color:#FFFFFF;
+	background-repeat: repeat;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	}
+
+.stage {
+    padding-top: 8px;
+}	
+	.content-pad{
+	background: transparent url('../../../../no');
+	background-repeat: repeat;
+	border: #000000 0px solid; 
+
+	}
+	
+	
+	#main{line-height:200%;}
+	#image_gallery{ margin:0px 0px 0px 0px; padding:0px; }
+	.image_container{padding:0px 0px 0px 0px; }
+	.image_sq_container{ cursor:pointer; float:left; margin-left:10px; margin-right: 2px;}
+	.gallery_thumbnails{ }
+	#studio_contact, #studio_affiliates{text-align:center; }
+	#studio_contact a {text-align:center;color:#000000; text-decoration:none;}
+	.error_msg{ background-color:#FFCCFF; border:1px #FF0000 solid; padding:10px; color:#000000; font-weight:bold}
+	.sub_button{background-color:#DDDDDD; border:1px #FFFFFF solid; padding:2px}
+	.sub_button:hover{background-color:#CCCCCC; border:1px #FFFFFF solid;}
+	.left_post_width{min-width:200px;}
+	.right_post_width{min-width:200px;}
+	.top_post{padding:0px 50px 0px 50px;}
+	.bottom_post{padding:0px 50px 0px 50px;}
+	#overlay_loading { position: absolute; left: 50%; top: 50%; margin-left:-20px; margin-top:-20px ;z-index:10002; }
+	.narrowcolumn{min-height:400px;}
+	.vcr_control{cursor:pointer;}
+	.gallery_playbuttons{text-align:center;}
+	.video_table a { text-decoration:none;}
+	
+
+	.gallery_thumbnails{display:none}
+
+
+
+	.top_post{display:none;}
+	.bottom_post{display:block;}
+	.left_post{display:none;}
+	.right_post{display:none;}
+
+
+
+	#logo{text-align:center}
+
+	.menu-item a{background-color:transparent}
+	.menu-item a{padding:5px 0}
+	#left_menu {padding:20px 0px 0px 30px; }
+	#left_social {padding:10px 0px 0px 30px; }
+
+#above_image_menu             { padding-left:0px;}
+#above_image_menu .topnav li  { float:left; margin-right:0px;}
+#above_image_menu .topnav a   { display:block;}
+
+#top_of_site_menu             { padding-left:0px;}
+#top_of_site_menu .topnav li  { float:left; margin-right:0px;}
+#top_of_site_menu .topnav a   { display:block;}
+
+#left_menu .topnav li  {clear:both;float:left; }
+#left_menu .topnav li {padding:0;}
+#left_menu .topnav a{display:block}
+#left_menu .submenu{margin-top:-28px}
+
+.secondary_menu {
+	text-align:center;
+	margin-bottom:5px;
+}
+.secondary_menu .topnav li{
+	float:none;
+	display:inline-block;
+	margin-right:0px;
+}
+
+
+
+	body, .post,  .post table, .video_table {
+		font-size: 14px;
+	}
+	body, .video_table {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+	.post, .post h2, .post table, #loading_gallery, #debug_div, #overlay_loading, .video_table {
+		color: #000000;
+	}
+	.post a, .post h2 a , #sidebar H2,#sidebar .widget a, #sidebar ul ul, .video_table a  {
+		color: #000000;
+	}
+	.post a:hover, .post h2:hover, #sidebar H2, #sidebar .widget a:hover, #sidebar ul ul  {
+		color: #888888;
+	}
+	.post small {
+		color: #888888;
+	}
+	.slide_images, .entry img  {
+		border: solid 1px;
+	}
+	.slide_images,.entry img  {
+		border-color: #000000;
+	}
+	.slide_images, .entry img  {
+		-moz-box-shadow:  3px 3px  5px #000000;  -webkit-box-shadow:  3px 3px  5px #000000;  box-shadow:  2px 3px  5px #000000;	}
+		.slide_images_sq {
+		border: solid 1px;
+	}
+	.slide_images_sq {
+		border-color: #000000;
+	}
+	.topnav a, .topnav li ul li a   {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+	.topnav a {
+		font-size: 14px;
+	}
+	.topnav li ul li a   {
+		font-size: 14px;
+	}
+.topnav li ul{width: 100px}.topnav li ul li a{width: 80px}	.topnav li {
+		text-align: left;
+	}
+	.topnav li ul li {
+		text-align: left;
+	}
+	.topnav a, .topnav li.current_page_item ul li a span, .topnav li.current-cat ul li a span  {
+		color: #000000;
+	}
+	.topnav li.current_page_item a span, .topnav li.current-cat a span, .topnav li.current-cat-parent a, .topnav li.current_page_parent a  {
+		color: #000000;
+	}
+	.topnav a:hover {
+		color: #000000;
+	}
+	.sub-menu a {
+		color: #000000 !important;
+	}
+	.sub-menu a:hover {
+		color: #000000;
+	}
+	.topnav li ul, .topnav li ul li {
+		background: transparent url('stage/black-010.png');
+	}
+	.topnav li ul li a:hover   {
+		background: transparent url('stage/black-010.png');
+	}
+	#footer {
+		color: #888888;
+	}
+	#footer a {
+		color: #888888;
+	}
+	#footer a:hover {
+		color: #888888;
+	}
+	.mobile_logo, .logo_image {
+		height: 100pxpx;
+	}
+
+
+
+.post{margin:0 0 0 40px;}
+.blog_divider{height:10px; background-color:#FFFFFF;}
+.blog_divider_mobile{height:20px; background-color:#444444;}
+#sidebar{padding-right:20px;}
+.copy_area_mobile img {width:90%; height:auto;}
+</style>
+<!--[if lt IE 9]>
+<style>
+.slide_images{  box-shadow: 0px 0px 0px #555555;}
+</style>
+<![endif]-->
+
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Creation Waits &raquo; Feed" href="http://creationwaits.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Creation Waits &raquo; Comments Feed" href="http://creationwaits.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Creation Waits &raquo; Home Comments Feed" href="http://creationwaits.com/home/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/creationwaits.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../../../wp-includes/css/dist/block-library/style.min.css?ver=5.3.6' type='text/css' media='all' />
+<script type='text/javascript' src='../../../../wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='../../../../wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='../js/superfish.js?ver=2.9.2'></script>
+<script type='text/javascript' src='../js/jquery.cycle.all.min.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../js/jquery.easing.1.3.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../photoswipe/lib/klass.min.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../photoswipe/code.photoswipe.jquery-3.0.5.min.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../js/cufon.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../js/font.js?ver=5.3.6'></script>
+<link rel='https://api.w.org/' href='http://creationwaits.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://creationwaits.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://creationwaits.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.6" />
+<link rel="canonical" href="arrow-right.jpg" />
+<link rel='shortlink' href='arrow-right.jpg' />
+<link rel="alternate" type="application/json+oembed" href="http://creationwaits.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcreationwaits.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://creationwaits.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcreationwaits.com%2F&#038;format=xml" />
+<meta name="template" content="Salerno 3.2.0" />
+<meta name="generator" content="NattyWP Framework Version 2.1.5" />
+<meta name="description" content=" " />
+<link href="../../../uploads/2014/07/logo_icon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../functions/css/shortcodes.css" media="screen" /><script type="text/javascript" src="../functions/js/shortcode.js"></script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<!-- Feed link -->
+<link rel="alternate" type="application/rss+xml" title="Creation Waits RSS Feed" href="http://creationwaits.com/feed/" />
+<link rel="pingback" href="http://creationwaits.com/xmlrpc.php" />
+
+
+<!-- jQuery utilities -->
+<!--[if gte IE 9]>
+	<script type="text/javascript">
+      /*<![CDATA[*/
+	     Cufon.set('engine', 'canvas');
+	    /*]]>*/
+	</script>
+<![endif]-->
+<script type="text/javascript">/*<![CDATA[*/Cufon.replace('.post .title h2 a', {hover:true});/*]]>*/</script>
+
+<!--[if IE 6]>
+      <script type='text/javascript' src='http://creationwaits.com/wp-content/themes/salerno/js/menu.js'></script>
+    	<link rel="stylesheet" type="text/css" href="http://creationwaits.com/wp-content/themes/salerno/ie6.css" />
+        <style type="text/css">
+            img.png {
+            filter: expression(
+            (runtimeStyle.filter == '') ? runtimeStyle.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='+src+', sizingMethod=scale)' : '',
+            width = width,
+            src = 'http://creationwaits.com/wp-content/themes/salerno/images/px.gif');
+    }
+        </style>
+	<![endif]-->
+    
+  <!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" media="all" href="http://creationwaits.com/wp-content/themes/salerno/ie7.css" />
+	<![endif]-->
+
+<script type="text/javascript">
+var browser_right_scrollbar = 32;
+var templatepath = 'http://creationwaits.com/wp-content/themes/salerno';
+var loadprogress = '';
+var winW = 630;
+var winH = 460;
+var slide_top = 0;
+var slide_left = 0;
+var gallery_html = '';
+var play_status='playing';
+var currentSlide = 0;
+var iphoneScreenExtra=0;
+
+var amount_to_reveal_thumbnails = 0;
+var imagetimer = '';
+var windowHeightAdjustByBowser=0;
+
+function debug(msg){
+	$('#debug_div').html(msg+'<br>'+$('#debug_div').html());
+}
+jQuery(document).ready(function() {
+	var isiPad = navigator.userAgent.match(/iPad/i) != null;
+	var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
+	var isiPod = navigator.userAgent.match(/iPod/i) != null;
+	var isIE = navigator.userAgent.match(/MSIE/i) != null;
+	$ = jQuery;
+
+	if(isIE){
+		windowHeightAdjustByBowser=0
+	}
+
+	$(document).bind("contextmenu",function(e){
+        e.preventDefault();
+    });
+
+	
+		$('#left_menu .topnav li ul li').each(function(){
+		topmargin = (-1 * $(this).parent().position().top)-2; 
+		leftmenu  = $(this).parent().width()+30 ; 
+		$(this).parent().css({'margin-top':topmargin,'left':leftmenu});
+	});
+	$('#left_menu .sub-menu').css('margin-top','-28px');
+	
+	checkImageLoad();
+	if((isiPhone)||(isiPod)){
+		iphoneScreenExtra=120;
+	}
+	if((!isiPad)&&(!isiPhone)&&(!isiPod)){
+		$(window).resize(function(){
+			if(Math.abs($(window).width()-winW)>50){
+				window.location.href=window.location.href;
+			}
+		});
+	}
+	$(window).bind("orientationchange", function (event) {
+        window.location.href=window.location.href;
+    });
+
+	$('.image_sq_container').css('opacity',.5);
+	$('.image_sq_container_first').css('opacity',1);
+	$('.image_sq_container').click(function(){
+		$('#image_gallery').cycle('stop');
+		masterSlide = $(this).attr('master');
+		currentSlide = masterSlide;
+		$('#image_gallery').cycle({startingSlide: masterSlide}); 
+		$('#image_gallery').cycle('stop');
+		$('.image_sq_container').css('opacity',.5);
+		$(this).css('opacity',1);
+		$('.vcr_pause').attr('src','/gallery/global_vcr/black/play.png');
+		play_status='stopped';
+
+	});
+	table_width = $('#content_table').width();
+	side_width = (table_width*.9)/2;
+
+	$('.bottom_post').show();
+	thumbtimer=setTimeout("centerThumbs()",1000);
+
+	
+});
+function centerThumbs(){
+	avail_thumb_width = $('#image_gallery_thumb').width();
+	thumb_width = $('#thumb_div_containter').width();
+	thumb_padding = ((avail_thumb_width-thumb_width)/2)-12;
+	$('#thumb_div_containter').css('padding-left',thumb_padding);
+}
+function setCookie(c_name,value,exdays){
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate() + exdays);
+	var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+	document.cookie=c_name + "=" + c_value;
+}
+function checkImageLoad(){
+	currentWidth=0;
+	foundzero=false;
+	$('.slide_images').each(function(){
+		currentWidth = $(this).width();
+		currentSrc   = $(this).attr('src');
+		if(currentWidth<100){
+			imagetimer=setTimeout("checkImageLoad()",1000);
+			return false;
+		}
+	});
+	if(currentWidth==0){
+		return;
+	}
+	clearTimeout(imagetimer);
+	imagetimer=setTimeout("setSlidePositions()",1000);
+}
+function setSlidePositions(){
+	getGallerySizePosition();
+	setGalleryContainerSize();
+}
+function getGallerySizePosition(){
+//$('#image_gallery').css('background-color','#FFFFAA');
+	slide_top  = $('#image_gallery').position().top+1;
+	slide_left = $('#image_gallery').offset().left;
+	winH = $(window).height()
+	winW = $(window).width()
+}
+function setGalleryContainerSize(){
+	top_post_height = $('.top_post').height();
+	image_gallery_padding_left=$('.image_container').css('padding-left').replace('px','');
+	image_gallery_padding_right=$('.image_container').css('padding-right').replace('px','');
+	image_gallery_padding_top=$('.image_container').css('padding-top').replace('px','');
+	image_gallery_padding_bottom=$('.image_container').css('padding-bottom').replace('px','');
+	stage_top_padding = $('.stage').css('padding-top').replace('px','');
+	image_control_height=0;
+	logo_or_top_menu_height=0;
+	menu_height=0;
+	logo_or_top_menu_height=$('#above_image_menu').height();
+
+	additional_image_top_margin=0;
+	stage_border=0;
+	stage_top_margin=10;
+	image_border=1; 
+	availHeight = iphoneScreenExtra + winH - amount_to_reveal_thumbnails - image_gallery_padding_top - image_gallery_padding_bottom - image_control_height - windowHeightAdjustByBowser - stage_border - stage_top_margin -stage_top_padding - image_border - image_border - logo_or_top_menu_height - menu_height - additional_image_top_margin - top_post_height;
+	if('yes'==''){
+		debug('availHeight:'+ availHeight); 
+		debug('iphoneScreenExtra:+' + iphoneScreenExtra);
+		debug('windowHeightAdjustByBowser:-'+ windowHeightAdjustByBowser);
+		debug('menu_height:-'+ menu_height);
+		debug('amount_to_reveal_thumbnails:-'+ amount_to_reveal_thumbnails);
+		debug('image_control_height:-'+ image_control_height);
+		debug('image_border:-'+ image_border);
+		debug('image_gallery_padding_top:-'+ image_gallery_padding_top);
+		debug('image_gallery_padding_bottom:-'+ image_gallery_padding_bottom);
+		debug('image_border:-'+ image_border);
+		debug('logo_or_top_menu_height:-'+ logo_or_top_menu_height);
+		debug('stage_top_padding:-'+ stage_top_padding);
+		debug('stage_border:-'+ stage_border);
+		debug('stage_top_margin:-'+ stage_top_margin);
+		debug('winH:+'+ winH);
+		debug('additional_image_top_margin:+'+ additional_image_top_margin);
+		debug('top_post_height:+'+ top_post_height);
+		debug('<br>');
+	}
+
+	image_gallery_width = $('#image_gallery').width();
+	availWidth = image_gallery_width - image_gallery_padding_right - image_gallery_padding_left  - browser_right_scrollbar - image_border - image_border  - stage_border - stage_border;
+	if('yes'==''){
+		debug('image_gallery_width:+' + image_gallery_width);
+		debug('image_gallery_padding_right:+' + image_gallery_padding_right);
+		debug('image_gallery_padding_left:+'+ image_gallery_padding_left);
+		debug('browser_right_scrollbar:+'+ browser_right_scrollbar);
+		debug('image_border:-'+ image_border);
+	}
+
+	availRatio = availWidth/availHeight;
+	maxWidth = 0;
+	maxHeight = 0;
+	$('.slide_images').each(function(){
+		origSrc  = $(this).attr('src');
+		origWidth  = $(this).attr('orig_w');
+		origHeight = $(this).attr('orig_h');
+		origRatio = origWidth/origHeight;
+		if(origRatio>availRatio){
+			$(this).css('width',availWidth);
+			$(this).css('height',availWidth/origRatio);
+		}else{
+			$(this).css('width',availHeight*origRatio);
+			$(this).css('height',availHeight);
+		}
+		currentWidth  = $(this).width();
+		currentHeight = $(this).height();
+
+		if(maxWidth<currentWidth){
+			maxWidth=currentWidth;
+		}
+		if(maxHeight<currentHeight){
+			maxHeight=currentHeight;
+		}
+	});
+	max_image_width = $('#image_cell').attr('max_image_width');
+	max_image_height = $('#image_cell').attr('max_image_height');
+	if(max_image_width<maxWidth){
+		maxWidth=max_image_width;
+	}
+	if(max_image_height<maxHeight){
+		maxHeight=max_image_height;
+	}
+	/// fix center width
+	$left_post_display  = $('.left_post').css('display');
+	$right_post_display = $('.right_post').css('display');
+
+// above_gallery   
+// below_gallery 1  
+// left_of_gallery   
+// right_of_gallery  
+
+	/////////////
+	availRatio = availWidth/availHeight;
+	$('.slide_images').each(function(){
+		origWidth  = $(this).attr('orig_w');
+		origHeight = $(this).attr('orig_h');
+		origRatio = origWidth/origHeight;
+		if(origRatio>availRatio){
+			$(this).css('width',availWidth-10);
+		}else{
+			$(this).css('height',availHeight);
+		}
+		currentWidth  = $(this).width();
+		currentHeight = $(this).height();
+		if(maxWidth<currentWidth){
+			maxWidth=currentWidth;
+		}
+		if(maxHeight<currentHeight){
+			maxHeight=currentHeight;
+		}
+	});
+
+	if(maxHeight<availHeight){
+		maxHeight=availHeight;
+	}
+
+	setImageMargins();
+}
+function setImageMargins(){
+	maxNewTop=0;
+	newtop=0;
+	newleft=0;
+	$('#image_gallery').css('height',availHeight+(image_border*2)+10);
+	$('.slide_images').each(function(){
+		currentWidth  = $(this).width()-(image_border*2);
+		currentHeight = $(this).height()+(image_border*2);
+		newtop  = (availHeight-currentHeight)/2;
+		newleft = (availWidth-currentWidth)/2;
+		if(newtop<0){
+			newtop=0;
+		}
+		if(newleft<0){
+			newleft=0;
+		}
+		if(maxNewTop<newtop){
+			maxNewTop=newtop;
+		}
+		$(this).css({'margin-top':newtop,'margin-bottom':newtop,'margin-left':newleft,'color':newtop});
+	});
+	//$('#image_gallery').css('margin-bottom',maxNewTop);
+
+	$('#image_src_0').attr("src","gallery/10/h_001.jpg");
+	$('#image_src_1').attr("src","gallery/10/h_002.jpg");
+	$('#image_src_2').attr("src","gallery/10/h_003.jpg");
+	$('#image_src_3').attr("src","gallery/10/h_004.jpg");
+	$('#image_src_4').attr("src","gallery/10/h_005.jpg");
+	$('#image_src_5').attr("src","gallery/10/h_006.jpg");
+	$('#image_src_6').attr("src","gallery/10/h_007.jpg");
+	$('#image_src_7').attr("src","gallery/10/h_008.jpg");
+	$('#image_src_8').attr("src","gallery/10/h_009.jpg");
+	$('#image_src_9').attr("src","gallery/10/h_010.jpg");
+	$('#image_src_10').attr("src","gallery/10/h_011.jpg");
+	$('#image_src_11').attr("src","gallery/10/h_012.jpg");
+	$('#image_src_12').attr("src","gallery/10/h_013.jpg");
+	$('#image_src_13').attr("src","gallery/10/h_014.jpg");
+	$('#image_src_14').attr("src","gallery/10/h_015.jpg");
+	$('#image_src_15').attr("src","gallery/10/h_016.jpg");
+	$('#image_src_16').attr("src","gallery/10/h_017.jpg");
+	$('#image_src_17').attr("src","gallery/10/h_018.jpg");
+	$('#image_src_18').attr("src","gallery/10/h_019.jpg");
+	$('#image_src_19').attr("src","gallery/10/h_020.jpg");
+	$('#image_src_20').attr("src","gallery/10/h_021.jpg");
+	$('#image_src_21').attr("src","gallery/10/h_022.jpg");
+	$('#image_src_22').attr("src","gallery/10/h_023.jpg");
+	$('#image_src_23').attr("src","gallery/10/h_024.jpg");
+	$('#image_src_24').attr("src","gallery/10/h_025.jpg");
+	$('#image_src_25').attr("src","gallery/10/h_026.jpg");
+	$('#image_src_26').attr("src","gallery/10/h_027.jpg");
+	$('#image_src_27').attr("src","gallery/10/h_028.jpg");
+	$('#image_src_28').attr("src","gallery/10/h_029.jpg");
+	$('#image_src_29').attr("src","gallery/10/h_030.jpg");
+	$('#image_src_30').attr("src","gallery/10/h_031.jpg");
+	$('#image_src_31').attr("src","gallery/10/h_032.jpg");
+	$('#image_src_32').attr("src","gallery/10/h_033.jpg");
+	$('#image_src_33').attr("src","gallery/10/h_034.jpg");
+	$('#image_src_34').attr("src","gallery/10/h_035.jpg");
+	$('#image_src_35').attr("src","gallery/10/h_036.jpg");
+	$('#image_src_36').attr("src","gallery/10/h_037.jpg");
+	$('#image_src_37').attr("src","gallery/10/h_038.jpg");
+	$('#image_src_38').attr("src","gallery/10/h_039.jpg");
+	$('#image_src_39').attr("src","gallery/10/h_040.jpg");
+	$('#image_src_40').attr("src","gallery/10/h_041.jpg");
+	$('#image_src_41').attr("src","gallery/10/h_042.jpg");
+	$('#image_src_42').attr("src","gallery/10/h_043.jpg");
+	$('#image_src_43').attr("src","gallery/10/h_044.jpg");
+	$('#image_src_44').attr("src","gallery/10/h_045.jpg");
+	$('#image_src_45').attr("src","gallery/10/h_046.jpg");
+	$('#image_src_46').attr("src","gallery/10/h_047.jpg");
+	$('#image_src_47').attr("src","gallery/10/h_048.jpg");
+	startSlideShow(currentSlide);
+}
+function startSlideShow(start_no){
+	    $('#overlay_loading').hide();
+	$('.slide_images').show();
+	$('.slide_images_sq').show();
+
+	
+	play_status='playing';
+    $('#image_gallery').cycle({
+		startingSlide:start_no,
+		easing: 'easeOutExpo',
+		fx: 'fade',
+		timeout: 6000,
+		speed: 1000,
+		before:function(currSlideElement, nextSlideElement, options, forwardFlag){
+			$('#'+$(currSlideElement).attr('id')+'_sq').css('opacity',.5);
+			$('#'+$(nextSlideElement).attr('id')+'_sq').css('opacity',1);
+			currentSlide = $('#'+$(nextSlideElement).attr('id')+'_sq').attr('master');
+		}
+	});
+	}
+function vcr_back(path){
+	play_status='stopped';
+	$('.vcr_pause').attr('src',path+'play.png');
+	goNextSlideNumber('back');
+}
+function vcr_pause(path){
+	if(play_status=='stopped'){
+		$('.vcr_pause').attr('src',path+'pause.png');
+		play_status='playing';
+		goNextSlideNumber('forward');
+		startSlideShow(currentSlide)
+	}else{
+		$('.vcr_pause').attr('src',path+'play.png');
+		play_status='stopped';
+		$('#image_gallery').cycle('stop');
+	}
+}
+function vcr_forward(path){
+	play_status='stopped';
+	$('.vcr_pause').attr('src',path+'play.png');
+	goNextSlideNumber('forward');
+}
+function goNextSlideNumber(direction){
+	numberOfSlides=48;
+	if(direction=='back'){
+		currentSlide--;
+		if(currentSlide==-1){
+			currentSlide=numberOfSlides-1;
+		}
+	}
+	if(direction=='forward'){
+		currentSlide++;
+		if(currentSlide==numberOfSlides){
+			currentSlide=0;
+		}
+	}
+	$('#image_gallery').cycle({startingSlide: currentSlide}); 
+	$('#image_gallery').cycle('stop');
+	$('.image_sq_container').css('opacity',.5);
+	$('#image_'+currentSlide+'_sq').css('opacity',1);
+	
+}
+
+
+
+
+</script>
+
+<script type="text/javascript">
+function startAudio(){
+	$('audio').mediaelementplayer({
+    // if the <video width> is not specified, this is the default
+    defaultVideoWidth: 480,
+    // if the <video height> is not specified, this is the default
+    defaultVideoHeight: 270,
+    // if set, overrides <video width>
+    videoWidth: -1,
+    // if set, overrides <video height>
+    videoHeight: -1,
+    // width of audio player
+    audioWidth: 105,
+    // height of audio player
+    audioHeight: 20,
+    // initial volume when the player starts
+	    startVolume: .3,
+    // useful for <audio> player loops
+    loop: true,
+    // enables Flash and Silverlight to resize to content size
+    enableAutosize: true,
+    // the order of controls you want on the control bar (and other plugins below)
+    features: ['playpause','volume'],
+    // Hide controls when playing and mouse is not over the video
+    alwaysShowControls: false,
+    // force iPad's native controls
+    iPadUseNativeControls: true,
+    // force iPhone's native controls
+    iPhoneUseNativeControls: false,
+    // force Android's native controls
+    AndroidUseNativeControls: false,
+    // forces the hour marker (##:00:00)
+    alwaysShowHours: false,
+    // show framecount in timecode (##:00:00:00)
+    showTimecodeFrameCount: false,
+    // used when showTimecodeFrameCount is set to true
+    framesPerSecond: 25,
+    // turns keyboard support on and off for this instance
+    enableKeyboard: true,
+    // when this player starts, it will pause other players
+    pauseOtherPlayers: true,
+    // array of keyboard commands
+    keyActions: []
+	}); 
+
+	var player = new MediaElementPlayer('#audio_player',{});
+	// ... more code ...
+//	player.pause();
+//	player.setSrc('mynewfile.mp4');
+	//player.play();
+		
+	//var flashObj = document.getElementById("me_flash_0");
+	//if(flashObj == null) {
+		   //alert("Fail to get a reference!");
+	//}
+	//flashObj.GotoFrame(5000); 
+	//flashObj.pause();
+}
+</script>
+<script src="../audio_player/mediaelement-and-player.js"></script>
+<link rel="stylesheet" href="../audio_player/mediaelementplayer.css" />
+
+
+
+<body class="home page-template page-template-gallery page-template-gallery-php page page-id-10">
+<div class="content-pad">
+
+
+<div class="stage">
+
+
+
+
+<div class="clear"></div>
+<div id="main">		
+	<div class="columns">      
+
+<!-- END Header --><div style="clear:both;"></div>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"  height="100%" id="content_table">
+<tr>
+<td valign="top">
+</td>
+<td valign="top" colspan="3">
+    <div id="header"><div id="logo"><a href="arrow-right.jpg"><img src="../../../uploads/2017/03/Title-Banner-Creation-Waitssmllr10.jpg" border="0" class="png " alt="Creation Waits" /></a></div></div><div style="clear:both"></div> 
+</td>
+</tr>
+<tr>
+<td valign="top" id="menu_cell">
+ 
+
+    <div id="left_menu"><ul id="nav-ie" class="topnav fl fr sf-js-enabled"><li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="http://creationwaits.com/families/"><span>Families</span></a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="http://creationwaits.com/babies/"><span>Babies</span></a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="http://creationwaits.com/weddings/"><span>Weddings</span></a></li>
+<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="http://creationwaits.com/engagement/"><span>Engagement</span></a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="http://creationwaits.com/album/"><span>Album</span></a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="http://creationwaits.com/businessportraits/"><span>Business Portraits</span></a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="http://creationwaits.com/clients/"><span>Clients</span></a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="http://creationwaits.com/contact/"><span>Contact</span></a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="http://creationwaits.com/about/"><span>About</span></a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-34"><a href="arrow-right.jpg" aria-current="page"><span>Home</span></a></li>
+</ul><div style="clear:both"></div></div>
+
+
+
+<div id="left_social">
+</div>
+
+
+
+
+
+
+
+    <div id="image_gallery_control" class="gallery_playbuttons"><br /><br /><br />
+    <img src="../../../../gallery/global_vcr/black/backward.png" class="vcr_back vcr_control" onclick="vcr_back('gallery/global_vcr/black/')"/>&nbsp;
+    <img src="../../../../gallery/global_vcr/black/pause.png"    class="vcr_pause vcr_control" onclick="vcr_pause('gallery/global_vcr/black/')"/>&nbsp;
+    <img src="../../../../gallery/global_vcr/black/forward.png"  class="vcr_forward vcr_control" onclick="vcr_forward('gallery/global_vcr/black/')"/>
+    </div>
+
+
+</td>
+
+<td id="left_side" >
+     				
+</td>
+<td width="100%" valign="top" align="center" id="image_cell" max_image_width="1800" max_image_height="1000" >
+    <div class="narrowcolumn singlepage" style="border:0px solid #00FF00;">
+         <div id="image_gallery">
+
+                                           <div id="image_0" class="image_container ">
+                                            <img id="image_src_0" class="slide_images" style="display:none" src="../../../../gallery/10/h_001.jpg"  orig_w="1500" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_1" class="image_container ">
+                                            <img id="image_src_1" class="slide_images" style="display:none" src="../../../../gallery/10/h_002.jpg"  orig_w="1500" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_2" class="image_container ">
+                                            <img id="image_src_2" class="slide_images" style="display:none" src="../../../../gallery/10/h_003.jpg"  orig_w="714" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_3" class="image_container ">
+                                            <img id="image_src_3" class="slide_images" style="display:none" src="../../../../gallery/10/h_004.jpg"  orig_w="1485" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_4" class="image_container ">
+                                            <img id="image_src_4" class="slide_images" style="display:none" src="../../../../gallery/10/h_005.jpg"  orig_w="1087" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_5" class="image_container ">
+                                            <img id="image_src_5" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="946" orig_h="999" border="0"/>
+                                            </div>
+
+                                            <div id="image_6" class="image_container ">
+                                            <img id="image_src_6" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1400" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_7" class="image_container ">
+                                            <img id="image_src_7" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="823" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_8" class="image_container ">
+                                            <img id="image_src_8" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1800" orig_h="999" border="0"/>
+                                            </div>
+
+                                            <div id="image_9" class="image_container ">
+                                            <img id="image_src_9" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1500" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_10" class="image_container ">
+                                            <img id="image_src_10" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1164" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_11" class="image_container ">
+                                            <img id="image_src_11" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1110" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_12" class="image_container ">
+                                            <img id="image_src_12" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1500" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_13" class="image_container ">
+                                            <img id="image_src_13" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="800" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_14" class="image_container ">
+                                            <img id="image_src_14" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1500" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_15" class="image_container ">
+                                            <img id="image_src_15" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1255" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_16" class="image_container ">
+                                            <img id="image_src_16" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1045" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_17" class="image_container ">
+                                            <img id="image_src_17" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1340" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_18" class="image_container ">
+                                            <img id="image_src_18" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="883" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_19" class="image_container ">
+                                            <img id="image_src_19" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1500" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_20" class="image_container ">
+                                            <img id="image_src_20" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1217" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_21" class="image_container ">
+                                            <img id="image_src_21" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1500" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_22" class="image_container ">
+                                            <img id="image_src_22" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1074" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_23" class="image_container ">
+                                            <img id="image_src_23" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="801" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_24" class="image_container ">
+                                            <img id="image_src_24" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1000" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_25" class="image_container ">
+                                            <img id="image_src_25" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="666" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_26" class="image_container ">
+                                            <img id="image_src_26" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1500" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_27" class="image_container ">
+                                            <img id="image_src_27" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1291" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_28" class="image_container ">
+                                            <img id="image_src_28" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="923" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_29" class="image_container ">
+                                            <img id="image_src_29" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="666" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_30" class="image_container ">
+                                            <img id="image_src_30" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1337" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_31" class="image_container ">
+                                            <img id="image_src_31" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="666" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_32" class="image_container ">
+                                            <img id="image_src_32" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1262" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_33" class="image_container ">
+                                            <img id="image_src_33" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="800" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_34" class="image_container ">
+                                            <img id="image_src_34" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1500" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_35" class="image_container ">
+                                            <img id="image_src_35" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1513" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_36" class="image_container ">
+                                            <img id="image_src_36" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="651" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_37" class="image_container ">
+                                            <img id="image_src_37" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="791" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_38" class="image_container ">
+                                            <img id="image_src_38" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="976" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_39" class="image_container ">
+                                            <img id="image_src_39" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="778" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_40" class="image_container ">
+                                            <img id="image_src_40" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="714" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_41" class="image_container ">
+                                            <img id="image_src_41" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="931" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_42" class="image_container ">
+                                            <img id="image_src_42" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="1800" orig_h="995" border="0"/>
+                                            </div>
+
+                                            <div id="image_43" class="image_container ">
+                                            <img id="image_src_43" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="785" orig_h="999" border="0"/>
+                                            </div>
+
+                                            <div id="image_44" class="image_container ">
+                                            <img id="image_src_44" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="666" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_45" class="image_container ">
+                                            <img id="image_src_45" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="800" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_46" class="image_container ">
+                                            <img id="image_src_46" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="666" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_47" class="image_container ">
+                                            <img id="image_src_47" class="slide_images" style="display:none" src="../../../../gallery/global_stage_background/clear.png" orig_w="625" orig_h="1000" border="0"/>
+                                            </div>
+
+                
+		    </div>
+    <div class="clear"></div>
+    <div id="image_gallery_thumb" class="gallery_thumbnails">
+    		<div id="thumb_div_containter" style="float:left;">
+               
+                            <div id="image_0_sq" class="image_sq_container image_sq_container_first" master="0" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_001.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_1_sq" class="image_sq_container " master="1" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_002.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_2_sq" class="image_sq_container " master="2" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_003.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_3_sq" class="image_sq_container " master="3" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_004.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_4_sq" class="image_sq_container " master="4" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_005.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_5_sq" class="image_sq_container " master="5" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_006.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_6_sq" class="image_sq_container " master="6" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_007.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_7_sq" class="image_sq_container " master="7" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_008.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_8_sq" class="image_sq_container " master="8" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_009.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_9_sq" class="image_sq_container " master="9" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_010.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_10_sq" class="image_sq_container " master="10" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_011.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_11_sq" class="image_sq_container " master="11" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_012.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_12_sq" class="image_sq_container " master="12" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_013.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_13_sq" class="image_sq_container " master="13" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_014.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_14_sq" class="image_sq_container " master="14" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_015.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_15_sq" class="image_sq_container " master="15" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_016.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_16_sq" class="image_sq_container " master="16" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_017.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_17_sq" class="image_sq_container " master="17" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_018.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_18_sq" class="image_sq_container " master="18" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_019.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_19_sq" class="image_sq_container " master="19" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_020.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_20_sq" class="image_sq_container " master="20" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_021.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_21_sq" class="image_sq_container " master="21" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_022.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_22_sq" class="image_sq_container " master="22" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_023.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_23_sq" class="image_sq_container " master="23" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_024.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_24_sq" class="image_sq_container " master="24" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_025.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_25_sq" class="image_sq_container " master="25" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_026.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_26_sq" class="image_sq_container " master="26" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_027.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_27_sq" class="image_sq_container " master="27" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_028.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_28_sq" class="image_sq_container " master="28" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_029.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_29_sq" class="image_sq_container " master="29" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_030.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_30_sq" class="image_sq_container " master="30" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_031.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_31_sq" class="image_sq_container " master="31" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_032.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_32_sq" class="image_sq_container " master="32" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_033.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_33_sq" class="image_sq_container " master="33" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_034.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_34_sq" class="image_sq_container " master="34" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_035.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_35_sq" class="image_sq_container " master="35" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_036.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_36_sq" class="image_sq_container " master="36" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_037.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_37_sq" class="image_sq_container " master="37" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_038.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_38_sq" class="image_sq_container " master="38" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_039.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_39_sq" class="image_sq_container " master="39" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_040.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_40_sq" class="image_sq_container " master="40" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_041.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_41_sq" class="image_sq_container " master="41" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_042.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_42_sq" class="image_sq_container " master="42" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_043.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_43_sq" class="image_sq_container " master="43" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_044.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_44_sq" class="image_sq_container " master="44" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_045.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_45_sq" class="image_sq_container " master="45" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_046.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_46_sq" class="image_sq_container " master="46" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_047.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_47_sq" class="image_sq_container " master="47" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_h_048.jpg" border="0"/>
+                            </div>
+
+                		    	<div style="clear:both"></div>
+            </div>
+    	<div style="clear:both"></div>
+    </div>
+
+    <div class="clear"></div>
+    
+          							
+    <div class="post bottom_post" style="display:none">
+        
+        <div class="entry page-entry">
+             <p>Marge and Allen Thornburgh of Creation Waits Photography are experienced photographers who have been photographing weddings, people and events for 25 years in the Washington, D.C. area and Northern Virginia. We are members of Professional Photographers of America and have been cited in Washingtonian Magazine as one of the top photographers in the DC area for 14 consecutive years.  Allen Thornburgh is a Certified Professional Photographer with PPA and is president of Creation Waits Photography located in Arlington, VA. We are a full service photography studio serving our wedding, portrait, and commercial customers in the Northern VA and Washington, DC area including Arlington, Falls Church, Fairfax, McLean, Alexandria and all surrounding areas.  To see more of our recent wedding portraits, family portraits and baby photography visit our Blog and Facebook links below.</p>
+   
+		                <div class="clear"></div>
+        </div>   
+    </div>	    
+			
+    				
+	</div> <!-- END Narrowcolumn -->
+<div class="clear"></div>
+
+</td>
+<td id="right_side" >
+     				
+</td>
+</tr>
+</table>
+	
+
+	
+
+
+<div id="studio_contact" class="post">
+
+
+
+<span class="foot_divider">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="foot_bus_address">2100 N. Randolph St. - Arlington - VA - 22207<span class="foot_divider">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+<span class="foot_bus_phone">703-243-0536<span class="foot_divider">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+<span class="foot_bus_email">
+<script type="text/javascript">
+document.write('<a href="http://creationwaits.com/'&#32;+&#32;'mailto:'&#32;+&#32;'contact'&#32;+&#32;'@'&#32;+&#32;'creationwaits'&#32;+&#32;'.'&#32;+'com'&#32;+&#32;'">' + 'contact' + '@' + 'creationwaits' + '.' +'com' + '</a>');
+</script>
+<span class="foot_divider">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+
+<span class="foot_social" style="white-space:nowrap">
+    <a href="http://facebook.com/pages/Creation-Waits-Photography/135740613161984" target=""><img src="social_logos/facebook.png" width="30" height="30" border="0" align="absmiddle"/></a>
+	    <a href="http://www.creationwaitsphotography.blogspot.com" target=""><img src="social_logos/blogger.png" width="30" height="30" border="0" align="absmiddle"/></a>
+	<span class="foot_divider">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+</div>
+<div id="studio_affiliates" class="post">
+<img src="../../../../gallery/global_affiliates/CPP.png" border="0"/>
+<img src="../../../../gallery/global_affiliates/PPA.png" border="0"/>
+</div>
+<div id="footer">
+<div class="lt">Copyright &copy; 2021 All rights reserved.</div>
+<div class="rt">Site by: <a href="http://ProofCast.com">ProofCast.com</a></div>		
+<div class="clear"></div>			
+</div>
+
+
+    </div>    <!-- columns --> 
+    
+    </div>  <!-- main --> 
+   
+</div>   <!-- stage --> 
+</div>    <!-- content-pad --> 
+<div class="clear"></div>
+
+
+<script type='text/javascript' src='../../../../wp-includes/js/comment-reply.min.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../../../../wp-includes/js/wp-embed.min.js?ver=5.3.6'></script>
+  
+<script type="text/javascript" charset="utf-8">
+/*<![CDATA[*/
+	Cufon.now(); 	
+	jQuery(document).ready(function() {
+			jQuery('.slideshow').cycle({
+				fx: 'fade',
+				timeout: 5000,
+				pager: '#slideshow-nav',
+				speed: 1000,
+				//prev: '#left-arrow',
+        //next: '#right-arrow',
+				pagerEvent: 'click',
+    		pauseOnPagerHover: true,
+				cleartypeNoBg: true });						
+
+
+
+	  });		
+/*]]>*/
+</script>
+<div id="debug_div"></div>     
+</body>
+</html> 
+

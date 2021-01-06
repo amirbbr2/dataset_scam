@@ -1,0 +1,323 @@
+@charset "utf-8";
+/* FILM TV - 2013 - Banzai Media */
+/* SIDEBAR BLOCKS ---------------*/
+.sidebar .sidebar-block{margin:20px 0;}
+.sidebar .sidebar-block > div > .title-lista-articoli{display:block; padding:10px; margin:0 0 10px; background:#323233; color:#fff; border-color:#212121; font-size:15px; text-transform:uppercase;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#323233), to(#212121)); background: -webkit-linear-gradient(top, #323233, #212121); background: -moz-linear-gradient(top, #323233, #212121); background: -ms-linear-gradient(top, #323233, #212121);
+-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+
+.sidebar .sidebar-block > div.with-ico > .title-lista-articoli{padding:0 10px; line-height:44px;}
+.sidebar-block > div > .title-lista-articoli span{display:block; height:44px; padding-left:40px; background:url("../images/sprites-sidebar.png") 0 0 no-repeat;}
+.sidebar-block > div{background:#fff; border:1px solid #e4e4e4;
+-webkit-border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0;}
+/* blocco "light" */
+.sidebar .sidebar-block > div.light{border:none;}
+.sidebar .sidebar-block > div.light > h3{background:#fff; color:#444;}
+
+.sidebar-block .menu{display:block; height:44px; margin:0 0 10px; background:#323233; color:#fff; border-color:#212121; font-size:15px; text-transform:uppercase;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#323233), to(#212121)); background: -webkit-linear-gradient(top, #323233, #212121); background: -moz-linear-gradient(top, #323233, #212121); background: -ms-linear-gradient(top, #323233, #212121);
+-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.sidebar-block .menu ul li{position:relative; float:left; display:block; border-left:1px solid #222; border-right:1px solid #444;}
+.sidebar-block .menu ul li:first-child{border-left:none;}
+.sidebar-block .menu ul li:last-child{border-right:none;}
+.sidebar-block .menu ul li a{position:relative; display:block; height:34px; padding:5px 10px; text-align:center; color:#fff; line-height:14px;}
+.sidebar-block .menu ul li a:hover{background:#111; text-decoration:none;}
+.sidebar-block .menu ul li a h3{font-size:14px;}
+.sidebar-block .menu ul li a .num{font-size:11px;}
+.sidebar-block .menu ul li a.active,
+.sidebar-block .menu ul li a.active:hover{background:#e30031;}
+.sidebar-block .menu ul li:first-child a.active{-webkit-border-radius:3px 0 0 3px; -moz-border-radius:3px 0 0 3px; border-radius:3px 0 0 3px;}
+.sidebar-block .menu ul li:last-child a .active{-webkit-border-radius:0 3px 3px 0; -moz-border-radius:0 3px 3px 0; border-radius:0 3px 3px 0;}
+.sidebar-block .menu ul li a.active .triangle{position:absolute; left:50%; bottom:-6px; width:14px; height:6px; margin-left:-8px; background:url("../images/sprites.png") -150px -600px;}
+
+
+/* Listato articoli */
+.sidebar-block .lista-articoli li{width:280px; margin:0 auto; border-top:1px dotted #bfbfbf;}
+.sidebar-block .lista-articoli li:first-child{border:none;}
+.sidebar-block lista-articoli li article{}
+.sidebar-block .lista-articoli li article a{position:relative; display:block; padding:10px 5px;
+-webkit-transition:background .2s ease-in; -moz-transition:background .2s ease-in; transition:background .2s ease-in;}
+.sidebar-block .lista-articoli li article .pic{float:left; overflow:hidden; margin:0 20px 0 0;}
+.sidebar-block .lista-articoli li article header{float:left;}
+
+.sidebar-block .lista-articoli li article header .title-film-migliori-tv{width:140px; font-size:16px; color:#000; line-height:18px;
+-webkit-transition:color .2s ease-in; -moz-transition:color .2s ease-in; transition:color .2s ease-in;}
+.sidebar-block .lista-articoli li article header .sub-title-side{width:140px; font-size:16px; color:#000; line-height:18px;
+-webkit-transition:color .2s ease-in; -moz-transition:color .2s ease-in; transition:color .2s ease-in;}
+
+.sidebar-block .lista-articoli li article header .data{color:#838383;}
+.sidebar-block .lista-articoli li article header p{font-size:12px; color:#838383;}
+
+.sidebar-block .lista-articoli li article a:hover{background:#f5f5f5; text-decoration:none;}
+.sidebar-block .lista-articoli li article a:hover header h1{color:#e3002b;}
+.sidebar-block .lista-articoli li article a .ring{position:absolute; top:10px; right:5px;}
+
+
+/* Ultime uscite al Cinema */
+.sidebar-block > .ultime-cinema > .title-lista-articoli span{background-position:0 0;}
+.sidebar-block .ultime-cinema  li article header{width:180px;}
+.sidebar-block .ultime-cinema li article .pic{width:54px; height:75px;}
+
+/* Titoli molto attesi */
+.sidebar-block > .titoli-attesi > .title-lista-articoli span{background-position:0 -44px;}
+.sidebar-block .titoli-attesi ol li article .number{float:left; display:block; width:30px; font-size:16px; color:#000; font-weight:600;}
+.sidebar-block .titoli-attesi li article header{width:240px;}
+.sidebar-block .titoli-attesi li article header .sub-title-side span{display:inline-block; width:6px; height:11px; margin-left:5px; background:url("../images/sprites.png") -370px -300px;}
+
+/* Ultime uscite Homevideo */
+.sidebar-block > .ultime-homevideo > .title-lista-articoli span{background-position:0 -88px;}
+.sidebar-block .ultime-homevideo  li article header{width:140px;}
+.sidebar-block .ultime-homevideo  li article header .cat{font-size:11px; font-weight:bold; color:#838383;}
+.sidebar-block .ultime-homevideo  li article .supporto{float:left; width:60px; height:26px; margin:5px 0 0; background:url("../images/sprites.png") 0 -440px; text-indent:-9999px;}
+.sidebar-block .ultime-homevideo  li article .supporto.dvd{background-position:0 -440px;}
+.sidebar-block .ultime-homevideo  li article .supporto.bluray{background-position:0 -466px;}
+.sidebar-block .ultime-homevideo  li article .supporto.itunes{background-position:0 -492px;}
+.sidebar-block .ultime-homevideo li article .pic{width:70px; height:100px;}
+.sidebar-block .vedi-altri{display:block; width:80px; margin:15px auto; color:#2c2c2c; text-align:center; font-family:'Titillium Web', Arial, sans-serif; font-size:13px; font-weight:600; text-transform:uppercase;}
+
+/* Ultime notizie - Highlights */
+.sidebar-block > .highlights > .title-lista-articoli span{background-position:0 -176px;}
+.sidebar-block .highlights  li article header{width:180px;}
+.sidebar-block .highlights  li article header .cat{font-size:11px; font-weight:bold; color:#838383;}
+.sidebar-block .highlights li article .pic{width:70px; height:100px;}
+.sidebar-block .highlights li article header .sub-title-side{width:180px;}
+.sidebar-block .highlights .vedi-altri{display:block; width:80px; margin:15px auto; color:#2c2c2c; text-align:center; font-family:'Titillium Web', Arial, sans-serif; font-size:13px; font-weight:600; text-transform:uppercase;}
+.sidebar-block .highlights ul#highlights-more { border-top:1px dotted #bfbfbf;}
+
+/* I migliori della settimana in TV */
+.sidebar-block > .migliori-tv > .title-lista-articoli span{background-position:0 -132px; letter-spacing:-0.6px;}
+.sidebar-block .migliori-tv  li article .cal{float:left; display:block; width:44px; height:44px; margin:0 15px 0 0; background:#e4e4e4; color:#888; font-size:11px; text-align:center;}
+.sidebar-block .migliori-tv  li article .cal span{display:block; clear:both; font-size:26px; font-weight:bold; line-height:24px;}
+.sidebar-block .migliori-tv  li article header{width:210px;}
+.sidebar-block .migliori-tv  li article header .canale{margin:0 0 3px; font-size:11px; font-family:'Open Sans', Arial, sans-serif;}
+.sidebar-block .migliori-tv  li article header .canale span{color:#e30031; text-transform:uppercase;}
+.sidebar-block .migliori-tv  li article header .canale .ora{padding-left:4px; margin-left:4px; border-left:1px solid #ccc; color:#838383; font-weight:normal;}
+
+/* Firme Filmtv */
+.sidebar-block .firme-filmtv > .title-lista-articoli .title{color:#fff;}
+.sidebar-block .firme-filmtv > .title-lista-articoli .tutti{float:right; font-size:13px;}
+.sidebar-block .firme-filmtv .autori-wrap{position:relative; width:298px; overflow:hidden; padding:0 0 10px;}
+.sidebar-block .firme-filmtv .mask{position:relative; overflow:hidden;}
+.sidebar-block .firme-filmtv ul{position:relative; float:left; overflow:hidden; height:152px;}
+.sidebar-block .firme-filmtv ul li{float:left; display:block; padding:0 10px; margin:0; border-left:1px solid #e4e4e4;}
+.sidebar-block .firme-filmtv ul li:first-child{border:none;}
+.sidebar-block .firme-filmtv ul li a{display:block; width:130px; padding:10px 0; text-align:center; color:#2c2c2c; font-size:14px;
+-webkit-transition:background .2s ease-in; -moz-transition:background .2s ease-in; transition:background .2s ease-in;
+-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.sidebar-block .firme-filmtv ul li a:hover{background:#eee;}
+.sidebar-block .firme-filmtv ul li a img{margin:0 auto 5px;}
+.sidebar-block .firme-filmtv ul li a h4{margin:0 0 5px;}
+.sidebar-block .firme-filmtv ul li a .voto-stelle{margin:0 auto;}
+.sidebar-block .firme-filmtv .autori-wrap .prev,
+.sidebar-block .firme-filmtv .autori-wrap .next{position:absolute; top:50px; margin-top:-13px; display:block; width:40px; height:40px; background:#333 url("../images/sprites.png") 0 -300px; text-indent:-9999px; cursor:pointer; opacity:0; filter: alpha(opacity = 0);
+-webkit-transition:.2s .05s opacity ease-in; -moz-transition:.2s .05s opacity ease-in; transition:.2s .05s opacity ease-in;}
+.sidebar-block .firme-filmtv .autori-wrap .next{background-position:-80px -300px; right:0;}
+.sidebar-block .firme-filmtv .autori-wrap:hover .prev,
+.sidebar-block .firme-filmtv .autori-wrap:hover .next{opacity:1; filter: alpha(opacity = 100);}
+.sidebar-block .firme-filmtv .autori-wrap .prev:hover,
+.sidebar-block .firme-filmtv .autori-wrap .next:hover{background-color:#e30031;}
+.sidebar-block .firme-filmtv .pagination-links{display:none;}
+
+/* Messaggistica */
+.sidebar-block .messaggistica .menu ul li{width:50%; border:none;}
+.sidebar-block .messaggistica .menu ul li a { line-height:34px; }
+.sidebar-block .messaggistica form div{position:relative; width:270px; margin:0 auto; border-bottom:1px solid #e4e4e4;}
+.sidebar-block .messaggistica .inserisci{display:block; width:213px; height:38px; line-height:38px; padding:0 40px 0 15px; margin:0 auto 15px; border:1px solid #9e9e9e; color:#bfbfbf; font-style:italic; font-size:15px;
+-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.sidebar-block .messaggistica .button{position:absolute; right:10px; top:8px; display:block; width:23px; height:23px; background:url("../images/sprites.png") -240px -600px; border:none; cursor:pointer;}
+.sidebar-block .messaggistica .button:hover{background-position:-263px -600px;}
+.sidebar-block .messaggistica > ul li{position:relative; width:270px; margin:0 auto; border-bottom:1px dotted #bbb;}
+.sidebar-block .messaggistica > ul li a{position:relative; display:block; padding:3px 10px 15px 0;
+-webkit-transition:background .2s ease-in; -moz-transition:background .2s ease-in; transition:background .2s ease-in;}
+.sidebar-block .messaggistica > ul li a:hover{text-decoration:none; background:#eee;}
+.sidebar-block .messaggistica > ul li a img{float:left; padding:1px; margin:0 5px 0 0; border:1px solid #eee; width:45px;height:45px;}
+.sidebar-block .messaggistica > ul li a h4{margin:3px 0 0; color:#2c2c2c; font-size:14px;}
+.sidebar-block .messaggistica > ul li a .seguaci{color:#666; font-size:12px; overflow:hidden;}
+.sidebar-block .messaggistica > ul li time{position:absolute; top:3px; right:10px; font-size:11px; color:#999;}
+.sidebar-block .messaggistica .vedi-altri{display:block; width:80px; margin:15px auto; color:#2c2c2c; text-align:center; font-family:'Titillium Web', Arial, sans-serif; font-size:13px; font-weight:600; text-transform:uppercase;}
+.sidebar-block .messaggistica .conv-info { font-size: 11px; background: #eee; padding: 3px; color: #666; position: relative;}
+.sidebar-block .messaggistica .conv-info span { display: inline; }
+.sidebar-block .messaggistica .conv-info .non_letti { font-weight: bold; color:#c00;}
+.sidebar-block .messaggistica p.no-items { margin: 15px; }
+.sidebar-block .messaggistica .lista-notifiche li a { color: black; text-decoration: none; }
+.sidebar-block .messaggistica .lista-notifiche li a span.type { display: block; font-weight: bold; text-transform: uppercase; }
+.sidebar-block .messaggistica .lista-notifiche li a strong { font-weight: bold; color:#c00; }
+.sidebar-block .messaggistica .lista-notifiche .post-utile .type,
+.sidebar-block .messaggistica .lista-notifiche .playlist-utile .type,
+.sidebar-block .messaggistica .lista-notifiche .recensione-utile .type,
+.sidebar-block .messaggistica .lista-notifiche .post-commento .type,
+.sidebar-block .messaggistica .lista-notifiche .playlist-commento .type,
+.sidebar-block .messaggistica .lista-notifiche .recensione-commento .type { display: none; }
+.sidebar-block .messaggistica .lista-notifiche .post-utile a,
+.sidebar-block .messaggistica .lista-notifiche .playlist-utile a,
+.sidebar-block .messaggistica .lista-notifiche .recensione-utile a { padding-left: 30px; padding-top: 16px; background: url("../images/sprites-notifiche.png") 0px 26px no-repeat; }
+.sidebar-block .messaggistica .lista-notifiche .post-commento a,
+.sidebar-block .messaggistica .lista-notifiche .playlist-commento a,
+.sidebar-block .messaggistica .lista-notifiche .recensione-commento a { padding-left: 30px; padding-top: 16px; background: url("../images/sprites-notifiche.png") 0px -74px no-repeat}
+
+
+
+/* Messaggistica - Utenti seguaci */
+.sidebar-block .utenti-seguaci .menu ul li{width:50%; border:none;}
+.sidebar-block .utenti-seguaci .menu ul li a{-webkit-border-radius:0 3px 3px 0; -moz-border-radius:0 3px 3px 0; border-radius:0 3px 3px 0;}
+.sidebar-block .utenti-seguaci .menu ul li:first-child a{-webkit-border-radius:3px 0 0 3px; -moz-border-radius:3px 0 0 3px; border-radius:3px 0 0 3px;}
+.sidebar-block .utenti-seguaci > ul li{position:relative; width:270px; padding:15px 0; margin:0 auto; border-bottom:1px dotted #bbb;}
+.sidebar-block .utenti-seguaci > ul li .avatar{float:left; padding:1px; margin:0 5px 0 0; border:1px solid #eee;}
+.sidebar-block .utenti-seguaci > ul li .nick{margin:0;}
+.sidebar-block .utenti-seguaci > ul li .seguaci{color:#666; font-size:11px;}
+.sidebar-block .utenti-seguaci > ul li .owner-follow-tools{float:right; display:block; width:216px; font-size:12px;}
+.sidebar-block .utenti-seguaci a.startfollowing, 
+.sidebar-block .utenti-seguaci a.stopfollowing{}
+.sidebar-block .utenti-seguaci .vedi-altri{display:block; width:80px; margin:15px auto; color:#2c2c2c; text-align:center; font-family:'Titillium Web', Arial, sans-serif; font-size:13px; font-weight:600; text-transform:uppercase;}
+
+/* Messaggistica - Utenti blacklist */
+.sidebar-block .utenti-blacklist .menu ul li{width:50%; border:none;}
+.sidebar-block .utenti-blacklist .menu ul li a{-webkit-border-radius:0 3px 3px 0; -moz-border-radius:0 3px 3px 0; border-radius:0 3px 3px 0;}
+.sidebar-block .utenti-blacklist .menu ul li:first-child a{-webkit-border-radius:3px 0 0 3px; -moz-border-radius:3px 0 0 3px; border-radius:3px 0 0 3px;}
+.sidebar-block .utenti-blacklist > ul li{position:relative; width:270px; padding:15px 0; margin:0 auto; border-bottom:1px dotted #bbb;}
+.sidebar-block .utenti-blacklist > ul li .avatar{float:left; padding:1px; margin:0 5px 0 0; border:1px solid #eee;}
+.sidebar-block .utenti-blacklist > ul li .nick{margin:0;}
+.sidebar-block .utenti-blacklist > ul li .blacklist{color:#666; font-size:11px;}
+.sidebar-block .utenti-blacklist > ul li .owner-follow-tools{float:right; display:block; width:216px; font-size:12px;}
+.sidebar-block .utenti-blacklist a.startfollowing, 
+.sidebar-block .utenti-blacklist a.stopfollowing{}
+.sidebar-block .utenti-blacklist .vedi-altri{display:block; width:80px; margin:15px auto; color:#2c2c2c; text-align:center; font-family:'Titillium Web', Arial, sans-serif; font-size:13px; font-weight:600; text-transform:uppercase;}
+.sidebar-block .utenti-blacklist .inserisci{display:block; width:213px; height:38px; line-height:38px; padding:0 40px 0 15px; margin:0 auto 15px; border:1px solid #9e9e9e; color:#bfbfbf; font-style:italic; font-size:15px;}
+
+
+
+/* Liste scelte */
+.sidebar-block .liste-scelte ol li{position:relative; display:block; width:214px; padding:15px 28px; margin:0 auto; border-bottom:1px dotted #bbb;}
+.sidebar-block .liste-scelte ol li h4{margin:0 0 5px;}
+.sidebar-block .liste-scelte ol li:first-child h4{margin:0;}
+.sidebar-block .liste-scelte ol li h4 a{font-size:16px; color:#2c2c2c;}
+.sidebar-block .liste-scelte ol li h4 a span{display:inline-block; width:6px; height:11px; background:url("../images/sprites.png") -370px -301px;}
+.sidebar-block .liste-scelte ol li .author{display:block; margin:0 0 5px; color:#888; font-size:12px;}
+.sidebar-block .liste-scelte ol li .author a{font-size:16px; color:#2c2c2c; font-family:'Titillium Web', Arial, sans-serif; font-weight:600;}
+.sidebar-block .liste-scelte ol li .pic{-webkit-transition:opacity .3s ease-in; -moz-transition:opacity .3s ease-in; transition:opacity .3s ease-in;}
+.sidebar-block .liste-scelte ol li .pic:hover{opacity:.7; filter: alpha(opacity = 70);}
+.sidebar-block .liste-scelte ol li .num{position:absolute; left:0; top:15px; font-size:16px; color:#2c2c2c; font-family:'Titillium Web', Arial, sans-serif; font-weight:600;}
+.sidebar-block .liste-scelte ol li p{font-size:12px;}
+.sidebar-block .liste-scelte .vedi-altri{display:block; width:80px; margin:15px auto; color:#2c2c2c; text-align:center; font-family:'Titillium Web', Arial, sans-serif; font-size:13px; font-weight:600; text-transform:uppercase;}
+
+/* Recensioni delle firme */
+.sidebar-block .recensioni-firme ul li{width:270px; margin:0 auto; border-bottom:1px dotted #ccc;}
+.sidebar-block .recensioni-firme ul li article{position:relative; padding:75px 0 15px 70px;}
+.sidebar-block .recensioni-firme ul li article h1 a{font-size:16px; color:#2c2c2c;}
+
+
+.sidebar-block .recensioni-firme ul li article .info{position:absolute; top:15px; left:8px;}
+.sidebar-block .recensioni-firme ul li article .info .pic{float:left; display:block; padding:1px; border:1px solid #ccc; margin:0 10px 0 0;}
+.sidebar-block .recensioni-firme ul li article .info .author{float:left; display:block; width:190px; font-size:12px; color:#888;}
+.sidebar-block .recensioni-firme ul li article .info .author a{font-size:16px; color:#2c2c2c; font-family:'Titillium Web', Arial, sans-serif; font-weight:600;}
+.sidebar-block .recensioni-firme ul li article .info .voto-stelle{float:left;}
+.sidebar-block .recensioni-firme .vedi-altri{display:block; width:80px; margin:15px auto; color:#2c2c2c; text-align:center; font-family:'Titillium Web', Arial, sans-serif; font-size:13px; font-weight:600; text-transform:uppercase;}
+
+
+/* Prossime uscite */
+.sidebar-block .prossime-uscite{}
+.sidebar-block .prossime-uscite > h4{display:block; width:250px; height:42px; line-height:42px; padding:0 10px; margin:0 auto; background:#f5f5f5; border-bottom:1px solid #e4e4e4; font-size:16px; color:#2c2c2c;}
+.sidebar-block .prossime-uscite li,
+.sidebar-block .prossime-uscite li:first-child{border-bottom:1px dotted #bfbfbf; border-top:none;}
+.sidebar-block .prossime-uscite li article header h1 span{display:inline-block; width:6px; height:11px; margin-left:5px; background:url("../images/sprites.png") -370px -300px;}
+.sidebar-block .prossime-uscite .vedi-altri{display:block; width:180px; margin:15px auto; color:#2c2c2c; text-align:center; font-family:'Titillium Web', Arial, sans-serif; font-size:13px; font-weight:600; text-transform:uppercase;}
+
+/* Ricerche scelte */
+.sidebar-block .ricerche-scelte{}
+.sidebar-block .ricerche-scelte ul li{overflow:hidden; width: 270px; padding:10px 0; margin: 0 auto; border-bottom: 1px dotted #ccc;}
+.sidebar-block .ricerche-scelte ul li .locandina{float:left; margin-right:15px;}
+.sidebar-block .ricerche-scelte ul li h1{font-size:16px; line-height:20px;}
+.sidebar-block .ricerche-scelte ul li h1 a{color:#2c2c2c;}
+.sidebar-block .ricerche-scelte ul li h1 a span{display:inline-block; width:6px; height:11px; margin-left:5px; background:url("../images/sprites.png") -370px -300px;}
+.sidebar-block .ricerche-scelte .vedi-altri{display:block; width:180px; margin:15px auto; color:#2c2c2c; text-align:center; font-family:'Titillium Web', Arial, sans-serif; font-size:13px; font-weight:600; text-transform:uppercase;}  
+    
+/* Personaggi citati */
+.sidebar-block .personaggi-citati ul{ overflow:hidden; width:270px; margin:0 auto;}
+.sidebar-block .personaggi-citati ul li{float:left; padding:0 5px; border-right:1px solid #eee; margin:0 0 10px;}
+.sidebar-block .personaggi-citati ul li a{font-family: 'Titillium Web',Arial,sans-serif; font-size:15px; font-weight:600; color:#2c2c2c;}
+
+
+/* Film citati */
+.sidebar-block .film-citati ul li a .gen{font-size:11px; color:#888; text-transform:uppercase; font-weight:bold;}
+
+/* Box tag */
+.sidebar-block .box-tag ul li{float:left; display:block;}
+.sidebar-block .box-tag ul li a{display:block; height:24px; line-height:24px; padding:0 10px; margin:0 5px 10px 5px; background:#eee; color:#444;
+-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.sidebar-block .box-tag ul li a:hover{text-decoration:none; background:#e30031; color:#fff;}
+
+/* Punteggi Film */
+.sidebar-block .punteggi{background:#fff; border:1px solid #d3d3d3;
+-webkit-border-radius:5px 5px 3px 3px; -moz-border-radius:5px 5px 3px 3px; border-radius:5px 5px 3px 3px;}
+.sidebar-block .punteggi h3{display:block; padding:10px; margin:0 0 10px; background:#323233; color:#fff; border-color:#212121; font-size:15px; text-transform:uppercase;
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#323233), to(#212121)); background: -webkit-linear-gradient(top, #323233, #212121); background: -moz-linear-gradient(top, #323233, #212121); background: -ms-linear-gradient(top, #323233, #212121);
+-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+.sidebar-block .punteggi ul{padding:0 15px;}
+.sidebar-block .punteggi ul li{dispaly:block; height:16px; line-height:16px; padding:12px 10px; border-top:1px dotted #ccc;}
+.sidebar-block .punteggi ul li:first-child{border-top:none;}
+.sidebar-block .punteggi ul li h4{float:left; display:block; width:130px; margin:0 20px 0 0; font-size:16px; color:#2c2c2c;}
+.sidebar-block .punteggi ul li .voto-pallini{float:right; display:block; width:90px; height:14px; background:url("../images/sprites.png") 0 -750px; text-indent:-9999px;}
+.sidebar-block .punteggi ul li .voto-pallini.voto0{background-position:-90px -750px;}
+.sidebar-block .punteggi ul li .voto-pallini.voto1{background-position:-72px -750px;}
+.sidebar-block .punteggi ul li .voto-pallini.voto2{background-position:-54px -750px;}
+.sidebar-block .punteggi ul li .voto-pallini.voto3{background-position:-36px -750px;}
+.sidebar-block .punteggi ul li .voto-pallini.voto4{background-position:-18px -750px;}
+.sidebar-block .punteggi ul li .voto-pallini.voto5{background-position:0 -750px;}
+
+
+/* Watchlist - watch-info */
+.sidebar-block .watch-info{border:none;}
+.sidebar-block .watch-info p{margin:0 10px 10px;}
+
+
+/* Watchlist - watch-notifiche */
+.sidebar-block .watch-notifiche{border:none;}
+.sidebar-block .watch-notifiche ul{margin:0 10px 10px;}
+.sidebar-block .watch-notifiche ul li{overflow:hidden; margin:0 0 10px;}
+.sidebar-block .watch-notifiche ul li span{float:left; display:block; width:180px; text-align:right;}
+.sidebar-block .watch-notifiche ul li > div{float:right; padding:10px 0 0; font-size:12px;}
+
+/* Watchlist - watch-elimina */
+.sidebar-block .watch-elimina{border:none;}
+.sidebar-block .watch-elimina p{margin:0 10px 10px;}
+.sidebar-block .watch-elimina .campo{overflow:hidden; margin:0 10px 10px;}
+.sidebar-block .watch-elimina .campo span{float:left; display:block; width:180px; text-align:right;}
+.sidebar-block .watch-elimina .campo > div{float:right; font-size:12px;}
+
+/* Prenotazioni - prenotazioni-preferenze */
+.sidebar-block .prenotazioni-preferenze{border:none;}
+.sidebar-block .prenotazioni-preferenze .campo{overflow:hidden; margin:0 0 10px;}
+.sidebar-block .prenotazioni-preferenze .campo span{float:left; display:block; width:180px; text-align:right;}
+.sidebar-block .prenotazioni-preferenze .campo > div{float:right; padding:10px 0 0; font-size:12px;}
+
+/* Playlister, recensori, cronisti e contributori più attivi */
+.sidebar-block .piu-attivi > nav{width:270px; padding:0 0 5px; margin:0 auto; overflow:hidden; border-bottom:1px solid #e4e4e4;}
+.sidebar-block .piu-attivi > nav a{float:left; display:block; width:33%; color:#444; text-align:center; font-size:14px; text-transform:uppercase; font-family:'Titillium Web', Arial, sans-serif; font-weight:600;}
+.sidebar-block .piu-attivi > nav a.active{color:#e30031;}
+.sidebar-block .piu-attivi > ul li{overflow:hidden; width:270px; padding:10px 0; margin:0 auto; border-top:1px dotted #bbb;}
+.sidebar-block .piu-attivi > ul li .user{overflow:hidden;}
+.sidebar-block .piu-attivi > ul li:first-child{border:none;}
+.sidebar-block .piu-attivi > ul li .pic{float:left; padding:1px; margin:0 5px 0 0; border:1px solid #eee;}
+.sidebar-block .piu-attivi > ul li .author{float:left; display:block; width:210px; font-size:14px; font-family:'Titillium Web', Arial, sans-serif; font-weight:600;}
+.sidebar-block .piu-attivi > ul li .author a{color:#222;}
+.sidebar-block .piu-attivi > ul li small{font-size:12px; color:#999;}
+.sidebar-block .piu-attivi > ul li .foot{overflow:hidden; float:left; display:block; width:210px;}
+.sidebar-block .piu-attivi > ul li .foot .segui{float:left; margin:4px 0 0; color:#e30031; font-size:12px;}
+.sidebar-block .piu-attivi > ul li .foot .segui span{position:relative; display:inline-block; top:4px; width:17px; height:16px; background:url("../images/sprites.png") -240px -530px;}
+.sidebar-block .piu-attivi > ul li .foot .follower{float:right; color:#e30031; font-size:18px; font-family:'Titillium Web', Arial, sans-serif; font-weight:600;}
+
+
+/* Titoli molto attesi */
+.sidebar-block > .shortcut-streaming > .title-lista-articoli { height:20px; }
+.sidebar-block > .shortcut-streaming > .title-lista-articoli .streaming-logo { height:30px;width:30px;border-radius:15px;float:left;margin:-5px 10px -5px 0; }
+
+.sidebar-block > .shortcut-streaming > .title-lista-articoli span{background-position:0 -44px;}
+.sidebar-block .shortcut-streaming ol { display:inline-block;}
+.sidebar-block .shortcut-streaming ol li article .number{float:left; display:block; width:30px; font-size:16px; color:#000; font-weight:600;}
+.sidebar-block .shortcut-streaming li article header .sub-title-side span{display:inline-block; width:6px; height:11px; margin-left:5px; background:url("../images/sprites.png") -370px -300px;}
+.sidebar-block .shortcut-streaming li article header .sub-title-side { width: auto; }
+
+/* Messaggistica */
+.messaggistica{padding-bottom:15px;}
+
+/* end */

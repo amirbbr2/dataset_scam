@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /usercp/
+Disallow: /admin/
+Disallow: /core/
+Disallow: /resources/
+Disallow: /uploads/

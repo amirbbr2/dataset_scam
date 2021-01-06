@@ -1,0 +1,103 @@
+$(document).ready(function () {
+    $('.company_serv  span.s1').click(function () {
+        $('.company_serv .tabs span').removeClass('active');
+        $(this).addClass('active');
+        $('.company_serv .cont_serv .t').removeClass('active');
+        $('.company_serv .cont_serv .t1').addClass('active')
+    });
+    $('.company_serv .tabs span.s2').click(function () {
+        $('.company_serv .tabs span').removeClass('active');
+        $(this).addClass('active');
+        $('.company_serv .cont_serv .t').removeClass('active');
+        $('.company_serv .cont_serv .t2').addClass('active')
+    });
+    $('.company_serv .tabs span.s3').click(function () {
+        $('.company_serv .tabs span').removeClass('active');
+        $(this).addClass('active');
+        $('.company_serv .cont_serv .t').removeClass('active');
+        $('.company_serv .cont_serv .t3').addClass('active')
+    });
+    $('.download .company_serv .s2').click(function () {
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().addClass('internet');
+    });
+    $('.download .company_serv .s1').click(function () {
+        $(this).parent().parent().parent().parent().parent().parent().parent().parent().removeClass('internet');
+    });
+    $("i[title]").each(function () {
+        $(this).replaceWith("<a href='" + $(this).attr("title") + "'>" + $(this).html() + "</a>");
+    });
+
+    $('.btn_text').click(function () {
+        if ($(this).parent().hasClass('active')) {
+            $(this).parent().removeClass('active');
+        } else {
+            $(this).parent().parent().find('li').removeClass('active');
+            $(this).parent().addClass('active')
+        }
+
+    });
+
+    $('.icon_action .row').click(function () {
+        if ($(this).find('span.check').hasClass('active')) {
+            $(this).find('span.check').removeClass('active');
+            $('#hand').val(0);
+            $('#preview_hand').hide();
+        } else {
+            $('.icon_action .row').find('span.check').removeClass('active');
+            $(this).find('span.check').addClass('active');
+            var id = $(this).index() + 1;
+            $('#hand').val(id);
+            $('#preview_hand').attr('src', '/app/themes/front/images/' + id + '.png');
+            $('#preview_hand').show();
+        }
+    });
+
+    $('.info .row').click(function () {
+        if ($(this).find('span.check').hasClass('active')) {
+            $(this).find('span.check').removeClass('active');
+            $('#info').val(0);
+            $('#preview_info').hide();
+        } else {
+            $(this).find('span.check').addClass('active');
+            $('#info').val(1);
+            $('#preview_info').show();
+        }
+    });
+
+    $('.container_hide .row').click(function () {
+        if ($(this).find('span.check').hasClass('active')) {
+            $(this).find('span.check').removeClass('active');
+            $('#nsfw').val(0);
+        } else {
+            $(this).find('span.check').addClass('active');
+            $('#nsfw').val(1);
+        }
+    });
+
+    $('.remove .row').click(function () {
+        if ($(this).find('span.check').hasClass('active')) {
+            $(this).find('span.check').removeClass('active');
+            //$('#nsfw').val(0);
+        } else {
+            $(this).find('span.check').addClass('active');
+            //$('#nsfw').val(1);
+        }
+    });
+
+    /*Меню*/
+    $('.menu .navbar-toggle').click(function () {
+        $(this).parent().find('.navbar-toggle').toggleClass('active');
+        $(this).parent().find('ul').toggle();
+    });
+
+    $('body').click(function () {
+        if ($('li.active').length) {
+            if ($.inArray(event.target.className,
+                    ['', 'input register_text', 'input margin-bottom-0 overflow-auto', 'btn_text', 'text-input', 'popup_menu form', 'icon-input-submit']) != -1) {
+                return;
+            }
+            console.log('{'+event.target.className+'}');
+            $('li.active').removeClass('active');
+        }
+    });
+});

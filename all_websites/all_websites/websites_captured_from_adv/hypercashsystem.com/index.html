@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Hyper Cash System</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <meta name="csrf-token" content="cqDl10c7SDrGlF7VvnvgqkeNedzy7xAR5t9aNsiI">
+    <!-- Favicons -->
+    <link href="https://hypercashsystem.com/assets/img/favicon.png" rel="icon">
+    <link href="https://hypercashsystem.com/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+ <link
+     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+     rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,700&display=swap" rel="stylesheet">
+ <!-- Vendor CSS Files -->
+ <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
+ <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+ <link href="https://hypercashsystem.com/vendor/venobox/venobox.css&quot; rel=&quot;stylesheet">
+ <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+ <link href="vendor/aos/aos.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/alertify.min.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+
+ <!-- Default theme -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/default.min.css" />
+ <!-- Semantic UI theme -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/semantic.min.css" />
+ <!-- Bootstrap theme -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/css/themes/bootstrap.min.css" />
+ <!-- Template Main CSS File -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+
+ <link href="css/style.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+ <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.0/css/buttons.dataTables.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.11/css/intlTelInput.css">
+ <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+ <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
+ <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <style>
+     .goog-te-gadget {
+         font-family: arial;
+         font-size: 0px;
+         color: transparent;
+         white-space: nowrap;
+     }
+
+     .ref-link {
+         font-family: sans-serif;
+         color: #236ae8;
+         letter-spacing: 1px;
+     }
+
+     section {
+         padding: 0 !important;
+     }
+
+     .bg-secondary {
+         background-color: #f5f6fe !important;
+     }
+
+     .pt-13 {
+         padding-top: 13rem !important;
+     }
+
+     .pt-8 {
+         padding-top: 8rem !important;
+     }
+
+     .pb-8 {
+         padding-bottom: 8rem !important;
+     }
+
+     .mb-8 {
+         margin-bottom: 8rem;
+     }
+
+     #hero .btn-get-started {
+         background: #236ae8;
+     }
+
+     .embed-container {
+         position: relative;
+         padding-bottom: 56.25%;
+         height: 0;
+         overflow: hidden;
+         max-width: 100%;
+     }
+
+     .embed-container iframe,
+     .embed-container object,
+     .embed-container embed {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+     }
+
+     #admin-logged-in {
+         position: fixed;
+         bottom: 20px;
+         right: 0px;
+         width: 20%;
+         height: 70px;
+         padding: 10px;
+         color: #ffffff;
+         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+         border-radius: 10px;
+         background-color: #236ae8;
+     }
+
+
+     .phones {
+         max-height: 444px;
+     }
+
+     #hero {
+         width: 100%;
+         height: 85vh;
+         background: #f5f6fe;
+         border-bottom: 2px solid #e3ebfc;
+         margin: 72px 0 -72px 0;
+     }
+
+     #main {
+         margin-top: 0 !important;
+     }
+
+     #countdown {
+         padding: 0;
+         background-color: rgb(14, 71, 232);
+         height: 15vh;
+     }
+
+     #days {
+         font-size: 4rem;
+         color: #ffffff;
+
+     }
+
+     #hours {
+         font-size: 4rem;
+         color: #ffffff;
+         font-family: 'Roboto Slab', ;
+     }
+
+
+
+     #minutes {
+         font-size: 4rem;
+         color: #ffffff;
+         font-family: 'Roboto Slab', ;
+     }
+
+     #seconds {
+         font-size: 4rem;
+         color: #ffffff;
+         font-family: 'Roboto Slab', ;
+
+     }
+
+     #timer {
+         display: inline-block;
+         line-height: 1;
+         padding: 20px;
+         font-size: 40px;
+     }
+
+     .ctd {
+         display: block;
+         font-size: 20px;
+         color: black;
+     }
+
+     .timer {
+         display: inline-block;
+         line-height: 1;
+         padding: 35px 0 0 0;
+         font-size: 40px;
+     }
+
+     #footer .copyright {
+         float: none !important;
+     }
+
+     #hero img {
+         width: 100%;
+     }
+
+
+     @media (max-width: 575.98px) {
+
+         #hero .hero-img img {
+             height: 20vh;
+             width: auto !important;
+         }
+
+     }
+
+     @media (min-width: 576px) and (max-width: 767.98px) {}
+
+     @media (min-width: 768px) and (max-width: 991.98px) {}
+
+     @media (min-width: 992px) and (max-width: 1199.98px) {}
+
+     @media (min-width: 1200px) {}
+
+
+
+
+     #loader {
+         position: fixed;
+         top: 0px;
+         bottom: 0px;
+         left: 0px;
+         right: 0px;
+         width: 100vw;
+         height: 100vh;
+         background-color: rgba(255, 255, 255, 0.98);
+         z-index: 10000;
+     }
+
+     @keyframes  load {
+         0% {
+             opacity: 0.08;
+             filter: blur(5px);
+             letter-spacing: 3px;
+         }
+     }
+
+     .animate {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+         margin: auto;
+         font-family: Helvetica, sans-serif, Arial;
+         animation: load 1.2s infinite 0s ease-in-out;
+         animation-direction: alternate;
+         text-shadow: 0 0 1px white;
+     }
+
+     #header .logo h1 a,
+     #header .logo h1 a:hover {
+         color: #1255d2;
+         text-decoration: none;
+     }
+
+     .nav-menu a:hover,
+     .nav-menu .active>a,
+     .nav-menu li:hover>a {
+         color: #1255d2;
+         text-decoration: none;
+     }
+
+     .back-to-top,
+     .back-to-top:hover {
+         background: #1255d2;
+     }
+
+ </style>
+ <style>
+    #hero {
+        height: 100vh;
+    }
+
+</style>
+    </head>
+
+<body>
+    <div id="loader">
+        <h2 class="animate">Hyper Cash System</h2>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex">
+
+    <div class="logo mr-auto">
+        <h1 class="text-light"><a href="https://hypercashsystem.com"><span> <img src="img/hcslogo.png"
+                        style="width:160px; height:180px"> </span> </a> </h1>
+        <!-- Uncomment below if you prefer to use an
+                        image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    </div>
+
+    <nav class="nav-menu d-none d-lg-block">
+        <ul>
+            <li id="google_translate_element"></li>
+                        <li class=""><a href="https://hypercashsystem.com/register">Register</a></li>
+            <li class="active"><a href="index.html">Login</a></li>
+                        <form id="logout-form" action="https://hypercashsystem.com/logout" method="POST" style="display: none;">
+                <input type="hidden" name="_token" value="cqDl10c7SDrGlF7VvnvgqkeNedzy7xAR5t9aNsiI">
+            </form>
+    </nav><!-- .nav-menu -->
+
+</div>
+    </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 order-2 order-lg-1">
+                <div class="card shadow-lg bg-white border-0 rounded mx-auto">
+                    <div class="card-body">
+                        <h4 class="font-weight-bold text-center mt-3 mb-2">LOGIN</h4>
+                        <h6 class="text-center mt-1 mb-4">Let's Login To Hyper Cash System</h6>
+                        <hr class="second my-4">
+                        <form class="px-4" method="POST" action="index.html">
+                            <input type="hidden" name="_token" value="cqDl10c7SDrGlF7VvnvgqkeNedzy7xAR5t9aNsiI">                                                        <div class="mt-2 form-group">
+                                <label for="">Email</label>
+                                <input type="email" name="email" class="form-control">
+                                                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Password</label>
+                                    <input type="password" name="password" class="form-control">
+                                </div>
+                                                            </div>
+                            <div class="text-center mt-2">
+                                <button type="submit" class="btn btn-primary">
+                                    LOGIN
+                                </button>
+                                <hr>
+                                <div class="text-center"><a href="https://hypercashsystem.com/password/reset">Forgot Password?</a>
+                                </div>
+                                <div class="text-center">
+                                    Need an Account ?<a href="https://hypercashsystem.com/register">Register</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section><!-- End Hero -->
+
+
+    <main id="main">
+            </main><!-- End #main -->
+
+
+    
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="bg-secondary">
+
+    <div class="container py-4">
+        <div class="copyright">
+            &copy; Copyright <strong><span>HyperCashSystems 2020</span></strong>. All Rights Reserved
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+    <a href="index.html#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="vendor/php-email-form/validate.js"></script>
+<script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="vendor/venobox/venobox.min.js"></script>
+<script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="vendor/aos/aos.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.2/build/alertify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.11/js/intlTelInput-jquery.min.js"></script>
+<script src=" https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+<script src=" https://cdn.datatables.net/buttons/1.6.1/js/buttons.flash.min.js"></script>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src=" https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
+<script src=" https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
+
+<!-- Template Main JS File -->
+<script src="js/main.js"></script>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en'
+        }, 'google_translate_element');
+    }
+    var endTime = new Date();
+    var countdown = "7";
+    countdown = parseInt(countdown);
+    endTime.setMinutes(endTime.getMinutes() + countdown);
+    endTime = (Date.parse(endTime) / 1000);
+
+    $(document).ready(function () {
+        if ($(window).width() < 450) {
+            $('#sidebarToggleTop').click();
+        }
+        $('#loader').fadeOut();
+
+        $('.dropify').dropify();
+
+        $('.data-table').DataTable();
+                                             //
+        $('#timeout-div').removeClass('hide-first');
+        $('#timeout-div').addClass('show-on-load');
+
+
+        setInterval(dateTime, 1000);
+
+    });
+
+    function successMsg(msg) {
+        alertify.set('notifier', 'position', 'bottom-right');
+        alertify.success(msg);
+    }
+
+    function dangerMsg(msg) {
+        alertify.set('notifier', 'position', 'bottom-right');
+        alertify.error(msg);
+    }
+
+    function makeTimer() {
+
+        var now = new Date();
+        now = (Date.parse(now) / 1000);
+
+        var timeLeft = endTime - now;
+
+        var days = Math.floor(timeLeft / 86400);
+        var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+        var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+        var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+        if (hours < "10") {
+            hours = "0" + hours;
+        }
+        if (minutes < "10") {
+            minutes = "0" + minutes;
+        }
+        if (seconds < "10") {
+            seconds = "0" + seconds;
+        }
+
+        if (timeLeft > 0) {
+            $("#days").html(days);
+            $("#hours").html(hours + ':');
+            $("#minutes").html(minutes + ':');
+            $("#seconds").html(seconds);
+        } else {
+            $("#days").html(0);
+            $("#hours").html(00 + ':');
+            $("#minutes").html(00 + ':');
+            $("#seconds").html(00);
+        }
+
+    }
+
+    setInterval(function () {
+        makeTimer();
+    }, 1000);
+
+    function dateTime() {
+        var format = "";
+        var ndate = new Date();
+        var hr = ndate.getHours();
+        var h = hr % 12;
+
+        if (hr < 12) {
+            greet = 'Good Morning';
+            format = 'AM';
+        } else if (hr >= 12 && hr <= 17) {
+            greet = 'Good Afternoon';
+            format = 'PM';
+        } else if (hr >= 17 && hr <= 24)
+            greet = 'Good Evening';
+
+        var m = ndate.getMinutes().toString();
+        var s = ndate.getSeconds().toString();
+
+        if (h < 12) {
+            h = "0" + h;
+            $(".day-message").html(greet);
+        } else if (h < 18) {
+            $(".day-message").html(greet);
+        } else {
+            $(".day-message").html(greet);
+        }
+
+    }
+
+</script>
+
+
+
+</body>
+
+</html>

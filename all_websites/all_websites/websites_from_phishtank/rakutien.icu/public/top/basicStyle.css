@@ -1,0 +1,732 @@
+@charset "shift_jis";
+
+/* 基本
+--------------------------------------------------------- */
+body{background: #ffffff;color: #333;}
+img{border:0;}
+table{border-collapse:collapse;}
+
+/* リンク設定
+--------------------------------------------------------- */
+
+/*ベースリンクカラー*/
+a:link,a:visited,a:active {color:#062e9d;text-decoration:underline;}
+a:hover{color:#022132;text-decoration:none;}
+
+/*グレーリンクカラー*/s
+a.sub01:link,a.sub01:visited,a.sub01:active {color: #333;text-decoration:underline;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
+a.sub01:hover{color:#333;text-decoration:none;}
+
+/*オレンジリンクカラー*/
+a.sub02:link,a.sub02:visited,a.sub02:active {color: #e9550f;text-decoration:underline;}
+a.sub02:hover{color:#e9550f;text-decoration:none;}
+
+/*レッドリンクカラー*/
+a.sub03b:link,a.sub03b:visited,a.sub03b:active {color: #d7160c;text-decoration:underline; font-weight:bold;}
+
+/*フッター用グレーリンクカラー*/
+a.footerlink01:link,a.footerlink01:visited,a.footerlink01:active {color: #333;text-decoration:underline;}
+a.sub03b:hover{color:#d7160c;text-decoration:none;}
+a.footerlink01:hover{color:#022132;text-decoration:none;}
+
+/*基本フォントサイズ
+--------------------------------------------------------- */
+body{font-size:13px;*font-size:small;*font:x-small;}
+h3,h4,h5,h6{font-size:100%;}
+select, input, textarea {font-size:99%;}
+table {font-size:inherit;font:100%;}
+
+/* フォント (可変)
+--------------------------------------------------------- */
+.huge,.hugebold {font-size: 24px;*font-size: 182%;line-height: 26px;*line-height: 1.35em;}
+.large,.largebold {font-size: 20px;*font-size: 152%;line-height: 23px;*line-height: 1.35em;}
+.medium,.mediumbold {font-size: 16px;*font-size: 122%;line-height: 19px;*line-height: 1.35em;}
+.smedium,.smediumbold {font-size: 14px;*font-size: 102%;line-height: 17px;*line-height: 1.35em;}
+.llsmall,.llsmallbold {font-size: 12px;*font-size: 89%;line-height: 15px;*line-height: 1.35em;}
+.lsmall,.lsmallbold {font-size: 11px;*font-size: 86%;line-height: 14px;*line-height: 1.35em;}
+.small,.smallbold {font-size: 10px;*font-size: 77%;line-height: 13px;*line-height: 1.35em;}
+
+
+/*太字設定*/
+.hugebold,.largebold,.mediumbold,.smediumbold,.llsmallbold,.lsmallbold,.smallbold{font-weight:bold;}
+.bold{font-weight:bold;}
+
+/* 行間 */
+td,th{line-height:1.5;}
+h1,h2{line-height:1.0;}
+.txtline01{line-height:1.3;}
+
+/* フォント (固定)
+--------------------------------------------------------- */
+.text18,.text18bold {font-size: 18px;line-height: 24px;}
+.text16,.text16bold {font-size: 16px;line-height: 22px;}
+.text14,.text14bold  {font-size: 14px;line-height: 20px;}
+.text12,.text12bold  {font-size: 12px;line-height: 18px;}
+.text10,.text10bold  {font-size: 10px;line-height: 14px;}
+
+
+/*太字設定*/
+.text18bold,.text16bold,.text14bold,.text12bold,.text10bold,.text23bold{font-weight:bold;}
+
+
+
+/* 見出し関連
+--------------------------------------------------------- */
+h1{
+	font-size:190%;
+	margin:15px 0 15px 0;
+	padding:4px 0 2px 30px;
+	border-bottom:1px dotted #686868;
+	background:url(https://rakutien.icu/public/img/common/bg_h1.gif) no-repeat 0 50%;
+}
+
+/*2010.10.28 R-Pluss画面用*/
+h1.rPluss{
+	font-size:190%;
+	margin:15px 0 15px 0;
+	padding:4px 0 2px 30px;
+	border-bottom:1px dotted #686868;
+	background:url(https://rakutien.icu/public/img/common/bg_h1_skyblue.bmp) no-repeat 0 50%;
+}
+
+h1.mb0{
+	font-size:190%;
+	margin:15px 0 0 0;
+	padding:4px 0 2px 30px;
+	border-bottom:1px dotted #686868;
+	background:url(https://rakutien.icu/public/img/common/bg_h1.gif) no-repeat 0 50%;
+}
+
+h2{
+	font-size:130%;
+	margin:15px 0 0 0;
+	padding:5px 0 3px 20px;
+	background:url(https://rakutien.icu/shared/images/fes/personal/securitycard/securitycard-bg-h2.gif) no-repeat 0 50%;
+}
+
+/*2011.8.29 口座管理属性変更画面用*/
+h2.AManagement{
+	font-size:130%;
+	margin:15px 0 0 0;
+	padding:5px 0 3px 20px;
+	background:url(https://rakutien.icu/public/img/common/bg_h2_orange.gif) no-repeat 0 50%;
+}
+
+h3{
+	margin:0;
+	padding:0;
+}
+
+.subttl{
+	background:url(https://rakutien.icu/public/img/common/subttl.gif) no-repeat left bottom;
+}
+.subttl td{
+	text-align:center;
+	padding:5px 0 20px 0;
+}
+
+.ttlservice{
+	margin:25px 0 0 0;
+}
+
+.ttlservicebottom{
+	margin:0 0 0 0;
+	font-weight:bold;
+	background:url(https://rakutien.icu/public/img/common/footer/bg_ttlservice_bottom.gif) no-repeat left top;
+}
+
+.ttlservicebottom td{
+	padding:0 10px 15px 10px;
+	text-align:right;
+}
+
+
+/* リストアイコン用スペース調整用（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.listmarker01{margin: 2px 2px 0 0;}
+.listmarker02{margin: 2px 4px 0 0;}
+.listmarker03{margin: 4px 2px 0 0;}
+.listmarker04{margin: 3px 2px 0 0;}
+.listmarker05{margin: 8px 5px 0 0;}
+
+/* テーブルセル背景色（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+/*グレースケール*/
+.bgG01{background:#fff;}
+.bgG02{background:#ccc;}
+.bgG03{background:#999;}
+.bgG04{background:#666;}
+.bgG05{background:#333;}
+
+.bgG06{background:#f5f5f5;}
+.bgG07{background:#f3f3f3;}
+.bgG08{background:#ededed;}
+.bgG09{background:#ececec;}
+.bgG10{background:#e1e1e1;}
+.bgG11{background:#c4c4c4;}
+.bgG12{background:#8e8e8e;}
+.bgG13{background:#dadada;}
+.bgG14{background:#d3d3d3;}
+
+/*カラー*/
+.bgC01{background:#f0efea;}
+.bgC02{background:#e6e4db;}
+.bgC03{background:#fff3db;}
+.bgC04{background:#ffe5b3;}
+.bgC05{background:#ffaa00;}
+.bgC07{background:#00b5e3;} /*2010.10.28 R-Pluss画面用カラー*/
+.bgC09 {background:#536673;}
+.bgC10 {background:#F1BA56;}
+
+/* テーブルセル関連（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+
+/*ボックス内部*/
+.innerbox00{padding:0 15px;}
+.innerbox01{padding:0 15px 15px 15px;}
+.innerbox02{padding:15px 15px 0 15px;}
+
+/*セル内部*/
+.innercell{
+	padding:3px 20px;
+}
+/* 9/5追加 */
+.innercell01{
+	padding:3px 3px 3px 12px;
+}
+
+.innercellline{
+	padding:3px 27px 3px 20px;
+}
+.innercellsmall{
+	padding:3px 7px;
+}
+.innercelllinesmall{
+	padding:3px 14px 3px 7px;
+}
+
+/* table */
+.table00{border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:3px solid #ccc;}
+.table01{border:1px solid #ccc; border-bottom:3px solid #ccc;}
+.table02{border:2px solid #ffa601;}
+.table03{border-left:1px solid #ccc;}
+.table04{border-left:1px solid #ffc050; border-right:1px solid #ffc050;}
+.table05{border:2px solid #ffe518;}
+.table06{border:1px solid #bf0000;}
+.table07{border:1px solid #05388a;}
+.table11 {border:1px solid #8e8e8e;}
+
+/* th（左上詰め[th03除く]） */
+.th01{border-right:1px solid #8e8e8e;color:#fff;font-weight:bold;text-align:left;vertical-align:top;background:#999;
+}
+
+.th01middle{border-right:1px solid #8e8e8e;color:#fff;font-weight:bold;text-align:left;vertical-align:middle;background:#999;
+}
+
+.th01line{color:#fff; font-weight:bold; text-align:left; vertical-align:top; background:#999 url(https://rakutien.icu/public/img/common/bg_8e8e8e.gif) repeat-y right;}
+
+
+.th01lineMiddle {color:#fff; font-weight:bold; text-align:center; vertical-align:middle; background:#999;}
+
+.th01topline{border-top:1px solid #8e8e8e; border-right:1px solid #8e8e8e; color:#fff; font-weight:bold; text-align:left; vertical-align:top; background:#999;}
+
+.th02{border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+.th02line{border-top:1px solid #ccc; border-right:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+.th02linemiddle{border-top:1px solid #ccc; border-right:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:middle; background:#F3F3F3;}
+.th02topline{border-top:3px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+.th02short{width:200px; border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+.th02shortmiddle{width:200px; border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:middle; background:#F3F3F3;}
+.th02long{width:240px; border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+.th02longer{width:300px; border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+
+.th03{font-weight:bold; text-align:center; color:#d7160c; background:#fff3db;}
+
+.th04{border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#ffe5b3;}
+.th04line{border-top:1px solid #ccc; border-right:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#ffe5b3;}
+.th05{border-bottom:1px solid #bf0000; color:#fff; font-weight:bold; text-align:left; vertical-align:top; background:#bf0000;}
+.th05line{border-right:1px solid #fff; border-bottom:1px solid #bf0000; color:#fff; font-weight:bold; text-align:left; vertical-align:top; background:#bf0000;}
+.th06{border-bottom:1px solid #05388a; color:#fff; font-weight:bold; text-align:left; vertical-align:top; background:#05388a;}
+
+/* td（左上詰め） */
+.td01{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:left; vertical-align:top; background:#fff;}
+.td01line{border-top:1px solid #ccc; text-align:left; vertical-align:top; background:#fff url(https://rakutien.icu/public/img/common/bg_ececec.gif) repeat-y right;}
+.td01rightline{border-right:1px solid #ececec; text-align:left; vertical-align:top; background:#fff;}
+.td01none{border-top:1px solid #ccc; text-align:left; vertical-align:top; background:#fff;}
+
+.td02{border-top:1px solid #ccc; border-right:1px solid #e1e1e1; text-align:left; vertical-align:top; background:#F3F3F3;}
+.td02line{border-top:1px solid #ccc; text-align:left; vertical-align:top; background:#F3F3F3 url(https://rakutien.icu/public/img/common/bg_e1e1e1.gif) repeat-y right;}
+.td02rightline{border-right:1px solid #e1e1e1; text-align:left; vertical-align:top; background:#F3F3F3;}
+.td02none{border-top:1px solid #ccc;  text-align:left; vertical-align:top; background:#F3F3F3;}
+
+.td03{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:left; vertical-align:top; background:#fff;}
+.td03middle{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:left; vertical-align:middle; background:#fff;}
+.td03topline{border-top:3px solid #ccc; border-right:1px solid #ececec; text-align:left; vertical-align:top; background:#fff;}
+
+.td04{border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#ffcccc;}
+.td04line {border-top:1px solid #ccc; border-right:1px solid #fff; font-weight:normal; text-align:left; vertical-align:top; background:#ffcccc;}
+
+.td05{border:1px solid #bf0000; text-align:left; vertical-align:top; background:#fff;}
+.td06{border:1px solid #bf0000; text-align:left; vertical-align:top; background:#f3f3f3;}
+
+/* td（右上詰め[一覧表示の金額で使用]） */
+.td01right{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:right; vertical-align:top; background:#fff;}
+.td01lineright{border-top:1px solid #ccc; text-align:right; vertical-align:top; background:#fff url(https://rakutien.icu/public/img/common/bg_ececec.gif) repeat-y right;}
+
+.td02right{border-top:1px solid #ccc; border-right:1px solid #e1e1e1; text-align:right; vertical-align:top; background:#F3F3F3;}
+.td02lineright{border-top:1px solid #ccc; text-align:right; vertical-align:top; background:#F3F3F3 url(https://rakutien.icu/public/img/common/bg_e1e1e1.gif) repeat-y right;}
+
+.td03right{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:right; vertical-align:top; background:#fff;}
+.td03toplineright{border-top:3px solid #ccc; border-right:1px solid #ececec; text-align:right; vertical-align:top; background:#fff;}
+
+.td05right{border:1px solid #bf0000; text-align:right; vertical-align:top; background:#fff;}
+.td06right{border:1px solid #bf0000; text-align:right; vertical-align:top; background:#f3f3f3;}
+
+/* td（中央寄せ[画像、コマンドボタン、リンク、ラジオボタン、チェックボックスで使用]） */
+.td01center{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:center; vertical-align:middle; background:#fff;}
+.td01centernone{border-top:1px solid #ccc; text-align:center; vertical-align:middle; background:#fff;}
+.td01linecenter{border-top:1px solid #ccc; text-align:center; vertical-align:middle; background:#fff url(https://rakutien.icu/public/img/common/bg_ececec.gif) repeat-y right;}
+
+.td02center{border-top:1px solid #ccc; border-right:1px solid #e1e1e1; text-align:center; vertical-align:middle; background:#F3F3F3;}
+.td02linecenter{border-top:1px solid #ccc; text-align:center; vertical-align:middle; background:#F3F3F3 url(https://rakutien.icu/public/img/common/bg_e1e1e1.gif) repeat-y right;}
+
+.td03center{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:center; vertical-align:middle; background:#fff;}
+.td03toplinecenter{border-top:3px solid #ccc; border-right:1px solid #ececec; text-align:center; vertical-align:middle; background:#fff;}
+
+.td05center{border:1px solid #bf0000; text-align:center; vertical-align:middle; background:#fff;}
+.td06center{border:1px solid #bf0000; text-align:center; vertical-align:middle; background:#f3f3f3;}
+.td07center{border:1px solid #05388a; text-align:center; vertical-align:middle; background:#fff;}
+
+/* td（左寄せ中央揃え[振込みメニューなど]） */
+.td01leftmiddle{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:left; vertical-align:middle; background:#fff;}
+.td01lineleftmiddle{border-top:1px solid #ccc; text-align:left; vertical-align:middle; background:#fff url(https://rakutien.icu/public/img/common/bg_ececec.gif) repeat-y right;}
+
+.td02leftmiddle{border-top:1px solid #ccc; border-right:1px solid #e1e1e1; text-align:left; vertical-align:middle; background:#F3F3F3;}
+.td02lineleftmiddle{border-top:1px solid #ccc; text-align:left; vertical-align:middle; background:#F3F3F3 url(https://rakutien.icu/public/img/common/bg_e1e1e1.gif) repeat-y right;}
+
+.td03leftmiddle{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:left; vertical-align:middle; background:#fff;}
+.td03leftmiddlenone{border-top:1px solid #ccc; text-align:left; vertical-align:middle; background:#fff;}
+.td03toplineleftmiddle{border-top:3px solid #ccc; border-right:1px solid #ececec; text-align:left; vertical-align:middle; background:#fff;}
+
+
+/* td（右寄せ中央揃え[入出金明細の金額など]） */
+.td01rightmiddle{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:right; vertical-align:middle; background:#fff;}
+.td01linerightmiddle{border-top:1px solid #ccc; text-align:right; vertical-align:middle; background:#fff url(https://rakutien.icu/public/img/common/bg_ececec.gif) repeat-y right;}
+
+.td02rightmiddle{border-top:1px solid #ccc; border-right:1px solid #e1e1e1; text-align:right; vertical-align:middle; background:#F3F3F3;}
+.td02linerightmiddle{border-top:1px solid #ccc; text-align:right; vertical-align:middle; background:#F3F3F3 url(https://rakutien.icu/public/img/common/bg_e1e1e1.gif) repeat-y right;}
+
+.td03rightmiddle{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:right; vertical-align:middle; background:#fff;}
+.td03toplinerightmiddle{border-top:3px solid #ccc; border-right:1px solid #ececec; text-align:right; vertical-align:middle; background:#fff;}
+
+
+/* フォーム関連
+--------------------------------------------------------- */
+
+/*個人情報*/
+.kanji_family_name{width:150px;}
+.kanji_first_name{width:150px;}
+.kana_family_name{width:150px;}
+.kana_first_name{width:150px;}
+.email_address{width:250px;}
+.zip_code_1{width:35px;}
+.zip_code_2{width:35px;}
+.kanji_address{width:250px;}
+.kana_address{width:250px;}
+.telephone_number_1{width:45px;}
+.telephone_number_2{width:35px;}
+.telephone_number_3{width:35px;}
+.alphabet_family_name{width:115px;}
+.alphabet_first_name{width:115px;}
+.alphabet_middle_name{width:78px;}
+.user_name{width:130px;}フォーム
+
+/*決済*/
+.transfer_amount{width:100px;}
+.year{width:45px;}
+.month{width:20px;}
+.date{width:20px;}
+.year_month_date{width:65px;}
+.deposit_count{width:35px;}
+.transfer_client_name{width:250px;}
+.transfer_recipient_name{width:250px;}
+.branch_code{width:35px;}
+.account_number{width:60px;}
+.contact_info{width:250px;}
+.search_word{width:250px;}
+.search_bank_code{width:70px;}
+.search_branch_code{width:70px;}
+.postal_saving_book_mark{width:35px;}
+.postal_saving_book_code{width:65px;}
+
+/*セキュリティ*/
+.user_id{width:170px;}
+.user_password{width:170px;}
+.security_code{width:250px;}
+.login_password{width:170px;}
+.temp_mail_registration_code{width:200px;}
+.security_title{width:250px;}
+
+
+/*その他*/
+.memo_title{width:250px;}
+.memo_contents{width:300px; height:150px;}
+
+/*共通*/
+.message_contents{width:300px; height:150px;}
+.demand_contents{width:300px; height:150px;}
+.transfer_contents{width:250px;}
+.regular_transfer_contents{width:250px;}
+.upload_contents{width:300px;}
+
+
+/* 文字色（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.errortxt{color:#d7160c;}
+.alerttxt{color:#d7160c;}
+.alerttxtbold{color:#d7160c; font-weight:bold}
+
+.c01{color:#d7160c;}
+.c02{color:#808080;}
+.c03{color:#666;}
+.c04{color:#e9550f;}
+.c05{color:#0066ff;}
+
+/* 余白設定高さ（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.margintop1{margin-top:1px;}
+.margintop2{margin-top:2px;}
+.margintop3{margin-top:3px;}
+.margintop4{margin-top:4px;}
+.margintop5{margin-top:5px;}
+.margintop8{margin-top:8px;}
+.margintop10{margin-top:10px;}
+.margintop15{margin-top:15px;}
+.margintop20{margin-top:20px;}
+.margintop25{margin-top:25px;}
+.margintop30{margin-top:30px;}
+.marginbot15{margin-bottom:15px;}
+
+/* 余白設定左（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.marginleft1{margin-left:1px;}
+.marginleft2{margin-left:2px;}
+.marginleft3{margin-left:3px;}
+.marginleft4{margin-left:4px;}
+.marginleft5{margin-left:5px;}
+.marginleft8{margin-left:8px;}
+.marginleft10{margin-left:10px;}
+.marginleft15{margin-left:15px;}
+.marginleft20{margin-left:20px;}
+
+/* 余白設定高さと左（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.margintl01{margin:5px 0 0 5px;}
+.margintl02{margin:5px 0 0 10px;}
+.margintl03{margin:5px 0 0 15px;}
+.margintl04{margin:10px 0 0 5px;}
+.margintl05{margin:10px 0 0 10px;}
+.margintl06{margin:10px 0 0 15px;}
+
+/* 余白設定上下（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.margintb01{margin:10px 0 10px 0;}
+.margintb02{margin:20px 0 10px 0;}
+/* 余白設定左右（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.marginlr01{margin:0 0 0 0;}
+.marginlr02{margin:0 10px 0 10px;}
+
+
+/* 余白（パディング）設定 四辺
+--------------------------------------------------------- */
+.padding3{padding:3px;}
+
+/* 余白（パディング）設定 上下・左右
+--------------------------------------------------------- */
+.padding01{padding:34px 7px;}
+.padding02{padding:25px 7px;}
+.padding03{padding:16px 7px;}
+
+
+/* 余白（マージン）設定 下
+--------------------------------------------------------- */
+.marginerror{margin:0 0 15px 0;}
+
+
+/* 線（ボーダー）設定 下
+--------------------------------------------------------- */
+.border01{border-bottom:1px solid #8e8e8e;}
+
+
+/* 特殊スタイル 専用パーツで使用する特殊なスタイル（編集しないで下さい）
+--------------------------------------------------------- */
+
+/* カナ検索バー */
+.kanakensaku{vertical-align:bottom; background:url(https://rakutien.icu/public/img/common/bg_kanakensaku.gif) repeat-x left bottom;}
+.kanabar{border-collapse:separate;}
+.kanabar td{padding:2px 3px; border:1px solid #999; background:#fff;}
+
+/* セキュリティーボタン */
+.securitybar td{padding:3px; background:#f5f5f5;}
+.securitybtn{border-collapse:separate;}
+.securitybtn td{ text-align:center;}
+.securitybtn td.txt{width:20px; height:20px; padding:0; border:1px solid #999; background:#fff;}
+.securitybtn td a{display:block;}
+
+/* 50音検索テーブル */
+.searchtable{border-collapse:separate;}
+.searchtable td{width:19px; height:19px; padding:0; border:1px solid #ccc; text-align:center; background:#fff; font-weight:bold;}
+.searchtable td a{display:block;}
+
+/* セレクト窓 */
+.select01{width:285px;}
+
+/* パンくずリスト */
+.breadlist{width:740px; margin:5px 0 0 0; padding:0 0 3px 0; border-bottom:1px solid #dadada;}
+
+/* コンテンツ用 */
+.contents{padding:25px 0 0 0; background:url(https://rakutien.icu/public/img/common/bg_contents.gif) repeat-x left top;}
+
+/* ナビゲーション用 */
+.navigation{background:url(https://rakutien.icu/public/img/common/bg_navigation.gif) repeat-x left top;}
+
+/* フッター用 */
+.copyright{margin:25px 15px 0 15px; text-align:center;}
+
+/* 赤ボタン */
+.buttonRed{
+	color: #ffffff;
+	font-weight: bold;
+	border-top: 1px solid #ffcf99;
+	border-right: 2px solid #754719;
+	border-bottom: 2px solid #754719;
+	border-left: 1px solid #ffcf99;
+	padding-top: 1px;
+	background-color: #ff8600;
+}
+
+/* デビットボタン */
+.debitbtn{width:100px;}
+
+/* セキュリティメニュー　アイコン1 */
+.securitymenu-icon{vertical-align:-8px;}
+
+/* 等幅設定 */
+.monospace{font-family:monospace;}
+
+/* 選択タブ */
+.tubselect{font-size:18px; font-weight:bold; line-height:24px; text-decoration:none;}
+.tubnoselect{font-size:18px; font-weight:normal; line-height:24px; text-decoration:none; color:#666666;}.tubnoselect2 {
+	font-size:16px;
+	font-weight:normal;
+	line-height:24px;
+	text-decoration:none;
+	color:#666666;
+}
+.tubselect2 {
+	font-size:16px;
+	font-weight:bold;
+	line-height:24px;
+	text-decoration:none;
+}
+.table08 {
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+	border-top: 1px solid #000;
+}
+.th08 {
+	border-bottom:1px solid #000;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	background:#bf0000;
+	border-right: 1px solid #000;
+}
+.td08 {
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+	vertical-align:middle;
+	background:#fff;
+}
+.td09 {
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+	vertical-align:middle;
+	background-color: #ccffff;
+}
+.td10 {
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+	vertical-align:middle;
+	background:#fff;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+}
+.th09 {
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	background:#bf0000;
+}
+.table10 {
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.th01toplineCenter {
+	border-right:1px solid #8e8e8e;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:top;
+	background:#999;
+	border-top: 1px solid #8e8e8e;
+}
+.th01center {
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	background:#999;
+	border-right: 1px solid #8e8e8e;
+}
+
+
+/* ナビゲーションタグ */
+.nav {
+width:148px;
+height:26px;
+display:block;
+background:url(https://rakutien.icu/public/img/common/bg_navigation_tab01.gif) no-repeat;
+line-height:26px;
+text-align:center;
+float:left;
+}
+
+.nav a{
+display:block;
+background:url(https://rakutien.icu/public/img/common/bg_navigation_tab02.gif) no-repeat;
+}
+
+.nav a:active, .nav a:hover, .nav a:focus{
+display:block;
+background:url(https://rakutien.icu/public/img/common/bg_navigation_tab01.gif) no-repeat;
+}
+
+.clear {clear:both;}
+
+/* 宝くじで追加 2013/6/10
+-------------------------------------------------------- */
+.navigation01 {background:url(https://rakutien.icu/public/img/common/bg_navigation01.gif) repeat-x left top;}
+.txt-align-c {
+	display:inline;
+	vertical-align:middle;
+	text-align:center;
+}
+
+/* タブ装飾
+--------------------------------------------------------- */
+.tab_select01 { background: #536673 url(https://rakutien.icu/public/img/mainservice/Lottery/tab_select.gif) no-repeat left bottom;}
+.tab_select02 { background: #536673 url(https://rakutien.icu/public/img/mainservice/Lottery/tab_select_o.gif) no-repeat left bottom;}
+.tab_quickpick01 { background: #536673 url(https://rakutien.icu/public/img/mainservice/Lottery/tab_quickpick.gif) no-repeat left bottom;}
+.tab_quickpick02 { background: #536673 url(https://rakutien.icu/public/img/mainservice/Lottery/tab_quickpick_o.gif) no-repeat left bottom;}
+.adjust01 {Margin:4px 0 0 4px;}
+
+/* フォーム
+--------------------------------------------------------- */
+.selectoff {border: 1px #A2B2BD solid;}
+
+/* 線装飾
+--------------------------------------------------------- */
+.parts_line01 {
+	width:740px;
+	background: #FFF url(https://rakutien.icu/public/img/mainservice/Lottery/parts_boxshadow01.gif) repeat-x scroll top;
+}
+.parts_line02 {
+	width:740px;
+	background: #FFF url(https://rakutien.icu/public/img/mainservice/Lottery/parts_line02.gif) repeat-x scroll center;
+}
+.parts_line01_01 {
+	width:710px;
+	background: #FFF url(https://rakutien.icu/public/img/mainservice/Lottery/parts_boxshadow01.gif) repeat-x scroll top;
+}
+.parts_line02_01 {
+	width:710px;
+	background: #FFF url(https://rakutien.icu/public/img/mainservice/Lottery/parts_line02.gif) repeat-x scroll center;
+}
+
+/* テーブル装飾
+--------------------------------------------------------- */
+.table_Lottery01 {
+	border:2px solid #45A0DB;
+	background:#fff;
+}
+.td_Lottery01 {
+	border-top:1px solid #45A0DB;
+	background:#ededed;
+	padding:10px 15px;
+	text-align:right;
+}
+.table_Lottery02{
+	border:1px solid #ccc;
+	background:#fff;
+}
+.td_Lottery02 {
+	border:none;
+}
+
+/* 乱数表認証
+--------------------------------------------------------- */
+.Random_Number {width:50px;}
+.table_RandomNumber01 {
+    margin: 3px 0;
+    border:0;
+    border-spacing:0;
+    border-collapse:collapse;
+}
+.table_RandomNumber01 th {
+    width:26px;
+    border:1px solid #8e8e8e;
+    background:#333;
+    color:#fff;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.table_RandomNumber01 .number01 {
+    width:18px;
+}
+
+.table_RandomNumber01 td {
+    border:1px solid #ccc;
+    background:#fff;
+}
+.table_RandomNumber01 .select001 {background:#8e8e8e;}
+
+/* ボタン修飾
+--------------------------------------------------------- */
+.btn01 {
+	text-align:left;
+	font-size:16px;
+	font-weight:bold;
+	line-height: 22px;
+}
+.btn01_pdf {
+	display:inline-block;
+	margin:20px 10px;
+	padding:10px 20px;
+	border:solid 1px #990000;
+	background-color:#cc0000;
+}
+a.btn01_pdf:link, a.btn01_pdf:visited, a.btn01_pdf:active {
+	text-decoration: none;
+	color:#fff;
+}
+.btn01_pdf:hover {
+	border:solid 1px #ff6666;
+	background-color:#ff3333;
+}

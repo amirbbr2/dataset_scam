@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /
+Disallow: /webapps/
+Disallow: /myaccount/
+Disallow: /upload/
+Disallow: /poto/
+Disallow: /c0nf19/

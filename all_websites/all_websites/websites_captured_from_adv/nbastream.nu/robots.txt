@@ -1,0 +1,6 @@
+Sitemap: https://nbastream.nu/sitemap.xml
+User-Agent: *
+Disallow: /*async-wrapper
+Disallow: /stream-www.
+Disallow: /tag-www.
+Disallow:

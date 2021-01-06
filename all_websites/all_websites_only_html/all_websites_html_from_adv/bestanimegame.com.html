@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/><meta name="google" content="notranslate">
+    <title>Game</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css?v=11"/>
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="app"> 
+      <div class="logo"><img src="image/logo.png" alt="logo"/></div>
+      <div class="stats">
+        <div class="block-rel">
+          <div class="stat-block stat-left">
+            <div class="stat-block-title"><img src="image/plax2.png" alt="plax"/>
+              <div class="block-title-text">The Nun </div>
+            </div>
+            <div class="stat-block-level"><span>Level </span><span>35</span></div>
+            <div class="stat-text">The rumor is roaming among people that she was even excommunicated from the Church for her superhuman lust. She will provide your whole team with excellent buffs!</div>
+            <div class="stat-vote">Vote for her</div>
+            <div class="stat-icons"><img src="image/thumb2.png" alt="thumb"/><img src="image/thumb0.png" alt="thumb" class="thumb2"/><img src="image/thumb1.png" alt="thumb" class="thumb3"/></div>
+          </div>
+          <div class="stat-block stat-right">
+            <div class="stat-block-title"><img src="image/plax1.png" alt="plax"/>
+              <div class="block-title-text">gladiator</div>
+            </div>
+            <div class="stat-block-level"><span>Level </span><span>37</span></div>
+            <div class="stat-text">Shiny armor, deadly blade, and cleanly shaven vagina. Triple kill for your erection! </div>
+            <div class="stat-vote">Vote for her</div>
+            <div class="stat-icons"><img src="image/thumb2.png" alt="thumb"/><img src="image/thumb0.png" alt="thumb" class="thumb2"/><img src="image/thumb1.png" alt="thumb" class="thumb3"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="girls girl-left">
+        <div class="block-rel"><img src="image/pers2na.png" alt="girl"/><img src="image/pers2half.png" alt="girl"/></div>
+      </div>
+      <div class="girls girl-right">
+        <div class="block-rel"><img src="image/pers1na.png" alt="girl"/><img src="image/pers1half.png" alt="girl"/></div>
+      </div>
+      <div class="btns-block"><a href="#@" class="btns-mid btn-left"><img src="image/fbtl.png" alt="fbtl"/>
+          <p>The Nun </p></a><a href="#@" class="btns-mid btn-right"><img src="image/fbtr.png" alt="fbtr"/>
+          <p>gladiator</p></a></div>
+      <div class="vote-btn"><img src="image/votefor.png" alt="vote"/></div>
+      <div class="overlay"></div>
+      <div class="static">
+        <div class="block-rel"><img src="image/static-header.png" alt="static" class="static-bg"/>
+          <div class="stat-percent">00%</div>
+          <div class="stat-title">of players <br> chose this hero</div>
+          <div class="stat-loadbox">
+            <div class="block-rel"><img src="image/loadbox.png" alt="loadbox" class="load-box"/>
+              <div class="stat-loadbar"></div>
+              <div class="stat-bar-percent">00%</div>
+            </div>
+          </div>
+          <div class="stat-avatars">
+            <div class="block-rel"><img src="image/ava1.png" alt="ava"/><img src="image/ava2.png" alt="ava"/></div>
+          </div>
+          <div class="stat-thmbs stat-thumb0"><img src="image/thumb3.png" alt="ava"/></div>
+          <div class="stat-thmbs stat-thumb1"><img src="image/thumb3.png" alt="ava"/></div>
+          <div class="stat-thmbs stat-thumb2"><img src="image/thumb3.png" alt="ava"/></div>
+          <div class="stat-thmbs stat-thumb"><img src="image/thumb3.png" alt="thumb"/></div>
+          <div class="stat-play"><img src="image/playbtn.png" alt="playbtn"/></div>
+        </div>
+      </div><a href="#" class="redirect finlink">               </a>
+    </div>
+    <script type="text/javascript">
+      var fin_link = decodeURIComponent(getURLParameter('p1'));
+      var links = document.getElementsByClassName('finlink');
+      for (var i = 0; i < links.length; i++) links[i].setAttribute("href", fin_link);
+  
+      for (var j = 0; j < links.length; j++) {
+        links[j].addEventListener('click', function() {
+          window.onbeforeunload = null;
+        });
+      }
+  
+      function getURLParameter(name) {
+        return decodeURIComponent(
+          (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+        );
+      }
+  
+      window.onbeforeunload = function(e) {
+        if (true) {
+          s = 'All unsaved data will be lost! Do you really want to quit the site?'
+          e = e || window.event;
+          // For IE and Firefox prior to version 4
+          if (e) {
+            e.returnValue = s;
+          }
+          // For Safari
+          return s;
+        }
+      };
+    </script>
+    <script type="text/javascript" src="scripts/main.js?v=3"></script>
+    <script type="text/javascript" src="scripts/main.js?v=3"></script>
+  </body>
+</html>

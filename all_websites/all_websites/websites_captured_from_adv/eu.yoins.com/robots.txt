@@ -1,0 +1,111 @@
+User-agent: *
+Disallow: /cache/
+Allow: /cache/yoins_static_cache/googlefeed/
+Disallow: /templates/
+Disallow: /shopping_cart.php
+Disallow: /login.html*
+Disallow: /checkout.html*
+Disallow: /wishlist.html*
+Disallow: /addressbook.html*
+Disallow: /forget_password.html
+Disallow: /index.php?com=customer*
+Disallow: /index.php?com=review*
+Disallow: /index.php?com=article*
+
+Disallow: /*lang=en-GB
+Disallow: /*?utm*
+Disallow: /*bid=*
+Disallow: /*/blog/*
+Disallow: /*-fc-0-fv-0-s-1-l-0-price-0.00-0.00-p_*.html
+Disallow: /*-fc-0-fv-0-s-2-l-0-price-0.00-0.00-p_*.html
+Disallow: /*-fc-0-fv-0-s-3-l-0-price-0.00-0.00-p_*.html
+Disallow: /*-fc-0-fv-11*-s-1-l-0-price-0.00-0.00-p_*.html
+Disallow: /*-fc-0-fv-13*-s-1-l-0-price-0.00-0.00-p_*.html
+Disallow: /*-fc-0-fv-11*-s-2-l-0-price-0.00-0.00-p_*.html
+Disallow: /*-fc-0-fv-13*-s-2-l-0-price-0.00-0.00-p_*.html
+Disallow: /*-fc-0-fv-11*-s-3-l-0-price-0.00-0.00-p_*.html
+Disallow: /*-fc-0-fv-13*-s-3-l-0-price-0.00-0.00-p_*.html
+Disallow: /*-fc-0-fv-11*-s-4-l-0-price-0.00-0.00-p_*.html
+Disallow: /*-fc-0-fv-13*-s-4-l-0-price-0.00-0.00-p_*.html
+Disallow: /*/product-directory/*.html
+Disallow: */buy/*
+Disallow: */most-review*
+Disallow: */new-in*
+Disallow: */sales*
+Disallow: */most-sold*
+
+Disallow: *Sports-Pants-c-5478*
+Disallow: *Other-c-3279*
+Disallow: *Boots-c-3200*
+Disallow: *Sports-Leggings-c-5479*
+Disallow: *Sports-T-Shirts-c-5482* 
+Disallow: *Sports-Vest-c-5480*
+Disallow: *Sports-Shorts-c-5477*
+Disallow: *Windbreaker-Jacket-c-5895*
+Disallow: *Sports-Hoodies-c-5481*
+Disallow: *Sports-Jumpsuits-c-5486*
+Disallow: *BAGS-c-3162*
+Disallow: *SHOES-c-3198*
+Disallow: *Slippers-c-4450*
+Disallow: *Purses-c-3193*
+Disallow: *Loafers-c-4389*
+Disallow: *Sandals-c-3711*
+Disallow: *Flats-c-3207*
+Disallow: *Sunglasses-c-5466*
+Disallow: *Sneakers-c-3199*
+Disallow: *Across-Body-Bags--c-3164*
+Disallow: *Shoulder-Bags-c-3163*
+Disallow: *Clutch-Bags-c-3165*
+Disallow: *Sports-Skirt-c-5669*
+Disallow: *Lingerie-c-4734*
+Disallow: *Going-Out-and-Party-Dresses-c-3428*
+Disallow: *ganwenhaocurrency*
+Disallow: *Long-Sleeve-Tops-c-3229*
+Disallow: *Sexy-Lingerie-c-4742*
+Disallow: *Sports-Tops-c-4431*
+Disallow: *Knitwear-c-3938*
+Disallow: *KIDS-OUTFITS-c-6027*
+Disallow: *DADDY-AND-ME-c-6021*
+Disallow: *High-Waisted-Jeans-c-3433*
+Disallow: *Jackets-c-4776*
+Disallow: *Cold-Shoulder-Dress-c-4812*
+Disallow: *Knee-High-Boots-c-3486*
+Disallow: *Jumpers-c-3392*
+Disallow: *Duster-Coats-c-3405*
+Disallow: *Playsuits-c-3406*
+Disallow: *Trousers-c-3939*
+Disallow: *Beach-Lingerie-c-4740*
+Disallow: *Denim-Skirts-c-3412*
+Disallow: *Ripped-Jeans-c-3434*
+Disallow: *Running-and-Cycling-Shorts-c-3417*
+Disallow: *Camis-c-3390*
+Disallow: *Vests-c-3393*
+Disallow: *Pleated-Skirts-c-3414*
+Disallow: *Hooded-jacket-c-4794*
+Disallow: *Stripe-t-shirt-c-4761*
+Disallow: *Treggings-c-3424*
+Disallow: *Cardigans-c-3395*
+Disallow: *Jeggings-c-3427*
+Disallow: *Element-c-4839*
+Disallow: *Shirt-Dresses-c-3256*
+Disallow: *Off-Shoulder-Dress-c-4817*
+Disallow: *Bomber-Jackets-c-3404*
+Disallow: *Off-Shoulder-Dress-c-4843*
+Disallow: *Pencil-Skirts-c-3410*
+
+
+Allow: /*utm_source=bing*
+Allow: /*utm_source=google*
+
+User-agent: Baiduspider 
+Disallow: /
+Disallow: /es/
+Disallow: /buy/
+
+User-agent: Sogou web spider/4.0 
+Disallow: /
+
+User-agent: Googlebot-image
+Allow: /cache/yoins_static_cache/googlefeed/
+
+Sitemap:https://www.yoins.com/sitemap.xml

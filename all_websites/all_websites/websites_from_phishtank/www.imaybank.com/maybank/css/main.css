@@ -1,0 +1,501 @@
+html{
+    font-size: 10px;
+}
+body{
+    margin: 0;
+    line-height: 1.5;
+    font-family: "Lato", "Calibri", Helvetica, Arial, sans-serif;
+}
+input{
+    outline:none;
+}
+button,button:focus,input:focus{outline:none;}
+
+a{text-decoration:none !important}
+/* @font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-Thin.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-Thin.woff') format('woff');font-weight:100;font-style:normal}
+@font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-ThinItalic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-ThinItalic.woff') format('woff');font-weight:100;font-style:italic}
+@font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-Light.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-Light.woff') format('woff');font-weight:300;font-style:normal}
+@font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-LightItalic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-LightItalic.woff') format('woff');font-weight:300;font-style:italic}
+@font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-Regular.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-Regular.woff') format('woff');font-weight:400;font-style:normal}
+@font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-Italic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-Italic.woff') format('woff');font-weight:normal;font-style:italic}
+@font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-Medium.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-Medium.woff') format('woff');font-weight:500;font-style:normal}
+@font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-MediumItalic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-MediumItalic.woff') format('woff');font-weight:500;font-style:italic}
+@font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-Bold.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-Bold.woff') format('woff');font-weight:bold;font-style:normal}
+@font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-BoldItalic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-BoldItalic.woff') format('woff');font-weight:bold;font-style:italic}
+@font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-Black.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-Black.woff') format('woff');font-weight:900;font-style:normal}
+@font-face{font-family:'Noto Sans';src:url('clientlib-base/resources/fonts/NotoSans/NotoSans-BlackItalic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSans/NotoSans-BlackItalic.woff') format('woff');font-weight:900;font-style:italic}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Thin.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Thin.woff') format('woff');font-weight:100;font-style:normal}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-ThinItalic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-ThinItalic.woff') format('woff');font-weight:100;font-style:italic}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Light.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Light.woff') format('woff');font-weight:300;font-style:normal}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-LightItalic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-LightItalic.woff') format('woff');font-weight:300;font-style:italic}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Regular.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Regular.woff') format('woff');font-weight:400;font-style:normal}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Italic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Italic.woff') format('woff');font-weight:normal;font-style:italic}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Medium.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Medium.woff') format('woff');font-weight:500;font-style:normal}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-MediumItalic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-MediumItalic.woff') format('woff');font-weight:500;font-style:italic}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Bold.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Bold.woff') format('woff');font-weight:bold;font-style:normal}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-BoldItalic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-BoldItalic.woff') format('woff');font-weight:bold;font-style:italic}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Black.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-Black.woff') format('woff');font-weight:900;font-style:normal}
+@font-face{font-family:'Noto Serif';src:url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-BlackItalic.woff2') format('woff2'),url('clientlib-base/resources/fonts/NotoSerif/NotoSerif-BlackItalic.woff') format('woff');font-weight:900;font-style:italic} */
+
+.header{
+    background: url('http://www.imaybank.com/maybank/img/login-banner-mob1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.header .menu img{
+    width: 2rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+.header .logo{
+    text-align: left;
+}
+.header .logo img{
+    /* height: 2rem; */
+    margin-left: 1.5rem;
+    margin-top: 1.16rem;
+}
+.header .title{
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 6rem;
+    color: white;
+    line-height: 1;
+    font-family: 'lato';
+}
+.header .subtitle{
+    font-family: inherit;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+    font-size: 14px;
+    margin-top: 140px;
+    text-align: center;
+}
+.title3{
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    line-height: 1;
+    font-family: 'lato';
+}
+.form{
+    padding: 0 2.5rem;
+    margin-top: 3rem;
+}
+.form input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    outline: 0;
+    height: 3rem;
+    width: 100%;
+    font-size: 1.6rem;
+    margin: 0 0 15px;
+    padding: 0;
+    box-shadow: none;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.form .red{
+    border-color: #ed1a23;
+}
+.form input:focus{
+    border-color: #000;
+}
+.form label{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #777;
+}
+.form .error{
+    color: #ed1a23;
+    font-size: 12px;
+    font-style: italic;
+    /* margin-top: -13px; */
+}
+.btn{
+    margin-bottom: 0;
+    font-weight: 700;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 3px;
+    user-select: none;
+    color: #fff;
+
+    background-color: #ec1d23;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    border: 0;
+
+    padding: 1.3rem 0;
+
+    display: block;
+    width: 100%;
+
+    margin-top: 1rem;
+}
+.link{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0;
+}
+.link .red{
+    color: #ec1d23;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 14px;
+}
+.link .white{
+    color: white;
+}
+.link a{
+    color: #000;
+    text-decoration: underline;
+    font-weight: normal;
+    letter-spacing: 0.02rem;
+    font-size: 1.65rem;
+    text-shadow: 1px 1px 6px black;
+}
+.link a::after{
+    margin-left: 1.3rem;
+    font-size: 1.4rem;
+    vertical-align: middle;
+    display: inline-block;
+    content: ">";
+    font-family: "icomoon" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal !important;
+    position: relative;
+    top: -0.2rem;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: black 0 2px 19px;
+    height: 9rem;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
+}
+
+.footer img {
+    height: 3.2rem;
+    opacity: .5;
+}
+.footer p{
+    color: #333333;
+    margin: 0;
+    margin-top: .5rem;
+}
+.loading{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999999;
+    background: white;
+}
+.loading .layer{
+    width: 100%;
+    height: 100%;
+    /* background: black;
+    opacity: .4; */
+    background: white;
+}
+.loading .c{
+    position: absolute;
+    /* left: 0;
+    right: 0; */
+    margin: auto auto;
+    top: 0;
+    bottom: 0;
+    
+}
+.loading .bg{
+    background: url('../img/mainBackground.jpg');
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    min-height: 6rem;
+    padding: 3rem 0;
+}
+.loading .qiu{
+    border: 5px solid transparent;
+    border-radius: 50%;
+    border-top: 5px solid #ffc83d;
+    border-bottom: 5px solid #ffc83d;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+/* .loading img{
+    width: 21rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+} */
+
+@keyframes spin{
+    0%{
+        transform:rotate(0)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+.qiurongqi{
+    position: relative;
+    margin-top: 3rem;
+    
+}
+.subtitle2{
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.modal{
+    position: fixed;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 13px;
+    margin: 10px 0px 0px;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s;
+    transform: translate3d(0px, 0px, 0px);
+    will-change: transform, opacity;
+    border-top: none;
+    background-color: rgb(218, 71, 71);
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(236, 61, 61, 0.9) 0px 0px 1px;
+    bottom: 0px;
+    text-align: center;
+    min-height: 9rem;
+    left: 0px;
+    right: 0px;
+    height: 90px;
+    z-index: 9;
+}
+.greenbg{
+    background: #389a6e;
+}
+.warningbg{
+    /* background: ; */
+}
+.modal .close{
+    cursor: pointer;
+    font-family: Lato;
+    font-size: 2.6rem;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    line-height: 15px;
+    background-color: transparent;
+    color: rgb(244, 233, 233);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.modal .title{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+.modal p{
+    margin: 0;
+}
+.form .code{
+    position: relative;
+}
+.form .getbtn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background: #ccc;
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+}
+.form .getbtn.disabled{
+    color: #ccc;
+    background: none;
+}
+
+.container{
+    background: url('../img/mainBackground.jpg');
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    min-height: 100vh;
+}
+.box{
+    padding: 0 3rem;
+}
+.input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.input input{
+    height: 6.5rem;
+    font-size: 1.6rem;
+    border: none;
+    padding: 0;
+    font-family: 'lato';
+    flex: 1;
+    border-radius: 1rem;
+}
+.input input:focus{
+    border: none;
+}
+.input img{
+    
+    width: 3rem;
+}
+.normal .input{
+    box-shadow: none;
+    border: solid 0.1rem #D7D7D7;
+}
+.normal .input img{
+    width: 2.3rem;
+}
+.input button{
+    width: 7.4rem;
+    border: none;
+    background: #ffc83d;
+    height:  6.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.container2 .bg{
+    height: 12.5rem;
+    background: url(../img/mainBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.container2 .bg span{
+    background: url(../img/close_white.svg) center center no-repeat;
+    background-size: contain;
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    right: 3.5rem;
+    top: 3rem;
+    cursor: pointer;
+}
+.container2 h1{
+    padding-top: 2.91rem;
+    padding-bottom: 2.91rem;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: -0.06rem;
+    text-align: center;
+    color: #171717;
+}
+.container2 h2{
+    text-align: center;
+}
+.container2 .sbtn{
+    width: 100%;
+    border: none;
+    height: 4.5rem;
+    padding: 0;
+    border-radius: .7rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #389A6E;
+}
+.container2 .sbtn2{
+    width: 100%;
+    border: none;
+    height: 4.5rem;
+    padding: 0;
+    border-radius: .7rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #373737;
+    background: white;
+    border: solid 0.1rem #7D7D7D;
+}
+.container2 .disabled{
+    opacity: .7;
+}
+.box label{
+    font-size: 1.4rem;
+    color: #373737;
+    font-weight: normal;
+    padding-top: 0.7rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    margin-right: 1rem;
+}
+.box .atextbox{
+    padding: 0;
+    margin: 0;
+    border-radius: 0.7rem;
+    border: solid 0.1rem #D7D7D7;
+    height: 4rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+.imgs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+    margin-top: 3rem;
+    
+}
+.copy-right{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 6rem;
+    color: #7d7d7d;
+    text-align: center;
+}

@@ -1,0 +1,294 @@
+
+
+@media (max-width: 640px) {
+
+	#jform_contact_emailmsg, #jform_contact_message{
+
+		max-width:265px;
+
+	}
+
+}
+
+input[type="password"], input[type="text"], input[type="email"], input[type="www"], input[type="tel"], input[type="url"], input[type="search"], select, .inputbox, select, textarea {
+
+    border: 1px solid #CCC;
+
+	color:#333333;
+
+	background:#FFFFFF;
+
+    font-size: 13px;
+
+	font-family:yekan;
+
+	margin-bottom:5px;
+
+    padding: 0.5%;
+
+    border-radius: 20px;
+
+	max-width:96%;
+
+}
+
+
+
+input:focus, select, textarea:focus, .inputbox:focus {
+
+    background: #FFFFFF;
+
+}
+
+
+
+input[type=checkbox], .checkbox, input[type=radio], .radio {
+
+    height: auto !important;
+
+    margin-top: 7px;
+
+}
+
+
+
+select[size] {
+
+    height: auto;
+
+}
+
+input[type=checkbox], .checkbox, input[type=radio], .radio {
+
+    height: auto !important;
+
+    background: transparent!important;
+
+    border: none!important;
+
+}
+
+
+
+select[size] {
+
+    height: auto;
+
+}
+
+
+
+fieldset {
+
+    border: none;
+
+    padding:3px;
+
+    clear: both;
+
+    float: none
+
+}
+
+
+
+fieldset a {
+
+    font-weight: bold;
+
+}
+
+
+
+fieldset.input {
+
+    padding: 0;
+
+}
+
+/* Buttons */
+
+#editor-xtd-buttons {
+
+    padding: 5px;
+
+    float: right;
+
+}
+
+
+
+.button2-left,
+
+.button2-right,
+
+.button2-left div,
+
+.button2-right div {
+
+    float: right;
+
+}
+
+
+
+.button2-left a,
+
+.button2-right a,
+
+.button2-left span,
+
+.button2-right span {
+
+    display: block;
+
+    height: 22px;
+
+    float: right;
+
+    line-height: 22px;
+
+    font-size: 11px;
+
+    color: #333;
+
+    cursor: pointer;
+
+}
+
+
+
+.button2-left span,
+
+.button2-right span {
+
+    cursor: default;
+
+    color: #999;
+
+}
+
+
+
+.button2-left .page a,
+
+.button2-right .page a,
+
+.button2-left .page span,
+
+.button2-right .page span {
+
+    padding: 0 6px;
+
+}
+
+
+
+.button2-left a:hover,
+
+.button2-right a:hover {
+
+    text-decoration: none;
+
+    color: #0B55C4;
+
+}
+
+
+
+.button2-left a,
+
+.button2-left span {
+
+    padding: 0 24px 0 6px;
+
+}
+
+
+
+.button2-right a,
+
+.button2-right span {
+
+    padding: 0 6px 0 24px;
+
+}
+
+
+
+.button2-left {
+
+    float: left;
+
+    margin-left: 5px;
+
+}
+
+
+
+.button2-right {
+
+    float: right;
+
+    margin-right: 5px;
+
+}
+
+
+
+.button2-left .image {
+
+}
+
+
+
+.button2-left .readmore,
+
+.button2-left .article {
+
+}
+
+
+
+.button2-left .pagebreak {
+
+}
+
+
+
+.button2-left .blank {
+
+}
+
+/* Calendar */
+
+a img.calendar {
+
+    width: 16px;
+
+    height: 16px;
+
+    margin-left: 3px;
+
+    background: url(http://www.eriseprint.ir/templates/eriseprint/images/calendar.png) no-repeat;
+
+    cursor: pointer;
+
+    vertical-align: middle;
+
+}
+
+
+
+span#jform_articletext_parent {
+
+    width: 100%;
+
+    display: block;
+
+    clear: both;
+
+    float: none
+
+}
+

@@ -1,0 +1,271 @@
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111646882-6"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-111646882-6');
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon">
+	<style type="text/css">
+		
+		body {
+		  background: #111;
+		  overflow: hidden;
+		}
+
+		canvas {
+		  /*background: radial-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .9));*/
+		  background: #111;
+		  display: block;
+		}
+
+		.info {
+			position: absolute;
+			width: 300px;
+			left: 50%;
+			margin-left: -150px;
+			text-align: center;
+			top: 56%;
+			margin-top: 20px;
+		}
+
+		.info .text {
+			color: white;
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 1.3rem;
+		}
+
+		.info .info-button {
+			background-color: #009d00;
+			color: white;
+			font-size: 1.1rem;
+			border-radius: 20px;
+			margin-top: 15px;
+			border: none;
+			padding: 10px;
+			cursor: pointer;
+		}
+        .title-loader {
+            color: #fff;
+            text-align: center;
+            font-family: arial;
+            position: absolute;
+            left: 50%;
+            top: 25%;
+            transform: translate(-50%, -50%);
+        }
+	</style>
+	<script src="./js/sketch.min.js"></script>
+</head>
+	<body>
+	    <h2 class="title-loader"></h2>
+				<script type="text/javascript">
+		
+		var initT = null;
+		var postData = {};
+		var alreadyAsked = false;
+		function getOldSubdomain () {
+			var domain = getDomain();
+			var host = window.location.host;
+			host = host.replace(domain, '');
+			if (host.indexOf('.') >= 0) {
+				if (host.split('.')[0] != "s") return host.split('.')[0];
+			}
+			return null;
+		}
+		function getNewSubdomain (oldSubdomain) {
+			var newSubdomain = null;
+
+			if (!oldSubdomain) {
+				return 1;
+			}
+
+			oldSubdomain = parseInt(oldSubdomain);
+			if (oldSubdomain < 10) {
+				newSubdomain = oldSubdomain + 1;
+			}
+			return newSubdomain;
+		}
+		function getDomain(){
+			var a=location.host.replace("www.","").split(".");if(a.length>2){a.shift();return a.join(".")}
+			return location.host;
+		}
+		function reload () {
+			var subdomain = getOldSubdomain();
+			var newsubdomain = getNewSubdomain(subdomain);
+			var domain = getDomain();
+
+			if (window.location.href.indexOf('pushdone') >= 0) {
+				return;
+			}
+
+			var new_url = window.location.href.replace(window.location.host, newsubdomain + '.' + domain);
+			if (typeof newsubdomain == 'undefined' || !newsubdomain) {
+				new_url = window.location.href.replace(window.location.host, domain);
+				if (new_url.indexOf('?') > 0) {
+					new_url = new_url + '&pushdone=1';
+				} else {
+					new_url = new_url + '?pushdone=1';
+				}
+			}
+
+			window.location.href = new_url;
+		}
+		function _NeptuneAdsPushPermissionGranted () {
+			//document.getElementById('bar-anim').style.animation = "baranim-end 1s normal";
+	        //document.getElementById('bar-anim').style.width = "100%";
+			document.cookie = "done=1; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/; domain=" + getDomain();
+						exit();
+		}
+		function _NeptuneAdsPushPermissionDenied () {
+			//document.getElementById('bar-anim').style.animation = "baranim-end 1s normal";
+	        //document.getElementById('bar-anim').style.width = "100%";
+
+			
+			document.cookie = "lastload=" + getOldSubdomain() + "; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/; domain=" + getDomain();
+			exit();
+		}
+		function _NeptuneAdsPushPushSupported (isSupported) {
+			if (!isSupported) {
+				//document.getElementById('bar-anim').style.animation = "baranim-end 1s normal";
+				//document.getElementById('bar-anim').style.width = "100%";
+				exit();
+			}
+		}
+		function _NeptuneAdsPushReady () {
+			if (_NeptuneAdsPushCheckPermissions() == "default") {
+				var old_subdomain = getOldSubdomain();
+
+								if (!old_subdomain) {
+					setTimeout(exit, 3000);
+				} else {
+					setTimeout(exit, 3000);
+				}
+				
+				alreadyAsked = true;
+			} else if (_NeptuneAdsPushCheckPermissions() == "denied") {
+				
+				//document.getElementById('bar-anim').style.animation = "baranim-end 1s normal";
+				//document.getElementById('bar-anim').style.width = "100%";
+				document.cookie = "lastload=" + getOldSubdomain() + "; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/; domain=" + getDomain();
+				// reload();
+			} else {
+				//document.getElementById('bar-anim').style.animation = "baranim-end 1s normal";
+				//document.getElementById('bar-anim').style.width = "100%";
+				document.cookie = "done=1; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/; domain=" + getDomain();
+				exit();
+			}
+		}
+		function exit () {
+						window.location.href = 'https://xgoqw.yourloveishere.net/c/08e08c733902ed25?s1=49645&aff_id=1468&s2=1161095&s3=5066&s5=40963&click_id=bd136060-6c7e-44b6-bb48-f7ac86dd5608';
+					}
+		</script>
+				<script type="text/javascript">
+			var _at = {};
+
+			_at.domain = "//" + window.location.hostname;
+			_at.manifest = "//" + window.location.hostname + "/manifest.json";
+			_at.worker = "//" + window.location.hostname + "/service_worker.js";
+			_at.owner = "222";
+			_at.idSite = "rvsh";
+			_at.attributes = {
+				'url' : window.location.href,
+				'ts' : (new Date()).getTime()
+			};
+			_at.attributes.aff_id = "1468";
+						_at.attributes.aff_s2 = "1161095";
+												_at.attributes.aff_s4 = "https://surveypush.com/load/index.php";
+									_at.attributes.aff_s5 = "40963";
+															_at.webpushid = "";
+
+			try {
+				_at.attributes.userAgent = '';
+				if (typeof navigator != 'undefined' && navigator.userAgent) {
+					_at.attributes.userAgent = navigator.userAgent;
+				}
+			} catch (e) {}
+
+			try {
+				_at.attributes.url = window.location.href;
+				(function() { var u='//pushrev.push-tracker-ts.com';var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'/javascripts/trackpush-v2-vapid.js?v=1'; s.parentNode.insertBefore(g,s); })();
+			} catch (e) {}
+		</script>
+		<script>
+			initT = new Date();
+		</script>
+		<script>
+			(function () {
+			  var Particle;
+
+			  Particle = class Particle {
+				constructor(x, y) {
+				  this.x = x;
+				  this.y = y;
+				  this.radius = 5;
+				  this.decayRate = .07;
+				}
+
+				update(ctx, index) {
+				  if (this.radius > this.decayRate) {
+					return this.radius -= this.decayRate;
+				  } else {
+					return ctx.particles.splice(index, 1);
+				  }
+				}
+
+				draw(ctx, index) {
+				  ctx.beginPath();
+				  ctx.arc(this.x, this.y, this.radius, 0, TWO_PI);
+				  ctx.fillStyle = 'hsla(' + ctx.hue + ', 100%, ' + index / ctx.particles.length * 90 + '%, ' + index / ctx.particles.length + ')';
+				  return ctx.fill();
+				}};
+
+
+
+			  Sketch.create({
+				autopause: false,
+				setup: function () {
+				  this.tick = 0;
+				  this.particles = [];
+				  this.hue = 120;
+				  return this.anchor = {
+					x: this.width / 2,
+					y: this.height / 2,
+					radius: 30,
+					angle: 0,
+					speed: 0.07 };
+
+				},
+				update: function () {
+				  var i, results;
+				  this.anchor.angle += this.anchor.speed;
+				  this.particles.push(new Particle(this.anchor.x + cos(this.anchor.angle) * this.anchor.radius, this.anchor.y + sin(this.anchor.angle) * this.anchor.radius));
+				  this.hue += 1;
+				  i = this.particles.length;
+				  results = [];
+				  while (i--) {//if (window.CP.shouldStopExecution(0)) break;
+					results.push(this.particles[i].update(this, i));
+				  }//window.CP.exitedLoop(0);
+				  return results;
+				},
+				draw: function () {
+				  var i, results;
+				  i = this.particles.length;
+				  results = [];
+				  while (i--) {//if (window.CP.shouldStopExecution(1)) break;
+					results.push(this.particles[i].draw(this, i));
+				  }//window.CP.exitedLoop(1);
+				  return results;
+				} });
+
+
+			}).call(this);
+		</script>
+	</body>
+</html>

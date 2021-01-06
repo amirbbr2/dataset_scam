@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /Admin
+Disallow: /Network
+Disallow: /Comments
+Disallow: /Basket
+Disallow: /CRM
+Disallow: /Share
+Disallow: /Contact/Submit
+Disallow: /Products/Action/DeliverableTimes
+Allow: /
+Sitemap: https://bamabesaz.com/sitemaps

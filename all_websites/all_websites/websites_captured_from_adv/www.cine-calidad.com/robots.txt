@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: *attachment_id*
+Disallow: *author/*
+Disallow: *data/*
+Disallow: /registro
+Allow: /wp-admin/admin-ajax.php
+Sitemap: https://www.pelispedia.info/sitemap_index.xml

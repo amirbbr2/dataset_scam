@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>Watch Anime in High quality - Chia Anime</title>
+<meta name="description" content="Watch English Subbed Anime on mobile, High Quality Anime Online for free only at m.Chia-Anime" />
+<meta name="keywords" content="Watch Anime on mobile, High Quality Anime Online for free" />
+<link rel="canonical" href="http://www.chia-anime.me" />
+<meta name="google-site-verification" content="4YwFyX8sI81hZEmJLMrGuLBq0buOTua316fZlnUK8C4" />
+<style>
+@media only screen and (max-width: 365px) {
+#sf {
+width: 54% !important;
+}
+}
+@media all and (orientation:portrait) {
+	body {
+		width:320px;
+	}
+	.topbar  {
+		width:320px; 
+	}
+.bottombar  {
+		width:320px;
+	}
+.salapi  {
+		width:320px; 
+                margin:0px auto;
+	}
+}
+@media all and (orientation:landscape) {
+	body {
+		width:100%;
+	}
+	.topbar  {
+		width:100%;
+	}
+.bottombar  {
+		width:100%;
+	}
+.items {
+         width:100%;
+}
+.items tr {  
+                width:45%;
+		float:left;
+                padding-left:15px;
+                display:inline-block;
+	}
+.series {  
+                height:17px;
+		overflow:hidden;
+	}
+.episode {  
+           float:left;
+           display:inline-block;
+	}
+
+.salapi  {
+		width:device-width;
+                margin:0px auto;
+	}
+
+
+}
+
+/** Mobile **/
+body { 
+width:100%;
+min-width:320px;
+# max-width:730px;
+ background-color:#333;
+  margin:0;
+  padding:0;
+  font-family:arial;
+  font-size:12px;
+  overflow-x:hidden;
+
+  #min-width:340px;
+  #max-width:800px;
+  min-height:500px;
+max-height:600px;
+}
+img { 
+  border:0;
+}
+a { 
+  color:white;
+}
+li { 
+  list-style-type:none;
+}
+ul { 
+  margin:0;
+  padding:0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.topbar { 
+
+#width:100%;
+
+ #min-width:350px;
+  background-color:#000000;
+}
+.topbar li {
+  float:left;
+  width:20%;
+}
+.topbar a {
+  display:block;
+  font-size:15px;
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  padding:8px 0;
+  text-align:center;
+}
+.topbar li.selected a {
+  background-color:#000000;
+}
+.bottombar { 
+  #width:100%;
+  text-align:center;
+  border-top:1px solid #ccc;
+  padding-top:10px;
+  margin:20px 0 10px 0;
+}
+.bottombar a {
+  display:block;
+  padding:8px;
+}
+#message_box { 
+  padding:5px 0;
+  text-align:center;
+  background-color:#900;
+  color:white;
+  margin-bottom:10px;
+  position:relative;
+}
+#message_box .close { 
+  background:transparent url("i/icons/remove_grey_14_14.gif") no-repeat scroll center center;
+  width:25px;
+  height:25px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+.subnav { 
+padding-top:10px;
+  background-color:#222222;
+}
+.subnav li { 
+  float:left;
+}
+.subnav li a { 
+  display:block;
+  text-align:center;
+  padding:8px 10px;
+  font-size:13px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+.subnav li.highlight a { 
+  background-color:#ddd;
+  color:white;
+}
+
+.items { 
+ # width:100%;
+}
+.items td { 
+  padding:5px 2px;
+  vertical-align:top;
+}
+.items a { 
+  display:block;
+  min-height:57px;
+  text-decoration:none;
+  color:white;
+  overflow:hidden;
+}
+.items .mug { 
+  display:block;
+  width:100px;
+  height:57px;
+  background-position:center center;
+  background-color:white;
+  background-repeat:no-repeat;
+  border:1px solid #ccc;
+}
+.items .series { 
+  display:block;
+  font-weight:bold;
+  font-size:14px;
+}
+.items .name { 
+  display:block;
+  font-weight:normal;
+  font-size:14px;
+}
+.items .headline { 
+  display:block;
+  font-size:14px;
+ }
+.items .date { 
+  display:block;
+  font-size:11px;
+  font-style:italic;
+ }
+.page-header { 
+  color:white;
+  margin:5px;
+  padding:0;
+  font-size:14px;
+}
+.news-lead { 
+  margin:5px;
+  padding:0;
+  font-size:13px;  
+ }
+.news-body { 
+  margin:5px;
+  padding:0;
+ }
+.group-splash { 
+  width:300px;
+  margin:10px 5px;
+  display:block;
+}
+.signup-form,
+.login-form {
+  margin-top:10px;
+  margin-left:10px;
+}
+.signup-form .th,
+.login-form .th { 
+  padding:4px 0;
+}
+.signup-form .td input[type="text"],
+.login-form .td input[type="text"],
+.signup-form .td input[type="password"],
+.login-form .td input[type="password"] { 
+  border:1px solid #666;
+  font-size:20px;
+  width:220px;
+}
+.signup-form .td select { 
+  border:1px solid #666;
+  font-size:16px;
+  margin-right:5px;
+}
+.signup-form .td label { 
+  font-size:15px;
+}
+.signup-form .submit,
+.login-form .submit { 
+  margin:10px auto;
+  width:200px;
+  font-size:20px;
+}
+
+.signup-no-spam { 
+  margin:10px auto;
+}
+
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+<img src="http://whos.amung.us/widget/ifjza4kksdmt.png?cbf681" width="1" height="1" alt="" />
+<a style="    float: left;
+    margin: 10px;
+    margin-top: 20px;" href="index.html" id="logo">
+<img style="height:50px; width:50px;" src="a.png?cbf681" />
+</a>
+<form action="http://m.chia-anime.me/catlist.php" method="GET"> <input id="sf" style="text-align: center;
+    width: 60%;
+    height: 40px;
+    margin: 10px;
+    margin-left: -2px;" id="q" placeholder="Search Anime Eg. Naruto" name="tags" value="Search Anime" onblur="if(this.value==''){ var texto=this.value='Search Anime'; }" onfocus="if(this.value=='Search Anime') this.value='';" type="text" autofocus>
+<input style="    font-weight: 600;
+    padding-left: 5px;
+    padding: 12px;
+    background: #66d63f;
+    border: none;
+    color: #fff;padding-left:5px;" value="Search" id="bb" style="text-indent: -9999px;" type="submit"></form>
+<ul style="padding-top:5px; width:100%;" class="topbar clearfix">
+<li class="selected">
+<a href="index.html">Latest</a>
+</li>
+<li class="">
+<a href="http://m.chia-anime.me/animelist/">Anime</a>
+</li>
+<li class="">
+<a href="http://embedcf.chia-anime.com/drama/mobile/">Drama</a>
+</li>
+<li class="">
+<a href="http://m.read-manga.net/">Manga</a>
+</li>
+<li class="">
+<a href="http://animeget.net/dub/mobile/m.php">Dubbed</a>
+</li>
+</ul>
+<ul class="subnav clearfix">
+<li class=""><a href="http://m.chia-anime.tv/animemovies/">Movies</a></li>
+<li><a href="http://m.chia-anime.tv/newanimes/">New Animes</a></li>
+</ul>
+<style>#schema{background-color:#222;border:solid 1px #444;padding:10px;text-align:center;white-space:nowrap;box-shadow:0px 0px 3px #202020;margin-top:10px;margin-bottom:10px}#schema div{overflow:hidden}#schema h1{margin:0;padding:0;color:white;font-size:15px}#schema p{margin:5px 0 0 0;font-size:12px;color:#DCDCDC;padding-bottom:5px;line-height:0px}</style>
+<table class="items">
+<div style="padding-top:1px;"></div>
+<div id="schema">
+<h1>Watch Anime Online on Mobile</h1>
+<p>Watch Anime online via Mobile in High Quality</p>
+</div>
+<div align="center">
+<iframe title="salapi" type="text/html" frameborder="0" scrolling="no" width="320" height="50" src="https://wwwstatic.chia-anime.tv/mob/salap1.html"></iframe>
+</div>
+<div style="padding-top:1px;"></div>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/strike-the-blood-iv-episode-8/?c=1609907037">
+<span class="mug" style="background-image:url('http://www.chia-anime.me/cover/4093.jpg?cbf681');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/strike-the-blood-iv-episode-8/?c=1609907037">
+<span class="series">Strike the Blood IV</span>
+<span class="name">Episode 8</span>
+</a>
+</td>
+</tr>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/strike-the-blood-iv-episode-7/?c=1609907037">
+<span class="mug" style="background-image:url('http://www.chia-anime.me/cover/4093.jpg?cbf681');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/strike-the-blood-iv-episode-7/?c=1609907037">
+<span class="series">Strike the Blood IV</span>
+<span class="name">Episode 7</span>
+</a>
+</td>
+</tr>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/mewkledreamy-episode-35/?c=1609907037">
+<span class="mug" style="background-image:url('http://www.chia-anime.me/cover/4085.jpg?cbf681');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/mewkledreamy-episode-35/?c=1609907037">
+<span class="series">Mewkledreamy</span>
+<span class="name">Episode 35</span>
+</a>
+</td>
+</tr>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/d4dj-first-mix-episode-9/?c=1609907037">
+<span class="mug" style="background-image:url('http://m.chia-anime.me/ http://www.chia-anime.me/cover/4218.jpg?cbf681');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/d4dj-first-mix-episode-9/?c=1609907037">
+<span class="series">DDJ First Mix</span>
+<span class="name">Episode 9</span>
+</a>
+</td>
+</tr>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/skate-leading-stars-episode-2/?c=1609907037">
+<span class="mug" style="background-image:url('http://cdn2.chia-anime.tv/cover/4226.jpg');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/skate-leading-stars-episode-2/?c=1609907037">
+<span class="series">SkateLeading Stars</span>
+<span class="name">Episode 2</span>
+</a>
+</td>
+</tr>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/skate-leading-stars-episode-1/?c=1609907037">
+<span class="mug" style="background-image:url('http://cdn2.chia-anime.tv/cover/4226.jpg');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/skate-leading-stars-episode-1/?c=1609907037">
+<span class="series">SkateLeading Stars</span>
+<span class="name">Episode 1</span>
+</a>
+</td>
+</tr>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/otona-no-bouguya-san-2nd-season-episode-1/?c=1609907037">
+<span class="mug" style="background-image:url('http://cdn2.chia-anime.tv/cover/4225.jpg');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/otona-no-bouguya-san-2nd-season-episode-1/?c=1609907037">
+<span class="series">Otona no Bouguyasan nd Season</span>
+<span class="name">Episode 1</span>
+</a>
+</td>
+</tr>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/youjo-shachou-episode-1/?c=1609907037">
+<span class="mug" style="background-image:url('http://cdn2.chia-anime.tv/cover/4224.jpg');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/youjo-shachou-episode-1/?c=1609907037">
+<span class="series">Youjo Shachou</span>
+<span class="name">Episode 1</span>
+</a>
+</td>
+</tr>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/vlad-love-episode-1/?c=1609907037">
+<span class="mug" style="background-image:url('http://cdn2.chia-anime.tv/cover/4223.jpg');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/vlad-love-episode-1/?c=1609907037">
+<span class="series">Vlad Love</span>
+<span class="name">Episode 1</span>
+</a>
+</td>
+</tr>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/dogeza-de-tanondemita-episode-12/?c=1609907037">
+<span class="mug" style="background-image:url('http://m.chia-anime.me/ http://www.chia-anime.me/cover/4215.jpg?cbf681');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/dogeza-de-tanondemita-episode-12/?c=1609907037">
+<span class="series">Dogeza de Tanondemita</span>
+<span class="name">Episode 12</span>
+</a>
+</td>
+</tr>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/tsukiuta-the-animation-2-episode-13/?c=1609907037">
+<span class="mug" style="background-image:url('http://m.chia-anime.me/ http://www.chia-anime.me/cover/4214.jpg?cbf681');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/tsukiuta-the-animation-2-episode-13/?c=1609907037">
+<span class="series">Tsukiuta The Animation</span>
+<span class="name">Episode 13</span>
+</a>
+</td>
+</tr>
+<tr class="episode">
+<td width="102">
+<a href="http://m.chia-anime.me/view/noblesse-episode-13/?c=1609907037">
+<span class="mug" style="background-image:url('http://m.chia-anime.me/ http://www.chia-anime.me/cover/4213.jpg?cbf681');"></span>
+</a>
+</td>
+<td style="width:100%">
+<a href="http://m.chia-anime.me/view/noblesse-episode-13/?c=1609907037">
+<span class="series">Noblesse</span>
+<span class="name">Episode 13</span>
+</a>
+</td>
+</tr>
+</table>
+<div style="padding-top:20px;"></div>
+<div class="more_entries wrap" style="height: 50px;">
+<div class="Nav" style="">
+<a style="    float: right;
+    font-size: 100%;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-weight: 600;
+    padding-left: 5px;
+    padding: 8px;
+    background: #4b4b4b;
+    border: none;
+    color: #fff;
+    padding-left: 5px;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;" href="http://m.chia-anime.me/?paged=2"><strong>Next Page</strong></a>
+</div>
+</div> <div style="padding-top:20px;"></div>
+<center>
+<div class="salapi">
+<iframe title="salapi" type="text/html" frameborder="0" scrolling="no" width="300" height="250" src="https://wwwstatic.chia-anime.tv/mob/salap2.html"></iframe>
+</div></center>
+<div style="padding-top:10px;"></div>
+<table class="bottombar">
+<tr>
+<td width="33%">
+<a href="index.html#">Copyright Policy</a>
+</td>
+<td width="33%">
+<a href="index.html#">Privacy Policy</a>
+</td>
+<td width="33%">
+<a href="http://www.chia-anime.tv/">Chia-Anime</a>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+	var cpmstar_popunder_settings = {
+		pid: 38824
+	};
+	t =document.getElementsByTagName('script');s =document.createElement('script');s.src = (document.location.protocol== 'https:' ? '//server' : '//cdn') + '.cpmstar.com/cached/js/popunder_v101.pack.js';s.type='text/javascript';s.async='';t[0].parentNode.insertBefore(s,t[0]);
+</script>
+</div>
+
+<div id="M147159ScriptRootC138620">
+<script>
+                (function(){
+            var D=new Date(),d=document,b='body',ce='createElement',ac='appendChild',st='style',ds='display',n='none',gi='getElementById';
+            var i=d[ce]('iframe');i[st][ds]=n;d[gi]("M147159ScriptRootC138620")[ac](i);try{var iw=i.contentWindow.document;iw.open();iw.writeln("<ht"+"ml><bo"+"dy></bo"+"dy></ht"+"ml>");iw.close();var c=iw[b];}
+            catch(e){var iw=d;var c=d[gi]("M147159ScriptRootC138620");}var dv=iw[ce]('div');dv.id="MG_ID";dv[st][ds]=n;dv.innerHTML=138620;c[ac](dv);
+            var s=iw[ce]('script');s.async='async';s.defer='defer';s.charset='utf-8';s.src="//jsc.mgid.com/c/h/chia-anime.tv.138620.js?t=&amp;cbf681"+D.getYear()+D.getMonth()+D.getDate()+D.getHours();c[ac](s);})();
+    </script>
+</div>
+
+</body>
+</html>

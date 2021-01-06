@@ -1,0 +1,1566 @@
+let cPage = 0;
+let  $otd = "";
+let textContent = "";
+let titleContent = "";
+
+
+$(document).click(function (event) {
+    $target = $(event.target);
+    if ($target.parents('#header').length === 0) {
+        $(".video-search-bx").removeClass('show-block');
+        $(".video-search-bx-list .nano-content").html("");
+    }
+
+    if ($(".fast-login-box.show-sbox").length > 0 && $target.parents('.fast-login-box').length === 0 && $target.parents('.top-btn-signin').length === 0) {
+        $(".fast-login-box").removeClass('show-sbox');
+    }
+
+    if ($(".video-infos-item.opening .dropdowner").length > 0 && $target.parents('.video-infos-item.opening').length === 0) {
+        $(".video-infos-item").removeClass('opening');
+    }
+
+    if ($(".header-btns.active").length > 0 && $target.parents('.header-btns.active').length === 0) {
+        $(".header-btns").removeClass('active');
+    }
+
+    if ($target.parents('.right-menu').length === 0 && $target.parents('.top-logo').length === 0) {
+        $(".right-menu").addClass('fade-out').removeClass('fade-in');
+        $(".fmenu").addClass('menu-open');
+    }
+
+
+    if ($(".confirm-box-overly").length > 0 && $target.parents('.confirm-box').length === 0) {
+        if ($target.attr('class') && $target.attr('class').length > 0 && $target.attr('class').indexOf("confirm-box-overly") !== -1)
+            reClose(".confirm-box-overly");
+        // $(".right-menu").addClass('fade-out').removeClass('fade-in');
+        // $(".fmenu").addClass('menu-open');
+    }
+
+    if ($(".showno").length > 0 && $target.parents('.dots-th-td').length === 0) {
+        $(".shower_div").removeClass('showno');
+    }
+
+    if ($(".ul-under-1").length > 0) {
+        if ($target.parents(".ul-under-1").length === 0 && $target.parents(".nav-ul-right").length === 0) {
+            $("body .ul-under-1").removeClass('show_bx');
+        }
+    }
+});
+
+
+// window.addEventListener('popstate', function(event) {
+//     // console.log(event.state);
+//     if(event.state!=null)
+//         $("body").html(textContent);
+// });
+// window.addEventListener('click', function(event) {
+//     // alert(event.target);
+//     // Add an item to the history log
+//     // history.pushState($("body").html(), event.target.textContent, event.target.href);
+//     // textContent =
+// });
+
+$(document).ready(function () {
+    $('body .top-btn-signin').click(function () {
+        $("body .fast-login-box").toggleClass("show-sbox");
+    });
+    $('body .fmenu').click(function () {
+        if ($(this).hasClass("menu-open")) {
+            $(this).removeClass("menu-open");
+            $("body .right-menu").removeClass("fade-out");
+            $("body .right-menu").addClass("fade-in");
+        } else {
+
+            $(this).addClass("menu-open");
+            $("body .right-menu").addClass("fade-out");
+            $("body .right-menu").removeClass("fade-in");
+        }
+    });
+
+    $(".search-toper").keyup(function (e) {
+        var element = $(".top-search-input", this);
+        if (element.val().length > 2) {
+            $(".video-search-bx").addClass('show-block');
+            if ($(".nano-content").find(".iloading").length <= 0)
+                $(".nano-content").html("<span class='iloading'></span>");
+            delay(function () {
+                $.ajax({
+                    url: currentLocation(),
+                    type: 'POST',
+                    data: {minifind: 1, q: element.val()},
+                    success: function (data) {
+                        var obj = getJson(data);
+
+                        if (obj.message)
+                            $(".nano-content").html(obj.message);
+                        else
+                            $(".nano-content").html("");
+
+                        if (obj.url) {
+                            _redirectors(obj.url, 2000);
+                        }
+
+
+                    },
+                    error: function () {
+                        $(".nano-content").html('<div class="ialert-danger ialert">خطایی در ارتباط با سروربه وجود آمد</div>');
+                    }
+                });
+            }, 1000);
+        } else {
+            $(".video-search-bx").removeClass('show-block');
+            $(".video-search-bx-list .nano-content").html("");
+        }
+    });
+
+    /*    $(".folder-list-show a").click(function (e) {
+
+            e.preventDefault();
+            currentFolder = $(this).attr('data-id');
+            currentFolderName = $(".name-folder",this).text();
+            $(".folder-list-show a").removeClass('active');
+            $(this).addClass('active');
+
+        });*/
+});
+
+function selectFolder(t, id) {
+    currentFolder = id;
+    currentFolderName = $(".name-folder", $(t)).text();
+    $("#foid").val(currentFolder);
+    $("#curent-drive-upload").text(currentFolderName);
+    $(".folder-list-show a").removeClass('active');
+    $(t).addClass('active');
+
+    if (currentFolder > 0)
+        loadPage(1, "dashbord/files/?fid=" + currentFolder, ".content-main", ".content-main", "dashbord/files/?fid=" + currentFolder, ".content-main");
+    else
+        loadPage(1, "dashbord/files/", ".content-main", ".content-main", "dashbord/files/", ".content-main");
+
+    return false;
+}
+
+var delay = (function () {
+    var timer = 0;
+    return function (callback, ms) {
+        clearTimeout(timer);
+        timer = setTimeout(callback, ms);
+    };
+})();
+
+function currentLocation() {
+    return $(location).attr('href');
+}
+
+function getJson(data) {
+    var isJson = true;
+    try {
+        var response = $.parseJSON(data);
+    } catch (err) {
+        isJson = false;
+    }
+
+    if (isJson) {
+        return response;
+    } else {
+        var ex = [];
+        ex['status'] = 'error';
+        ex['message'] = 'خطا اطلاعات دریافتی کامل نمی باشد';
+
+        return ex;
+    }
+}
+
+function validateUsername(str) {
+    var nameRegex = /^[a-zA-Z0-9\-]+$/;
+    var validfirstUsername = str.match(nameRegex);
+    if (validfirstUsername == null)
+        return false;
+    else
+        return true;
+}
+
+function validateInteger(str) {
+    var nameRegex = /^[0-9]+$/;
+    var validInt = str.match(nameRegex);
+    if (validInt == null)
+        return false;
+    else
+        return true;
+}
+
+function validateEmail(str) {
+    var nameRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var validfirstUsername = str.match(nameRegex);
+    if (validfirstUsername == null)
+        return false;
+    else
+        return true;
+}
+
+function validatePhone(phone) {
+    var regExpObj = /^(09)\d\d\d\d\d\d\d\d\d/;
+    // alert(phone+" false");
+    if (phone.length === 11) {
+        return regExpObj.exec(phone) != null;
+    } else
+        return false;
+}
+
+function _redirectors(ul, t) {
+    var timer = t ? t : 0;
+    timer = parseInt(timer);
+
+    if (timer > 0) {
+        setTimeout(function () {
+            window.location = ul;
+        }, timer);
+    } else {
+        window.location = ul;
+    }
+
+}
+
+
+function showLoadItem(ele) {
+    var elementConnect = $(ele);
+    elementConnect.addClass("blur-load");
+
+
+    var he = elementConnect.css('height');
+    var wi = elementConnect.css('width');
+    var to = elementConnect.offset().top;
+    var le = elementConnect.offset().left;
+
+    $("body").append('<div class="loading-overfit" style="width:' + wi + '; height:' + he + '; top:' + to + 'px; left:' + le + 'px"><span class="blure"></span><span class="spiners"></span></div>');
+}
+
+function removeLodadItem() {
+    $("body .blur-load").removeClass('blur-load');
+    $("body .loading-overfit").remove();
+}
+
+function refreshImage(t) {
+    var img = $(t);
+    var pathImg = img.attr('data-pic');
+    var randInt = getRandom(124000, 89898989);
+    if (pathImg.indexOf("?") !== -1)
+        pathImg += "&" + randInt;
+    else
+        pathImg += "?" + randInt;
+
+    img.attr("src", pathImg);
+}
+
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function _showIds(t, ti) {
+    var tim = ti ? ti : 300;
+    var p = t ? t : 'body';
+    $('html, body').animate({
+        scrollTop: $(p).offset().top
+    }, tim);
+
+}
+
+function _setPu(t, d, u) {
+    t = t ? t : null;
+    d = d ? d : null;
+    // window.history.pushState(t, d, u);
+    history.pushState(t, d, u);
+    // history.replaceState(textContent, document.title, u);
+}
+
+function loadPage($p, $l, $top, $tn, $apu, nload, rh) {
+    nload = nload ? nload : "";
+    $l = $l ? $l : '';
+    if ($l.indexOf('http') === -1)
+        $l = baseUr + $l;
+
+    $top = $top ? $top : 'top';
+    $tn = $tn ? $tn : '';
+
+    if (nload) {
+        showLoadItem(nload);
+    }
+
+    if ($top) {
+        if ($top === 'top') {
+            _showIds($tn, 200);
+        } else {
+            _showIds($top, 200);
+        }
+    }
+
+
+    $apu = $apu ? $apu : '';
+    if ($p > 0) {
+        cPage = $p;
+        $.ajax({
+            method: 'POST',
+            url: $l,
+            data: {page: $p, otdata: $otd},
+            success: function (data) {
+                $($tn).html(data);
+
+
+                if ($apu) {
+                    $apu = ($apu.indexOf('http') === 0) ? $apu : baseUr + $apu;
+                    _setPu('', '', $apu);
+                }
+
+                if (nload) {
+                    removeLodadItem();
+                }
+            },
+            error: function () {
+
+                if (nload) {
+                    removeLodadItem();
+                }
+
+                $.notify('مشکلی در ارتباط با سرور به وجود آمد لطفا مجددا سعی نمایید');
+            }
+        });
+    } else {
+        cPage = $p;
+        $.ajax({
+            method: 'POST',
+            url: $l,
+            data: {page: 'full', otdata: $otd},
+            success: function (data) {
+                $($tn).html(data);
+
+
+                if ($apu) {
+                    $apu = ($apu.indexOf('http') === 0) ? $apu : baseUr + $apu;
+                    _setPu('', '', $apu);
+                }
+
+                if (nload) {
+                    removeLodadItem();
+                }
+            },
+            error: function () {
+
+                if (nload) {
+                    removeLodadItem();
+                }
+
+                $.notify('مشکلی در ارتباط با سرور به وجود آمد لطفا مجددا سعی نمایید');
+            }
+        });
+    }
+
+    return false;
+}
+
+function closeParent(t) {
+    var element = $(t);
+    var parent = element.parent();
+    parent.fadeOut(300, function () {
+        parent.remove();
+    });
+}
+
+function showMessages(element, txt, classNames) {
+    var className = classNames ? classNames : "ialert-danger";
+    element.html(setError(txt, className));
+}
+
+function setError(txt, errorClass) {
+    return '<div class="ialert ' + errorClass + '">' + txt + '<span class="close" onclick="closeParent(this)"></span></div>';
+}
+
+function emptyError(element) {
+    element.html("");
+}
+
+function loginMiniBox(t) {
+    var element = $(t);
+
+    showLoadItem(element.parents(".fast-login-box-content"));
+    element.find(".button-fild").prop("disabled", true);
+    $.ajax({
+        url: baseUr + "login/",
+        type: 'POST',
+        data: element.serialize(),
+        success: function (data) {
+            var obj = getJson(data);
+
+            if (obj.status === 'success') {
+                $.notify(obj.message, "success");
+            } else if (obj.status === 'error') {
+
+                $.notify(obj.message);
+            }
+
+            if (obj.url) {
+                _redirectors(obj.url, 2000);
+            }
+            removeLodadItem();
+            element.find(".button-fild").prop("disabled", false);
+
+        },
+        error: function () {
+            removeLodadItem();
+            element.find(".button-fild").prop("disabled", false);
+        }
+    });
+
+    return false;
+}
+
+function loadFolders() {
+    sendReqs(".img-folders", {req: "folderlist"}, ".img-folders", ".img-folders ul");
+}
+
+
+function sendReqs(t, req, nload, seter, reloded, closeing, callBack) {
+    var element = $(t);
+    var loding = nload ? $(nload) : element;
+    reloded = reloded ? reloded : false;
+    var closed = closeing ? closeing : "";
+    var callBacked = callBack ? callBack : "";
+
+    showLoadItem(loding);
+
+    $.ajax({
+        url: currentLocation(),
+        type: 'POST',
+        data: req,
+        success: function (data) {
+            var obj = getJson(data);
+
+            if (obj.url) {
+                if (obj.fast)
+                    _redirectors(obj.url, 0);
+                else
+                    _redirectors(obj.url, 2000);
+            }
+
+            if (obj.status === 'success') {
+                if (obj.message) {
+                    if (seter) {
+                        $(seter).html(obj.message);
+                    } else {
+                        $.notify(obj.message, "success");
+                    }
+                }
+
+                if (reloded) {
+                    loadPage(0, currentLocation(), false, reloded, false, reloded);
+                } else {
+                    if (closed) {
+                        reClose(closed);
+                    } else if (callBacked) {
+                        if (callBacked === 'refreshfolder')
+                            loadFolders();
+                        if (callBacked === 'refreshfolder-reloded') {
+                            loadFolders();
+                            loadPage(0, currentLocation(), false, ".content-main", false, ".content-main");
+                        }
+                    }
+                }
+
+            } else if (obj.status === 'error') {
+                $.notify(obj.message);
+            } else {
+                $.notify("اطلاعات دریافتی ناقص میباشد لطفا مجددا سعی نمائید");
+            }
+
+
+            removeLodadItem();
+
+        },
+        error: function () {
+            $.notify("خطایی در ارتباط با سرور به وجود امد");
+            removeLodadItem();
+        }
+    });
+
+    return false;
+}
+
+function reClose(element) {
+    $(element).remove();
+
+    $('html, body').css({
+        overflow: 'auto'
+    });
+}
+
+function alertBox(t, messages, datas, element1, element2, reloded) {
+    var reloder = reloded ? "'" + reloded + "'" : false;
+    var el1 = element1 ? element1 : ".content-main";
+    var el2 = element2 ? element2 : ".content-main";
+    var dataHtml = '<div class="confirm-box-overly"><div class="confirm-box"><div class="confirm-box-text">' + messages + '</div><div class="confirm-box-footer left-align"><span class="ibtn ibtn-mini-success" onclick="reClose(\'.confirm-box-overly\');sendReqs(this, ' + datas + ', \'' + el1 + '\', false, \'' + el2 + '\', ' + reloder + ')" id="">تائید</span><span class="ibtn ibtn-mini-danger" onclick="reClose(\'.confirm-box-overly\')">لغو</span></div></div></div>';
+
+    $("body .confirm-box-overly").remove();
+    $('html, body').css({
+        overflow: 'hidden'
+    });
+    $("body").append(dataHtml);
+
+    return false;
+}
+
+function errorBox(t, messages) {
+
+    var dataHtml = '<div class="confirm-box-overly"><div class="confirm-box"><div class="confirm-box-text">' + messages + '</div><div class="confirm-box-footer left-align"><span class="ibtn ibtn-mini-danger" onclick="reClose(\'.confirm-box-overly\')">بستن</span></div></div></div>';
+
+    $("body .confirm-box-overly").remove();
+    $('html, body').css({
+        overflow: 'hidden'
+    });
+    $("body").append(dataHtml);
+
+    return false;
+}
+
+function customBox(t, page, appendReq) {
+    var dataHtml = '<div class="confirm-box-overly"><div class="confirm-box"><i class="icon-close ripple" onclick="reClose(\'.confirm-box-overly\')"></i></div></div>';
+    var appendedRequest = appendReq ? appendReq : "";
+
+    $("body .confirm-box-overly").remove();
+    $('html, body').css({
+        overflow: 'hidden'
+    });
+    $("body").append(dataHtml);
+
+    sendReqs(t, {req: page, req_other: appendedRequest}, ".confirm-box", ".confirm-box");
+
+}
+
+function openEmbed(t, vkey) {
+    var dataHtml = '<div class="confirm-box-overly"><div class="confirm-box"><i class="icon-close ripple" onclick="reClose(\'.confirm-box-overly\')"></i>\n' +
+        '<div class="confirm-box-continer">\n' +
+        '    <div class="confirm-box-title">نمایش ویدئو در سایت شما</div>\n' +
+        '    <div class="confirm-box-body">' +
+        '<div class="confirm-tab"><span class="active" onclick="openCloseEmbed(this, \'#tab-show-script\')"><i class="icon-radio_button_checked"></i>کد اسکریپت</span><span onclick="openCloseEmbed(this, \'#tab-show-iframe\')"><i class="icon-radio_button_unchecked"></i>کد آیفریم</span></div>' +
+        '<div class="confirm-box-bod noshow" id="tab-show-iframe"><div class="textera-copy-table"><div class="textera-copy-table-cell"><textarea id="copy_iframe" readonly>&#x3C;iframe src=&#x27;https://iranplay.com/v/' + vkey + '/?EVPInstanceName=player1&#x27; width=&#x27;1366&#x27; height=&#x27;626&#x27; frameborder=&#x27;0&#x27; scrolling=&#x27;no&#x27; allowfullscreen&#x3E;&#x3C;/iframe&#x3E;</textarea></div><span data-clipboard-action="copy" data-clipboard-target="#copy_iframe" class="icon-copy cpdata textera-copy-table-cell"></span></div></div>' +
+        '<div class="confirm-box-bod " id="tab-show-script"><div class="textera-copy-table"><div class="textera-copy-table-cell"><textarea id="copy_scripts" readonly>&#x3C;div id=&#x22;iranplay_player&#x22;&#x3E;&#x3C;script type=&#x22;text/JavaScript&#x22; src=&#x22;https://iranplay.com/embed/' + vkey + '/&#x22;&#x3E;&#x3C;/script&#x3E;&#x3C;/div&#x3E;</textarea></div><span data-clipboard-action="copy" data-clipboard-target="#copy_scripts" class="icon-copy cpdata textera-copy-table-cell"></span></div></div>' +
+        '</div></div></div>';
+
+    $("body .confirm-box-overly").remove();
+    $('html, body').css({
+        overflow: 'hidden'
+    });
+    $("body").append(dataHtml);
+}
+
+function removeItem(t, text, data) {
+    alertBox(t, text, data);
+}
+
+function setCookie(cname, cvalue, exdays) {
+    exdays = exdays > 0 ? exdays : 14;
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function toHHMMSS(str) {
+    var sec_num = parseInt(str, 10); // don't forget the second param
+    var hours = Math.floor(sec_num / 3600);
+    var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+    var seconds = sec_num - (hours * 3600) - (minutes * 60);
+
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+    return hours + ':' + minutes + ':' + seconds;
+}
+
+function openClose(t) {
+    var element = $(t);
+    var classing = element.attr("class");
+    $("body .opening").removeClass("opening");
+    if (classing.indexOf("opening") !== -1) {
+        ////
+    } else {
+        $(t).addClass("opening");
+    }
+}
+
+function openCloseEmbed(t, open) {
+    var element = $(t);
+    var classing = element.attr("class");
+    classing = classing ? classing : "";
+
+    if (classing.indexOf("active") !== -1) {
+        ////
+    } else {
+        $("body .confirm-tab span").removeClass("active");
+        $("body .confirm-tab i").removeClass('icon-radio_button_checked').addClass("icon-radio_button_unchecked");
+        $("body .confirm-box-bod").addClass("noshow");
+        $(element).addClass("active");
+        $(element).find("i").addClass("icon-radio_button_checked");
+        $(open).removeClass("noshow");
+    }
+}
+
+function addFavorit(t) {
+    var element = $(t);
+
+    $.ajax({
+        url: currentLocation(),
+        type: 'POST',
+        data: {addFavorit: 1},
+        success: function (data) {
+            var obj = getJson(data);
+
+            if (obj.status === 'success') {
+                // $.notify(obj.message, "success");
+                if (obj.action) {
+                    var count = obj.count ? (obj.count) : 0;
+                    $(".count-fav", element).text(count);
+
+                    if (obj.action === "add") {
+                        $("i", element).removeClass("icon-heart1").addClass("icon-heart");
+                    } else if (obj.action === "remove") {
+                        $("i", element).addClass("icon-heart1").removeClass("icon-heart");
+                    }
+                }
+            } else if (obj.status === 'error') {
+                $.notify(obj.message);
+            } else {
+                $.notify("اطلاعات دریافتی ناقص میباشد لطفا مجددا سعی نمائید");
+            }
+
+            if (obj.url) {
+                if (obj.fast)
+                    _redirectors(obj.url, 0);
+                else
+                    _redirectors(obj.url, 2000);
+            }
+
+        },
+        error: function () {
+            $.notify("خطایی در ارتباط با سرور به وجود امد");
+            removeLodadItem();
+        }
+    });
+}
+
+function joinOrOutChannel(t, channel) {
+    var element = $(t);
+    showLoadItem(element);
+
+    $.ajax({
+        url: url + "join",
+        type: 'POST',
+        data: {follow: channel},
+        success: function (data) {
+            var obj = getJson(data);
+
+            if (obj.status === 'success') {
+                if (obj.btn) {
+                    element.after(obj.btn);
+                    element.remove();
+                }
+
+                if (obj.message.length > 0)
+                    $.notify(obj.message, "success");
+
+            } else if (obj.status === 'error') {
+                $.notify(obj.message);
+            } else {
+                $.notify("اطلاعات دریافتی ناقص میباشد لطفا مجددا سعی نمائید");
+            }
+
+            if (obj.url) {
+                if (obj.fast)
+                    _redirectors(obj.url, 0);
+                else
+                    _redirectors(obj.url, 2000);
+            }
+
+            removeLodadItem();
+
+        },
+        error: function () {
+            $.notify("خطایی در ارتباط با سرور به وجود امد");
+            removeLodadItem();
+        }
+    });
+
+    return false;
+}
+
+function submitForm(t, reset, closeBox, reloded, calfun) {
+    var element = $(t);
+    var loadingElement = element.parents(".public-form");
+    showLoadItem(loadingElement);
+
+    var resetForm = reset ? reset : false;
+    var closeBox = closeBox ? closeBox : false;
+    var reloded = reloded ? reloded : false;
+    var calfunCtion = calfun ? calfun : false;
+
+    $.ajax({
+        url: currentLocation(),
+        type: 'POST',
+        data: element.serialize(),
+        success: function (data) {
+            var obj = getJson(data);
+
+            if (obj.status === 'success') {
+                if (loadingElement.find(".form-message").length > 0)
+                    showMessages(loadingElement.find(".form-message"), obj.message, "ialert-success");
+                else
+                    $.notify(obj.message, "success");
+
+                if (resetForm) {
+                    $("input", element).val('');
+                    $("textarea", element).val('');
+                }
+
+                if (closeBox) {
+                    reClose('.confirm-box-overly');
+                }
+
+                if (calfunCtion) {
+                    switch (calfunCtion) {
+                        case "folderlist":
+                            loadFolders();
+                            break;
+                    }
+                } else if (reloded) {
+                    loadPage(0, currentLocation(), false, reloded, false, reloded);
+                }
+            } else if (obj.status === 'error') {
+                if (loadingElement.find(".form-message").length > 0)
+                    showMessages(loadingElement.find(".form-message"), obj.message);
+                else
+                    $.notify(obj.message);
+            }
+
+            if (obj.url) {
+                _redirectors(obj.url, 2000);
+            }
+
+            removeLodadItem();
+
+        },
+        error: function () {
+            removeLodadItem();
+        }
+    });
+
+    return false;
+}
+
+function submitFormData(t) {
+    var element = $(t);
+    var loadingElement = element.parents(".public-form");
+    showLoadItem(loadingElement);
+
+    var formData = new FormData(t);
+
+    $.ajax({
+        url: currentLocation(),
+        type: 'POST',
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: formData,
+        success: function (data) {
+            var obj = getJson(data);
+
+            if (obj.status === 'success') {
+                if (loadingElement.find(".form-message").length > 0)
+                    showMessages(loadingElement.find(".form-message"), obj.message, "ialert-success");
+                else
+                    $.notify(obj.message, "success");
+            } else if (obj.status === 'error') {
+                if (loadingElement.find(".form-message").length > 0)
+                    showMessages(loadingElement.find(".form-message"), obj.message);
+                else
+                    $.notify(obj.message);
+            }
+
+            if (obj.url) {
+                _redirectors(obj.url, 2000);
+            }
+
+            removeLodadItem();
+
+        },
+        error: function () {
+            removeLodadItem();
+        }
+    });
+
+    return false;
+}
+
+function reac(ac, t) {
+    if (ac === 1) {
+        $(".comment-input").addClass('inputfull');
+    } else {
+        var element = $(t);
+        if (element.val().length > 0)
+            $(".comment-input").addClass('inputfull');
+        else
+            $(".comment-input").removeClass('inputfull');
+    }
+}
+
+function commentLike(t, id, type) {
+    var element = $(t);
+
+    // var types = type?type:1;
+    var types = (type === 1) ? type : 0;
+
+    $.ajax({
+        url: currentLocation(),
+        type: 'POST',
+        data: {like: types, cid: id, req: 'commentlike'},
+        success: function (data) {
+            var obj = getJson(data);
+
+            if (obj.status === 'success') {
+                element.parent().find("span").text(obj.message);
+            } else if (obj.status === 'error') {
+                $.notify(obj.message);
+            } else {
+                $.notify("اطلاعات دریافتی ناقص میباشد لطفا مجددا سعی نمائید");
+            }
+
+            if (obj.url) {
+                if (obj.fast)
+                    _redirectors(obj.url, 0);
+                else
+                    _redirectors(obj.url, 2000);
+            }
+
+            removeLodadItem();
+
+        },
+        error: function () {
+            $.notify("خطایی در ارتباط با سرور به وجود امد");
+            removeLodadItem();
+        }
+    });
+
+    return false;
+}
+
+function setAnswer(id) {
+    if (id > 0) {
+        $("body #comment_answer_id").val(id);
+        $("body #comment_textarea").focus();
+    }
+}
+
+function searchTop(t) {
+    var eloement = $(t);
+}
+
+function activeToggle(t) {
+    var element = $(t).parent();
+    var classing = element.attr("class");
+    element.parent().find(".active").removeClass("active");
+    if (classing.indexOf("active") !== -1) {
+        element.removeClass('active');
+    } else {
+        element.addClass('active');
+    }
+
+
+}
+
+function openUrl(ui) {
+    window.location = ui;
+}
+
+// $(function () {
+//     $(".nano").nanoScroller({tabIndex: 0});
+// });
+
+function editComments(cid, text) {
+    var el1 = ".video-box-list";
+    var el2 = ".body-padding";
+    var dataHtml = '<div class="confirm-box-overly"><div class="confirm-box"><div class="confirm-box-text">' +
+        '<div class="public-form"><form method="post" class="edit-form" onsubmit="return submitForm(this, false, true, \'.content-main\')"><textarea style="display: block; text-align: right; direction: rtl; line-height: 17px" class="form-input" name="message">' + text + '</textarea><input type="hidden" name="req" value="edit"><input type="hidden" name="cid" value="' + cid + '"></form></div>' +
+        '</div><div class="confirm-box-footer left-align"><span class="ibtn ibtn-mini-success" onclick="$(\'.edit-form\').submit()" id="">ثبت تغییرات</span><span class="ibtn ibtn-mini-danger" onclick="reClose(\'.confirm-box-overly\')">بستن</span></div></div></div>';
+
+    $("body .confirm-box-overly").remove();
+    $('html, body').css({
+        overflow: 'hidden'
+    });
+    $("body").append(dataHtml);
+}
+
+function answerComments(cid) {
+    var el1 = ".video-box-list";
+    var el2 = ".body-padding";
+    var dataHtml = '<div class="confirm-box-overly"><div class="confirm-box"><div class="confirm-box-text">' +
+        '<div class="public-form"><form method="post" class="edit-form" onsubmit="return submitForm(this, false, true)"><textarea placeholder="متن پیام" style="display: block; direction: rtl; text-align: right" class="form-input" name="message"></textarea><input type="hidden" name="req" value="answer"><input type="hidden" name="cid" value="' + cid + '"></form></div>' +
+        '</div><div class="confirm-box-footer left-align"><span class="ibtn ibtn-mini-success" onclick="$(\'.edit-form\').submit()" id="">ثبت پیام</span><span class="ibtn ibtn-mini-danger" onclick="reClose(\'.confirm-box-overly\')">بستن</span></div></div></div>';
+
+    $("body .confirm-box-overly").remove();
+    $('html, body').css({
+        overflow: 'hidden'
+    });
+    $("body").append(dataHtml);
+
+    return false;
+}
+
+function newFolder() {
+    var dataHtml = '<div class="confirm-box-overly"><div class="confirm-box"><div class="confirm-box-text">' +
+        '<div class="public-form"><form method="post" class="edit-form" onsubmit="return submitForm(this, false, true, \'.body-padding\', \'folderlist\')"><div class="ialert ialert-default">نام پوشه جدید را وارد نمائید</div><input style="display: block;" maxlength="50" class="form-input" name="folder" value=""><input type="hidden" name="req" value="newfolder"><input type="hidden" name="parent" value="' + currentFolder + '"></form></div>' +
+        '</div><div class="confirm-box-footer left-align"><span class="ibtn ibtn-mini-success" onclick="$(\'.edit-form\').submit()" id="">ایجاد پوشه جدید</span><span class="ibtn ibtn-mini-danger" onclick="reClose(\'.confirm-box-overly\')">لغو</span></div></div></div>';
+
+    $("body .confirm-box-overly").remove();
+    $('html, body').css({
+        overflow: 'hidden'
+    });
+    $("body").append(dataHtml);
+}
+
+
+function showFullRm(t) {
+    var element = $(t);
+
+    if ($(".category-links.category-links-full").length > 0) {
+        $(".category-links").removeClass("category-links-full");
+    } else {
+        $(".category-links").addClass("category-links-full");
+    }
+}
+
+
+window.onscroll = function () {
+    scrollFun()
+};
+
+function scrollFun() {
+    var menuBavbar = $(".right-menu");
+    if (window.pageYOffset >= 75) {
+        menuBavbar.addClass("sticky")
+    } else {
+        menuBavbar.removeClass("sticky");
+    }
+}
+
+function selectFileUp() {
+    $("#file_selected_inp").click();
+}
+
+function selectFileUpAvatar() {
+    $("#fileupload").click();
+}
+
+var uploadPathItems = [];
+$(document).ready(function () {
+
+    $("body .file-form").submit(function (e) {
+        e.preventDefault();
+        // alert("salam");
+
+        $("#iprice-file").addClass('noshow');
+        $("#ipassword-file").addClass('noshow');
+        $("#inp-ipassword").val('');
+        $("#inp-iprice").val('');
+
+        var formData = new FormData(this);
+
+        $.ajax({
+            xhr: function () {
+                var i = 0;
+                var xhr = new window.XMLHttpRequest();
+                xhr.upload.addEventListener("progress", function (evt) {
+
+                    if (evt.lengthComputable) {
+
+                        var percentComplete = evt.loaded / evt.total;
+                        percentComplete = parseFloat(percentComplete * 100);
+
+                        $(".prog-title span").text("در حال آپلود ( %" + parseFloat(percentComplete).toFixed(2) + " )");
+                        $(".prog-width > span").css("width", parseFloat(percentComplete) + "%");
+                        $(".prog-front").text(bytesToSize(evt.loaded) + " از " + bytesToSize(evt.total));
+
+
+                        if (percentComplete === 100) {
+                            $(".prog-title span").text("در حال آپلود ( %" + parseInt(percentComplete) + " )");
+                        }
+
+                    }
+                }, false);
+
+                return xhr;
+            },
+            type: 'POST',
+            url: urlPanel + "upload/",
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+            timeout: 7200000,
+            async: true,
+            success: function (data) {
+                $("#file_selected_inp").val("");
+                if (data) {
+                    var obj = getJson(data);
+                    if (obj.status === 'success') {
+                        $("#namefile").val(obj.file_name);
+                        $(".prog-upload").addClass('noshow-orginal');
+                        $(".up-download-links").removeClass('noshow-orginal');
+                        $(".file-uplink #ifuller_url").val(obj.url);
+                        $(".file-uplink #ishorter_url").val(obj.url_short);
+                        $("#file_id").val(obj.file_id);
+                        $(".now-drive-div-black .form-submiter").prop('disabled', false);
+                        $(".prog-width > span").css("width", "0%");
+                        $(".close-upload-bx").removeClass('noshow-orginal');
+
+
+                        if (obj.file_type && obj.file_type === 'pic')
+                            $("#pic_watermark").removeClass('noshow-orginal');
+                        else
+                            $("#pic_watermark").addClass('noshow-orginal');
+                    } else {
+                        $('.now-drive-div-black').addClass('noshow-orginal');
+                        $.notify(obj.message);
+                        $(".close-upload-bx").removeClass('noshow-orginal');
+                    }
+                } else {
+                    $.notify("اختلالی در دریافت اطلاعات از سرور به وجود آمد لطفا مجددا سعی نمائید");
+                    $(".close-upload-bx").removeClass('noshow-orginal');
+                    console.log("error: ");
+                }
+            },
+            error: function (jqXHR, textStatus) {
+                $(".close-upload-bx").removeClass('noshow-orginal');
+                $.notify("اختلالی در دریافت اطلاعات از سرور به وجود آمد لطفا مجددا سعی نمائید");
+                console.log("error: ");
+                console.log(jqXHR);
+                console.log(textStatus);
+                // console.log(jqXHR);
+                // console.log(textStatus);
+
+                // _removeLoading();
+                // $.notify("",false);
+            }
+        });
+    });
+
+
+
+    $("body .home-up").submit(function (e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        var elementName = $(this).attr('data-name');
+        var elementId = $(this).attr('data-id');
+        if (elementName.length > 0) {
+            uploadPathItems[elementName] = 0;
+
+            elementId = parseInt(elementId);
+            if (elementId < 5 && elementId > 0) {
+                var nexElement = elementId + 1;
+                $("body .file_" + nexElement).removeClass('noshow-orginal');
+            }
+
+            $(this).addClass('noshow-orginal');
+            $(this).after(uploadHomeProgInfo(elementName));
+
+            $.ajax({
+                xhr: function () {
+                    var i = 0;
+                    var xhr = new window.XMLHttpRequest();
+                    var classNameItem = elementName;
+                    xhr.upload.addEventListener("progress", function (evt) {
+
+                        if (evt.lengthComputable) {
+
+                            var percentComplete = evt.loaded / evt.total;
+                            percentComplete = parseFloat(percentComplete * 100);
+
+                            var getParent = $(".home-file-up-progress-p." + classNameItem + "_prog");
+
+
+                            if (percentComplete === 100) {
+                                getParent.find(".home-file-up-progress > span").text("%" + parseFloat(percentComplete).toFixed(0) + "");
+                            } else {
+                                getParent.find(".home-file-up-progress > span").text("%" + parseFloat(percentComplete).toFixed(2) + "");
+                            }
+                            getParent.find(".home-file-up-progress > span").css("width", parseFloat(percentComplete) + "%");
+                            getParent.find(".ffuinfo").text(bytesToSizeNew(evt.loaded) + " از " + bytesToSizeNew(evt.total));
+
+
+                            if (percentComplete === 100) {
+                                // $(".prog-title span").text("در حال آپلود ( %"+parseInt(percentComplete)+" )");
+                            }
+
+                        }
+                    }, false);
+
+                    return xhr;
+                },
+                type: 'POST',
+                url: url + "uploadGuest/",
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                timeout: (1000 * 60 * 30),
+                async: true,
+                success: function (data) {
+                    if (data) {
+                        var obj = getJson(data);
+                        var getParent = $(".home-file-up-progress-p." + elementName + "_prog");
+                        if (obj.status === 'success') {
+                            getParent.after(obj.file_html);
+                            getParent.remove();
+                        } else {
+                            getParent.find(".home-file-up-progress > span").css("width", "100%").text(obj.message);
+                            getParent.find(".home-file-up-progress > span").css("background-color", "#C90000");
+                        }
+                    } else {
+                        $.notify("اختلالی در دریافت اطلاعات از سرور به وجود آمد لطفا مجددا سعی نمائید");
+                        var getParent = $(".home-file-up-progress-p." + elementName + "_prog");
+                        getParent.find(".home-file-up-progress > span").css("width", "100%").text("اختلالی در آپلود فایل بوجود آمد");
+                        getParent.find(".home-file-up-progress > span").css("background-color", "#C90000");
+                        // $(".close-upload-bx").removeClass('noshow-orginal');
+                    }
+                },
+                error: function (jqXHR, textStatus) {
+                    var getParent = $(".home-file-up-progress-p." + elementName + "_prog");
+                    getParent.find(".home-file-up-progress > span").css("width", "100%").text("اختلالی در آپلود فایل بوجود آمد");
+                    getParent.find(".home-file-up-progress > span").css("background-color", "#C90000");
+                    // $(".close-upload-bx").removeClass('noshow-orginal');
+                    $.notify("اختلالی در دریافت اطلاعات از سرور به وجود آمد لطفا مجددا سعی نمائید");
+                }
+            });
+        }
+        /*
+
+                */
+
+    });
+
+    $(".left-text-focus").focus(function () {
+        $(this).css('text-align', "left");
+
+    });
+
+    $(".left-text-focus").blur(function () {
+        var values = $(this).val();
+        if (values.length > 0) {
+            $(this).css('text-align', "left");
+        } else {
+            $(this).css('text-align', "right");
+        }
+    });
+});
+
+function uploadFileSend(t) {
+    var file = $(t)[0].files[0];
+    if (file) {
+        var fileSize = (file.size / 1024 / 1024);
+        if (fileSize <= maxUploadFileSize) {
+            $(".close-upload-bx").addClass('noshow-orginal');
+            $(".prog-upload").removeClass('noshow-orginal');
+            $('.now-drive-div-black').removeClass('noshow-orginal');
+            $(".up-download-links").addClass('noshow-orginal');
+            var parentFind = $(t).parents("form");
+            $(".now-drive-div-black .form-submiter").attr('disabled', 'disabled');
+            $("body .icheckeding").prop('checked', false);
+            $("body .up-inp-form").val('');
+            $(".file-uplink #ifuller_url").val('');
+            $(".file-uplink #ishorter_url").val('');
+
+            fileName = file.name.split('.').slice(0, -1).join('.');
+            if (fileName.length <= 0)
+                fileName = file.name;
+
+            // $("#namefile").val(fileName);
+            // $("#namefile").val(file.name);
+            $("#namefile").val("");
+            $("#titlefile").val("");
+            $("#commentfile").val("");
+            $("#keywordsfile").val("");
+
+            parentFind.submit();
+        } else {
+            $(t).val(null);
+            $.notify("حجم فایل انتخابی بیشتر از سقف تعیین شده می باشد");
+        }
+    }
+    // $(t).parents("form").submit();
+
+}
+
+function closeBx(element) {
+    var ele = $(element);
+    ele.addClass('noshow-orginal')
+}
+
+function editFile(key, name, link, title, tags, desc, watermark, publics, share, type, password, shortsss, by, prc)
+{
+    $(".close-upload-bx").removeClass('noshow-orginal');
+    $(".prog-upload").addClass('noshow-orginal');
+    $("#short-links").addClass('noshow');
+    $("#name-file-show").addClass('noshow');
+    $('.now-drive-div-black').removeClass('noshow-orginal');
+    $(".up-download-links").removeClass('noshow-orginal');
+    $(".now-drive-div-black .form-submiter").prop('disabled', false);
+
+    if (type && type === 'pic')
+        $("#pic_watermark").removeClass('noshow-orginal');
+    else
+        $("#pic_watermark").addClass('noshow-orginal');
+    // $("body .icheckeding").prop('checked', false);
+// alert(watermark);
+// alert(publics);
+// alert(share);
+    if (parseInt(watermark) === 1) {
+        $("body #check_1").prop('checked', true);
+    } else
+        $("body #check_1").prop('checked', false);
+
+    if (parseInt(share) === 1)
+        $("body #check_2").prop('checked', true);
+    else
+        $("body #check_2").prop('checked', false);
+
+    if (parseInt(publics) === 1)
+        $("body #check_3").prop('checked', true);
+    else
+        $("body #check_3").prop('checked', false);
+
+    if (password) {
+        $("#ipassword-file").removeClass('noshow');
+        $("#ipassword-file input").val(password);
+        $("body #check_5").prop('checked', true);
+
+    } else {
+        $("#ipassword-file").addClass('noshow');
+        $("#ipassword-file input").val('');
+        $("body #check_5").prop('checked', false);
+    }
+
+    if (prc>0) {
+        $("#iprice-file").removeClass('noshow');
+        $("#iprice-file input").val(prc);
+        $("body #check_4").prop('checked', true);
+
+    } else {
+        $("#iprice-file").addClass('noshow');
+        $("#iprice-file input").val('');
+        $("body #check_4").prop('checked', false);
+    }
+
+    $("body .up-inp-form").val('');
+    $(".file-uplink #ifuller_url").val(link);
+    $(".file-uplink #ishorter_url").val(shortsss);
+
+    $("#file_id").val(key);
+    $("#namefile").val(name);
+    $("#titlefile").val(title);
+    $("#commentfile").val(desc);
+    $("#keywordsfile").val(tags);
+    // alert(tags.split(";"));
+
+
+    $('body .keywordtags').tagsInput();
+
+    generateTags(".tags-container", tags);
+
+    $('body .keywordtags').tagsInput();
+}
+
+function generateTags(ele, tags) {
+    var el = $(ele);
+
+    if ($("body .tags-container .tag").length)
+        $("body .tags-container .tag").remove();
+
+    if (tags.length > 0) {
+        var splitTag = tags.split(";");
+        var datasEl = '';
+        for (i = 0; i < splitTag.length; i++) {
+            var texting = splitTag[i].trim();
+            if (texting.length > 1) {
+                datasEl += "<div class=\"tag badge badge-primary\"><span>" + texting + "</span><i class=\"tag-remove\">✖</i></div>";
+            }
+        }
+
+        el.find("input").before(datasEl);
+
+    }
+}
+
+function showDivePass(t) {
+    var element = $(t);
+    var getDiv = element.parents('.dots-th-td').find('.shower_div');
+
+    var showing = false;
+    if (getDiv.attr('class').indexOf('showno') !== -1)
+        showing = true;
+
+    $(".shower_div").removeClass('showno');
+    if (!showing)
+        getDiv.addClass('showno');
+}
+
+function sendLike(t, filekey, typeReq) {
+    var element = $(t);
+    showLoadItem(element.parent());
+
+    $.ajax({
+        url: currentLocation(),
+        type: 'POST',
+        data: {req: 'like', key: filekey, type: typeReq},
+        success: function (data) {
+            var obj = getJson(data);
+
+            if (obj.status === 'success') {
+                if (obj.like)
+                    $("body .like_show").text(obj.like);
+
+                if (obj.dlike)
+                    $("body .dlike_show").text(obj.dlike);
+
+            } else if (obj.status === 'error') {
+                $.notify(obj.message);
+            } else {
+                $.notify("اطلاعات دریافتی ناقص میباشد لطفا مجددا سعی نمائید");
+            }
+
+            if (obj.url) {
+                if (obj.fast)
+                    _redirectors(obj.url, 0);
+                else
+                    _redirectors(obj.url, 2000);
+            }
+
+            removeLodadItem();
+
+        },
+        error: function () {
+            $.notify("خطایی در ارتباط با سرور به وجود امد");
+            removeLodadItem();
+        }
+    });
+}
+
+function generateDownloadLink(t) {
+    var element = $(t);
+    showLoadItem(element);
+
+    $.ajax({
+        url: currentLocation(),
+        type: 'POST',
+        data: element.serialize(),
+        success: function (data) {
+            var obj = getJson(data);
+
+            if (obj.status === 'success') {
+                element.html(obj.message);
+            } else if (obj.status === 'error') {
+                $.notify(obj.message);
+            } else {
+                $.notify("اطلاعات دریافتی ناقص میباشد لطفا مجددا سعی نمائید");
+            }
+
+            if (obj.url) {
+                if (obj.fast)
+                    _redirectors(obj.url, 0);
+                else
+                    _redirectors(obj.url, 2000);
+            }
+
+            if (obj.demo_link) {
+                if ($("#idemo_link").length > 0) {
+                    var elementDemo = $("#idemo_link");
+                    elementDemo.attr('src', obj.demo_link);
+
+                    if (elementDemo.attr('data-type').indexOf('music') != -1) {
+                        elementDemo.parent()[0].pause();
+                        elementDemo.parent()[0].load();
+                    }
+
+                    if (elementDemo.attr('data-type').indexOf('video') != -1) {
+                        elementDemo[0].pause();
+                        elementDemo[0].load();
+                    }
+                }
+            }
+
+            removeLodadItem();
+
+        },
+        error: function () {
+            $.notify("خطایی در ارتباط با سرور به وجود امد");
+            removeLodadItem();
+        }
+    });
+    return false;
+}
+
+function gotoGoogle(t) {
+    var element = $(t);
+    var qq = element.parent().find("#q").val();
+    if (qq.length > 0) {
+        window.location.href = "https://www.google.com/search?q=site:98share.com+" + qq;
+    }
+
+    return false;
+}
+
+function gotoGooglePanel(t) {
+    var element = $(t);
+    var qq = element.parent().find("#q").val();
+    if (qq.length > 0) {
+        window.open("https://www.google.com/search?q=site:98share.com+" + qq, "_blank");
+    }
+
+    return false;
+}
+
+function show_signup_log(r) {
+    var l = document.getElementsByClassName("signup-login-menu").item(0);
+    if (l.style.transform === "scale(0)") {
+        l.style.transform = "scale(1)";
+        document.getElementsByClassName("search-menu").item(0).style.transform = "scale(0)";
+    } else {
+        l.style.transform = "scale(0)";
+    }
+
+
+}
+
+function show_search_menu(r) {
+    var l = document.getElementsByClassName("search-menu").item(0);
+    if (l.style.transform === "scale(0)") {
+        l.style.transform = "scale(1)";
+        document.getElementsByClassName("signup-login-menu").item(0).style.transform = "scale(0)";
+    } else {
+        l.style.transform = "scale(0)";
+    }
+
+
+}
+
+function changeFileUp(t) {
+    $.notify("جهت آپلود فایل های خود باید عضو شوید و از طریق حساب کاربری خود اقدام به آپلود فایل نمایید");
+    _redirectors("https://98share.com/login/", 3000);
+    return false;
+    var file = $(t)[0].files[0];
+    if (file) {
+        var fileSize = (file.size / 1024 / 1024);
+        if (fileSize <= maxUploadFileSize) {
+            var parentFind = $(t).parents("form");
+            parentFind.submit();
+        } else {
+            $(t).val(null);
+            $.notify("حجم فایل انتخابی بیشتر از سقف تعیین شده می باشد");
+        }
+    } else {
+        $.notify("فایلی برای آپلود انتخاب نشده است");
+    }
+}
+
+function uploadHomeProgInfo(className) {
+    return '<div class="home-file-up-progress-p ' + className + '_prog">\n' +
+        '                            <div class="home-file-up-progress"><span style="width:0%">0%</span></div>\n' +
+        '                            <span class="ffuinfo"></span>\n' +
+        '                        </div>';
+}
+
+function bytesToSizeNew(num) {
+    var fix = 1;
+    var si = [
+        {value: 1, symbol: " بایت", fix: 0},
+        {value: 1E3, symbol: " کیلوبایت", fix: 0},
+        {value: 1E6, symbol: " مگابایت", fix: 0},
+        {value: 1E9, symbol: " گیگ", fix: 3},
+        {value: 1E12, symbol: " ترابایت", fix: 0},
+        {value: 1E15, symbol: "P", fix: 0},
+        {value: 1E18, symbol: "E", fix: 0}
+    ];
+    var rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
+    var i;
+    for (i = si.length - 1; i > 0; i--) {
+        if (num >= si[i].value) {
+            break;
+        }
+    }
+
+    return (num / si[i].value).toFixed(si[i].fix).replace(rx, "$1") + si[i].symbol;
+}
+
+function newFollower() {
+    var dataHtml = '<div class="confirm-box-overly"><div class="confirm-box"><div class="confirm-box-text">' +
+        '<div class="iboxting-titr">آدرس یوزری که مایلید از انتشار فایل های جدید آن مطلع شوید را در کادر زیر وارد نمائید<br>......<br></div>' +
+        '<div style="direction: rtl; text-align: right; padding-right: 10px; padding-bottom: 5px; color: #45A0FF">آدرس یوزر:</div>' +
+        '<div class="public-form"><form method="post" class="edit-form" onsubmit="return submitForm(this, false, true, \'.content-main\')"><input type="text" style="display: block; text-align: right; direction: rtl;" placeholder="98share.com/username" class="form-input form-input2" name="user"><input type="hidden" name="req" value="newfollwer"></form></div>' +
+        '</div><div class="confirm-box-footer left-align"><span class="ibtn ibtn-mini-success" onclick="$(\'.edit-form\').submit()" id="">ثبت</span><span class="ibtn ibtn-mini-danger" onclick="reClose(\'.confirm-box-overly\')">لغو</span></div></div></div>';
+
+    $("body .confirm-box-overly").remove();
+    $('html, body').css({
+        overflow: 'hidden'
+    });
+    $("body").append(dataHtml);
+
+    return false;
+}
+
+function addRemover(element, classer, newToggel) {
+    var newTog = newToggel?newToggel:"";
+    var getElement = $(element);
+    if (getElement.attr('class').toString().indexOf(classer) === -1) {
+        getElement.addClass(classer);
+        if(newTog)
+            $(".form-submiter").attr("data-open", "files");
+    }
+    else {
+        getElement.removeClass(classer);
+        if(newTog)
+            $(".form-submiter").attr("data-open", newTog);
+    }
+}
+
+function clickIsSell() {
+    // var getElementBase = $("#check_4");
+    // var getElement = $("#check_5");
+    // if (getElement.prop("checked")) {
+    //     getElement.prop("checked", false);
+    //     $("#ipassword-file").addClass("noshow");
+    // }
+    //
+    // if (getElementBase.prop("checked")) {
+    //
+    // }
+    // else {
+    //
+    // }
+}

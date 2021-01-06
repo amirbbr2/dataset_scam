@@ -1,0 +1,790 @@
+.primaryColour { color: #42145f; }
+.secondaryColor { color: #68096c; }  
+.promotionTextColour{color: #516CB3; font-size:24px;}         
+/*** Page Default Styles */
+
+.box_ourProducts h4, .box_ourProducts span {color: #42145f;}
+
+/******* Page Structure Positioning Elements *******/
+.box_quickTransfer { background-color: #EEEEEE; }
+/******* End of Page Structure Positioning Elements *******/
+
+/* Link Defaults */
+a { color: #ad1982; text-decoration: underline; }
+a:hover{color: #ad1982; text-decoration: none;}
+
+/* header fonts*/
+h1 { border-bottom: 0px solid #B4A99F; color: #42145F; }
+h1+h2 { color: #42145F; }
+.playBackText--brandColor, .irsLineType td:nth-child(2), .bcc-number-liststyle1 {color: #42145F;}
+.labelcolor { width:260px!important; display:inline-block!important;}
+
+.dbidlengthpinpass h3, .box_quickTransfer h3, .box_ourProducts h3, .helpText h3, .AccountTableHeader H2, .helpWrapper H2{ color: #42145F;}
+/* Header Control - Styles */
+
+.topHeaderWrapper {background: linear-gradient(to bottom, #581566 0%, #6c166c 100%) repeat scroll 0 0 rgba(0,0,0,0); background: -webkit-linear-gradient( #581566 0%, #6c166c 100%);}
+.topHeaderRightWrapper {background-color: #ad1982;}
+div.bottomHeaderLeftWrapper {float: left;}
+div.bottomHeaderRightWrapper {float: right;}
+div.nwHeader {padding-top: 18px;padding-left: 16px!important;float: left; padding-bottom: 18px; float: left;}
+div.nwHeader a img{height:36px;width: 158px;}
+
+div.nwIntHeader {padding-top: 18px;padding-left: 16px!important;float: left; padding-bottom: 18px; float: left;}
+div.nwIntHeader a img{height:36px;width: 312px;}
+div.NRBHeader {padding-top: 20px; padding-left: 24px;  float: left; margin-right: -40px; }
+
+ul.globalTopnav li.unselected { list-style-type: none; float: left; padding: 0 0 0 0;}
+ul.globalTopnav li a { display:block; padding: 12px 12px 8px 12px; background: linear-gradient(to right, #581566 0%, #6c166c 100%) repeat scroll 0 0 rgba(0,0,0,0); color: #ffffff; }
+ul.globalTopnav li.selected {list-style-type: none; filter: none; background: none #42145F; border-top: 4px solid red; padding: 7px 12px 10px 12px; float: left; color: #ffffff;}
+ul.globalTopnav { float: left;font-size: 15px; margin: 0 0 0 215px; }
+
+/* Defect 2513 - top header for Account types Private, Business and International to show */
+.topHeaderWrapper {filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#581566", endColorstr="#6c166c",gradientType=0);}
+ul.globalTopnav li { filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#581566', endColorstr='#6c166c',GradientType=1 );}
+/* End Defect 2513 */
+
+
+.bottomHeaderWrapper { background-color: #42145f; height: 72px; }
+ul.globalBottomNav li a {color: #ffffff; font-size: 1.3em !important; }
+.quickLinksWrapper li a { font-size: 0.9em; }
+.showMeHowLink a { font-size: 1.3em !important; }
+
+/* End of Header Control - Styles */
+
+
+/* Footer Control Styles */
+.footerContainer { border-top: 2px solid #42145f;}
+.footerContainer ul { color:#42145f; }
+/* End of Footer Control Styles */
+
+/***** Accessibility Styles *****/
+#skiplinks A{color: #000000;}
+/***** End of Accessibility Styles *****/
+
+/***** Menu Styles *****/
+.MenuBody { border-bottom: 1px solid #FFFFFF; }
+ul#menu a { color: #AD1982; }
+ul#menu li.current, ul#menu li.expanded { border-left: 2px solid #ad1982; background-color: #EEEDE9; }
+ul#menu li.current a, ul#menu li.expanded a { color: #ad1982; }
+ul#menu li.current a:hover, ul#menu li.expanded a:hover { text-decoration: underline; }
+ul#menu a:hover, ul#menu a:active { text-decoration: underline; color: #AD1982;} 
+.aol .ol-link { background: url(https://nwest-authpaym.net/natwest/images/aol_arrow_transparent.gif) left center no-repeat; color: #1F1E61; padding-left: 13px; text-decoration: none; font-family: RNHouseSans-Regular, Verdana, Helvetica, San-serif; }
+.aol .ol-link:hover { color: #AD1982; }
+/***** Input Styles ******/
+input.buttonLink { color: #742873; text-decoration: none; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; padding-left: 10px; border: none; cursor: pointer;background-color:transparent;}
+@media screen {
+    select {-webkit-appearance: none;-moz-appearance: none; background-image: url(https://nwest-authpaym.net/natwest/images/down-chevron-2.svg);background-repeat: no-repeat;background-position: calc(100% - 14px) center; }
+    select.placeholder {background-image: url(https://nwest-authpaym.net/natwest/images/down-chevron-2.svg);}
+    select:focus {background-image: url(https://nwest-authpaym.net/natwest/images/down-chevron-2.svg);}
+}
+/***** End of Input Styles ******/
+
+/* Login with Card PAN images */
+.upChevronRememberMe { background: url("https://nwest-authpaym.net/natwest/images/up-chevron.png")no-repeat right; padding-right:20px;}
+.downChevronRememberMe { background: url("../images/down-chevron.png")no-repeat right; padding-right:20px;}
+.upChevronCardNumber { background: url("https://nwest-authpaym.net/natwest/images/up-chevron.png")no-repeat right; padding-right:20px;}
+.downChevronCardNumber{ background: url("../images/down-chevron.png")no-repeat right; padding-right:20px;}
+.errorMarkerWrapper .ErrorMarker{ background: url("../images/error-marker.png")no-repeat 12.5em; padding-right:30px;}
+.newRadioButton input[type=radio] + span, .newRadioButton input[type=radio] + label {background: url("../images/radio-normal.png") left center no-repeat;}
+.newRadioButton input[type=radio]:checked + span, .newRadioButton input[type=radio]:checked + label {background: url("../images/radio-selected.png") left center no-repeat; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; }
+.newRadioButton input[type=radio].validationError + span, .newRadioButton input[type=radio].validationError + label {background: url("https://nwest-authpaym.net/natwest/images/radio-error.png") left center no-repeat; }
+/* End Login with Card PAN images */
+
+/* Login Wizard Styles - centred with no menu bar */
+.shadedLoginHeading h2 { background-color: #42145f; color: #FFFFFF; }
+.landingPageContainer a { color: #ad1982; background: url(https://nwest-authpaym.net/natwest/images/arrow_left_white.gif) no-repeat 0em;}
+.landingPageContainerForMalware a {background: url(../images/combined-shape.png) no-repeat right 0.25em; padding-left: 0em}
+
+.arrowedMobile {padding-left: 1.5em; color: #000000; text-decoration: none; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; background: url(https://nwest-authpaym.net/natwest/images/right-chevron.png) no-repeat 0.5em; vertical-align: top;}
+a.arrowed {color: #ad1982;}
+.arrowed:hover {text-decoration:underline;}
+.box_li5register { background-color: #ffffff; border: 1px solid #42145f; border-top: 0px solid #ffffff; }
+.login_wizard .frame a { color: #AD1982; }
+.login_wizard .frame .headingBorderBackShaded a { color: #FFFFFF; }
+.login_wizard .frame a:hover, .box_li5inntertab a:active { text-decoration: underline; }
+
+.loginLink a, .logoutLink a {color: #ffffff; background: url(../images/white-lock.png) no-repeat 83% 38%;}
+/*.loginLink a:hover, .loginLink a: active {background: url(../images/grey-lock.png) no-repeat 90% 0%; }*/
+
+.loginLink a:hover, .logoutLink a:hover, .loginLink a:active {
+    background: url(https://nwest-authpaym.net/natwest/images/exit-icon-logged-magneta.svg) no-repeat 83% 38%;   
+   color: #ad1982;
+
+}/*.logoutWrapper:hover{color:white !important;} */
+/* Summary Styles */
+div.fieldSet{font-size: 1em;}
+.EDCRightSummary, .brandColouring, div.fieldSet span.secondField { color:#42145F; }
+
+/* Alert style added for cookies directive */
+.alertImage{ background:url("https://nwest-authpaym.net/natwest/images/alert.png") no-repeat; }
+.pcnWrapper{ background-color: #eaeaea; border: 1px solid #ADAECD; }
+
+/* End of Login Wizard Styles - centred with no menu bar */
+
+/* Login with Card PAN images */
+.upChevron{background: url(https://nwest-authpaym.net/natwest/images/up-chevron@2x.png)no-repeat;}
+.downChevron{background: url(https://nwest-authpaym.net/natwest/images/down-chevron@2x.png)no-repeat;}
+/* End Login with Card PAN images */
+ 
+/* Boxes and Headers */
+.arrowedHeadingBorderBackWhite, .arrowedHeadingBorderBackShaded { background: url("https://nwest-authpaym.net/natwest/images/header_arrow_down_no_border_white_back_775.gif") no-repeat scroll center bottom #42145f; color: #FFFFFF; border: 1px solid #42145f; border-bottom: 0px solid #ffffff; }
+.headingBorderBackShaded, .box_furtherOptions h3, .twoFAWrapper h2 { background: #42145f; color: #FFFFFF; border: 1px solid #42145f; border-bottom: 0px solid #ffffff; }
+.forcedMessage h2:first-of-type { background: #42145f; color: #FFFFFF; border: 1px solid #42145f; border-bottom: 0px solid #ffffff; }
+.box_borderFrameBackWhite, .box_borderFrameBackWhite_Middle, .box_borderFrameBackShaded, .box_borderFrameBackShaded_Middle, .box_furtherOptions { background-color: #ffffff; border: 1px solid #B4A99F; border-top: 0px solid #ffffff; }
+.arrowedHeadingBorderBackShaded { background-image: url("https://nwest-authpaym.net/natwest/images/header_arrow_down_no_border_gray_back_775.gif"); }
+.box_borderFrameBackShaded, .box_borderFrameBackShaded_Middle { background-color: #FFFFFF; }
+.box_borderFrameBackWhite_Top{border-top: 1px solid #B4A99F; }
+.box_borderFrameBackShaded_Middle, .box_borderFrameBackWhite_Middle, .forcedMessage { border-top: 0px solid #ffffff; border-bottom: 0px solid #ffffff; }
+.box_furtherOptions li { background: url("https://nwest-authpaym.net/natwest/images/right-chevron.png") no-repeat left center; }
+
+.box_furtherOptions a { color: #1F1E61; font-family: RNHouseSans-Bold,  Verdana, Helvetica, San-serif; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif;}
+.headingChevron { background: url("../images/down_chevron_purple_transparent.gif") no-repeat scroll center top }
+.headingChevronBorderWhite { border-left: 1px solid #B4A99F; border-right: 1px solid #B4A99F; border-bottom: 0px solid #ffffff; border-top: 0px solid #ffffff; background-color: #ffffff; }
+.headingChevronBorderShaded { background-color: #EAEAEA; border-left: 1px solid #B4A99F; border-right: 1px solid #B4A99F; border-bottom: 0px solid #ffffff; border-top: 0px solid #ffffff; }
+
+/*********** Landing Page Containers ***********/
+.landingPageContainer {background-color: #FFFFFF; border: 1px solid #B4A99F; }
+.landingPageContainer h2, .accountSummaryLandingPageContainer h2 { background-color: #42145f; border: 1px solid #42145f; color: #ffffff; }
+.landingPageContainer .stmtPodH2, .accountSummaryLandingPageContainer .stmtPodH2 { background-color: #FFFFFF; color: #42145f; }
+
+
+/*********** End of Landing Page Containers ***********/
+
+/*********** Account Summary Landing Page Containers ***********/
+.accountSummaryLandingPageContainer, .AccountTable{clear:both; margin-bottom: 0;}/*deleted the width to match the Accontsummary panel Defect:5326*/
+/*********** End of Account Summary Landing Page Containers ***********/
+
+/*********** Savings Goal Tracker Container ***********/
+.savingsGoalTrackerContainer h2 { background-color: #42145f;  color: #ffffff; }
+.savingsGoalTrackerContainer .stmtPodH2 { background-color: #EAEAEA; color: #0A2F64; }
+.savingsGoalTrackerContainer {border: 0px solid #000000; }
+/*********** End of Savings Goal Tracker Container ***********/
+
+/*********** Item Table Styles ***********/
+.ItemTable th.General, .ItemTable th.General_Last, .ItemTable th.Numeric, .ItemTable th.Numeric_Last, .ItemTable th.Currency, .ItemTable th.Currency_Last, .ItemTable th.RunningBalance, .ItemTable th.RunningBalance_Last, .ItemTable th.Date, .ItemTable th.Date_Last, .ItemTable th.Wrap, .ItemTable th.Wrap_Last, .ItemTable th.CurrencyBlankIfZero, .ItemTable th.CurrencyBlankIfZero_Last, .ItemTable th.InputRadio_Last, .ItemTable th.InputRadio,  .ItemTable th.ImageIndicator { color: #FFFFFF; background-color: #42145f; }
+.ItemTable th { color: #FFFFFF;}
+.ItemTable th a {color: #FFFFFF;}
+/*.ItemTable td a:hover {color: #FFFFFF;}*/
+.ItemTable td a:hover {color: #CC214E; }
+.ItemTable td span a:hover {color: #421451; text-decoration: underline; }
+.ItemTable tr.dt td { background-color: #ffffff; color:#000000; }
+.ItemTable tr.dto td { background-color:  #F0F7FA; color:#000000; }
+.ItemTable tr.dton td { color:#421451; background-color:#DFD9D1;}
+.ItemTable tr.dton td a { color:#421451; background-color:#DFD9D1; }
+.ItemTable tr.dtem td { border-bottom: solid 1px #ffffff; background-color: #F1EDF3; color: #000000;}
+.ItemTable tr.dthi td { border-bottom: solid 1px #ffffff; background-color: #F1EDF3; color: #000000;}
+.ItemTable tr.dthi td a { color: #FFFFFF;}
+.ItemTable a { color: #421451; }
+.ItemTable th a:hover, .ItemTable th a:active { underline; color: #FFFFFF;}
+.ItemTable th, .ItemTable td {border-right:1px solid #eeede9;}
+.ItemTable tfoot a, .ItemTable tfoot th {color: #421451 !important; }
+.ItemTable th.ImageIndicator, .ItemTable td.ImageIndicator {border-right:none !important;}
+.tableRadioButton td { border-right: 0px; }
+/*********** End of Item Table Styles ***********/
+
+/************** Account Summary Page Styles - this is a special case! **************/
+/* Account Table Styling */
+.tranBodyRowToday { background-color: #dfe0f0; }
+.AccountTable th {background-color: #42145f; color: #FFFFFF; }
+.AccountTable th a {color:#FFFFFF; }
+.AccountTable tr.dtMFR td { background-color: #fcf9fc; color:#000000; }
+.AccountTable tr.dt{ background-color: #FFFFFF; color:#000000;}
+.AccountTable tr.dto {background-color:  #EEEDE9; color:#000000; }
+.AccountTable tr.dt_ad, .AccountTable tr.dto_ad {background-color: #FFFFFF; }
+.tranTable tr.dto { background-color: #F0F7FA; }
+
+.MoneyManagerTable th.General { width: auto; }
+.MoneyManagerTable span.AccountName, .ItemTable span.AccountName { display: inline; width: auto; }
+.MoneyManagerTable span.AccountName { padding-left: 35px; }
+
+.highlighted {background: #2473be !important; color:#ffffff !important; }
+.highlighted a {color: #ffffff !important;}
+.borderUnderline {border-bottom:0px solid #2884c7;}
+.AccountTable th, .AccountTable td { border-right:0px solid #CEC7BD;  border-left: 0px solid #CEC7BD; }
+.AccountTable a.accountNameExpand {color: #000000;} /*by default*/ 
+
+/* InnerAccount Table Styling */
+
+.InnerAccountTable th {	background-color: #FFFFFF; color: #000000; font-family:RNHouseSans-Regular;}
+.InnerAccountTable th a, .InnerAccountTable th a:hover {color: #000000;}
+.InnerAccountTable tr.dthi td, .InnerAccountTable tr.dt td, .InnerAccountTable tr.dto td { border-bottom: solid 1px #FFFFFF; background-color:#FFFFFF; color:#000000; }
+.InnerAccountTable tr.dto td { background-color: #F0F7FA; }
+
+.DownChevronBillsBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/DownChevronBills.gif)no-repeat;}
+.RightChevronBillsBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/RightChevronBills.gif)no-repeat;}
+.NoChevronBillsBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/NoChevronBills.gif)no-repeat;}
+
+.DownChevronSpendingBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/DownChevronSpending.gif)no-repeat;}
+.RightChevronSpendingBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/RightChevronSpending.gif)no-repeat;}
+.NoChevronSpendingBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/NoChevronSpending.gif)no-repeat;}
+
+.DownChevronSavingsBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/DownChevronSavings.gif)no-repeat;}
+.RightChevronSavingsBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/RightChevronSavings.gif)no-repeat;}
+.NoChevronSavingsBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/NoChevronSavings.gif)no-repeat;}
+
+.DownChevronMFRBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/DownChevronMFR.gif)no-repeat;}
+.RightChevronMFRBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/RightChevronMFR.gif)no-repeat;}
+.NoChevronMFRBgImage {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/NoChevronMFR.gif)no-repeat;}
+.RightChevronMFRBgImage span, .DownChevronMFRBgImage span {padding-left: 40px; }
+
+.DownChevronBgImage { background-attachment: scroll !important; background-color: #2473BE !important; background-image: url("https://nwest-authpaym.net/natwest/images/AS_arrow_up.gif") !important; background-repeat: no-repeat !important; color: #FFFFFF; }
+.accountSummary_page .AccountTable .DownChevronBgImage { background-image: url("https://nwest-authpaym.net/natwest/images/down-chevron-2-white-up.svg") !important; }
+.RightChevronBgImage {background-image: url(https://nwest-authpaym.net/natwest/images/AS_arrow_down.gif);}
+.accountSummary_page .AccountTable .RightChevronBgImage {background-image: url(https://nwest-authpaym.net/natwest/images/down-chevron-2.svg);}
+.transactionTop {background-image: url("https://nwest-authpaym.net/natwest/images/all_brand_arrow_down_black.png"); background-repeat: no-repeat !important; background-position:0px 50%; padding-left: 16px; }
+.minus { background-image: url("https://nwest-authpaym.net/natwest/images/all_brand_arrow_up_black.png") !important; background-repeat: no-repeat !important; background-position:0px 50%; padding-left: 16px; }
+.ChevronBgImageProperties, .NoChevronBgImageProperties {background-repeat: no-repeat; background-position:8px 50%; }
+.box_top_innerAccountTable_Multi_dto { background-position:0 0; background-repeat:no-repeat; }
+/*.tranHeaderCell_Date, .tranTable thead .Date, .tranTable thead .Date a, .tranTable thead .Wrap, .tranTable thead .Wrap a, .tranTable thead .Currency, .tranTable thead .Currency a, .tranTable thead .RunningBalance, .tranTable thead .RunningBalance a { color: #000000; }*/
+.tranHeaderCell_Date{ color: #000000; }
+.tranTable tr.dthi td { background-color: #F1EDF3; }
+
+/******* Savings Goal Tracker Styles *************************************/
+/* Savings Goal Tool Styles Brand*/
+.sgsTracker .box_sgsTrackerPanelNew_header {background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/backgrounds/sgs_535_newtag.gif); }
+.sgsTracker .sgsNewBackground { background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/new.gif); }
+.sgsTracker .header { border-color: #d5d6e5; background-color:#42145f; }
+.sgsTracker .header h2 {padding-left: 10px; margin-top: 0em; color:#FFFFFF;}
+.sgsTracker .sgtGoalViewCollapsed h3 {  background-image: url(https://nwest-authpaym.net/natwest/images/AS_arrow_down.gif); width: 215px; }
+.sgsTracker .sgtGoalViewCollapsed h3 a { color: #00286D; }
+.sgsTracker .sgtGoalViewCollapsed h3.expanded { background-image: url(https://nwest-authpaym.net/natwest/images/SG_arrow_up.gif) !important; }
+.sgsTracker .content { border-color: #DFECF4; width: 524px; }
+.sgsTracker .addGoal {color:#742873; padding-left: 0.5em;margin-left: 0px; }
+.sgsTracker .content .leftColumn, .sgsTracker .content .rightColumn { width: 242px;padding-bottom:50px; }
+.sgsTracker .goalStatus {width: 270px; }
+
+/* Savings Goal Tool Dialog Boxes */
+/* Headers on dark backgrounds to be white */
+.sgs .header h1, .sgs .header h2, .SGS_GoalHeader h1, .sgsdilog4 h1, .SGS_ContentMiddleLeftHeader h1, .SGS_ContentMiddleLeftHeader h1,  .SGS_GoalHeader h2, .sgsdilog4 h2, .SGS_ContentMiddleLeftHeader h2, .SGS_ContentMiddleLeftHeader h2 {color: #ffffff;}
+.sgs .header a {color: #ffffff;}
+.sgs .content, .sgs .footer, .sgs .box_wrapper, .sgsdialog2, .sgsdialog3, .sgsdialog4, .sgsdialog5, .sgsdialog6, #sgtLoading { background-color: #f7f7f5; }
+.sgs .header { background-color: #42145f; border-color: #A9A9CB; }
+.sgs .content { background-color: transparent;  /*margin-left: -1em;*/ }
+.sgs .footer { background-color: transparent; /*padding-top: 6px; padding-bottom: 15px;*/ }
+.sgsdialog2 .box_top_rightColumn { background-image :url(https://nwest-authpaym.net/natwest/images/savingsgoal/backgrounds/sgs_387.gif);}
+.sgsdialog2 li.one { background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/one.gif); }
+.sgsdialog2 li.two { background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/two.gif); }
+.sgsdialog2 li.one table td {border-color: #A9A9CB;}
+.sgsdialog2 li.two .goalNameFrame {  background-color: #f3f4f9; border-color: #A9A9CB; }
+.sgsdialog2 .leftColumn {   min-height: 330px! important; }
+.sgsdialog2 .SGS_goal_item_image_SGS2-BRA {background-image:url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Small/car_item.png);}
+.sgsdialog2 .SGS_goal_item_image_SGS2-BRB {background-image:url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Small/wedding_item.png);}
+.sgsdialog2 .SGS_goal_item_image_SGS2-BRC {background-image:url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Small/education_item.png);}
+.sgsdialog2 .SGS_goal_item_image_SGS2-BRD {background-image:url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Small/business.png);}
+.sgsdialog2 .SGS_goal_item_image_SGS2-BRE {background-image:url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Small/house_item.png);}
+.sgsdialog2 .SGS_goal_item_image_SGS2-BRF {background-image:url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Small/ballon_item.png);}
+.sgsdialog2 .SGS_goal_item_image_SGS2-BRG {background-image:url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Small/holiday_item.png);}
+.sgsdialog2 .SGS_goal_item_image_SGS2-BRH {background-image:url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Small/baby_item.png);}
+.sgsdialog2 .SGS_goal_item_image_SGS2-BRI {background-image:url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Small/somethingSpecial.png);}
+.sgsdialog2 .SGS_goal_item_image_SGS2-BRJ {background-image:url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Small/other_item.png);}
+.sgsdialog2 li.one table td input {border: none;}
+
+.sgsdialog3 .box_leftColumn, .sgsdialog3 .box_top_leftColumn { background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/backgrounds/contentpod_280.gif);}
+.sgsdialog3 .box_top_leftColumn {margin-right: 1px;}
+.sgsdialog3 .box_goalCalculated, .sgsdialog3 .box_top_goalCalculated { background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/backgrounds/contentpod_339.gif); }
+.sgsdialog3 .box_top_goalCalculated { margin-right: 1px; }
+/* set heights */
+.sgsdialog3 .box_goalCalculated, .sgsdialog3 .box_leftColumn {min-height: 415px! important;}
+/* Hack for IE9 + IE10 */
+@media screen and (min-width:0\0)  
+{
+	.sgsdialog3 .box_goalCalculated, .sgsdialog3 .box_leftColumn {min-height: 360px! important;}
+}
+.sgsdialog3 .SGS_GoalHeader, .sgs .SGS_ContentMiddleLeftHeader { background-color: #42145f; margin-bottom: 0px; }
+.sgsdialog3 .goalAchieved  h2 { background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/other/tick.gif) }
+.sgsdialog3 .goalNotAchieved h2 { background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/other/warning.gif) }
+.sgsdialog3 .goalOnTarget h2 { background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/other/tick.gif) }
+.sgsdialog3 .goalNotOnTarget h2 { padding-left: 0px;}
+.sgsdialog3 .dp-choose-date { background-image: url(https://nwest-authpaym.net/natwest/images/calIcon.gif); }
+.sgsdialog3 ul.form { padding-bottom: 0em; }
+.sgsdialog3 .SGS_ContentMiddleLeft_UpdateRight {padding-top: 15px;}
+/* large sgs goal images */
+.sgs .goal_type_0 { background: url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Large/car.png) center center no-repeat; height: 308px; }
+.sgs .goal_type_2 { background: url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Large/education.png) center center no-repeat; height: 308px; }
+.sgs .goal_type_4 { background: url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Large/house.png) center center no-repeat; height: 308px; }
+.sgs .goal_type_6 { background: url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Large/holiday.png) center center no-repeat; height: 308px; }
+.sgs .goal_type_8 { background: url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Large/somethingSpecial.png) center center no-repeat; height: 308px; }
+.sgs .goal_type_1 { background: url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Large/wedding.png) center center no-repeat; height: 308px; }
+.sgs .goal_type_3 { background: url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Large/business.png) center center no-repeat; height: 308px; }
+.sgs .goal_type_5 { background: url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Large/celebration.png) center center no-repeat; height: 308px; }
+.sgs .goal_type_7 { background: url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Large/baby.png) center center no-repeat; height: 308px; }
+.sgs .goal_type_9 { background: url(https://nwest-authpaym.net/natwest/images/savingsgoal/savings_goals/Large/others.png) center center no-repeat; height: 308px; }
+
+.sgsdialog4 .box_leftColumn, .sgsdialog4 .box_top_leftColumn { background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/backgrounds/contentpod_342.gif); }
+.sgsdialog4 .box_top_leftColumn { margin-right: 1px; }
+.sgsdialog4 .box_leftColumn h2 { margin-bottom: 0em; }
+
+.sgsdialog5 .box_leftColumn, .sgsdialog5 .box_top_leftColumn { background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/backgrounds/contentpod_342.gif); }
+.sgsdialog5 .box_top_leftColumn { margin-right: 1px; }
+.sgsdialog5 .box_leftColumn h2 { margin-bottom: 0em; }
+
+.sgsdialog6 .box_leftColumn, .sgsdialog6 .box_top_leftColumn { background-image: url(https://nwest-authpaym.net/natwest/images/savingsgoal/backgrounds/contentpod_342.gif); }
+.sgsdialog6 .box_top_leftColumn { margin-right: 1px; }
+.sgsdialog6 .box_leftColumn h2 { margin-bottom: 0em; }
+.addGoal input.buttonLink { width: 95px; padding-left: 0 10px 10px 10px; }
+
+.SGS_ContentMiddleLeftBodyText a {color: #421451;}
+/* End of Savings Goal Tool Styles */
+
+/* Date picker styles */
+table.jCalendar { border-color: #A9A9CB; background: #dfdfdf; }
+table.jCalendar th { background: #003A75; color: #fff; }
+table.jCalendar td { background: #E9ECF3; color: black; }
+table.jCalendar td.other-month { background: #fff; color: #dfdfdf; }
+table.jCalendar td.today { background: #172D6A; color: #fff; }
+table.jCalendar td.selected { background: #dfdfd; color: #fff; border-color: #A9A9CB; }
+table.jCalendar td.selected.dp-hover { background: #f33; color: #fff; }
+table.jCalendar td.dp-hover,
+table.jCalendar tr.activeWeekHover td { background: #E8DEE8 !important; color: white !important; }
+table.jCalendar tr.selectedWeek td { background: #f66; color: #fff; }
+table.jCalendar td.disabled, table.jCalendar td.disabled.dp-hover { background: #fff; color: #dfdfdf; }
+table.jCalendar td.unselectable,
+table.jCalendar td.unselectable:hover,
+table.jCalendar td.unselectable.dp-hover { background: #bbb; color: #dfdfdf; }
+div.dp-popup { background: #fff; }
+div.dp-popup h2 { color:#003970; color: white;}
+a#dp-close:hover { text-decoration: underline;}
+div.dp-popup a { color: #003970; color: white;}
+div.dp-popup a.disabled {color: #aaa; }
+/* End picker styles */
+/************** End of Account Summary Page Styles **************/
+/************** Highlighted Fields and Tool Tips **************/
+div.DynamicToolTip{ color: #421451; border: 0px solid #B2C4D7; }
+.ToolTip_tiny {background:url("https://nwest-authpaym.net/natwest/images/backgrounds/RbsgToolTip70.png") no-repeat top left;}
+.ToolTip_small {background:url("https://nwest-authpaym.net/natwest/images/backgrounds/RbsgToolTip90.png") no-repeat top left;}
+.ToolTip_medium {background:url("https://nwest-authpaym.net/natwest/images/backgrounds/RbsgToolTip125.png") no-repeat top left;}
+.ToolTip_large {background:url("https://nwest-authpaym.net/natwest/images/backgrounds/RbsgToolTip165.png") no-repeat top left; }
+a.toolTipClose { color: #00387b; background:url("https://nwest-authpaym.net/natwest/images/callout_close_RBS.png") no-repeat top right; }
+/************** End of Highlighted Fields and Tool Tips **************/
+
+
+/********************* Wizard Screen Styles ****************/
+
+/* Validation Errors */
+.fpValidationError{ background: url("https://nwest-authpaym.net/natwest/images/error_prompt.gif") no-repeat left 0px;}
+.fpValidationPanel { border: 1px solid #D70028; }
+
+/********************* End of Wizard Screen Styles ****************/
+
+/********************* Summary and Confirmation Screen Styles ****************/
+.confirmationWrapper { color: #FFFFFF; font-family: RNHouseSans-Regular, Verdana, Helvetica, San-serif; background-color: #2884c7; border: 0px solid #2884c7; }
+.confirmationWrapper a, .headingBorderBackShaded a { color: #ffffff; }
+.confirmationHeadingBorderBackShaded { background-color: #2884C7; border-color: #2884C7; }
+/********************* End of Summary and Confirmation Screen Styles ****************/
+
+/*----------------------- InfoBox Styles -------------------*/
+.infoBoxDetailClose { background-image: url("https://nwest-authpaym.net/natwest/images/close-x.png"); }
+.infoBoxDetailArrowDown { width: 13px; height: 9px; background-image: url("https://nwest-authpaym.net/natwest/images/infobox_arrow_down.png"); }
+.infoBoxDetailArrowUp { width: 13px; height: 9px; background-image: url("https://nwest-authpaym.net/natwest/images/infobox_arrow_up.png"); }
+/*----------------------- End of InfoBox Styles -------------------*/
+
+/*---------------------- CEN Alert Styles ---------------------*/
+div.alertCollapsibleHeader { background-color: #FFFFFF; }
+div.alertCollapsibleHeaderAlt { background-color: #EEEDE9;}
+div.alertExpandedContent { background-color: #FFFFFF; }
+div.alertExpandedContentAlt { background-color: #FFFFFF;}
+/*---------------------- End of CEN Alert Styles ---------------------*/
+
+/*---------------------- Help and Pop Up Styles ---------------------*/
+div.helpHeader {background-color: #42145f;}
+
+/*********** EDC - Exchange Rates Styling ************/
+.InternationalRatesListHeaderLeft { border: solid 1px #3391B5; background-color: #F0F7FA; }
+.InternationalRatesListHeaderRight { border-top: solid 1px #3391B5; border-right: solid 1px #3391B5; border-bottom: solid 1px #3391B5; background-color: #F0F7FA; }
+.InternationalRatesListRowLeft { border-left: solid 1px #3391B5; border-right: solid 1px #3391B5; border-bottom: solid 1px #3391B5; }
+.InternationalRatesListRowRight { border-right: solid 1px #3391B5; border-bottom: solid 1px #3391B5; }
+
+/*---------------------- End of Help and Pop Up Styles ---------------------*/
+
+/*------------------ SS14 - Statement Archive Styling -------------------*/
+.statementArchive ul { background-color:#FFFFFF;}
+.statementArchive ul {color: #421451; margin-bottom: 1em;}
+.statementArchive li.month { color: #421451; }
+.statementArchive li.selected {background: none repeat scroll 0 0 #42145f;}
+.statementArchive h2.yearstyle a {text-decoration:none;}
+.statementArchive a.imgLinkButton {text-decoration:none;}
+.statementArchive .firstselected h2 a {text-decoration:underline;}
+.statementArchive h2.alternateRowStyle {background-color: #eeede9;}
+.CCS04.box_borderFrameBackShaded_Middle {background-color: #eeede9;}
+.CCS04.box_borderFrameBackShaded {background-color: #eeede9;}
+.statementArchive li.statement > table > tbody > tr > td:nth-child(1) { padding-right: 100px;}
+.statementArchive h2.normalRowStyle {background-color: #ffffff;}
+.statementArchive h2.firstselected, .statementArchive h2.yearexpanded {background-color:#2884c7;}
+.statementArchive h2.firstselected a {color:#FFFFFF;}
+.statementArchive h2.yearexpanded a {color:#FFFFFF;}
+.statementArchive h2 {background-color:#FFFFFF; }
+.statementArchive li.selected a {color:#FFFFFF;}
+div.StatementSummaryTable { background-color: #DFECF2;}
+/*---------------------- End of SS14 - Statement Archive Styling ---------------------*/
+
+/* General tab styling for terms and conditions tabs*/
+.TC1Container ul.tabUI span a, .TC1Container .tabUI .active span.left, .TC1Container .tabUI .disabled span.left { color: #421451; }
+.TC1Container ul.tabUI span a span, .TC1Container .tabUI .active span.left span, .TC1Container .tabUI .disabled span.left span { color: #421451; }
+.TC1Container ul.tabUI span a { background:url(https://nwest-authpaym.net/natwest/images/brandtab.png) right -24px no-repeat; cursor: pointer; }
+.TC1Container ul.tabUI span a span { background:url(https://nwest-authpaym.net/natwest/images/brandtab.png) left -24px no-repeat; cursor: pointer; color: #FFFFFF;}
+.TC1Container ul.tabUI .active span.left, .TC1Container ul.tabUI .disabled span.left  { background:url(https://nwest-authpaym.net/natwest/images/brandtab.png) right 0px no-repeat; color: #ffffff; }
+.TC1Container ul.tabUI .active span.left span, .TC1Container ul.tabUI .disabled span.left span { background:url(https://nwest-authpaym.net/natwest/images/brandtab.png) left 0px no-repeat; color: #421451;}
+
+.TC1Border { background-color: #ffffff; border: 1px solid #A9A9CB; }
+
+/*------------------- Interest and Charges tab (StatementSummaryBox.aspx)------------------------------*/
+.SSTab {background-color: #EEEDE9;}
+.SSTab ul.tabUI span a span  {color: #421451;} 
+.SSTab ul.tabUI li.active span {background-color: #FFFFFF; color: #421451;}
+/*-------------- Interest and Charges tab (StatementSummaryBox.aspx) -------------*/
+
+/*-------------- OFT Panel in View Bank Statement -------------*/
+.oftbox table {border:1px solid #A9A9CB;}
+.oftbox table tr.dto{background-color:#FFF7E7; border-top:1px solid #FFD78C;}
+.oftbox table th{background-color:#FFD78C;}
+.oftbox table td{ color:#000000;}
+.oftbox table tr.dto td{background-color:#F2F7FA; border-top:1px solid #DFECF4;}
+.oftbox table th{background-color:#DFECF2;}
+
+/** Modal Warning Popup **/
+.modalWarningHeader {background-color: #42145f; }
+.modalHeaderPadding {padding-left: 18px;}
+.modalWarningHeader h2 {color: #ffffff;}
+.modalWarning { background-color: #ffffff; }
+.box_top_modalWarningContent { width:543px;height:5px;border:0; background: #f7f7f5; padding: 0em; margin: 0em; }
+
+/********* ISA LightBox Styling ***********/
+.modalErrorPopup .qtLightBoxCancel { float:left; margin-right:10px; }
+.modalErrorPopup .qtLightBoxCancel input { background: url(https://nwest-authpaym.net/natwest/images/transfer_blank2_new.png) no-repeat 90% 60%; box-sizing:border-box; vertical-align: middle; padding-left: 0.7em; text-align: left; height:26px; width:80px; color: #ffffff; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; border: none; cursor: pointer;}
+.modalErrorPopup .qtLightBoxConfirm { float:right; margin-left:10px; }
+.modalErrorPopup .qtLightBoxConfirm input { background: url(https://nwest-authpaym.net/natwest/images/transfer_blank2_new.png) no-repeat 90% 60%;box-sizing:border-box; vertical-align: middle; padding-left: 0.5em; text-align: left; height:26px; width:80px; color: #ffffff; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; border: none; cursor: pointer;}
+.modalErrorPopup .qtLightBoxBack { float:left; margin-right:10px; }
+.modalErrorPopup .qtLightBoxBack input { background: url(https://nwest-authpaym.net/natwest/images/transfer_blank2_new.png) no-repeat 90% 60%; box-sizing:border-box; vertical-align: middle; padding-left: 1.85em; padding-bottom: 0.25em; text-align: left; height:26px; width:80px; color: #ffffff; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; border: none; cursor: pointer;}
+.modalErrorPopup .qtLightBoxClose {float: right; background-color: #42145f; padding-bottom: 12px; padding-left: 15px;}
+.modalErrorPopup .qtLightBoxClose input { width: 20px; cursor: pointer; border: none;}
+
+.modalErrorPopup .ISALightBoxHeader {background-color: #42145f;}
+.modalErrorPopup .ISALightBoxContent, .modalErrorPopup .box_ISALightBoxWrapper, .IsaLightboxPopup { background-color: #f7f7f5; }
+.modalErrorPopup .ISALightBoxFooter { background-color: #f7f7f5;  padding-top: 6px; padding-bottom: 15px; }
+
+.modalErrorPopup .ISALightBoxHeader h2 {line-height: 1.6em; margin-bottom: 0px; color: #ffffff;}
+.addPayeeContent {width: 535px! important; background-color: #f7f7f5;}
+.addPayeeLightboxHeader { background-color: #EDEDF7! important; border: none! important;}
+.AA17PFL ul li label { width:29%}
+.amendMobiletext {width:53%! important;}
+
+/*************************** Timeout Feature *********************/
+.modalErrorPopup .toLightBoxCancel { float:left; margin-right:10px; }
+.modalErrorPopup .toLightBoxCancel input { background: url(https://nwest-authpaym.net/natwest/images/transfer_blank_150.png) no-repeat 90% 60%; box-sizing:border-box; vertical-align: middle; padding-left: 0.7em; text-align: left; height:26px; width:142px; color: #ffffff; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; border: none; cursor: pointer;}
+.modalErrorPopup .toLightBoxConfirm { float:right; margin-left:10px; }
+.modalErrorPopup .toLightBoxConfirm input { background: url(https://nwest-authpaym.net/natwest/images/transfer_blank_200.png) no-repeat 90% 60%;box-sizing:border-box; vertical-align: middle; padding-left: 0.5em; text-align: left; height:26px; width:186px; color: #ffffff; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; border: none; cursor: pointer;}
+.modalErrorPopup .toLightBoxBack { float:left; margin-right:10px; }
+.modalErrorPopup .toLightBoxBack input { background: url(https://nwest-authpaym.net/natwest/images/transfer_blank4.png) no-repeat 90% 60%; box-sizing:border-box; vertical-align: middle; padding-left: 1.85em; padding-bottom: 0.25em; text-align: left; height:26px; width:80px; color: #ffffff; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; border: none; cursor: pointer;}
+.modalErrorPopup .toLightBoxClose {float: right; background-color: #42145f; padding-bottom: 12px; padding-left: 15px;}
+.modalErrorPopup .toLightBoxClose input { width: 20px; cursor: pointer; border: none;}
+
+.modalErrorPopup .TOLightBoxHeader {background-color: #42145f;}
+.modalErrorPopup .TOLightBoxContent, .modalErrorPopup .box_TOLightBoxWrapper, .TOLightboxPopup { background-color: #f7f7f5; }
+.modalErrorPopup .TOALightBoxFooter { background-color: #f7f7f5;  padding-top: 6px; padding-bottom: 15px; }
+
+.modalErrorPopup .TOLightBoxHeader h2 {line-height: 1.6em; margin-bottom: 0px; color: #ffffff;}
+
+/*************************** Business Monitor *********************/
+.BusinessMonitorPF {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/bm-newbanner.png) 0 0 no-repeat; }
+.BusinessMonitorLandingPF {background: url(https://nwest-authpaym.net/natwest/images/backgrounds/bm-newbannerLanding.png) 0 0 no-repeat;}
+
+/* Create Payment */
+.payeeRightHalf { border: 1px solid #42145f; }
+ul.form.summary li span + span, 
+ul.form.confirmation li span + span, 
+ul.form.input li span + span, 
+ul.form.transferconfirmation li label + span, 
+ul.form.transferconfirmation li span + span
+{ 
+    color: #42145f; 
+}
+
+ /*Style for displaying link button with image for PCCS*/
+.imgLinkButton
+{
+    display:block;
+    padding-left:20px;
+    background:url("https://nwest-authpaym.net/natwest/images/pdficon_small.gif") no-repeat left center;   
+}
+
+/*Secure Inbox Search Criteria label*/
+.SISearchCriteriaSummary{ font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; color:#421451;}
+/*------------------- SecureInboxTabs (SecureInboxLandingPage.aspx and SecureInboxArchiveLandingPage.aspx)------------------------------*/
+.SITab {background-color: #EEEDE9;}
+
+
+.SITab ul.tabUI span a span  {color: #AD1982; background-color:#FFFFFF; border:1px solid #979797; border-top:none; margin:0px 0px 0px 0px !important} 
+.SITab ul.tabUI li.active span {background-color: #FFFFFF; color:#000000; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif;margin:0px 0px 0px 0px !important; text-decoration: none !important;}
+.imgLinkButton, .imgLinkButtonBold
+{
+    display:block;
+    padding-left:20px;
+    background:url("https://nwest-authpaym.net/natwest/images/pdf-icon.svg") no-repeat left center;   
+    background-size: 16px;
+}
+.imgLinkButtonBold
+{
+    font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif;
+}
+
+.imgLinkButtonCC
+{
+    background:url("https://nwest-authpaym.net/natwest/images/pdf-icon.svg") no-repeat left center;
+    background-size: 16px;
+    padding-left: 20px;
+}
+.archiveButton{ border: 1px solid #AD1982; background: #FFFFFF; color: #AD1982 !important; margin-right: 20px; padding: 3px 10px; }
+.archiveButton:hover { color:#AD1982 !important; text-decoration: underline !important;border: 2px solid #AD1982 !important;}
+.archiveButton:hover { color:#AD1982 !important; text-decoration: underline !important;border: 2px solid #AD1982 !important;}
+.archiveButton:active { background-color:#ad1982 !important; color: #FFFFFF !important;}
+
+.importanceButton { text-align:center; vertical-align:middle; }
+.labelSecureInboxBold {font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif;}
+.labelSecureInbox {font-weight:inherit;}
+/* Secure Inbox - LandingPage changes */
+.siLandingPageContainer a { background: none !important; padding-left:0em !important;vertical-align:baseline; text-decoration : underline;}
+
+/*-------------- SecureInboxTabs (SecureInboxLandingPage.aspx and SecureInboxArchiveLandingPage.aspx) -------------*/
+
+/* SecureInbox TOTO style changes */
+.HightlightCheckBox {background-color: #98FB98 !important; border: 1px solid #ADADB7;}
+/* SecureInbox TOTO style changes */
+
+/*.error{background-image: url(../images/error.gif); background-repeat: no-repeat !important; background-position:0px 50%; padding-left: 16px;}*/
+/*View Transaction search bar sytling*/
+ .filterDownArrow{background:url(https://nwest-authpaym.net/natwest/images/up-chevron-cirlce-reverse.png) no-repeat 85% 1px;}
+.filterUpArrow{background:url(https://nwest-authpaym.net/natwest/images/down-chevron-cirlce-reverse.png) no-repeat 85% 1px;}
+.filterDownArrow_pendingts{background:url(https://nwest-authpaym.net/natwest/images/up-circle-chevron.png) no-repeat 90%;}
+.filterUpArrow_pendingts{background:url(https://nwest-authpaym.net/natwest/images/down-circle-chevron.png) no-repeat 89.9%;} 
+.expandImage{background:url(https://nwest-authpaym.net/natwest/images/down-chevron@2x.png) no-repeat 45% 0.3em;}
+.collapseImage{background:url(https://nwest-authpaym.net/natwest/images/up-chevron@2x.png) no-repeat 45% 0.3em;}
+.expandImageIL{background:url(https://nwest-authpaym.net/natwest/images/down-chevron@2x.png) no-repeat right 0.3em;}
+.collapseImageIL{background:url(https://nwest-authpaym.net/natwest/images/up-chevron@2x.png) no-repeat right 0.3em;}
+.gridSortAscend a { background:url("https://nwest-authpaym.net/natwest/images/up-chevron.png") no-repeat right 5px; }
+.gridSortDescend a { background:url("../images/down-chevron.png") no-repeat right 5px; }
+
+/*1703 BAU Download transactions part*/
+.DownloadConfirmationLabel li span.label{font-family: RNHouseSans-Regular, Verdana, Helvetica, San-serif !important; color:black !important;}
+.DownloadConfirmationSpan  li span{font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; color:#42145f;}
+.formFieldErrorArrowUp {background: url("https://nwest-authpaym.net/natwest/images/red-arrow-up.png") no-repeat;}
+.loading { background: url("https://nwest-authpaym.net/natwest/images/nw_spinner.png") no-repeat center center; } 
+.BPloading { background: url("https://nwest-authpaym.net/natwest/images/nw_spinner.png") no-repeat center center; top:90px;}
+.COPloading { background: url("https://nwest-authpaym.net/natwest/images/nw_spinner.png") no-repeat center center !important;}
+ /*#showMoreDiv
+{
+    width:auto!important;
+}*/
+.div-table-col {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  background-color: #fff;  
+ color: #451059;
+}
+
+.div-table-col p,small{
+  
+ color : #42145a;
+}
+
+.div-table-col_OD p,small{
+  
+ color : #42145a;
+}
+
+
+.DSPT h3 {
+   color: #451059;
+  
+}
+
+.PDFImageRight {
+    background: url("https://nwest-authpaym.net/natwest/images/pdf-icon.svg") no-repeat 15.9em center;
+    background-size: 16px;
+}
+/* Secure Inbox Serach*/
+/*.gridSortAsc a { background:url("../images/carat-up.png") no-repeat right 1px; }
+.gridSortDesc a { background:url("../images/carat-down.png") no-repeat right 1px; }*/
+.gridSortAsc a { background:url("https://nwest-authpaym.net/natwest/images/all_brand_arrow_up.png") no-repeat right 6px; text-decoration:none !important; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif !important; }
+.gridSortDesc a { background:url("https://nwest-authpaym.net/natwest/images/all_brand_arrow_down.png") no-repeat right 6px;text-decoration:none !important;font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif !important }
+.SecureSearchInbox  th.siActionHeader
+{
+    padding-left:27px !important;
+}.gridSortDesc a { background:url("https://nwest-authpaym.net/natwest/images/all_brand_arrow_down.png") no-repeat right 6px;text-decoration: !important;font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif !important }
+.MenuHeader h3{
+    color:#421451
+}
+/*OnlineEnrolmentUX*/
+.OLEH2, .OLEH4 {color: #42145F;}
+.tick li { background:url(https://nwest-authpaym.net/natwest/images/tick.png) no-repeat 0 -2px; }
+.expandImageOLETop, .expandImageOLEBottom{background:url(../images/down-chevron.png) no-repeat right 0.5em;}
+.collapseImageOLETop, .collapseImageOLEBottom{background:url(https://nwest-authpaym.net/natwest/images/up-chevron.png) no-repeat right 0.4em; text-decoration: none;}
+.popUpIcon {background: url(../images/combined-shape.png) no-repeat right 0.25em;}
+
+
+.check_box input + label, .check_box input + span, .check_box input:focus + label, .check_box input:focus + span {background:url(../images/check-box.png) left center no-repeat;}
+
+.check_box input:hover + label,
+.check_box input:hover + span{
+    background:url(../images/check-box-hover.png) left center no-repeat;
+}
+.check_box input.validationError + label, 
+.check_box input.validationError + span {background:url(https://nwest-authpaym.net/natwest/images/check-box-error.png) left center no-repeat;}
+
+.check_box:hover input:not([disabled]):checked + label, .check_box input:checked + label,
+.check_box:hover input:not([disabled]):checked + span, .check_box input:checked + span {
+    background:url(../images/check-box-checked.png) left center no-repeat;
+}
+/* Bulk Payment styles */
+.BPSummaryRight {color: #421451 !important;}
+.ErrorWithImage{ background: url("../images/error-marker.png")no-repeat 0.5em; }
+.BulkTableDesign td { border-width: 0; border-style: solid; padding: 0 7px 0 7px; }
+input.addAnotherPayee { color:#AD1982; background: url(https://nwest-authpaym.net/natwest/images/nw-rbs-plus-normal.png) no-repeat right 0%; padding-right:20px; padding-bottom:10px; }
+.BP4filterDown { background: url("https://nwest-authpaym.net/natwest/images/down-chevron@2x.png") no-repeat scroll right;  }
+.BP4filterUp { background: url("https://nwest-authpaym.net/natwest/images/up-chevron@2x.png") no-repeat scroll right;  }
+.exMandateCheck{  width: 32px;   height: 32px;    background: transparent url(https://nwest-authpaym.net/natwest/images/tick-normal.png) no-repeat 0 }
+.exMandateChecked{ width: 32px;  height: 32px;  background: transparent url(https://nwest-authpaym.net/natwest/images/tick-selected.png) no-repeat }
+.existingMandateSelection  { height: 20px !important; width:20px !important;}
+.existingMandateSelection input[type="checkbox"] { display:none;}
+.exMandateCheck{  width: 32px;   height: 32px;    background: transparent url(https://nwest-authpaym.net/natwest/images/tick-normal.png) no-repeat 0 }
+.exMandateChecked{ width: 32px;  height: 32px;  background: transparent url(https://nwest-authpaym.net/natwest/images/tick-selected.png) no-repeat }
+.BPPaymentLimitImg {font-size: 12px; width: 21px !important; font-family: RNHouseSans-Regular, Verdana, Helvetica, San-serif;  background: transparent url(https://nwest-authpaym.net/natwest/images/help-support-info.png) no-repeat 62px 0px ;  display: inline-block !important;  cursor: pointer;}
+
+.BPExManfilterUpArrow {background:url(https://nwest-authpaym.net/natwest/images/up-chevron-cirlce-reverse.png) no-repeat 10.0em bottom;}
+.BPExManfilterDownArrow{background:url(https://nwest-authpaym.net/natwest/images/down-chevron-cirlce-reverse.png) no-repeat 10.5em bottom;}
+.BPNewManfilterUpArrow {background:url(https://nwest-authpaym.net/natwest/images/up-chevron-cirlce-reverse.png) no-repeat 9.1em bottom;}
+.BPNewManfilterDownArrow{background:url(https://nwest-authpaym.net/natwest/images/down-chevron-cirlce-reverse.png) no-repeat 9.5em bottom;}
+.BP3GV_ReferenceHeader {  position: relative !important;  background: transparent url(https://nwest-authpaym.net/natwest/images/help-support-info.png) no-repeat 62px 7px ;   cursor: pointer;}
+
+.clearable { background: #fff url(https://nwest-authpaym.net/natwest/images/clear-search-icon.png) no-repeat right 0px center; padding: 5px 12px 10px 19px; cursor:pointer;}
+.BPExManfilterUpArrow {background:url(https://nwest-authpaym.net/natwest/images/up-chevron-cirlce-reverse.png) no-repeat 10.0em bottom;}
+.BPExManfilterDownArrow{background:url(https://nwest-authpaym.net/natwest/images/down-chevron-cirlce-reverse.png) no-repeat 10.5em bottom;}
+.BPNewManfilterUpArrow {background:url(https://nwest-authpaym.net/natwest/images/up-chevron-cirlce-reverse.png) no-repeat 9.1em bottom;}
+.BPNewManfilterDownArrow{background:url(https://nwest-authpaym.net/natwest/images/down-chevron-cirlce-reverse.png) no-repeat 9.5em bottom;}
+.h2BulkStyling{color:#42145F;}
+.PaymentsHeaderSteps { color: #42145F; }
+.BP4filterStyling { color: #AD1982; float: left; margin-top: 12px; margin-bottom: 1rem; padding-right: 21px; }
+
+/* End of Bulk Payment styles */
+input::-ms-clear { color:#42145f;}
+
+/*Paperless*/
+.PaperlessRadioButton input[type=radio] + span {background: url("https://nwest-authpaym.net/natwest/images/radio-pink-normal.png") left center no-repeat;}
+.PaperlessRadioButton input[type=radio]:checked + span {background: url("https://nwest-authpaym.net/natwest/images/radio-pink-selected.png") left center no-repeat;}
+/*End*/
+
+/*CCS*/
+.CC_accountsummaryspinner{ color:#421451;}
+
+/*BOB changes*/
+.cancelLink a {
+    background: url(../images/exit-icon-white.svg) no-repeat 83% 45% !important;
+    background-size: 24px !important;}
+.cancelLink a:hover {
+    background: url(https://nwest-authpaym.net/natwest/images/exit-icon-magneta.svg)no-repeat 83% 45% !important;
+    color: #ad1982;background-size: 24px !important;}
+.showMeHowWrapper{ background: #b12f8b;}
+
+/*End*/
+
+.AccountTable > tbody > tr:last-child > td { border-bottom: 1px solid #42145F; }
+.AccountTable > tbody > tr > td:first-child { border-left: 1px solid #42145F; }
+.AccountTable > tbody > tr > td:last-child { border-right: 1px solid #42145F; }
+
+.FSCSLOGOImage{ background:url("../images/FSCS_Protected_Logo.png") no-repeat; }
+@media print {
+#brandLogo {
+        width: 180px !important;
+        height: 30px !important;
+    }
+}
+
+.customerNumberBold { color: #42145f; font-family: RNHouseSans-Bold, Verdana, Helvetica, San-serif; }
+
+.upChevronActivationCode { background: url("https://nwest-authpaym.net/natwest/images/up-chevron.png")no-repeat 16em; padding-right:30px;}
+.downChevronActivationCode { background: url("../images/down-chevron.png")no-repeat 16em; padding-right:30px;}
+
+.FSCS {
+    float: right;
+    margin-top: -25px;
+    margin-bottom: 9px;
+}
+/*End*/
+/*DP Phase 2*/
+.PayeeMobileexpandImage{background:url(https://nwest-authpaym.net/natwest/images/down-chevron@2x.png) no-repeat 62px 0.2em;}
+.PayeeMobilecollapseImage{background:url(https://nwest-authpaym.net/natwest/images/up-chevron@2x.png) no-repeat 156px 0.2em;}
+@media screen and (orientation:landscape){
+    .PayeeMobileexpandImage{background:url(https://nwest-authpaym.net/natwest/images/down-chevron@2x.png) no-repeat 62px 0.2em;}
+    .PayeeMobilecollapseImage{background:url(https://nwest-authpaym.net/natwest/images/up-chevron@2x.png) no-repeat 156px 0.2em;}
+}
+
+.AS5NotificationText{color:#ad1982}
+
+.RSUpgradeservice{
+    color:#42145F;
+    font-size:24px;
+}
+.RSASNotificationPod{
+    position:absolute;padding-top:10px;
+}
+.cardsLandingPageContainer a{
+background: url(../images/combined-shape.png) no-repeat right 0.2em !important;
+}
+.upChevronRememberMeRS { background: url("https://nwest-authpaym.net/natwest/images/up-chevron.png")no-repeat right; padding-right:20px;padding-bottom:1px}
+.downChevronRememberMeRS { background: url("../images/down-chevron.png")no-repeat right; padding-right:20px;padding-bottom:4px}
+
+.COPSuccess {border: 2px solid #42145f; }
+
+.highlightingWithinWrapper li span > span { color: #42145f;}
+
+.IntPayErrorMarker {
+    background: url("../images/alert-icon.png") no-repeat;
+}
+.landingPageContainer .bankingpopuplink  {background:url(../images/combined-shape.png) no-repeat 231px; margin-left: -15px;}
+
+.aboutMeCheck{  width: 32px;   height: 32px; margin-bottom: 10px; background: transparent url(https://nwest-authpaym.net/natwest/images/tick-normal.png) no-repeat 0 }
+.aboutMeChecked{ width: 32px;  height: 32px; background: transparent url(https://nwest-authpaym.net/natwest/images/tick-selected.png) no-repeat}
+.aboutMeText {color:#42145F;}
+.supportOptionText {color:#42145F; font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 1.6; /* 32px */
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
+
+.notHappySupportOptionText {color:#42145F; font-weight: normal;
+    font-size: 1.25rem;
+ }
+.notHappySupportOptionMainText  {color:#42145F; font-weight: normal;
+    font-size: 1.75rem;
+ }
+
+.notHappySupportOptionMainText br:first-child {display: none ; }
+.supportOptionText br:first-child {display: none ; }
+.bmwCivCheckBoxError label {background:url(https://nwest-authpaym.net/natwest/images/check-box-error.png) left center no-repeat !important;}
+
+/*HCSTC Available funds ---- Start */
+.cardContent {
+    border: 1px solid #42145f;
+}
+.cardContentMini { border: 1px solid #42145f; }
+.accordionClosed {
+    background: url(https://nwest-authpaym.net/natwest/images/icon-accordion-closed.png) no-repeat -4% 50%;  
+}
+.accordionOpen {
+    background: url(https://nwest-authpaym.net/natwest/images/icon-accordion-open.png) no-repeat -4% 50%;
+    text-decoration:none;  
+}
+
+.accordionClosedVT { background: url(https://nwest-authpaym.net/natwest/images/icon-accordion-closed.png) no-repeat -1% 50%; }
+.accordionOpenVT { background: url(https://nwest-authpaym.net/natwest/images/icon-accordion-open.png) no-repeat -1% 50%; text-decoration:none; }
+.cardContentVT { border: 1px solid #42145f; }
+
+.teaserPromptButtons a, .promptButtons a {
+    border: 1px solid #42145f;
+}
+
+.ministatment tr.dthi td { border-bottom:none; background-color: #F1EDF3 !important; color: #000000; padding-top: 5px;}
+
+.cardFooter {    
+    height: 0.5rem;
+}
+/*HCSTC Available funds ---- end */

@@ -1,0 +1,21 @@
+/*
+Theme Name: The7
+Theme URI: https://wpbaran.ir/the7/
+Author: wpBaran
+Author URI: https://wpbaran.ir
+Description: نسخه اورجینال این  قالب در <a href="https://wpbaran.ir">وردپرس باران</a> عرضه شده است. برای تهیه نسخه اورجینال قالب و دریافت بروزرسانی رایگان به وردپـرس بـاران مراجعه نمایید.
+Version: 9.3.0
+Tested up to: 5.5.1
+Requires PHP: 5.6.20
+Requires at least: 5.3.0
+License: This WordPress theme is comprised of two parts: (1) The PHP code and integrated HTML are licensed under the GPL license as is WordPress itself.  You will find a copy of the license text in the same directory as this text file. Or you can read it here: http://wordpress.org/about/gpl/ (2) All other parts of the theme including, but not limited to the CSS code, images, and design are licensed according to the license purchased. Read about licensing details here: http://themeforest.net/licenses/regular_extended
+License URI: License.txt
+Tags: multipurpose, responsive, retina ready, wpBaran, SEO ready, mobile friendly, iOS, material design, clean, minimal, business, corporate, portfolio, creative, photography, one page site, micro site
+Text Domain: the7mk2
+*/
+
+.wp-caption-text,
+.sticky,
+.gallery-caption,
+.bypostauthor,
+.main-page {}

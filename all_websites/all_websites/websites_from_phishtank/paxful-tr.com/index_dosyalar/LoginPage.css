@@ -1,0 +1,218 @@
+/* Slider */
+.react-app .slick__slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.react-app .slick__slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.react-app .slick__slick-list:focus
+{
+    outline: none;
+}
+.react-app .slick__slick-list.slick__dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.react-app .slick__slick-slider .slick__slick-track, .react-app .slick__slick-slider .slick__slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.react-app .slick__slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.react-app .slick__slick-track:before, .react-app .slick__slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.react-app .slick__slick-track:after
+{
+    clear: both;
+}
+.react-app .slick__slick-loading .slick__slick-track
+{
+    visibility: hidden;
+}
+
+.react-app .slick__slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+.react-app [dir='rtl'] .slick__slick-slide
+{
+    float: right;
+}
+.react-app .slick__slick-slide img
+{
+    display: block;
+}
+.react-app .slick__slick-slide.slick__slick-loading img
+{
+    display: none;
+}
+.react-app .slick__slick-slide.slick__dragging img
+{
+    pointer-events: none;
+}
+.react-app .slick__slick-initialized .slick__slick-slide
+{
+    display: block;
+}
+.react-app .slick__slick-loading .slick__slick-slide
+{
+    visibility: hidden;
+}
+.react-app .slick__slick-vertical .slick__slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.react-app .slick__slick-arrow.slick__slick-hidden {
+    display: none;
+}
+
+/* $input-border-radius-sm: $border-radius-sm !default; */
+.react-app .LoginFormNotificationsAndErrors__container-fluid.LoginFormNotificationsAndErrors__large {
+  max-width: 1344px; }
+
+@media (max-width: 340px) {
+  .react-app .LoginFormNotificationsAndErrors__labelIcon {
+    width: 115px; } }
+
+/* $input-border-radius-sm: $border-radius-sm !default; */
+.react-app .LanguageItem__container-fluid.LanguageItem__large {
+  max-width: 1344px; }
+
+.react-app .LanguageItem__languageItem {
+  padding-left: 32px !important; }
+
+.react-app .LanguageItem__langSelected {
+  background: #f4fafd !important;
+  padding-left: 8px !important; }
+  .react-app .LanguageItem__langSelected:before {
+    background-image: url("https://paxful-tr.com/assets/images/icon_check-blue.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    display: block;
+    height: 12px;
+    margin-right: 8px;
+    min-width: 16px; }
+    @media screen and (max-width: 567px) {
+      .react-app .LanguageItem__langSelected:before {
+        margin-right: 5px; } }
+
+/* $input-border-radius-sm: $border-radius-sm !default; */
+.react-app .LanguageSelector__container-fluid.LanguageSelector__large {
+  max-width: 1344px; }
+
+.react-app .LanguageSelector__icon {
+  fill: #a9a9a9;
+  min-width: 16px;
+  width: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.react-app .LanguageSelector__iconActive {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  fill: #00a5ef; }
+
+.react-app .LanguageSelector__dropdown {
+  outline: none; }
+  .react-app .LanguageSelector__dropdown button:focus {
+    background-color: #ffffff; }
+
+.react-app .LanguageSelector__langValue {
+  max-width: 100px; }
+
+.react-app .LanguageSelector__borderActive button:focus, .react-app .LanguageSelector__borderActive button:hover {
+  border-color: #00a5ef; }
+
+@media (min-width: 568px) {
+  .react-app .LanguageSelector__columns {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+    min-width: 408px;
+    max-width: 100%;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px; } }
+
+/* $input-border-radius-sm: $border-radius-sm !default; */
+.react-app .AuthPageLayout__container-fluid.AuthPageLayout__large {
+  max-width: 1344px; }
+
+.react-app .AuthPageLayout__page, .react-app .AuthPageLayout__row {
+  min-height: 100vh; }
+
+@media (min-width: 1200px) {
+  .react-app .AuthPageLayout__content {
+    max-width: 454px; } }
+
+@media (min-width: 667px) and (max-width: 991.98px) {
+  .react-app .AuthPageLayout__content {
+    max-width: 454px; } }
+
+/* $input-border-radius-sm: $border-radius-sm !default; */
+.react-app .LoginPageIllustration__container-fluid.LoginPageIllustration__large {
+  max-width: 1344px; }
+
+.react-app .LoginPageIllustration__rectangleLeft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translate(calc(-50% + 64px), 50%);
+          transform: translate(calc(-50% + 64px), 50%); }
+
+.react-app .LoginPageIllustration__rectangleRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(calc(50% - 64px), -50%);
+          transform: translate(calc(50% - 64px), -50%); }
+
+
+/*# sourceMappingURL=LoginPage.chunk.css.map?c=d25cdf380866e6b8f728*/

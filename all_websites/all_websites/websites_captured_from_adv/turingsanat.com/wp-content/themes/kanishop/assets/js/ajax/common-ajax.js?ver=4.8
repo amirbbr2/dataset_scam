@@ -1,0 +1,252 @@
+jQuery(function($) {
+
+    $(document).on('click','.ks-single-brandajax-wrapper',function(){
+        var term_id = $(this).data('term-id');
+        // var brand_link_target = $(this).data('link-target');
+        if($(this).data('has-child')==0){
+            window.open( $(this).data('term-link') , $(this).data('link-target'));
+        } else {
+           if($('*[data-parent-id="'+term_id+'"]').length){
+                // alert('EXISTS');
+                $('.brandajax-inner').hide();
+                $('*[data-parent-id="'+term_id+'"]').show();
+           } else {
+            $.ajax({
+                url: ktss_common_ajax_options.ajaxurl,
+                type: 'POST',
+                data: {
+                    action: 'kanishop_get_sub_brands',
+                    termid : term_id,
+                    security: ktss_common_ajax_options.BrandAjaxNonce
+                },
+                beforeSend: function() {
+                    $('.brandajax-inner').hide();
+                    $('.kts-loader').show();
+                },
+                success: function(response) {
+                    
+                    var result = JSON.parse(response);
+                    if (result.length != 0) {
+                        $('.brandajax-wrapper').append(result);
+                    }
+                    else
+                    {
+                        
+                    }
+    
+                },
+                complete: function() {
+                    $('.kts-loader').hide();
+                }
+            });
+           }
+        }
+    });
+
+    $(document).on('click','.goto-top-brands',function(){
+        $('.brandajax-inner').hide();
+        $('.brandajax-inner-top').show();
+    });
+
+
+    $(".kani-ajax-search").on('keyup',function(){
+            var searchText= $(this).val();
+            if (searchText !=='') {
+                $.ajax({
+                    beforeSend : function () {
+                        $(".search-result").empty();
+                        $(".search-result").html('<div class="kts-loader-search"></div>');
+                        $(".search-result").show();
+                        $(".kts-loader-search").show();
+                    },
+                    type: "post",
+                    url: ktss_common_ajax_options.ajaxurl,
+                    data: {
+                        'action': 'isearch',
+                        'searchValue': searchText,
+                        'security': ktss_common_ajax_options.ajaxsearchnonce
+                    },
+                    dataType: "html",
+                })
+                .done(function(response){
+                    $(".search-result").html(response);
+                })
+                .fail(function(response){
+                    $(".kts-loader-search").hide();
+                })
+                .always(function(){
+                    $(".kts-loader-search").hide();
+                });
+            } else {
+                $(".search-result").empty();
+                $(".search-result").hide();
+            }
+    });
+
+
+
+    $.ajaxSetup({ cache: false });
+    $(document).on('click', '.mini-cart-remove-item', function(e) {
+		e.preventDefault();
+        var target = $(this).parent('.top-cart-item');
+		var product_id = target.attr( 'data-product-id'  );
+
+		$.ajax({
+            url: ktss_common_ajax_options.ajaxurl,
+            type: 'get',
+            data: {action: 'remove_cart_item', RemoveCartItemNonce: ktss_common_ajax_options.RemoveCartItemNonce, product_id: product_id},
+			beforeSend: function() {
+            	$(".mini-cart-loading").show();
+			},
+			success: function( data, textStatus, xhr ) {
+				if ( xhr.status == 200 ) {
+                    var result = $.parseJSON( data );
+                    if ( result.status == 'success' ) {
+                        target.fadeOut('fast', function() {
+                            target.remove();
+                            $('a.cart-contents').html( result.total_count + result.total_price );
+                        });
+                    } else if ( result.status == 'failure' ) {
+                        //show error message
+                    }
+				}
+			},
+			complete: function() {
+            	$(".mini-cart-loading").hide();
+			}
+		});
+	});
+
+
+
+    function ktssLoadOrders() {
+        //clear previous content
+        $('#ktssordertab').empty();
+        $.ajax({
+            url: ktss_common_ajax_options.ajaxurl,
+            type: 'get',
+            data: {action: 'get_customer_orders', security: ktss_common_ajax_options.ajaxnonce},
+            beforeSend: function() {
+                //show the loading
+                $('.user-pro-loading').css({"display":"block"});
+            },
+            success: function(response) {
+                var result = JSON.parse(response);
+                if (result.length != 0) {
+                    var ordertitle='<h2 class="ktss-orders-title"><span class="order-title">'+ ktss_common_ajax_options.orderstext +'</span><span class="date-title">'+ ktss_common_ajax_options.orderdate +'</span><span class="status-title">'+ ktss_common_ajax_options.orderstatus +'</span></h2>';
+                    $('#ktssordertab').append(ordertitle);
+                    for(var i=0;i < result.length;i++)
+                    {
+                        var item = '<li>';
+                        item += '<a href="' + result[i].link + '">';
+                        item += '<span class="ktss-order-id">'+ result[i].ID  + '</span> &nbsp;';
+                        item += '<span class="ktss-order-date">' + result[i].post_date  + '</span>';
+                        item += '<span class="ktss-order-status">' + result[i].post_status  + '</span>';
+                        item += '</a>';
+                        item += '</li>';
+                        $('#ktssordertab').append(item);
+                    }
+                }
+                else
+                {
+                    var message = '<h2 class="ajax-order-msg">'+ ktss_common_ajax_options.noorders +'</h2>';
+                    $('#ktssordertab').append(message);
+                }
+
+            },
+            complete: function() {
+                //hide the loading
+                $('.user-pro-loading').css({"display":"none"});
+            }
+        });
+	}
+
+	function ktssLoadWishList() {
+        //clear previous content
+        $('#ktsswishlisttab').empty();
+        $.ajax({
+            url: ktss_common_ajax_options.ajaxurl,
+            type: 'get',
+            data: {action: 'get_customer_wish_list'},
+            beforeSend: function() {
+                //show the loading
+                $('.user-pro-loading').css({"display":"block"});
+            },
+            success: function(response) {
+                $('#ktsswishlisttab').html(response);
+            },
+            complete: function() {
+                //hide the loading
+                $('.user-pro-loading').css({"display":"none"});
+            }
+        });
+	}
+
+	function ktssLoadComments() {
+        //clear previous content
+        $('#ktsscommenttab').empty();
+        $.ajax({
+            url: ktss_common_ajax_options.ajaxurl,
+            type: 'get',
+            data: {action: 'get_customer_comment'},
+            beforeSend: function() {
+                //show the loading
+                $('.user-pro-loading').css({"display":"block"});
+            },
+            success: function(response) {
+                var result = JSON.parse(response);
+                if (result.length != 0) {
+                    for(var i=0;i < result.length;i++)
+                    {
+                        var item = '<li>';
+                        item += '<a href="' + result[i].comment_link + '">';
+                        item += '<h2 class="ktss-comment-title"><span class="ktss-up-comment-title">' + result[i].comment_post_title  + '</span>';
+                        item += '<span class="ktss-up-comment-status">'+ result[i].comment_status  + '</span>';
+                        item += '<span class="ktss-up-comment-date">' + result[i].comment_date  + '</span></h2>';
+                        item += '<p class="ktss-up-comment-description">' + result[i].comment_content  + '</p>';
+                        item += '</a>';
+                        item += '</li>';
+                        item += '<br />';
+                        $('#ktsscommenttab').append(item);
+                    }
+                }
+                else
+                {
+                    var message = '<h2 class="ajax-comment-msg">'+ ktss_common_ajax_options.nocomments +'</h2>';
+                    $('#ktsscommenttab').append(message);
+                }
+            },
+            complete: function() {
+                //hide the loading
+                $('.user-pro-loading').css({"display":"none"});
+            }
+        });
+	}
+
+	$('#ktssorder').click(function() {
+		ktssLoadOrders();
+	});
+
+	$('#ktsswishlist').click(function() {
+		ktssLoadWishList();
+	});
+
+	$('#ktsscomment').click(function() {
+		ktssLoadComments();
+	});
+
+	var firstTab = $( '.navbar-tabs li a' ).first();
+
+	switch ( firstTab.attr( 'id' ) ) {
+		case 'ktsscomment':
+			ktssLoadComments();
+			break;
+		case 'ktsswishlist':
+			ktssLoadWishList();
+			break;
+		case 'ktssorder':
+			ktssLoadOrders();
+			break;
+	}
+
+});

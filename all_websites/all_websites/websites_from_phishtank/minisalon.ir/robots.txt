@@ -1,0 +1,102 @@
+Sitemap: https://minisalon.ir/sitemap.xml
+# If the Joomla site is installed within a folder such as at
+# e.g. www.example.com/joomla/ the robots.txt file MUST be
+# moved to the site root at e.g. www.example.com/robots.txt
+# AND the joomla folder name MUST be prefixed to the disallowed
+# path, e.g. the Disallow rule for the /administrator/ folder
+# MUST be changed to read Disallow: /joomla/administrator/
+#
+# For more information about the robots.txt standard, see:
+# http://www.robotstxt.org/orig.html
+#
+# For syntax checking, see:
+# http://www.sxw.org.uk/computing/robots/check.html
+User-agent: *
+Disallow: /administrator/
+Disallow: /cache/
+Disallow: /cli/
+Disallow: /README.php/
+Disallow: /README.txt/
+Disallow: /administrator/components
+Disallow: /components/
+Disallow: /templates/
+Disallow: /media/
+Disallow: /modules/
+Disallow: /plugins/
+Disallow: /images/
+
+Disallow: /tmp/
+Disallow: /includes/
+Disallow: /installation/
+Disallow: /language/
+Disallow: /libraries/
+Disallow: /logs/
+
+User-agent: Googlebot
+
+Allow: /templates/shaper_creativa/fonts/
+Allow: /media/com_hwdmediashare/assets/javascript/hwd.min.js
+Allow: /media/com_hwdmediashare/assets/javascript/aspect.js
+Allow: media/com_hwdmediashare/assets/css/hwd.css
+Allow: /media/com_hwdmediashare/files
+Allow: /media/jui/js/jquery-noconflict.js
+Allow: /media/n2/
+Allow: /images/
+Allow: /media/n2/n/fonts/farsi-titr/farsi-titr.ttf
+Allow: /modules/mod_raxo_allmode_k2/tools/tb.php
+Allow: /modules/mod_raxo_allmode_k2/tmpl/allmode-list/allmode-list.css
+Allow: /media/system/css/modal.css
+Allow: /components/com_k2/css/k2.css
+Allow: /components/com_jcomments/tpl/default/style.css
+Allow: /components/com_jcomments/tpl/default/style_rtl.css
+Allow: /media/com_notifly/css/notifly-core.min.css
+Allow: /plugins/system/ampz/ampz/css/ampz.min.css
+Allow: /plugins/system/maximenuckmobile/themes/default/maximenuckmobile.css
+Allow: /media/com_rstbox/css/engagebox.css
+Allow: /templates/system/css/system.css
+Allow: /templates/system/css/general.css
+Allow: /plugins/system/helix/css/media_queries.css
+Allow: /templates/shaper_creativa/css/template.css
+Allow: /templates/shaper_creativa/css/joomla.css
+Allow: /templates/shaper_creativa/css/custom.css
+Allow: /templates/shaper_creativa/css/modules.css
+Allow: /templates/shaper_creativa/css/typography.css
+Allow: /templates/shaper_creativa/css/css3.css
+Allow: /templates/shaper_creativa/css/template_rtl.css
+Allow: /templates/shaper_creativa/css/styles/style1.css
+Allow: /modules/mod_miniteklivesearch/assets/css/style.css
+Allow: /modules/mod_maximenuck/themes/blank/css/maximenuck_rtl.php
+Allow: /modules/mod_maximenuck/assets/maximenuresponsiveck.css
+Allow: /media/jui/js/jquery.min.js
+Allow: /media/n2/n/dist/nextend-gsap.min.js
+Allow: /media/n2/ss3/dist/smartslider-frontend.min.js
+Allow: /media/n2/ss3/plugins/type/simple/simple/dist/smartslider-simple-type-frontend.min.js
+Allow: /media/jui/js/jquery-migrate.min.js
+Allow: /media/jui/js/jquery.ui.core.min.js
+Allow: /media/system/js/mootools-core.js
+Allow: /media/system/js/core.js
+Allow: /media/n2/ss3/smartslider.min.css
+Allow: /media/system/js/mootools-more.js
+Allow: /media/mod_jcomments_latest/css/style_rtl.css
+Allow: /media/system/js/modal.js
+Allow: /components/com_k2/js/k2.js
+Allow: /components/com_jcomments/js/jcomments-v2.3.js
+Allow: /components/com_jcomments/libraries/joomlatune/ajax.js
+Allow: /media/com_notifly/js/showdown.min.js
+Allow: /media/com_notifly/js/mustache.min.js
+Allow: /media/com_notifly/js/cookies.min.js
+Allow: /media/com_notifly/js/notifly-core.js
+Allow: /plugins/system/ampz/ampz/js/ampz.min.js
+Allow: /plugins/system/maximenuckmobile/assets/maximenuckmobile.js
+Allow: /media/com_rstbox/js/velocity.js/media/com_rstbox/js/velocity.ui.js
+Allow: /media/com_rstbox/js/engagebox.js
+Allow: /plugins/system/helix/js/totop.js
+Allow: /plugins/system/helix/js/equalheight.js
+Allow: /media/jui/js/bootstrap.min.js
+Allow: /media/n2/n/dist/n2-j.min.js
+Allow: /media/n2/n/dist/nextend-frontend.min.js
+Allow: /modules/mod_maximenuck/assets/maximenuck.js
+Allow: /modules/mod_maximenuck/assets/fancymenuck.js
+Allow: /components/com_miniteklivesearch/assets/js/spin.min.js
+Allow: /plugins/system/imageeffectck/assets/imageeffectck.css
+Allow: /plugins/system/imageeffectck/assets/imageeffectck.js

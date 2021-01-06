@@ -1,0 +1,14 @@
+User-agent: *
+Sitemap: https://iranprj.ir/sitemap/sitemap980601.xml
+Sitemap: https://iranprj.ir/sitemap/sitemap980619.xml
+Sitemap: https://iranprj.ir/sitemap/sitemap980620.xml
+Sitemap: https://iranprj.ir/sitemap/sitemap980621.xml
+Sitemap: https://iranprj.ir/sitemap/sitemapvideo980625.xml
+Sitemap: https://iranprj.ir/sitemap/sitemap980631.xml
+Sitemap: https://iranprj.ir/sitemap/sitemap980712.xml
+Sitemap: https://iranprj.ir/sitemap/sitemap980726.xml
+Sitemap: https://iranprj.ir/sitemap/sitemap980808.xml
+Sitemap: https://iranprj.ir/sitemap/sitemap980823.xml
+Sitemap: https://iranprj.ir/sitemap/sitemap990103.xml
+Sitemap: https://iranprj.ir/sitemap/sitemap990222.xml
+Sitemap: https://iranprj.ir/sitemap/sitemap990606.xml

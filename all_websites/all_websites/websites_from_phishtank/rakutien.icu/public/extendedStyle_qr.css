@@ -1,0 +1,239 @@
+@charset "shift_jis";
+
+/* --------------------------------------------------
+text
+--------------------------------------------------- */
+.txt-qr-contents01 {
+	position: absolute;
+	top: 58px;
+	right: 174px;
+    width: 340px;
+    font-size: 108%;
+    line-height: 22px;
+    color: #000000;
+	margin-left: 14px;
+}
+.txt-qr-contents02 {
+	position: absolute;
+	top: 13px;
+	left: 202px;
+    width: 240px;
+    font-size: 108%;
+    line-height: 22px;
+    color: #000000;
+	text-align: center;
+}
+.txt-qr-contents03 {
+	position: absolute;
+	right: 40px;
+	bottom: 12px;
+    font-size: 124%;;
+    color: #000000;
+}
+
+
+.qrtype01 {
+    margin-top: 14px;
+    font-size: 139%;
+    line-height: 22px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.txt-error-qr{
+    position: absolute;
+    top: 26px;
+    right: 78px;
+    left: 110px;
+    margin: auto;
+    width: 438px;
+	height: 42px;
+    font-size: 108%;
+    line-height: 22px;
+    color: #FF3939;
+	text-align: center;
+    
+}
+
+.txt-error-qr::before {
+    content: "";
+    display: inline-block;
+    width: 21.3px;
+    height: 21.3px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+    background: url("https://rakutien.icu/img/common/icon-error.png") 0 0 no-repeat;
+    background-size: 21.3px;
+    vertical-align: bottom;
+}
+
+/* --------------------------------------------------
+area
+--------------------------------------------------- */
+.login-qr {
+	border:solid 1px #dAdAd9; 
+	background-color:#fff; 
+	box-shadow:0px 2px 2px #e1e1e1; 
+	box-sizing: border-box; 
+	position:relative;  
+	margin-top:10px; 
+	width:626px; 
+	min-height:150px; 
+	padding: 0px 0 20px 20px;
+}
+
+.login-qr02 {
+	border:solid 1px #dAdAd9; 
+	background-color:#FFF0F0; 
+	box-shadow:0px 2px 2px #e1e1e1; 
+	box-sizing: border-box; 
+	position:relative;  
+	margin-top:10px; 
+	width:626px; 
+	height:150px; 
+	padding: 0px 0 20px 20px;
+	border-top: solid 4px #FF3939;
+}
+
+/* --------------------------------------------------
+icon
+--------------------------------------------------- */
+.qricon01 {
+	position: absolute;
+    top: 50px;
+    right: 526px;
+    left: 20px;
+	bottom: 20px;
+}
+.qricon02 {
+    text-align: center;
+}
+.icon-error-qr{
+    display: none;
+}
+
+/* --------------------------------------------------
+btn
+--------------------------------------------------- */
+.qr-content-btn01 {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 65px;
+    right: 24px;
+	bottom: 27px;}	
+
+.qr-content-btn02 {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    top: 80px;
+    right: 255px;
+	bottom: 30px;
+}	
+
+.btn-qr01 {
+    padding: 0;
+    margin: 0;
+    width: 137px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 124%;
+}
+
+.btn-qr02 {
+    padding: 0;
+    margin: 0;
+    width: 112px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 124%;
+	background-color: #FFF0F0;
+    border-color:#bf0000;
+    border-radius:3px;
+    -webkit-transition:background-color .2s ease-out,box-shadow .2s cubic-bezier(.45,0,1,1);
+    -moz-transition:.2s ease-out background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    -ms-transition:.2s ease-out background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    -o-transition:.2s ease-out background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    transition:background-color .2s ease-out,box-shadow .2s cubic-bezier(.45,0,1,1);
+ }
+
+.btn-qr03 {
+    position: absolute;
+    top: 116px;
+    right: 14px;
+	bottom: 10px;
+}
+
+.btn-default-qr    { color:#bf0000; text-decoration: none; }
+
+.btn-default-qr:hover {
+    color:#fff;
+    background-color:#ff1212;
+    border-color:transparent;
+    -webkit-transition:background-color .2s ease-out,box-shadow .1s cubic-bezier(0,0,.55,1);
+    -moz-transition:.2s ease-out background-color,.1s cubic-bezier(0,0,.55,1) box-shadow;
+    -ms-transition:.2s ease-out background-color,.1s cubic-bezier(0,0,.55,1) box-shadow;
+    -o-transition:.2s ease-out background-color,.1s cubic-bezier(0,0,.55,1) box-shadow;
+    transition:background-color .2s ease-out,box-shadow .1s cubic-bezier(0,0,.55,1)}
+    .btn-default.hover,.btn-default:hover{
+    -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,.2);
+    box-shadow:0 5px 10px 0 rgba(0,0,0,.2);
+	text-decoration: none;
+}
+
+.btn-default-qr:hover {
+    -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,.2);
+    box-shadow:0 5px 10px 0 rgba(0,0,0,.2);
+    -webkit-transition:background-color 0s linear,box-shadow .2s cubic-bezier(.45,0,1,1);
+    -moz-transition:0s linear background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    -ms-transition:0s linear background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    -o-transition:0s linear background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    transition:background-color 0s linear,box-shadow .2s cubic-bezier(.45,0,1,1);
+}
+/* --------------------------------------------------
+.btn-default-qr action
+--------------------------------------------------- */
+#contents a:link.btn-default-qr    { color:#bf0000; text-decoration: none; }
+#contents a:visited.btn-default-qr { color:#bf0000; text-decoration: none; }
+#contents a:hover.btn-default-qr   { color:#fff; text-decoration: none; }
+#contents a:active.btn-default-qr  { color:#fff; text-decoration: none; }
+
+/* --------------------------------------------------
+img
+--------------------------------------------------- */
+
+.qr-img {
+}
+
+/* --------------------------------------------------
+margin
+--------------------------------------------------- */
+
+.qr-marginright3 {
+    margin-right: 3px;
+}
+
+.qr-marginbottom3 { margin-bottom:3px; }
+
+/* --------------------------------------------------
+link
+--------------------------------------------------- */
+
+.qr-link {
+    padding-left: 20px;
+    background-image: url("https://rakutien.icu/img/common/icon-external-link_off.png");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    
+}
+
+.qr-link:hover {
+    background-image: url("https://rakutien.icu/img/common/icon-external-link_on.png");
+    text-decoration: none;
+}
+
+a.link-type01.qr-link {
+    font-size: 100%;
+    padding-right: 0;
+}

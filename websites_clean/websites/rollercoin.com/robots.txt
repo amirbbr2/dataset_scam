@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /sign-up
+Disallow: /invalidMail
+Disallow: /validFacebook
+Disallow: /well-done
+Disallow: /sign-up/facebook
+Disallow: /restore
+Disallow:  *?question=
+Disallow: /socket.io/
+
+Sitemap: https://rollercoin.com/sitemap.xml

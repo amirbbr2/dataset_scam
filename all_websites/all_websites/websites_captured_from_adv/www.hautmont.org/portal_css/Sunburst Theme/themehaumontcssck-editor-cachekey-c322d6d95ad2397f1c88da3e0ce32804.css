@@ -1,0 +1,392 @@
+
+/* - ++theme++haumont/css/ck-editor.css - */
+@media all {
+/* https://www.hautmont.org/portal_css/++theme++haumont/css/ck-editor.css?original=1 */
+#content-ckeditor{
+font-size:0.8em;
+}
+.cke_panel_container *{
+margin:0!important;
+font-size:1em!important;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] h1,
+#corps_petition h1,
+#content-ckeditor h1,
+.portletStaticText h1,
+.cke_panel_container h1{
+font-size:1.3em;
+font-family:arial;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] h1:after,
+#corps_petition h1:after,
+#content-ckeditor h1:after,
+.portletStaticText h1:after,
+.cke_panel_container h1:after{
+content:"utiliser le titre 2";
+padding:0 0 0 10px;
+color:red;
+text-transform:none;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] h2,
+#corps_petition h2,
+#content-ckeditor h2,
+.portletStaticText h2,
+.cke_panel_container h2{
+display:inline-block;
+margin:30px 0 10px;
+padding:2px 5px 0;
+background:#555;
+color:#fff;
+font-family: 'RALEWAYregular';
+font-size:1.8em;
+font-weight:normal;
+line-height:1em;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] h3,
+#corps_petition h3,
+#content-ckeditor h3,
+.portletStaticText h3,
+.cke_panel_container h3{
+margin:30px 0 10px;
+padding:5px 0;
+border-top:1px dotted #555;
+border-bottom:1px dotted #555;
+font-family: 'RALEWAYregular';
+font-weight:normal;
+font-size:1.8em;
+color:#555;
+line-height:1em;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] h4,
+#corps_petition h4,
+#content-ckeditor h4,
+.portletStaticText h4,
+.cke_panel_container h4{
+margin:30px 0 10px;
+padding:0;
+color:#555;
+font-family: 'RALEWAYregular';
+font-size:1.6em;
+text-transform: uppercase;
+line-height:1em;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] h4:before,
+#corps_petition h4:before,
+#content-ckeditor h4:before,
+.portletStaticText h4:before,
+.cke_panel_container h4:before{
+content:"";
+display:inline-block;
+margin:0 5px 0 0;
+height:15px;
+width:8px;
+background:#555;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] h5,
+#corps_petition h5,
+#content-ckeditor h5,
+.portletStaticText h5,
+.cke_panel_container h5{
+display:inline-block;
+margin:30px 0 10px;
+padding:5px 0;
+border-top:1px solid #555;
+border-bottom:1px solid #555;
+font-size:1.5em;
+color:#555;
+font-family: 'RALEWAYregular';
+line-height:1em;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] h6,
+#corps_petition h6,
+#content-ckeditor h6,
+.portletStaticText h6,
+.cke_panel_container h6{
+margin:30px 0 10px;
+font-weight:bold;
+font-size:1.2em;
+color:#555;
+font-family: 'RALEWAYregular';
+line-height:1em;
+text-transform:uppercase;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] p,
+#corps_petition p,
+#content-ckeditor p,
+.portletStaticText p,
+.cke_panel_container p{
+margin:0 0 10px;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] p.flux-ok:after,
+#content-ckeditor p.flux-ok:after{
+content:"";
+display:block;
+clear:both;
+margin:0;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] p.exergue,
+#corps_petition p.exergue,
+#content-ckeditor p.exergue{
+position:relative;
+float:right;
+margin:10px 0 10px 20px;
+padding:0 0 0 30px;
+width:270px;
+font-family: 'RALEWAYregular';
+font-size:2em;
+line-height:1;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] h2 + p.exergue,
+#corps_petition h2 + p.exergue,
+#content-ckeditor h2 + p.exergue{
+margin-top:70px;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] p.exergue:before,
+#corps_petition p.exergue:before,
+#content-ckeditor p.exergue:before{
+content:"“";
+position:absolute;
+top:-15px;
+left:0;
+font-size:3em;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] p.exergue strong,
+#corps_petition p.exergue strong,
+#content-ckeditor p.exergue strong{
+display:block;
+font-family: 'RALEWAYbold';
+font-weight:normal;
+}
+#portal-column-content #content div[id^="parent-fieldname-text"] p.encadre,
+#corps_petition p.encadre,
+#content-ckeditor p.encadre{
+margin-top:20px;
+padding:5px 10px;
+border:1px dotted #bc2d0d;
+color:#bc2d0d;
+}
+.section-developpement-personnel #portal-column-content #content div[id^="parent-fieldname-text"] p.encadre,
+.section-developpement-personnel #corps_petition p.encadre,
+.section-developpement-personnel #content-ckeditor p.encadre{
+border:1px dotted #ea670e;
+color:#ea670e;
+}
+.section-croissance-spirituelle #portal-column-content #content div[id^="parent-fieldname-text"] p.encadre,
+.section-croissance-spirituelle #corps_petition p.encadre,
+.section-croissance-spirituelle #content-ckeditor p.encadre{
+border:1px dotted #0b9fb9;
+color:#0b9fb9;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] .texte1,
+#corps_petition .texte1,
+#content-ckeditor .texte1{
+padding:1px 2px ;
+background:#bc2d0d;
+color:#fff;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] .texte2,
+#corps_petition .texte2,
+#content-ckeditor .texte2{
+color:#bc2d0d;
+}
+.section-developpement-personnel #portal-column-content #content-core div[id^="parent-fieldname-text"] .texte1,
+.section-developpement-personnel #corps_petition .texte1,
+.section-developpement-personnel #content-ckeditor .texte1{
+padding:1px 2px ;
+background:#ea670e;
+color:#fff;
+}
+.section-developpement-personnel #portal-column-content #content-core div[id^="parent-fieldname-text"] .texte2,
+.section-developpement-personnel #corps_petition .texte2,
+.section-developpement-personnel #content-ckeditor .texte2{
+color:#ea670e;
+}
+.section-croissance-spirituelle #portal-column-content #content-core div[id^="parent-fieldname-text"] .texte1,
+.section-croissance-spirituelle #corps_petition .texte1,
+.section-croissance-spirituelle #content-ckeditor .texte1{
+padding:1px 2px ;
+background:#0b9fb9;
+color:#fff;
+}
+.section-croissance-spirituelle #portal-column-content #content-core div[id^="parent-fieldname-text"] .texte2,
+.section-croissance-spirituelle #corps_petition .texte2,
+.section-croissance-spirituelle #content-ckeditor .texte2{
+color:#0b9fb9;
+}
+#portal-column-content #content div[id^="parent-fieldname-text"] blockquote,
+#corps_petition blockquote,
+#content-ckeditor blockquote{
+position:relative;
+padding:0 0 0 20px;
+}
+#portal-column-content #content div[id^="parent-fieldname-text"] blockquote:before,
+#corps_petition blockquote:before,
+#content-ckeditor blockquote:before{
+content:"“";
+position:absolute;
+top:-5px;
+left:0;
+font-size:2.5em;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] img.image-droite,
+#corps_petition img.image-droite,
+#content-ckeditor img.image-droite,
+.portletStaticText img.image-droite,
+.cke_panel_container img.image-droite{
+float:right;
+margin:0 0 0 10px;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] img.image-gauche,
+#corps_petition img.image-gauche,
+#content-ckeditor img.image-gauche,
+.portletStaticText img.image-gauche,
+.cke_panel_container img.image-gauche{
+float:left;
+margin:0 10px 0 0;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] a,
+#corps_petition a{
+border-bottom:1px dotted #000;
+color:#000!important;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] a:hover,
+#portal-column-content #content-core div[id^="parent-fieldname-text"] a:focus,
+#corps_petition a:hover,
+#corps_petition a:focus{
+border-bottom:1px solid #000;
+text-decoration:none;
+color:#000!important;
+}
+#portal-column-content #content div[id^="parent-fieldname-text"] a.bouton,
+#corps_petition a.bouton,
+#content-ckeditor a.bouton{
+display:inline-block;
+margin:5px 0;
+padding:3px 10px;
+background:#bc2d0d;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+behavior: url(https://www.hautmont.org/++theme++haumont/css/++resource++PIE.htc);
+border-bottom:none;
+color:#fff!important;
+}
+.section-developpement-personnel #portal-column-content #content div[id^="parent-fieldname-text"] a.bouton,
+.section-developpement-personnel #corps_petition a.bouton,
+.section-developpement-personnel #content-ckeditor a.bouton{
+background:#ea670e;
+}
+.section-croissance-spirituelle #portal-column-content #content div[id^="parent-fieldname-text"] a.bouton,
+.section-croissance-spirituelle #corps_petition a.bouton,
+.section-croissance-spirituelle #content-ckeditor a.bouton{
+background:#0b9fb9;
+}
+#portal-column-content #content div[id^="parent-fieldname-text"] a.bouton:hover,
+#portal-column-content #content div[id^="parent-fieldname-text"] a.bouton:focus,
+#corps_petition a.bouton:hover,
+#corps_petition a.bouton:focus{
+background:#000;
+color:#fff!important;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] ul,
+#corps_petition ul,
+#content-ckeditor ul {
+margin:10px 0 10px 20px;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] ul.deux-colonnes,
+#corps_petition ul.deux-colonnes,
+#content-ckeditor ul.deux-colonnes{
+margin-left:0;
+overflow:hidden;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] ul li,
+#corps_petition ul li,
+#content-ckeditor ul li,
+.portletStaticText ul li,
+.cke_panel_container li {
+display:block;
+margin:0 0 10px;
+padding:0 0 0 10px;
+background:url(../../++theme++haumont/css/++theme++haumont/images/puce-noire-grosse.png) 0 0.5em no-repeat;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] ul.deux-colonnes li,
+#corps_petition ul.deux-colonnes li,
+#content-ckeditor ul.deux-colonnes li{
+float:left;
+margin:0 0 5px 30px;
+padding:0 0 0 10px;
+background:url(../../++theme++haumont/css/++theme++haumont/images/chevron-noir.png) 0 0.5em no-repeat;
+width:260px;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] ol,
+#corps_petition ol,
+#content-ckeditor ol {
+list-style-type:decimal;
+list-style:decimal;
+margin:10px 0 10px 30px;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] ol li,
+#corps_petition ol li,
+#content-ckeditor ol li {
+display:list-item;
+font-size:1.1em;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] table,
+#content-ckeditor table {
+margin:15px 0;
+font-size:1.1em;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] table caption,
+#content-ckeditor table caption {
+margin:0 0 2px;
+padding:5px 0;
+background:#f3f3f3;
+font-size:1.3em;
+text-transform:uppercase;
+color:#CBCECE;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] table thead,
+#content-ckeditor table thead {
+border:1px dotted #CBCECE;
+border-bottom:none;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] table tbody,
+#content-ckeditor table tbody {
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] table th,
+#content-ckeditor table th{
+padding:5px 8px;
+background:#f3f3f3;
+font-size:1.2em;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] table td,
+#content-ckeditor table td{
+padding:3px 8px;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] table tr.odd,
+#content-ckeditor table tr.odd{
+background:#fff;
+}
+#portal-column-content #content-core div[id^="parent-fieldname-text"] table tr.even,
+#portal-column-content #content-core div[id^="parent-fieldname-text"] table tr:nth-child(even),
+#content-ckeditor table tr.even,
+#content-ckeditor table tr:nth-child(even){
+background:#f3f3f3;
+}
+#portal-column-content #content-core address,
+#content-ckeditor address{
+margin:15px 0;
+}
+#content-ckeditor pre {
+background-color: #222222;
+color: White;
+font-family: Consolas,Inconsolata,Menlo,"DejaVu Sans Mono","Bitstream Vera Sans Mono","Courier New",monospace;
+font-size: 90%;
+line-height: 1.25em;
+margin-bottom: 1em;
+overflow-x: auto;
+padding: 1em;
+}
+
+}
+

@@ -1,0 +1,64 @@
+User-agent: Googlebot
+Disallow: /?list=images
+
+User-agent: Googlebot
+Disallow: /user
+
+User-agent: Googlebot
+Disallow: /album
+
+User-agent: Yandex
+Disallow: /?list=images
+
+User-agent: Yandex
+Disallow: /user
+
+User-agent: Yandex
+Disallow: /album
+
+User-agent: Yahoo
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: trovitBot
+Disallow: /
+
+User-agent: BUbiNG
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: FlipboardProxy
+Disallow: /
+
+User-agent: FlipboardProxy
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: aiHitBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: LinkpadBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+Host: https://lostpic.net

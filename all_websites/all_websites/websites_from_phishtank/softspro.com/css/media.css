@@ -1,0 +1,2027 @@
+
+@media screen and (max-width:1200px){.wrapper{width:960px;max-width:100%;height:auto !important;}
+
+
+/*  Softspro blog */
+
+.blogs-regular-item-image-holder {
+    height: 144px;
+}
+
+.wrapper-new-top-bn-content-blk {
+    padding: 30px 0;
+}
+
+.info-detail-content-blk {
+    margin-bottom: 40px;
+}
+
+.our-courses-content-blk {
+    margin-bottom: 40px;
+}
+
+
+/*  Softspro blog */
+
+
+
+
+
+/*     */
+.new_home_content h1 span {
+    font-size: 48px;
+}
+
+.services_blk_list li a span b {
+    font-size: 22px;
+}
+
+.home_link a {
+    padding: 15px 18px;
+}
+
+.banner_lower_block {
+    min-height: 388px;
+}
+
+.home_blogs .regular_blog_image_holder {
+    height: 142px;
+}
+
+.footer_main_content_blk_hd {
+    font-size: 40px;
+}
+
+.form_main_contact_blk span.small-text {
+    font-size: 14px;
+}
+
+.form_main_contact_blk span.large-text {
+    font-size: 18px;
+}
+
+.hot_service2 {
+    right: 0px;
+}
+
+.ecomm_banner_hd {
+    font-size: 48px;
+}
+
+.ecom_banner_content_txt_li li {
+    font-size: 18px;
+}
+
+.consultation_form_btn input.wpcf7-form-control.wpcf7-submit {
+    font-size: 15px;
+}
+
+.features_offer_sec_hd {
+    font-size: 65px;
+}
+
+.android_app_bg_hd {
+    font-size: 70px;
+}
+
+.android_app_bg_txt {
+    font-weight: normal;
+}
+
+.androidapp_bn_contact_btn a {
+    padding: 10px 30px;
+}
+
+.foodapp_bn_contact_btn a {
+    padding: 10px 30px;
+}
+
+
+
+
+
+/*     */
+
+body{overflow:auto !important;}
+.work_procses_section .slider_dv{opacity:1;top:0;}
+.work_procses_section .right_list{left:0px;}
+body footer{bottom:auto;position:relative;}
+.middle_sec{padding:120px 0;}
+.inner_nav > ul > li > a{font-size:13px;padding:6px 7px;}
+.socials ul li i{font-size:16px;}
+.number a{font-size:12px;}
+.logo_inner{padding:7px 14px;width:140px;}
+.left_list{height:278px;width:445px;}
+.contnt_block h2{margin-top:9px;}
+.right_list ul li{padding:0 0 10px;}
+.work_procses_section{padding:50px 0px;}
+.work_procses_section .neet_des{margin:0px;}
+.home_section02{padding:50px 0px 0px;}
+.home_section02 .neet_des{margin:0px;}
+.home_section02 .container{opacity:1;}
+.home_section02 .form{margin-bottom:30px;}
+header{z-index:100;}
+}
+@media screen and (max-width:992px){.wrapper{width:740px;max-width:100%;}
+
+/* nw-softspro */
+.nw-header-right {
+    display: none;
+}
+.sidenav-bars {
+    display: block;
+}
+/* nw-softspro */
+
+.banner_lower_block {
+    min-height: 414px;
+}
+
+.regular_blog_image_holder {
+    height: 180px;
+}
+
+
+.logo_inner{padding:12px;width:110px;margin-left:-55px;}
+.inner_nav > ul > li > a{font-size:12px;padding:6px 2px;}
+.inner_nav > ul > li{margin:0 0 0 3px;}
+.left_header > ul > li > a {
+    font-size: 12px;
+    padding: 6px 1px;
+}
+.left_header > ul > li > a{
+	font-size:12px;
+	padding:6px 1px;
+}
+
+.left_list{display:none;}
+.right_list{left:0px;display:inline-block;width:490px;}
+.static_banner{padding:30px 0;}
+.neet_des > h3{font-size:30px;}
+.neet_des > h3::before{width:140px;}
+.technology_list > ul > li{width:25%;}
+
+
+.new_home_content {  padding: 20vh 0px; }
+.new_home_content h1 { font-size: 24px;    line-height: 30px; }
+.services_blk_head {    font-size: 20px;}
+.services_blk_list li {    font-size: 14px; }
+.home_link a { padding: 15px 20px; font-size: 15px; }
+.services_blk_link a {  font-size: 14px; line-height: 10px; }
+.work_procses_section .neet_des p {  font-size: 20px;    line-height: 20px; }
+.work_procses_section .neet_des p i { font-size: 20px;    line-height: 30px; }
+.contnt_block h2 {    font-size: 16px; }
+.contnt_block p {    font-size: 12px;    line-height: 1em; }
+section.testimonials {    padding: 40px 0px; }
+
+.features_info_content{padding:10px;}
+.features_info_heading .features_head{font-size:18px; line-height:20px; }
+.features_info_content p{font-size:12px; line-height:15px;}
+.features_info_content ul li {line-height:20px; font-size:12px; }
+
+.core_services_head { font-size: 20px; }
+.core_services_heading .core_service_headline { font-size: 12px; line-height:20px; }
+.core_services_items_left .core_services_item_head {
+    font-size: 14px;
+    line-height: 20px;
+}
+.core_services_items_right .core_services_item_head {
+    font-size: 14px;
+    line-height: 20px;
+}
+.core_services_items_left i {font-size: 24px; }
+.core_services_items_right i {font-size: 24px; }
+.core_services_items_left .core_services_item_content { font-size: 12px;}
+.core_services_items_right .core_services_item_content { font-size: 12px;}
+.core_services_left {  padding-right: 110px;}
+.core_services_right {  padding-left: 120px;}
+
+
+.testimonials_head {  font-size: 20px;    line-height: 30px; }
+.testimonial-text{font-size:14px; padding:0px 50px;}
+.testimonial-name {  font-size: 14px;  }
+.post-name{font-size:14px;}
+
+.hire_cvr_head_top {    font-size: 36px;    line-height: 40px;}
+.hire_cvr_content_botm {    font-size: 20px; }
+.hire_cvr_content_txt{font-size: 14px;    line-height: 20px;}
+.contact_us_btn {    padding: 10px 20px;    font-size: 14px;}
+.web_development_formats {  padding: 30px 0px;}
+.web_development_formats_heading_txt {    font-size: 20px;}
+.web_development_formats_content ul li {width: 25%;}
+.web_development_formats_txt .format_txt {    font-size: 10px; line-height:15px;}
+.format_nm {  font-size: 12px; }
+.format_info_btn { padding:5px 10px;}
+.developers_skill {  padding: 30px 0px;}
+.developers_skill_heading_txt {    font-size: 20px;}
+.developers_skill_list ul li { font-size: 14px; }
+.php_project_txt_head {
+    font-size: 18px;
+    line-height: normal;
+}
+.php_project_txt {    font-size: 14px;}
+.see_portfolio_btn {    padding: 5px 10px;  font-size: 14px; margin-top: 25px;}
+.php_project_item .project_img {    height: 100%;}
+
+
+
+.why_us_heading {    font-size: 24px;    line-height: 30px;}
+.why_us_content {    font-size: 14px;    line-height: 20px;}
+.why_us_subheading {    font-size: 16px;    line-height: 20px }
+.why_us_subcontent {   font-size: 14px; }
+.job_catagory_heading {  font-size: 24px; line-height: 30px;}
+.find_job_btn {   font-size: 10px;  padding: 10px;}
+
+.service_content {
+    margin-top: 30px;
+}
+
+.page_content {   
+    padding-bottom: 50px;   
+}
+
+.product_heading {
+    font-size: 32px;  
+	padding-bottom: 10px;
+}
+
+.mgmt_info_content {
+    padding-top: 20px;
+}
+
+.mgmt_info_heading {
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.mgmt_info_skill_heading {
+    padding: 5px 0px;
+}
+
+.mgmt_info_skill_txt {     
+    font-size: 13px;
+}
+
+.mgmt_info_subheading {
+    font-size: 14px;
+}
+
+.footer {    padding-top: 30px; }
+.footer h6 {font-size: 16px;    margin-bottom: 10px;}
+
+i.cotanct_details_icon {  width: 30px;}
+.cotanct_details li span { font-size: 14px;}
+
+.footer a {font-size: 14px; }
+
+.footer .social-icons li {margin-right: 6px; }
+.social-icons .one {  height: 30px;    width: 30px; }
+.social-icons .one i {  font-size: 14px;}
+
+.social-icons .two {  height: 30px;    width: 30px; }
+.social-icons .two i {  font-size: 14px;}
+
+.social-icons .three {  height: 30px;    width: 30px; }
+.social-icons .three i {  font-size: 14px;}
+
+.social-icons .five {  height: 30px;    width: 30px; }
+.social-icons .five i {  font-size: 14px;}
+
+#tawkchat-status-icon.offline:before {  font-size: 24px;}
+
+.fundraising_heading {
+    font-size: 24px;
+    padding: 0px;
+}
+
+.fundraising_banner_subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.service_item_img_holder i {
+    font-size: 40px;
+    padding: 0px;
+}
+
+
+.service_content_txt_subtitle {
+    font-size: 16px;     
+}
+
+.get_certify_content_subtitle {
+    font-size: 24px;     
+}
+
+.get_certify_txt_content {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.learning_level_heading {
+    font-size: 24px;     
+}
+
+.learning_level_content_heading {    
+    font-size: 16px;     
+}
+
+
+.school_mgmt_banner_heading {
+    font-size: 34px;     
+}
+
+.school_mgmt_banner_txt {
+    font-size: 24px;
+}
+
+section.school_mgmt_info {
+    padding: 50px 0px;
+}
+
+section.list_of_system_modules {
+    padding: 25px 0px;    
+}
+
+section.schools_review {
+    padding: 25px 0px;
+}
+
+.school_review_inner {
+    padding: 25px 0px;
+}
+
+.school_mgmt_info_content {
+    padding: 25px 0px;
+}
+
+.school_mgmt_banner_heading {
+    font-size: 26px;
+}
+
+section.login_types {
+    padding: 50px 0px;    
+}
+
+.school_mgmt_banner_txt {
+    font-size: 20px;
+}
+
+.school_mgmt_info_heading {
+    padding-bottom: 0px;
+    font-size: 20px;
+}
+
+.login_type_item {
+    padding: 10px;	  
+}
+
+.login_type_nm {
+    font-size: 14px;
+}
+
+.school_mgmt_info_subheading {
+    font-size: 14px;
+}
+
+.contact_link_btn {    
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.school_mgmt_info_skill_heading {    
+    font-size: 16px;
+}
+
+section.list_of_system_modules {
+    padding:50px 0px; 
+}
+
+.school_mgmt_info_item {
+    padding: 10px 0px;
+}
+section.start_journey {
+    padding: 50px 0px;
+}
+
+li.regular_blogs_li {   
+    width: 50%;
+}
+
+.blog_title { 
+    font-size: 20px;
+}
+
+.blog_desc {
+    font-size: 14px;
+}
+
+.enquiry_form_box {    
+    width: 350px;   
+}
+
+.pg_cover_content1_txt {    
+    font-size: 24px;     
+}
+
+.pg_cover_content1_txt span {  
+    font-size: 42px;
+}
+
+.enquiry_form_heading {  
+    margin: 0px 0px 10px;
+    font-size: 20px;   
+}
+
+.inpt_fields {
+    height: 35px;   
+    padding: 10px;  
+    margin-bottom: 10px;
+}
+
+select.course_select {
+    height: 35px;   
+    padding: 10px;  
+    margin-bottom: 10px;
+	font-size: 12px;
+}
+
+.inpt_text {
+    padding: 10px;  
+    margin-bottom: 10px;
+}
+ 
+.sbmt_btn2 {   
+    height: 35px;
+    line-height:35px;    
+}
+
+h3.tittle-w3l {
+    font-size: 24px;   
+    margin-bottom: 15px;
+}
+
+.bannergrid1 { 
+    min-height: 250px;
+}
+
+.agileinfo_banner_bottom_left {
+    margin-top: 50px;
+}
+
+.grid figure { 
+    right: 0;
+    width: 100%;
+}
+
+.grid figure img {    
+    height: 100%;
+} 
+
+.codeigniter_botom h2 { 
+    font-size: 20px;     
+}
+
+section.achieved_number {
+    padding: 10px 0px;
+}
+
+.achieved_figure {   
+    font-size: 24px;
+}
+
+.achieve_dtl {
+    font-size: 14px; 
+}
+
+.experts_block_heading {
+    font-size: 24px;
+}
+
+.experts_block_btn a {    
+    font-size: 16px;    
+}
+
+.blackberry_pg_cover {
+    height: 150px;
+}
+
+.Angular_box {
+    padding: 25px 0px;
+}
+
+#codeigniter h1 {    
+    font-size: 20px;
+}
+
+.black {
+    font-size: 24px !important;
+    line-height: normal;
+    margin: 0px 10px 30px;
+}
+
+.Angular_choose p {     
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.achieved_nmbr_items {
+    margin: 15px 0px;
+}
+
+.nmbr_middle {
+    border:none;
+}
+
+.service_portfolio_btns a {     
+    margin: 0px 10px 10px 0px;
+	padding: 10px 20px;
+}
+
+.why_development h1 {    
+    font-size: 24px;  
+    margin: 25px 0px;  
+}
+
+.development_services h3 {
+    font-size: 24px;    
+    margin-bottom: 25px;    
+}
+
+.Angular_black p {
+    font-size: 13px;
+    margin: 0;
+    line-height: 20px!important;
+}
+
+.expres_left_image {    
+    height: 160px;
+    width: 160px;
+}
+
+.expres_left_image .expres_left_image_holder {  
+    height: 140px;
+    width: 140px;
+}
+
+.express_right > h2 {
+    font-size: 18px;
+    margin: 30px 0px 0px;
+}
+
+.express_right > p {
+    font-size: 14px;
+}
+
+.mgmt_info_item {
+    padding: 0; 
+}
+
+.express_right {
+    text-align: center;
+}
+
+.express_txt_right {
+    text-align: center;
+}
+
+.right_content {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+}
+
+.left_menu {    
+    float: none;
+    width: 100%;
+} 
+
+.icon_about ul li a span.icon { 
+    width: 100px; 
+}
+
+.about_top_content {
+    padding: 40px 0px 40px 0px;    
+}
+
+.our_company_txt {
+    padding-bottom: 0px;
+}
+
+.green_cover_project {     
+    padding: 50px 0px;
+}
+
+.project_work_item {    
+    margin-bottom: 20px;
+}
+
+.about_top_content .content_about {     
+    line-height: 23px;   
+}
+
+.learning_level_txt {    
+    height: 320px;
+}
+
+.servies_portfolio_heading {    
+    font-size: 26px;    
+}
+
+.partner_benifit_heading {   
+    font-size: 26px;  
+}
+
+
+section.advantage_blk {
+    padding: 50px 0px;
+}
+
+.servies_portfolio_heading {    
+    font-size: 26px;    
+}
+
+
+
+.advantage_item {
+    padding: 15px;
+    margin: 25px;
+    min-height: 230px;
+}
+
+.advantage_item_hd {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+
+
+
+}
+
+
+@media screen and (max-width:767px){
+
+/*  Softspro blog */
+
+.blogs-regular-item-blk {
+    width: 100%;
+    margin: 0% 0% 5% 0%;
+}
+
+.blogs-regular-item-image-holder {
+    height: 380px;
+}
+/*  Softspro blog */
+
+.course-apply-form-left-blk {
+    position: initial;
+    width: 100%;
+    display: block;
+}
+
+.course-apply-form-left-content {
+    display: flex;
+    align-items: center;
+}
+
+.course-apply-form-left-img img {
+    width: 150px;
+}
+
+.course-apply-form-left-content-hd {
+    width: 70%;
+}
+
+.course-apply-form-left-img {
+    position: initial;
+}
+
+/*       */	
+.appointment_banner_content_blk {
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.appointment_banner_img_blk img {
+    width: 50%;
+}
+
+.appointment_free_consultation_from_block {
+    margin: 0px 0px 0px;
+}
+
+.appointment_app_feature_blk_hd {
+    text-align: center;
+}
+
+section.how_appointment_app_works_sec {
+    background-position: left;
+}
+
+#appointment_app_works .panel-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#appointment_app_works .panel-title>a:before {
+    color: #ffffff;
+}
+
+#appointment_app_works .panel-collapse .panel-body p {
+    color: #fff;
+}
+
+#appointment_app_works .panel a.collapsed {
+    color: #fff !important;
+}
+
+#appointment_app_works .panel-title>a.collapsed:before {
+    color: #ffffff;
+}
+
+.ondemand_appointment_app_sec_txt {
+    margin-bottom: 40px;
+}
+
+.ondemand_app_feature_blk {
+    background-color: inherit;
+    box-shadow: none;
+    padding: 0;
+}
+
+.ondemand_app_feature_blk2 {
+    background-color: initial;
+    box-shadow: none;
+    padding: 0;
+    margin-top: inherit;
+}
+
+.banner_lower_block {
+    min-height: auto;
+}
+
+.left_list {
+    float: initial;
+    margin: 0 auto 40px;
+}
+
+.footer_main_content_block {
+    width: 100%;
+    text-align: center;
+}
+
+.footer_main_content_blk_hd {
+    text-align: center;
+    font-size: 56px;
+}
+
+.footer_main_content_blk_txt {
+    text-align: center;
+}
+
+.form_main_contact_blk span.large-text {
+    font-size: 20px;
+}
+
+.form_main_contact_blk span.small-text {
+    font-size: 20px;
+}
+
+.get_in_touch_consultation_form_block {
+    margin-top: 400px;
+}
+
+.home_blogs .regular_blog_image_holder {
+    height: 360px;
+}
+
+.betting_free_consultation_from_block {
+    margin: 0;
+}
+
+.features_offer_sec_hd {
+    font-size: 65px;
+    margin-bottom: 40px;
+}
+
+.feature_offer_sec_content_blk2 {
+    margin-top: 40px;
+}
+
+.foodapp_demo_sec_hd {
+    text-align: center;
+}
+
+.grocery_banner_hd {
+    font-size: 50px;
+}
+
+.betfair_free_consultation_from_block {
+    margin: 0;
+}
+
+.grocery_app_advantage_sec_content_hd {
+    text-align: center;
+}
+
+.grocery_app_advantage_sec_content_txt {
+    text-align: center;
+}
+
+.grocery_highlights_txt {
+    text-align: center;
+}
+
+.grocery_highlights_txt.white_bg {
+    text-align: center;
+}
+
+.taxi_app_bg_hd {
+    font-size: 50px;
+    float: left;
+    margin-right: 15px;
+}
+
+.taxi_app_bg_hd2 {
+    font-size: 50px;
+    float: left;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+.taxi_app_bg_txt {
+    display: inline-block;
+}
+
+.blackberry_pg_cover_taxi_mockup img {
+    width: 60%;
+}
+
+.taxi_app_panels_sec_hd h2 {
+    font-size: 50px;
+}
+
+.taxi_traveller_panel_blk_hd {
+    font-size: 60px;
+    text-align: center;
+}
+
+.taxi_traveller_panel_txt {
+    text-align: center;
+}
+
+.taxi_traveller_panel_content_hd {
+    text-align: center;
+}
+
+.taxi_traveller_panel_content_txt {
+    text-align: center;
+}
+
+.blackberry_pg_cover.android_bg {
+    background-position: 40%,left;
+}
+
+.android_app_bg_txt {
+    max-width: 460px;
+}
+
+.iphone_free_consultation_from_block {
+    margin: 0;
+}
+
+.ios_app_development_proccess_content_img img {
+    width: 300px;
+}
+
+.laravel_app_bg_hd2 {
+    font-size: 75px;
+}
+
+.laravel_app_bg_txt {
+    font-size: 20px;
+    font-weight: normal;
+    width: 420px;
+}
+
+.laravel_free_consultation_from_block {
+    margin: 0;
+}
+
+.laravel_app_solution_content_hd {
+    text-align: center;
+}
+
+.laravel_app_solution_opt_blk_hd {
+    text-align: center;
+}
+
+.laravel_app_solution_opt_blk_txt {
+    text-align: center;
+}
+
+.laravel_app_solution_img_blk {
+    margin: 10px auto 30px;
+}
+
+.innovative_projects_sec_mockup {
+    text-align: center;
+}
+
+.innovative_projects_sec_opt_blk_hd {
+    text-align: center;
+}
+
+.innovative_projects_sec_opt_blk_txt {
+    text-align: center;
+}
+
+.innovative_projects_sec_img_blk {
+    margin-bottom: 20px;
+}
+
+.laravel_developers_sec_mockup {
+    text-align: center;
+}
+
+#accordion .panel-collapse .panel-body {
+    color: #fff;
+}
+
+.panel-title a {
+    color: #fff;
+}
+
+.panel a.collapsed {
+    color: #fff !important;
+}
+
+#accordion .panel-collapse .panel-body a {
+    color: #ff1717;
+}
+
+.blackberry_pg_cover_betfair {
+    background-position: 20%, left;
+}
+
+.betfair_banner_hd {
+    width: 500px;
+    font-size: 50px;
+}
+
+.sport_betting_betfair_contnt_txt {
+    text-align: center;
+}
+
+.sports_betting_api_sec_content_icon {
+    margin: 0 auto 20px;
+}
+
+.sports_betting_api_sec_content_hd {
+    text-align: center;
+}
+
+.sports_betting_api_sec_content_txt {
+    text-align: center;
+}
+
+.betfair_game_api_content_blk {
+    min-height: auto;
+}
+
+.betfair_banner_hd {
+    width: 300px;
+    font-size: 28px;
+}
+
+.blackberry_pg_cover_betfair {
+    background-position: 30%, left;
+}
+
+.betfair_app_bn_contact_btn a {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*       */
+
+
+
+.desktop_menu{display:none;}
+
+ /* 27 Nov 2019 CSS start
+.panel-group {
+    width: 400px;
+}
+
+
+
+ 
+27 Nov 2019 CSS End */
+
+
+
+
+
+/* 
+.inner_nav{display:block;float:right;width:100%;}
+.inner_nav > ul{width:100%;border:1px solid #ddd;margin:10px 0px;}
+.inner_nav > ul > li{margin:0;width:100%;border-bottom:1px solid #ddd;}
+.inner_nav > ul > li > a{color:rgb(64, 64, 64);font-size:12px;line-height:16px;padding:6px 3px;text-align:center;width:100%;}
+.header_lower{background:#fff;}
+.logo_inner{background:rgba(0, 0, 0, 0) none repeat scroll 0 0;left:auto;margin:5px 5px 5px 0;padding:0;position:relative;top:auto;width:110px;border:none;}
+.left_header{width:100%;}
+.submenu .wrapper{float:left;width:100%;}
+.submenu{background-color:rgba(63, 70, 82, 0.97);border:0 none !important;display:none;float:left;height:auto;left:auto;overflow:hidden;padding:10px;position:relative;top:auto;width:100%;}
+.inner_nav > ul > li:hover > .submenu{height:auto;border:none;}
+.company_links{margin:10px 0px;width:100%;}
+.services_links > ul > li > a > i{display:none;}
+.services_links > ul > li > a{background:none;border-radius:0;box-shadow:none;color:rgb(255, 255, 255);padding:5px;width:100%;}
+.services_links > ul > li > a > span{margin-bottom:0;}
+.services_links > ul > li{padding:0;width:100%;}
+.services_links > ul > li > a{text-align:left;}
+.services_links > ul > li > a:hover{transform:scale(1.0);color:rgb(131, 202, 137);text-decoration:underline;}
+.socials ul{text-align:center;}
+.socials ul li{color:rgb(255, 255, 255);display:inline-block;float:none;font-size:14px;margin-bottom:5px;vertical-align:middle;}
+.socials ul li a{background:rgb(0, 196, 204);border-color:rgb(0, 196, 204);color:#fff;}
+.socials ul li:nth-child(5n){width:100%;float:left;}
+.socials ul li:nth-child(6n){width:100%;float:left;}
+.socials ul li i{display:inline-block;float:none;vertical-align:middle;}
+.socials ul li a , .number em{display:inline-block;float:none;vertical-align:middle;}
+.number{background:rgb(0, 196, 204);border-color:rgb(0, 196, 204);color:#fff;margin:0px;text-align:center;width:100%;}
+.number a{width:180px;background:none !important;}
+.number:hover a{width:180px;background:none;color:rgb(0, 196, 204);}
+.number em{width:180px;color:#fff;}
+.number:hover em{width:180px;color:rgb(0, 196, 204);}
+
+
+.left_header {
+    display: none;
+}
+.left_header > ul {
+    float: none;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 10px 0px;
+}
+.left_header > ul > li {
+    margin: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.left_header > ul > li > a {
+    color: rgb(64, 64, 64);
+    font-size: 12px;
+    line-height: 16px;
+    padding: 6px 3px;
+    text-align: center;
+    width: 100%;
+}  */
+
+.logo_inner{
+	background:rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	left:auto;
+	margin:5px 5px 5px 5px;
+	padding:0;
+	position:relative;
+	top:auto;
+	width:110px;
+	border:none;
+}
+
+.wrapper {
+    width: 335px;
+}
+
+
+.iphone_menu{
+	display:block;
+}
+
+.menu_click {     
+    cursor: pointer;   
+    margin: 15px 10px;
+	float:right;
+} 
+
+.menu_click span {
+	color:#333;
+	font-size:26px;
+}
+
+.left_header {
+    display: none;
+}
+
+.inner_nav{display:none;}
+
+.header_lower {
+    box-shadow: 0 0 11px rgb(221, 221, 221);
+    background: #fff;
+}
+
+.menu_open .mobile_menu {
+    right: 0;
+    top: 121px; 
+}
+
+.mobile_menu {
+    display: inline-block;
+    float: none;
+    position: fixed;
+    right: -100%;
+    z-index: 300;
+    transition: ease .3s;
+    width: 100%;
+    background-color: rgba(38, 33, 30, 0.91);
+    border-radius: 0;
+    padding: 0px;    
+    top: 57px;
+	height:100%;
+	overflow: auto;
+	padding-bottom: 100px;
+}
+
+.menu_open .mobile_menu {
+    right: 0;
+    top: 57px;
+}
+
+.mobile_menu ul { 
+	padding-top:20px;
+}
+
+.mobile_menu ul li{
+	color:#fff;
+	font-size:16px;
+	padding:10px 15px;
+}
+
+.mobile_menu ul li a{
+	color:#fff;
+	font-size:16px;
+}
+
+.mobile_menu  .dropdown-menu {  
+    position: relative;
+    width: 100%;
+    background: none;
+    padding: 0;
+}
+
+.mobile_menu  .dropdown-menu li {    
+    padding: 5px 0px;
+} 
+
+.inner_mobile_menu {
+    padding-left: 15px;
+}
+
+/* header responsive*/
+
+.small_tagline{font-size:18px;}
+.big_tagline{font-size:28px;}
+.our_options a{font-size:16px;max-width:90%;}
+.work_procses_section.active .right_list{max-width:90%; left:20px;}
+.work_procses_section .neet_des p{font-size:17px;line-height:32px;}
+.work_procses_section .neet_des p i{line-height:32px;font-size:18px;}
+.home_section02 .neet_des > p{font-size:15px;margin:10px 0;}
+.input.text{margin:0;width:100%;}
+.home_section02 .form{padding:10px;}
+.contnt_block h2{font-size:16px;}
+.input.text.textarea{width:100%;}
+.input input, .input textarea{-webkit-appearance:none;}
+.technology_list > ul > li{width:50%;}
+.hidden_sections{display:none;height:auto;position:relative;top:auto;width:100%;}
+.sweet-alert p{font-size:14px;}
+.sweet-alert h2{font-size:18px;line-height:24px;}
+.sweet-alert button{font-size:14px;margin:10px 5px 0;padding:10px 25px;}
+.left_list{height:250px;margin-bottom:30px;margin-left:5%;display:block;width:90%;}
+.frames_blk{display:none;}
+.not_found h1{font-size:98px;margin:0 0 10px;}
+.not_found{padding:100px 0 80px;width:100%;}
+
+.mgmt_info_item { 
+    min-height: 180px;  
+}
+
+.product_heading {
+    font-size: 24px;
+}
+
+.product_banner_subtitle {
+    font-size: 18px;
+}
+
+.mgmt_info_heading {   
+    font-size: 24px;
+}
+
+ .content_top_heading {
+    font-size: 24px;
+}
+
+.fundraising_services_item {
+    height: 220px;
+}
+
+.learning_level_inner_item {     
+    margin-bottom: 15px;
+}
+ 
+.banner_list_content ul li {
+    width: 100%;
+    float: none; 
+}
+
+.banner_list_content ul li:first-child {
+    width: 100%;
+}
+
+.banner_list_content ul li:nth-child(4) {
+    width: 100%;
+}
+
+.banner_list_content ul li:nth-child(5) {
+    width: 100%;
+}
+
+.view_more_link_btn a {
+    padding: 8px;    
+    font-size: 14px;   
+}
+
+.pg_cover_content1_txt {
+    top: 15%;
+    left: 10%;
+    font-size: 18px;
+    padding: 100px 0px;
+}
+
+.pg_cover_content1_txt span {
+    font-size: 32px;
+}
+.banner_section {
+    text-align: center;
+    margin-top: 100%;
+    padding: 0;
+}
+
+.enquiry_form_box {
+    padding: 15px;
+    width: 100%;
+}
+
+.enquiry_form_heading {
+    margin: 0px 0px 10px;
+    font-size: 14px;
+} 
+
+.col-md-10.col-sm-10.col-xs-10.contact-text-agileinf0 {
+    padding-left: 30px;
+}
+
+.about_company_txt {
+    padding: 50px 25px 50px 25px;   
+    width: 100%;
+    float: none;
+}
+
+.blackberry_pg_cover {
+    background-position: center;
+    background-size: 570px auto;
+}
+
+
+
+.codeigniter_botom h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.service_portfolio_item {
+    padding: 20px;    
+}
+
+.service_ability_icon {     
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+	float:none;
+	display: inline-block;
+}
+
+#service_portfolio_slider .owl-buttons  {
+    display:none;
+}
+
+.service_portfolio_abilties {    
+    text-align: center;
+}
+
+.service_ability_txt {  
+    width: 100%;
+    padding-left: 0;  
+    text-align: center;
+}
+
+.service_portfolio_btns {
+	text-align: center;
+}
+
+.service_portfolio_btns a {    
+    margin: 5px 0px;
+    text-align: center;
+	width: 65%; 
+} 
+
+.servies_portfolio_heading {   
+    font-size: 20px !important;    
+}
+
+.service_portfolio_heading {
+    font-size: 22px; 
+}
+
+.service_ability_txt {
+    font-size: 20px;    
+}
+
+.contact_dv {   
+    float: none;
+   
+}
+
+.left_contct {
+    width: 100%;
+    float: none;
+    margin-right: 0%;
+}
+
+.left_contct input[type="submit"] {    
+    height: 50px;
+    line-height: normal;    
+}
+
+.game_develope_banner {
+    margin-top: 55px;
+}
+
+.game_developement_cvr {    
+    min-height: 245px;
+}
+ 
+.popular_game_img_holder {
+    height: 345px;    
+    margin-bottom: 20px;
+}
+ 
+.icon_about ul {
+    display: block; 
+    text-align: center;
+}
+
+.icon_about ul li { 
+    width: 49%; 
+    margin-bottom: 20px;
+}
+
+.icon_about .about_icon_text .numbers { 
+    text-align: center; 
+}
+
+.image_content_about {
+    padding: 40px 0px 40px 0px;
+}
+
+.our_company_content { 
+    text-align: left; 
+    margin-top: 15px; 
+}
+
+ 
+#codeigniter h1 {   
+    font-size: 16px;
+}
+
+b.tet_heading {
+    font-size: 16px;
+}
+
+.Angular_js p { 
+    font-size: 14px;
+}
+
+.services_blockquote > strong { 
+    font-size: 16px;
+}
+
+.services_blockquote { 
+    font-size: 14px;
+}
+
+.service_portfolio_subheading {
+    font-size: 14px; 
+}
+
+.service_portfolio_txt {
+    font-size: 14px; 
+}
+
+
+.blog_sidenav {
+    padding: 0px 20px;
+}
+
+.home-agile-text.w3-tex-2 {
+    padding: 2em;
+}
+
+.stats-grid i.fa { 
+    margin-right: 2em;
+}
+
+
+.job_list_heading {
+    font-size: 20px; 
+}
+
+.job_heading {
+    font-size: 16px; 
+}
+
+.job_desc {
+    font-size: 14px; 
+}
+
+.achieve_subline {
+    font-size: 16px;
+}
+
+.our_achievements {
+    padding: 0px;
+}
+
+.partner_benifit_heading { 
+    font-size: 20px;
+    margin: 0; 
+}
+section.mgmt_info {
+    padding: 50px 0px;     
+}
+
+.our_achievements_heading {    
+    font-size: 20px;    
+}
+
+.advantage_blk_hd {    
+    font-size: 20px;    
+}
+
+.advantage_item_img_holder {     
+    top: -20px;
+    left: -20px;     
+    height: 60px;
+    width: 60px;   
+    padding: 15px; 
+}
+.foodapp_development_process_mockup img {
+    width: 40%;
+}
+.ecomm_application_sec_img img {
+    max-width: 100%;
+}
+.ecomm_development_process_mockup img {
+    width: 40%;
+}
+section.betting_why_choose_us_sec {
+    background-position: inherit;
+}
+.betting_why_choose_us_sec_content_txt_li li {
+    color: #fff;
+}
+.sports_betting_demo_sec_hd {
+    font-size: 24px;
+}
+
+.our-design-courses-sec {
+    padding: 20px 0;
+}
+
+.our-development-courses-sec {
+    padding: 0px 0;
+}
+
+.our_learning_environment_sec {
+    padding: 20px 0;
+}
+
+.our_learning_environment_content_txt {
+    margin-bottom: 0px;
+}
+
+#course-apply-form .modal-header {
+    display: block !important;
+}
+
+
+}
+
+
+
+@media screen and (max-width:479px){ 
+
+/*  Softspro blog */
+
+.blogs-regular-item-blk {
+    width: 100%;
+    margin: 0% 0% 5% 0%;
+}
+
+.blogs-regular-item-image-holder {
+    height: 230px;
+}
+
+
+/*  Softspro blog */
+
+.course-top-banner-title-info-blk {
+    margin-bottom: 30px;
+}
+
+
+/*  Softspro student rating and reviews */
+.rating_block_detail_summery {
+    display: block;
+}
+
+.rating_summery_show_detail {
+    text-align: initial;
+    margin-bottom: 20px;
+    margin-right: initial;
+}
+
+.rating_summary_widget_rating_slider_blk {
+    width: 100%;
+}
+
+.reviews_block_item_detail {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.reviews_block_reviewer_detail_blk {
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.reviews_block_reviewer_review {
+    width: auto;
+}
+
+/*  Softspro student rating and reviews */
+
+/*       */
+.regular_blog_image_holder {
+    height: 235px;
+}
+
+.appointment_feature_tabs_hd:after {
+    left: 6%;
+}
+
+.appointment_feature_tabs_hd:before {
+    left: 6%;
+}
+
+.doctor_appointment_sec_content_hd h2 {
+    font-size: 33px;
+    text-align: center;
+}
+
+.how_appointment_app_works_sec_hd {
+    font-size: 33px;
+    text-align: center;
+}
+
+/*      */
+
+
+/*       */
+.new_home_content h1 span {
+    font-size: 45px;
+}
+
+.services_blk_list li a span b {
+    font-size: 18px;
+}
+
+.home_blogs .regular_blog_image_holder {
+    height: 220px;
+}
+
+.ecomm_banner_hd {
+    font-size: 36px;
+}
+
+.ecommerce_app_bn_contact_btn a {
+    padding: 10px;
+}
+
+.features_offer_sec_hd {
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+
+.foodapp_bn_contact_btn a {
+    padding: 10px 22px;
+}
+
+.form_main_contact_blk span.small-text {
+    font-size: 18px;
+}
+
+.foodapp_banner_hd {
+    font-size: 30px;
+}
+
+.grocery_banner_hd {
+    font-size: 32px;
+}
+
+.grocery_app_bn_contact_btn a {
+    padding: 10px 20px;
+}
+
+.service_sec_contact_btn_sec_hd {
+    font-size: 26px;
+}
+
+.taxi_app_panels_sec_hd h2 {
+    font-size: 36px;
+}
+
+.blackberry_pg_cover.android_bg {
+    background-position: 0%,left;
+}
+
+.iphone_app_bg_hd {
+    font-size: 65px;
+}
+
+.iphone_app_bg_hd2 {
+    font-size: 65px;
+}
+
+.iphone_app_bg_txt {
+    font-size: 22px;
+}
+
+.laravel_app_bg_hd {
+    font-size: 80px;
+}
+
+.laravel_app_bg_hd2 {
+    font-size: 50px;
+}
+
+.laravel_app_bg_txt {
+    font-size: 21px;
+    width: 290px;
+    text-align: justify;
+}
+
+.laravel_app_solution_sec_hd {
+    font-size: 18px;
+    text-align: center;
+}
+
+.android_app_development_demo_sec_hd {
+    font-size: 30px;
+}
+
+.sports_betting_bn_contact_btn a {
+    padding: 10px 20px;
+}
+
+.betting_why_choose_us_sec_hd {
+    font-size: 27px;
+}
+
+/*       */
+
+.technology_list > ul > li{width:100%;}
+.left_list{height:190px;}
+
+.new_home_content h1 {   font-size: 18px; line-height: 25px; }
+.new_home_content_txt { font-size: 15px; line-height: 20px; margin: 10px 0px 30px 0; }
+.home_link a {    padding: 10px 15px;    font-size: 14px; }
+.services_blk {  margin-top: 15px;     padding:15px;}
+.services_blk_link a { font-size: 14px; line-height: 20px; }
+.work_procses_section .neet_des p {font-size: 16px;  line-height: 20px; }
+.testimonials_head {font-size: 18px;  line-height: 25px; }
+.testimonial-text{font-size:14px; padding:0px 5px;}
+.testimonial-name{font-size:14px;}
+.post-name{font-size:14px;}
+.core_services { padding:50px 0px;}
+.core_services_content {padding: 0px 0px 220px;}
+.core_services_head {font-size: 20px;}
+.core_services_heading .core_service_headline {font-size: 14px; line-height: 20px; }
+.core_services_items_left .core_services_item_content {font-size: 14px; padding: 0;}
+.core_services_left { width: 100%; padding: 5px 0px; float:none; }
+.core_services_right { width: 100%; padding: 5px  0px; float:none;  }
+.core_services_items_left .core_services_item_head{text-align:center; position:relative; padding-bottom:10px;}
+.core_services_items_right .core_services_item_head{text-align:center;  position:relative; padding-bottom:10px;}
+.core_services_items_left .core_services_item_content{text-align:center;}
+.core_services_items_right .core_services_item_content {
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+}
+
+.core_services_items_right i {
+    font-size: 20px;
+    position: absolute;
+    left: 12%;
+}
+
+.core_services_items_left i {
+    font-size: 20px;
+    position: absolute;
+    left: 6%;
+}
+
+.hire_developers_cover { padding: 120px 0px;}
+.hire_cvr_head_top {  font-size: 24px; line-height: 25px;}
+.web_development_formats_content ul li {
+    width: 50%;
+}
+
+.web_development_formats_list { 
+    min-height: 220px;
+}
+
+.portfolio_heading p {
+    font-size: 18px;     
+}
+
+.portfolio_subheading {
+    color: #888;
+    font-size: 14px;
+    margin: 0px 0px 40px;
+}
+
+.portfolio_list li {
+    width: 100%; 
+	height:260px;
+}
+
+.portfolio_list li:nth-child(2) {
+    height: 260px;     
+}
+
+.portfolio_list li:nth-child(1) {
+    width: 100%;    
+}
+
+.portfolio_list_item_content.get_quote .portfolio_desc p {
+    font-size: 18px;
+}
+
+a.get_quote {
+    background: #27aeb3;
+    color: #fff;
+    padding: 10px 25px;
+    display: inline-block;
+    margin: 10px 0px 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.all_work_button a {   
+    padding: 8px 16px;    
+    font-size: 14px;
+}
+
+.fundraising_heading {
+    font-size: 18px;
+    padding: 30px;
+}
+
+.fundraising_banner_subtitle {
+    font-size: 16px;    
+}
+
+.get_certify_content_subtitle {
+    font-size: 18px;
+}
+
+.get_certify_txt_content {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.learning_level_heading {
+    font-size: 18px;
+}
+
+.school_mgmt_banner_content {    
+    left: 0;
+}
+
+.login_type_item {     
+    margin-bottom: 10px;
+}
+
+.school_mgmt_info_heading {     
+    font-size: 18px;
+}
+
+
+li.regular_blogs_li {   
+    width: 100%;
+}
+
+.about_company_heading {
+    font-size: 20px;
+}
+
+.features_info_content p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.features_info_content ul li {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.php_project_content_txt {
+    padding-top: 20px;
+}
+
+.php_project_item {   
+    margin-bottom: 20px;
+}
+
+.service_content p {    
+    font-size: 14px;
+}
+
+.learning_level_txt {
+    height: 250px;
+}
+
+.learning_level {
+    padding: 50px 0px!important; 
+}
+
+#foodapps_feature ul li a {
+    border-radius: 5px;
+}
+.foodapp_feature_imgs_blk img {
+    max-width: 70%;
+}
+.technology_block ul li {
+    padding: 5px;
+}
+.technology_block_icon {
+    width: 65px;
+}
+ .technology_block_icon_nm {
+    font-size: 16px;
+}
+
+.ecomm_technology_block ul li {
+    padding: 5px;
+}
+.ecomm_technology_block_icon {
+    width: 65px;
+}
+ .ecomm_technology_block_icon_nm {
+    font-size: 16px;
+}
+
+.footer_main_content_blk_hd {
+    text-align: center;
+    font-size: 48px;
+}
+
+
+
+
+}
+@media screen and (max-width:425px){.wrapper{width:411px;}
+/*  Softspro blog */
+
+.nw-logo {
+    width: 180px;
+}
+
+.blogs-regular-item-image-holder {
+    height: 200px;
+}
+/*  Softspro blog */
+.technology_block_icon_nm {
+    font-size: 14px;
+}
+.technology_block_icon {
+    width: 50px;
+}
+.ecomm_technology_block_icon_nm {
+    font-size: 14px;
+}
+.ecomm_technology_block_icon {
+    width: 50px;
+}
+
+.ecomm_banner_hd {
+    font-size: 32px;
+}
+
+.foodapp_banner_hd {
+    font-size: 27px;
+}
+
+.foodapp_bn_contact_btn a {
+    padding: 10px 10px;
+}
+
+.grocery_app_bn_contact_btn a {
+    padding: 10px 10px;
+}
+
+.sports_betting_bn_contact_btn a {
+    padding: 10px 10px;
+}
+
+.form_main_contact_blk span.small-text {
+    font-size: 16px;
+}
+
+
+.home_blogs .regular_blog_image_holder {
+    height: 180px;
+}
+.footer_main_content_blk_hd {
+    font-size: 36px;
+    line-height: initial;
+}
+
+.footer_main_content_block {
+    margin-top: -100px;
+}
+
+
+}
+
+@media screen and (max-width:411px){
+	
+	
+.nw-header-getstart-btn {
+    margin: 10px 0px 10px 10px;
+}
+
+.nw-logo {
+    width: 160px;
+}
+.sidenav-bars {
+    padding: 10px 10px 0 0;
+}
+
+.courses-main-banner-sec-hd {
+    font-size: 32px;
+}
+
+
+}
+
+@media screen and (max-width:400px){
+	
+.wrapper{width:212px;}
+
+.form_main_contact_blk span.large-text {
+    font-size: 18px;
+}
+
+
+
+
+}
+@media screen and (max-width:239px){.wrapper{max-width:98%}
+}
+

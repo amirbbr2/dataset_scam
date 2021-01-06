@@ -1,0 +1,18 @@
+function getCookieMpgCookie(cname){var name=cname+"=";var decodedCookie=decodeURIComponent(document.cookie);var ca=decodedCookie.split('; ');for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==' '){c=c.substring(1);}
+if(c.indexOf(name)==0){return c.substring(name.length,c.length);}}
+return "";}
+function initLoggedUser(){loggedUsername=getCookieMpgCookie("logged_username");if(loggedUsername!=''){logoutUrl=getCookieMpgCookie("logout_url");document.documentElement.classList.add('is_logged');var logoutLink=document.querySelector('.logout_link');if(logoutLink){logoutLink.setAttribute('href',logoutUrl);}
+var loggedUser=document.querySelector('.logged_username');if(loggedUser){loggedUser.innerHTML=loggedUsername;}
+let loggedLinks='<a class="header__action-link header__action-link--logout" href="'+logoutUrl+'">Log out</a>'+
+'<a class="header__action-link header__action-link--admin logout_link" >'+loggedUsername+'</a>';if(document.querySelector('.header__action')){document.querySelector('.header__action').innerHTML=loggedLinks;}
+if(document.querySelector('.mobile_login_link span')){document.querySelector('.mobile_login_link span').innerHTML=loggedUsername;document.querySelector('.mobile_login_link').setAttribute('href','');document.querySelector('.mobile_signup_link span').innerHTML='LOGOUT';document.querySelector('.mobile_signup_link').setAttribute('href',logoutUrl);}}else{}}
+initLoggedUser();function initGameCategoryVideos(){let catSites=document.querySelectorAll('.category_sites_item_content.has_video');for(let i=0,len=catSites.length;i<len;i++){if(isMobileOrTablet){catSites[i].removeEventListener('touchstart',onVideoCatEnter);catSites[i].addEventListener('touchstart',onVideoCatEnter,false);}else{catSites[i].removeEventListener('mouseleave',onVideoCatLeave);catSites[i].addEventListener('mouseleave',onVideoCatLeave,false);catSites[i].removeEventListener('mouseenter',onVideoCatEnter);catSites[i].addEventListener('mouseenter',onVideoCatEnter,false);}}}
+function onMobileVideoClick(ev){let hoverCategory=ev.currentTarget;if(!hoverCategory.querySelector('video')){ev.preventDefault();let oldVideo=document.querySelector('.category_video_item');if(oldVideo){oldVideo.remove();}
+let videoUrl=hoverCategory.dataset.video;let videoPosterUrl=hoverCategory.dataset.poster;let categorySiteThumb=hoverCategory.querySelector('.category_sites_item_thumb');if(categorySiteThumb){let categoryVideo='<video class="category_video_item" preload="none" autoplay loop playsinline muted poster="'+videoPosterUrl+'" video-js>'+
+'<source src="'+videoUrl+'" type="video/mp4">'+
+'</video>';categorySiteThumb.insertAdjacentHTML('beforeend',categoryVideo);}}}
+function onVideoCatEnter(ev){let oldVideo=document.querySelector('.category_video_item');if(oldVideo){oldVideo.remove();}
+let hoverCategory=ev.currentTarget;if(hoverCategory.classList.contains('category_sites_item_content')){let videoUrl=hoverCategory.dataset.video;let videoPosterUrl=hoverCategory.dataset.poster;let categorySiteThumb=hoverCategory.querySelector('.category_sites_item_thumb');if(categorySiteThumb){let categoryVideo='<video class="category_video_item" preload="none" autoplay loop playsinline muted poster="'+videoPosterUrl+'" video-js>'+
+'<source src="'+videoUrl+'" type="video/mp4">'+
+'</video>';categorySiteThumb.insertAdjacentHTML('beforeend',categoryVideo);}}}
+function onVideoCatLeave(ev){let oldVideo=document.querySelector('.category_video_item');if(oldVideo){oldVideo.remove();}}

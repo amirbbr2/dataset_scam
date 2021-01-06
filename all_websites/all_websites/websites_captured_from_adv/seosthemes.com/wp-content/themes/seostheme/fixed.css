@@ -1,0 +1,4746 @@
+/*********************************************************************************************************
+* Read More Seos Business 0
+**********************************************************************************************************/
+
+#panel{
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close:hover, #flip:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip, #close {
+        margin-top: 5px;
+	padding: 4px;
+	border-radius: 3px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 1
+**********************************************************************************************************/
+
+#panel1{
+        display: none;
+        margin-top: 5px;
+	text-align: left;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel1 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close1:hover, #flip1:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip1, #close1 {
+        margin-top: 5px;
+	padding: 4px;
+	border-radius: 3px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel1 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 2
+**********************************************************************************************************/
+
+#panel2{
+        display: none;
+        margin-top: 5px;
+	text-align: left;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel2 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close2:hover, #flip2:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip2, #close2 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel2 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 3
+**********************************************************************************************************/
+
+#panel3{
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel3 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close3:hover, #flip3:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip3, #close3 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel3 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 4
+**********************************************************************************************************/
+
+#panel4{
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel4 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close4:hover, #flip4:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip4, #close4 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel4 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 5
+**********************************************************************************************************/
+
+#panel5{
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel5 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close5:hover, #flip5:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip5, #close5 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel5 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 6
+**********************************************************************************************************/
+
+#panel6{
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel6 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close6:hover, #flip6:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip6, #close6 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel6 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 7
+**********************************************************************************************************/
+
+#panel7 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel7 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close7:hover, #flip7:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip7, #close7 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel7 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 8
+**********************************************************************************************************/
+
+#panel8 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel8 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close8:hover, #flip8:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip8, #close8 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel8 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 9
+**********************************************************************************************************/
+
+#panel9 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel9 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close9:hover, #flip9:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip9, #close9 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel9 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 10
+**********************************************************************************************************/
+
+#panel10 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel10 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close10:hover, #flip10:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip10, #close10 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel10 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 11
+**********************************************************************************************************/
+
+#panel11 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel11 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close11:hover, #flip11:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip11, #close11 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel11 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 12
+**********************************************************************************************************/
+
+#panel12 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel12 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close12:hover, #flip12:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip12, #close12 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel12 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 13
+**********************************************************************************************************/
+
+#panel13 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel13 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close13:hover, #flip13:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip13, #close13 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel13 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 14
+**********************************************************************************************************/
+
+#panel14 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel14 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close14:hover, #flip14:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip14, #close14 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel14 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 15
+**********************************************************************************************************/
+
+#panel15 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel15 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close15:hover, #flip15:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip15, #close15 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel15 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 16
+**********************************************************************************************************/
+
+#panel16 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel16 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close16:hover, #flip16:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip16, #close16 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel16 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 17
+**********************************************************************************************************/
+
+#panel17 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel17 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close17:hover, #flip17:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip17, #close17 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel17 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 18
+**********************************************************************************************************/
+
+#panel18 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel18 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close18:hover, #flip18:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip18, #close18 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel18 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 19
+**********************************************************************************************************/
+
+#panel19 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel19 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close19:hover, #flip19:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip19, #close19 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel19 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 20
+**********************************************************************************************************/
+
+#panel20 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel20 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close20:hover, #flip20:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip20, #close20 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel20 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 21
+**********************************************************************************************************/
+
+#panel21 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel21 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close21:hover, #flip21:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip21, #close21 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel21 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 22
+**********************************************************************************************************/
+
+#panel22 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel22 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close22:hover, #flip22:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip22, #close22 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel22 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 23
+**********************************************************************************************************/
+
+#panel23 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel23 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close23:hover, #flip23:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip23, #close23 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel23 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 24
+**********************************************************************************************************/
+
+#panel24 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel24 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close24:hover, #flip24:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip24, #close24 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel24 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 25
+**********************************************************************************************************/
+
+#panel25 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel25 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close25:hover, #flip25:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip25, #close25 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel25 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 26
+**********************************************************************************************************/
+
+#panel26 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel26 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close26:hover, #flip26:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip26, #close26 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel26 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 27
+**********************************************************************************************************/
+
+#panel27 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel27 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close27:hover, #flip27:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip27, #close27 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel27 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 28
+**********************************************************************************************************/
+
+#panel28 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel28 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close28:hover, #flip28:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip28, #close28 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel28 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 29
+**********************************************************************************************************/
+
+#panel29 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel29 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close29:hover, #flip29:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip29, #close29 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel29 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 30
+**********************************************************************************************************/
+
+#panel30 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel30 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close30:hover, #flip30:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip30, #close30 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel30 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+
+/*********************************************************************************************************
+* Read More Seos Business 31
+**********************************************************************************************************/
+
+#panel31 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel31 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close31:hover, #flip31:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip31, #close31 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel31 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 32
+**********************************************************************************************************/
+
+#panel32 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel32 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close32:hover, #flip32:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip32, #close32 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel32 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 33
+**********************************************************************************************************/
+
+#panel33 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel33 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close33:hover, #flip33:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip33, #close33 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel33 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 34
+**********************************************************************************************************/
+
+#panel34 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel34 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close34:hover, #flip34:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip34, #close34 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel34 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 35
+**********************************************************************************************************/
+
+#panel35 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel35 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close35:hover, #flip35:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip35, #close35 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel35 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Seos Business 36
+**********************************************************************************************************/
+
+#panel36 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#panel36 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#close36:hover, #flip36:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#flip36, #close36 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#panel36 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 1
+**********************************************************************************************************/
+
+#classipanel1 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel1 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose1:hover, #classiflip1:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip1, #classiclose1 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel1 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 2
+**********************************************************************************************************/
+
+#classipanel2 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel2 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose2:hover, #classiflip2:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip2, #classiclose2 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel2 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 3
+**********************************************************************************************************/
+
+#classipanel3 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel3 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose3:hover, #classiflip3:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip3, #classiclose3 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel3 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 4
+**********************************************************************************************************/
+
+#classipanel4 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel4 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose4:hover, #classiflip4:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip4, #classiclose4 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel4 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 5
+**********************************************************************************************************/
+
+#classipanel5 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel5 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose5:hover, #classiflip5:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip5, #classiclose5 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel5 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 6
+**********************************************************************************************************/
+
+#classipanel6 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel6 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose6:hover, #classiflip6:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip6, #classiclose6 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel6 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 7
+**********************************************************************************************************/
+
+#classipanel7 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel7 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose7:hover, #classiflip7:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip7, #classiclose7 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel7 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 8
+**********************************************************************************************************/
+
+#classipanel8 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel8 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose8:hover, #classiflip8:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip8, #classiclose8 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel8 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 9
+**********************************************************************************************************/
+
+#classipanel9 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel9 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose9:hover, #classiflip9:hover {
+	border-radius: 3px;
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip9, #classiclose9 {
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel9 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 10
+**********************************************************************************************************/
+
+#classipanel10 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel10 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose10:hover, #classiflip10:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip10, #classiclose10 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel10 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+
+/*********************************************************************************************************
+* Read More Classified Ads 11
+**********************************************************************************************************/
+
+#classipanel11 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel11 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose11:hover, #classiflip11:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip11, #classiclose11 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel11 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 12
+**********************************************************************************************************/
+
+#classipanel12 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel12 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose12:hover, #classiflip12:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip12, #classiclose12 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel12 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 13
+**********************************************************************************************************/
+
+#classipanel13 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel13 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose13:hover, #classiflip13:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip13, #classiclose13 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel13 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 14
+**********************************************************************************************************/
+
+#classipanel14 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel14 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose14:hover, #classiflip14:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip14, #classiclose14 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel14 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 15
+**********************************************************************************************************/
+
+#classipanel15 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel15 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose15:hover, #classiflip15:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip15, #classiclose15 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel15 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+
+/*********************************************************************************************************
+* Read More Classified Ads 16
+**********************************************************************************************************/
+
+#classipanel16 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel16 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose16:hover, #classiflip16:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip16, #classiclose16 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel16 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+
+/*********************************************************************************************************
+* Read More Classified Ads 17
+**********************************************************************************************************/
+
+#classipanel17 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel17 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose17:hover, #classiflip17:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip17, #classiclose17 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel17 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+
+/*********************************************************************************************************
+* Read More Classified Ads 18
+**********************************************************************************************************/
+
+#classipanel18 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel18 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose18:hover, #classiflip18:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip18, #classiclose18 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel18 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 19
+**********************************************************************************************************/
+
+#classipanel19 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel19 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose19:hover, #classiflip19:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip19, #classiclose19 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel19 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+
+/*********************************************************************************************************
+* Read More Classified Ads 20
+**********************************************************************************************************/
+
+#classipanel20 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel20 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose20:hover, #classiflip20:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip20, #classiclose20 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel20 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 21
+**********************************************************************************************************/
+
+#classipanel21 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel21 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose21:hover, #classiflip21:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip21, #classiclose21 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel21 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 22
+**********************************************************************************************************/
+
+#classipanel22 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel22 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose22:hover, #classiflip22:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip22, #classiclose22 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel22 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 23
+**********************************************************************************************************/
+
+#classipanel23 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel23 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose23:hover, #classiflip23:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip23, #classiclose23 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel23 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 24
+**********************************************************************************************************/
+
+#classipanel24 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel24 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose24:hover, #classiflip24:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip24, #classiclose24 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel24 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+
+/*********************************************************************************************************
+* Read More Classified Ads 25
+**********************************************************************************************************/
+
+#classipanel25 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel25 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose25:hover, #classiflip25:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip25, #classiclose25 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel25 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 26
+**********************************************************************************************************/
+
+#classipanel26 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel26 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose26:hover, #classiflip26:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip26, #classiclose26 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel26 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 27
+**********************************************************************************************************/
+
+#classipanel27 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel27 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose27:hover, #classiflip27:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip27, #classiclose27 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel27 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 28
+**********************************************************************************************************/
+
+#classipanel28 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel28 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose28:hover, #classiflip28:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip28, #classiclose28 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel28 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 29
+**********************************************************************************************************/
+
+#classipanel29 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel29 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose29:hover, #classiflip29:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip29, #classiclose29 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel29 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 30
+**********************************************************************************************************/
+
+#classipanel30 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel30 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose30:hover, #classiflip30:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip30, #classiclose30 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel30 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 31
+**********************************************************************************************************/
+
+#classipanel31 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel31 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose31:hover, #classiflip31:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip31, #classiclose31 {
+	border-radius: 3px;
+        margin-top: 5px;
+	padding: 4px;
+        line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+        width: 70px;
+        color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel31 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 32
+**********************************************************************************************************/
+
+#classipanel32 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel32 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose32:hover, #classiflip32:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip32, #classiclose32 {
+	border-radius: 3px;
+    margin-top: 5px;
+	padding: 4px;
+    line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+    width: 70px;
+    color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel32 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 33
+**********************************************************************************************************/
+
+#classipanel33 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel33 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose33:hover, #classiflip33:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip33, #classiclose33 {
+	border-radius: 3px;
+	margin-top: 5px;
+	padding: 4px;
+	line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+	width: 70px;
+	color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel33 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 34
+**********************************************************************************************************/
+
+#classipanel34 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel34 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose34:hover, #classiflip34:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip34, #classiclose34 {
+	border-radius: 3px;
+	margin-top: 5px;
+	padding: 4px;
+	line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+	width: 70px;
+	color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel34 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+
+/*********************************************************************************************************
+* Read More Classified Ads 35
+**********************************************************************************************************/
+
+#classipanel35 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel35 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose35:hover, #classiflip35:hover {
+        cursor: pointer;
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#classiflip35, #classiclose35 {
+	border-radius: 3px;
+	margin-top: 5px;
+	padding: 4px;
+	line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+	width: 70px;
+	color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel35 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+
+/*********************************************************************************************************
+* Read More Classified Ads 36
+**********************************************************************************************************/
+
+#classipanel36 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel36 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose36:hover, #classiflip36:hover {
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+        cursor: pointer;
+	opacity: 0.8;
+}
+
+#classiflip36, #classiclose36 {
+	border-radius: 3px;
+	margin-top: 5px;
+	padding: 4px;
+	line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+	width: 70px;
+	color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel36 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}
+
+/*********************************************************************************************************
+* Read More Classified Ads 37
+**********************************************************************************************************/
+
+#classipanel37 {
+        display: none;
+	text-align: left;
+        margin-top: 5px;
+	max-width: auto;
+        min-height: 100%;
+	color: #fff;
+        padding: 10px;
+	font-size: 14px;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+}
+
+#classipanel37 img {
+	width: auto;
+	height: auto;
+	display: block;
+        float: none;
+}
+
+#classiclose37:hover, #classiflip37:hover {
+	-webkit-box-shadow: inset -7px 22px 165px 0px #387F99;
+        -moz-box-shadow: inset -7px 22px 165px 0px #387F99;
+        box-shadow: inset -7px 22px 165px 0px #387F99;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+        cursor: pointer;
+	opacity: 0.8;
+}
+
+#classiflip37, #classiclose37 {
+	border-radius: 3px;
+	margin-top: 5px;
+	padding: 4px;
+	line-height: 12px;
+	text-align: center;
+	font-size: 11px;
+	width: 70px;
+	color: #fff;
+	background: #4ca6cf;
+	-webkit-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+	box-shadow: inset -7px 22px 165px 0px rgba(0,0,0,0.75);
+        font-family: "Arial", 'sans-serif';
+        font-weight: bold;
+}
+
+
+#classipanel37 p {
+	width: auto;
+	color: #333;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+}

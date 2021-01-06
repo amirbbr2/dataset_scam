@@ -1,0 +1,55 @@
+/* Have fun adding your style here :) - PS: At all times this file should contain a comment or a rule, otherwise opera might act buggy :( */
+
+/* General Custom CSS */
+
+
+.header_color .sub_menu > ul > li > a:hover{text-decoration:none !important;}
+
+#top .header_color .main_menu .menu ul .current_page_item > a, #top .header_color .main_menu .menu ul .current-menu-item > a{
+	
+	background:#12a2ce;
+	color:#fff !important;
+}
+
+
+.current-menu-ancestor > a{
+	
+	background:#0a5f75;
+	color:#8AD6EF !important;
+}
+
+.header_color .main_menu .menu ul li a:hover, .header_color .av-subnav-menu ul a:hover {
+    background-color: #12A2CE !important;
+	color:#fff !important;
+}
+
+#header .three.units {
+    width: 400.5px !important;
+}
+
+
+#header .two.units {
+    width: 400.5px !important;
+}
+
+/*
+Desktop Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
+
+@media only screen and (min-width: 768px) {
+  /* Add your Desktop Styles here */
+
+}
+
+
+
+/*
+Mobile Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the Mobile and Tablet Portrait view */
+
+@media only screen and (max-width: 767px) {
+  /* Add your Mobile Styles here */
+
+}

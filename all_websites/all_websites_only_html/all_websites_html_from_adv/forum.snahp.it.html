@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Forums — Snahp.it - Index page</title>
+<link rel="alternate" type="application/atom+xml" title="Feed - Forums — Snahp.it" href="/feed?sid=f6a08be3eed6e4af9880ce0e759bfb02"> <link rel="alternate" type="application/atom+xml" title="Feed - News" href="/feed/news?sid=f6a08be3eed6e4af9880ce0e759bfb02"> <link rel="alternate" type="application/atom+xml" title="Feed - All forums" href="/feed/forums?sid=f6a08be3eed6e4af9880ce0e759bfb02"> <link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/feed/topics?sid=f6a08be3eed6e4af9880ce0e759bfb02">
+
+<link href="./assets/css/font-awesome.min.css?assets_version=494" rel="stylesheet">
+<link href="./styles/Hexagon/theme/stylesheet.css?assets_version=494" rel="stylesheet">
+<link href="./styles/Hexagon/theme/en/stylesheet.css?assets_version=494" rel="stylesheet">
+<link href="./styles/Hexagon/theme/fonts/roboto/css/roboto.css?assets_version=494" rel="stylesheet">
+<link href="./styles/Hexagon/theme/hexagon.css?assets_version=494" rel="stylesheet">
+<!--[if lte IE 9]>
+	<link href="./styles/Hexagon/theme/tweaks.css?assets_version=494" rel="stylesheet">
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  var Locker = {};
+Locker.tpl = {};
+Locker.tpl['after'] = `
+<i class="fa fa-clipboard locker noselect pointer" aria-hidden="true" onClick="Locker.copy_element_text('unlocked_HASH')"></i>
+<span id="unlocked_HASH">TEXT</span>
+`;
+
+Locker.copy_element_text = function(elem_id)
+{
+    var $elem = $('#' + elem_id);
+    var text = $elem.text();
+    Clipboard.copy(text);
+}
+
+Locker.generate_clipboard = function(hash, text)
+{
+    var tpl = this.tpl['after'];
+    tpl = tpl.replace(/TEXT/g, text);
+    tpl = tpl.replace(/HASH/g, hash);
+    return tpl;
+}
+
+Locker.register_locks = function($lock)
+{
+    $lock.each((id)=>{
+        $elem = $($lock[id]);
+        $elem.click((event)=>{
+            $target = $(event.target).closest('span');
+            var hash = $target[0].dataset.hash;
+            var url = '/app.php/locker/unlock/?h=' + hash;
+            $.get(url).done((resp)=>{
+                $target.unbind();
+                $target.removeClass('noselect');
+                $target.removeClass('pointer');
+                if (resp.status===1)
+                {
+                    $target.html(Locker.generate_clipboard(hash, resp.text));
+                }
+                else
+                {
+                    $target.html('Invalid Data');
+                }
+            })
+        })
+    });
+}
+
+
+$(function () {
+        var $lock = $('span[id*=locker_]');
+    Locker.register_locks($lock);
+});
+</script>
+<style>
+  span.locker
+{
+}
+</style>
+<input type="hidden" name="snp_user_id" value="1" />
+<input type="hidden" name="snp_servername" value="forum.snahp.it" />
+<input type="hidden" name="snp_cookie_prefix" value="sfor_for_" />
+<input type="hidden" name="snp_style_name" value="Hexagon" />
+<input type="hidden" name="snp_style_type" value="dark" />
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Galada|Ubuntu:400,700&display=swap" rel="stylesheet" />
+<link href="./ext/jeb/snahp/styles/all/template/fonts/holly_and_berries.ttf" rel="application/font-sfnt">
+<link href="./ext/jeb/snahp/styles/all/template/fonts/MerryChristmasFlake.ttf" rel="application/font-sfnt">
+<link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="/ext/jeb/snahp/styles/all/template/dereferrer.js?assets_version=494"></script>
+<script type="text/javascript" src="/ext/jeb/snahp/styles/all/template/cookie.js?assets_version=494"></script>
+<script type="text/javascript" src="/ext/jeb/snahp/styles/all/template/dict.js?assets_version=494"></script>
+
+
+
+<style>
+  </style>
+
+
+<link href="./ext/gfksx/ThanksForPosts/styles/prosilver/theme/thanks.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/base.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/atomic.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/customcss/dark.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/customcss/hexagon.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/giftbox/base.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/twbs.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/form_injector/pg-modal.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/host_icons.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/request_tags.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/fonts.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/rh_tags/base.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/spotlight/rx_spotlight/bundle.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/emotes/rx_emotes/bundle.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/marcovo/hideBBcode/styles/all/theme/custom.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/phpbbservices/smartfeed/styles/prosilver/theme/custom.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/vse/lightbox/styles/all/template/lightbox/css/lightbox.min.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/imgcompare/base.css?assets_version=494" rel="stylesheet" media="screen" />
+<link href="./ext/jeb/snahp/styles/all/template/imgcompare/BeerSlider.css?assets_version=494" rel="stylesheet" media="screen" />
+<link rel="shortcut icon" href="https://forum.snahp.it/favicon.ico" />
+</head>
+<body id="phpbb" class="nojs notouch section-index ltr ">
+<div id="wrap" class="wrap">
+<a id="top" class="top-anchor" accesskey="t"></a>
+<ul id="nav-main" class="nav-main linklist" role="menubar">
+<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+<a href="#" class="dropdown-trigger">
+<i class="icon fa-ellipsis-v" aria-hidden="true"></i><span>Quick links</span>
+</a>
+<div class="dropdown">
+<div class="pointer"><div class="pointer-inner"></div></div>
+<ul class="dropdown-contents" role="menu">
+<li class="separator"></li>
+<li>
+<a href="./search.php?search_id=unanswered&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02" role="menuitem">
+<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>Unanswered topics</span>
+ </a>
+</li>
+<li>
+<a href="./search.php?search_id=active_topics&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02" role="menuitem">
+<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>Active topics</span>
+</a>
+</li>
+<li class="separator"></li>
+<li>
+<a href="./search.php?sid=f6a08be3eed6e4af9880ce0e759bfb02" role="menuitem">
+<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>Search</span>
+</a>
+</li>
+<li class="separator"></li>
+</ul>
+</div>
+</li>
+<li data-last-responsive="true">
+<a href="https://forum.snahp.it/donate.php" title="Donate to Snahp" role="menuitem">
+<i class="icon fa-heart fa-fw" style="color:#bb0000;" aria-hidden="true"></i><span>Donate</span>
+</a>
+</li>
+<li data-last-responsive="true">
+<a href="/w/Home" title="Wiki" role="menuitem">
+<i class="icon fa fa-wikipedia-w" aria-hidden="true" style="font-weight:700;"></i>Wiki
+</a>
+</li>
+<li class="small-icon icon-smartfeed no-bulletin"><a href="/smartfeed/ui?sid=f6a08be3eed6e4af9880ce0e759bfb02">Smartfeed</a></li> <li data-skip-responsive="true">
+<a href="/help/faq?sid=f6a08be3eed6e4af9880ce0e759bfb02" rel="help" title="Frequently Asked Questions" role="menuitem">
+<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+</a>
+</li>
+<li class="rightside" data-skip-responsive="true">
+<a href="./ucp.php?mode=login&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02" title="Login" accesskey="x" role="menuitem">
+<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>Login</span>
+</a>
+</li>
+<li class="rightside" data-skip-responsive="true">
+<a href="./ucp.php?mode=register&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02" role="menuitem">
+<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>Register</span>
+</a>
+</li>
+</ul>
+<div id="page-header">
+<div class="headerbar" role="banner">
+<div class="inner">
+<div id="site-description" class="site-description">
+<a id="logo" class="logo" href="./index.php?sid=f6a08be3eed6e4af9880ce0e759bfb02" title="Board index"><span class="site_logo"></span></a>
+<h1>Forums — Snahp.it</h1>
+<p class="site-des"></p>
+<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+</div>
+</div>
+</div>
+<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+<li class="breadcrumbs">
+<span class="crumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""><a href="./index.php?sid=f6a08be3eed6e4af9880ce0e759bfb02" itemprop="url" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="title">Board index</span></a></span>
+</li>
+<li id="search-box" class="search-box search-header">
+<form action="./search.php?sid=f6a08be3eed6e4af9880ce0e759bfb02" method="get" id="search">
+<fieldset>
+<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…" />
+<button class="button button-search" type="submit" title="Search">
+<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">Search</span>
+</button>
+<a href="./search.php?sid=f6a08be3eed6e4af9880ce0e759bfb02" class="button button-search-end" title="Advanced search">
+<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">Advanced search</span>
+</a>
+<input type="hidden" name="sf" value="titleonly" />
+<input type="hidden" name="sid" value="f6a08be3eed6e4af9880ce0e759bfb02" />
+</fieldset>
+</form>
+</li>
+</ul>
+</div>
+<a id="start_here" class="anchor"></a>
+<div id="page-body" class="page-body" role="main">
+<p class="right responsive-center time">It is currently Fri Jan 01, 2021 9:57 pm</p>
+<div class="forabg">
+<div class="inner">
+<ul class="topiclist">
+<li class="header">
+<dl class="row-item">
+<dt><div class="list-inner"><a href="./viewforum.php?f=3&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02">Announcements</a></div></dt>
+<dd class="topics">Topics</dd>
+<dd class="posts">Posts</dd>
+<dd class="lastpost"><span>Last post</span></dd>
+</dl>
+</li>
+</ul>
+<ul class="topiclist forums">
+<li class="row">
+<dl class="row-item forum_read">
+<dt title="No unread posts">
+<div class="list-inner">
+
+<a href="./viewforum.php?f=7&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02" class="forumtitle">Important Announcements</a>
+<div class="responsive-show" style="display: none;">
+Topics: <strong>2</strong>
+| Posts: <strong>2</strong><br />Last post by <a href="./memberlist.php?mode=viewprofile&amp;u=2&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02" style="color: #ff0000;" class="username-coloured">LiM</a><br />&laquo; Sat Mar 02, 2019 11:52 am
+</div>
+</div>
+</dt>
+<dd class="topics">2 <dfn>Topics</dfn></dd>
+<dd class="posts">2 <dfn>Posts</dfn></dd>
+<dd class="lastpost">
+<span>
+<dfn>Last post</dfn>
+<a href="./viewtopic.php?f=7&amp;p=247820&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02#p247820" title="Registrations have been disabled!" class="lastsubject">Registrations have been disab…</a> <br />
+by <a href="./memberlist.php?mode=viewprofile&amp;u=2&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02" style="color: #ff0000;" class="username-coloured">LiM</a>
+<a href="./viewtopic.php?f=7&amp;p=247820&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02#p247820" title="View the latest post">
+<i class="icon fa-external-link-square fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">View the latest post</span>
+</a>
+<br />Sat Mar 02, 2019 11:52 am
+</span>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<form method="post" action="./ucp.php?mode=login&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02" class="headerspace">
+<h3><a href="./ucp.php?mode=login&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02">Login</a>&nbsp; &bull; &nbsp;<a href="./ucp.php?mode=register&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02">Register</a></h3>
+<fieldset class="quick-login">
+<label for="username"><span>Username:</span> <input type="text" tabindex="1" name="username" id="username" size="10" class="inputbox" title="Username" /></label>
+<label for="password"><span>Password:</span> <input type="password" tabindex="2" name="password" id="password" size="10" class="inputbox" title="Password" autocomplete="off" /></label>
+<a href="./ucp.php?mode=sendpassword&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02">I forgot my password</a>
+<span class="responsive-hide">|</span> <label for="autologin">Remember me <input type="checkbox" tabindex="4" name="autologin" id="autologin" /></label>
+<input type="submit" tabindex="5" name="login" value="Login" class="button2" />
+<input type="hidden" name="redirect" value="./index.php?sid=f6a08be3eed6e4af9880ce0e759bfb02" />
+<input type="hidden" name="creation_time" value="1609538267" />
+<input type="hidden" name="form_token" value="bb8310f870ce4b807ced56008940386b6401bca8" />
+</fieldset>
+</form>
+<div class="stat-block online-list">
+<h3>Who is online</h3> <p>
+In total there are <strong>242</strong> users online :: 227 registered and 15 hidden (based on users active over the past 5 minutes)<br />Most users ever online was <strong>1558</strong> on Mon May 20, 2019 2:26 am<br />
+</p>
+</div>
+<div class="stat-block statistics">
+<h3>Statistics</h3>
+<p>
+Total posts <strong>940154</strong> &bull; Total topics <strong>300220</strong> &bull; Total members <strong>157836</strong> &bull; Our newest member <strong><a href="./memberlist.php?mode=viewprofile&amp;u=162833&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02" style="color: #BF8040;" class="username-coloured">youdee</a></strong>
+</p>
+</div>
+</div>
+<div id="page-footer" class="page-footer" role="contentinfo">
+<div class="navbar" role="navigation">
+<div class="inner">
+<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+<li class="breadcrumbs">
+<span class="crumb"><a href="./index.php?sid=f6a08be3eed6e4af9880ce0e759bfb02" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>Board index</span></a></span> </li>
+<li class="rightside">All times are <span title="Europe/London">UTC</span></li>
+<li class="rightside">
+<a href="./ucp.php?mode=delete_cookies&amp;sid=f6a08be3eed6e4af9880ce0e759bfb02" data-ajax="true" data-refresh="true" role="menuitem">
+<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>Delete cookies</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+<br><strong><span>*</span>Hexagon style by MannixMD</strong>
+Snahp v0.38.6 Saint Legolas [1478f]
+</div>
+<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+<div id="darken" class="darken">&nbsp;</div>
+</div>
+<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+<a href="#" class="alert_close">
+<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+</a>
+<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+</div>
+<div id="phpbb_confirm" class="phpbb_alert">
+<a href="#" class="alert_close">
+<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+</a>
+<div class="alert_text"></div>
+</div>
+</div>
+</div>
+<div>
+<a id="bottom" class="anchor" accesskey="z"></a>
+</div>
+<script type="text/javascript" src="./assets/javascript/jquery.min.js?assets_version=494"></script>
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=494"></script>
+<script>
+		var vseLightbox = {};
+		vseLightbox.resizeWidth = 250;
+		vseLightbox.lightboxGal = 2;
+		vseLightbox.lightboxSig = 0;
+		vseLightbox.imageTitles = 0;
+		vseLightbox.downloadFile = 'download/file.php';
+	</script>
+<script src="./ext/jeb/snahp/styles/all/template/customcss/hexagon.js?assets_version=494"></script>
+<script src="./ext/jeb/snahp/styles/all/template/bootstrap4.min.js?assets_version=494"></script>
+<script src="./ext/jeb/snahp/styles/all/template/utility.js?assets_version=494"></script>
+<script src="./ext/jeb/snahp/styles/all/template/base.js?assets_version=494"></script>
+<script src="./ext/jeb/snahp/styles/all/template/viewtopic.js?assets_version=494"></script>
+<script src="./ext/jeb/snahp/styles/all/template/spotlight/rx_spotlight/bundle.js?assets_version=494"></script>
+<script src="./ext/jeb/snahp/styles/all/template/emotes/rx_emotes/bundle.js?assets_version=494"></script>
+<script src="./ext/lmdi/topicsearch/styles/all/template/topicsearch.js?assets_version=494"></script>
+<script src="./styles/Hexagon/template/forum_fn.js?assets_version=494"></script>
+<script src="./styles/prosilver/template/ajax.js?assets_version=494"></script>
+<script src="./ext/vse/lightbox/styles/all/template/js/resizer.js?assets_version=494"></script>
+<script src="./ext/vse/lightbox/styles/all/template/lightbox/js/lightbox.min.js?assets_version=494"></script>
+<script src="./ext/jeb/snahp/styles/all/template/imgcompare/base.js?assets_version=494"></script>
+<script src="./ext/jeb/snahp/styles/all/template/imgcompare/BeerSlider.js?assets_version=494"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<div class="twbs">
+<div class="modal fade" id="imgcompare_modal" tabindex="-1" role="dialog" aria-labelledby="imgcompare_modal" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content p-0">
+<div class="modal-body p-0">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="preloader">
+</div>
+</body>
+</html>

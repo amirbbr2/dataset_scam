@@ -1,0 +1,288 @@
+
+body {
+	height: 100%;
+	margin:0px;
+	direction:rtl;
+	font-family:iransans;
+	font-size:13px;
+	color:#333333;
+	background:url(../images/bgpattern0.png) repeat top left  #FFFFFF;
+}
+img{
+	border:0px;
+	max-width:100%;
+	height:auto;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; /* Firefox 4 */
+	-webkit-transition: all 0.5s; /* Safari and Chrome */
+	-o-transition: all 0.5s; /* Opera */
+}
+#dima_1,#dima_2,#dima_3,#dima_4,#dima_5,#dima_6,#dima_7,#dima_8,#dima_9,#dima_10,#dima_11,#dima_12,#dima_13,#dima_14,#dima_15,#dima_16,#dima_17,#dima_18,#dima_19{
+	margin-right:auto;
+	margin-left:auto;
+	width: 100%;
+	max-width:1300px;
+}
+a{
+	text-decoration:none;
+	color:#333333;
+}
+a:hover{
+	color:#333333;
+}
+div{
+	min-height:1px;
+}
+a{
+	text-decoration:none;
+	color:#4d4d4d;
+}
+a:hover{
+	color:#333333;
+}
+p{
+	padding:0px;
+	margin:0px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+small, .small, .smalldark, .img_caption, .contenttoc {
+    font-size:11px;
+    color: #333333
+}
+
+div.pagination ul li {
+    display: inline-block;
+}
+
+/* headings */
+ 
+p.dima_Headline { margin: 5px 0 0 !important; text-align: center; font: normal 2em/1.9 "Lucida Grande", Tahoma; color: #222; }
+p.dima_SubHeadline { margin: 0 0 24px!important; letter-spacing: 0.3em; text-align: center;  font: lighter 0.75em/1em "Lucida Grande", Tahoma; color: #666; }
+p.dima_SmallHeadline { margin: 1em 0 !important; letter-spacing: 2px;  font-size: 10px; font-weight: bold; color: #bbb }
+p.dima_LargeHeadline { margin: 0 !important; padding: 0px 0px 6px 0px; letter-spacing: -2px; font: normal 44px/38px Arial, Helvetica, sans-serif; color: #444; }
+/*icons*/
+
+.dima_Audio, .dima_Creditcard, .dima_Feed, .dima_Help, .dima_Webcam, .dima_Images, .dima_Lock, .dima_Printer, .dima_Report, .dima_Script, .dima_Time, .dima_User, .dima_World, .dima_Cart, .dima_Cd, .dima_ChartBar, .dima_ChartLine, .dima_ChartPie, .dima_Clock, .dima_Cog, .dima_Coins, .dima_Compress, .dima_Computer, .dima_Cross, .dima_Disk, .dima_Error, .dima_Email, .dima_Exclamation, .dima_Film, .dima_Folder, .dima_Group, .dima_Heart, .dima_House, .dima_Image, .dima_Information, .dima_Magnifier, .dima_Money, .dima_New, .dima_Note, .dima_Page, .dima_Page_white, .dima_Plugin, .dima_Accept, .dima_Add, .dima_Camer, .dima_Brick, .dima_Box, .dima_Calendar, .dima_Camera { padding:0 0 2px 30px!important }
+/*blocks*/ 
+
+p.dima_Info1, p.dima_Tips1, p.dima_Warning1, p.dima_Info2, p.dima_Tips2, p.dima_Warning2, p.dima_Info3, p.dima_Tips3, p.dima_Warning3, p.dima_Info4, p.dima_Tips4, p.dima_Warning4 { padding: 8px 16px 8px 56px; min-height: 20px; line-height: 20px; }
+p.dima_Info2, p.dima_Tips2, p.dima_Warning2, p.dima_Info4, p.dima_Tips4, p.dima_Warning4 { padding-left: 66px; min-height: 32px }
+/* border radius */
+p.dima_Info2, p.dima_Tips2, p.dima_Warning2 { border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px; }
+/*highlight*/
+
+.dima_Highlight1, .dima_Highlight2, .dima_Highlight3, .dima_Highlight4 { padding:1px 5px; transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; text-shadow: none; cursor: default }
+.dima_Highlight1:hover { background:#FFFFFF; }
+.dima_Highlight2:hover { background:#333; color: background:#FFFFFF }
+.dima_Highlight3:hover { background:#FFFFFF; color: #000 }
+.dima_Highlight4:hover { background: #FFFFFF; color: #000 }
+/*code */
+
+pre, .dima_Code1, .dima_Code2, .dima_Code3 { margin:10px 0 15px!important; padding:10px 15px!important; font: normal 0.92em/18px 'Curier New', monospace!important; }
+pre, .dima_Code1, .dima_Code2 { opacity: 1; transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; }
+.dima_Code3 { padding-left: 82px !important; }
+.dima_Code3 h4 { width:35px; position:relative; top: 0; margin: 0 0 0 -64px!important; padding: 2px 5px 0; font-size: 12px; font-weight:normal }
+pre:hover, .dima_Code1:hover { background: #FFFFFF; }
+div.dima_Code2:hover, div.dima_Code3:hover { color: #000; }
+/* lists */
+
+ol { margin: 2em 0; padding: 0; list-style-position:inside }
+ol.dima_Dec { list-style-type:decimal; }
+ol.dima_Roman { list-style-type:upper-roman; }
+ol.dima_Alpha { list-style-type:lower-alpha; }
+ol.dima_DecimalLeadingZero { list-style-type:decimal-leading-zero; }
+/* unordered lists */
+
+ul.dima_Bullet1, ul.dima_Bullet2, ul.dima_Bullet3, ul.dima_Bullet4, ul.dima_Circle1, ul.dima_Circle2, ul.dima_Square1, ul.dima_Square2, ul.dima_Square3 { margin: 2em 0; padding: 0; }
+ul li { list-style-position:outside }
+ul.dima_Bullet1 li, ul.dima_Bullet2 li, ul.dima_Bullet3 li, ul.dima_Bullet4 li, ul.dima_Circle1 li, ul.dima_Circle2 li, ul.dima_Square1 li, ul.dima_Square2 li { margin: 0!important; padding: 2px 20px 2px 0; line-height: 1.8em!important; list-style-position:inside; overflow:inherit; }
+/* Definition lists */
+dl.dima_Def1 dt, dl.dima_Def2 dt, dl.dima_Def3 dt { margin:10px 0 5px 0 }
+dl.dima_Def1 dd, dl.dima_Def2 dd, dl.dima_Def3 dd { padding:10px; }
+dl.dima_Def2 dt { text-decoration:underline }
+dl.dima_Def3 dt { margin-top: 10px; letter-spacing: 0.3em;  font: lighter 1.1em/1.2em "Lucida Grande", Tahoma; font-variant: normal; color: #666666; }
+/* acronyms and abbrs */
+acronym, abbr { border-bottom-width:1px; border-bottom-style:dotted; }
+acronym:hover, abbr:hover { border-bottom-style:solid; cursor:pointer }
+/* Legends */
+
+div.dima_Legend1 h4, div.dima_Legend2 h4, div.dima_Legend3 h4, div.dima_Legend4 h4 { float:right; position:relative; top: -18px; right:11px; margin:0 0 -9px!important; padding: 0 10px; font-size: 11px;  line-height: 22px; font-weight:normal; background: #FFFFFF; text-shadow: none; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px }
+div.dima_Legend1, div.dima_Legend2, div.dima_Legend3, div.dima_Legend4 { margin: 25px 0; padding: 6px; border-radius: 1px; -moz-border-radius: 1px; -webkit-border-radius: 1px }
+div.dima_Legend1 p, div.dima_Legend2 p, div.dima_Legend3 p, div.dima_Legend4 p { margin:7px; clear:both; }
+/* Dropcaps */
+
+span.dima_Dropcap1, span.dima_Dropcap2, span.dima_Dropcap3 { display:block; float:left; line-height:1.0em; font-size: 5.0em; color: #333; }
+span.dima_Dropcap1 { height:61px; margin:-4px 5px -3px 0 }
+p.dima_Dropcap2 { padding:0 0 0 50px }
+span.dima_Dropcap2 { height:61px; margin:-4px 0 0 -50px }
+p.dima_Dropcap2 { padding-left: 50px; }
+p.dima_Dropcap3 { margin-top:32px }
+span.dima_Dropcap3 { height:61px; margin:-32px 5px 0 0 }
+/* Blockquotes */
+
+blockquote { margin:20px 0; font-style:italic; }
+blockquote div { display:block; }
+blockquote div.dima_Blockquote1 div, blockquote div.dima_Blockquote2 div { padding:0 24px; }
+blockquote div.dima_Blockquote3 { padding-bottom:5px }
+blockquote div.dima_Blockquote3 div { padding:5px 27px 0 27px }
+blockquote div.dima_Blockquote4 div { padding: 0 27px }
+/* Floated blocks */
+
+.dima_BlockTextLeft, .dima_BlockTextRight, .dima_BlockTextCenter { display: block; font-size: 15px; font-style: italic; line-height: 150%; padding: 30px; width: 38%; }
+.dima_BlockTextLeft { float:left; text-align:left }
+.dima_BlockTextRight { float:right; text-align:right }
+.dima_BlockTextCenter { margin:0 auto; text-align:center }
+/* numBlocks*/
+
+p.numblocks { position: relative; min-height: 38px; margin: 30px 0; padding: 0 60px 0 0 !important; }
+p.numblocks span { position: absolute; top: 4px; right: 0; height: 42px; width: 42px; color: #FFFFFF; display: block; font-size: 22px; line-height: 44px; text-align: center; }
+p.num-1 span { background: url('../images/typo/number-1.png') no-repeat 50% 50%; }
+p.num-2 span { background: url('../images/typo/number-2.png') no-repeat 50% 50%; }
+p.num-3 span { background: url('../images/typo/number-3.png') no-repeat 50% 50%; }
+/* Blocks*/
+
+.dima_block-1, .dima_block-2, .dima_block-3, .dima_block-4, .dima_block-5, .dima_block-6, .dima_block-7, .dima_block-8, .dima_block-9 { margin: 20px 0; padding: 6px 12px; }
+/* Blocks*/
+
+.bubble-1, .bubble-2, .bubble-3, .bubble-4, .bubble-5, .bubble-6 { position: relative; margin: 20px 0 40px; padding: 6px 12px; }
+.bubble-1 cite, .bubble-2 cite, .bubble-3 cite, .bubble-4 cite, .bubble-5 cite, .bubble-6 cite { height: 17px; position: absolute; bottom: -17px; display: block; right: 20px; font-size: 11px; font-weight: bold; line-height: 22px; padding-right: 30px; background: url('../images/typo/buble_arrow.png') no-repeat right 0; color: #333 !important }
+/*blockquote*/
+blockquote div.dima_Blockquote1 { background: url('http://www.novinmiremad.ir/templates/novin_miremad2/images/typo/open1.png') no-repeat left bottom }
+blockquote div.dima_Blockquote1 div { background: url('http://www.novinmiremad.ir/templates/novin_miremad2/images/typo/close1.png') no-repeat right top }
+blockquote div.dima_Blockquote2 { background: url('http://www.novinmiremad.ir/templates/novin_miremad2/images/typo/open1.png') no-repeat left top }
+blockquote div.dima_Blockquote2 div { background: url('http://www.novinmiremad.ir/templates/novin_miremad2/images/typo/close1.png') no-repeat right top }
+blockquote div.dima_Blockquote3 { background: url('http://www.novinmiremad.ir/templates/novin_miremad2/images/typo/open2.png') no-repeat left bottom }
+blockquote div.dima_Blockquote3 div { background: url('http://www.novinmiremad.ir/templates/novin_miremad2/images/typo/close2.png') no-repeat right top }
+blockquote div.dima_Blockquote4 { background: url('http://www.novinmiremad.ir/templates/novin_miremad2/images/typo/open2.png') no-repeat left top }
+blockquote div.dima_Blockquote4 div { background: url('http://www.novinmiremad.ir/templates/novin_miremad2/images/typo/close2.png') no-repeat right top }
+/*tables*/
+.dima_Table { border-collapse: collapse; font-style: normal }
+.dima_Table thead { padding:5px 10px; text-align: right; font: normal 19px/32px "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+.dima_Table td { padding: 10px; }
+.dima_Table tfoot { margin-bottom: 10px; margin-top: 0px; padding:0px; text-align: right; font-size: 0.8em; font-style: italic }
+.dima_Table2 { border-collapse: collapse; font-style: normal }
+.dima_Table2 thead { text-align: right; font: normal 20px/32px "Lucida Sans Unicode", "Lucida Grande", sans-serif; padding:5px 10px; }
+.dima_Table2 td { padding: 10px; }
+.dima_Table2 tfoot { margin-bottom: 10px; margin-top: 0px; padding:0px; text-align: right; font-size: 0.8em; font-style: italic }
+/*tooltips*/
+
+.dima_Tooltip { position: relative; outline: none; cursor: help; text-decoration: none; color: #000; text-shadow: none }
+.dima_Tooltip span { position: absolute; margin-left: -999em; font-size: 11px; line-height: 16px; }
+.dima_Tooltip:hover span { position: absolute; left: 0.5em; top: 1em; z-index: 99; width: 250px; margin-left: 0; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; box-shadow:  8px 8px 1px rgba(0, 0, 0, 0.12); -webkit-box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.12); -moz-box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.12); }
+.dima_Tooltip:hover em { display: block; padding: 0; font-size: 1.2em; line-height: 30px; text-decoration: underline!important; text-shadow: none; font-style: normal !important }
+.classicTooltip { padding: 0.6em 0.8em; text-shadow: none }
+.customTooltip { padding: 0.6em 0.8em; text-shadow: none }
+/* colors 
+ *
+ *
+--------------------------------------------------------------------------------------------------------
+ *
+ *
+ */
+
+pre, .dima_Code1, .dima_Code2 { padding-right: 32px; border: 1px solid #EAE8CC; border-left: 4px solid #FC764A; background: #FFFFFF; color: #333; }
+.dima_Code2 { background: #FFFFFF; border: 1px solid #eee; border-left: 4px solid #FC764A; }
+.dima_Code3 { border: 1px solid #eee; background: #FFFFFF }
+.dima_Code3 h4 { background: #7790dc; color:#FFFFFF; text-align: center; text-shadow: none; }
+/* Warning message */
+p.dima_Info1, p.dima_Info2, p.dima_Info3, p.dima_Info4 { padding-right:35px;background: url('../images/typo/info_small.png') no-repeat right center; }
+p.dima_Tips1, p.dima_Tips2, p.dima_Tips3, p.dima_Tips4 { padding-right:35px;background: url('../images/typo/tips_small.png') no-repeat right center; }
+p.dima_Warning1, p.dima_Warning2, p.dima_Warning3, p.dima_Warning4 { padding-right:35px;background: url('../images/typo/warning_small.png') no-repeat right center; }
+p.dima_Tips1 { color: #222 }
+p.dima_Tips3 { color: #92b534 }
+p.dima_Info2 { border:#eee solid 1px; background-position: right center; }
+p.dima_Tips2 { border: 1px solid #EAE8CC; color: #555; background-color: #FFFFFF; background-position: right center; }
+p.dima_Warning2 { border:1px solid #ffc7b5; background-color: #FFFFFF7f5; background-position: 99% center; }
+p.dima_Info2, p.dima_Info3 { color: #5479C5 }
+p.dima_Warning3 { color: #FC764A }
+p.dima_Info4 { border-top: 2px solid #5479C5; border-bottom: 2px solid #5479C5; color: #5479C5 }
+p.dima_Tips4 { border-top: 2px solid #92b534; border-bottom: 2px solid #92b534; color: #555 }
+p.dima_Warning4 { border-top: 2px solid #FC764A; border-bottom: 2px solid #FC764A; color: #FC764A }
+/* Legends */
+
+div.dima_Legend1 { border: 1px solid #e5e5e5 }
+div.dima_Legend2 { border: 1px solid #c4d3ff }
+div.dima_Legend3 { border: 1px solid #FC764A }
+div.dima_Legend4 { border: 4px double #e5e5e5 }
+div.dima_Legend1 h4 { background: #FFFFFF; color: #333; }
+div.dima_Legend2 h4 { background: #FFFFFF; color: #7790dc; }
+div.dima_Legend3 h4 { background: #FFFFFF; color: #FC764A; }
+div.dima_Legend4 h4 { }
+.dima_Highlight1 { background: #ffd; }
+.dima_Highlight2 { background:#eee; }
+.dima_Highlight3 { background: #7790dc; color:#FFFFFF; }
+.dima_Highlight4 { background:#FC764A; color:#FFFFFF; }
+/* Blocks */
+
+.dima_block-1 { border: 2px dotted #ddd }
+.dima_block-2 { border: 2px dotted #FC764A }
+.dima_block-3 { border: 2px dotted #7790DC }
+.dima_block-4 { border: 1px solid #eee; background: #FFFFFF }
+.dima_block-5 { border: 1px solid #EAE8CC; background: #FFFFFF; }
+.dima_block-6 { border: 1px solid #ccd9ff; background: #FFFFFF; }
+.dima_block-7 { background: #222; color: #FFFFFF !important }
+.dima_block-8 { background: #fc764a; color: #FFFFFF !important }
+.dima_block-9 { background: #7790dc; color: #FFFFFF !important }
+/* Bubbles */
+
+.bubble-1 { border: 1px solid #eee; background-color: #FFFFFF; }
+.bubble-2 { border: 1px solid #EAE8CC; background: #FFFFFF; }
+.bubble-3 { border: 1px solid #ccd9ff; background: #FFFFFF; }
+.bubble-4 { color: #FFFFFF !important; background: #222; }
+.bubble-5 { color: #FFFFFF !important; background: #fc764a; }
+.bubble-6 { color: #FFFFFF !important; background: #7790dc; }
+.bubble-1 cite { }
+.bubble-2 cite { background-position: right -17px }
+.bubble-3 cite { background-position: right -34px }
+.bubble-4 cite { background-position: right -51px }
+.bubble-5 cite { background-position: right -68px }
+.bubble-6 cite { background-position: right -85px }
+/* list */
+
+ul.dima_Bullet1 li {padding-right:20px; background: url('../images/typo/bullet1.png') no-repeat right 8px!important; }
+ul.dima_Bullet2 li {padding-right:20px; background: url('../images/typo/bullet2.png') no-repeat right 5px!important; }
+ul.dima_Bullet3 li {padding-right:20px; background: url('../images/typo/bullet3.png') no-repeat right 6px!important; }
+ul.dima_Bullet4 li {padding-right:20px; background: url('../images/typo/bullet4.png') no-repeat right 6px!important; }
+ul.dima_Circle1 li {padding-right:20px; background: url('../images/typo/bullet-circle1.png') no-repeat right 6px!important; }
+ul.dima_Circle2 li {padding-right:20px; background: url('../images/typo/bullet-circle2.png') no-repeat right 5px!important; }
+ul.dima_Square1 li {padding-right:20px; background: url('../images/typo/bullet-square1.png') no-repeat right 6px!important; }
+ul.dima_Square2 li {padding-right:20px; background: url('../images/typo/bullet-square2.png') no-repeat right 6px!important; }
+.dima_BlockTextLeft, .dima_BlockTextRight, .dima_BlockTextCenter { color: #222; }
+span.classicTooltip { background-color: #FFFFFFfdd; color: #656565 }
+span.criticalTooltip { background:#cb260a; color:#FFFFFF; }
+span.helpTooltip { background: #333; color:#FFFFFF; }
+span.infoTooltip { background: #F0F0F0; color: #5b5b5b; border: 1px solid #dedede; }
+span.warningTooltip { background: #FFFFFF; color: #F93B3B; border: 1px solid #FFFFFF; }
+/* Social Icons */
+
+.iconDigg, .iconDelicious, .iconTwitter, .iconMobyPicture, .iconYoutube, .iconVimeo, .iconFacebook { display: block; height: 32px; line-height: 32px !important; background: transparent url('http://www.novinmiremad.ir/templates/novin_miremad2/images/social_icons.png') no-repeat; padding: 0 46px 0 0; margin: 0 0 12px; font-size: 11px !important; }
+.iconFacebook { background-position: right 0; }
+.iconTwitter { background-position: right -32px; }
+.iconVimeo { background-position: right -64px; }
+.iconMobyPicture { background-position: right -96px; }
+.iconYoutube { background-position: right -128px; }
+.iconDigg { background-position: right -160px; }
+.iconDelicious { background-position: right -192px; }
+/* demo */
+ul#demo-typography { background: transparent; overflow: hidden; padding: 10px 30px 30px 30px; }
+ul#demo-typography li { list-style-position: none; list-style-type: disc; line-height: 24px; width: 23.9%; float: right; color: #cb260a; font-size: 11px; }
+ul#demo-typography li a { font-size: 11px; text-shadow: 2px 2px 0 #FFFFFF }
+.demo-typoDiv { clear: both; overflow: hidden; margin: 0 0 30px }
+h4.demo-typo { font-size: 11px; font-weight: normal; color: #333; margin: 30px 0; border-bottom: 1px solid #e5e5e5; }
+.demo-typo-col2 { width: 50%; float: right; }
+.demo-typo-col3 { width: 33%; float: right; }
+.demo-typo-col4 { width: 25%; float: right; }
+.demo-typo_padd { padding: 0 30px 0 0; }
+#warnings .demo-typo_padd p { margin: 1em 0 1.6em; }
+.typoDesc small { font: normal 11px tahoma; color: #999 }
+.dima_block-7 small, .dima_block-9 small, .bubble-4 small, .bubble-5 small, .bubble-6 small, .dima_block-8 small { color: #FFFFFF !important }
+

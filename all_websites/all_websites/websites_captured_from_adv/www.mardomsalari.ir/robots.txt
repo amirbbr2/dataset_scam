@@ -1,0 +1,13 @@
+Sitemap: https://www.mardomsalari.ir/sitemap-index.xml
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /backup/
+Disallow: /cache/
+Disallow: /errors/
+Disallow: /includes/
+Disallow: /languages/
+Disallow: /modules/
+Disallow: /pack/
+Disallow: /script/
+Disallow: /skins/
+Disallow: /tasks/

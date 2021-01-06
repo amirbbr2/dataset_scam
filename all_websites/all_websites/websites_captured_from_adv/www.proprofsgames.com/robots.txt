@@ -1,0 +1,13 @@
+User-agent: *
+
+Disallow: /ugc/*
+Disallow: /admin/*
+Disallow: /player/*
+Disallow: /puzzle/sliding/cert/*
+Disallow: /word-search/cert/*
+Disallow: /crossword/cert/*
+Disallow: /jigsaw/cert/*
+Disallow: /word-games/word-scramble/cert/*
+Disallow: /word-games/hangman/cert/*
+Disallow: /brain-teasers/cert/*
+

@@ -1,0 +1,167 @@
+
+function logoWebbab() {
+  
+  // VARIABLES
+  
+  var self = this;
+  self.wrapperLogo = $('.logo-wrapper');
+  self.svgLogo = $('#logo-webbab');
+  self.isoLogo = $('#logo-webbab #iso');
+  self.rhombusLogo = $('.rhombus');
+  self.logoCircle = $('.logo-circle');
+  self.logoEllipse = $('.logo-ellipse');
+  self.wordLogo = $('.word');
+  
+  
+  // INCREASE OR DECREACE THE ANIMATION SPEED.
+  
+  self.timer = 0.9;
+  
+  
+  self.init = function() {
+    
+    if(!self.isDevice) {
+      self.setObj();
+      self.animation();
+    } else {
+      self.wrapperLogo.empty().append(self.mobileLogo);
+    }
+    
+  };
+  
+  self.setObj = function() {
+    
+    TweenMax.set(self.isoLogo, {attr:{rx: 50, ry: 50}, transformOrigin:"50% 50%", rotation: 90, scale: 0, autoAlpha: 1});
+    TweenMax.set(self.logoCircle, {transformOrigin:"50% 50%", scale: 2, autoAlpha: 0});
+    TweenMax.set(self.logoEllipse, {attr:{cx: 100, cy: 150, rx: 180, ry: 180}, strokeWidth: 60, transformOrigin:"50% 50%", autoAlpha: 0});
+  
+  };
+  
+  self.animation = function() {
+    
+    TweenMax.ticker.fps(60);
+    
+    // SCENES
+    
+    function rhombusRotation() {
+      var tl = new TimelineMax();
+      tl.to(self.isoLogo, 0.6, {
+        autoAlpha: 1,
+        scale: 1,
+        ease: Power1.easeIn
+      })
+      .to(self.isoLogo, 0.6, {
+        attr:{rx: 15, ry: 15},
+        rotation: -45,
+        ease: Power1.easeOut
+      });
+      return tl;
+    }
+    
+    function ellipsesAnimation() {
+      var tl = new TimelineMax();
+      tl.to(self.logoEllipse.eq(0), 0.4, {
+        attr:{
+          cx: 6, 
+          cy: -64,
+          rx: 150,
+          ry: 150
+        },
+        strokeWidth: 2,
+        autoAlpha: 1,
+        ease: Power2.easeOut
+      })
+      .to(self.logoEllipse.eq(1), 0.4, {
+        attr:{
+          cx: 138, 
+          cy: -80,
+          rx: 150,
+          ry: 150
+        },
+        strokeWidth: 2,
+        autoAlpha: 1,
+        ease: Power2.easeOut
+      }, '-=0.2')
+      .to(self.logoEllipse.eq(2), 0.4, {
+        attr:{
+          cx: 190, 
+          cy: 15,
+          rx: 150,
+          ry: 150
+        },
+        strokeWidth: 2,
+        autoAlpha: 1,
+        ease: Power2.easeOut
+      }, '-=0.2');
+      return tl;
+    }
+    
+    function circleIntersection() {
+      var tl = new TimelineMax();
+      tl.staggerFromTo(self.logoCircle, 0.4, {
+        autoAlpha: 0, 
+        scale: 0
+      }, {
+        autoAlpha: 1, 
+        scale: 1,
+        ease: Cubic.easeInOut
+      }, 0.1);
+      return tl;
+    }
+    
+    function textAnimation() {
+      var tl = new TimelineMax();
+      tl.staggerFromTo(self.wordLogo, 1.5, {
+        autoAlpha: 0, 
+        scale: 0.8, 
+        x: -20, 
+        transformOrigin: "left center", 
+        ease: Elastic.easeOut.config(1, 0.3)
+      }, {
+        autoAlpha:1, 
+        scale: 1,
+        x: 0,
+        ease: Elastic.easeOut.config(1, 0.5)
+      }, 0.05);
+      return tl;
+    }
+    
+    // MASTER SCENES
+    
+    var master = new TimelineMax({
+      
+      // LOOP
+      /*repeat: -1,
+      repeatDelay: 0.5, 
+      yoyo: true*/
+      
+    });
+    master//.add(pulseCircle(), "scene1")
+          .add(rhombusRotation(), "scene2")
+          .add(ellipsesAnimation(), "-=0.6", "scene3")
+          .add(circleIntersection(), "-=0.4", "scene4")
+          .add(textAnimation(), "-=0.5", "scene5");
+    master.timeScale(self.timer);
+    
+    // Control buttons - delete
+    
+    $('.play').on('click', function(e){
+      e.preventDefault();
+      master.play(!master.play());
+    });
+
+    $('.reverse').on('click', function(e){
+      e.preventDefault();
+      master.reversed(!master.reversed());
+    });
+    
+  };
+  
+}
+
+var runLogo;
+
+$(window).load(function() {
+  runLogo = new logoWebbab();
+  runLogo.init();
+});

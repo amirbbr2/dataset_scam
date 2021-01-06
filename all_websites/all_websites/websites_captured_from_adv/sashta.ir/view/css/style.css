@@ -1,0 +1,428 @@
+@font-face {
+	font-family: 'IRANSansWeb3';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/IRANSansWeb3.eot');
+	src: url('../fonts/IRANSansWeb3.eot?') format('embedded-opentype'),  /* IE6-8 */
+	url('../fonts/IRANSansWeb3.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+	url('http://sashta.ir/view/fonts/IRANSansWeb3.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	url('http://sashta.ir/view/fonts/ttf/IRANSansWeb3.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'IRANSansWeb';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/IRANSansWeb.eot');
+	src: url('../fonts/IRANSansWeb.eot?') format('embedded-opentype'),  /* IE6-8 */
+	url('../fonts/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+	url('http://sashta.ir/view/fonts/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	url('http://sashta.ir/view/fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+
+/************************************** All */
+html, body {
+    border: 0;
+    margin: 0;
+	background: #f1f1f1;
+	color: #5b5b5b;
+}
+html {
+	overflow: scroll;
+	overflow-x: hidden;
+}
+body {
+    font-family: 'IRANSansWeb3', Tahoma, monospace;
+    font-size: 11pt;
+}
+html, body {
+	height: 100%;
+	direction: rtl;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #eaf3fa inset;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.ltr {
+	direction: ltr;
+}
+.rtl {
+	direction: rtl;
+}
+.hidden {
+	display: none;
+}
+.center-align {
+	text-align: center !important;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.transition3 {
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.transition5 {
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+.relative-block {
+	position: relative;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+.min100vh {
+	height: calc(100vh - 120px);
+	overflow: hidden auto;
+}
+.min100vh2 {
+	min-height: calc(100vh - 120px);
+}
+/************************************** Header */
+#main-header {
+	background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 0px 40px;
+}
+.header-name {
+	position: relative;
+}
+.header-logo {
+	position: relative;
+	width: 32px;
+    height: 32px;
+    background: url(../img/logo.png) no-repeat center center;
+    min-height: 80px;
+}
+.header-h {
+	position: relative;
+	font-size: 18px;
+	font-style: normal;
+    font-weight: normal;
+	color: #d43030;
+    padding: 27px 10px;
+}
+.nav-menu {
+	position: relative;
+	padding: 30px 5px;
+}
+.nav-menu-item {
+	font-size: 14px;
+	padding: 4px 14px;
+	color: #353535;
+}
+.nav-menu-item:hover {
+	color: #d43030;
+}
+.nav-menu-item-important {
+	font-weight: bold;
+	color: #990000;
+}
+
+/************************************** Main */
+#search-form {
+	width: 80%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.search-form-holder {
+	border: none;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+.search-middle {
+	background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 0 60px rgba(0,0,0,.05);
+}
+.search-middle input[type="text"] {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	padding: 0 70px 0 10px;
+	width: 100%;
+    height: 56px;
+    font-size: 20px;
+    border: none;
+    color: #3b2727;
+    font-family: 'IRANSansWeb3';
+    outline: none;
+    direction: ltr;
+}
+::placeholder{
+	color: #bcbcbc;
+	opacity: 0.5;
+}
+.search-button {
+	display: block;
+	position: absolute;
+	top: 10px;
+    right: 16px;
+    background-color: #d43030;
+    padding: 6px;
+	border: none;
+	outline: 0;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.search-button-icon {
+    background: url(../img/search.png) no-repeat center center;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+.text-p {
+	font-size: 12px;
+	color: #9f9f9f;
+	padding: 5px;
+	text-align: right;
+}
+
+/************************************** Scanner */
+#upload-input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+	outline: 0;
+	cursor: pointer;
+}
+#upload-name {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 80px 10px 10px;
+    width: 100%;
+    font-size: 20px;
+    color: #3b2727;
+	font-family: 'IRANSansWeb3', Tahoma, monospace;
+	text-align: center;
+    direction: ltr;
+}
+#upload-button {
+    display: block;
+    position: absolute;
+    top: 10px;
+	right: 16px;
+	font-family: 'IRANSansWeb3', Tahoma, monospace;
+	color: #f1f1f1;
+    background: #d43030;
+    padding: 5px 10px;
+    border: none;
+    outline: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#upload-button[disabled] {
+	background: #ccc;
+}
+
+/************************************** Section */
+.section {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 80%;
+	margin: 25px auto;
+	background: #ffffff;
+    border-radius: 3px;
+	border: 1px solid #e9e9e9;
+	padding: 40px 10px;
+}
+.section-header {
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+	text-align: right;
+	padding: 10px;
+}
+.section-body {
+	font-size: 15px;
+	text-align: justify;
+	padding: 10px;
+}
+.bad-news, .warning-news, .good-news {
+	font-size: 15px;
+	text-align: right;
+}
+.news-h {
+	padding: 0 20px;
+    font-weight: bold;
+}
+.news-txt {
+	padding: 10px 20px 0;
+}
+.news-txt a {
+	font-weight: bold;
+}
+.bad-news .news-h, .bad-news .news-txt a:hover {
+	color: #d43030;
+}
+.warning-news .news-h, .warning-news .news-txt a:hover {
+	color: #d5ab30;
+}
+.good-news .news-h, .good-news .news-txt a:hover {
+	color: #1f7232;
+}
+
+/************************************** Hints */
+.section.hints {
+	padding: 10px;
+}
+.hints-icon {
+    display: block;
+	position: absolute;
+	overflow: hidden;
+    width: 32px;
+    height: 32px;
+    top: 0;
+	right: 0;
+	text-align: center;
+    font-size: 12px;
+    border: 1px solid #d43030;
+    border-radius: 4px;
+    background: #d43030;
+    color: #fff;
+    padding-top: 6px;
+}
+.hints-icon2 {
+    display: block;
+    position: absolute;
+    background: url(../img/foursquare2.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    top: 0;
+    right: 0;
+}
+.hints-title {
+    padding: 0 42px 10px 0;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: bold;
+    text-align: right;
+}
+.hints-text {
+	font-size: 14px;
+	padding: 10px 0;
+	text-align: justify;
+}
+.hints-footer-button {
+    padding: 2px 24px;
+    background: #f9f9f9;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #5f5e5e;
+}
+.hints-footer-button:hover {
+	background: #d43030;
+    color: #ffffff;
+}
+.hints-date {
+	font-size: 12px;
+	color: #999;
+}
+
+
+.links {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	width: 20%;
+	margin: 25px 5px;
+	background: #ffffff;
+    border-radius: 3px;
+	border: 1px solid #e9e9e9;
+	padding: 10px 10px;
+}
+.links-header {
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+	text-align: right;
+	padding: 10px;
+}
+.links-body {
+	font-size: 15px;
+	text-align: justify;
+	padding: 10px;
+}
+
+/************************************** Footer */
+#main-footer {
+	font-size: 12px;
+	font-weight: bold;
+	color: #939393;
+	height: 30px;
+}
+
+.margin-t{
+        margin-top: 20px;
+}
+
+/************************************** Resposive */
+@media screen and (max-width: 1000px) {
+	.min100vh {
+		min-height: calc(100vh - 250px);
+	}
+	.right, .left {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	.header-h {
+		text-align: center;
+		padding: 5px;
+	}
+	.nav-menu {
+		text-align: center;
+	}
+}
+
+
+
+
+@media screen and (max-width: 580px) {
+	#main-header {
+		padding: 0px 1px;
+}

@@ -1,0 +1,6 @@
+Sitemap: https://www.puszl.com/sitemap.xml
+
+User-agent: *
+allow: /
+
+disallow: /my-games

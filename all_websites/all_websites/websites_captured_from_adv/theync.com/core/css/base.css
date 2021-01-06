@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* forms */
+.forms-wrapper { width: 100%; position: relative; float:left; margin-top:10px; }
+.forms { width:100%; float:left; }
+.forms .forms-intro { width: 90%; padding: 10px 0 6px 0; margin: 0 auto; color: #333; text-align: center; }
+.forms .forms-error { width: 90%; padding: 0 0 6px 0; margin: 0 auto; color: #dd3333; text-align: left; }
+.forms .form-label { width: 25%; float: left; padding: 2px 0; margin-left: 5%; line-height: 25px; color: #333; text-align: right; }
+.forms .form-field { width: 60%; float: right; padding: 2px 0; margin-right: 5%; line-height: 25px; color: #333; text-align: left; }
+.forms-wrapper input[type="text"],
+.forms-wrapper input[type="password"],
+.forms-wrapper select,
+.forms-wrapper textarea,
+.forms-wrapper input[type="file"],
+#mailbox .compose input[type='text'],
+#mailbox .compose textarea,
+#profile input[type="text"] { border: 1px solid #E3E3E3; color: #555555; font-family: Arial, Helvetica, sans-serif; font-size: 11px; height: 27px; line-height: 23px; margin: 0; outline: medium none; padding: 0 10px; vertical-align: middle; min-width:172px; }
+.forms-wrapper input[type="text"]:focus,
+#mailbox .compose input[type='text']:focus,
+#mailbox .compose textarea:focus,
+.forms-wrapper input[type="password"]:focus,
+.forms-wrapper textarea:focus { background-color: lightyellow; }
+.forms-wrapper textarea,
+#mailbox .compose textarea { height:auto; }
+.forms-wrapper .required { color:#FF0000; }
+.forms-wrapper input[type="submit"] { background: url("../images/submitButton.png") repeat-x scroll left top #FF416D; color: #FFFFFF; cursor: pointer; padding: 6px 20px; border: 1px solid #BE010C; border-radius: 3px 3px 3px 3px; font-size: 12px; text-shadow: 1px 1px #395380; text-transform: uppercase; box-shadow: 1px 1px 2px #999999; margin-top:10px; }
+.forms-wrapper input[type="submit"]:hover { background: scroll left bottom #FF416D; }
+/* forms */
+
+
+/* notification */
+.notification { border-radius: 2px 2px 2px 2px; margin: 0 0 20px; text-align:left; padding: 10px 10px 10px 45px; position: relative; }
+.notification p { color:#333333; background: none repeat scroll 0 0 transparent; border: 0 none; margin: 0; padding: 0; line-height:21px; vertical-align: baseline; }
+.notification.info { background-color:#f8faff; padding: 10px 10px 10px 10px; border: 1px solid #f1f3f8; vertical-align: baseline; }
+.notification.success { background: url("../images/ico-success.png") no-repeat scroll 10px center #EFFEB9; border: 1px solid #C1D779; }
+.notification.error { background: url("../images/ico-error.png") no-repeat scroll 10px center #FAD5CF; border: 1px solid #E18B7C; }
+.notification.alert { background: url("../images/ico-warning.png") no-repeat scroll 10px center #FFE9AD; border: 1px solid #EAC572; }
+/* notification */
+
+
+/* profile */
+#profile .general { width:100%; float:left; }
+#profile .general .picture { float:left; width:200px; }
+#profile .general .picture img { float:left; }
+#profile .general .info { float:right; line-height:19px; width:540px; }
+#profile .general .info h3{ padding-top:0px; margin-top:0px;}
+#profile .row h4, #pornstar-bio .row h4 { background-color: #FAFAFA; color: #000000; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #d3d6dd; padding:5px; cursor:pointer; }
+#profile .row h4 .more,  #pornstar-bio .row h4 .more { height:9px; width:9px; display:block; float:right; margin-top:5px; cursor:pointer; }
+#profile .row h4 .more.off,  #pornstar-bio .row h4 .more.off { background: url("../images/plus.gif"); }
+#profile .row h4 .more.on,   #pornstar-bio .row h4 .more.on { background: url("../images/minus.gif"); }
+#profile .hidden,  #pornstar-bio .hidden { display:none; }
+#profile #addAsFriend, .addIco { height:20px; background-image: url(../images/add.png); background-repeat: no-repeat; background-position: left -1px; padding-left:20px; color:#009900; clear:both; display:block; float:left; margin-top:10px; font-size:11px; }
+.addIco{ height:20px; background-image: url(../images/add.png); background-repeat: no-repeat; background-position: left -1px;  display:inline-block; margin:0px; float:none;  }
+.removeIco{ height:20px; width:16px; background-image: url(../images/remove.png); background-repeat: no-repeat; background-position: left -1px; display:inline-block; }
+
+#profile .send-message input[type='text'],
+#profile .send-message textarea,
+#profile .add-wall-post textarea,
+.sendCommentsBox textarea{ margin-bottom:7px; width:450px; }
+#ul-comments { padding:0px; list-style-type:none; display:block; float:left; width:100%; margin:0px; }
+#ul-comments li { padding:0px; margin:0px; clear:both; float:left; padding-bottom:10px; width:100%; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #E7E7E7; padding-top:10px; width:100%; }
+#ul-comments img { width:90px; float:left; width:90px; padding-right:10px; }
+#profile .row #ul-comments li a { font-size:12px; text-decoration:underline; }
+#profile .row #ul-comments li a:hover { text-decoration:none; }
+#ul-comments .block { float:right; width:635px; }
+.my-uploads .more{clear:both;float:left;margin-top:10px;}
+.my_profile table{border-collapse:collapse;} 
+.my_profile thead td{	padding:2px;	border-bottom-width: 1px;	background-color:#FBFBFB;border-bottom-style: solid;	border-bottom-color: #E9E9E9;}
+.my_profile tbody td{	padding:2px; font-size:11px; padding-top:5px; }
+
+/* profile */
+
+
+
+/* pornstar bio */
+#pornstar-bio .col-left { width:180px; float:left; }
+#pornstar-bio .col-right { width:535px; float:right; line-height:19px; }
+#pornstar-bio .navi, .my-uploads .navi{
+	width:100%;
+	float:left;
+	padding-bottom:10px;
+}
+#pornstar-bio .navi a.active, .my-uploads .navi a.active{
+	text-decoration:underline;
+}
+
+/* pornstar bio */
+
+
+
+
+
+/* mailbox */
+#mailbox,
+#mailbox .cnt { width:100%; float:left; }
+#mailbox .cnt { padding-top:10px; }
+#mailbox .navi { width:100%; float:left; padding:0px; margin:0px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #d3d6dd; }
+#mailbox .navi li { padding:0px; display:block; float:left; margin:0px; }
+#mailbox .navi li a { float: left; font-size: 12px; font-weight: bold; margin-right: 3px; padding: 5px 10px; text-align: center; text-decoration: none; }
+#mailbox .navi li a:hover,
+#mailbox .navi li.active a { background-color: #E9E9E9; color: #000000; }
+#mailbox table { border-collapse:collapse; width:100%; }
+#mailbox input[type='submit'],
+#mailbox a.delete,
+#mailbox a.reply { border: 1px solid #CD0000; background: -webkit-gradient( linear, left top, left bottom, color-stop(0.1, #FF1A00), color-stop(0.9, #CD0000) ); background: -moz-linear-gradient( center top, #FF1A00 10%, #CD0000 90% ); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1A00', endColorstr='#CD0000');
+background-color: #FF1A00; -moz-box-shadow: inset 0px 1px 2px 0px #FFFFFF; -webkit-box-shadow: inset 0px 1px 2px 0px #FFFFFF; box-shadow: inset 0px 1px 2px 0px #FFFFFF; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; text-shadow: 1px 1px 1px #000000; font-weight: bold; margin: 5px 5px; padding: 6px 6px; color: #FFFFFF; font-family: 'Arial', sans-serif; font-size: 11px; text-transform: capitalize; text-align: center; text-decoration: none; cursor: pointer; display: inline-block; }
+#mailbox a.reply { background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) ); background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% ); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+text-shadow:1px 1px 0px #aade7c; color:#306108; }
+#mailbox a.reply:hover { background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) ); background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% ); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+background-color:#5cb811; }
+#mailbox input[type='submit']:hover,
+#mailbox a.delete:hover { background: -webkit-gradient( linear, left top, left bottom, color-stop(0.1, #CD0000), color-stop(0.9, #FF1A00) ); background: -moz-linear-gradient( center top, #CD0000 10%, #FF1A00 90% ); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CD0000', endColorstr='#FF1A00');
+background-color: #CD0000; }
+#mailbox table a { color:#434343; text-decoration:underline; }
+#mailbox .row { margin-top:20px; }
+#mailbox .compose { padding:0px; margin:0px; list-style-type:none; }
+#mailbox .compose textarea { height:240px; }
+#mailbox .compose li { padding:0px; margin:0px; width:100%; float:left; margin-top:5px; padding-bottom:5px; }
+#mailbox .compose li label { float:left; width:80px; }
+#mailbox .compose li input[type='text'],
+#mailbox .compose li textarea { width:300px; float:left; }
+#mailbox .compose li input[type='submit'] { margin-left:79px; }
+#mailbox table td,
+#mailbox table th { padding:5px; padding-left:10px; text-align:left; padding-right:10px; }
+#mailbox table td { background-color:#FAFAFA; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #F7F2F7; }
+#mailbox table tr th { border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #666666; }
+#mailbox table tr:hover td { background-color:#E8F5F5; }
+/* mailbox */
+
+
+/* upload */
+#formUpload input[type='text'], #formUpload textarea{
+width:505px;
+}
+#formUpload table{
+border-collapse:collapse; margin-top:-10px;}
+#formUpload td{ padding-top:10px; padding-bottom:10px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #F1F3F8; }
+#formUpload  #txtFileName{
+background-color:#FFFFFF;
+padding:0px;
+height:15px;
+width:300px;
+border:none;}
+#formUpload .clear{
+clear:both; float:left; 
+margin-top:10px;
+}
+/* upload */

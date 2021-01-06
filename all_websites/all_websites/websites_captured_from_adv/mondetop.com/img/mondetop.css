@@ -1,0 +1,237 @@
+BODY	
+
+{scrollbar-face-color: 0076AE; scrollbar-shadow-color: 004080;
+scrollbar-highlight-color: 0076AE; scrollbar-3dlight-color: 9DCECC;
+scrollbar-darkshadow-color: 455A7A; scrollbar-track-color: ADBCD1;
+scrollbar-arrow-color: #FFFFFF}
+
+
+.ft2
+{
+	border : thin solid #566C7C;
+	background-color : #B8D5F3;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 13px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	height : auto;
+	letter-spacing : normal;
+	line-height : normal;
+	border-bottom-width : 1px;
+	border-left-width : 0px;
+	border-top-width : 0px;
+	border-right-width : 1px;
+}
+
+/* Links */
+.nulink	{
+	text-decoration:none;
+}
+
+.nulink:hover	{
+	color:red;
+	text-decoration:underline;
+}
+
+.tabhdrlink	{
+	text-decoration:none;
+	color:white;
+}
+
+.wtabhdrlink	{
+	text-decoration:none;
+	color:black;
+}
+
+.wtabhdrlink:visited	{
+	text-decoration:none;
+	color:black;
+}
+
+.tabhdrlink:visited	{
+	color:white;
+}
+
+.tabhdrlink:link	{
+	color:white;
+}
+
+.tabhdrlink:hover	{
+	color:red;
+	text-decoration:underline;
+}
+
+.svclink	{
+	font-Family: Verdana, Arial, Helvetica;
+}
+
+.destlink	{
+	font-Family: Verdana, Arial, Helvetica;
+	font-Size: 0.8em;
+}
+
+.tablink	{
+	font-Weight: bold;
+	text-decoration: none;
+}
+
+A:link  {
+	color:#000080;
+	text-decoration: none;
+}
+A:visited {
+	text-decoration: none; 
+}
+A:active {
+	color:orange;
+	text-decoration: underline;
+}
+A:hover	{
+	color:red;
+	text-decoration: underline;
+}
+
+/* Menus */
+
+A.menubartext	{
+	font-Family:Verdana,Arial,Helvetica;
+	font-Weight:bold; 
+	font-Size:10px;
+	color:black;
+	text-decoration:none;
+}
+
+
+TD.clsMenuBarItem A {
+	font-Weight:bold; 
+	color:black;
+	text-decoration:none; 
+}
+
+A.clsMenuBarItem  {
+	font-Weight:bold; 
+	color:black;
+	text-decoration:none; 
+}
+
+A.clsMenuBarItem:visited {
+	font-Weight:bold; 
+	color:black;
+}
+
+TD.clsMenuBarItem  {
+	font-Family:Verdana,Arial,Helvetica;
+	font-Weight:bold; 
+	font-Size:10px;
+	color:black;
+	text-decoration:none; 
+	cursor:hand;
+}
+
+TD.clsMenuBarItem A:hover { 
+	color:red;
+	text-decoration:underline;
+}
+
+.clsMenuBarItem  {
+	font-Family:Verdana,Arial,Helvetica;
+	font-Weight:bold; 
+	font-Size:10px;
+	color:black;
+	text-decoration:none; 
+	cursor:hand;
+}
+
+.clsMenuBarItem:hover { 
+	color:red;
+	text-decoration:underline;
+}
+
+DIV.clsMenu { 
+	font-Family: Verdana,Arial,Helvetica;
+	font-Size:10px; 
+	background-color:#CBCFDA; 
+	padding:5px 5px 5px 8px; 
+	border-top:1 black solid;
+}
+
+
+DIV.clsMenuGray	 { 
+	font-Family: Verdana,Arial,Helvetica;
+	font-Size:10px; 
+	background-color:gray; 
+	padding:5px 5px 5px 8px; 
+	border-top:1 black solid; 
+}
+
+DIV.clsMenu A { 
+	font-Family: Verdana,Arial,Helvetica;
+	text-decoration:none; 
+	color:black; 
+	font-Weight:bold; 
+	}
+
+DIV.clsMenuGray A { 
+	font-Family: Verdana,Arial,Helvetica;
+	text-decoration:none; 
+	color:black; 
+	font-Weight:bold; 
+	}
+
+
+DIV.clsMenu A:hover { 
+	color:red; 
+	text-decoration:underline;
+}
+
+
+DIV.clsMenu_blk A:hover { 
+	color:red;
+	text-decoration:underline;
+}
+
+#enlacesext {
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:10px;
+	font-Family: Arial;
+	font-Size:12px; 
+}
+#enlacesext a {
+	text-decoration:none
+}
+#enlacesext a:hover {
+	text-decoration:underline;
+	color:#000
+}
+#enlacesext li {
+	display:inline;
+	list-style-type:none;
+	margin-left:5px;
+}
+.punto {
+	color:#F00;
+	font-size:14px;
+	margin-right:5px
+}
+.cexia {
+	color:#FFF;
+	background-color:#F00;
+	padding-left:2px;
+	padding-right:2px
+}
+.networks {
+	color:#FFF;
+	background-color:#ff9900;
+	padding-left:2px;
+	padding-right:2px;
+	margin-right:20px
+}
+
+
+/* Controls */
+.dllist	{
+/*	font-size:0.5em;*/
+	font-size:12px;
+}

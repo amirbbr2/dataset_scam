@@ -1,0 +1,99 @@
+$(function(){
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#scroll').fadeIn();
+        } else {
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+$(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top-50
+                }, 800);
+                return false;
+            }
+        }
+    });
+});
+$(function() {
+
+    if(subaction=="passwordrestore"){
+        $('#passwordrestore').modal('show');
+    }
+    $('#login').click(function(e) {
+        $("#registerform").hide();
+        $("#loginform").delay(0).fadeIn(1000);
+
+
+
+        e.preventDefault();
+        $('html,body').animate({ scrollTop: 0 }, 800);
+    });
+    $('#register').click(function(e) {
+        $("#loginform").hide();
+        $("#registerform").delay(0).fadeIn(1000);
+
+
+
+        e.preventDefault();
+        $('html,body').animate({ scrollTop: 0 }, 800);
+    });
+
+
+});
+
+
+function recpatchareset() {
+
+
+    $("#signupbutton").attr("disabled", true);
+    $("#loginbutton").attr("disabled", true);
+
+
+    grecaptcha.ready(function() {
+        grecaptcha.execute(clientrecaptcha,  { action: 'homepage' } ).then(function(token) {
+
+            document.getElementById("signuprecaptcha").value=token;
+            document.getElementById("loginrecaptcha").value=token;
+
+            $("#signupbutton").attr("disabled", false);
+            $("#loginbutton").attr("disabled", false);
+            $("#buttonrestorecaptcha").attr("disabled", false);
+
+
+            recaptchatoken=token;
+        });
+    });
+
+}
+recpatchareset();
+
+function clocktimeup (){
+    $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 1000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+}
+$(function(){
+
+    setTimeout(clocktimeup, 0);
+
+});

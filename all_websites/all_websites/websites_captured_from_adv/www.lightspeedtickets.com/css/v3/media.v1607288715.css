@@ -1,0 +1,266 @@
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 960px) {
+	#mainNav {
+		display: none;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		border-top: 1px solid #dedede;
+		box-shadow: 0 10px 10px -6px rgba(0, 0, 0, .2);
+	}
+
+	#mainNav li {
+		text-align: left;
+		font-size: 18px;
+		padding-left: 20px;
+	}
+
+	#header .vertical-align {
+		height: 50px;
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	#logo {
+		display: inline-block;
+		float: none;
+		width: calc(100% - 100px);
+		text-align: center;
+		vertical-align: middle;
+		height: auto;
+	}
+
+	#logo img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	#logo h1 {
+		margin: 0;
+	}
+
+	#mainNav > li.relative-dropdown {
+		display: none;
+	}
+
+	.hamburger-container, .phone {
+		display: inline-block;
+		vertical-align: middle;
+		width: 46px;
+		text-align: left;
+		margin-left: -3px;
+	}
+
+	#mobileCustomLinks {
+		display: block;
+	}
+
+	.phone {
+		font-weight: bold;
+		width: 46px;
+		text-align: right;
+	}
+
+	.phone i {
+		margin-right: 10px;
+	}
+
+	#header i.fa {
+		font-size: 30px;
+		margin: 0;
+	}
+
+	#mainNav li {
+		float: none;
+		width: 100%;
+	}
+
+	#mainNav li:hover .dropdown-container {
+		display: none;
+	}
+
+	#mainNav li:hover {
+		color: #fff;
+		background-color: #555;
+	}
+
+	#mainNav i {
+		display: none;
+	}
+
+	#smallSearch input, #largeSearch input {
+		padding-right: 0;
+	}
+
+	#smallSearch button, #largeSearch button {
+		display: none;
+	}
+
+	#largeSearchContainer h2, #fullSearchContainer h2 {
+		font-size: 30px;
+		margin: 0 0 20px 0;
+	}
+
+	.footer-contents ul, .footer-left, .footer-centered, .footer-right {
+		width: 100%;
+		display: block;
+		float: none;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.footer-contents ul li {
+		display: inline-block;
+		float: none;
+		margin-left: 7px;
+		margin-right: 7px;
+	}
+
+	#footerTop .footer-right {
+		text-align: center;
+		float: none;
+	}
+
+	.event-buy, .event-buy button {
+		width: 25px;
+		height: 25px;
+	}
+
+	.event-date-time, .event-name-venue {
+		display: block;
+		width: 100%;
+	}
+
+	.event-time {
+		margin-bottom: 5px;
+	}
+
+	.event-ticket-count {
+		display: none;
+	}
+
+	.mobile-event-ticket-count {
+		font-weight: bold;
+		display: block;
+	}
+
+	.tickets-text {
+		display: none;
+	}
+
+	.footer-contents .footer-icon-holder {
+		width: 31px;
+		font-size: 14px;
+		display: inline-block;
+		float: none;
+	}
+
+	.footer-contents .footer-icon-holder:first-of-type {
+		margin-left: 0;
+	}
+
+	.footer-contents, #footerBottom {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 860px) {
+	.tile {
+		width: 50%;
+		padding-bottom: calc(25% + 5px);
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.filters-container #dateFilter.full-width {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.filters-container #datePicker {
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.left-content, .right-content {
+		width: 100%;
+	}
+
+	.right-sidebar, .left-sidebar {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#largeSearchContainer h2 {
+		display: none;
+	}
+
+	#largeSearchContainer, #smallSearchContainer {
+		padding: 10px;
+	}
+
+	#largeSearch input {
+		font-size: 18px;
+		padding: 10px 0 10px 42px;
+	}
+
+	#largeSearch i {
+		top: 10px;
+		left: 12px;
+		font-size: 22px;
+	}
+
+	#largeSearchContainer #disclaimer, #smallSearchContainer #disclaimer, #fullSearchContainer #disclaimer {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	#searchResults {
+		width: 100vw;
+		left: -10px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.tile {
+		width: 100%;
+		padding-bottom: calc(50% + 5px);
+	}
+
+	.event-list h2 {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.event-list-location {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.filters-container #cityFilterDropdown ul li {
+		width: 50%;
+	}
+	.desktop-filter-text {
+		display: none;
+	}
+	.mobile-filter-text {
+		display: block;
+	}
+	.filters-container #dateFilter,
+	.filters-container #cityFilter {
+		font-size: 20px;
+	}
+	.filters-container #cityFilterDropdown,
+	.filters-container #datePicker {
+		top: 50px;
+	}
+}
+

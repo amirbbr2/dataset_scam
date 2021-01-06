@@ -1,0 +1,10 @@
+if(window.onload){window.onload=window.onload.extend(initRegistration);}else{window.onload=initRegistration();}
+function initRegistration(){if(document.querySelector('form.registraion-form')){document.querySelector('form.registraion-form').onsubmit=function(e){var registerForm=e.target;var formError=false;e.preventDefault();if(e.preventDefault){e.preventDefault();}else{e.returnValue=false;}
+var indicator=registerForm.querySelector('.indicator');var registerMessage=registerForm.querySelector('.result-message');show(indicator);hide(registerMessage);var reg_nonce=registerForm.querySelector('[name=nonce]').value;var reg_user=registerForm.querySelector('[name=user_login]').value;var reg_pass=registerForm.querySelector('[name=user_pass]').value;var reg_mail=registerForm.querySelector('[name=user_email]').value;if(reg_user==''){registerForm.querySelector('[name=user_login]').classList.add('error');formError=true;}
+if(reg_pass==''){registerForm.querySelector('[name=user_pass]').classList.add('error');formError=true;}
+if(reg_mail==''|!validateEmail(reg_mail)){registerForm.querySelector('[name=user_email]').classList.add('error');formError=true;}
+if(formError){return;}
+var ajax_url='/wp-admin/admin-ajax.php';var reqData={action:'register_user',nonce:reg_nonce,user:reg_user,pass:reg_pass,mail:reg_mail,};postRequest(ajaxAdminEndpoint,reqData,function(response){if(response){hide(indicator);if(response.status==='ok'){registerMessage.innerHTML='Your submission is complete.';registerMessage.classList.add('alert-success');registerMessage.classList.remove('alert-danger');show(registerMessage);document.location.href='/';}else{registerMessage.innerHTML=response.message;registerMessage.classList.add('alert-danger');show(registerMessage);}}})
+return false;}}}
+function validateEmail(mail){if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)){return(true)}
+return(false)}

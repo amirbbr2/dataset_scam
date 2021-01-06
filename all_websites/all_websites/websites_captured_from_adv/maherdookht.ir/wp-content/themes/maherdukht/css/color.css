@@ -1,0 +1,71 @@
+:root {
+    --main-color: #8f8fec;
+    --light-color: #8f8fec66;
+}
+
+::-moz-selection { background: var(--main-color); }
+::selection { background: var(--main-color); }
+
+a:hover{
+    color: var(--main-color) !important;
+}
+
+.header-extras li .he-text span {
+    color: var(--main-color);
+}
+
+#primary-menu ul ul:not(.mega-menu-column), #primary-menu ul li .mega-menu-content {
+    border-top: 2px solid var(--main-color);
+}
+
+h1 > span:not(.nocolor):not(.badge), h2 > span:not(.nocolor):not(.badge), h3 > span:not(.nocolor):not(.badge), h4 > span:not(.nocolor):not(.badge), h5 > span:not(.nocolor):not(.badge), h6 > span:not(.nocolor):not(.badge) {
+    color: var(--main-color);
+}
+
+.feature-box .fbox-icon i, .feature-box .fbox-icon img {
+    background-color: var(--main-color);
+}
+
+.fbox-effect .fbox-icon i:after {
+    box-shadow: 0 0 0 2px var(--main-color);
+}
+
+.fbox-effect .fbox-icon i:hover, .fbox-effect:hover .fbox-icon i {
+    background-color: var(--light-color);
+}
+
+.feature-box.fbox-plain .fbox-icon i, .feature-box.fbox-plain .fbox-icon img {
+    color: var(--main-color);
+}
+
+.feature-box.fbox-light .fbox-icon i, .feature-box.fbox-light .fbox-icon img {
+    color: var(--main-color);
+}
+
+.feature-box a {
+    color: var(--main-color);
+}
+
+.button {
+    background-color: var(--main-color);
+}
+
+.button.button-3d:hover {
+    background-color: var(--main-color) !important;
+    opacity: 0.9;
+}
+
+.telegram-color:hover {
+    color: #ffffff !important;
+    background-color: var(--main-color) !important;
+    opacity: 0.9;
+}
+
+.table-detail thead {
+    color: #FFFFFF;
+    background: #bfbfbf;
+}
+
+#respond a {
+    color: var(--main-color);
+}

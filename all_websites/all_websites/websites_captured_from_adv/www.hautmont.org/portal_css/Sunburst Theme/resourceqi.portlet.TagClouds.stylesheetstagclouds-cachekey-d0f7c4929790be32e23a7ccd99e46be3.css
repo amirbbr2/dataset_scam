@@ -1,0 +1,40 @@
+
+/* - ++resource++qi.portlet.TagClouds.stylesheets/tagclouds.css - */
+@media screen {
+/* https://www.hautmont.org/portal_css/++resource++qi.portlet.TagClouds.stylesheets/tagclouds.css?original=1 */
+.cloud1 {
+font-size: 1.0em;
+}
+.cloud2 {
+font-size: 1.3em;
+}
+.cloud3 {
+font-size: 1.6em;
+}
+.cloud4 {
+font-size: 1.9em;
+}
+.cloud5 {
+font-size: 2.2em;
+}
+.cloud6 {
+font-size: 2.5em;
+}
+.cloud7 {
+font-size: 2.8em;
+}
+
+}
+
+
+/* - ++resource++portletstyle.css - */
+@media screen {
+/* https://www.hautmont.org/portal_css/++resource++portletstyle.css?original=1 */
+.noheader .portletHeader {
+display: none;
+}
+.nofooter .portletFooter {
+display: none;
+}
+}
+

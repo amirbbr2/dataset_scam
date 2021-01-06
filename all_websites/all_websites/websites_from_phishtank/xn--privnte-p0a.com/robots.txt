@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Privnote - Send notes that will self-destruct after being read</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Share a confidential note via a web link that will self-destruct after it is read by your intended recipient." />
+
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="static/favicon.ico" />
+  <link rel="icon" type="image/png" href="https://xn--privnte-p0a.com/static/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://xn--privnte-p0a.com/static/favicon-16x16.png" sizes="16x16" />
+
+  <link rel="icon" sizes="192x192" href="https://xn--privnte-p0a.com/static/touch-icon-192x192.png">
+
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://xn--privnte-p0a.com/static/apple-touch-icon-180x180.png">
+
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://xn--privnte-p0a.com/static/apple-touch-icon-152x152.png">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://xn--privnte-p0a.com/static/apple-touch-icon-144x144.png">
+
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://xn--privnte-p0a.com/static/apple-touch-icon-120x120.png">
+
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://xn--privnte-p0a.com/static/apple-touch-icon-114x114.png">
+
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://xn--privnte-p0a.com/static/apple-touch-icon-76x76.png">
+
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://xn--privnte-p0a.com/static/apple-touch-icon-72x72.png">
+
+  <link rel="apple-touch-icon-precomposed" href="https://xn--privnte-p0a.com/static/apple-touch-icon-57x57.png">
+  <meta name="application-name" content="Privnote"/>
+  <meta name="msapplication-TileColor" content="#960000" />
+  <meta name="msapplication-TileImage" content="/static/mstile-144x144.png" />
+        <script type="text/javascript" src="assets/gibberish-aes.js"></script>
+        <script type="text/javascript" src="assets/TextEncoderLite.js"></script>
+        <script type="text/javascript" src="assets/b64.js"></script>
+        <script type="text/javascript" src="assets/promise.js"></script>
+        <script type="text/javascript" src="assets/common.js"></script>
+        <script type="text/javascript" src="assets/legacy.js"></script>
+
+        <script type="text/javascript">
+            
+            var i18n_tpl = {
+            'expires_d'   : "{days} дней"  , // >= 2 days
+            'expires_h_m' : "{hours} час(ов) и {minutes} минут(ы)", // >= 2 hours
+            'expires_m_s' : "{minutes} минут(ы) и {seconds} секунд(ы)", // >= 2 min
+            'expires_s'   : "{seconds} секунд(ы)"    // else
+            }
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="assets/legacy.css">
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" type="text/css" href="/static-58c8928/style/legacy-ie-lte-8.css" />
+        <![endif]-->
+
+    <style>._3emE9--dark-theme .-S-tR--ff-downloader{background:rgba(30,30,30,.93);border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#fff}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{background:#3d4b52}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#131415}._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer{background:rgba(30,30,30,.93)}._2mDEx--white-theme .-S-tR--ff-downloader{background:#fff;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#314c75}._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header{font-weight:700}._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{border:0;color:rgba(0,0,0,.88)}._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer{background:#fff}.-S-tR--ff-downloader{display:block;overflow:hidden;position:fixed;bottom:20px;right:7.1%;width:330px;height:180px;background:rgba(30,30,30,.93);border-radius:2px;color:#fff;z-index:99999999;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);transition:.5s}.-S-tR--ff-downloader._3M7UQ--minimize{height:62px}.-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,.-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header{display:none}.-S-tR--ff-downloader ._6_Mtt--header{padding:10px;font-size:17px;font-family:sans-serif}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{float:right;background:#f1ecec;height:20px;width:20px;text-align:center;padding:2px;margin-top:-10px;cursor:pointer}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#e2dede}.-S-tR--ff-downloader ._13XQ2--error{color:red;padding:10px;font-size:12px;line-height:19px}.-S-tR--ff-downloader ._2dFLA--container{position:relative;height:100%}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info{padding:6px 15px 0;font-family:sans-serif}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div{margin-bottom:5px;width:100%;overflow:hidden}.-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{margin-top:21px;font-size:11px}.-S-tR--ff-downloader ._10vpG--footer{width:100%;bottom:0;position:absolute;font-weight:700}.-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader{-webkit-animation:n0BD1--rotation 3.5s linear forwards;animation:n0BD1--rotation 3.5s linear forwards;position:absolute;top:-120px;left:calc(50% - 35px);border-radius:50%;border:5px solid #fff;border-top-color:#a29bfe;height:70px;width:70px;display:flex;justify-content:center;align-items:center}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar{width:100%;height:18px;background:#dfe6e9;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar{height:100%;background:#8bc34a;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status{margin-top:10px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state{float:left;font-size:.9em;letter-spacing:1pt;text-transform:uppercase;width:100px;height:20px;position:relative}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage{float:right}</style></head>
+    <body>
+      <div id="header_bg">
+          <div id="header">
+              <h1>
+                  <a href="index.html" title="Click here to create a new note">
+                      <img src="static/legacy/privnote-logo.svg"
+                           onerror="this.onerror=null; this.src='/static/privnote-logo.png'">
+                        <span>Privnote</span>
+                    </a>
+                </h1>
+                <h2>PrivnoteSend notes that will self-destruct after being read.</h2>
+            </div>
+
+        </div>
+
+
+        <div id="ad_bg">
+            <div id="ad">
+                <!-- CREATE -->
+<script async="" src="assets/f.js"></script>
+
+            </div>
+        </div>
+
+
+        <!-- content -->
+        <div id="unsupported" class=" hidden">
+            Загрузка...<br><br>
+        </div>
+        <div id="content" class="">
+
+
+
+
+
+    <!-- ========== CONFIRM READ NOTE ========== -->
+    <div id="confirm_read_note" class="">
+
+        <div id="error_link_incomplete" class="error_block hidden">
+            <h1>Note link incomplete</h1>
+            <p>
+            </p>
+        </div>
+
+
+        <div id="link_ok">
+            <h1>Read and destroy?</h1>
+
+            <p>
+
+            </p>
+
+
+            <div id="error_connection_read" class="error_block hidden">
+                Error talking to Privnote server. Please check your Internet connection and try again            </div>
+            <div id="error_ajax_read" class="error_block hidden">
+            </div>
+
+            <div class="section group">
+                <div class="col span_3_of_6">
+                    <button id="confirm_button" class="primary_button">Yes, show me the note</button>
+                </div>
+                <div class="col span_3_of_6">
+                    <button href="/" class="button">No, not now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FETCHING NOTE ========== -->
+    <div id="fetching_note" class="hidden">
+        <h1>Fetching...</h1>
+        <p>Please wait while the note is downloading from Privnote.</p>
+    </div>
+
+    <!-- ========== READ NOTE ========== -->
+    <div id="read_note" class="hidden">    
+        <h1>Note contents</h1>
+    
+        <div id="password_form">
+            <div class="warning_block">
+                Do not close or reload this page or you will lose the note forever.            </div>
+            
+            <h3>Note link incomplete</h3>
+            <div class="help_block">
+                The note link is incomplete or incorrect, and the note could not be decrypted.
+    Please paste the link below, making sure all the characters after the # are included.            </div>            
+            <div class="section group">
+                <div class="col span_6_of_6">
+                    <label>
+                        Paste the full note link below                        <input id="note_link_manual" type="text">
+                        <span class="error hidden" id="error_password_incorrect">
+                            Note link still incorrect. Please try again.                        </span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="section group">
+                <div class="col span_3_of_6">
+                    <button id="decrypt_button" class="primary_button">continue</button>
+                </div>
+            </div>
+                
+        </div>
+        
+        <div id="ok_content" class="hidden">        
+            
+            <div id="info_destroyed" class="warning_block hidden">
+                This note was destroyed.
+                If you need to keep it, copy it before closing this window.            </div>
+            <div id="info_expires" class="warning_block hidden">
+                The note will self-destruct in  <span id="info_expires_text"></span>.<br>
+                <a id="note_link" href="https://privnote.com/wo7tUx6M">https://privnote.com/wo7tUx6M</a> <!-- hash appended from js -->
+            </div>
+    
+            <textarea id="note_contents" class="hidden" readonly ></textarea>
+            
+            <div id="error_connection_destroy" class="error_block hidden">
+                Error talking to Privnote server. Please check your Internet connection and try again            </div>
+            <div id="error_ajax_destroy" class="error_block hidden">
+            </div>
+                
+            <div class="section group">
+                <div class="col span_2_of_6">
+                    <button id="select_text" class="small_button">Select link</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        notes.set_device_type("desktop")
+        notes.set_note_id("robots.txt")
+        notes.when_ready( function() {
+        notes.init_read(1,1,0,0,"");
+        })
+
+    </script>
+
+    
+
+            </div>
+
+
+
+            <div id="footer">
+                <div id="nav" class="section group">
+                    <div class="col span_2_of_6">
+                        <a href="index.html"><strong>>Write a new note</strong></a><br>
+                        <a href="https://xn--privnte-p0a.com/info/contact">Share your comments</a>
+                    </div>
+    
+                    <div class="col span_1_of_6">
+                        <a href="https://xn--privnte-p0a.com/info/support">Support</a><br>
+                        <a href="https://xn--privnte-p0a.com/info/privacy">Privacy</a><br>
+                        <a href="https://xn--privnte-p0a.com/info/about">About</a>
+                                            
+                    </div>
+    
+                    <div class="col span_1_of_6">
+                        <a href="https://xn--privnte-p0a.com/blog" rel="noreferrer">Blog</a><br>
+                        <a href="https://xn--privnte-p0a.com/twitter" rel="noreferrer">Twitter</a><br>
+                        <a href="https://xn--privnte-p0a.com/facebook" rel="noreferrer">Facebook</a>
+                    </div>
+
+                    <div class="col span_2_of_6">
+                        <form method="post" action="https://xn--privnte-p0a.com/change_lang.php">
+                            <select name="manual_locale" onchange="javascript:this.form.submit()">
+                                                                        <option value="en" selected>English</option>
+                                                                                <option value="ru">Русский</option>
+                                                                    </select>
+                        </form>
+                        <a href="http://blog.privnote.com/post/125553077722/helps-us-translate-privnote">Translate into your language!</a><br><br>
+                    </div>
+                </div>
+
+                <div id="footnote">
+                    Privnote <span class="version">Ver. 1.1-44-g58c8928 / 2018-05-25</span> |
+                    © <a href="http://www.ikatu.us/privnote.html">Ikatu</a>
+                </div>
+            </div>
+
+
+            <div id="cookie-modal" class="cookie-modal hidden">
+                <span class="cookie-span">Privnote uses cookies.                   <a class="cookie-link" target="_blank" href="https://xn--privnte-p0a.com/info/privacy">Learn it in our Privacy Policy.</a>
+                   <button id="cookie_consent" class="cookie-button">Got it!</button>
+                </span>
+            </div>
+
+        </body>
+
+    </html>

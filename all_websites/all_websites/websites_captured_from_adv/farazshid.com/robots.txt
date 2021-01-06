@@ -1,0 +1,57 @@
+User-agent: Googlebot
+Disallow: 
+User-agent: googlebot-image
+Disallow: 
+User-agent: googlebot-mobile
+Disallow: 
+User-agent: MSNBot
+Disallow: 
+User-agent: Slurp
+Disallow: 
+User-agent: Teoma
+Disallow: 
+User-agent: twiceler
+Disallow: 
+User-agent: Gigabot
+Disallow: 
+User-agent: Scrubby
+Disallow: 
+User-agent: Robozilla
+Disallow: 
+User-agent: Nutch
+Disallow: 
+User-agent: ia_archiver
+Disallow: 
+User-agent: baiduspider
+Disallow: 
+User-agent: naverbot
+Disallow: 
+User-agent: yeti
+Disallow: 
+User-agent: yahoo-mmcrawler
+Disallow: 
+User-agent: psbot
+Disallow: 
+User-agent: asterias
+Disallow: 
+User-agent: yahoo-blogs/v3.9
+Disallow: 
+User-agent: *
+
+
+# All other robots
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /feed/
+Disallow: /trackback/
+Disallow: /comments/feed/
+Disallow: /comments/
+
+#Sitemap: http://farazshid.com/sitemap_index.xml
+#Sitemap: http://farazshid.com/post-sitemap.xml
+#Sitemap: http://farazshid.com/page-sitemap.xml
+#Sitemap: http://farazshid.com/portfolio-sitemap.xml
+#Sitemap: http://farazshid.com/category-sitemap.xml
+#Sitemap: http://farazshid.com/post_tag-sitemap.xml
+#Sitemap: http://farazshid.com/portfolio_entries-sitemap.xml

@@ -1,0 +1,1174 @@
+body {
+    background: #121619 !important;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover{
+    color: #e6e4e4;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: 0.3125rem;
+    padding-right: 20px;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.bg-dark-gray2 {
+    background-color: #13171d;
+}
+
+.bg-dark-gray3 {
+    background-color: #1f232d !important;
+    border-color: #1f232d !important;
+}
+
+.badge-saturn {
+    color: #000;
+    background-color: #f8f9fa;
+    padding: .20em 2em;
+    font-weight: 400;
+}
+
+.bg-dark-as-box {
+    background-color: #1c2125;
+}
+
+.bg-dark-as-box-shadow {
+    background-color: #242a2f !important;
+    border-color: #1e2021 !important;
+}
+
+.jumbotron {
+    padding: 1rem 2rem;
+}
+
+.hentai-card.main-hentai-card {
+     flex: 0 0 33.333%;
+     max-width: 25%;
+     position: relative;
+     width: 100%;
+     padding-right: 5px;
+     padding-left: 5px;
+}
+
+.hentai-card .card {
+    border: none;
+    background: url(../../../immagini/ASloading.png?0);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    text-align: center;
+}
+
+.hentai-card-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: .5rem;
+    background-color: rgba(0,0,0,.5);
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.hentai-card .hentai-status {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 0;
+    background-color: rgba(0,0,0,.2);
+}
+
+.hentai-card .hentai-status .hentai-episode {
+    background: #00000087;
+    padding: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.hentai-card .hentai-status .hentai-type {
+    float: right;
+    background-color: #000;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+@media(max-width:1199.98px) {
+    .hentai-card.main-hentai-card {
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+}
+
+@media(max-width:991.98px) {
+    .hentai-card.main-hentai-card {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%
+    }
+
+    .hentai-cover.w-25{
+        width: unset !important;
+    }
+
+}
+
+@media(max-width:767.98px) {
+    .hentai-card.main-hentai-card {
+        flex: 0 0 100%;
+        max-width: 50%;
+    }
+
+    .immagine-destra {
+         background: unset !important;
+    }
+
+    .mobile-padding {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .img-fluid.cover-anime {
+		max-height: 300px;
+    }
+
+    .hentai-title-as {
+        display: none;
+    }
+
+    .hentai-title-mobile-as{
+        display: block !important;
+        color: white !important;
+        font-size: 20px;
+    }
+
+    .altezza-row-hentai{
+        margin-top: -35% !important;
+    }
+
+    #hentai .banner {
+        height: 200px !important;
+    }
+
+    .hentai-img-box-col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hentai-padding-top{
+        margin-bottom: 5px;
+    }
+
+    .hentai-img {
+        width: 35%!important;
+    }
+
+}
+
+.hentai-title-mobile-as{
+    display: none;
+}
+
+.altezza-row-hentai{
+    margin-top: -15%;
+}
+
+.bottone-home-AS-right{
+    float: right;
+    color: #fff !important;
+    border-bottom: 1px solid #3f1e7d;
+    background: #694ba1;
+    padding: 10px 10px 10px 10px;
+    margin-top: -20px;
+    margin-right: 4px;
+    border-radius: 3px;
+}
+
+.bottone-home-AS-right:hover{
+    background: #7a59b9;
+    border-color: #5f468e;
+}
+
+.bottone-home-AS-left{
+    float: left;
+    color: #fff !important;
+    border-bottom: 1px solid #3f1e7d;
+    background: #694ba1;
+    padding: 10px 10px 10px 10px;
+    margin-top: -20px;
+    margin-left: 4px;
+    border-radius: 3px;
+}
+
+.bottone-home-AS-left:hover{
+    background: #7a59b9;
+    border-color: #5f468e;
+}
+
+.paginationas{
+    width: 100%;
+}
+
+.pagination {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.button-li-home{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hentai_nuovi{
+    flex: 0 0 15%;
+    max-width: 20%;
+    position: relative;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.img-nuove-aggiunte {
+    height: 260px;
+    float: left;
+    width: 184px;
+    margin-bottom: 5%;
+}
+
+.img-nuove-aggiunte:hover{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 0.6;
+    transition: opacity .4s;
+}
+
+.hentai_name{
+    width: 165px;
+}
+
+.hentai-card-newhentai.main-hentai-card {
+    flex: 0 0 16.333%;
+    max-width: 16.333%;
+    position: relative;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.hentai-card-newhentai .card {
+    border: none;
+    background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    text-align: center;
+}
+
+.hentai-card-newhentai-overlay {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: .5rem;
+    background-color: rgba(0,0,0,.5);
+}
+
+.hentai-card-newhentai .hentai-status {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 0;
+    background-color: rgba(0,0,0,.2);
+}
+
+.hentai-card-newhentai .hentai-status .hentai-episode {
+    background: #00000087;
+    padding: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.hentai-card-newhentai .hentai-status .hentai-type {
+    float: right;
+    background-color: #000;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+@media(max-width:1199.98px) {
+    .hentai-card-newhentai.main-hentai-card-newhentai {
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+    .hentai-card-newhentai.main-hentai-card{
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media(max-width:991.98px) {
+    .hentai-card-newhentai.main-hentai-card-newhentai {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%
+    }
+    .hentai-card-newhentai.main-hentai-card{
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    .new-hentai {
+        height: 200px !important;
+        width: 100% !important;
+    }
+
+    #HSplanet {
+        display: none !important;
+    }
+
+    label.star {
+        padding: 0px !important;
+        font-size: 19px !important;
+        position: relative !important;
+        top: 8px !important;
+    }
+
+    .episodes-button {
+        width: 32.8% !important;
+    }
+
+}
+
+@media(max-width:767.98px) {
+    .hentai-card-newhentai.main-hentai-card-newhentai {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .hentai-card-newhentai.main-hentai-card{
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+    .new-hentai {
+        height: 250px !important;
+        width: 100% !important;
+    }
+
+    label.star {
+        font-size: 30px !important;
+        top: unset !important;
+        padding: 0px !important;
+        position: relative !important;
+    }
+
+    .hentai-img-stonks{
+        text-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+
+    .margin-hentai-page{
+        margin: .5rem!important;
+    }
+
+
+}
+
+@media(max-width:576px) {
+    .hentai-card-newhentai.main-hentai-card{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .new-hentai {
+        height: 350px !important;
+        width: 100% !important;
+    }
+}
+
+
+@media(max-width:488px) {
+    .episodes-button{
+        width: 30% !important;
+    }
+}
+
+
+@media(max-width:470px) {
+    .hentai-card-newhentai.main-hentai-card{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .new-hentai {
+        height: 300px !important;
+        width: 100% !important;
+    }
+
+    .episodes-button{
+        width: 49% !important;
+    }
+}
+
+
+@media(max-width:385px) {
+    .bottone-home-successivo {
+        margin-right: 10px !important;
+        max-width: 120px !important;
+    }
+    .bottone-home-precedente {
+        margin-left: -30px !important;
+        max-width: 110px!important;
+    }
+}
+
+@media(max-width:375px) {
+    .hentai-card-newhentai.main-hentai-card{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .new-hentai {
+        height: 250px !important;
+        width: 100% !important;
+    }
+}
+
+
+@media(max-width:310px) {
+    .hentai-card-newhentai.main-hentai-card{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .new-hentai {
+        height: 220px !important;
+        width: 100% !important;
+    }
+}
+
+@media(max-width:280px) {
+    .hentai-card-newhentai.main-hentai-card{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .new-hentai {
+        height: auto !important;
+        max-width: 100% !important;
+    }
+
+    .img-hentai-tele{
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+.episodes-button{
+    width: 24.6%;
+}
+
+.new-hentai{
+    height: 250px;
+    width: 100%;
+}
+
+.titolo_stream{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+}
+
+.bottone_serie{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    background: #694ba1;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    border-radius: 3px;
+    border-width: 0 1px 4px 1px;
+    text-transform: uppercase;
+    border-color: #6d5ca0;
+    border-style: solid;
+    font-size: 12px;
+}
+
+.bottone_serie:hover {
+    background: #866abb;
+}
+
+.search-box{
+    height: 35px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    background-color: #121619!important;
+    color: white!important;
+    border-color: #2e3438!important;
+    border-right: none;
+    outline: none !important;
+    box-shadow: none!important;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    transition: none!important;
+}
+
+.search-box button{
+    background-color: #11161d!important;
+    outline: none;
+}
+
+.header-search #query {
+    width: 195px;
+}
+
+.header-search input:active {
+    background-color: #11161d!important;
+    outline: none;
+}
+
+.header-search input:focus {
+    outline: none;
+}
+
+#livesearch {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    background-color: #242a2f;
+    width: 286px;
+    border-radius: 3px;
+    padding: 12px;
+}
+
+@media (max-width: 992px) {
+    #livesearch {
+        width: 90%;
+    }
+}
+
+#livesearch #guardatutto {
+    color:white;
+    margin-top: 15px;
+    background-color: #2b2d42;
+    opacity: 80%;
+    border-radius: 5px;
+}
+
+#livesearch a:hover {
+    text-decoration: none;
+}
+
+#livesearch hr {
+    margin: 15px 0 15px 0!important;
+}
+
+#livesearch .livesearch-item {
+    color: white!important;
+}
+
+#livesearch .livesearch-title{
+    font-size: 14px;
+}
+
+#livesearch .livesearch-info{
+    font-size: 10px;
+    color: lightgrey;
+}
+
+.btn-dark-gray2 {
+    background-color: #2b2d42 !important;
+    border-color: #2e3438!important;
+}
+
+.modal-header {
+    border-bottom: 1px solid #4d5861;
+}
+
+.modal-footer{
+    border-top: 1px solid #4d5861;
+}
+
+#HSplanet {
+    color: #fff;
+    position: fixed;
+    bottom: 15px;
+    cursor: pointer;
+    float: left;
+    left: 15px;
+    background: url(https://cdn.hentaisaturn.com/static/images/general/HS-Planet.png);
+    height: 95px;
+    width: 100px;
+    background-size: cover;
+}
+
+
+.immagine-destra{
+    background: url(https://cdn.hentaisaturn.com/static/images/general/HS-Mascotte.png);
+    height: 680px;
+    width: 435px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -5;
+}
+
+
+.btn-saturn {
+    color: #fff;
+    background-color: #7b5ab7;
+    border-color: #7b5ab7;
+}
+
+.btn-saturn:hover {
+    color: #fff;
+    background-color: #574182;
+    border-color: #544179;
+}
+
+
+.btn-saturn:not(:disabled):not(.disabled).active, .btn-saturn:not(:disabled):not(.disabled):active, .show>.btn-saturn.dropdown-toggle {
+    color: #fff;
+    background-color: #4d3c6d;
+    border-color: #4d3c6d;
+}
+
+.hentai-streaming-name {
+    background: #121619;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #f3c669;
+    border-color: #f3c669;
+}
+
+.page-link {
+    color: #f3c669;
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(236, 193, 111, 0.25);
+}
+
+.page-link:hover {
+    color: #cfa856;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #f3c669!important;
+}
+
+.hentaijumbotron{
+    padding: 1rem 1rem;
+}
+
+.badge-archivio{
+    white-space: unset !important;
+}
+
+.info-archivio {
+    float: left;
+    width: 70%;
+    margin-left: 2%;
+}
+
+.locandina-archivio {
+    float: left;
+    height: 260px;
+    width: 16.666%;
+}
+
+@media(max-width:1199px) {
+    .locandina-archivio {
+        height: 215px;
+        width: 16.666%;
+    }
+}
+
+.copertina-archivio {
+    display: none;
+}
+
+.locandina-archivio {
+    display: block;
+}
+
+@media(max-width:992px) {
+    .copertina-archivio {
+        display: block;
+        width: 100%;
+        height: 360px;
+        object-fit: contain;
+        margin-bottom: 3%;
+    }
+
+    a.image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .locandina-archivio {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    .info-archivio {
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .copertina-archivio{
+        height: 250px;
+    }
+
+    .hentai-cover.w-25{
+        width: unset !important;
+    }
+
+
+}
+
+@media(max-width:500px) {
+    .copertina-archivio{
+        height: 200px;
+    }
+}
+
+@media(max-width:430px) {
+    .copertina-archivio{
+        height: 185px;
+    }
+}
+
+@media(max-width:395px) {
+    .copertina-archivio{
+        height: 175px;
+    }
+}
+
+@media(max-width:380px) {
+    .copertina-archivio{
+        height: 170px;
+    }
+}
+
+@media(max-width:370px) {
+    .copertina-archivio{
+        height: 150px;
+    }
+}
+
+.lettera-archivio.active {
+    color: #f3c669 !important;
+}
+
+.trama-hentai-archivio {
+    background: #1c2125;
+    padding: 10px;
+}
+
+.button-search-as {
+    background: #1c2125;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    border: 0 !important;
+}
+
+.button-search-as:focus {
+    outline: unset !important;
+}
+
+.colore-hentai{
+    color: white;
+}
+
+.colore-saturn{
+    color: #f3c669;
+}
+
+.episodi-link-button a {
+    color: #ffffff !important;
+}
+
+.generi-as {
+    font-size: 18px;
+}
+
+.hentai-title-as {
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.box-trasparente-alternativo{
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 12px;
+    color: #1c2125;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.star-responsive {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #f3c669;
+}
+
+.nav-item .nav-link.episode-range {
+    padding: 0.5rem 1rem !important;
+    border: 1px solid #f3c669 !important;
+    margin-right: 5px !important;
+}
+
+.info-id {
+    position: relative;
+    top: 7px;
+    font-size: 1rem;
+    float:right;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(243, 198, 105, 0.5);
+}
+
+.bg-footer-switch {
+    color: white;
+    background: #171b1f;
+}
+
+hr{
+    margin: 10px !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(0,0,0,.1) !important;
+}
+
+body.light label.star {
+    color: #1c2125;
+}
+
+body.light .bg-footer-switch {
+    background: #f3c669;
+    color: white;
+}
+
+body.light {
+    background: #e6e8f0 !important;
+}
+
+body.light .modal-header{
+    border-bottom: 1px solid #c8c9ce;
+}
+
+body.light .modal-footer{
+    border-top: 1px solid #c8c9ce;
+}
+
+body.light .bg-dark-as-box {
+    background-color: #f8f9fa;
+}
+
+body.light .badge-saturn {
+    color: #fff;
+    background-color: #1c2125;
+}
+
+body.light .colore-hentai{
+    color: #1c2125;
+}
+
+body.light .colore-saturn{
+    color: #f3c669;
+}
+
+body.light .text-white {
+    color: #1c2125 !important;
+}
+
+body.light .btn-light {
+    color:#fff;
+    background-color:#343a40;
+    border-color:#343a40;
+}
+
+body.light .btn-light:hover {
+    color:#fff;
+    background-color:#23272b;
+    border-color:#1d2124;
+}
+
+body.light .btn-light.focus, body.light .btn-light:focus {
+    color:#fff;
+    background-color:#23272b;
+    border-color:#1d2124;
+    box-shadow:0 0 0 .2rem rgba(82,88,93,.5);
+}
+
+body.light .btn-light.disabled, body.light .btn-light:disabled {
+    color:#fff;
+    background-color:#343a40;
+    border-color:#343a40;
+}
+
+body.light .btn-light:not(:disabled):not(.disabled).active, body.light .btn-light:not(:disabled):not(.disabled):active, body.light .show>.btn-light.dropdown-toggle {
+    color:#fff;
+    background-color:#1d2124;
+    border-color:#171a1d;
+}
+
+body.light .btn-light:not(:disabled):not(.disabled).active:focus, body.light .btn-light:not(:disabled):not(.disabled):active:focus, body.light .show>.btn-light.dropdown-toggle:focus {
+    box-shadow:0 0 0 .2rem rgba(82,88,93,.5);
+}
+
+body.light .bg-dark-as-box-shadow {
+    background-color: #e6e8f0 !important;
+    border-color: #d5d7df !important;
+}
+
+body.light .search-box {
+    background-color: #e6e8f0!important;
+    color: #1c2125!important;
+    border-color: #dadada!important;
+}
+
+body.light .search-box button {
+    background-color: #e6e8f0!important;
+    border-color: #dadada!important;
+}
+
+body.light a {
+    color: #1c2125;
+    text-decoration: none;
+}
+
+body.light .hentai-card-newhentai-overlay a,
+body.light .hentai-card-overlay a,
+body.light .carousel a {
+    color: #fff;
+    text-decoration: none;
+}
+body.light .hentai-card-newhentai-overlay a:hover,
+body.light .hentai-card-overlay a:hover,
+body.light .carousel a:hover {
+    color: #e6e4e4;
+    text-decoration: none;
+}
+
+/* Questo server per il footer per le icone dei social, in caso non va bene si può rimuovere */
+body.light .text-muted {
+    color: #1c2125 !important;
+}
+
+body.light .immagine-destra {
+    opacity: unset;
+}
+
+body.light input.star-5:checked ~ label.star:before {
+    color: #f3871b !important;
+}
+
+body.light input.star-4:checked ~ label.star:before {
+    color: #f3871b !important;
+}
+
+body.light input.star-3:checked ~ label.star:before {
+    color: #f3871b !important;
+}
+
+body.light input.star-2:checked ~ label.star:before {
+    color: #f3871b !important;
+}
+
+body.light input.star-1:checked ~ label.star:before{
+    color: #6564cd !important;
+}
+
+body.light .trama-hentai-archivio {
+    background: #f8f9fa;
+}
+
+body.light .lettera-archivio.active{
+    color: #f3c669 !important;
+}
+
+body.light .btn-outline-light {
+    color:#343a40;
+    border-color:#343a40;
+}
+
+body.light .btn-outline-light:hover {
+    color:#fff;
+    background-color:#343a40;
+    border-color:#343a40;
+}
+
+body.light .btn-outline-light.focus,
+body.light .btn-outline-light:focus {
+    box-shadow:0 0 0 .2rem rgba(52,58,64,.5);
+}
+
+body.light .btn-outline-light.disabled,
+body.light .btn-outline-light:disabled {
+    color:#343a40;
+    background-color:transparent;
+}
+
+body.light .btn-outline-light:not(:disabled):not(.disabled).active,
+body.light .btn-outline-light:not(:disabled):not(.disabled):active,
+body.light .show>.btn-outline-light.dropdown-toggle {
+    color:#fff;
+    background-color:#343a40;
+    border-color:#343a40;
+}
+
+body.light .btn-outline-light:not(:disabled):not(.disabled).active:focus,
+body.light .btn-outline-light:not(:disabled):not(.disabled):active:focus,
+body.light .show>.btn-outline-light.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(52, 58, 64, 0.5);
+}
+
+body.light .sebox .msebox .headsebox .minsebox{
+    color: #000000;
+    background: #e4e4e4;
+}
+body.light .sebox .msebox .headsebox .gesebox {
+    background-color: #c7c6c6;
+    border-bottom: #9a9898 1px solid;
+}
+body.light .sebox .msebox {
+    border: 1px solid #c2c4cb;
+}
+
+body.light .sebox .msebox .footsebox {
+    background: #e4e4e4;
+    border-top: #9a9898 1px solid;
+    color: rgb(0, 0, 0);
+}
+
+body.light .badge-light {
+    color:#fff;
+    background-color:#343a40;
+}
+
+body.light a.badge-light:focus,
+body.light a.badge-light:hover {
+    color:#fff;
+    background-color:#1d2124;
+}
+
+body.light a.badge-light.focus,
+body.light a.badge-light:focus {
+    outline:0;
+    box-shadow:0 0 0 .2rem rgba(52,58,64,.5);
+}
+
+body.light .filter-option-inner-inner {
+    color: white;
+}
+
+body.light .mctitle a {
+    color: #000000 !important;
+}
+
+body.light hr{
+    margin: 10px;
+    border: none;
+    border-bottom: thin solid rgba(0, 0, 0, 0.1);
+}
+
+body.light a.generi-as {
+    color: #ffffff !important;
+}
+
+body.light .navbar-dark .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light .navbar-toggler-icon {
+    background-image: url(https://svgur.com/i/Met.svg);
+}
+
+body.light .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #1c2125;
+    background-color: #1c2125;
+}
+
+body.light #livesearch {
+    background-color: #f8f9fa;
+    border: 1px solid #b7b7b7;
+}
+
+body.light #livesearch .livesearch-item {
+    color: black!important;
+}
+
+body.light #livesearch .livesearch-info {
+    font-size: 10px;
+    color: black;
+}
+
+body.light .hentai-streaming-name{
+    background: #e2e4ea;
+}
+
+
+body.dark .badge-dark{
+    color:#212529;
+    background-color:#f8f9fa;
+}
+
+body.dark a.badge-dark:focus,
+body.dark a.badge-dark:hover {
+    color:#212529;
+    background-color:#dae0e5
+}
+
+body.dark a.badge-dark.focus,
+body.dark a.badge-dark:focus {
+    outline:0;
+    box-shadow:0 0 0 .2rem rgba(248,249,250,.5);
+}

@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+/* Customers */
+.sprite {
+    background-image: url(../images/sprite/customers.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-aparat {
+    width: 86px;
+    height: 114px;
+    background-position: -5px -5px;
+}
+
+.sprite-azaduniversity {
+    width: 86px;
+    height: 114px;
+    background-position: -101px -5px;
+}
+
+.sprite-bankmarkazi {
+    width: 86px;
+    height: 114px;
+    background-position: -197px -5px;
+}
+
+.sprite-banksarmaye {
+    width: 86px;
+    height: 114px;
+    background-position: -293px -5px;
+}
+
+.sprite-delta {
+    width: 86px;
+    height: 114px;
+    background-position: -5px -129px;
+}
+
+.sprite-hormozgan {
+    width: 86px;
+    height: 114px;
+    background-position: -101px -129px;
+}
+
+.sprite-iranema {
+    width: 86px;
+    height: 114px;
+    background-position: -197px -129px;
+}
+
+.sprite-jaaar {
+    width: 86px;
+    height: 114px;
+    background-position: -293px -129px;
+}
+
+.sprite-khorasanjonoobi {
+    width: 86px;
+    height: 114px;
+    background-position: -5px -253px;
+}
+
+.sprite-mapna {
+    width: 86px;
+    height: 114px;
+    background-position: -101px -253px;
+}
+
+.sprite-mihanblog {
+    width: 86px;
+    height: 114px;
+    background-position: -197px -253px;
+}
+
+.sprite-namayeshgah {
+    width: 86px;
+    height: 114px;
+    background-position: -293px -253px;
+}
+
+.sprite-niazerooz {
+    width: 86px;
+    height: 114px;
+    background-position: -389px -5px;
+}
+
+.sprite-ordakabi {
+    width: 86px;
+    height: 114px;
+    background-position: -389px -129px;
+}
+
+.sprite-p30download {
+    width: 86px;
+    height: 114px;
+    background-position: -389px -253px;
+}
+
+.sprite-pars-industrial {
+    width: 86px;
+    height: 114px;
+    background-position: -5px -377px;
+}
+
+.sprite-parsiblog {
+    width: 86px;
+    height: 114px;
+    background-position: -101px -377px;
+}
+
+.sprite-yadmansazeh {
+    width: 86px;
+    height: 114px;
+    background-position: -197px -377px;
+}
+/*End Customers*/
+
+/* menu icons */
+		.sprite1 {
+			background-image: url(../images/sprite/menu.png);
+			background-repeat: no-repeat;
+			display: block;
+		}
+		
+		.sprite-acc-b {
+			width: 25px;
+			height: 25px;
+			background-position: -5px -5px;
+		}
+		
+		.sprite-acc-g {
+			width: 25px;
+			height: 25px;
+			background-position: -40px -5px;
+		}
+		
+		.sprite-chat-b {
+			width: 18px;
+			height: 18px;
+			background-position: -75px -5px;
+		}
+		
+		.sprite-chat-g {
+			width: 18px;
+			height: 18px;
+			background-position: -103px -5px;
+		}
+		
+		.sprite-data_center-b {
+			width: 25px;
+			height: 25px;
+			background-position: -131px -5px;
+		}
+		
+		.sprite-data_center-g {
+			width: 25px;
+			height: 25px;
+			background-position: -166px -5px;
+		}
+		
+		.sprite-design-b {
+			width: 35px;
+			height: 25px;
+			background-position: -201px -5px;
+		}
+		
+		.sprite-design-g {
+			width: 35px;
+			height: 25px;
+			background-position: -246px -5px;
+		}
+		
+		.sprite-domain-b {
+			width: 25px;
+			height: 25px;
+			background-position: -291px -5px;
+		}
+		
+		.sprite-domain-g {
+			width: 25px;
+			height: 25px;
+			background-position: -326px -5px;
+		}
+		
+		.sprite-edu-b {
+			width: 25px;
+			height: 25px;
+			background-position: -361px -5px;
+		}
+		
+		.sprite-edu-g {
+			width: 25px;
+			height: 25px;
+			background-position: -396px -5px;
+		}
+		
+		.sprite-hosting {
+			width: 25px;
+			height: 25px;
+			background-position: -431px -5px;
+		}
+		
+		.sprite-hosting-g {
+			width: 25px;
+			height: 25px;
+			background-position: -466px -5px;
+		}
+		
+		.sprite-mon-b {
+			width: 25px;
+			height: 25px;
+			background-position: -501px -5px;
+		}
+		
+		.sprite-mon-g {
+			width: 25px;
+			height: 25px;
+			background-position: -536px -5px;
+		}
+		
+		.sprite-sms-b {
+			width: 25px;
+			height: 25px;
+			background-position: -571px -5px;
+		}
+		
+		.sprite-sms-g {
+			width: 25px;
+			height: 25px;
+			background-position: -606px -5px;
+		}
+		
+		.sprite-support-b {
+			width: 18px;
+			height: 18px;
+			background-position: -641px -5px;
+		}
+		
+		.sprite-support-g {
+			width: 18px;
+			height: 18px;
+			background-position: -669px -5px;
+		}
+
+	
+	
+	/* End menu icons */

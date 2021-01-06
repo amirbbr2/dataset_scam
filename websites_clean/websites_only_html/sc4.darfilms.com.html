@@ -1,0 +1,447 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+
+    <script type="text/javascript" src="preloader.js"></script>
+
+    <style>
+      .subloader {
+        border: 8px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 8px solid #999;
+        width: 100px;
+        height: 100px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+        left: calc(50% - 60px);
+        top: calc(50% - 60px);
+        position: absolute;
+      }
+
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      body {
+        font-family: sans-serif;
+        background: #eee;
+        margin: 0 0 50px;
+        height: 100%;
+      }
+
+      button {
+        font-size: 16px;
+        border: 0;
+        color: white;
+        margin: 0 auto;
+        display: block;
+        border-radius: 5px;
+        padding: 10px;
+        opacity: 0.8;
+        transition: 0.3s;
+        cursor: pointer;
+        min-width: 120px;
+        margin-top: 25px;
+      }
+
+      button:hover {
+        opacity: 1;
+      }
+
+      .content {
+        color: black;
+        text-align: center;
+        position: absolute;
+        background: white;
+        display: block;
+        border-radius: 20px;
+      }
+
+      .container {
+        margin: 0 auto;
+        position: relative;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 10px;
+      }
+
+      .square .img {
+        position: absolute;
+        width: 230px;
+        height: 230px;
+        left: 10px;
+        top: 10px;
+      }
+
+      .square .img:after {
+        position: relative;
+        width: 230px;
+        height: 230px;
+        background-color: rgba(0, 0, 0, 0.6);
+        content: "";
+        display: block;
+        border-radius: 10px;
+      }
+
+      .square h3 {
+        color: #fff;
+      }
+
+      .square .info {
+        color: #fff;
+        position: relative;
+        z-index: 10;
+        padding: 10px 20px;
+      }
+
+      .square button {
+        z-index: 20;
+        position: relative;
+      }
+
+      .square .info {
+        display: table-cell;
+        vertical-align: middle;
+        height: 250px;
+      }
+
+      .big .img {
+        width: 250px;
+        height: 250px;
+        margin: 20px auto;
+      }
+
+      .vertical .img {
+        width: 230px;
+        height: 230px;
+        margin: 10px auto;
+      }
+
+      .vertical .info {
+        display: table-cell;
+        vertical-align: middle;
+        height: 250px;
+      }
+
+      .horizontal {
+        text-align: left;
+      }
+
+      .horizontal .img {
+        width: 230px;
+        height: 230px;
+        margin: 10px;
+        float: left;
+      }
+
+      .horizontal .info {
+        display: table-cell;
+        vertical-align: middle;
+        height: 250px;
+        padding-right: 15px;
+      }
+
+      .white {
+        color: white;
+      }
+
+      .white h3 {
+        color: white;
+        font-size: 20px;
+      }
+
+      .white button {
+        background: white;
+        color: black;
+      }
+
+      .search {
+        width: 80%;
+        height: 50px;
+        margin: 0 auto 10px;
+        display: block;
+        border-radius: 20px;
+        border: 10px solid #fff;
+        padding: 0 10px;
+        outline: none;
+        background-color: #fff;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .search input {
+        width: 99%;
+        border: none;
+        line-height: 26px;
+        font-size: 20px;
+      }
+
+      .search input:focus {
+        outline: none;
+      }
+
+      .icon-search {
+        position: absolute;
+        right: 10px;
+        width: 28px;
+        height: 28px;
+        top: 0px;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      .frame {
+        width: 80%;
+        height: 600px;
+        background: white;
+        margin: 0 auto 70px;
+        border: none;
+        box-shadow: 0 20px 35px 1px rgba(0, 0, 0, 0.4),
+          0 0 1px rgba(0, 0, 0, 0.2);
+        display: block;
+        border-radius: 5px;
+      }
+
+      .tabs li,
+      .tabs li:before,
+      .tabs li:after {
+        background-image: url(data:image/png;base64,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);
+        background-size: 200% 400%;
+      }
+
+      .tabs {
+        padding: 10px 30px 0;
+        height: 26px;
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
+        position: relative;
+        background-color: #fff;
+      }
+
+      .tabs li {
+        list-style: none;
+        position: relative;
+        margin: 0 25px;
+        background-position: 0 -100%;
+        float: left;
+        margin-left: 0px;
+        height: 30px;
+        box-sizing: border-box;
+        padding: 5px 20px 5px 20px;
+        line-height: 19px;
+        min-width: 100px;
+        cursor: pointer;
+      }
+
+      .tabs li:before {
+        content: "";
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        left: -20px;
+        top: 0;
+        background-position: 0 0;
+      }
+
+      .tabs li:after {
+        content: "";
+        width: 20px;
+        height: 30px;
+        position: absolute;
+        right: -20px;
+        top: 0;
+        background-position: -100% 0;
+      }
+
+      .tabs li.active {
+        background-position: 0 -300%;
+        z-index: 100;
+        cursor: default;
+      }
+
+      .tabs li.active:before {
+        background-position: 0 -200%;
+      }
+
+      .tabs li.active:after {
+        background-position: -100% -200%;
+      }
+
+      .tabs:after {
+        position: absolute;
+        content: "";
+        background-color: rgba(0, 0, 0, 0.2);
+        left: 0;
+        width: 100%;
+        height: 1px;
+        bottom: -0.5px;
+        z-index: -1;
+      }
+
+      .tabs li img {
+        vertical-align: -3px;
+      }
+
+      .close {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAllBMVEUAAAD29PT//Pz++/uMi4tLS0v//Pz//PyRkJD//Pz//PxMS0v28/N2dnb//PyOjY1HRkb++/v//Pz//PxsbGxQUFBISEg7Ozt/fn5OTk5YWFhKSko8OzuTkpJ3dnZeXV11dHRhYWFBQUFKSkqioaH++/vHxcX//PxLS0v//PxcW1tsbGxjY2NPT09mZmZgYGBSUlJKSkr7fKnHAAAAK3RSTlMABBxLw50SDr1HGJIK4Qi9hkM9M/Xx8O3m1czHwbWxp5+dlJGBbVlRTyYiAyxZ3gAAAJpJREFUCNctj0cWgzAMBSWc2MExPb33ZmPI/S+HpId2M4s/T4Cf9Q2BD8vDD8Cs+naKjPd/u8/BnmJggfM2hIsGXU08CUfoi9oAJopEvyWcpRYBRMQuEiaEIjLvfaYI5dy1I+7OToiXo9/42FNFkKeeUuG5klE1ahRmF3jZSXapQb+yI4W4UiweFvJvWluUbPVuDECuzfiftgYH1jkPWpHQbZAAAAAASUVORK5CYII=);
+        width: 10px;
+        height: 10px;
+        background-size: 100% 100%;
+        position: absolute;
+        cursor: pointer;
+        right: 0px;
+        top: 9px;
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      .tabs li.active .close,
+      .tabs li:hover .close {
+        opacity: 1;
+      }
+
+      .maincontainer {
+        cursor: pointer;
+      }
+
+      .loadmore {
+        margin-bottom: 100px;
+      }
+
+      .loadmore button {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Баннерное место -->
+    <div id="top_banner"></div>
+    <!-- / Баннерное место  -->
+
+    <div class="container setwidth" id="container1"></div>
+
+    <div class="container setwidth loadmore" id="loadmore">
+      <button onclick="loadMore()">Load More</button>
+    </div>
+
+    <script>
+      function getNewUrl(q) {
+        let newUrl = location.origin + location.pathname + "?";
+
+        let params = location.href.split("?")[1];
+        let qSet = false;
+
+        if (params) {
+          params = params.split("&");
+
+          for (let i = 0; i < params.length; i++) {
+            let param = params[i];
+            let data = param.split("=");
+
+            if (data[0]) {
+              if (data[0] === "q") {
+                qSet = true;
+                newUrl +=
+                  "&" +
+                  data[0] +
+                  "=" +
+                  encodeURIComponent(decodeURIComponent(q));
+              } else {
+                newUrl +=
+                  "&" +
+                  data[0] +
+                  "=" +
+                  encodeURIComponent(decodeURIComponent(data[1]));
+              }
+            }
+          }
+        }
+
+        if (!qSet) newUrl += "&q=" + encodeURIComponent(decodeURIComponent(q));
+        return newUrl;
+      }
+
+      // Replacing request and referrer words
+      let params = {};
+      let paramsArr = (location.search.split("?")[1] || "").split("&");
+      for (let i = 0; i < paramsArr.length; i++) {
+        let paramData = paramsArr[i].split("=");
+        params[paramData[0]] = paramData[1];
+      }
+
+      let ref = (document.referrer || "")
+        .replace(/https?:\/\//, "")
+        .split("/")[0];
+
+      let config = [
+        ["data-replace-referrer", " " + (ref || "Google")],
+        [
+          "data-replace-request",
+          " " +
+            decodeURIComponent(
+              params["q"] ||
+                params["query"] ||
+                params["search"] ||
+                params["keyword"] ||
+                "Search..."
+            )
+        ]
+      ];
+
+      for (let i = 0; i < config.length; i++) {
+        let cfg = config[i];
+        let els = document.querySelectorAll("[" + cfg[0] + "]") || [];
+
+        for (let j = 0; j < els.length; j++) {
+          let el = els[j];
+          let length = el.getAttribute(cfg[0]);
+          let value = cfg[1];
+
+          if (+length) {
+            value = value.slice(0, length);
+          }
+
+          if (el.tagName === "INPUT") {
+            el.value = value;
+          } else {
+            el.innerHTML = value;
+          }
+        }
+      }
+    </script>
+
+    <script src="./build.js?v=111"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+Sitemap: https://khabaredagh.ir/sitemap.xml
+Sitemap: https://khabaredagh.ir/fa-sitemap-newsarchive
+
+
+User-agent: *
+Disallow: /files/adv
+Disallow: /fa/report
+Disallow: /fa/send
+Disallow: /fa/print
+Disallow: /fa/save

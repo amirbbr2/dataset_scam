@@ -1,0 +1,15 @@
+jQuery(document).ready(function($) {
+
+	$('.menu-icon.open').click(function(){
+		$('.navigation').css({'right':'0px'});
+	});
+
+	$('.menu-icon.close').click(function(){
+		$('.navigation').css({'right':'-300px'});
+	});
+
+	$('#header .navmenu li').click(function(){
+		$(this).find('ul.sub-menu').slideToggle();
+	});
+
+});

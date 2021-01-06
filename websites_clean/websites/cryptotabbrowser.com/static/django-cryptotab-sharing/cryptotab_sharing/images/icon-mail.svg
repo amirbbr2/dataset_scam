@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="18px" viewBox="0 0 23 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="cryptotab--user-panel--a" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-741.000000, -606.000000)">
+        <g id="referral" transform="translate(470.000000, 165.000000)" fill="#494949" fill-rule="nonzero">
+            <g id="share-icons" transform="translate(29.000000, 430.000000)">
+                <g id="@" transform="translate(228.000000, 0.000000)">
+                    <g id="up">
+                        <path d="M36.023913,13.981 C36.0119,12.337 34.6724457,11 33.0206522,11 L17.0032609,11 C15.3514674,11 14.012013,12.331 14,13.981 C14,13.993 14,14 14,14.012 L14,26 C14,27.656 15.3454609,29 17.0032609,29 L33.0206522,29 C34.6784522,29 36.023913,27.656 36.023913,26 L36.023913,14.012 C36.023913,14 36.023913,13.987 36.023913,13.981 Z M17.0032609,13 L33.0206522,13 C33.4150804,13 33.7524467,13.225 33.9156239,13.556 L25.0119565,19.781 L16.1082891,13.556 C16.2704652,13.225 16.6088326,13 17.0032609,13 Z M33.0206522,27 L17.0032609,27 C16.452663,27 16.0021739,26.55 16.0021739,26 L16.0021739,15.919 L24.4363315,21.819 C24.6115217,21.938 24.8117391,22 25.0119565,22 C25.2121739,22 25.4123913,21.937 25.5875815,21.819 L34.0217391,15.919 L34.0217391,26 C34.0217391,26.55 33.57125,27 33.0206522,27 Z" id="icon-mail"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

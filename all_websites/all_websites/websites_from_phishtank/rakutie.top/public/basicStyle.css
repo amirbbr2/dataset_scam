@@ -1,0 +1,2270 @@
+@charset "shift_jis";
+
+/* 基本
+--------------------------------------------------------- */
+body{background: #ffffff;color: #333;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;}
+img{border:0;}
+table{border-collapse:collapse;}
+
+/* リンク設定
+--------------------------------------------------------- */
+
+/*ベースリンクカラー*/
+a:link,a:visited,a:active {color:#062e9d;text-decoration:underline;}
+a:hover{color:#022132;text-decoration:none;}
+
+/*グレーリンクカラー*/
+a.sub01:link,a.sub01:visited,a.sub01:active {color: #333;text-decoration:underline;}
+a.sub01:hover{color:#333;text-decoration:none;}
+
+/*オレンジリンクカラー*/
+a.sub02:link,a.sub02:visited,a.sub02:active {color: #e9550f;text-decoration:underline;}
+a.sub02:hover{color:#e9550f;text-decoration:none;}
+
+/*レッドリンクカラー*/
+a.sub03b:link,a.sub03b:visited,a.sub03b:active {color: #d7160c;text-decoration:underline; font-weight:bold;}
+a.sub03b:hover{color:#d7160c;text-decoration:none;}
+
+/*レッドリンクカラー　下線*/
+a.sub04b:link,a.sub04b:visited,a.sub04b:active {color: #d7160c;text-decoration:underline!important;}
+a.sub04b:hover{color:#d7160c;text-decoration:underline;}
+
+/*レッドリンクカラー #333333*/
+a.sub05b:link,a.sub05b:visited,a.sub05b:active {color: #333333;text-decoration:underline; font-weight:bold;}
+a.sub05b:hover{color:#d7160c;text-decoration:none;}
+
+/*フッター用グレーリンクカラー*/
+a.footerlink01:link,a.footerlink01:visited,a.footerlink01:active {color: #333;text-decoration:underline;}
+a.footerlink01:hover{color:#022132;text-decoration:none;}
+
+/*基本フォントサイズ
+--------------------------------------------------------- */
+body{font-size:13px;*font-size:small;*font:x-small;}
+h3,h4,h5,h6{font-size:100%;}
+select, input, textarea {font-size:99%;}
+table {font-size:inherit;font:100%;}
+
+/* フォント (可変)
+--------------------------------------------------------- */
+.huge,.hugebold {font-size: 24px;*font-size: 182%;line-height: 26px;*line-height: 1.35em;}
+.large,.largebold {font-size: 20px;*font-size: 152%;line-height: 23px;*line-height: 1.35em;}
+.medium,.mediumbold {font-size: 16px;*font-size: 122%;line-height: 19px;*line-height: 1.35em;}
+.smedium,.smediumbold {font-size: 14px;*font-size: 102%;line-height: 17px;*line-height: 1.35em;}
+.llsmall,.llsmallbold {font-size: 12px;*font-size: 89%;line-height: 15px;*line-height: 1.35em;}
+.lsmall,.lsmallbold {font-size: 11px;*font-size: 86%;line-height: 14px;*line-height: 1.35em;}
+.small,.smallbold {font-size: 10px;*font-size: 77%;line-height: 13px;*line-height: 1.35em;}
+
+
+/*太字設定*/
+.hugebold,.largebold,.mediumbold,.smediumbold,.llsmallbold,.lsmallbold,.smallbold{font-weight:bold;}
+.bold{font-weight:bold;}
+
+/* 行間 */
+td,th{line-height:1.5;}
+h1,h2{line-height:1.0;}
+.txtline01{line-height:1.3;}
+
+/* フォント (固定)
+--------------------------------------------------------- */
+.text23,.text23bold {font-size: 23px;line-height: 29px;}
+.text18,.text18bold {font-size: 18px;line-height: 24px;}
+.text16,.text16bold {font-size: 16px;line-height: 22px;}
+.text14,.text14bold  {font-size: 14px;line-height: 20px;}
+.text12,.text12bold  {font-size: 12px;line-height: 18px;}
+.text10,.text10bold  {font-size: 10px;line-height: 14px;}
+
+
+/*太字設定*/
+.text18bold,.text16bold,.text14bold,.text12bold,.text10bold,.text23bold{font-weight:bold;}
+
+
+
+/* 見出し関連
+--------------------------------------------------------- */
+h1{
+    font-size:190%;
+    margin:15px 0 15px 0;
+    padding:4px 0 2px 30px;
+    border-bottom:1px dotted #686868;
+    background:url(https://rakutie.top/img/common/bg_h1.gif) no-repeat 0 50%;
+}
+
+h1.cp{
+    font-size:190%;
+    margin:15px 0 15px 0;
+    padding:4px 0 2px 30px;
+    border-bottom:1px dotted #686868;
+    background:url(https://rakutie.top/img/common/bg_h1_cp.gif) no-repeat 0 50%;
+}
+
+h1.mb0{
+    font-size:190%;
+    margin:15px 0 0 0;
+    padding:4px 0 2px 30px;
+    border-bottom:1px dotted #686868;
+    background:url(https://rakutie.top/img/common/bg_h1.gif) no-repeat 0 50%;
+}
+
+h2{
+    font-size:130%;
+    margin:15px 0 0 0;
+    padding:5px 0 3px 20px;
+    background:url(https://rakutie.top/img/common/bg_h2.gif) no-repeat 0 50%;
+}
+
+div.AManagement h2{
+    font-size:130%;
+    margin:15px 0 0 0;
+    padding:5px 0 3px 20px;
+    background:url(https://rakutie.top/img/common/bg_h2_orange.gif) no-repeat 0 50%;
+}
+
+h3{
+    margin:0;
+    padding:0;
+}
+
+.subttl{
+    background:url(https://rakutie.top/img/common/subttl.gif) no-repeat left bottom;
+}
+.subttl td{
+    text-align:center;
+    padding:5px 0 20px 0;
+}
+
+.ttlservice{
+    margin:25px 0 0 0;
+}
+
+.ttlservicebottom{
+    margin:0 0 0 0;
+    font-weight:bold;
+    background:url(https://rakutie.top/img/common/footer/bg_ttlservice_bottom.gif) no-repeat left top;
+}
+
+.ttlservicebottom td{
+    padding:0 10px 15px 10px;
+    text-align:right;
+}
+
+
+/* リストアイコン用スペース調整用（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.listmarker01{margin: 2px 2px 0 0;}
+.listmarker02{margin: 2px 4px 0 0;}
+.listmarker03{margin: 4px 2px 0 0;}
+.listmarker04{margin: 3px 2px 0 0;}
+.listmarker05{margin: 8px 5px 0 0;}
+
+/* テーブルセル背景色（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+/*グレースケール*/
+.bgG01{background:#fff;}
+.bgG02{background:#ccc;}
+.bgG03{background:#999;}
+.bgG04{background:#666;}
+.bgG05{background:#333;}
+
+.bgG06{background:#f5f5f5;}
+.bgG07{background:#f3f3f3;}
+.bgG08{background:#ededed;}
+.bgG09{background:#ececec;}
+.bgG10{background:#e1e1e1;}
+.bgG11{background:#c4c4c4;}
+.bgG12{background:#8e8e8e;}
+.bgG13{background:#dadada;}
+.bgG14{background:#d3d3d3;}
+
+/*カラー*/
+.bgC01{background:#f0efea;}
+.bgC02{background:#e6e4db;}
+.bgC03{background:#fff3db;}
+.bgC04{background:#ffe5b3;}
+.bgC05{background:#ffaa00;}
+.bgC05cp{background:#00a1c9;}
+.bgC06{background:#00A1C9;}
+
+/* テーブルセル関連（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+
+/*ボックス内部*/
+.innerbox00{padding:0 15px;}
+.innerbox01{padding:0 15px 15px 15px;}
+.innerbox02{padding:15px 15px 0 15px;}
+
+/*セル内部*/
+.innercell{
+    padding:3px 20px;
+}
+.innercell01{
+    padding:3px 3px 3px 12px;
+}
+.innercell02{
+    padding:9px 3px 3px 12px;
+}
+.innercellline{
+    padding:3px 27px 3px 20px;
+}
+.innercellsmall{
+    padding:3px 7px;
+}
+.innercelllinesmall{
+    padding:3px 14px 3px 7px;
+}
+
+/* table */
+.table00{border-left:1px solid #ccc; border-right:1px solid #ccc; border-bottom:3px solid #ccc;}
+.table01{border:1px solid #ccc; border-bottom:3px solid #ccc;}
+.table02{border:2px solid #ffa601;}
+.table03{border-left:1px solid #ccc;}
+.table04{border-left:1px solid #ffc050; border-right:1px solid #ffc050;}
+.table05{border:2px solid #ffe518;}
+.table06{border:1px solid #bf0000;}
+.table07{border:1px solid #05388a;}
+.table11 {border:1px solid #8e8e8e;}
+
+/* th（左上詰め[th03除く]） */
+.th01{border-right:1px solid #8e8e8e; color:#fff; font-weight:bold; text-align:left; vertical-align:top; background:#999;}
+.th01line{color:#fff; font-weight:bold; text-align:left; vertical-align:top; background:#999 url(https://rakutie.top/img/common/bg_8e8e8e.gif) repeat-y right;}
+.th01middle{border-right:1px solid #8e8e8e;color:#fff;font-weight:bold;text-align:left;vertical-align:middle;background:#999;}
+.th01lineMiddle {color:#fff; font-weight:bold; text-align:center; vertical-align:middle; background:#999;}
+
+.th01topline{border-top:1px solid #8e8e8e; border-right:1px solid #8e8e8e; color:#fff; font-weight:bold; text-align:left; vertical-align:top; background:#999;}
+
+.th02{border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+.th02line{border-top:1px solid #ccc; border-right:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+.th02linemiddle{border-top:1px solid #ccc; border-right:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:middle; background:#F3F3F3;}
+.th02topline{border-top:3px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+.th02short{width:200px; border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+.th02long{width:240px; border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+.th02longer{width:300px; border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#F3F3F3;}
+
+.th03{font-weight:bold; text-align:center; color:#d7160c; background:#fff3db;}
+
+.th04{border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#ffe5b3;}
+.th04line{border-top:1px solid #ccc; border-right:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#ffe5b3;}
+.th05{border-bottom:1px solid #bf0000; color:#fff; font-weight:bold; text-align:left; vertical-align:top; background:#bf0000;}
+.th05line{border-right:1px solid #fff; border-bottom:1px solid #bf0000; color:#fff; font-weight:bold; text-align:left; vertical-align:top; background:#bf0000;}
+.th06{border-bottom:1px solid #05388a; color:#fff; font-weight:bold; text-align:left; vertical-align:top; background:#05388a;}
+
+/* td（左上詰め） */
+.td01{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:left; vertical-align:top; background:#fff;}
+.td01line{border-top:1px solid #ccc; text-align:left; vertical-align:top; background:#fff url(https://rakutie.top/img/common/bg_ececec.gif) repeat-y right;}
+.td01rightline{border-right:1px solid #ccc; text-align:left; vertical-align:top; background:#fff;}
+.td01none{border-top:1px solid #ccc; text-align:left; vertical-align:top; background:#fff;}
+
+.td02{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:left; vertical-align:top; background:#F3F3F3;}
+.td02line{border-top:1px solid #ccc; text-align:left; vertical-align:top; background:#F3F3F3 url(https://rakutie.top/img/common/bg_e1e1e1.gif) repeat-y right;}
+.td02rightline{border-right:1px solid #ccc; text-align:left; vertical-align:top; background:#F3F3F3;}
+.td02none{border-top:1px solid #ccc;  text-align:left; vertical-align:top; background:#F3F3F3;}
+
+.td03{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:left; vertical-align:top; background:#fff;}
+.td03topline{border-top:3px solid #ccc; border-right:1px solid #ccc; text-align:left; vertical-align:top; background:#fff;}
+
+.td04 {border-top:1px solid #ccc; font-weight:normal; text-align:left; vertical-align:top; background:#ffcccc;}
+.td04line {border-top:1px solid #ccc; border-right:1px solid #fff; font-weight:normal; text-align:left; vertical-align:top; background:#ffcccc;}
+
+.td05{border:1px solid #bf0000; text-align:left; vertical-align:top; background:#fff;}
+.td06{border:1px solid #bf0000; text-align:left; vertical-align:top; background:#f3f3f3;}
+
+/* td（右上詰め[一覧表示の金額で使用]） */
+.td01right{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:right; vertical-align:top; background:#fff;}
+.td01lineright{border-top:1px solid #ccc; text-align:right; vertical-align:top; background:#fff url(https://rakutie.top/img/common/bg_ececec.gif) repeat-y right;}
+
+.td02right{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:right; vertical-align:top; background:#F3F3F3;}
+.td02lineright{border-top:1px solid #ccc; text-align:right; vertical-align:top; background:#F3F3F3 url(https://rakutie.top/img/common/bg_e1e1e1.gif) repeat-y right;}
+
+.td03right{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:right; vertical-align:top; background:#fff;}
+.td03toplineright{border-top:3px solid #ccc; border-right:1px solid #ccc; text-align:right; vertical-align:top; background:#fff;}
+
+.td05right{border:1px solid #bf0000; text-align:right; vertical-align:top; background:#fff;}
+.td06right{border:1px solid #bf0000; text-align:right; vertical-align:top; background:#f3f3f3;}
+
+/* td（中央寄せ[画像、コマンドボタン、リンク、ラジオボタン、チェックボックスで使用]） */
+.td01center{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:center; vertical-align:middle; background:#fff;}
+.td01centernone{border-top:1px solid #ccc; text-align:center; vertical-align:middle; background:#fff;}
+.td01linecenter{border-top:1px solid #ccc; text-align:center; vertical-align:middle; background:#fff url(https://rakutie.top/img/common/bg_ececec.gif) repeat-y right;}
+
+.td02center{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:center; vertical-align:middle; background:#F3F3F3;}
+.td02centernone{border-top:1px solid #ccc; text-align:center; vertical-align:middle; background:#F3F3F3;}
+.td02linecenter{border-top:1px solid #ccc; text-align:center; vertical-align:middle; background:#F3F3F3 url(https://rakutie.top/img/common/bg_e1e1e1.gif) repeat-y right;}
+
+.td03center{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:center; vertical-align:middle; background:#fff;}
+.td03toplinecenter{border-top:3px solid #ccc; border-right:1px solid #ccc; text-align:center; vertical-align:middle; background:#fff;}
+
+.td05center{border:1px solid #bf0000; text-align:center; vertical-align:middle; background:#fff;}
+.td06center{border:1px solid #bf0000; text-align:center; vertical-align:middle; background:#f3f3f3;}
+.td07center{border:1px solid #05388a; text-align:center; vertical-align:middle; background:#fff;}
+
+/* td（左寄せ中央揃え[振込みメニューなど]） */
+.td01leftmiddle{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:left; vertical-align:middle; background:#fff;}
+.td01lineleftmiddle{border-top:1px solid #ccc; text-align:left; vertical-align:middle; background:#fff url(https://rakutie.top/img/common/bg_ececec.gif) repeat-y right;}
+
+.td02leftmiddle{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:left; vertical-align:middle; background:#F3F3F3;}
+.td02lineleftmiddle{border-top:1px solid #ccc; text-align:left; vertical-align:middle; background:#F3F3F3 url(https://rakutie.top/img/common/bg_e1e1e1.gif) repeat-y right;}
+
+.td03leftmiddle{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:left; vertical-align:middle; background:#fff;}
+.td03leftmiddlenone{border-top:1px solid #ccc; text-align:left; vertical-align:middle; background:#fff;}
+.td03toplineleftmiddle{border-top:3px solid #ccc; border-right:1px solid #ccc; text-align:left; vertical-align:middle; background:#fff;}
+
+
+/* td（右寄せ中央揃え[入出金明細の金額など]） */
+.td01rightmiddle{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:right; vertical-align:middle; background:#fff;}
+.td01linerightmiddle{border-top:1px solid #ccc; text-align:right; vertical-align:middle; background:#fff url(https://rakutie.top/img/common/bg_ececec.gif) repeat-y right;}
+
+.td02rightmiddle{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:right; vertical-align:middle; background:#F3F3F3;}
+.td02linerightmiddle{border-top:1px solid #ccc; text-align:right; vertical-align:middle; background:#F3F3F3 url(https://rakutie.top/img/common/bg_e1e1e1.gif) repeat-y right;}
+
+.td03rightmiddle{border-top:1px solid #ccc; border-right:1px solid #ccc; text-align:right; vertical-align:middle; background:#fff;}
+.td03toplinerightmiddle{border-top:3px solid #ccc; border-right:1px solid #ccc; text-align:right; vertical-align:middle; background:#fff;}
+
+.border-top-fff{border-top:1px solid #FFF!important;}
+.border-left-fff{border-left:1px solid #FFF!important;}
+.border-right-fff{border-right:1px solid #FFF!important;}
+.border-bottom-fff{border-bottom:1px solid #FFF!important;}
+
+/* フォーム関連
+--------------------------------------------------------- */
+
+/*個人情報*/
+.kanji_family_name{width:150px;}
+.kanji_first_name{width:150px;}
+.kana_family_name{width:150px;}
+.kana_first_name{width:150px;}
+.email_address{width:250px;}
+.zip_code_1{width:35px;}
+.zip_code_2{width:35px;}
+.kanji_address{width:250px;}
+.kana_address{width:250px;}
+.telephone_number_1{width:45px;}
+.telephone_number_2{width:35px;}
+.telephone_number_3{width:35px;}
+.alphabet_family_name{width:115px;}
+.alphabet_first_name{width:115px;}
+.alphabet_middle_name{width:78px;}
+.user_name{width:130px;}
+
+/*決済*/
+.transfer_amount{width:100px;}
+.year{width:45px;}
+.month{width:20px;}
+.date{width:20px;}
+.year_month_date{width:65px;}
+.deposit_count{width:35px;}
+.transfer_client_name{width:250px;}
+.transfer_recipient_name{width:250px;}
+.branch_code{width:35px;}
+.account_number{width:60px;}
+.contact_info{width:250px;}
+.search_word{width:250px;}
+.search_bank_code{width:70px;}
+.search_branch_code{width:70px;}
+.postal_saving_book_mark{width:35px;}
+.postal_saving_book_code{width:65px;}
+
+/*セキュリティ*/
+.user_id{width:170px;}
+.user_password{width:170px;}
+.security_code{width:250px;}
+.login_password{width:170px;}
+.temp_mail_registration_code{width:200px;}
+.security_title{width:250px;}
+
+
+/*その他*/
+.memo_title{width:250px;}
+.memo_contents{width:300px; height:150px;}
+
+/*共通*/
+.message_contents{width:300px; height:150px;}
+.demand_contents{width:300px; height:150px;}
+.transfer_contents{width:250px;}
+.regular_transfer_contents{width:250px;}
+.upload_contents{width:300px;}
+
+/* 文字色（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.errortxt{color:#d7160c;}
+.alerttxt{color:#d7160c;}
+.alerttxtbold{color:#d7160c; font-weight:bold}
+
+.c00,.c00-hover{color:#000000!important;}
+.c00-hover:hover{color:#bf0000!important;}
+.c01{color:#d7160c!important;}
+.c02{color:#808080;}
+.c03{color:#666;}
+.c04{color:#e9550f;}
+.c05{color:#0066ff;}
+.c06{color:#686868;}
+
+/* 横幅
+--------------------------------------------------------- */
+.width50percent {width: 50%!important; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.width100percent {width: 100%!important; -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+/* 余白設定高さ（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.margintop0{margin-top:0!important;}
+.margintop1{margin-top:1px!important;}
+.margintop2{margin-top:2px!important;}
+.margintop3{margin-top:3px!important;}
+.margintop4{margin-top:4px!important;}
+.margintop5{margin-top:5px!important;}
+.margintop6{margin-top:6px!important;}
+.margintop8{margin-top:8px!important;}
+.margintop10{margin-top:10px!important;}
+.margintop12{margin-top:12px!important;}
+.margintop14{margin-top:14px!important;}
+.margintop15{margin-top:15px!important;}
+.margintop18{margin-top:18px!important;}
+.margintop20{margin-top:20px!important;}
+.margintop25{margin-top:25px!important;}
+.margintop30{margin-top:30px!important;}
+.margintop34{margin-top:34px!important;}
+.margintop40{margin-top:40px!important;}
+.margintop50{margin-top:50px!important;}
+.margintop60{margin-top:60px!important;}
+
+/* 余白設定下（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.marginbottom0{margin-bottom:0!important;}
+.marginbottom1{margin-bottom:1px!important;}
+.marginbottom2{margin-bottom:2px!important;}
+.marginbottom3{margin-bottom:3px!important;}
+.marginbottom4{margin-bottom:4px!important;}
+.marginbottom5{margin-bottom:5px!important;}
+.marginbottom8{margin-bottom:8px!important;}
+.marginbottom10{margin-bottom:10px!important;}
+.marginbottom15{margin-bottom:15px!important;}
+.marginbottom20{margin-bottom:20px!important;}
+.marginbottom25{margin-bottom:25px!important;}
+.marginbottom30{margin-bottom:30px!important;}
+.marginbottom40{margin-bottom:40px!important;}
+.marginbottom60{margin-bottom:60px!important;}
+.marginbottom100{margin-bottom:100px!important;}
+
+/* 余白設定左（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.marginleft1{margin-left:1px!important;}
+.marginleft2{margin-left:2px!important;}
+.marginleft3{margin-left:3px!important;}
+.marginleft4{margin-left:4px!important;}
+.marginleft5{margin-left:5px!important;}
+.marginleft8{margin-left:8px!important;}
+.marginleft10{margin-left:10px!important;}
+.marginleft15{margin-left:15px!important;}
+.marginleft18{margin-left:18px!important;}
+.marginleft20{margin-left:20px!important;}
+.marginleft25{margin-left:25px!important;}
+.marginleft30{margin-left:30px!important;}
+.marginleft40{margin-left:40px!important;}
+.marginleft60{margin-left:60px!important;}
+
+/* 余白設定右（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.marginright1{margin-right:1px!important;}
+.marginright2{margin-right:2px!important;}
+.marginright3{margin-right:3px!important;}
+.marginright4{margin-right:4px!important;}
+.marginright5{margin-right:5px!important;}
+.marginright8{margin-right:8px!important;}
+.marginright10{margin-right:10px!important;}
+.marginright15{margin-right:15px!important;}
+.marginright20{margin-right:20px!important;}
+.marginright25{margin-right:25px!important;}
+.marginright30{margin-right:30px!important;}
+.marginright40{margin-right:40px!important;}
+.marginright60{margin-right:60px!important;}
+.marginright100{margin-right:100px!important;}
+
+/* 余白設定高さと左（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.margintl01{margin:5px 0 0 5px;}
+.margintl02{margin:5px 0 0 10px;}
+.margintl03{margin:5px 0 0 15px;}
+.margintl04{margin:10px 0 0 5px;}
+.margintl05{margin:10px 0 0 10px;}
+.margintl06{margin:10px 0 0 15px;}
+.margintl07{margin:15px 0 0 5px;}
+.margintl08{margin:15px 0 0 10px;}
+.margintl09{margin:15px 0 0 15px;}
+.margintl20{margin:20px 0 0 20px;}
+
+/* 余白設定上下（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.margintb01{margin:10px 0 10px 0;}
+.margintb02{margin:20px 0 10px 0;}
+/* 余白設定左右（※状況に応じて複製して追加ください）
+--------------------------------------------------------- */
+.marginlr01{margin:0 15px 0 15px}
+.marginlr02{margin:0 10px 0 10px}
+
+/* 余白（パディング）高さ設定
+--------------------------------------------------------- */
+.paddingtop0 {padding-top:0 !important;}
+.paddingtop10 {padding-top:10px !important;}
+.paddingtop20 {padding-top:20px !important;}
+.paddingtop40 {padding-top:40px !important;}
+
+.paddingbottom0 {padding-bottom:0 !important;}
+.paddingbottom10 {padding-bottom:10px !important;}
+.paddingbottom20 {padding-bottom:20px !important;}
+.paddingbottom40 {padding-bottom:40px !important;}
+
+
+.paddingright0 {padding-right:0 !important;}
+.paddingright10 {padding-right:10px !important;}
+.paddingright20 {padding-right:20px !important;}
+.paddingright30 {padding-right:30px !important;}
+.paddingright40 {padding-right:40px !important;}
+.paddingright60 {padding-right:60px !important;}
+.paddingright100 {padding-right:100px !important;}
+
+.paddingleft10 {padding-left:10px !important;}
+.paddingleft20 {padding-left:20px !important;}
+.paddingleft40 {padding-left:40px !important;}
+.paddingleft60 {padding-left:60px !important;}
+.paddingleft100 {padding-left:100px !important;}
+
+/* 余白（パディング）設定 四辺
+--------------------------------------------------------- */
+.padding0{padding:0!important;}
+.padding3{padding:3px!important;}
+.padding20{padding:20px;}
+
+/* 余白（パディング）設定 上下・左右
+--------------------------------------------------------- */
+.padding01{padding:34px 7px;}
+.padding02{padding:25px 7px;}
+.padding03{padding:16px 7px;}
+.padding04{padding:8px 7px;}
+
+/* 余白（マージン）設定 下
+--------------------------------------------------------- */
+.marginerror{margin:0 0 15px 0;}
+
+
+/* 線（ボーダー）設定 下
+--------------------------------------------------------- */
+.border01{border-bottom:1px solid #8e8e8e;}
+
+
+/* 横幅、高さ
+--------------------------------------------------------- */
+.w60 { width:60px; }
+.w100 { width:100px; }
+.w150 { width:150px; }
+.w170 { width:170px; }
+.w180 { width:180px; }
+.w200 { width:200px; }
+.w250 { width:250px; }
+.w270 { width:270px; }
+.w300 { width:300px; }
+.w350 { width:350px; }
+.w400 { width:400px; }
+.w450 { width:450px; }
+.w740 { width:740px; }
+
+.h20 { height:20px; }
+.h30 { height:30px; }
+.h40 { height:40px; }
+.h50 { height:50px; }
+.h60 { height:60px; }
+.h70 { height:70px; }
+.h80 { height:80px; }
+
+
+/* 特殊スタイル 専用パーツで使用する特殊なスタイル（編集しないで下さい）
+--------------------------------------------------------- */
+
+/* カナ検索バー */
+.kanakensaku{vertical-align:bottom; background:url(https://rakutie.top/img/common/bg_kanakensaku.gif) repeat-x left bottom;}
+.kanabar{border-collapse:separate;}
+.kanabar td{padding:2px 3px; border:1px solid #999; background:#fff;}
+
+/* セキュリティーボタン */
+.securitybar td{padding:3px; background:#f5f5f5;}
+.securitybtn{border-collapse:separate;}
+.securitybtn td{ text-align:center;}
+.securitybtn td.txt{width:20px; height:20px; padding:0; border:1px solid #999; background:#fff;}
+.securitybtn td a{display:block;}
+
+/* 50音検索テーブル */
+.searchtable{border-collapse:separate;}
+.searchtable td{width:19px; height:19px; padding:0; border:1px solid #ccc; text-align:center; background:#fff; font-weight:bold;}
+.searchtable td a{display:block;}
+
+/* セレクト窓 */
+.select01{width:285px;}
+
+/* パンくずリスト */
+.breadlist{width:740px; margin:5px 0 0 0; padding:0 0 3px 0; border-bottom:1px solid #dadada;}
+
+/* コンテンツ用 */
+.contents{padding:25px 0 0 0; background:url(https://rakutie.top/img/common/bg_contents.gif) repeat-x left top;}
+
+/* ナビゲーション用 */
+.navigation{background:url(https://rakutie.top/img/common/bg_navigation.gif) repeat-x left top;}
+.navigation_01 {background:url(https://rakutie.top/img/common/header/bg_navigation_01.gif) repeat-x left top;}
+
+/* フッター用 */
+.copyright{margin:25px 15px 0 15px; text-align:center;}
+
+/* 赤ボタン */
+.buttonRed{background: #ff8600; color: #ffffff; font-weight: bold; border-top: 1px solid #ffcf99; border-right: 2px solid #754719; border-bottom: 2px solid #754719; border-left: 1px solid #ffcf99; padding-top: 1px;}
+
+/* デビットボタン */
+.debitbtn{width:100px;}
+
+/* セキュリティメニュー　アイコン1 */
+.securitymenu-icon{vertical-align:-8px;}
+
+/* 等幅設定 */
+.monospace{font-family:monospace;}
+
+/* 選択タブ */
+.tubselect{font-size:18px; font-weight:bold; line-height:24px; text-decoration:none;}
+.tubnoselect{font-size:18px; font-weight:normal; line-height:24px; text-decoration:none; color:#666666;}.tubnoselect2 {
+    font-size:16px;
+    font-weight:normal;
+    line-height:24px;
+    text-decoration:none;
+    color:#666666;
+}
+.tubselect2 {
+    font-size:16px;
+    font-weight:bold;
+    line-height:24px;
+    text-decoration:none;
+}
+.table08 {
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+    border-bottom:1px solid #000;
+    border-top: 1px solid #000;
+}
+.th08 {
+    border-bottom:1px solid #000;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+    background:#bf0000;
+    border-right: 1px solid #000;
+}
+.td08 {
+    border-top:1px solid #000;
+    border-right:1px solid #000;
+    vertical-align:middle;
+    background:#fff;
+}
+.td09 {
+    border-top:1px solid #000;
+    border-right:1px solid #000;
+    vertical-align:middle;
+    background-color: #ccffff;
+}
+.td10 {
+    border-top:1px solid #000;
+    border-right:1px solid #000;
+    vertical-align:middle;
+    background:#fff;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.th09 {
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+    background:#bf0000;
+}
+.table10 {
+    border-left:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.th01toplineCenter {
+    border-right:1px solid #8e8e8e;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top;
+    background:#999;
+    border-top: 1px solid #8e8e8e;
+}
+.th01center {
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+    background:#999;
+    border-right: 1px solid #8e8e8e;
+}
+.th01center_right {
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:middle;
+    background:#999;
+}
+
+/* ナビゲーションタグ */
+.nav {
+width:148px;
+height:26px;
+display:block;
+background:url(https://rakutie.top/img/common/bg_navigation_tab01.gif) no-repeat;
+line-height:26px;
+text-align:center;
+float:left;
+}
+
+.nav a{
+width:148px;
+height:26px;
+display:block;
+background:url(https://rakutie.top/img/common/bg_navigation_tab02.gif) no-repeat;
+}
+
+.nav a:active, .nav a:hover, .nav a:focus{
+display:block;
+background:url(https://rakutie.top/img/common/bg_navigation_tab01.gif) no-repeat;
+}
+
+.clear {clear:both;}
+
+/* ボタン修飾 */
+.btn01 {
+    text-align:left;
+    font-size:16px;
+    font-weight:bold;
+    line-height: 22px;
+}
+.btn01_pdf {
+    display:inline-block;
+    margin:20px 10px;
+    padding:10px 20px;
+    border:solid 1px #990000;
+    background-color:#cc0000;
+}
+a.btn01_pdf:link, a.btn01_pdf:visited, a.btn01_pdf:active {
+    text-decoration: none;
+    color:#fff;
+}
+.btn01_pdf:hover {
+    border:solid 1px #ff6666;
+    background-color:#ff3333;
+}
+
+/* ページナビゲーション（table）
+--------------------------------------------------------- */
+.td_nav-page {
+  BORDER: #dbf0fe 1px solid;
+  PADDING: 2px;
+  MARGIN-BOTTOM: 20px;
+  BACKGROUND: #ffffff;
+}
+.nav-page-inner {
+  PADDING: 5px 10px;
+  MARGIN-BOTTOM: 0px;
+  BACKGROUND: url(https://rakutie.top/img/common/nav-page-inner-01-bg-01.gif) #f4fafe repeat-x 0px 0px;
+}
+
+.nav-page-inner .midashi {
+  DISPLAY: inline;
+  LINE-HEIGHT: 2;
+  PADDING-LEFT: 0px;
+  MARGIN-RIGHT: 15px;
+  BACKGROUND:none;
+  font-weight:bold;
+}
+
+.nav-page-inner .menu {
+  DISPLAY: inline;
+  LINE-HEIGHT: 2;
+  PADDING-LEFT: 11px;
+  MARGIN-RIGHT: 15px;
+  BACKGROUND: url(https://rakutie.top/img/common/arrow-02-01.gif) no-repeat 0px 0.35em;
+}
+
+/* ie用ハック */
+html*.nav-page-inner .menu { zoom: 1; background-position: 0px 0.9em; }
+
+
+/* 乱数表認証
+--------------------------------------------------------- */
+.Random_Number {width:50px;}
+.table_RandomNumber01 {
+    margin: 3px 0;
+    border:0;
+    border-spacing:0;
+    border-collapse:collapse;
+}
+.table_RandomNumber01 th {
+    width:26px;
+    border:1px solid #8e8e8e;
+    background:#333;
+    color:#fff;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.table_RandomNumber01 .number01 {
+    width:18px;
+}
+
+.table_RandomNumber01 td {
+    border:1px solid #ccc;
+    background:#fff;
+}
+.table_RandomNumber01 .select001 {background:#8e8e8e;}
+
+/** エラー項目強調表示用 */
+.errorItemLabelBg{background:#FFFF73;}
+.errorItemBg{background:#FFFFBF;}
+
+/* 個人（header　サブナビ）
+--------------------------------------------------------- */
+.sub_nav_img {
+    width: 2px;
+    background:url(https://rakutie.top/img/common/header/box_10.gif) no-repeat center;
+}
+.sub_nav a {
+    text-align:center;
+    padding: 3px 8px 3px 8px;
+    font-size: 12px;
+    color:#062e9d;
+}
+.sub_nav a:hover {
+    text-decoration:none;
+    background: #C5E7F5;
+    color:#062e9d;
+}
+.sub_nav_on a {
+    text-align:center;
+    background: #C5E7F5;
+    padding: 3px 8px 3px 8px;
+    font-size: 12px;
+    color:#062e9d;
+}
+.sub_nav a:hover {
+    text-decoration:none;
+}
+.recommend {
+    width:112px;
+    text-align:center;
+    font-size: 12px;
+}
+.recommend_txt{
+    display:block;
+}
+a .recommend_txt {
+    background: #ffca5f;
+    color:#062e9d;
+}
+a:hover .recommend_txt {
+    text-decoration:none;
+    background: #ffaa00;
+    color:#062e9d;
+}
+
+/* h2 装飾
+--------------------------------------------------------- */
+h2.hdg-01 {
+    padding: 10px 15px;
+    border-top: 2px #fbaf1b solid;
+    color: #fff;
+    background: #4a4a4a;
+    font-size: 100%;
+}
+
+h2.modal-01 {	
+margin: 0;	
+padding: 2px 0 5px 0;	
+text-align: center;	
+border-bottom: 1px #E2E1DF solid;	
+color: #000;	
+background: #fff;	
+font-size: 120%;	
+}
+
+/* 汎用ボックス（水色）
+--------------------------------------------------------- */
+div.box-regular-01 {
+    BORDER: #ccc 1px solid;
+    PADDING: 9px;
+    MARGIN-BOTTOM: 10px;
+}
+div.box-regular-02 {
+    BORDER: #dbdbdb 1px solid;
+    PADDING: 9px;
+    MARGIN-BOTTOM: 10px;
+    BACKGROUND: #e8f5fe;
+}
+.hdg-h2-01-container {
+    position: relative;
+    background: #4d4d4d;
+    color: #fff;
+    border-top: #ff9000 4px solid;
+    margin: 20px 0 10px;
+}
+.hdg-h2-01-container .hdg-h2-01 {
+    padding:10px 15px;
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 0px;
+    background:none;
+}
+.hdg-h2-01-container span.supplement {
+    position: absolute;
+    margin: 0px;
+    right: 10px;
+    top: 10px;
+}
+.hdg-h2-01-container span.supplement a { color:#fff; }
+.hdg-h2-02-container {
+    position: relative;
+    background: #4d4d4d;
+    color: #fff;
+    border-top: #ff9000 4px solid;
+}
+.hdg-h2-02-container .hdg-h2-01 {
+    padding:10px 15px;
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 0px;
+    background:none;
+}
+.w740 { width:740px; }
+
+
+/* checkbox 装飾
+--------------------------------------------------------- */
+.cbox_01 {
+    background-color:ffc1c1;
+    width:30px;
+    height:30px;
+}
+
+/* td
+--------------------------------------------------------- */
+.td02centernone {border-top:1px solid #ccc; text-align:center; vertical-align:middle; background:#F3F3F3;}
+
+/* h2 装飾
+--------------------------------------------------------- */
+.hdg-h2-01-container { position: relative; background: #4d4d4d; color: #fff; border-top: #ff9000 4px solid; margin: 20px 0 10px; }
+.hdg-h2-01-container .hdg-h2-01 { padding:10px 15px; font-size: 100%; font-weight: bold; margin-top: 0px; background:none; }
+.hdg-h2-01-container div.supplement { position: absolute; margin: 0px; right: 10px; top: 10px; }
+.hdg-h2-01-container div.supplement a { color:#fff; }
+.hdg-h2-02-container { position: relative; background: #4d4d4d; color: #fff; border-top: #ff9000 4px solid;}
+.hdg-h2-02-container .hdg-h2-01 { padding:10px 15px; font-size: 100%; font-weight: bold; margin-top: 0px; background:none; }
+.w740 { width:740px; }
+
+/* h3  装飾
+--------------------------------------------------------- */
+div.hdg-l3-01-container { background: #f5f5f5 none repeat scroll 0 0; border-top: 2px solid #4d4d4d; margin-top: 15px; margin-bottom: 10px; position: relative; }
+div.hdg-l3-01-container .hdg-l3-01 { font-weight: bold; padding: 7px 10px 6px; }
+
+/* 法人 */
+.hdg-h2-01-container_biz { position: relative; background: #4d4d4d; color: #fff; border-top: #00a1c9 4px solid; margin: 20px 0 10px; }
+.hdg-h2-01-container_biz .hdg-h2-01_biz { padding:10px 15px; font-size: 100%; font-weight: bold; margin-top: 0px; background:none; }
+
+.w740 { width:740px; }
+
+/* カードページ
+--------------------------------------------------------- */
+.tbl-card-01 { margin-top:10px; }
+.tbl-card-01 .td-card01 { border: #c5e7f5 1px solid; }
+.tbl-card-01 .td-card02 { border: #bbbbbb 1px solid; }
+.tbl-card-01 .td-card02 .hdg-h3-01 { border-bottom: #bbbbbb 1px solid; background: #ededed; padding:8px 0; margin-bottom:5px; text-align: center; }
+.tbl-card-01 .td-card03 { border: #c5e7f5 1px solid; background: #e8f5fe; font-weight:bold; }
+
+.tbl-card-02 { background: #e8f5fe; border-bottom: #c5e7f5 1px solid; }
+.tbl-card-02 .td-card01 { padding:3px 7px; border:none; vertical-align: middle; width: 82px; }
+.tbl-card-02 .td-card02 { padding:3px 7px; border:none; vertical-align: middle; }
+.tbl-card-02 .td-card03 { padding:3px 7px; border:none; vertical-align: middle; text-align: right; font-weight:normal;}
+
+/* カード一覧
+--------------------------------------------------------- */
+TABLE .td-cardlist01 { padding-top: 5px; border-left: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; border-top: #bbbbbb 1px solid; }
+TABLE .td-cardlist02 { padding-top: 5px; border-left: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; text-align: center; }
+TABLE .td-cardlist03 { padding-top: 5px; border-left: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; border-bottom: #bbbbbb 1px solid; padding-bottom: 5px; text-align: center; }
+
+TABLE.tbl-data-01 { border-bottom: #bbbbbb 1px solid; border-left: #bbbbbb 1px solid; }
+TABLE.tbl-data-01 TH { border-top: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; background: #ededed; text-align: left; }
+TABLE.tbl-data-01 TD { border-top: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; background: #ffffff; }
+TABLE.tbl-data-01 TH.cell-type-01 { background: #dadada; }
+TABLE.tbl-data-01 TD.cell-type-10 { background: #ededed; }
+TABLE.tbl-data-01 .border-reset-right { border-right:0px;}
+
+/* テーブル
+--------------------------------------------------------- */
+TABLE .cell-middle { vertical-align:middle;}
+TABLE .align-r-cell { text-align: right; }
+TABLE .align-c-cell { text-align: center }
+
+/* リンク　修飾
+--------------------------------------------------------- */
+.link01 { font-weight:bold; text-align:center; padding-top:5px; padding-bottom:5px; background:#bf0000; width:130px; margin-top:10px; }
+.link01 a:link, .link01 a:visited, .link01 a:active { color: #fff; }
+.link02 { font-weight:bold; text-align:center; padding-top:5px; padding-bottom:5px; background:#d3d3d3; width:144px; }
+
+/* お知らせ
+--------------------------------------------------------- */
+.info01 { background:#fff3db; margin-top:10px; margin-right:5px; margin-left:5px; padding:6px 8px; }
+.info02 { background:#ffebeb; margin-top:10px; margin-right:5px; margin-left:5px; padding:6px 8px; }
+
+/* 汎用ボックス box-01-F
+--------------------------------------------------------- */
+.box-regular-06 {
+    BORDER-BOTTOM: #cc0000 1px solid; BORDER-LEFT: #cc0000 1px solid; PADDING-BOTTOM: 9px; PADDING-LEFT: 9px; PADDING-RIGHT: 9px; MARGIN-BOTTOM: 20px; BORDER-TOP: #cc0000 1px solid; BORDER-RIGHT: #cc0000 1px solid; PADDING-TOP: 9px
+}
+
+/* ページナビゲーション（table）
+--------------------------------------------------------- */
+.td_nav-page {
+    BORDER: #dbf0fe 1px solid;
+    PADDING: 2px;
+    MARGIN-BOTTOM: 20px;
+    BACKGROUND: #ffffff;
+}
+.nav-page-inner {
+    PADDING: 5px 10px;
+    MARGIN-BOTTOM: 0px;
+    BACKGROUND: url(https://rakutie.top/img/common/nav-page-inner-01-bg-01.gif) #f4fafe repeat-x 0px 0px;
+}
+
+.nav-page-inner .midashi {
+    DISPLAY: inline;
+    LINE-HEIGHT: 2;
+    PADDING-LEFT: 0px;
+    MARGIN-RIGHT: 15px;
+    BACKGROUND:none;
+    font-weight:bold;
+}
+
+.nav-page-inner .menu {
+    DISPLAY: inline;
+    LINE-HEIGHT: 2;
+    PADDING-LEFT: 11px;
+    MARGIN-RIGHT: 15px;
+    BACKGROUND: url(https://rakutie.top/img/common/arrow-02-01.gif) no-repeat 0px 0.35em;
+}
+
+/* ie用ハック */
+html*.nav-page-inner .menu { zoom: 1; background-position: 0px 0.9em; }
+
+/* テーブル関連
+--------------------------------------------------------- */
+.th02center { font-weight:normal; text-align:center; vertical-align:middle; background:#F3F3F3; border-top:1px solid #ccc; }
+.th02linecenter { font-weight:normal; text-align:center; vertical-align:middle; background:#F3F3F3; border-top:1px solid #ccc; border-right:1px solid #ccc; }
+.td01rightnone {border-top:1px solid #ccc; text-align:right; vertical-align:top; background:#fff; }
+.td01leftmiddlenone-right {border-top:1px solid #ccc; text-align:right; vertical-align:middle; background:#fff; }
+
+/* h1 装飾（画像付き）
+--------------------------------------------------------- */
+div.hdg-h1-01 { width:740px; margin-top:15px; background: #fff;  border-bottom:1px dotted #686868;}
+div.hdg-h1-01 h1 { font-size:190%; padding-left:0 30px 0 0; margin: 0; border-bottom:none; background:url(https://rakutie.top/img/common/bg_h1.gif) no-repeat 0 50%; }
+
+/* h2 装飾（画像付き）
+--------------------------------------------------------- */
+table.hdg-h2-03 {background: #4d4d4d; color: #fff; border-top: #ff9000 4px solid; margin: 20px 0 10px; }
+table.hdg-h2-03 h2 {font-size: 100%; background:none ;margin:10px 5px 10px 10px; padding:0;}
+table.hdg-h2-03 .h2_img {margin-right:10px;}
+
+/* 注意ボックス
+--------------------------------------------------------- */
+div.attention-box {
+    margin-bottom: 16px;
+    border:1px dotted #ccc;
+    background: #F4F4F4;
+    text-align: center;
+    color: #363636;
+    line-height: 1.45;
+    padding: 4px 10px;
+}
+
+div.attention-box  span.icon {
+    padding-left: 22px;
+    display: inline-block;
+    min-height: 17px;
+    background: url(https://rakutie.top/img/common/icon-attention-03.gif) no-repeat scroll 0px 0px transparent;
+    font-weight: bold;
+}
+div.attention-box div.btn {
+    margin: 0 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #D8D8D8 #8E8E8E #8E8E8E #D8D8D8;
+    display: inline-block;
+    background: url(https://rakutie.top/img/common/attention-box-02-btn-01.gif) repeat-x scroll left bottom #FFF;
+    font-size: 92%;
+}
+
+div.attention-box div.btn a {
+    background: url(https://rakutie.top/img/common/arrow-01-03.gif) no-repeat scroll 8px 0.75em rgba(0, 0, 0, 0);
+    display: block;
+    padding: 4px 10px 1px 16px;
+}
+
+/* ページの先頭へのリンク
+--------------------------------------------------------- */
+.nav-pagetop a {
+    padding-left: 10px;
+     background: url(https://rakutie.top/img/common/arrow-03-01.gif) no-repeat scroll 0px 0.25em transparent;
+}
+
+.td01leftmiddlenone {border-top:1px solid #ccc; text-align:left; vertical-align:middle; background:#fff;}
+
+/* IE10 border非表示に対応
+---------------------------------------------------------*/
+table.table_border  {
+    border-collapse: separate;
+    *border-collapse:collapse;
+    empty-cells:show;
+}
+
+/*th td タグ追加
+--------------------------------------------------------- */
+.th11leftmiddle { border-top: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; border-left: #bbbbbb 1px solid; text-align: left; vertical-align:middle; background:#dadada; }
+.th12leftmiddle { border-top: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; border-left: #bbbbbb 1px solid; text-align: left; vertical-align:middle; background:#ededed; }
+.th13leftmiddle { border: #bbbbbb 1px solid; text-align: left; vertical-align:middle; background:#dadada; }
+
+.td11 { border-top: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; border-left: #bbbbbb 1px solid; text-align: left; background:#dadada; }
+.td12 { border-top: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; border-left: #bbbbbb 1px solid; text-align: left; background:#ededed; }
+
+.td11center { border-top: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; border-left: #bbbbbb 1px solid; text-align: center; vertical-align:middle; background:#dadada; }
+.td12center { border-top: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; border-left: #bbbbbb 1px solid; text-align: center; vertical-align:middle; background:#ededed; }
+.td13center { border: #bbbbbb 1px solid;                                                                      text-align: center; vertical-align:middle; background:#dadada; }
+
+.td11leftmiddle { border-top: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; border-left: #bbbbbb 1px solid; text-align: left; vertical-align:middle; background:#dadada; }
+.td12leftmiddle { border-top: #bbbbbb 1px solid; border-right: #bbbbbb 1px solid; border-left: #bbbbbb 1px solid; text-align: left; vertical-align:middle; background:#ededed; }
+.td13leftmiddle { border: #bbbbbb 1px solid; text-align: left; vertical-align:middle; background:#dadada; }
+
+/* --------------------------------------------------
+　端末幅：480px以下の場合のみ適用
+--------------------------------------------------- */
+@media only screen and (max-device-width: 480px) {
+  *{
+    /*Android Chromeフォントバグ対策*/
+    max-height: 999999px;;
+  }
+  body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+}
+
+/* --------------------------------------------------
+　ヘッダー共通
+--------------------------------------------------- */
+.rc-h-top-standard { width: 740px; margin:0 auto; font-size: 12px; line-height: 1.4; }
+.rc-h-top-standard .rc-h-top-inner { width: 740px; }
+.rc-h-top-standard, .rc-h-top-standard a:link, .rc-h-top-standard a:visited, .rc-h-top-standard a:hover, .rc-h-top-standard a:active { color: #515151; }
+.rc-h-top-standard li { list-style: none; }
+.rc-h-top-standard .rc-h-top-utility-bar { position: relative; z-index: 3; background: #f9f9f9;}
+
+/* メニュー親 */
+.rc-h-top-standard #rc-h-top-group-nav { float: right; margin: 0; padding: 0; }
+.rc-h-top-standard #rc-h-top-group-nav .mainmenu { float: left; margin: 0px; padding: 0px; position: relative; }
+.rc-h-top-standard #rc-h-top-group-nav .mainmenu a.menu { padding: 5px 10px 4px 10px; background-color: #f9f9f9; display: block; text-decoration: none; }
+.rc-h-top-standard #rc-h-top-group-nav .mainmenu a.menu:hover { background-color: #f0f0f0; text-decoration: underline; }
+.rc-h-top-standard .rc-h-group-dropdown > a:after { 
+    display: inline-block; 
+    content: ""; 
+    margin-left: 5px; 
+    width: 0; 
+    height: 0; 
+    border-style: solid; border-top-width: 4px; 
+    border-right-width: 4px; 
+    border-bottom-width: 0; 
+    border-left-width: 4px; 
+    border-color: #686868 transparent transparent transparent; 
+    margin-top: -2px; 
+    vertical-align: middle;
+}
+
+/* メニュー子 */
+.rc-h-top-standard .submenu { display: none; position: absolute; right:0; } 
+
+/* メニュー子 テキスト*/
+.rc-h-top-standard .submenu-txt { border:1px solid #cccccc; background-color: #fff; }
+.rc-h-top-standard .rc-h-dropdown-panel { padding: 0; }
+.rc-h-top-standard .rc-h-dropdown-panel li {white-space: nowrap; text-align:left; line-height:0; }
+.rc-h-top-standard .rc-h-dropdown-panel li a { padding: 6px 10px ; display: block; text-decoration: none; line-height:normal; }
+.rc-h-top-standard .rc-h-dropdown-panel li a:hover { background: #f0f0f0; }
+.rc-h-top-standard .rc-h-dropdown-panel > li > a:before { 
+    display: inline-block; 
+    content: ""; 
+    margin-right: 5px; 
+    width: 0; 
+    height: 0; 
+    border-style: solid; border-top-width: 4px; 
+    border-right-width: 0; 
+    border-bottom-width: 4px; 
+    border-left-width: 4px; 
+    border-color: transparent transparent transparent #ffc000; 
+    margin-top: -2px; 
+    vertical-align: middle;
+}
+
+/* 間隔調整 */
+.rc-h-top-standard .rc-h-adjust { width: 740px; height:1px; background: #f9f9f9;}
+
+.rc-h-top-standard .rc-h-top-utility-bar:before, 
+.rc-h-top-standard .rc-h-top-utility-bar:after { content: " "; display: table; }
+.rc-h-top-standard .rc-h-top-utility-bar:after { clear: both; }
+
+/* --------------------------------------------------
+　チェックボックス 画像
+--------------------------------------------------- */
+/* デフォルト表示を消す */
+.img_checkbox input[type="checkbox"] { display:none; }
+
+/* チェックボックス 未選択時の背景指定 */
+.img_checkbox input[type="checkbox"] + label {
+    display: block;
+    padding:4px 0 4px 33px;
+    background:url(https://rakutie.top/img/common/checkbox.gif) no-repeat left center;
+    background-size:27px 27px;
+    cursor:pointer;
+}
+
+/* チェックボックス 選択時の背景指定 */
+.img_checkbox input[type="checkbox"]:checked + label {
+    background:url(https://rakutie.top/img/common/checkbox_on.gif) no-repeat left center;
+    background-size:27px 27px;
+    cursor:pointer;
+}
+/* チェックボックス 選択不可時の背景指定 */
+.img_checkbox input[type="checkbox"]:disabled + label {
+    background:url(https://rakutie.top/img/common/checkbox_off.gif) no-repeat left center;
+    background-size:27px 27px;
+    cursor:text;
+}
+
+/* --------------------------------------------------
+　ワイド化
+--------------------------------------------------- */
+div#str-container {
+    margin:0 auto;
+    padding:0;
+    width:950px;
+    background:#FFFFFF;
+}
+div#str-contents {
+    margin:0;
+    padding: 0 0 2em;
+}
+div#str-main {
+    width:950px;
+    text-align: left;
+}
+/* --------------------------------------------------
+　パンくず（ワイド化）
+--------------------------------------------------- */
+#str-main .breadlist{
+    width:950px;
+    margin:8px 0 0 0;
+     padding:0 0 3px 0;
+     border-bottom:1px solid #dadada;
+}
+/* --------------------------------------------------
+　調整
+--------------------------------------------------- */
+.va-middle { vertical-align:middle; }
+.va-bottom { vertical-align:bottom; }
+.img-middle { vertical-align:middle; }
+.align-right {text-align: right!important;}
+.align-center {text-align: center!important;}
+.align-left {text-align: left!important;}
+.border-top-1 {border-top: 1px solid #ccc;}
+.width200 {width: 200px;}
+.d-block {display: block!important;}
+.d-inlineblock {display: inline-block!important;}
+
+/* --------------------------------------------------
+ box
+--------------------------------------------------------- */
+.statute-box {
+    border-top: 1px solid #ccc;
+    margin: 5px -7px -3px;
+}
+.statute-box .statute-box--inner {
+   margin-top: 0;
+   padding: 10px;
+   height: 200px;
+   padding-right: 10px;
+   overflow-y: scroll;
+}
+
+.statute-box .statute-box--inner ol {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.statute-box .statute-box--inner ol li{
+  list-style: decimal;
+}
+
+.statute-box .statute-box--inner ol.list-style-none li {
+  list-style: none;
+}
+.mb05 {
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.doc-notice {
+  font-size: 70%;
+  color: gray;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+
+a.primarybtn:link,
+a.primarybtn:active,
+a.primarybtn:visited {
+    display: inline-block;
+    padding: 10px;
+    background: #bf0000;
+    color: #ffffff;
+    text-decoration: none;
+    width: 250px;
+    text-align: center;
+}
+a.primarybtn:hover {
+    background: #de3a3a;
+}
+
+a.detailbtn:link,
+a.detailbtn:active,
+a.detailbtn:visited {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #6c6c6c;
+    color: #ffffff;
+    text-decoration: none;
+    width: 50px;
+    text-align: center;
+    line-height: 1;
+}
+
+
+
+
+/* --------------------------------------------------
+ stepflow
+--------------------------------------------------------- */
+.stepflow {
+    overflow: hidden;
+    zoom: 1;
+    display: inline-block;
+}
+.stepflow li {
+    float: left;
+    position: relative;
+    list-style-type: none;
+    margin-right: 30px;
+    font-size: 82%;
+}
+.stepflow li {
+    list-style-type: none;
+}
+
+.stepflow li .stepflowBox {
+    background: #C5E7F5;
+    padding: 10px;
+}
+.stepflow li:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -50px;
+    content: "";
+    width: 0;
+    display: block;
+    border-left: 25px solid #C5E7F5;
+    border-right: 25px solid transparent;
+    border-bottom: 32px solid transparent;
+    border-top: 32px solid transparent;
+}
+
+
+/* --------------------------------------------------
+ FESリニューアル
+--------------------------------------------------- */
+/* フォント */
+#contents { font-family: 'Helvetica Neue','Hiragino Kaku Gothic Pro', Arial, Meiryo; color:#000; }
+#contents a:link    { color:#686868 ; text-decoration: none;}
+#contents a:visited { color:#686868 ; text-decoration: none; }
+#contents a:hover   { color:#BF0000 ; text-decoration:underline; }
+#contents a:active  { color:#bf0000 ; text-decoration: none; }
+
+/* --------------------------------------------------------
+ フォントサイズ
+--------------------------------------------------------- */
+.fs12 { font-size:93% !important;}
+.fs14 { font-size:108% !important;}
+.fs16 { font-size:124% !important;}
+.fs18 { font-size:139% !important;}
+.fs20 { font-size:154% !important;}
+.fs22 { font-size:170% !important;}
+.fs26 { font-size:200% !important;}
+.fs40 { font-size:308% !important;}
+
+/* 基本設定 */
+#contents li,
+#footer-contents li,
+.footer-contents li { list-style:none; }
+
+
+#contents *, #contents *:before,#contents *:after {
+  -ms-box-sizing: border-box; /* IE */
+  -moz-box-sizing: border-box; /* Firefox */
+  -webkit-box-sizing: border-box; /* Google Chrome、Safari */
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------
+ ボタン
+--------------------------------------------------- */
+.btn{
+    display:inline-block;
+    margin-bottom:0;
+    text-align:center;
+    vertical-align:middle;
+    touch-action:manipulation;
+    cursor:pointer;
+    background-image:none;
+    border:1px solid transparent;
+    white-space:nowrap;
+    font-weight:100;
+    padding:8px 24px;
+    /* font-size:16px; */
+    line-height:1.5;
+    border-radius:3px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,.btn:active.focus,
+.btn:active:focus,.btn:focus { outline:none!important; outline:5px auto -webkit-focus-ring-color; outline-offset:-2px; }
+
+.btn.focus,
+.btn:focus,
+.btn:hover { color:rgba(0,0,0,.59); text-decoration:none; outline:0; }
+
+.btn.active,
+.btn:active { outline:0; background-image:none; }
+
+
+
+/* 他要素との組み合わせ */
+.btn.small {font-size: 12px;*font-size: 89%;}
+.btn.link-type01,.btn.link-type02,.btn.link-type03 {padding-right: 36px;}
+.btn.link-type01:after,.btn.link-type02:after,.btn.link-type03:after {top:0;bottom:0;margin:auto 0;}
+
+/* -------------------------------------------------
+ btn-events-none
+--------------------------------------------------- */
+.btn-events-none{
+    background-color:#ebebeb!important; 
+    color:#d1d1d1!important; 
+    border-color:#ebebeb!important; 
+    pointer-events: none!important;
+}
+
+
+/* -------------------------------------------------
+ btn-default
+--------------------------------------------------- */
+.btn-default{
+    background-color:#bf0000;
+    border-color:#bf0000;
+    border-radius:3px;
+    color:#fff;
+    -webkit-transition:background-color .2s ease-out,box-shadow .2s cubic-bezier(.45,0,1,1);
+    -moz-transition:.2s ease-out background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    -ms-transition:.2s ease-out background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    -o-transition:.2s ease-out background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    transition:background-color .2s ease-out,box-shadow .2s cubic-bezier(.45,0,1,1);
+    font-size: 124%; line-height: 1.2;
+}
+
+.btn-default.focus,
+.btn-default.hover,
+.btn-default:focus,
+.btn-default:hover {
+    color:#fff;
+    background-color:#ff1212;
+    border-color:transparent;
+    -webkit-transition:background-color .2s ease-out,box-shadow .1s cubic-bezier(0,0,.55,1);
+    -moz-transition:.2s ease-out background-color,.1s cubic-bezier(0,0,.55,1) box-shadow;
+    -ms-transition:.2s ease-out background-color,.1s cubic-bezier(0,0,.55,1) box-shadow;
+    -o-transition:.2s ease-out background-color,.1s cubic-bezier(0,0,.55,1) box-shadow;
+    transition:background-color .2s ease-out,box-shadow .1s cubic-bezier(0,0,.55,1)}
+    .btn-default.hover,.btn-default:hover{
+    -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,.2);
+    box-shadow:0 5px 10px 0 rgba(0,0,0,.2);
+}
+
+.btn-default.active,
+.btn-default:active { border-color:transparent; }
+
+.btn-default.active.focus,
+.btn-default.active.hover,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active.hover,
+.btn-default:active:focus,
+.btn-default:active:hover { color:#fff !important; text-decoration: none; border-color:transparent; }
+
+.btn-default.active,
+.btn-default:active { background-image:none; color:#fff !important; text-decoration: none; background-color:#960000; }
+
+
+/* 追記 */
+#contents a:link.btn-default    { color:#fff; text-decoration: none; }
+#contents a:visited.btn-default { color:#fff; text-decoration: none; }
+#contents a:hover.btn-default   { color:#fff; text-decoration: none; }
+#contents a:active.btn-default  { color:#fff; text-decoration: none; }
+.btn-default[target="_blank"]:after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background-image: url(https://rakutie.top/img/common/external_link--red.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;}
+
+.btn-default[target="_blank"]:hover:after {
+    background-image: url(https://rakutie.top/img/common/external-link--white.png);}
+
+
+.btn-information { padding:0; width:142px; height:40px; line-height:40px; }
+
+/* -------------------------------------------------
+ btn-outline
+--------------------------------------------------- */
+.btn-outline{
+    background-color:#fff;
+    border-color:#bf0000;
+    border-radius:3px;
+    color:#bf0000;
+    -webkit-transition:background-color .2s ease-out;
+    -moz-transition:.2s ease-out background-color;
+    -ms-transition:.2s ease-out background-color;
+    -o-transition:.2s ease-out background-color;
+    transition:background-color .2s ease-out;
+    font-weight:300;
+    font-size: 124%; line-height: 1.2;
+}
+
+.btn-outline.focus,
+.btn-default.btn-outline.hover,
+.btn-default.btn-outline:focus,
+.btn-default.btn-outline:hover { color:#fff; background-color:#ff1212; border-color:transparent; font-weight:100; }
+
+.btn-outline.hover,
+.btn-default.btn-outline:hover {
+    -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,.2);
+    box-shadow:0 5px 10px 0 rgba(0,0,0,.2);
+    -webkit-transition:background-color 0s linear,box-shadow .2s cubic-bezier(.45,0,1,1);
+    -moz-transition:0s linear background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    -ms-transition:0s linear background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    -o-transition:0s linear background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    transition:background-color 0s linear,box-shadow .2s cubic-bezier(.45,0,1,1);
+}
+
+.btn-outline.active,
+.btn-default.btn-outline:active { border-color:transparent; }
+
+.btn-outline.active.focus,
+.btn-default.btn-outline.active.hover,
+.btn-default.btn-outline.active:focus,
+.btn-default.btn-outline.active:hover,
+.btn-default.btn-outline:active.focus,
+.btn-default.btn-outline:active.hover,
+.btn-default.btn-outline:active:focus,
+.btn-default.btn-outline:active:hover { color:#fff; border-color:transparent; font-weight:100; }
+
+.btn-outline.active,
+.btn-default.btn-outline:active { background-image:none; color:#fff; background-color:#960000; font-weight:100; }
+
+/* 追記 */
+#contents a:link.btn-outline    { color:#BF0000; }
+#contents a:visited.btn-outline { color:#BF0000; }
+#contents a:hover.btn-outline   { color:#fff; }
+#contents a:active.btn-outline  { color:#fff; }
+
+/* float */
+.box_wrap {}
+.box_left { float:left; }
+.box_right { float:right; }
+.box_wrap:after { display: block; clear: both; content: ""; }
+
+/* パンくず */
+#contents .breadlist{ width:950px; margin:8px 0 0 0; padding:0 0 3px 0; border-bottom:none; font-size:16px; }
+
+/* 見出し */
+.hdg-01-container { margin:0; padding:0; background:none; font-size:22px; color:#333333; border-bottom:none; }
+
+/* ボックス */
+#contents .box-common { border:solid 1px #dAdAd9; background-color:#fff; box-shadow:0px 2px 2px #e1e1e1; box-sizing: border-box; position:relative; }
+
+/* -------------------------------------------------
+ btn-secondary
+--------------------------------------------------- */
+.btn-secondary, .btn-secondary2, .btn-secondary3 {
+    color: #686868;
+    border-color: #686868;
+    background: none;
+}
+#contents a:link.btn-secondary, #contents a:link.btn-secondary2 { color:#686868; }
+#contents a:visited.btn-secondary, #contents a:visited.btn-secondary2 { color:#686868; }
+#contents a:hover.btn-secondary, #contents a:hover.btn-secondary2, .btn-secondary3:hover { color:#fff; background-color:#4a4a4a;  }
+#contents a:active.btn-secondary, #contents a:active.btn-secondary2 { color:#fff; }
+
+a.btn-secondary span:after, a.btn-secondary2 span:after, .btn-secondary3 span:after {
+    position:relative;
+    top: 2px;
+    left: 5px;
+    margin: auto;
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+a.btn-secondary span:after, .btn-secondary3.down span:after{
+  background-image: url(https://rakutie.top/img/common/down_arrow2.png);
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 100% 50%;
+}
+a.btn-secondary:hover span:after, .btn-secondary3.down:hover span:after {
+  background-image: url(https://rakutie.top/img/common/down_arrow2_on.png);
+}
+a.btn-secondary2 span:after, .btn-secondary3.up span:after {
+  background-image: url(https://rakutie.top/img/common/up_arrow2.png);
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: 100% 50%;
+}
+a.btn-secondary2:hover span:after, .btn-secondary3.up:hover span:after{
+  background-image: url(https://rakutie.top/img/common/up_arrow2_on.png);
+}
+.btn-secondary3:hover {
+    -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,.1);
+    box-shadow:0 5px 10px 0 rgba(0,0,0,.1);
+    -webkit-transition:background-color 0s linear,box-shadow .1s cubic-bezier(.45,0,1,1);
+    -moz-transition:0s linear background-color,.1s cubic-bezier(.45,0,1,1) box-shadow;
+    -ms-transition:0s linear background-color,.1s cubic-bezier(.45,0,1,1) box-shadow;
+    -o-transition:0s linear background-color,.1s cubic-bezier(.45,0,1,1) box-shadow;
+    transition:background-color 0s linear,box-shadow .1s cubic-bezier(.45,0,1,1);
+}
+
+/* -------------------------------------------------	
+btn-forget-start	
+--------------------------------------------------- */	
+.btn.btn-default.btn-outline.txt-fff {text-decoration: none;color: #bf0000;}	
+.btn.btn-default.txt-fff {text-decoration: none;color: #fff;}	
+.btn.btn-default.btn-outline.txt-fff:active,	
+.btn.btn-default.btn-outline.txt-fff:hover,	
+.btn.btn-default.txt-fff:active,	
+.btn.btn-default.txt-fff:hover {color: #fff;}	
+.btn.btn-default.btn-outline.cancel,	
+.btn.btn-default.btn-outline.cancel:visited{	
+box-sizing: content-box!important;	
+position:relative;	
+border-color: #686868!important;	
+color: #686868;	
+text-decoration: none;	
+background-color: #fff!important;	
+}	
+.btn.btn-default.btn-outline.cancel:active,	
+.btn.btn-default.btn-outline.cancel:hover{	
+color: #fff;	
+background-color: #4a4a4a!important;	
+}	
+.btn.btn-default.txt-fff.disabled {	
+background-color: #bbb;	
+pointer-events: none;	
+border-color: #ddd;	
+}
+
+/* --------------------------------------------------
+　ヘッダー共通 ナビなし
+--------------------------------------------------- */
+#header-container { width:100%; margin:0; padding:0; background:#fff; }
+#header-container #h-contents { margin:0 auto; padding:0; }
+#header-container #h-contents.wide { width:950px; }
+#header-container #h-contents.basic { width:740px; }
+.login-header-logo { float: left; }
+.login-header-bnr { float: right; margin-top: 32px; }
+#header-container #h-contents:after { display: block; height: 0px; visibility: hidden; clear: both; content: "." }
+
+/* --------------------------------------------------
+　ヘッダー個人　ナビあり
+--------------------------------------------------- */
+#header-common-personal { width:100%; background-color:#FFF; font-family: Arial,Meiryo,"Helvetica Neue","Hiragino Kaku Gothic ProN"; font-size:14px; color: #000;}
+#header-common-personal a:link    { color: #000; text-decoration: none; }
+#header-common-personal a:visited { color: #000; text-decoration: none; }
+#header-common-personal a:hover   { color: #BF0000; text-decoration: underline; }
+#header-common-personal a:active  { color: #BF0000; text-decoration: underline; }
+
+/* --------------------------------------------------
+ ボタンログアウト
+--------------------------------------------------- */
+#header-common-personal .btn-logout { width: 126px; height: 40px; line-height: 40px;  padding:0;}
+#header-common-personal a:link.btn-logout    { color:#fff; }
+#header-common-personal a:visited.btn-logout { color:#fff;}
+#header-common-personal a:hover.btn-logout   { color:#fff; text-decoration: none; }
+#header-common-personal a:active.bbtn-logout  { color:#fff; text-decoration: none;; }
+#header-common-personal li { list-style: none; }
+#header-common-personal th, #header-common-personal td {line-height:1;}
+#header-common-personal .rc-h-top-basic { width:100%; height:32px; background-color:#efeff4; }
+#header-common-personal .rc-h-top-basic .rc-h-top-inner { width: 950px; margin:0 auto; font-size: 12px; position: relative; z-index: 3; }
+#header-common-personal .rc-h-top-basic .rc-h-top-inner #rc-h-top-group-nav { float: right; margin: 0; padding: 0; }
+#header-common-personal .rc-h-top-basic .rc-h-top-inner #rc-h-top-group-nav .mainmenu { float: left; margin: 0px; padding: 0px; position: relative; line-height:32px; }
+#header-common-personal .rc-h-top-basic .rc-h-top-inner #rc-h-top-group-nav .mainmenu a.menu { padding:0px 10px; display: block; }
+#header-common-personal .rc-h-top-basic .rc-h-top-inner #rc-h-top-group-nav .mainmenu a.menu:hover { background-color: #f0f0f0; }
+#header-common-personal .rc-h-top-basic .rc-h-group-dropdown > a:after { display: inline-block; content: ""; margin-left: 8px; width: 0; height: 0; border-style: solid; border-top-width: 4px; border-right-width: 4px; border-bottom-width: 0; border-left-width: 4px; border-color: #686868 transparent transparent transparent; margin-top: -2px; vertical-align: middle; }
+#header-common-personal .rc-h-top-basic .submenu { display: none; position: absolute; right:0; }
+#header-common-personal .rc-h-top-basic .submenu-txt { border:1px solid #cccccc; background-color: #fff; }
+#header-common-personal .rc-h-top-basic .rc-h-dropdown-panel { padding: 0; }
+#header-common-personal .rc-h-top-basic .rc-h-dropdown-panel li {white-space: nowrap; text-align:left; line-height:0; }
+#header-common-personal .rc-h-top-basic .rc-h-dropdown-panel li a { padding: 6px 10px ; display: block; line-height:normal; }
+#header-common-personal .rc-h-top-basic .rc-h-dropdown-panel img { margin-left:4px;}
+#header-common-personal .rc-h-top-basic #rc-h-top-group-nav:before { content: " "; display: table; }
+#header-common-personal .rc-h-top-basic #rc-h-top-group-nav:after  { content: " "; display: table; clear: both; }
+
+/* --------------------------------------------------
+ ヘッダー
+--------------------------------------------------- */
+#header-common-personal .header-alert {background: #4A4A4A; color: #fff;text-align: left; font-size: 143%;}
+#header-common-personal .header-alert-inner { width: 905px; margin: auto; background: url(https://rakutie.top/img/common/icon-error.png) no-repeat 0 50%;  background-size: 32px 32px;padding: 12px 0 5px 45px;}
+#header-common-personal .header-alert span {margin-right: 30px;}
+#header-common-personal .header-section01 { width:100%; }
+#header-common-personal .header-section01-inner {padding:0; }
+#header-common-personal .header-section01-inner-bottom {vertical-align: top;}
+#header-common-personal .header-section01-inner-bottom a {position: relative;padding-right: 18px;}
+#header-common-personal .header-section01-inner-bottom a:after{position: absolute;content: "";top: -4px;width: 24px;height: 24px;background: url(https://rakutie.top/img/common/arrow_off.png) top left no-repeat;background-size: 24px 24px;}
+#header-common-personal .header-section01 .header-account-name img { vertical-align: middle;}
+#header-common-personal .header-section01 .header-account-name td { padding-left: 30px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    _::-webkit-full-page-media, _:future, :root #header-common-personal .header-section01 .header-account-name td {
+        padding-top: 19px; padding-bottom: 19px;
+    }
+}
+#header-common-personal .header-section01 .header-account-name .account-name        { margin-left:4px; vertical-align: middle;}
+#header-common-personal .header-section01 .header-account-name .account-title       { color:#BF0000; vertical-align: middle;}
+#header-common-personal .header-section01 .header-account-name .account-branch-name { margin-left:8px; color:#000; vertical-align: middle;}
+#header-common-personal .header-section01 .header-account-name .account-number      { margin-left:8px; color:#000; font-size:16px; vertical-align: middle;}
+#header-common-personal .header-section02 { width: 100%; height:30px; background:#990000;}
+#header-common-personal .header-section02 ul.nav-category  { width: 950px; height:30px; background:#990000; color:#fff; text-align:center; }
+#header-common-personal .header-section02 ul.nav-category li { float: left; font-size:12px; line-height:30px;}
+#header-common-personal .header-section02 ul.nav-category li.category01 { padding-left:90px; }
+#header-common-personal .header-section02 ul.nav-category li.category02 { padding-left:9px; }
+#header-common-personal .header-section02 ul.nav-category li.category03 { padding-left:5px; }
+#header-common-personal .header-section02 ul.nav-category li div { }
+#header-common-personal .header-section02 ul.nav-category li div.category-item01 { width:171px; }
+#header-common-personal .header-section02 ul.nav-category li div.category-item02 { width:256px; }
+#header-common-personal .header-section02 ul.nav-category li div.category-item03 { width:51px; }
+#header-common-personal .header-section02 ul.nav-category li div.category-item04 { width:111px; }
+#header-common-personal .header-section02 ul.nav-category li div.category-item05 { width:229px ;}
+#header-common-personal .header-section02 ul.nav-category .line  { border-bottom:2px solid rgba(216,216,216,0.5); }
+#header-common-personal .header-section02 ul:after { display: block; height: 0px; visibility: hidden; clear: both; content: "." }
+#header-common-personal .header-section03 { width: 100%; background:#BF0000; }
+#header-common-personal .header-section03 table.nav-main { width: 950px; height:60px; background:#BF0000; }
+#header-common-personal .header-section03 table td { font-size:12px; line-height: 16px; }
+#header-common-personal .header-section03 table.nav-main div.line {border-right:1px solid rgba(255,255,255,0.7) ; height: 40px ;}
+#header-common-personal .header-section03 table.nav-main .menu-list-01 { width:83px; height:60px; }
+#header-common-personal .header-section03 table.nav-main .menu-list-02 { width:59px; height:60px; }
+#header-common-personal .header-section03 table.nav-main .menu-list-03 { width:84px; height:60px; }
+#header-common-personal .header-section03 table.nav-main .nav-link {padding:0 4px; }
+#header-common-personal .header-section03 table.nav-main .menu-list-01 a { display: table-cell; text-align:center; vertical-align: middle; text-decoration:none; color:#fff; width: 75px; height:52px; }
+#header-common-personal .header-section03 table.nav-main .menu-list-02 a { display: table-cell; text-align:center; vertical-align: middle; text-decoration:none; color:#fff; width: 51px; height:52px; }
+#header-common-personal .header-section03 table.nav-main .menu-list-03 a { display: table-cell; text-align:center; vertical-align: middle; text-decoration:none; color:#fff; width: 76px; height:52px; }
+#header-common-personal .header-section03 table.nav-main a:hover { background-color: #FF1212; border-radius: 4px; }
+#header-common-personal .header-section03 table.nav-main .current {padding: 4px 4px 0 4px; }
+#header-common-personal .header-section03 table.nav-main .current a,
+#header-common-personal .header-section03 table.nav-main .current a:hover {height:56px; color:#BF0000; background-color: #fff; border-radius: 4px 4px 0 0; }
+#header-common-personal .header-section04 { width: 100%; height:56px;}
+#header-common-personal .header-section04-inner {padding:10px 0; }
+#header-common-personal .header-section04 .header-sub-tab-wrap { width: 950px; height:36px; margin:0 auto;}
+#header-common-personal .header-section04 .header-sub-tab-wrap .header-sub-tab01 {float:left;}
+#header-common-personal .header-section04 .header-sub-tab-wrap .header-sub-tab02 {float:right;}
+#header-common-personal .header-section04 .header-sub-tab-wrap:after { display:block; clear:both; height:0; visibility:hidden; content:"."; }
+#header-common-personal .header-section04 .header-sub-tab-wrap .header-sub-tab01 ul.sub-tab {margin:10px 0; }
+#header-common-personal .header-section04 .header-sub-tab-wrap .header-sub-tab01 ul.sub-tab li.sub-tab01 { float:left; height:36px; line-height:36px; font-size:16px; border-left:1px solid rgba(239,239,244,1); padding-left:10px; padding-right:10px;}
+#header-common-personal .header-section04 .header-sub-tab-wrap .header-sub-tab01 ul.sub-tab li.sub-tab01:first-child { border-left: none;  padding-left:0;}
+#header-common-personal .header-section04 .current a:link   { color: #BF0000; text-decoration: none; }
+#header-common-personal .header-section04 .current a:visited { color: #BF0000; text-decoration: none; }
+#header-common-personal .header-section04 .current a:hover   { color: #BF0000; text-decoration: none; }
+#header-common-personal .header-section04 .current a:active  { color: #BF0000; text-decoration: none; }
+#header-common-personal .btn-recommend { margin:10px 0; }
+#header-common-personal .btn-recommend a { width: 126px; height: 32px; line-height: 32px; font-size:14px; color: #BF0000; display: inline-block; text-align: center; cursor: default;}
+#header-common-personal .btn-recommend a .recommend_txt { border-radius: 4px; background-color: rgba(191,0,0,0.15); cursor: pointer; color: inherit;}
+#header-common-personal:after { display: block; height: 0px; visibility: hidden; clear: both; content: "."}
+
+/* --------------------------------------------------
+　個人　フッター共通
+--------------------------------------------------- */
+.footer-container { width:100%; margin:0; padding:0; font-family: Arial,Meiryo,'Helvetica Neue','Hiragino Kaku Gothic Pro'; color: #000; }
+.footer-container.basic { background:#fff;}
+.footer-container .footer-contents  { width:950px; margin:0 auto; padding:0; text-align: left; color: #000000;}
+.footer-container-service { width:100%; margin:40px 0 0; padding:0; border-top: 1px solid #4A4A4A; font-family: Arial,Meiryo,'Helvetica Neue','Hiragino Kaku Gothic Pro'; color: #000; background-color:#efeff4; }
+.footer-container-service .footer-contents  { width:950px; margin:0 auto; padding:0 0 40px; text-align: left; color: #000000;}
+
+/* ページIDとコピーライトのみ */
+.footer-container-min { width:100%; margin:40px 0 0; padding:0;font-family: Arial,Meiryo,'Helvetica Neue','Hiragino Kaku Gothic Pro'; color: #000; background-color:#efeff4; }
+.footer-container-min .footer-contents { width:950px; margin:0 auto; padding:0 0 40px; text-align: left; color: #000000;}
+.footer-container-min .footer-contents.basic  { width:740px;}
+
+.footer-contents-service  { width:950px; margin:0 auto; padding:0; text-align: left; color: #000000;}
+#footer-contents          { width:950px; margin:0 auto; padding:0; text-align: left; color: #000000;}
+.footer-ttl-service h2 {margin:0; padding:0; background:none; font-size:139%; color:#333333; border-bottom:none;}
+.footer-ttl-service:after { display: block; clear: both; content: ""; }
+.footer-ttl-line       { color: #333; font-size: 18px; display: flex; align-items: center; }
+.footer-ttl-line:after { content: ""; flex-grow: 1; height: 1px; background: #D4D4D4; display: block; margin-left: 14px; }
+
+#footer-contents h3 { font-size: 139%; color: #333333; line-height: 22px; }
+.footer-container td div { font-size:108%; line-height: 20px !important; }
+#footer-contents a:link    {color:#000 ; text-decoration: none;}
+#footer-contents a:visited {color:#000 ; text-decoration: none; }
+#footer-contents a:hover   {color:#BF0000 ; text-decoration:underline; }
+#footer-contents a:active  {color:#BF0000 ; text-decoration: none; }
+.footer-contents a:link    {color:#000 ; text-decoration: none;}
+.footer-contents a:visited {color:#000 ; text-decoration: none; }
+.footer-contents a:hover   {color:#BF0000 ; text-decoration:underline; }
+.footer-contents a:active  {color:#BF0000 ; text-decoration: none; }
+
+/* 見出し */
+.footer-ttl-type01 { margin:40px 0 0; padding:0; background:none; font-size:170%; color:#333333; border-bottom:none; display: flex; align-items: center;}
+.footer-ttl-type01-txt { line-height:24px; text-align:right; font-size:124%; margin-top:6px; }
+.footer-ttl-type01:after { content: ""; flex-grow: 1; height: 1px; background: #D4D4D4; display: block; margin-left: 14px; }
+.footer-ttl-service { margin-top:40px; }
+.footer-ttl-service .ttl-service-01 { float:left; }
+.footer-ttl-service .ttl-service-02 { float:right; font-size:124%;}
+.footer-ttl-service .ttl-service-02 a:link    {color:#000 ; text-decoration: none;}
+.footer-ttl-service .ttl-service-02 a:visited {color:#000 ; text-decoration: none; }
+.footer-ttl-service .ttl-service-02 a:hover   {color:#BF0000 ; text-decoration: none; }
+.footer-ttl-service .ttl-service-02 a:active  {color:#BF0000 ; text-decoration: none; }
+.icon-01 { vertical-align:middle; margin-left:8px; }
+.icon-link { vertical-align:middle; margin-left:8px; }
+
+/*-------------------------------------------------------------
+ おすすめの特集
+--------------------------------------------------------------*/
+ul.footer-list-img-recommend { margin-top: 20px; margin-left:100px; }
+ul.footer-list-img-recommend li { float:left; width:118px; margin-right:40px; }
+ul.footer-list-img-recommend li a:hover img { opacity: 0.5; background: #FFFFFF; }
+ul.footer-list-img-recommend li img {
+    box-shadow:0px 2px 2px #e1e1e1;
+    -moz-box-shadow:0px 2px 2px #e1e1e1;
+    -webkit-box-shadow:0px 2px 2px #e1e1e1;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 0 0 rgba(0,0,0,0.24);
+    -moz-box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    box-sizing: border-box;
+}
+ul.footer-list-img-recommend:after { display:block; clear:both; height:0; visibility:hidden; content:"."; }
+/*-------------------------------------------------------------
+ 開催中のキャンペーン・プログラム等
+--------------------------------------------------------------*/
+ul.footer-list-img-campaign { margin-top: 8px; overflow: hidden;}
+ul.footer-list-img-campaign li { float:left; position: relative; width:283px; padding: 10px 0;}
+ul.footer-list-img-campaign li a:hover img { opacity: 0.5; background: #FFFFFF; }
+ul.footer-list-img-campaign:after { display:block; clear:both; height:0; visibility:hidden; content:"."; }
+ul.footer-list-img-campaign .icon-entried { position: absolute; top:2px; left:166px; z-index: 2; }
+ul.footer-list-img-campaign .img-campaign { display: block;}
+ul.footer-list-img-campaign .entried { opacity: 0.4; background: #000000;}
+ul.footer-list-img-campaign:after { display:block; clear:both; height:0; visibility:hidden; content:"."; }
+
+/*-------------------------------------------------------------
+楽天銀行サービス一覧
+--------------------------------------------------------------*/
+.footer-rc-service-list { width:950px; margin-top:20px ;}
+.footer-rc-service-list .list01{ float:left; width:252px; }
+.footer-rc-service-list .list02{ float:left; width:220px; }
+.footer-rc-service-list .list03{ float:left; width:234px; }
+.footer-rc-service-list .list04{ float:left; width:242px; }
+.footer-rc-service-list .list01 .list01-02 h3 { margin-top:40px; }
+.footer-rc-service-list .list01 .list01-03 h3 { margin-top:40px; }
+.footer-rc-service-list .list02 .list02-02 h3 { margin-top:68px; }
+.footer-rc-service-list .list02 .list02-03 h3 { margin-top:50px; }
+.footer-rc-service-list .list04 .list04-02 h3 { margin-top:40px; }
+.footer-rc-service-list .list04 .list04-03 h3 { margin-top:40px; }
+.footer-rc-service-list .list04 .list04-04 h3 { margin-top:40px; }
+ul.footer-service-list li { list-style:none; padding-left:10px; }
+ul.footer-service-list ul.list-contents {margin-top:14px;}
+ul.footer-service-list h3 { color: #333333;  font-size:124%; line-height: 22px; }
+ul.footer-service-list ul.list-contents li {margin-top:10px; margin-left:10px; line-height: 20px; font-size: 108%; }
+ul.footer-service-list ul.list-contents li.type02 {margin-top:10px; margin-left:20px;}
+.footer-rc-service-list:after { display:block; clear:both; height:0; visibility:hidden; content:"."; }
+.ul.footer-service-list:after { display:block; clear:both; height:0; visibility:hidden; content:"."; }
+
+/*-------------------------------------------------------------
+ 商号
+--------------------------------------------------------------*/
+.trade-name { width:950px; height:57px; margin-top:40px; position: relative; }
+.trade-name .page-number { position: absolute; right: 0px; bottom: 0px; }
+.page-number  { font-size: 16px; color: #000; }
+
+/*-------------------------------------------------------------
+ コピーライト
+--------------------------------------------------------------*/
+#footer-copyright { width:100%; background:#BF0000; font-family: Arial,Meiryo,'Helvetica Neue','Hiragino Kaku Gothic Pro'; padding:22px 0;}
+#footer-contents .footer-ttl { font-size: 16px; color: #333333; line-height: 22px; font-weight:bold; }
+.copyright-txt { font-size: 124%; color: #FFFFFF;}
+
+/*-------------------------------------------------------------
+ セグメントバナー枠
+--------------------------------------------------------------*/
+ul.list-img-segment-bnr { margin-right: -25px; }
+ul.list-img-segment-bnr li { float:left; width:300px; margin-right:25px; }
+ul.list-img-segment-bnr li a:hover img { opacity: 0.5; background: #FFFFFF; }
+ul.list-img-segment-bnr:after { display:block; clear:both; height:0; visibility:hidden; content:"."; }
+
+/* --------------------------------------------------
+　矢印 共通
+--------------------------------------------------- */
+.link-arrow-01 { display: block; }
+.link-arrow-01 a:after { content: url(https://rakutie.top/img/common/arrow_off.png); position:relative; top:2px; }
+.link-arrow-01 a:hover { text-decoration: none; }
+.link-arrow-01 a:hover:after { text-decoration: none; content: url(https://rakutie.top/img/common/arrow_on.png); position:relative; top:2px; }
+
+/* --------------------------------------------------
+　画像 影
+--------------------------------------------------- */
+.img-shadow a img {
+box-shadow:0px 2px 2px #e1e1e1; -moz-box-shadow:0px 2px 2px #e1e1e1; -webkit-box-shadow:0px 2px 2px #e1e1e1;
+box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 0 0 rgba(0,0,0,0.24);
+-moz-box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+-webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+box-sizing: border-box; }
+
+/* --------------------------------------------------
+　外部アイコン
+--------------------------------------------------- */
+.icon-blank a:after { content: url(https://rakutie.top/img/common/icon-external-link_off.png); position:relative; top:2px; margin-left: 5px; }
+.icon-blank a:hover { text-decoration: none; }
+.icon-blank a:hover:after { text-decoration: none; content: url(https://rakutie.top/img/common/icon-external-link_on.png); position:relative; top:2px; }
+.accessibility-sub-text {display: none;}
+/* --------------------------------------------------
+　外部アイコン 2
+--------------------------------------------------- */
+.icon-blank2 a:after { content: url(https://rakutie.top/img/common/icon-external-linkmini_off.png); position:relative; top:2px; margin-left: 5px;background-size: 10px 10px; }
+.icon-blank2 a:hover { text-decoration: none; }
+.icon-blank2 a:hover:after { text-decoration: none; content: url(https://rakutie.top/img/common/icon-external-linkmini_on.png); position:relative; top:2px; }
+.accessibility-sub-text {display: none;}
+/* --------------------------------------------------
+　レイアウト調整
+--------------------------------------------------- */
+.text-left   { text-align:left !important; }
+.text-right  { text-align:right !important; }
+.text-center { text-align:center !important; }
+.text-bottom { vertical-align:bottom !important; }
+.text-top    { vertical-align:top !important; }
+
+/* --------------------------------------------------------
+ リンク 矢印
+--------------------------------------------------------- */
+/* フォントサイズ 16px用 */
+a.link-type01 { display: inline-block; font-size:124%; position: relative; line-height:16px; padding-right:24px; }
+a.link-type02 { display: inline-block; font-size:108%; position: relative; line-height:14px; padding-right:24px; }
+a.link-type01:after { position: absolute; content: ""; top: -4px; width:24px; height: 24px; background: url(https://rakutie.top/img/common/arrow_off.png) top left no-repeat; background-size: 24px 24px; }
+a.link-type02:after { position: absolute; content: ""; top: -5px; width:24px; height: 24px; background: url(https://rakutie.top/img/common/arrow_off.png) top left no-repeat; background-size: 24px 24px; }
+a.link-type01:hover:after, a.link-type02:hover:after { text-decoration: none; background: url(https://rakutie.top/img/common/arrow_on.png) top left no-repeat; background-size: 24px 24px; }
+a.link-type01:hover, a.link-type02:hover { text-decoration: none !important; }
+a.link-type01 span{ font-size:88% } /* フォント14px */
+
+a.link-type03 { display: inline-block; font-size:124%; position: relative; line-height:16px; padding-right:24px; }
+
+a.link-type03:after { position: absolute; content: ""; top: -4px; width:24px; height: 24px; background: url(https://rakutie.top/img/common/arrow_off.png) top left no-repeat; background-size: 24px 24px; -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+     -o-transform: rotate(90deg);
+        transform: rotate(90deg);}
+a.link-type03:hover:after { text-decoration: none; background: url(https://rakutie.top/img/common/arrow_on.png) top left no-repeat; background-size: 24px 24px; }
+
+/* --------------------------------------------------------
+ リンク 矢印と別ウィンドウ
+--------------------------------------------------------- */
+ /* フォントサイズ 16px用 */
+a.link-type01[target="_blank"] {
+    padding-left: 20px;
+    background-image: url(https://rakutie.top/img/common/icon-external-link_off.png);
+    background-repeat: no-repeat;
+    background-size: 16px;}
+a.link-type01[target="_blank"]:hover {
+    background-image: url(https://rakutie.top/img/common/icon-external-link_on.png);}
+
+
+
+/* --------------------------------------------------------
+ リンク 矢印と別ウィンドウ
+ --------------------------------------------------------- */
+.textlist-dot li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+.textlist-dot li:before {
+    content: "・";
+}
+.textlist-asterisk li {
+    padding-left: 2em;
+    text-indent: -2em;
+}
+.textlist-asterisk li:before {
+    content: "※";
+    margin-right: 1em;
+}
+
+/* --------------------------------------------------------
+ toto
+--------------------------------------------------------- */
+.tddashedb {
+    border-bottom: 1px dashed gray;
+}
+
+.innercellradius {
+    padding:8px 7px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.bgC07{background:#ffe699;}
+.bgC08{background:#ccffcc;}
+.bgC09{background:#f3c5ff;}
+.bgC10{background:#ffd1cd;}
+.bgC11{background:#bdd7ee;}
+
+.td01rightmiddleTarget{border-top:1px solid #ccc; border-right:1px solid #ececec; text-align:right; vertical-align:middle; background:#ffffcc;}
+
+
+
+/* --------------------------------------------------------
+ okbここから
+--------------------------------------------------------- */
+
+        /* ヘッダー
+        --------------------------------------------------------- */
+        #header-common-personal.okb { border-top: 10px #00b900 solid;}
+
+        #header-common-personal.okb .header-section03 table.nav-main .menu-list-04 { width:150px; height:60px; }
+        #header-common-personal.okb .header-section03 table.nav-main .menu-list-05 { width:200px; height:60px; }
+        #header-common-personal.okb .header-section03 table.nav-main .menu-list-04 a { display: table-cell; text-align:center; vertical-align: middle; text-decoration:none; color:#fff; width: 143px; height:54px; }
+
+        #header-common-personal.okb .header-section03 table.nav-main .current {padding: 4px 4px 0 4px; }
+        #header-common-personal.okb .header-section03 table.nav-main .current a,
+        #header-common-personal.okb .header-section03 table.nav-main .current a:hover {height:56px; color:#BF0000; background-color: #fff; border-radius: 4px 4px 0 0; }
+
+        #header-common-personal.okb .header-section03 table.nav-main div.line {margin-left: -1px;}
+
+        /* フッター　コピーライト
+        --------------------------------------------------------- */
+        #footer-copyright-okb { width:100%; background:#00b900; font-family: Arial,Meiryo,'Helvetica Neue','Hiragino Kaku Gothic Pro'; padding:22px 0;}
+
+/* --------------------------------------------------------
+ okbここまで
+--------------------------------------------------------- */
+
+/*tab*/
+#str-main.tab{
+  width: 740px!important;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 0;
+  border:1px solid #dadada;
+  
+}
+#str-main.tab ul.tabList, #str-main.tab ul.tabs.static{
+  list-style: none;
+  font-size: 0!important;
+  margin: 0!important;
+  padding: 0!important;
+}
+#str-main.tab .tabList li{
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  width: 50%;
+  border-bottom:1px solid #dadada;
+  background-color: #ededed; 
+  cursor : pointer;
+}
+
+#str-main.tab .tabList li.tab-item-01{
+  border-right:1px solid #dadada;
+}
+#str-main.tab .tabList li.tab-item-02{
+  border-left:1px solid #dadada;
+}
+
+#str-main.tab .tabList li.tab-item-01.active{
+  border-right:1px solid #fff;
+}
+
+#str-main.tab .tabList li.tab-item-02.active{
+  border-left:1px solid #fff;
+}
+#str-main.tab .tabList li.active{
+  border-bottom: none;
+  background-color: #fff; 
+}
+
+#str-main.tab .tabList li span{
+  display: inline-block;
+  margin: 15px auto;  
+}
+#str-main.tab .tabList li a{
+  color: #000; 
+  width: 100%;
+  display: block;
+}
+#str-main.tab .tabList li a:hover{
+  color: #062e9d; 
+}
+#str-main.tab .tabList li a:focus{
+  outline: none;
+}
+
+#str-main.tab ul.tabs.static li, #str-main.tab ul.tabs.static li div{
+  margin: 0!important;
+  padding: 0!important;
+  box-sizing: border-box;
+}
+
+#str-main.tab #tab-item-02 .AManagement{
+  padding-left: 10px;
+  font-size: 13px;
+}
+#str-main.tab #tab-item-02 .AManagement p{
+  margin-top: 15px;
+}
+/* --------------------------------------------------------
+ 外貨預金
+--------------------------------------------------------- */
+
+.foreign-input{
+  width:588px;  
+}
+.foreign-input .f_box_left,.foreign-input .f_box_left2,.foreign-input .f_box_left3 {
+  float:left;
+}
+.foreign-input .f_box_wrap {
+  border:0;
+
+}
+
+.foreign-input .f_box_left {
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+}
+.foreign-input .f_box_left input {
+  vertical-align: middle;
+  margin-right: 0;
+
+}
+
+.foreign-input .f_box_left2 {
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+}
+.foreign-input .f_box_left2 input {
+  margin:0;
+}
+.foreign-input .f_box_left3 {
+  width: 400px;
+}
+
+.foreign-input .box_30 {
+  height: 30px;
+  line-height: 30px;
+}
+.foreign-input .box_30 input,.foreign-input .box_30 label {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.foreign-input.width480{width: 480px!important;font-weight: bold; padding-left: 10px;}
+.foreign-input .foreign-unit{margin-left: 3px;}
+
+ input[type="button"].js-open-pointarea_btn:disabled {
+  background: #DCDCDC;
+}
+.available-point {font-weight: bold;}
+
+/* --------------------------------------------------------
+  全体追加
+--------------------------------------------------------- */
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+hr.solid01 {
+  border: none;
+  border-top: 1px #ccc solid;
+}
+
+.padding0810{padding:8px 10px;}
+.padding0712{padding:7px 12px;}
+.padding10{padding:10px;}
+.padding0509{padding:5px 9px;}
+
+
+.comment-list li {
+    list-style: none;
+    padding-left: 1.3em;
+    text-indent: -1.3em;
+}
+.comment-list li:before {
+    content: "※";
+    margin-right: 0.3em;
+}
+.comment-list.note { 
+  padding: 5px 5px 5px 0;
+  font-size: 0.89em;
+}
+
+.border-solid-01 {
+  border:1px solid #ccc;
+  padding: 10px;
+}
+
+.border-right-01 {
+    border-right:1px solid #ccc;
+}
+
+.font-normal{font-weight:normal!important;}
+
+
+/*JSコントロールするためのCSS*/
+.js-no_display {
+    display: none;
+}

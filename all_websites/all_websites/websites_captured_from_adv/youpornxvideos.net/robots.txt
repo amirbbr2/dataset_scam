@@ -1,0 +1,133 @@
+User-agent: xovibot
+Disallow: /
+
+User-agent: wotbox
+Disallow: /
+
+User-agent: wbsearchbot
+Disallow: /
+
+User-agent: unisterbot
+Disallow: /
+
+User-agent: turnitinbot
+Disallow: /
+
+User-agent: spbot
+Disallow: /
+
+User-agent: sogou spider
+Disallow: /
+
+User-agent: smtbot
+Disallow: /
+
+User-agent: siteexplorer
+Disallow: /
+
+User-agent: sistrix
+Disallow: /
+
+User-agent: seznambot
+Disallow: /
+
+User-agent: seokicks-robot
+Disallow: /
+
+User-agent: sentibot
+Disallow: /
+
+User-agent: semrushbot
+Disallow: /
+
+User-agent: searchmetricsbot
+Disallow: /
+
+User-agent: screenerbot
+Disallow: /
+
+User-agent: publiclibraryarchive.org
+Disallow: /
+
+User-agent: panscient.com
+Disallow: /
+
+User-agent: nutch
+Disallow: /
+
+User-agent: netestate ne crawler
+Disallow: /
+
+User-agent: mj12bot
+Crawl-delay: 10
+Disallow: /wp-admin/
+
+User-agent: mixbot
+Disallow: /
+
+User-agent: memorybot
+Disallow: /
+
+User-agent: megaindex.ru/2.0
+Disallow: /
+
+User-agent: megaindex.ru
+Disallow: /
+
+User-agent: meanpathbot
+Disallow: /
+
+User-agent: mail.ru
+Disallow: /
+
+User-agent: lipperhey
+Disallow: /
+
+User-agent: linkpadbot
+Disallow: /
+
+User-agent: istellabot
+Disallow: /
+
+User-agent: heritrix
+Disallow: /
+
+User-agent: googlebot
+Disallow: /wp-admin/
+
+User-agent: feedbooster
+Disallow: /
+
+User-agent: ezooms
+Disallow: /
+
+User-agent: exb language crawler
+Disallow: /
+
+User-agent: easouspider
+Disallow: /
+
+User-agent: bubing
+Disallow: /
+
+User-agent: bpimagewalker/2.0
+Disallow: /
+
+User-agent: blexbot
+Disallow: /
+
+User-agent: advbot
+Disallow: /
+
+User-agent: aboundexbot
+Disallow: /
+
+User-agent: abonti
+Disallow: /
+
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Crawl-delay: 10
+
+Sitemap: https://youpornxvideos.net/sitemap_index.xml

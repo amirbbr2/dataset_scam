@@ -1,0 +1,11 @@
+Sitemap: https://nesfejahan.net/sitemap.xml
+Sitemap: https://nesfejahan.net/fa-sitemap-newsarchive
+
+
+User-agent: *
+Disallow: /files/adv
+Disallow: /fa/report
+Disallow: /fa/send
+Disallow: /fa/print
+Disallow: /fa/save
+Disallow: /fa/archive

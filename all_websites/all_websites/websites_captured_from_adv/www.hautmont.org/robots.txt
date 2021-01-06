@@ -1,0 +1,175 @@
+Sitemap: https://www.hautmont.org/sitemap.xml.gz
+
+# Define access-restrictions for robots/spiders
+# http://www.robotstxt.org/wc/norobots.html
+
+# see http://opensourcehacker.com/2009/08/07/seo-tips-query-strings-multiple-languages-forms-and-other-content-management-system-issues/
+
+# Googlebot allows regex in its syntax
+# Block all URLs including query strings (? pattern) - contentish objects expose query string only for actions or status reports which
+# might confuse search results.
+# This will also block ?set_language
+User-Agent: Googlebot
+Disallow: /*?*
+Disallow: /*folder_factories$
+Disallow: /*send_as_pdf*
+Disallow: /*download_as_pdf*
+Disallow: /parametrages/
+Disallow: /newsletter/
+Disallow: /abonnez-vous/
+Disallow: /don-en-ligne/
+Disallow: /portal_checkouttool/
+Disallow: /Members/
+
+# Allow Adsense bot on entire site
+User-agent: Mediapartners-Google
+Disallow:
+Allow: /
+Disallow: /*folder_factories$
+Disallow: /*send_as_pdf*
+Disallow: /*download_as_pdf*
+Disallow: /parametrages/
+Disallow: /newsletter/
+Disallow: /abonnez-vous/
+Disallow: /don-en-ligne/
+Disallow: /portal_checkouttool/
+Disallow: /Members/
+
+User-agent: Yahoo! Slurp
+Disallow: /*?*
+Disallow: /*folder_factories$
+Disallow: /*send_as_pdf*
+Disallow: /*download_as_pdf*
+Disallow: /parametrages/
+Disallow: /newsletter/
+Disallow: /abonnez-vous/
+Disallow: /don-en-ligne/
+Disallow: /portal_checkouttool/
+Disallow: /Members/
+Request-rate: 1/10
+Crawl-delay: 10
+Visit-time: 0100-0600
+
+User-agent: bingbot
+Disallow: /*?*
+Disallow: /*folder_factories$
+Disallow: /*send_as_pdf*
+Disallow: /*download_as_pdf*
+Disallow: /parametrages/
+Disallow: /newsletter/
+Disallow: /abonnez-vous/
+Disallow: /don-en-ligne/
+Disallow: /portal_checkouttool/
+Disallow: /Members/
+Request-rate: 1/10
+Crawl-delay: 10
+Visit-time: 0100-0600
+
+User-agent: Baiduspider
+Disallow: /*?*
+Disallow: /*folder_factories$
+Disallow: /*send_as_pdf*
+Disallow: /*download_as_pdf*
+Disallow: /parametrages/
+Disallow: /newsletter/
+Disallow: /abonnez-vous/
+Disallow: /don-en-ligne/
+Disallow: /portal_checkouttool/
+Disallow: /Members/
+Request-rate: 1/10
+Crawl-delay: 10
+Visit-time: 0100-0400
+
+User-agent: msnbot
+Disallow: /
+
+# Block MJ12bot as it is just noise
+User-agent: MJ12bot
+Disallow: /
+
+# Block Ahrefs
+User-agent: AhrefsBot
+Disallow: /
+
+# Block Sogou
+User-agent: sogou spider
+Disallow: /
+
+# Block SEOkicks
+User-agent: SEOkicks-Robot
+Disallow: /
+
+# SEOkicks
+User-agent: SEOkicks
+Disallow: /
+
+# Dicoveryengine.com
+User-agent: discobot
+Disallow: /
+
+# Blekkobot
+User-agent: Blekkobot
+Disallow: /
+
+# Block BlexBot
+User-agent: BLEXBot
+Disallow: /
+
+# Block SISTRIX
+User-agent: SISTRIX Crawler
+Disallow: /
+
+# Block Uptime robot
+User-agent: UptimeRobot/2.0
+Disallow: /
+
+User-agent: 008
+Disallow: /
+
+# Block Ezooms Robot
+User-agent: Ezooms Robot
+Disallow: /
+
+# Block Perl LWP
+User-agent: Perl LWP
+Disallow: /
+
+# Block netEstate NE Crawler
+User-agent: netEstate NE Crawler
+Disallow: /
+
+# Block WiseGuys Robot
+User-agent: WiseGuys Robot
+Disallow: /
+
+# Block Turnitin Robot
+User-agent: Turnitin Robot
+Disallow: /
+
+# Exabot
+User-agent: Exabot
+Disallow: /
+
+# Yandex
+User-agent: Yandex
+Disallow: /
+
+# Babya Discoverer
+User-Agent: Babya Discoverer
+Disallow: /
+
+
+User-agent: *
+# Directories
+Disallow: /parametrages/
+Disallow: /newsletter/
+Disallow: /abonnez-vous/
+Disallow: /don-en-ligne/
+Disallow: /portal_checkouttool/
+Disallow: /Members/
+# Request-rate: defines pages/seconds to be crawled ratio. 1/20 would be 1 page in every 20 second.
+# Crawl-delay: defines howmany seconds to wait after each succesful crawling.
+# Visit-time: you can define between which hours you want your pages to be crawled. Example usage is: 0100-0330 which means that pages will be indexed between 01:00 AM - 03:30 AM GMT.
+Request-rate: 1/10
+Crawl-delay: 10
+Visit-time: 0100-0500

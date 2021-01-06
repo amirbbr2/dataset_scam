@@ -1,0 +1,170 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+            var WEBCHAT_HOST = 'https://webchat.cam4.com/';
+        var PAYOUT_SERVER = 'https://omnivaults.com/payout';
+        var EPAY_SERVER = 'https://omnivaults.com';
+        var WEB_CDN_LOCATION = 'https://cam4-static.xcdnpro.com/web/v2/app/';
+        var ACTIVE_LANGUAGE = 'en';
+        var LOCALE = 'en';
+        var EWALLET_SERVER = 'https://ewallet.omnivaults.com/cam4';
+        var BASE_URL = '';
+        var INTERCOM_APP_ID = 'xku5pmiv';
+        var ADMIN_APPROVAL_SERVER = 'https://api.cam4.com/admin-approval-tool';
+        var TIPPING_BASE_URL = 'https://tipping.cam4.com';
+        var ANNOUNCEMENTS_SERVER = 'https://api.cam4.com/announcements-api';
+        var EPAY_PLUGIN_LOCATION = 'https://cam4-static.xcdnpro.com/plugin/epay/1.232';
+        var PASSWORD_STRENGTH_INCREASED = 'true';
+        var TRANSLATIONS = {"i18n_zh_CN":"i18n/com.cam4/i18n_zh_CN-7c8c6b94aca53f6bfde745496debc0760eac781d7553472557c6c2a3c0411c88.json","i18n_zh":"i18n/com.cam4/i18n_zh-055e8e38720929d863eb240e13a9a0e22dfb4e56c591a01cbb59fdb9dd88d46f.json","i18n_vlc":"i18n/com.cam4/i18n_vlc-2f9c8e196ff12852684305b2c53a1638dd5b5177aff8593bad409b3651d0cdf2.json","i18n_vi":"i18n/com.cam4/i18n_vi-059895955f90d4494b54ee58a202fbbaf7fa8ce6f858f370e0254ec9911fae8b.json","i18n_ur":"i18n/com.cam4/i18n_ur-d204c205e42165271a382d8a0f783e47d5305af52183b4c828126254961eb8d7.json","i18n_uk":"i18n/com.cam4/i18n_uk-b97fd92c8fd905468146b849abf6f8c03a354347727989b8340c0f8575ecbd78.json","i18n_tr":"i18n/com.cam4/i18n_tr-9eb6d9e19423c698cdfe2adfe51d2f5bd1a37b9cebe71605a76d34e4056d0b6c.json","i18n_tl":"i18n/com.cam4/i18n_tl-b355d045700f4334d27659e6e5cfa7b2809d5b3a95d2bde5c6cb0bb579e52171.json","i18n_th":"i18n/com.cam4/i18n_th-c3aecb329dc4de4078802a633742dc601a3ce2211d9ce8e3894b7f026fa9f56e.json","i18n_te":"i18n/com.cam4/i18n_te-9325187e55ddad78debc2f123c8d629c4df01a54dc31b036ceee68ad8d4a4c34.json","i18n_ta":"i18n/com.cam4/i18n_ta-b294ffb9c5e8ca5335ad33c7e23467c78acc2789bea9db14c5d250fede5bfde7.json","i18n_sv":"i18n/com.cam4/i18n_sv-df6de74fe87822c341b1469fb1a0148e36af92560fbbf684f23f7bf0276e4c65.json","i18n_sr":"i18n/com.cam4/i18n_sr-16ce764e2093446b3970b7b651b7d071e4ee1e2d7dd37830cdb532f46ae82ca4.json","i18n_sl":"i18n/com.cam4/i18n_sl-ab995ec6591a1855199bbe94c730ccffdd3a42bdae697cfbc03b4287b93626d6.json","i18n_sk":"i18n/com.cam4/i18n_sk-345eaf7baa8122b7cde2fc9f6831fef50bf2d7c305205a19edfa4db9b4466e24.json","i18n_ru":"i18n/com.cam4/i18n_ru-07634fe464e1b402ece9c38ed951d89fb93fc975e1123aa34e3868869755a3f6.json","i18n_ro":"i18n/com.cam4/i18n_ro-72a81d92388ac942d12d38e3d45d2375a76583bcd5d2b9fa7b12674e780bc5bb.json","i18n_pt_BR":"i18n/com.cam4/i18n_pt_BR-7056e6d27b2da90f6782271920f6e2f8f04d84351f3196cea2a66497e9f477c0.json","i18n_pt":"i18n/com.cam4/i18n_pt-b6924b806b2f4272cfedba5f1922bec1e24a9e9702f14f340145ce64953732bf.json","i18n_pl":"i18n/com.cam4/i18n_pl-09647327e3a2f56e8d0fb37c1d24c9eddd16ec76e5656eefbf1e3dc8996d0941.json","i18n_pa":"i18n/com.cam4/i18n_pa-ef9c2907ce25e648130e1e2da1f4133f14ecf0f205c1c0a58a3bc8ba2ccdbe16.json","i18n_no":"i18n/com.cam4/i18n_no-d41299fbe246002704ca484ac158befef45e8bc6a446d976944ffc4f02627dea.json","i18n_nl":"i18n/com.cam4/i18n_nl-e3b8c2ab3dfd6c4bbe4ac61bb38428c5cc74245cbbd27f89b08cee7f9a5e02d7.json","i18n_ms":"i18n/com.cam4/i18n_ms-d0d36f5d8509e895cb61b929637dcfce7d51e4586e9719ae746495076e98efe3.json","i18n_mr":"i18n/com.cam4/i18n_mr-c5a7b5dcebbba33ffcbcc67a3d83a121e7ebb512bfc776513276edf394e2d109.json","i18n_mk":"i18n/com.cam4/i18n_mk-405d7152d926cec760f5cc700d20061e1407e5f203c245246c8c56a5bde716ac.json","i18n_lt":"i18n/com.cam4/i18n_lt-0157952fab926a9ef8a3bbdc7e1e4f1ac246f22ebc964e138391b84372d89659.json","i18n_ko":"i18n/com.cam4/i18n_ko-66522adf61b9c60001e64443d016ac4bbbde241d7ebae0fac200b8a2d2449ca2.json","i18n_kn":"i18n/com.cam4/i18n_kn-2b216f85c16383c7c4c49e5839818b669b53207a5348f6713672ef0b63ef7552.json","i18n_ja":"i18n/com.cam4/i18n_ja-dd846145b1b2dc27f70aacf540100b23888533c4be74cb7cccfd815781eb2bd6.json","i18n_iw":"i18n/com.cam4/i18n_iw-03430817d50ded9ad6b34cc84f50ef553b7805393c65ed22be875820f79ab366.json","i18n_it":"i18n/com.cam4/i18n_it-aa05edbee4280c785fbc64ea879cb80110c18ceb1918b13578c1f223855df5b4.json","i18n_in":"i18n/com.cam4/i18n_in-b85cfdc3d7604d0902ce2530661488bb2f7d79e172dba5839114cff7f554e536.json","i18n_id":"i18n/com.cam4/i18n_id-2e6d0fbe521a556008bcaaf9979700cca72eb0b7e36a7ac41cf5e2786546f0f9.json","i18n_hu":"i18n/com.cam4/i18n_hu-a2762819e9b4f7c33b4265a4f9271b39ec74e8accf6246c7c14521f105fc4215.json","i18n_hr":"i18n/com.cam4/i18n_hr-d6a929a85c568366f5246f82913b2b4e89264d0315edf3aa2aa6e35d1bdf8918.json","i18n_hi":"i18n/com.cam4/i18n_hi-eb1e4a7e28eccb1bde4ee987d7258ad9c45db80cb184e40e86255e69dae5d59e.json","i18n_he":"i18n/com.cam4/i18n_he-334bc88209217a2810173926eddd82dea9468b63edce804435f271c6fbdcbe58.json","i18n_fr_CA":"i18n/com.cam4/i18n_fr_CA-c5f8e5cc6980ba3ac6e37162d58ea442857f850a6054dd000bac91226093cd6f.json","i18n_fr":"i18n/com.cam4/i18n_fr-688d6e37b1b7539d47365e3342b3b16573d0898ba0dacb404984258b716b0265.json","i18n_fi":"i18n/com.cam4/i18n_fi-695e26e0f68d2658b9b10c3379ce12e4dd9bda3246b8650db832d9fe6ddedaf2.json","i18n_eu_ES":"i18n/com.cam4/i18n_eu_ES-b416308659622e2f038fe6d72cb639b1f38f11532d6ab39b3b5a90c8dbf62c17.json","i18n_eu":"i18n/com.cam4/i18n_eu-a785ee16d1e0682556d9667f122152953b0200e9915b3242184b83be59304c58.json","i18n_et":"i18n/com.cam4/i18n_et-3ea2fe17490091e1cf5530f19c4e6e1950a5eba30909eeeedebce7fc605250fe.json","i18n_es_ES":"i18n/com.cam4/i18n_es_ES-64dab4edcde295dc19e2aea546bb9afa0d01807b6133cc0b0572835a7f9f4196.json","i18n_es":"i18n/com.cam4/i18n_es-6a5a2ad257d7fa34939eeca4a0d25cabcb88d8633fde8f34a875f77b596355c1.json","i18n_en_GB":"i18n/com.cam4/i18n_en_GB-8c6b41d611aa82c2742792dbf660c5c578fb05309a8f48e99632b4812ad7a7de.json","i18n_el":"i18n/com.cam4/i18n_el-b2e0e10791046976fcd43f690553d0196343a464e4df7da679f2a879acd0c3ed.json","i18n_de":"i18n/com.cam4/i18n_de-ef85cb1cb8c86b529c9a90d5ad631a7fdda9be591cfbca2f2f79b6aa5aba9631.json","i18n_da":"i18n/com.cam4/i18n_da-55224bcc137de0d087c8a7d29788ed678352a53b04354424b5079e1066a41200.json","i18n_cs":"i18n/com.cam4/i18n_cs-1d8edc0bfeb6b62fd1ec037cba0289a2997f19b90715a4c1f84d9e3312703859.json","i18n_ca_ES":"i18n/com.cam4/i18n_ca_ES-19dcf73d76ec60f0e3be96b471a8f74c61fba9780737f6c6293102c4a9bc9f06.json","i18n_ca":"i18n/com.cam4/i18n_ca-9ae9653198943fcaaab9f0f2c8d1dd91706368080548a0ccd5d751f89d9ed5a3.json","i18n_bundles":"i18n/com.cam4/i18n_bundles-c5a7b5dcebbba33ffcbcc67a3d83a121e7ebb512bfc776513276edf394e2d109.json","i18n_bn":"i18n/com.cam4/i18n_bn-74fac3f9fd1b26d9f5e370fcc6da0260b375666dd04a40c2bc4768086e2c085a.json","i18n_bg":"i18n/com.cam4/i18n_bg-87a37d10926fca68f0fc299d539cea13b976d02ab73eb780bb0ed2eed8cee7e6.json","i18n_ar":"i18n/com.cam4/i18n_ar-ab03efffcec939d488a5630723fcddafa7b21cbd4a2b4749b5aed48b4d7f1782.json","i18n":"i18n/com.cam4/i18n-c5a7b5dcebbba33ffcbcc67a3d83a121e7ebb512bfc776513276edf394e2d109.json"};
+        var IS_BOT = false;
+        var dataLayer = [];
+        var BOOSTED_ROOM_PRICE_TOKENS = 25;
+        var BOOSTED_ROOM_DURATION_MINUTES = 5;
+        var BOOSTED_ROOM_EXTENDED_DURATION_MINUTES = 25;
+        var BOOSTED_ROOM_VIEWER_THRESHOLD = 10;
+        var STREAMING_API_BASE_URL = 'https://api.cam4.com/streaming';
+
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P5TFR9Z');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="" />
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="CAM4">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <title>CAM4</title>
+    <meta name="description" content="" />
+    <link rel="canonical" href="index.html">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+        <link rel="stylesheet" href="https://cam4-static.xcdnpro.com/web/v2/app/css/vendors~application.app-c664d2a6292dcdc5e210.css" media="screen,projection" type="text/css"/>
+<script type='text/javascript'>
+    //some default pre init
+    var Countly = Countly || {};
+    Countly.q = Countly.q || [];
+
+    //provide countly initialization parameters
+    Countly.app_key = '54eca6b5bcce9d29f011c8050b01d85041e87ca0';
+    Countly.url = 'https://countly.stackvaults.com';
+    Countly.remote_config = true;
+
+        Countly.q.push(['track_sessions']);
+        Countly.q.push(['track_pageview']);
+
+
+
+    //load countly script asynchronously
+    (function() {
+        var cly = document.createElement('script'); cly.type = 'text/javascript';
+        cly.async = true;
+        //enter url of script here
+        cly.src = 'https://countly.stackvaults.com/sdk/web/countly.min.js';
+        cly.onload = function(){Countly.init()};
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+    })();
+
+    function snowplowReplacement() {
+        // ionut_p
+        try {
+            if (typeof Cam4Event !== 'undefined') {
+                Cam4Event.dispatch(Cam4Event.ANALYTICS_EVENT, arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5]);
+            } else {
+                console.log('snowplowReplacement', arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5]);
+            }
+        } catch (e) {
+            console.log('error in snowplowReplacement', e);
+        }
+    }
+    window.snowplow = window.snowplow || snowplowReplacement;
+</script>
+
+    <script type='text/javascript'>
+        //load Cam4Analytics V2 script asynchronously
+        (function() {
+            var c4a = document.createElement('script');
+            c4a.type = 'text/javascript';
+            c4a.async = true;
+            c4a.src = 'https://dumpster.cam4.com/v2/directory.js';
+            c4a.onload = function(){
+                (typeof Cam4Analytics2 !== 'undefined') && Cam4Analytics2.init && Cam4Analytics2.init()
+            };
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(c4a, s);
+        })();
+    </script>
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5TFR9Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <noscript><img src='https://countly.stackvaults.com/pixel.png?app_key=54eca6b5bcce9d29f011c8050b01d85041e87ca0&begin_session=1'/></noscript>
+        <link rel="alternate" hreflang="x-default" href="index.html" />
+        <link rel="alternate" hreflang="ar" href="https://ar.cam4.com" />
+        <link rel="alternate" hreflang="eu" href="https://eu.cam4.com" />
+        <link rel="alternate" hreflang="bg" href="https://bg.cam4.com" />
+        <link rel="alternate" hreflang="ca" href="https://ca.cam4.com" />
+        <link rel="alternate" hreflang="zh" href="https://zh.cam4.com" />
+        <link rel="alternate" hreflang="hr" href="https://hr.cam4.com" />
+        <link rel="alternate" hreflang="cs" href="https://cs.cam4.com" />
+        <link rel="alternate" hreflang="da" href="https://da.cam4.com" />
+        <link rel="alternate" hreflang="nl" href="https://nl.cam4.com" />
+        <link rel="alternate" hreflang="en" href="index.html" />
+        <link rel="alternate" hreflang="et" href="https://et.cam4.com" />
+        <link rel="alternate" hreflang="fi" href="https://fi.cam4.com" />
+        <link rel="alternate" hreflang="fr" href="https://www.cam4.fr" />
+        <link rel="alternate" hreflang="de" href="https://www.cam4.de.com" />
+        <link rel="alternate" hreflang="el" href="https://el.cam4.com" />
+        <link rel="alternate" hreflang="he" href="https://he.cam4.com" />
+        <link rel="alternate" hreflang="hi" href="https://hi.cam4.com" />
+        <link rel="alternate" hreflang="hu" href="https://hu.cam4.com" />
+        <link rel="alternate" hreflang="id" href="https://id.cam4.com" />
+        <link rel="alternate" hreflang="it" href="https://it.cam4.com" />
+        <link rel="alternate" hreflang="ja" href="https://ja.cam4.com" />
+        <link rel="alternate" hreflang="kn" href="https://kn.cam4.com" />
+        <link rel="alternate" hreflang="ko" href="https://ko.cam4.com" />
+        <link rel="alternate" hreflang="lt" href="https://lt.cam4.com" />
+        <link rel="alternate" hreflang="mk" href="https://mk.cam4.com" />
+        <link rel="alternate" hreflang="ms" href="https://ms.cam4.com" />
+        <link rel="alternate" hreflang="no" href="https://no.cam4.com" />
+        <link rel="alternate" hreflang="pl" href="https://pl.cam4.com" />
+        <link rel="alternate" hreflang="pt" href="https://pt.cam4.com" />
+        <link rel="alternate" hreflang="ro" href="https://ro.cam4.com" />
+        <link rel="alternate" hreflang="ru" href="https://ru.cam4.com" />
+        <link rel="alternate" hreflang="sr" href="https://sr.cam4.com" />
+        <link rel="alternate" hreflang="sk" href="https://sk.cam4.com" />
+        <link rel="alternate" hreflang="sl" href="https://sl.cam4.com" />
+        <link rel="alternate" hreflang="es" href="https://es.cam4.com" />
+        <link rel="alternate" hreflang="sv" href="https://sv.cam4.com" />
+        <link rel="alternate" hreflang="tl" href="https://tl.cam4.com" />
+        <link rel="alternate" hreflang="ta" href="https://ta.cam4.com" />
+        <link rel="alternate" hreflang="te" href="https://te.cam4.com" />
+        <link rel="alternate" hreflang="th" href="https://th.cam4.com" />
+        <link rel="alternate" hreflang="tr" href="https://tr.cam4.com" />
+        <link rel="alternate" hreflang="uk" href="https://uk.cam4.com" />
+        <link rel="alternate" hreflang="ur" href="https://ur.cam4.com" />
+        <link rel="alternate" hreflang="vi" href="https://vi.cam4.com" />
+        <link rel="alternate" hreflang="es-ES" href="https://www.cam4.es" />
+
+<div id="app"></div>
+
+    <script type="text/javascript" src="https://cam4-static.xcdnpro.com/web/v2/app/js/vendors~application-1ce41b5e689ca74e500d.js"></script>
+    <script type="text/javascript" src="https://cam4-static.xcdnpro.com/web/v2/app/js/runtime-8d8a5b01613514b48e27.js"></script>
+    <script type="text/javascript" src="https://cam4-static.xcdnpro.com/web/v2/app/js/application-ee8babcf567a6c17da47.js"></script>
+</body>
+</html>

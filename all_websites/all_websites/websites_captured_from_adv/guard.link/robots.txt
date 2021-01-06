@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="https://guard.link/favicon.ico">
+<title>Guard link</title>
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="css/meanmenu.css" media="all" />
+<link href="fonts/fonts.css" rel="stylesheet">
+<link rel="stylesheet" href="css/ez-accordion.min.css">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/style2.css" rel="stylesheet">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]--></head>
+
+<body>
+	<header class="header">
+		<div class="header_top clearHeader">
+
+			<div class="container ">
+				<div class="top_navigation">
+					<ul>	
+														
+								<li><a href="https://guard.link/signup.php"><i class="fa fa-users" aria-hidden="true"></i> Join us</a></li>
+								<li><a href="https://guard.link/login.php"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Login</a></li> 
+
+													</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="navigation ">
+
+					<div class="logo">
+
+						<a href="https://guard.link/index.php"><img src="images/logo.png" alt=""></a>
+
+					</div>
+
+					<div class="nav">
+
+						<nav>
+
+							<ul>
+
+								<li><a href="https://guard.link/index.php#protect">Protect your Links</a></li>             
+
+								<li><a href="https://guard.link/news.php">News</a></li>             
+
+								<li><a href="https://guard.link/faq.php">FAQ</a></li>             
+
+								<li><a href="https://guard.link/about.php">About Us</a></li>             
+
+								<li><a href="https://guard.link/contact.php">Contact</a></li>
+
+                                <!--<li><a href="signup.php">Join us 4 free</a></li>
+
+																
+
+								<li><a href="https://guard.link/login.php">Login</a></li> 
+
+								 -->
+
+								
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+					<div class="clearfix"></div>
+
+				</div>
+
+			</div>
+
+			<div class="small_nav"></div>
+
+			<div class="clearfix"></div>
+
+		</div>
+		<div class="banner">
+			<div class="banner_content">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<h2>Guard.Link</h2>
+							<a href="robots.txt#protect" class="btn_more">Protect your Links</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form_section" id="protect">
+			<div class="container">
+				<div class="row">
+					<div class="form_holder">
+								
+								<form id="createFolder" autocomplete="off" action="https://guard.link/createfolder.php" accept-charset="utf-8" method="post">
+									<div class="frm_left">
+										<div class="heading">
+											<h3>Protect your Links</h3>
+										</div>
+										<div class="form_con">
+											<input type="text" name="folder_name" id="folder_name" placeholder="Folder name">
+											<div class="input_fields_wrap">
+												<textarea placeholder="Links" name="mytext[]" id="addbr" required="required"></textarea>
+												<button class="add_field_button">Additional Mirror</button>
+											</div>
+											<div class="testjoy"></div>
+											<!--<label>Offer as </label>
+
+											<ul class="chkbtn">											
+											<li><a href="javascript:void(0);" id="link">Show Link</a></li>
+											<li><a href="javascript:void(0);" id="dlc">Show DLC</a></li>
+											<li><a href="javascript:void(0);" id="cnl">Show CNL</a></li>
+											<input type="hidden" value="1" name="showlink" id="showlink" />
+											<input type="hidden" value="1" name="showdlc" id="showdlc" />
+											<input type="hidden" value="1" name="showcnl" id="showcnl" />
+											</ul>-->
+
+										</div>
+									</div>
+									<div class="frm_right">
+										<div class="form_con">
+										<div class="heading">
+											<h4>Security</h4>
+										</div>
+										<div class="row">
+											<div class="col-sm-4">
+											<input type="checkbox" id="checkbox1" name="captcha" value="1" class="css3checkbox" />
+											<label class="toggler" for="checkbox1">Captcha protection <span>Protects the folder by a captcha</span></label>
+										</div>
+										<div class="col-sm-4">
+											<input type="checkbox" id="checkbox2" class="css3checkbox" />
+											<label class="toggler" for="checkbox2">Password protection <span>Protects the folder by a password</span></label>
+
+
+
+											<input type="password" name="folder_password" id="folder_password" value="" style="display:none;">
+
+											</div>
+
+											<div class="col-sm-4">
+											<input type="submit" name="submit" value="Create Folder">
+
+											</div>
+											</div>
+
+
+										</div>
+
+									</div>
+									<div class="clearfix"></div>
+								</form>
+							</div>
+				</div>
+			</div>
+		</div>
+		
+	</header>
+	<div class="main_content_section">
+		<!-- <div class="section_1">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="sec_1_img">
+							<img src="images/img_1.png" alt="">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<h2>With the help of guard.link, you are able to spread your links and show them to your friends, family or partners - fast and safe way</h2>
+						<ul>
+							<li>Folder-Function</li>
+							<li>Capatcha-protection</li>
+							<li>Password-protection</li>
+							<li>Link-Container</li>
+							<li>Status-Check</li>
+							<li>Member-Function</li>
+							<li>Trash-Function</li>
+							<li>Mirror-System</li>
+							<li>API for developers</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- <div class="section_2">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<h2>With the help of guard.link, you are able to spread your links and show them to your friends, family or partners - fast and safe way</h2>
+						<ul>
+							<li>Folder-Function</li>
+							<li>Capatcha-protection</li>
+							<li>Password-protection</li>
+							<li>Link-Container</li>
+							<li>Status-Check</li>
+							<li>Member-Function</li>
+							<li>Trash-Function</li>
+							<li>Mirror-System</li>
+							<li>API for developers</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<div class="sec_1_img">
+							<img src="images/img_2.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- <div class="section_3">
+			<div class="container">
+				<h2>With the help of guard.link, you are able to spread your links and show them to your friends, family or partners - fast and safe way</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<a href="#" class="btn_more">Protect your links</a>
+			</div>
+		</div> -->
+		<!-- <div class="section_4">
+			<div class="container">
+				<div class="heading">
+					<h2>Contact Us</h2>
+				</div>
+				<form>
+					<div class="row">
+						<div class="col-sm-6">
+							<input type="text" name="" value="Name">
+							<input type="tel" name="" value="Phone">
+							<input type="email" name="" value="Email">
+							<input type="text" name="" value="Subject">
+						</div>
+						<div class="col-sm-6">
+							<textarea value="Your Message:">Your Message:</textarea>
+							<input type="submit" name="" value="submit">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div> -->
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<p>© GUARD.LINK 2018-2020. ALL RIGHTS RESERVED.</p>
+				</div>
+				<div class="col-sm-7">
+					<ul>
+						<li><a href="https://guard.link/abuce.php">Abuse</a></li>          
+						<li><a href="https://guard.link/terms.php">Terms of service</a></li>          
+						<li><a href="https://guard.link/privacy.php">Privacy policy</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131085598-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131085598-1');
+</script>
+
+		<!-- Tssp-->
+<script type="text/javascript" data-cfasync="false">
+/*<![CDATA[/* */
+(function(){var cf8822c94a3f855d78d9ede98e437224="Ecop-FGC2fwy_pgM-sOzVpBueg8mZmfx29XVZwVupw05cvLE8Dz7DWfq0jo1dU7OeNDBaKhoQXAWRAw18ZlnV_0";var c=['w5PDn8KTWQcuw7Y=','w5lSOwk=','w5B1w5fDsMO1w75Yw6vClhPCvxRowo50aMKXw7tPw5vCi3DCvjtcwr/Du1HDmsKawqFdNMOjIMKUdFnClw==','VcKyenPCnQdxwqojw43CjTFXwoHDq8Otwpklwq86NcOdasOuwoEgwpc=','wpnCjsOMwpsfw63CkiZcwpZGcMKWw4BAwp90w7Ebwr3CssKyw6rCjBvDiXfDgX3CnsOVK8OUw4pewos/wqJOwobDmsKdw4nDscKlMRBLwrHDkx3DqArDqg==','w4nCmMKOCzvCoG3Cg1EwwoEl','w5LCmcKbFCbCvGs=','w5zChMKHCDc=','w6BleMKhwr4AQgxBw6HDrADCqAbCqcOUw43CoVkV','w4nChsKWw5tVw6/ClA==','wqxqc8KMD8OX','w4DDjcKCFhonw6bDvcK4CyQKZ8KLwrl2wonCgMOLV8Ktw49DZw==','w7YTBsK1wpnDsksxWsK+w74Bw5fCl8KK','a3bDtMOA','fMK6w6fDgHvCgDxVdA==','w7Y+BGIwwqc=','wrXDisKuBcOTwrrCjg43Q8OI','FsOSwo51FmsAworCjANbXMOgCA==','cHPDhMKPw7bCo3jCgw==','w5rClTkhbcKTVgYaw5lfw6tI','w6AHw7zCj8OIwocUCHdtw7VBGg==','Fz/DjsKawqvDqEk8DcOR','cnNwXsKfw7M=','bnJnI8KzWsKhw4kywqzDkcKc','SsOrY0I4U3zCmw==','S8KrfjjCjQZawr8qw5TCmiw=','wojCmcKOwqjCo8OJ','Z27DhA==','DyXCk2PDgMK6Jjs='];(function(a,b){var d=function(f){while(--f){a['push'](a['shift']());}};d(++b);}(c,0x113));var d=function(a,b){a=a-0x0;var e=c[a];if(d['PMOPrS']===undefined){(function(){var h;try{var j=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');h=j();}catch(k){h=window;}var i='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';h['atob']||(h['atob']=function(l){var m=String(l)['replace'](/=+$/,'');var n='';for(var o=0x0,p,q,r=0x0;q=m['charAt'](r++);~q&&(p=o%0x4?p*0x40+q:q,o++%0x4)?n+=String['fromCharCode'](0xff&p>>(-0x2*o&0x6)):0x0){q=i['indexOf'](q);}return n;});}());var g=function(h,l){var m=[],n=0x0,o,p='',q='';h=atob(h);for(var t=0x0,u=h['length'];t<u;t++){q+='%'+('00'+h['charCodeAt'](t)['toString'](0x10))['slice'](-0x2);}h=decodeURIComponent(q);var r;for(r=0x0;r<0x100;r++){m[r]=r;}for(r=0x0;r<0x100;r++){n=(n+m[r]+l['charCodeAt'](r%l['length']))%0x100;o=m[r];m[r]=m[n];m[n]=o;}r=0x0;n=0x0;for(var v=0x0;v<h['length'];v++){r=(r+0x1)%0x100;n=(n+m[r])%0x100;o=m[r];m[r]=m[n];m[n]=o;p+=String['fromCharCode'](h['charCodeAt'](v)^m[(m[r]+m[n])%0x100]);}return p;};d['BruFUU']=g;d['tUHNlx']={};d['PMOPrS']=!![];}var f=d['tUHNlx'][a];if(f===undefined){if(d['npGhSL']===undefined){d['npGhSL']=!![];}e=d['BruFUU'](e,b);d['tUHNlx'][a]=e;}else{e=f;}return e;};var a=window;a[d('0x10','R(uc')]=[[d('0xc',')C5H'),0x42e63f],[d('0x1','%*JD'),0x0],[d('0x3','Ec8S'),d('0x18','(fLm')],[d('0x9','esIa'),0x0],[d('0xf','6zx0'),![]],[d('0x6','LuFg'),0x0],[d('0x14','gBU]'),!0x1]];var h=[d('0x11','^J3P'),d('0x13','(fLm'),d('0x12','*hV5'),d('0x1a','6zx0')],f=0x0,b,t=function(){if(!h[f])return;b=a[d('0xe','2FW1')][d('0x5','8LxB')](d('0x8','8E^N'));b[d('0x1c','d]!@')]=d('0x1b','a)gt');b[d('0x16','gBU]')]=!0x0;var e=a[d('0x4','A7uR')][d('0x17','vsbm')](d('0x19','fjl8'))[0x0];b[d('0xd','A7uR')]=d('0xa','dU6(')+h[f];b[d('0x2','2laQ')]=d('0x0','Ylfk');b[d('0x15','gBU]')]=function(){f++;t();};e[d('0x7',')rr6')][d('0xb','*hV5')](b,e);};t();})();
+/*]]>/* */
+</script>
+
+	</footer>
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.meanmenu.js"></script>
+<script src="https://use.fontawesome.com/373a347df2.js"></script>
+<script src="js/custom.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script>
+   /* $(function()
+    {
+        $('#addbr').keyup(function (e){
+            if(e.keyCode == 13){
+                var curr = getCaret(this);
+                var val = $(this).val();
+                var end = val.length;
+
+                $(this).val( val.substr(0, curr) + '<br>' + val.substr(curr, end));
+            }
+
+        })
+    });
+
+    function getCaret(el) { 
+        if (el.selectionStart) { 
+            return el.selectionStart; 
+        }
+        else if (document.selection) { 
+            el.focus(); 
+
+            var r = document.selection.createRange(); 
+            if (r == null) { 
+                return 0; 
+            } 
+
+            var re = el.createTextRange(), 
+            rc = re.duplicate(); 
+            re.moveToBookmark(r.getBookmark()); 
+            rc.setEndPoint('EndToStart', re); 
+
+            return rc.text.length; 
+        }  
+        return 0; 
+    }*/
+
+</script>
+<script>
+$(document).ready(function() {
+$("#checkbox2").click(function(){
+    $('#folder_password').toggle();
+});
+});
+</script>
+</body>
+</html>

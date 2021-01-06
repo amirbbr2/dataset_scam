@@ -1,0 +1,265 @@
+﻿var AjaxCart = {
+    loadWaiting: false,
+    usepopupnotifications: false,
+    topcartselector: '.cart-qty',
+    topwishlistselector: '.header-links .wishlist-qty',
+    flyoutcartselector: '#flyout-cart',
+    actiontype:"",
+    init: function (usepopupnotifications, topcartselector, topwishlistselector, flyoutcartselector) {
+        this.loadWaiting = false;
+        this.usepopupnotifications = usepopupnotifications;
+        this.topcartselector = topcartselector;
+        this.topwishlistselector = topwishlistselector;
+        this.flyoutcartselector = flyoutcartselector;
+    },
+
+    setLoadWaiting: function (display) {
+        displayAjaxLoading(display);
+        this.loadWaiting = display;
+    },
+
+    //add a product to the cart/wishlist from the catalog pages
+    addproducttocart_catalog: function (urladd, _actiontype = '') {
+       
+        if (this.loadWaiting !== false) {
+            return;
+        }
+        this.setLoadWaiting(true);
+        this.actiontype = _actiontype;
+     
+        $.ajax({
+            cache: false,
+            url: urladd,
+            type: 'post',
+            success: this.success_process,
+            complete: this.resetLoadWaiting,
+            error: this.ajaxFailure
+        });
+    },
+
+    //add a product to the cart/wishlist from the product details page
+    addproducttocart_details: function (urladd, formselector, _actiontype = '') {
+
+        if (this.loadWaiting !== false) {
+            return;
+        }
+        this.setLoadWaiting(true);
+        this.actiontype = _actiontype;
+        $.ajax({
+            cache: false,
+            url: urladd,
+            data: $(formselector).serialize(),
+            type: 'post',
+            success: this.success_process,
+            complete: this.resetLoadWaiting,
+            error: this.ajaxFailure
+        });
+    },
+
+    //add a product to the cart/wishlist from the product details page
+    updateproductcart_details: function (_removeid) {
+        if (this.loadWaiting != false) {
+            return;
+        }
+        this.setLoadWaiting(true);
+
+        $.ajax({
+            cache: false,
+            url: '/ExtraAbilityShoppingCart/UpdateFlyoutShoppingCart',
+            data: {
+                removeid: _removeid,
+            },
+            type: 'post',
+            success: this.success_process,
+            complete: this.resetLoadWaiting,
+            error: this.ajaxFailure
+        });
+    },
+
+    //add a product to compare list
+    addproducttocomparelist: function (urladd) {
+     
+        if (this.loadWaiting != false) {
+            return;
+        }
+        this.setLoadWaiting(true);
+
+        $.ajax({
+            cache: false,
+            url: urladd,
+            type: 'post',
+            success: this.success_process,
+            complete: this.resetLoadWaiting,
+            error: this.ajaxFailure
+        });
+    },
+
+
+    //productdetails_attributechange
+    productdetails_attributechange: function (urladd, formselector) {
+        if (this.loadWaiting != false) {
+            return;
+        }
+        this.setLoadWaiting(true);
+
+        $.ajax({
+            cache: false,
+            url: urladd,
+            data: $(formselector).serialize(),
+            type: 'post',
+            success: function(data) {
+                if(data.price) {
+            $('.price-value-@productId').text(data.price);
+        }
+        if (data.sku) {
+            $('#sku-@productId').text(data.sku);
+        }
+        if (data.mpn) {
+            $('#mpn-@productId').text(data.mpn);
+        }
+        if (data.gtin) {
+            $('#gtin-@productId').text(data.gtin);
+        }
+        if (data.stockAvailability) {
+            $('#stock-availability-value-@productId').text(data.stockAvailability);
+        }
+        if (data.enabledattributemappingids) {
+            for (var i = 0; i < data.enabledattributemappingids.length; i++) {
+                $('#product_attribute_label_' + data.enabledattributemappingids[i]).show();
+                $('#product_attribute_input_' + data.enabledattributemappingids[i]).show();
+            }
+        }
+                if (data.disabledattributemappingids) {
+                   
+            for (var i = 0; i < data.disabledattributemappingids.length; i++) {
+                $('#product_attribute_label_' + data.disabledattributemappingids[i]).hide();
+                $('#product_attribute_input_' + data.disabledattributemappingids[i]).hide();
+            }
+        }
+        if (data.pictureDefaultSizeUrl) {
+            $('#main-product-img-@productId').attr("src", data.pictureDefaultSizeUrl);
+        }
+        if (data.pictureFullSizeUrl) {
+            $('#main-product-img-lightbox-anchor-@productId').attr("href", data.pictureFullSizeUrl);
+        }
+
+        $.event.trigger({ type: "product_attributes_changed", changedData: data });
+            },
+            complete: this.resetLoadWaiting,
+            error: this.ajaxFailure
+        });
+    },
+   
+    success_process: function (response) {
+    
+        if (response.updatetopcartsectionhtml) {
+            
+            $(AjaxCart.topcartselector).html(response.updatetopcartsectionhtml);
+
+        }
+        if (response.updatetopwishlistsectionhtml) {
+            $(AjaxCart.topwishlistselector).html(response.updatetopwishlistsectionhtml);
+        }
+        if (response.updateflyoutcartsectionhtml) {
+            $(AjaxCart.flyoutcartselector).replaceWith(response.updateflyoutcartsectionhtml);
+        }
+
+        if (response.message) {
+            
+            //display notification
+            if (response.success === true) {
+                //success
+                
+                if (AjaxCart.usepopupnotifications === true) {
+                    displayBarNotification(response.message, 'success', null, null, true);
+                }
+                else {
+                    //specify timeout for success messages
+                    displayBarNotification(response.message, 'error', null, null, 3500);
+                }
+            }
+            else {
+                //error
+                if (AjaxCart.usepopupnotifications === true) {
+                    displayBarNotification(response.message, 'error', null, null, true);
+                }
+                else {
+                    //no timeout for errors
+                    displayBarNotification(response.message, 'error', null, null, 1);
+                }
+            }
+            return false;
+        }
+        if (response.redirect) {
+            location.href = response.redirect;
+            return true;
+        }
+        return false;
+    },
+
+    resetLoadWaiting: function () {
+        AjaxCart.setLoadWaiting(false);
+    },
+
+    ajaxFailure: function () {
+        alert('Failed to add the product. Please refresh the page and try one more time.');
+    }
+};
+function showAddToCartModal(productname, productimageurl, productdetailurl, qnt, sum, shoppingCartItemscount, shoppingCartItemssum) {
+    var html = '<div class="modal  fade" id="modalAddToCartProduct" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true">';
+        html += ' <div class="modal-dialog">';
+        html += ' <div class="modal-content ">';
+        html += ' <div class="modal-header">';
+        html += ' <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon icon-clear"></span></button>';
+        html += ' </div>';
+        html += ' <div class="modal-body">';
+        html += ' <div class="tt-modal-addtocart mobile">';
+        html += ' <div class="tt-modal-messages">';
+        html += ' <i class="icon-f-68"></i>' + addedtocartsuccessfully;
+        html += ' </div>';
+        html += ' <a href="/" class="btn-link btn-close-popup">' + continueshopping + '</a>';
+        html += ' <a href="/cart" class="btn-link">' + viewcart + '</a>';
+        html += ' </div>';
+        html += ' <div class="tt-modal-addtocart desctope">';
+        html += '  <div class="row">';
+        html += '  <div class="col-12 col-lg-6">';
+        html += ' <div class="tt-modal-messages">';
+        html += ' <i class="icon-f-68"></i>' + addedtocartsuccessfully ;
+        html += ' </div>';
+        html += ' <div class="tt-modal-product">';
+        html += ' <div class="tt-img">';
+        html += ' <img src="' + productimageurl+'" data-src="' + productimageurl + '" alt=\"\" />';
+        html += ' </div>';
+        html += ' <h2 class="tt-title"><a href="' + productdetailurl + '">' + productname + '</a></h2>';
+        html += ' <div class="tt-qty">' + quantity + ': <span>' + qnt + '</span>';
+        html += ' </div>';
+        html += ' </div> ';
+        html += ' <div class="tt-product-total">';
+        html += ' <div class="tt-total">';
+        html +=   price + ' : <span class="tt-price">' + sum + '</span>';
+        html += ' </div>';
+        html += ' </div>';
+        html += ' </div>';
+        html += ' <div class="col-12 col-lg-6">';
+        html += ' <a href="#" class="tt-cart-total">' +" "+inYourCart+" "+ shoppingCartItemscount +" آیتم وجود دارد. ";
+        html += '  <div class="tt-total">';
+        html += total + ' : <span class="tt-price">' + shoppingCartItemssum + '</span>';
+        html += ' </div>';
+        html += ' </a>';
+        html += '  <a href="#" class="btn btn-border btn-close-popup" onclick="hideModal()" >' + continueshopping + '</a>';
+        html += '  <a href="/cart" class="btn btn-border">' + viewcart + '</a>';
+        html += ' </div>';
+        html += ' </div>';
+        html += ' </div>';
+        html += ' </div>';
+        html += ' </div>';
+        html += ' </div>';
+        html += ' </div>';
+        
+    $("#AddToCartModalContainer").html(html);
+    $("#modalAddToCartProduct").modal('toggle');
+}
+
+function hideModal() {
+    $("#modalAddToCartProduct").modal('hide');
+}

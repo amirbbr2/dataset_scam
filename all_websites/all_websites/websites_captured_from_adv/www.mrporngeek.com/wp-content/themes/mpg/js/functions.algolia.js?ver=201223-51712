@@ -1,0 +1,96 @@
+const searchClient=algoliasearch("AYVGZ1CV41","63e2f1094f410bbc494fd3660328fab4");var algo_index_sites=searchClient.initIndex('wp_posts_sites');var algo_index_categories=searchClient.initIndex('wp_terms_category');var algo_index_blogs=searchClient.initIndex('wp_posts_blog');let searchLang='en';let searchedSites=[];let searchedBlogs=[];let searchedCategories=[];let searchResultsPanel;let searchResultsSites;let searchResultsCategory;let searchResultCount;let searchPaginationContainer;let searchPage=0;let searchPageCount=0;let searchTotalPageCount=0;let searchPageMax=5;let searchTerm='';let lastQuery='';let currentSearchIndex=0;let lastQuerySiteId='';let lastQueryCateogryId='';let lastQueryBlogId='';window._userToken='';if(window.onload){window.onload=window.onload.extend(startAlgo);}else{window.onload=startAlgo();}
+function startAlgo(){window.aa('getUserToken',null,(err,algoliaUserToken)=>{if(err){console.error(err);return;}
+window._userToken=algoliaUserToken;searchClient.setExtraHeader('X-Algolia-UserToken',window._userToken);console.log('Algo user tokn '+window._userToken);});initAlgoliaSearch(null,algo_index_sites,algo_index_categories,algo_index_blogs);}
+function initAlgoliaSearch(vm,algo_index_sites,algo_index_categories,algo_index_blogs){if(document.querySelector('.searchinput')){document.querySelector('.searchinput').onkeyup=function(event){event.target.setAttribute('autocomplete','off');searchTerm=event.target.value;searchCategory(searchLang,vm,algo_index_categories,searchTerm);searchSites(searchLang,algo_index_sites,searchTerm);}}}
+function searchSites(lang,index,term,searchPage,isPaged=false,isBlog=false){searchPage=(typeof searchPage!=='undefined')?parseInt(searchPage):0;searchPage=parseInt(searchPage);searchedBlogs=[];term=term.trim();if(term.trim().length<2){return;}
+var perPage=8;if(window.innerWidth<767){perPage=6;}else if(window.innerWidth<1367&&window.innerWidth>1024){perPage=8;}else if(isMobileOrTablet){perPage=9;}
+index.search(term,{page:searchPage,hitsPerPage:perPage,clickAnalytics:true}).then(function(content,err){currentSearchIndex=+content.page;lastQuerySiteId=content.queryID;searchedSites=content.hits;searchTotalPageCount=content.nbHits;searchPageCount=parseInt(content.nbPages);if(parseFloat(searchTotalPageCount/8)<parseFloat(content.nbPages)){--searchPageCount;}
+if(searchPageCount==125){searchPageCount=124;}
+if((searchTotalPageCount%8)){}
+if(searchPageCount==0){searchPageCount=1;}
+if(searchedSites.length<2){searchBlogs(lang,algo_index_blogs,term,0);return true;}
+renderSearchResults(isPaged,content.query,isBlog);if(term!=undefined&&lastQuery!=term){lastQuery=term;if(searchPageCount>1){if(!isMobileOrTablet|window.innerWidth>768){Pagination.Init(document.querySelector('.search_pagination'),{size:searchPageCount,page:1,step:3,onChange:pageSearchResults});}else{if(document.querySelectorAll('.search_load_more').length==0){document.querySelector('.search_pagination').innerHTML='<div class="category__drop-footer"><a class="category__load search_load_more">Load More</a></div>';}
+if(document.querySelector('.search_load_more')){document.querySelector('.search_load_more').removeEventListener('click',onLoadMore);}
+document.querySelector('.search_load_more').addEventListener('click',onLoadMore,false);}}else{document.querySelector('.search_pagination').innerHTML='';}}});}
+function searchBlogs(lang,index,term,searchPage,isPaged=false,isBlog=false){searchPage=(typeof searchPage!=='undefined')?parseInt(searchPage):0;searchPage=parseInt(searchPage);term=term.trim();if(term.trim().length<2){return;}
+var perPage=8;if(window.innerWidth<767){perPage=6;}else if(isMobileOrTablet){perPage=9;}
+index.search(term,{page:searchPage,hitsPerPage:perPage,clickAnalytics:true}).then(function(content,err){currentSearchIndex=+searchPage;lastQueryBlogId=content.queryID;searchedBlogs=content.hits;searchTotalPageCount=content.nbHits;searchPageCount=parseInt(content.nbPages);if(parseFloat(searchTotalPageCount/8)<parseFloat(content.nbPages)){--searchPageCount;}
+if(searchPageCount==125){searchPageCount=124;}
+if((searchTotalPageCount%8)){}
+if(searchPageCount==0){searchPageCount=1;}
+renderSearchResults(isPaged,content.query,isBlog);if(term!=undefined&&lastQuery!=term){lastQuery=term;if(searchPageCount>1){if(!isMobileOrTablet){Pagination.Init(document.querySelector('.search_pagination'),{size:searchPageCount,page:1,step:3,onChange:pageBlogResults});}else{if(document.querySelectorAll('.search_load_more').length==0){document.querySelector('.search_pagination').innerHTML='<div class="category__drop-footer"><a class="category__load search_load_more">Load More</a></div>';}
+if(document.querySelector('.search_load_more')){document.querySelector('.search_load_more').removeEventListener('click',onLoadMore);}
+document.querySelector('.search_load_more').addEventListener('click',onLoadMore,false);}}else{document.querySelector('.search_pagination').innerHTML='';}}});}
+function onLoadMore(e){e.preventDefault();if(searchPageCount>(+currentSearchIndex+1)){pageMobileSearchResults(++currentSearchIndex);}}
+function searchCategory(lang,vm,index,term){term=term.trim();if(term.trim().length<2){return;}
+index.search(term,{"getRankingInfo":true,"analytics":true,"clickAnalytics":true,"enableABTest":false,"hitsPerPage":10,"attributesToRetrieve":"*","attributesToSnippet":"*:20","snippetEllipsisText":"…","responseFields":"*","page":0,"facets":["*"]}).then(function(content,err){lastQueryCateogryId=content.queryID;searchedCategories=content.hits;renderSearchResults();});}
+function linkSearchCategory(lang,vm,index,term){if($.trim(term).length<2)
+return;index.search({clickAnalytics:true,query:$.trim(term),}).then(function(content,err){lastQueryCateogryId=content.queryID;var categories=[];if(content.hits.length>0){for(oindex=0;oindex<content.hits.length;oindex++){var title=$.trim(content.hits[oindex].titles['title_'+lang]).length<=0?content.hits[oindex].titles['title_en']:content.hits[oindex].titles['title_'+lang];var slug=content.hits[oindex].slug;if(lang!='en'){slug=lang+'/'+slug;}
+categories.push({title:title,slug:slug,classicon:content.hits[oindex].classicon,styleclass:content.hits[oindex].custom_fields.style_block_class,});}}
+vm.updateCategories(categories);});}
+function renderSearchResults(isPaged=false,query,isBlog=false){let htmlSites=getSearchSiteList();let htmlBlogs=getSearchBlogList();let htmlCategories=getSearchCategoryList();let htmlPagination=getPaginateSearch();if(htmlBlogs!=''){htmlSites=htmlBlogs;}
+if(!searchResultsPanel){let search='<div class="search_results">';if(isMobileOrTablet){search+='<div class="search_results_top"><div class="top_results">Results (<span>'+searchTotalPageCount+'</span>)</div><div class="search_results_tags">'+htmlCategories+'</div></div>';}else{search+='<div class="search_results_top"><div class="top_results">Top Results (<span>'+searchTotalPageCount+'</span>)</div><div class="search_results_tags">'+htmlCategories+'</div></div>';}
+search+='<div class="search_result_box">';search+='<div class="search_results_sites">'+htmlSites+'</div>';search+='<div class="search_pagination"></div>';search+='</div>';search+='</div>';if(isMobileOrTablet&&window.innerWidth<769){searchResultsPanel=document.querySelector('[search-drop-mobile-js]');}else{searchResultsPanel=document.querySelector('[search-drop-desktop-js]');}
+searchResultsPanel.innerHTML=search;searchResultsCategory=document.querySelector('.search_results_tags');searchResultsSites=document.querySelector('.search_results_sites');searchResultCount=document.querySelector('.top_results span');searchPaginationContainer=document.querySelector('.search_pagination');}else{show(searchResultsPanel);if(!searchResultsCategory){searchResultsCategory=document.querySelector('.search_results_tags');}
+if(!searchResultsSites){searchResultsSites=document.querySelector('.search_results_sites');}
+if(!searchResultCount){searchResultCount=document.querySelector('.top_results span');}
+if(!searchPaginationContainer){searchPaginationContainer=document.querySelector('.search_pagination');}
+searchResultCount.innerHTML=''+searchTotalPageCount;searchResultsCategory.innerHTML=htmlCategories;if(isPaged){if(isMobileOrTablet&&window.innerWidth<769){searchResultsSites.insertAdjacentHTML('beforeend',htmlSites);var searchResultBox=document.querySelector('.search_result_box');}else{searchResultsSites.innerHTML=htmlSites;}}else{searchResultsSites.innerHTML=htmlSites;}}
+initSearchCategoryScroll();initSearchItemTouch();}
+function pageSearchResults(searchPage){let _sp=searchPage-1;if(_sp<0){_sp=0;}
+searchSites(searchLang,algo_index_sites,searchTerm,_sp,true);}
+function pageMobileSearchResults(searchPage){let _sp=searchPage;searchSites(searchLang,algo_index_sites,searchTerm,_sp,true);}
+function pageBlogResults(searchPage){searchPage--;if(searchPage<0){searchPage=0;}
+searchBlogs(searchLang,algo_index_blogs,searchTerm,searchPage,true);}
+function initSearchPagination(){searchPaginationContainer.onclick=function(e){if(e.target.tagName=='A'){if(!isNaN(e.target.dataset.page)){searchPage=e.target.dataset.page;searchSites(searchLang,algo_index_sites,searchTerm,searchPage,true);}}}}
+function getSearchCategoryList(){let categoryList="";let position=0;searchedCategories.map(category=>{let catLogoHtml='';if(homeData){if(homeData.categories[category.term_id]){let catLogo=homeData.categories[category.term_id].logo.url;catLogoHtml='<img src="'+catLogo+'"/>';}}
+position++;categoryList+='<a class="search_category_item iconCat icPost'+category.term_id+' search-category-convert" data-object-id="'+category.objectID+'" data-position="'+position+'" href="'+category.permalink+'">'+catLogoHtml+category.name+'</a>';});let siteCategories=[];if(searchedCategories.length==0){searchedSites.map(site=>{if(site.category_data){let siteCat=site.category_data[0];if(siteCat){if(!siteCategories.includes(siteCat.id)){siteCategories.push(siteCat.id);position++;categoryList+='<a class="search_category_item iconCat icPost'+siteCat.id+' " href="'+siteCat.link+'">'+siteCat.name+'</a>';}}}});}
+return categoryList;}
+function getSearchSiteList(){let siteList="";let position=0;searchedSites.map(site=>{let siteTag='';let siteTags=site.taxonomies.category;if(siteTags&&siteTags.length){siteTag=siteTags[0];}
+let siteCategoryLink='';if(site.category_data&&site.category_data.length){siteCategoryLink=site.category_data[0].link;}
+let siteThumb='https://www.mrporngeek.com'+site.thumbnail;let siteUrl=site.site_url;position++;if(isMobileOrTablet&&window.innerWidth<769){siteList+='<div class="search_site_item">'+
+'<div  class="search_site_item_inner">'+
+'<a href="'+site.permalink+'" class="title search-site-convert deIcon fx_'+site.fx+' fy_'+site.fy+'" data-object-id="'+site.objectID+'" data-position="'+position+'">'+
+'<span>'+site.titles.title_en+'</span>'+
+'</a>'+
+'<div class="thumb search_site_thumb"><img src="'+siteThumb+'"/></div>'+
+'<div class="site_category">'+
+'<a href="'+siteCategoryLink+'">'+siteTag+'</a>'+
+'</div>'+
+'</div>'+
+'<div class="search_item_overlay">'+
+'<a href="'+site.permalink+'" class="link_read search-site-convert" data-object-id="'+site.objectID+'" data-position="'+position+'">Read Review <i class="icon-font icon-arrow-angle right_angle"></i></a>'+
+'<a href="'+siteUrl+'" class="link_site" target="_blank">Open Site <i class="icon-font icon-out"></i></a>'+
+'</div>'+
+'</div>';}else{siteList+='<div class="search_site_item">'+
+'<div  class="search_site_item_inner" >'+
+'<a href="'+site.permalink+'" data-object-id="'+site.objectID+'" data-position="'+position+'" class="title search-site-convert deIcon fx_'+site.fx+' fy_'+site.fy+'">'+
+'<span>'+site.titles.title_en+'</span>'+
+'</a>'+
+'<div class="thumb search_site_thumb"><img src="'+siteThumb+'"/></div>'+
+'<div class="site_category">'+
+'<a href="'+siteCategoryLink+'">'+siteTag+'</a>'+
+'</div>'+
+'</div>'+
+'<div class="search_item_overlay">'+
+'<a href="'+site.permalink+'" class="link_read search-site-convert" data-object-id="'+site.objectID+'" data-position="'+position+'">Read Review <i class="icon-font icon-arrow-angle right_angle"></i></a>'+
+'<a href="'+siteUrl+'" class="link_site" target="_blank">Open Site <i class="icon-font icon-out"></i></a>'+
+'</div>'+
+'</div>';}});return siteList;}
+function getSearchBlogList(){let blogList="";let position=0;searchedBlogs.map(blog=>{position++;blogList+='<div class="search_site_item">'+
+'<a href="'+blog.permalink+'" class="search-blog-convert" data-object-id="'+blog.objectID+'" data-position="'+position+'">'+
+'<div class="title deIcon"><span>'+blog.post_title+'</span></div><div class="thumb"><img src="'+blog.thumbnail+'"/></div><div class="site_category">Blog</div>'+
+'</a>'+
+'</div>';});return blogList;}
+function initSearchCategoryScroll(){let isDown=false;let startX;let scrollLeft;searchResultsCategory.addEventListener('mousedown',(e)=>{isDown=true;searchResultsCategory.classList.add('active');startX=e.pageX-searchResultsCategory.offsetLeft;scrollLeft=searchResultsCategory.scrollLeft;});searchResultsCategory.addEventListener('mouseleave',()=>{isDown=false;searchResultsCategory.classList.remove('active');});searchResultsCategory.addEventListener('mouseup',()=>{isDown=false;searchResultsCategory.classList.remove('active');});searchResultsCategory.addEventListener('mousemove',(e)=>{if(!isDown)return;e.preventDefault();const x=e.pageX-searchResultsCategory.offsetLeft;const walk=(x-startX)*3;searchResultsCategory.scrollLeft=scrollLeft-walk;});}
+function getPaginateSearch(){let htmlPage='';searchPage=parseInt(searchPage);if(isMobileOrTablet&&window.innerWidth<769){var nextPage=parseInt(searchPage)+1;htmlPage+='<div class="category__drop-footer">';htmlPage+='<a class="category__load" data-page="'+nextPage+'">Load More</a>';htmlPage+='</div>';}else{if(searchPage>1){htmlPage+='<a class="item prev" data-page="'+(searchPage-1)+'"></a>';}
+var pageStart=(searchPage<3)?0:(searchPage-2);var pageEnd=(searchPage<3)?6:(searchPage+4);if(pageEnd>searchPageCount){pageEnd=searchPageCount;}
+for(let page=pageStart;page<pageEnd;page++){page=parseInt(page);if((searchPage<3&&page<6)||Math.abs(page-searchPage)<3||page==0){let pageLinkClass=(page==searchPage)?'active':'';htmlPage+='<a class="item '+pageLinkClass+'" data-page="'+page+'">'+(page+1)+'</a>';}}
+if(searchPageCount>6|searchPage>0){htmlPage+='<a class="item next" data-page="'+(searchPage+1)+'"></a>';}}
+return htmlPage;}
+function onSearchItemClick(ev){console.log('CLicked search item');if(isMobileOrTablet){let touchedSearchItems=document.querySelectorAll('.search_site_item.touched');touchedSearchItems.forEach((item)=>{item.classList.remove('touched');});ev.classList.add('touched');}}
+document.addEventListener('click',event=>{console.log(event.target);let clickedTarget=event.target;if(clickedTarget.closest('.search_site_item .thumb')){onSearchItemClick(clickedTarget.closest('.search_site_item'));}
+if(clickedTarget.closest('.search-site-convert')){let position=clickedTarget.closest('.search-site-convert').getAttribute('data-position');postAlgoliaEvent({"events":[{"eventType":"click","eventName":"CLICK_SITES","index":"wp_posts_sites","userToken":window._userToken,"queryID":lastQuerySiteId,"objectIDs":[clickedTarget.closest('.search-site-convert').getAttribute('data-object-id')],"positions":[+position]}]})}else if(clickedTarget.closest('.search-category-convert')){postAlgoliaEvent({"events":[{"eventType":"click","eventName":"CLICK_CATEGORY","index":"wp_terms_category","userToken":window._userToken,"queryID":lastQueryCateogryId,"objectIDs":[clickedTarget.closest('.search-category-convert').getAttribute('data-object-id')],"positions":[+clickedTarget.closest('.search-site-convert').getAttribute('data-position')]}]})}else if(clickedTarget.closest('.search-blog-convert')){postAlgoliaEvent({"events":[{"eventType":"click","eventName":"CLICK_CATEGORY","index":"wp_posts_blog","userToken":window._userToken,"queryID":lastQueryBlogId,"objectIDs":[clickedTarget.closest('.search-blog-convert').getAttribute('data-object-id')],"positions":[+clickedTarget.closest('.search-site-convert').getAttribute('data-position')]}]})}});function initSearchItemTouch(){let searchSites=document.querySelectorAll('.search_site_item');for(let i=0,len=searchSites.length;i<len;i++){if(isMobileOrTablet){searchSites[i].removeEventListener('touchstart',onSearchItemEnter);searchSites[i].addEventListener('touchstart',onSearchItemEnter,false);}}}
+function onSearchItemEnter(ev){let touchedSearchItems=document.querySelectorAll('.search_site_item.touched');touchedSearchItems.forEach((item)=>{item.classList.remove('touched');});if(ev.target.closest('.search_site_thumb')){ev.target.closest('.search_site_thumb').parentNode.parentNode.classList.add('touched');}}
+function postAlgoliaEvent(data){postAlgoData('https://insights.algolia.io/1/events',data).then(data=>{console.log(data);});}
+async function postAlgoData(url='',data={}){const response=await fetch(url,{method:'POST',mode:'cors',cache:'no-cache',credentials:'same-origin',headers:{'Content-Type':'application/json','x-algolia-api-key':'c2a31993b71bb9a3ecdddf7a9e581ee9','x-algolia-application-id':'AYVGZ1CV41',},redirect:'follow',referrerPolicy:'no-referrer',body:JSON.stringify(data)});return response.json();}

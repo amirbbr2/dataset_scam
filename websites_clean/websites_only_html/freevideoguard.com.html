@@ -1,0 +1,1441 @@
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube™ Video AdBlocker</title>
+    <meta name="viewport" content="width=1024">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/png">
+    <link href="/favicon.ico" rel="icon" sizes="32x32">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/video-adblocker/imjnhcoogkbmemieaehgnopdleejnmll">
+    <link rel="canonical" href="https://freevideoguard.com"/>
+
+    <style>
+        @import  url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,900');
+        @import  url('https://fonts.googleapis.com/css?family=Roboto');
+        @import  url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+
+                    * {
+box-sizing: border-box;
+font-family: Roboto, sans-serif;
+}
+* {
+box-sizing: border-box;
+font-family: Roboto, sans-serif;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: Roboto, sans-serif;
+}
+body {
+margin: 0;
+padding: 0;
+font-family: Roboto, sans-serif;
+}
+
+body.transparent {
+background-color: rgba(0, 0, 0, .2);
+}
+body.transparent {
+background-color: rgba(0, 0, 0, .2);
+}
+
+.popup-wrap * {
+font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+}
+.popup-wrap * {
+font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+}
+
+.exit-popup-wrapper.hidden {
+display: none;
+}
+.no-wrap {
+white-space: nowrap;
+}
+
+.main-block {
+box-shadow: 0 0 10px 1px #000;
+width: 800px;
+height: 441px;
+min-height: 100px;
+margin: 100px auto 0;
+padding: 15px 50px 30px;
+background-color: #fff;
+}
+
+.block-header {
+display: flex;
+font-size: 13px;
+margin-bottom: 25px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.block-header .step {
+text-align: right;
+padding-left: 25px;
+flex: 1;
+}
+
+.block-header .title {
+font-size: 18px;
+margin-bottom: 15px;
+flex: 1;
+color: #000!important;
+}
+
+.block-header .icon img {
+width: 70px;
+padding-right: 15px;
+}
+
+.exit-popup-wrapper.hidden {
+display: none;
+}
+
+.hidden {
+display: none;
+}
+.hidden {
+display: none;
+}
+
+body.zero-opacity {
+opacity: 0;
+background: #fff;
+}
+body.zero-opacity {
+opacity: 0;
+background: #fff;
+}
+
+.popup-wrap {
+display: none;
+position: fixed;
+z-index: 2;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.85);
+justify-content: center;
+top: 0;
+left: 0;
+}
+.popup-wrap {
+display: none;
+position: fixed;
+z-index: 2;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.85);
+justify-content: center;
+top: 0;
+left: 0;
+}
+
+.block-main-content {
+height: 150px;
+border: 1px solid #ddd;
+overflow-y: scroll;
+padding: 10px;
+font-size: 13px;
+}
+.block-main-content {
+height: 150px;
+border: 1px solid #ddd;
+overflow-y: scroll;
+padding: 10px;
+font-size: 13px;
+}
+
+.block-additional-content {
+margin: 15px 0;
+font-size: 13px;
+}
+.block-additional-content {
+margin: 15px 0;
+font-size: 13px;
+}
+
+.block-additional-content a {
+color: #000;
+}
+.block-additional-content a {
+color: #000;
+}
+
+.footer {
+position: fixed;
+bottom: 0;
+text-align: center;
+font-size: 14px;
+width: 100%;
+color: #888;
+}
+.footer {
+position: fixed;
+bottom: 0;
+text-align: center;
+font-size: 14px;
+width: 100%;
+color: #888;
+}
+
+.block-footer {
+display: flex;
+justify-content: space-between;
+}
+.block-footer {
+display: flex;
+justify-content: space-between;
+}
+
+.block-footer button {
+height: 50px;
+padding: 0 20px;
+font-weight: bold;
+background-color: #1a73e8;
+border: none;
+color: #fff;
+font-size: 18px;
+cursor: pointer;
+}
+.block-footer button {
+height: 50px;
+padding: 0 20px;
+font-weight: bold;
+background-color: #1a73e8;
+border: none;
+color: #fff;
+font-size: 18px;
+cursor: pointer;
+}
+
+.block-footer button:hover {
+background-color: rgba(26, 115, 232, 0.75);
+}
+.block-footer button:hover {
+background-color: rgba(26, 115, 232, 0.75);
+}
+
+.footer a {
+color: #888;
+}
+.footer a {
+color: #888;
+}
+
+.footer-wrapper {
+width: 800px;
+margin: auto;
+border-top: 1px solid #888;
+padding: 15px 0;
+}
+.footer-wrapper {
+width: 800px;
+margin: auto;
+border-top: 1px solid #888;
+padding: 15px 0;
+}
+
+.chrome-store-image {
+height: 40px;
+}
+.chrome-store-image {
+height: 40px;
+}
+
+.align-items-center {
+align-items: center;
+}
+.align-items-center {
+align-items: center;
+}
+
+@media  only screen and (max-height: 600px) {
+.main-block {
+margin-top: 0;
+}
+@media  only screen and (max-height: 600px) {
+.main-block {
+margin-top: 0;
+}
+
+.footer {
+display: none;
+}
+.footer {
+display: none;
+}
+
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+}
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+}
+
+.exit-listener {
+position: fixed;
+width: 100%;
+left: 0;
+top: 0;
+background: transparent;
+height: 20px;
+}
+.exit-listener {
+position: fixed;
+width: 100%;
+left: 0;
+top: 0;
+background: transparent;
+height: 20px;
+}
+
+/*  Exit layer styles start */
+/*  Exit layer styles start */
+
+.exit-popup-new {
+background-color: #d9203a;
+background-image: url(/img/lander/exit-layer-bg-logo.png);
+background-repeat: no-repeat;
+background-position: top left;
+background-size: auto 100%;
+color: #fff;
+position: relative;
+width: 617px;
+padding: 38px 50px 50px 50px;
+font-size: 15px;
+box-sizing: border-box;
+}
+.exit-popup-new {
+background-color: #d9203a;
+background-image: url(/img/lander/exit-layer-bg-logo.png);
+background-repeat: no-repeat;
+background-position: top left;
+background-size: auto 100%;
+color: #fff;
+position: relative;
+width: 617px;
+padding: 38px 50px 50px 50px;
+font-size: 15px;
+box-sizing: border-box;
+}
+
+.popup-title-new {
+font-family: "Open sans";
+font-size: 32px;
+margin-bottom: 14px;
+font-weight: 600;
+text-align: center;
+}
+.popup-title-new {
+font-family: "Open sans";
+font-size: 32px;
+margin-bottom: 14px;
+font-weight: 600;
+text-align: center;
+}
+
+.popup-text-new {
+font-family: "Open sans";
+text-align: center;
+font-size: 24px;
+font-weight: 300;
+margin-bottom: 37px;
+line-height: 29px;
+}
+.popup-text-new {
+font-family: "Open sans";
+text-align: center;
+font-size: 24px;
+font-weight: 300;
+margin-bottom: 37px;
+line-height: 29px;
+}
+
+.popup-close-button-new:hover {
+opacity: 0.5;
+}
+.popup-close-button-new:hover {
+opacity: 0.5;
+}
+
+.popup-list-new li {
+position: relative;
+padding-bottom: 9px;
+font-family: "Open sans";
+}
+.popup-list-new li {
+position: relative;
+padding-bottom: 9px;
+font-family: "Open sans";
+}
+
+.popup-button-new {
+font-family: "Open sans";
+cursor: pointer;
+padding: 13px 70px;
+border: none;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.32);
+border-radius: 4px;
+background-color: #3cb601;
+color: #fff;
+font-size: 18px;
+font-weight: 700;
+margin-top: 15px;
+}
+.popup-button-new {
+font-family: "Open sans";
+cursor: pointer;
+padding: 13px 70px;
+border: none;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.32);
+border-radius: 4px;
+background-color: #3cb601;
+color: #fff;
+font-size: 18px;
+font-weight: 700;
+margin-top: 15px;
+}
+
+.exit-popup-wrapper-new {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0, 0, 0, .5);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.exit-popup-wrapper-new {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0, 0, 0, .5);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.popup-close-button-new {
+position: absolute;
+top: 0;
+right: 0;
+cursor: pointer;
+padding: 12px;
+}
+.popup-close-button-new {
+position: absolute;
+top: 0;
+right: 0;
+cursor: pointer;
+padding: 12px;
+}
+
+.popup-button-new:hover {
+transform: scale(1.05);
+}
+.popup-button-new:hover {
+transform: scale(1.05);
+}
+
+.popup-button-new:focus {
+outline: none;
+}
+.popup-button-new:focus {
+outline: none;
+}
+
+.popup-list-new {
+list-style: none;
+font-size: 20px;
+font-weight: 200;
+padding-left: 100px;
+}
+.popup-list-new {
+list-style: none;
+font-size: 20px;
+font-weight: 200;
+padding-left: 100px;
+}
+
+.popup-list-new li:before {
+position: absolute;
+top: 5px;
+left: -60px;
+content: url(/img/lander/check-exit-layer.svg);
+}
+.popup-list-new li:before {
+position: absolute;
+top: 5px;
+left: -60px;
+content: url(/img/lander/check-exit-layer.svg);
+}
+
+.popup-footer-new {
+display: flex;
+justify-content: center;
+}
+.popup-footer-new {
+display: flex;
+justify-content: center;
+}
+
+.hidden {
+display: none;
+}
+.hidden {
+display: none;
+}
+
+.open {
+display: flex;
+}
+.open {
+display: flex;
+}
+
+.arrow {
+  margin-left: auto;
+  max-width: 275px;
+  background: url(https://video-adblock.com/img/lander3/arr-big-green.svg?1) left top no-repeat;
+  background-size: contain;
+  width: 88px;
+  height: 74px;
+  top: -80px;
+  animation: .5s arrowAnim infinite;
+  position: relative;
+  left: 100px;
+}
+        
+    </style>
+
+            <meta name="robots" content="noindex">
+    
+            <script>(function () {
+
+        function setCookie(name, value, options = {}) {
+
+            options = {
+                path: '/',
+                ...options
+            };
+
+            if (options.expires instanceof Date) {
+                options.expires = options.expires.toUTCString();
+            }
+
+            let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+            for (let optionKey in options) {
+                updatedCookie += "; " + optionKey;
+                let optionValue = options[optionKey];
+                if (optionValue !== true) {
+                    updatedCookie += "=" + optionValue;
+                }
+            }
+
+            document.cookie = updatedCookie;
+        }
+
+        function getCookie(cname) {
+            const name = cname + "=";
+            const decodedCookie = decodeURIComponent(document.cookie);
+            const ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function deleteCookie(name) {
+            setCookie(name, "", {
+                'max-age': -1
+            })
+        }
+
+        !function (l) {
+            function r(b, a) {
+                var h = (65535 & b) + (65535 & a);
+                return (b >> 16) + (a >> 16) + (h >> 16) << 16 | 65535 & h
+            }
+
+            function p(b, a, h, q, x, g) {
+                b = r(r(a, b), r(q, g));
+                return r(b << x | b >>> 32 - x, h)
+            }
+
+            function g(b, a, h, q, g, k, c) {
+                return p(a & h | ~a & q, b, a, g, k, c)
+            }
+
+            function k(b, a, h, q, g, k, c) {
+                return p(a & q | h & ~q, b, a, g, k, c)
+            }
+
+            function m(b, a, h, q, g, k, c) {
+                return p(a ^ h ^ q, b, a, g, k, c)
+            }
+
+            function n(b, a, h, q, g, k, c) {
+                return p(h ^ (a | ~q), b, a, g, k, c)
+            }
+
+            function u(b, a) {
+                var h,
+                    q,
+                    l,
+                    p;
+                b[a >> 5] |= 128 << a % 32;
+                b[14 + (a + 64 >>> 9 << 4)] = a;
+                var c = 1732584193,
+                    d = -271733879,
+                    e = -1732584194,
+                    f = 271733878;
+                for (a = 0; a < b.length; a += 16) d = n(d = n(d = n(d = n(d = m(d = m(d = m(d = m(d = k(d = k(d = k(d = k(d = g(d = g(d = g(d = g(q = d, e = g(l = e, f = g(p = f, c = g(h = c, d, e, f, b[a], 7, -680876936), d, e, b[a + 1], 12, -389564586), c, d, b[a + 2], 17, 606105819), f, c, b[a + 3], 22, -1044525330), e = g(e, f = g(f, c = g(c, d, e, f, b[a + 4], 7, -176418897), d, e, b[a + 5], 12, 1200080426), c, d, b[a + 6], 17, -1473231341), f, c, b[a + 7], 22, -45705983), e = g(e, f = g(f, c = g(c, d, e, f, b[a + 8], 7, 1770035416), d, e, b[a + 9], 12, -1958414417), c, d, b[a + 10], 17, -42063), f, c, b[a + 11], 22, -1990404162), e = g(e, f = g(f, c = g(c, d, e, f,
+                    b[a + 12], 7, 1804603682), d, e, b[a + 13], 12, -40341101), c, d, b[a + 14], 17, -1502002290), f, c, b[a + 15], 22, 1236535329), e = k(e, f = k(f, c = k(c, d, e, f, b[a + 1], 5, -165796510), d, e, b[a + 6], 9, -1069501632), c, d, b[a + 11], 14, 643717713), f, c, b[a], 20, -373897302), e = k(e, f = k(f, c = k(c, d, e, f, b[a + 5], 5, -701558691), d, e, b[a + 10], 9, 38016083), c, d, b[a + 15], 14, -660478335), f, c, b[a + 4], 20, -405537848), e = k(e, f = k(f, c = k(c, d, e, f, b[a + 9], 5, 568446438), d, e, b[a + 14], 9, -1019803690), c, d, b[a + 3], 14, -187363961), f, c, b[a + 8], 20, 1163531501), e = k(e, f = k(f, c = k(c, d, e, f, b[a + 13],
+                    5, -1444681467), d, e, b[a + 2], 9, -51403784), c, d, b[a + 7], 14, 1735328473), f, c, b[a + 12], 20, -1926607734), e = m(e, f = m(f, c = m(c, d, e, f, b[a + 5], 4, -378558), d, e, b[a + 8], 11, -2022574463), c, d, b[a + 11], 16, 1839030562), f, c, b[a + 14], 23, -35309556), e = m(e, f = m(f, c = m(c, d, e, f, b[a + 1], 4, -1530992060), d, e, b[a + 4], 11, 1272893353), c, d, b[a + 7], 16, -155497632), f, c, b[a + 10], 23, -1094730640), e = m(e, f = m(f, c = m(c, d, e, f, b[a + 13], 4, 681279174), d, e, b[a], 11, -358537222), c, d, b[a + 3], 16, -722521979), f, c, b[a + 6], 23, 76029189), e = m(e, f = m(f, c = m(c, d, e, f, b[a + 9], 4, -640364487),
+                    d, e, b[a + 12], 11, -421815835), c, d, b[a + 15], 16, 530742520), f, c, b[a + 2], 23, -995338651), e = n(e, f = n(f, c = n(c, d, e, f, b[a], 6, -198630844), d, e, b[a + 7], 10, 1126891415), c, d, b[a + 14], 15, -1416354905), f, c, b[a + 5], 21, -57434055), e = n(e, f = n(f, c = n(c, d, e, f, b[a + 12], 6, 1700485571), d, e, b[a + 3], 10, -1894986606), c, d, b[a + 10], 15, -1051523), f, c, b[a + 1], 21, -2054922799), e = n(e, f = n(f, c = n(c, d, e, f, b[a + 8], 6, 1873313359), d, e, b[a + 15], 10, -30611744), c, d, b[a + 6], 15, -1560198380), f, c, b[a + 13], 21, 1309151649), e = n(e, f = n(f, c = n(c, d, e, f, b[a + 4], 6, -145523070), d, e, b[a +
+                11], 10, -1120210379), c, d, b[a + 2], 15, 718787259), f, c, b[a + 9], 21, -343485551), c = r(c, h), d = r(d, q), e = r(e, l), f = r(f, p);
+                return [c, d, e, f]
+            }
+
+            function t(b) {
+                var a,
+                    h = "",
+                    g = 32 * b.length;
+                for (a = 0; a < g; a += 8) h += String.fromCharCode(b[a >> 5] >>> a % 32 & 255);
+                return h
+            }
+
+            function v(b) {
+                var a,
+                    h = [];
+                h[(b.length >> 2) - 1] = void 0;
+                for (a = 0; a < h.length; a += 1) h[a] = 0;
+                var g = 8 * b.length;
+                for (a = 0; a < g; a += 8) h[a >> 5] |= (255 & b.charCodeAt(a / 8)) << a % 32;
+                return h
+            }
+
+            function y(b) {
+                var a,
+                    h = "";
+                for (a = 0; a < b.length; a += 1) {
+                    var g = b.charCodeAt(a);
+                    h += "0123456789abcdef".charAt(g >>> 4 &
+                        15) + "0123456789abcdef".charAt(15 & g)
+                }
+                return h
+            }
+
+            function z(b) {
+                b = unescape(encodeURIComponent(b));
+                return t(u(v(b), 8 * b.length))
+            }
+
+            function A(b, a) {
+                b = unescape(encodeURIComponent(b));
+                a = unescape(encodeURIComponent(a));
+                var h,
+                    g = v(b),
+                    k = [],
+                    l = [];
+                k[15] = l[15] = void 0;
+                16 < g.length && (g = u(g, 8 * b.length));
+                for (b = 0; 16 > b; b += 1) k[b] = 909522486 ^ g[b], l[b] = 1549556828 ^ g[b];
+                return h = u(k.concat(v(a)), 512 + 8 * a.length), t(u(l.concat(h), 640))
+            }
+
+            function w(b, a, g) {
+                return a ? g ? A(a, b) : y(A(a, b)) : g ? z(b) : y(z(b))
+            }
+
+            "function" == typeof define && define.amd ?
+                define(function () {
+                    return w
+                }) : "object" == typeof module && module.exports ? module.exports = w : l.md5 = w
+        }(this);
+        var l = (new URLSearchParams(window.location.search)).get("lptoken");
+        var voluum = (new URLSearchParams(window.location.search)).get("voluum_id");
+
+        if (!voluum) {
+            voluum = getCookie('voluumId');
+        }
+        // console.log(`Voluum_id: ${voluum}`);
+        // console.log(`lptoken: ${l}`);
+        // console.log(`Windows location href: ${window.location.href}`);
+        // console.log(`Windows location search: ${window.location.search}`);
+        // console.log(`domain: ${window.location.search}`);
+        // console.log(`host: ${(new URL(window.location.href)).host}`);
+
+        const url = (new URL(window.location.href));
+        if (!window.location.search && url.pathname === '/') {
+            return;
+        }
+
+        if (l) {
+            var t = l.substr(0, 2) + l.substr(4, 2) + l.substr(8, 2) + l.substr(12, 2) + l.substr(16, 2);
+            l = l.substr(2, 2) + l.substr(6, 2) + l.substr(10, 2) + l.substr(14, 2) + l.substr(18, 2);
+            var p = md5("ud2kdmlzs6fzzdadic4vtlazmlii0c7l4ogzrivpcevwwpkh" + t + navigator.userAgent);
+            p = p.substr(0, 2) + p.substr(5, 2) + p.substr(12, 2) + p.substr(19, 2) + p.substr(26, 2);
+            if (Date.now() / 1E3 > Number(t) || p !== l) {
+                deleteCookie('scenario');
+                window.location.href = 'freevideoguard.com';
+            }
+        } else {
+            if (voluum && voluum.length > 10) return;
+            // console.log('REDIRECTREDIRECTREDIRECTREDIRECTREDIRECTREDIRECTREDIRECTREDIRECT');
+            deleteCookie('scenario');
+            window.location.href = 'freevideoguard.com';
+        }
+    })();
+</script>
+    
+    <script>
+        var environment = 'production';
+        var ext = {browser: 'Chrome'};
+        var advancedScenario = JSON.parse('{"code":"sound","route":null,"number":52}');
+        const locale = 'it';
+        const supportedScenarios = JSON.parse('["direct","promo5","promo5s","promo5s2","promo5ns","promo5ns2","promo5r","promo5ta","promo5tb"]');
+    </script>
+
+    <script>
+    const IdsMap = {
+        'test': 'test_subid',
+        // 'e6773e24-cd6f-4dcb-a1f9-72b3990ec835': 'dev_subid',
+        '2e9f3850-941d-4b57-9f47-b70a932c32d0': '001',
+        '8f66a4b8-a5fd-4acc-b633-1bd342d0f728': 'prod_test',
+        '11a2eb01-c98e-4f07-8dee-050cc64aeb4c': 'dev_cache_test',
+        '3e56c4e3-f74c-459f-9077-01aabd0af7c1': '001',
+        'fccb0222-4fcc-4091-ad13-9763adeb1203': '001',
+
+        '018634fc-8dd7-4058-a346-c17226c016d5':	'001', // Tobi
+        'fe8337bf-217c-4229-b979-9b205bb33c8b':	'002', // Adsterra
+        'c3524c8a-ad3f-4944-a0cd-c31e3c9ad72d':	'003', // Moshe
+        'e6773e24-cd6f-4dcb-a1f9-72b3990ec835':	'004', // PropellerAds
+        '56d12b5a-d80d-41e9-a497-ff6c3eb1d959':	'005', // YOTTADS
+        '387154db-c3d9-4a42-bece-b08c402ac8af':	'006', // Admaven
+    };
+
+    let scenario = getQueryParameter('scenario');
+    console.log('Scenario: ' + scenario)
+    console.log('window.location: ' + window.location);
+    console.log('window.location.search: ' + window.location.search);
+
+    if (!scenario) {
+        scenario = getCookie('scenario');
+    }
+
+    if (!supportedScenarios.includes(scenario)) {
+        window.location.href = freevideoguard.com;
+    }
+
+    const sourceId = getQueryParameter('source_id');
+    const voluum_id = getQueryParameter('voluum_id');
+    const trackingdomain = getQueryParameter('trackingdomain');
+    const forceInstall = (voluum_id && scenario);
+    console.log(`Force install: ${forceInstall}`);
+
+    let subId = handleSourceId(IdsMap, sourceId);
+
+    if (voluum_id) {
+        setCookie('voluumId', voluum_id, 120, true)
+    }
+    if (trackingdomain) {
+        setCookie('trackingdomain', trackingdomain, 120, true)
+    }
+
+    // Warning: advancedScenario variable defined at the landing level
+    // and transmitted via blade template engine
+    if (scenario && supportedScenarios.includes(scenario)) {
+        setCookie('scenario', scenario, 120, true);
+    }
+
+    if(advancedScenario) {
+        handleJsAction(advancedScenario.code)
+    }
+
+    function handleJsAction(scenario) {
+        let jsScenario = 'data-install';
+
+        if (['direct', 'alternateTopPopupTwo', 'alternateTopPopupOne']
+            .includes(scenario) && !isFirefox()) {
+            jsScenario = 'data-install-extension';
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('here');
+            const elements = document.getElementsByClassName('js-action');
+
+            for (let i = 0; i < elements.length; i += 1) {
+                console.log(jsScenario);
+                elements[i].setAttribute(jsScenario, '')
+            }
+        });
+    }
+
+    function handleSourceId(sourceIdsMap, sourceId) {
+        const subId = sourceIdsMap[sourceId];
+
+        if (sourceId && !subId) {
+            // TODO Handle unknown source id
+            return null;
+        } else if (!sourceId) {
+            // Nothing to do
+            return null;
+        }
+
+        appendQueryParameter('sub_id', subId);
+
+        return subId;
+    }
+
+    function appendQueryParameter(name, value) {
+        if (getQueryParameter(name)) {
+            return;
+        }
+
+        const currentUrl = new URL(window.location);
+        currentUrl.searchParams.append(name, value);
+
+        window.history.pushState({path: currentUrl.toString()}, '', currentUrl.toString());
+    }
+
+    function getQueryParameter(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    function setCookie(cname, cvalue, exMinutes, secure = false) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exMinutes * 60 * 1000));
+        const expires = "expires=" + d.toUTCString();
+
+        const cookieString = cname + "=" + cvalue + ";" + (secure ? 'secure;' : '') + expires + ";path=/;SameSite=None";
+        document.cookie = cookieString;
+    }
+
+    function getCookie(cname) {
+        const name = cname + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function isChrome() {
+        return !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+    }
+
+    function isEdge() {
+        return (!isIE && !!window.StyleMedia) || (isChrome && (navigator.userAgent.indexOf("Edg") !== -1));
+    }
+
+    function isFirefox() {
+        return typeof InstallTrigger !== 'undefined';
+    }
+</script>
+</head>
+
+<body lang="it" data-no-yt>
+<div class="exit-listener"></div>
+<div class="wrap-all">
+    <div class="wrap-main-block" style="padding-top: 100px">
+        <div class="main-block" style="margin-top: 0px">
+            <div class="block-header">
+                <div class="icon">
+                    <img src="/img/common/icon-big.png" alt="Video Adblocker">
+                </div>
+                <div class="header-content">
+                    <div class="title">AGGIUNGI VIDEO ADBLOCKER AL TUO BROWSER</div>
+                    Fai clic sul pulsante &quot;Accetta e continua&quot; per scaricare l&#039;estensione Video Adblocker
+                    <span
+                        class="inline for-another ">Chrome</span>
+                    <span
+                        class="inline for-firefox hidden">Firefox</span>
+                    <span
+                        class="inline hidden">Edge</span>
+
+                    e goderti siti web popolari in completa assenza di pubblicità.
+                    Questa estensione, similmente alle comuni estensioni di adblocking, necessita delle autorizzazioni predefinite su ogni sito web per rimuovere, ad esempio, annunci pubblicitari o popup sui video incorporati e Youtube stesso.
+                </div>
+                <div class="step title no-wrap">
+                    Primo passaggio
+                </div>
+            </div>
+            <div class="block-main-content">
+                SI PREGA DI LEGGERE ATTENTAMENTE I TERMINI E LE CONDIZIONI PRIMA DI UTILIZZARE QUESTA Proroga
+                <br>
+                <br>
+                Il presente Contratto di licenza con l&#039;utente finale (&quot;Contratto&quot; o &quot;EULA&quot;) disciplina l&#039;utilizzo dei nostri servizi e il download
+                e l&#039;installazione della nostra estensione del browser, incluse eventuali revisioni, miglioramenti, nuove release e relative
+                documentazione in relazione ad essa (collettivamente &quot;Servizio&quot; o &quot;Prodotto&quot;) e costituisce un legale
+                accordo vincolante tra voi (&quot;utente&quot; o &quot;voi&quot;) e (&quot;noi&quot;, &quot;noi&quot; o &quot;nostro&quot;).
+                ACCETTAZIONE DEI TERMINI: si prega di leggere attentamente i termini e le condizioni del presente accordo prima di
+                scaricare, installare o utilizzare il nostro Prodotto o Servizio e qualsiasi funzione ivi fornita. Scegliendo
+                il pulsante &quot;ACCETTA&quot; o &quot;AGGIUNGI AL CROMO&quot; o &quot;CONSENTI&quot; o &quot;SCARICA&quot;, scaricando o utilizzando il Servizio l&#039;utente
+                riconoscete di aver letto, compreso e accettato di essere vincolati dal presente Contratto e dal nostro
+                Informativa sulla privacy che insieme regolano l&#039;utilizzo del Servizio (l&#039;EULA e l&#039;Informativa sulla privacy sono
+                denominate collettivamente &quot;Condizioni&quot;). L&#039;utente riconosce inoltre che le presenti Condizioni costituiscono un vincolante e
+                contratto legale esecutivo tra noi e voi che fa rispettare ulteriormente la rinuncia all&#039;azione collettiva e l&#039;arbitrato
+                come dettagliato nella sezione dedicata alla risoluzione delle controversie. Se non siete d&#039;accordo con queste
+                Termini nella sua interezza, o se la legge applicabile vieta l&#039;accettazione di questi Termini, l&#039;utente non deve accettare
+                questo accordo e non può utilizzare il nostro servizio. Qualsiasi uso del Servizio da parte vostra in tali circostanze
+                essere considerata una violazione dei nostri diritti legali
+                <br>
+                <br>
+                1. Modifiche<br>
+                Salvo quanto diversamente descritto nel presente documento, possiamo, a nostra esclusiva discrezione e in qualsiasi momento, modificare i termini di
+                questo accordo. Tali modifiche entrano in vigore al momento della pubblicazione dei termini modificati del presente accordo.
+                L&#039;uso continuato del Servizio da parte vostra, a seguito della modifica del Contratto, costituisce il vostro
+                il riconoscimento e il consenso di tali modifiche al Contratto. L&#039;ultima revisione si rifletterà in
+                la voce &quot;Ultima revisione&quot; di cui sopra. In caso di modifiche materiali, faremo del nostro meglio per inviare
+                una notifica scritta. Vi raccomandiamo di rivedere periodicamente il presente accordo, in quanto potrebbe essere
+                soggetto a modifiche di volta in volta. Se non siete d&#039;accordo con l&#039;Accordo così come modificato, il vostro unico e
+                L&#039;opzione esclusiva è quella di interrompere o terminare l&#039;utilizzo del Servizio.
+                <br>
+                <br>
+                2. Ammissibilità e limiti di età<br>
+                L&#039;utente garantisce di essere idoneo a sottoscrivere i presenti Termini e non è proibito da alcun
+                autorità autorizzata, l&#039;ordine giudiziario o la legge a stipulare qualsiasi accordo; avete tutti i diritti di
+                autorizzazione, se si agisce per conto di una società, a sottoscrivere le presenti Condizioni.
+                Inoltre, l&#039;utente dichiara e garantisce di avere almeno 13 anni di età e di essere legalmente competente a
+                stipulare le presenti Condizioni. Ai minori di 13 anni è vietato l&#039;uso del Prodotto. Nel caso in cui
+                Se un utente di età inferiore a 13 anni si rende conto che un utente ha condiviso informazioni, scarteremo tali informazioni.
+                informazioni. Se avete motivo di credere che un bambino di età inferiore ai 13 anni abbia condiviso qualsiasi
+                informazioni con noi, contattateci all&#039;indirizzo: support@freevideoguard.com. Se hai meno di 18 anni, ti preghiamo di essere
+                assicuratevi di leggere i Termini con i vostri genitori o tutori legali e di fare domande su cose che non fate
+                capire.
+                <br>
+                <br>
+                3. Portata del servizio<br>
+                Dopo l&#039;accettazione del presente EULA, il Prodotto sarà installato sul vostro computer. Il Prodotto è un
+                componente aggiuntivo del browser che modifica le nuove impostazioni della scheda del browser o le funzioni che si possono scegliere di installare
+                e può influire sulle impostazioni di ricerca del browser. Queste caratteristiche possono includere, se del caso, modifiche in
+                i) nuova scheda del browser; (ii) motore di ricerca predefinito; e (iii) home page. Le caratteristiche uniche che noi
+                fornire consentono di personalizzare facilmente i propri interessi come radio musicali, canali sportivi, ecc.
+                Il Prodotto include link a siti o contenuti di terze parti, così come i contenuti forniti dal nostro Servizio
+                Fornitori (come definiti nella nostra Politica sulla privacy) (collettivamente, &quot;Contenuti di terze parti&quot;).
+                Qualsiasi utilizzo da parte dell&#039;utente di Contenuti di terze parti è soggetto ai termini e alle condizioni del Fornitore del servizio o
+                il terzo interessato. L&#039;utente riconosce che non abbiamo alcun controllo e non ci assumiamo alcuna responsabilità
+                per i contenuti di terze parti. L&#039;utente si assume ogni responsabilità e rischio in relazione all&#039;utilizzo di contenuti di terze parti.
+                Party Content e con la presente decliniamo ogni responsabilità nei confronti dell&#039;utente o di terzi in relazione a quanto segue
+                ad esso. Non abbiamo alcun obbligo di esaminare, rivedere o monitorare i Contenuti di Terzi e non siamo responsabili
+                per l&#039;accuratezza, la completezza, l&#039;appropriatezza o la legalità dei Contenuti di Terzi.
+                La disponibilità di qualsiasi Contenuto di Terze Parti come parte del Prodotto non è un&#039;approvazione, un&#039;autorizzazione
+                o l&#039;approvazione di tali Contenuti di Terze Parti, e l&#039;utente rinuncia a qualsiasi diritto o rimedio legale o equo
+                che avete o potreste avere contro di noi per quanto riguarda questo. Inoltre, l&#039;utente riconosce e accetta che
+                alcuni Contenuti di terze parti possono cessare di essere disponibili in qualsiasi momento senza preavviso.
+                <br>
+                <br>
+                4. Concessione di licenza e proprietà intellettuale<br>
+                A condizione che l&#039;utente rispetti i Termini, con la presente le concediamo un diritto personale, limitato, revocabile,
+                diritto e licenza non trasferibile, non trasferibile, non sub-licenziabile e non esclusivo di utilizzare, accedere, scaricare e
+                installare la versione più aggiornata del Prodotto (compresi tutti gli aggiornamenti) e
+                il Servizio su dispositivi esclusivamente in relazione al vostro uso legittimo, personale e non commerciale. Il vostro
+                la licenza di cui al presente documento si limita a non consentire ad altri di utilizzare, copiare o valutare le copie, e la licenza
+                non possono essere copiate, condivise, distribuite, rivendute e offerte per la rivendita, trasferite
+                o sub-licenziato in tutto o in parte.
+                L&#039;utente riconosce che tutti i diritti e gli interessi sui marchi di fabbrica e sui marchi di servizio del Prodotto, compresi tutti i
+                i componenti associati, il codice, i protocolli, il software e la documentazione forniti da noi insieme
+                con il nostro Servizio, tutte le caratteristiche correlate o i relativi derivati miglioramenti e modifiche,
+                compresi i diritti di proprietà intellettuale associati, evidenziati da o incorporati o collegati,
+                relativi al Prodotto o al Servizio, sono di nostra proprietà o di proprietà dei nostri licenziatari, e sono protetti
+                da copyright internazionale, marchi, brevetti e altri diritti di proprietà e leggi sul commercio
+                segreti, e qualsiasi altro diritto di proprietà intellettuale o di proprietà riconosciuto in qualsiasi paese o
+                giurisdizione in tutto il mondo, inclusi, senza limitazione, diritti morali o simili. Non è consentito utilizzare, cancellare,
+                modificare o rimuovere qualsiasi avviso di copyright, marchio di fabbrica o altri diritti di proprietà che abbiamo inserito nel
+                Prodotto o componenti associati. Ad eccezione di quanto espressamente concesso nel Contratto, ci riserviamo tutti i diritti,
+                titolo e interesse per il nostro Servizio, diritti d&#039;autore e marchi, così come qualsiasi contenuto fornito o
+                messi a disposizione in relazione al Servizio (esclusi i Contenuti di Terzi). Ci riserviamo tutti i diritti in
+                e al Servizio che non sono espressamente concessi nel presente documento.
+                Inoltre, l&#039;utente riconosce e accetta che il Prodotto può fornire Contenuti di Terzi che
+                include materiale protetto da copyright, segreti commerciali, brevetti (registrati o in corso di registrazione), disegni e modelli, informazioni,
+                metodi, specifiche, grafica, testi, loghi e altro materiale proprietario (&quot;IP di terze parti&quot;). Voi
+                non deve, non deve tentare di, e non deve permettere a terzi, di usare, copiare, distribuire, esporre,
+                eseguire pubblicamente, mettere a disposizione del pubblico, ridurre a forma umana leggibile, adattare, concedere in sublicenza, rendere
+                qualsiasi uso commerciale, vendere, affittare, prestare, elaborare, combinare con altri software, tradurre, modificare, invertire
+                ingegnere, smontare o decompilare qualsiasi IP di terze parti. Né si possono creare opere derivate o
+                altre opere che si basano o derivano in tutto o in parte dai suddetti contenuti.
+                Diritto della proprietà intellettuale, tra cui il diritto d&#039;autore e alcune disposizioni del trattato internazionale sul diritto d&#039;autore
+                proteggere tutte le parti del Prodotto e tutti i contenuti forniti in esso o con esso. Nessun programma, codice, parte,
+                immagine, campione audio o testo possono essere copiati, o utilizzati in qualsiasi modo dall&#039;utente, ad eccezione dei casi in cui l&#039;immagine, il campione audio o il testo
+                scopo. Ci riserviamo il diritto di disabilitare l&#039;accesso ai Servizi a chiunque ne faccia uso per
+                violare ripetutamente i diritti di proprietà intellettuale altrui. Se si ritiene che i propri diritti di copyright,
+                sono stati violati, vi preghiamo di contattarci all&#039;indirizzo: support@freevideoguard.com
+                Inoltre, l&#039;utente riconosce e accetta che la tecnologia che si manifesta nel funzionamento del Prodotto
+                costituisce il nostro, e i nostri partner, preziosi segreti commerciali e know-how e nella misura in cui si scopre qualsiasi
+                tali segreti commerciali, non li rivelerete a terzi. Qualsiasi divulgazione o uso non autorizzato
+                ci causerà un danno irreparabile e una perdita irreparabile.
+                <br>
+                <br>
+                5. Restrizioni d&#039;uso<br>
+                Installerete il Prodotto solo secondo le nostre istruzioni. Salvo quanto espressamente previsto
+                ai sensi del Contratto, l&#039;utente accetta di non consentire a nessun altro di, direttamente o indirettamente; (a) utilizzare
+                o esporre il Prodotto insieme a materiale pornografico, razzista, volgare, osceno, diffamatorio,
+                calunnioso, abusivo, che promuove l&#039;odio, discriminatorio; (b) fare qualsiasi copia, modificare, adattare, smontare,
+                tradurre, decompilare, creare qualsiasi opera derivata, decodificare, aggirare o hackerare il Prodotto o
+                Servizio, o tentare di ottenere un accesso non autorizzato al Servizio o ai relativi sistemi o reti, o
+                altrimenti cercare di scoprire qualsiasi codice sorgente nel software, anche nei casi in cui sia reso disponibile
+                con qualsiasi altro software, prodotto o programma; (c) concedere in sublicenza, rivendere, affittare, noleggiare, trasferire, cedere,
+                trasferire qualsiasi diritto, condividere o comunque sfruttare commercialmente o rendere disponibile il Servizio a terzi
+                o parte di esso; (d) utilizzare il Servizio o qualsiasi contenuto reso disponibile in relazione al
+                Servizio in qualsiasi modo fraudolento o illegale, incluso, a titolo esemplificativo ma non esaustivo, il deturpamento,
+                degradare o ostacolare l&#039;esecuzione del nostro Servizio; (e) utilizzare il nostro nome, logo o marchi senza precedenti
+                consenso scritto; e (g) l&#039;utilizzo, l&#039;accesso o il tentativo di accedere al Servizio in relazione a qualsiasi
+                mezzi, compresi robot, ragni, cingoli, raschiatori o altri dispositivi automatici o processi manuali.
+                <br>
+                <br>
+                6. Aggiornamenti e modifiche al nostro servizio<br>
+                Possiamo, in qualsiasi momento e a nostra esclusiva discrezione, cambiare, modificare, aggiungere o rimuovere caratteristiche e funzionalità
+                del nostro servizio senza preavviso. Una volta installato sul vostro computer, il Prodotto comunica periodicamente
+                con i nostri server per richiedere aggiornamenti automatici quando rilasciamo una nuova versione del Prodotto, o quando
+                rendere disponibili nuove funzionalità. l&#039;utente accetta che la società possa scaricare e installare automaticamente gli aggiornamenti
+                al Prodotto, di tanto in tanto, senza preavviso. Questi aggiornamenti sono progettati per migliorare,
+                migliorare e sviluppare ulteriormente il Prodotto e può assumere la forma di correzioni di bug, funzioni potenziate, nuove
+                moduli software e versioni completamente nuove. L&#039;utente accetta di ricevere tali aggiornamenti come parte dell&#039;utilizzo di
+                il Prodotto. Nel caso in cui riteniamo che tali aggiornamenti o upgrade influenzeranno materialmente il vostro utilizzo di
+                il Prodotto, faremo del nostro meglio per informarvi. Gli aggiornamenti per i rilasci di Chrome sono gestiti dalla
+                sito web di Google Web Store e sono soggetti alla politica sulla privacy di Google.
+                Inoltre, ci riserviamo il diritto di interrompere alcune o tutte le funzionalità del nostro Servizio in qualsiasi momento
+                a nostra esclusiva discrezione (inclusa la fornitura di eventuali aggiornamenti, upgrade o correzioni). Non siamo sotto
+                obbligo di fornire qualsiasi caratteristica, funzionalità, aggiornamenti o correzioni di bug. Accettate che noi
+                non sarà responsabile nei vostri confronti o nei confronti di terzi per qualsiasi modifica, sospensione o interruzione di
+                il nostro Servizio, o parte di esso. Se non siete soddisfatti di eventuali modifiche al Servizio, allora il vostro
+                L&#039;unica opzione è quella di interrompere o terminare l&#039;utilizzo del Servizio.
+                <br>
+                <br>
+                7. Le vostre rappresentazioni e garanzie<br>
+                L&#039;utente dichiara e garantisce che (i) utilizzerà il Prodotto esclusivamente come consentito dal presente EULA; (ii) l&#039;utente
+                utilizzerà il Prodotto nel pieno rispetto di tutte le leggi, norme e regolamenti applicabili e dell&#039;industria
+                le migliori pratiche; (iii) non utilizzerete il Prodotto per scopi fraudolenti o inappropriati; (iv) non utilizzerete il Prodotto
+                non si trovano in un paese soggetto a embargo da parte del governo degli Stati Uniti o che è stato designato da
+                il governo degli Stati Uniti come paese &quot;sostenitore del terrorismo&quot;; e (v) non siete elencati in nessuna lista degli Stati Uniti.
+                Government list per quanto riguarda le parti proibite o soggette a restrizioni.
+                <br>
+                <br>
+                8. Esclusione di garanzia<br>
+                L&#039;UTENTE RICONOSCE E ACCETTA ESPRESSAMENTE CHE L&#039;USO DEL PRODOTTO E DI QUALSIASI SERVIZIO, CONTENUTO (INCLUSI
+                CONTENUTO DI TERZI) IN ESSO FORNITO È A SUO ESCLUSIVO RISCHIO (COMPRESA, A TITOLO ESEMPLIFICATIVO E NON ESAUSTIVO, L&#039;EVENTUALE PERDITA DI
+                DATI O ALTRI DANNI AL DISPOSITIVO) E CHE L&#039;INTERO RISCHIO PER QUANTO RIGUARDA LA QUALITÀ SODDISFACENTE, LE PRESTAZIONI,
+                L&#039;ACCURATEZZA E LO SFORZO SONO A CARICO DELL&#039;UTENTE. IL CONTENUTO DISPONIBILE SUL PRODOTTO O SERVIZIO PUÒ INCLUDERE
+                IMPRECISIONI O ERRORI. NON GARANTIAMO L&#039;ACCURATEZZA E DECLINIAMO OGNI RESPONSABILITÀ PER EVENTUALI ERRORI
+                O ALTRE IMPRECISIONI RELATIVE AL CONTENUTO VISUALIZZATO SUL PRODOTTO, COMPRESI I PRODOTTI E
+                SERVIZI OFFERTI ATTRAVERSO IL PRODOTTO. NELLA MISURA MASSIMA CONSENTITA DALLA LEGGE APPLICABILE, IL PRODOTTO E QUALSIASI
+                I SERVIZI, I PRODOTTI O I CONTENUTI IVI FORNITI SONO FORNITI &quot;COSÌ COME SONO&quot; SENZA GARANZIE DI ALCUN TIPO.
+                CON LA PRESENTE DECLINIAMO TUTTE LE GARANZIE E LE CONDIZIONI RELATIVE AL PRODOTTO E A QUALSIASI SERVIZIO, PRODOTTO
+                O IL CONTENUTO IVI FORNITO, SIA ESSO ESPRESSO, IMPLICITO O STATUTARIO, COMPRESI, A TITOLO ESEMPLIFICATIVO MA NON ESAUSTIVO, I
+                GARANZIE IMPLICITE O CONDIZIONI DI COMMERCIABILITÀ, DI QUALITÀ SODDISFACENTE, DI IDONEITÀ PER UN
+                SCOPO PARTICOLARE, DI PRECISIONE, DI QUIETO GODIMENTO E DI NON VIOLAZIONE DI DIRITTI DI TERZI. NOI FACCIAMO
+                NON GARANTISCE CHE IL PRODOTTO E IL SERVIZIO SODDISFINO I REQUISITI DELL&#039;UTENTE. SE L&#039;UTENTE È INSODDISFATTO
+                CON QUALSIASI CONTENUTO CONTENUTO CONTENUTO NEL PRODOTTO O CON I TERMINI DI QUESTO EULA, IL SUO UNICO ED ESCLUSIVO
+                RIMEDIO È QUELLO DI INTERROMPERE L&#039;ACCESSO E L&#039;UTILIZZO DEL PRODOTTO E DI QUALSIASI PRODOTTO O CONTENUTO DEI SERVIZI FORNITI
+                LÀ DENTRO.
+                <br>
+                <br>
+                9. Limitazione di responsabilità<br>
+                L&#039;UTENTE RICONOSCE E ACCETTA ESPRESSAMENTE CHE IN NESSUN CASO NOI (INCLUSI, SENZA LIMITAZIONI, I NOSTRI AFFILIATI
+                E I RISPETTIVI FUNZIONARI, DIRETTORI, DIPENDENTI E AGENTI, NONCHÉ I SUOI FORNITORI, DISTRIBUTORI,
+                I LICENZIATARI TERZI, O I FORNITORI DI ATTREZZATURE E SERVIZI) SARANNO RESPONSABILI PER QUALSIASI DIRETTA, INDIRETTA,
+                DANNI INCIDENTALI, SPECIALI, PUNITIVI, CONSEQUENZIALI O ESEMPLARI, INCLUSI, A TITOLO ESEMPLIFICATIVO MA NON ESAUSTIVO, I DANNI
+                PER PERDITA DI PROFITTI, PERDITA DI AFFARI O DI OPPORTUNITÀ, DI AVVIAMENTO O ALTRE PERDITE IMMATERIALI (ANCHE SE NOI
+                SONO STATI AVVISATI DELLA POSSIBILITÀ DI TALI DANNI) O DI ALTRE AGEVOLAZIONI DERIVANTI DA, O CORRELATE A,
+                QUESTI TERMINI O ALL&#039;UTILIZZO O ALL&#039;IMPOSSIBILITÀ DI UTILIZZARE IL PRODOTTO. LA NOSTRA RESPONSABILITÀ NON SUPERERÀ IL COSTO
+                DEL SERVIZIO. PERCHÉ ALCUNI STATI O GIURISDIZIONI NON CONSENTONO L&#039;ESCLUSIONE O LA LIMITAZIONE DI
+                RESPONSABILITÀ PER DANNI, IN TALE STATO O GIURISDIZIONI, LA NOSTRA RESPONSABILITÀ SARÀ LIMITATA NELLA MISURA IN CUI
+                CONSENTITO DALLA LEGGE.
+                <br>
+                <br>
+                10. Indennizzo<br>
+                L&#039;utente accetta espressamente di indennizzarci, difenderci e trattenerci (incluse le nostre affiliate e consociate,
+                successori, appaltatori, dipendenti, amministratori, direttori, agenti, fornitori, licenziatari, fornitori di servizi e
+                partner) innocuo da qualsiasi rivendicazione, causa, azione legale, obbligo, perdita, costo, danno,
+                spese, e qualsiasi altra responsabilità, incluse, senza limitazione, le ragionevoli spese legali, derivanti da
+                da o in qualsiasi modo collegato all&#039;accesso, all&#039;uso o all&#039;abuso del Servizio, incluso qualsiasi contenuto o
+                Contenuti di terze parti, le vostre azioni od omissioni, qualsiasi violazione o presunta violazione del presente Accordo o del
+                diritti di qualsiasi altra persona o entità da parte vostra, inclusa, senza limitazioni, qualsiasi proprietà intellettuale
+                diritto, la riservatezza, la proprietà, la privacy o il diritto di pubblicità. L&#039;utente accetta di collaborare pienamente con noi in
+                la difesa di qualsiasi rivendicazione oggetto dei vostri obblighi.
+                <br>
+                <br>
+                11. Disdetta<br>
+                Lei può interrompere l&#039;uso del Servizio in qualsiasi momento e per qualsiasi motivo rimuovendo il Prodotto, e
+                cessare l&#039;utilizzo dei Servizi. Per disinstallare il Prodotto si prega di utilizzare i processi standard di disinstallazione che sono
+                disponibile attraverso le impostazioni del browser e rimuovere l&#039;estensione come segue- In Google Chrome- (i)
+                Cliccare sull&#039;icona delle tre linee orizzontali nell&#039;angolo in alto a destra del browser Chrome; (ii) Go
+                a &quot;Impostazioni&quot;; (iii) Nel menu che appare cliccare su &quot;Estensioni&quot;; (iv) Dalla lista degli installati
+                Estensioni, trovare il nome dell&#039;estensione (v) Cliccare sull&#039;icona del cestino a destra di &quot;Abilita&quot; per
+                il nome dell&#039;estensione; (vi) Chiudere completamente il browser e riaprirlo. L&#039;estensione dovrebbe essere
+                rimosso dal browser Chrome. In Mozilla Firefox- (i) Fare clic sull&#039;icona delle tre linee orizzontali in
+                nell&#039;angolo in alto a destra del browser Firefox; (ii) Vai a &quot;Add-ons&quot;; (iii) nel menu che
+                appare cliccare su &quot;Extensions&quot;; (iv) Dalla lista delle Extensions installate, trovare il nome del
+                estensione (v) Cliccare sul pulsante &quot;Remove&quot; a destra del nome dell&#039;estensione; L&#039;estensione
+                dovrebbe essere rimosso dal browser Firefox. In Safari - (i) Apri Safari; (ii) Seleziona &quot;Safari&quot; e poi
+                &quot;Preferenze&quot;; (iii) Selezionare la scheda &quot;Estensioni&quot;; (iv) Dall&#039;elenco delle estensioni installate, trovare l&#039;opzione
+                nome dell&#039;estensione (v) Fare clic sul pulsante Disinstalla; l&#039;estensione deve essere rimossa dal Safari
+                browser.
+                Possiamo interrompere il vostro accesso al Prodotto o ai nostri servizi in qualsiasi momento, con o senza causa e con o
+                senza preavviso, con effetto immediato.
+                Qualsiasi risoluzione può comportare la distruzione di tutte le informazioni e i dati associati all&#039;utilizzo di
+                il Prodotto. In caso di risoluzione, tutte le licenze e gli altri diritti concessi all&#039;utente dal presente Accordo
+                cessare immediatamente. Non siamo responsabili nei vostri confronti o nei confronti di terzi per la cessazione del Servizio o
+                cessazione dell&#039;utilizzo del Servizio. Le disposizioni del presente Accordo, che per loro natura dovrebbero
+                sopravvivere a qualsiasi azione di questo tipo da parte nostra, sopravviverà.
+                <br>
+                <br>
+                12. Informativa sulla privacy<br>
+                Utilizzando il Prodotto, l&#039;utente può consentire a noi o a terzi di accedere, utilizzare e raccogliere una varietà di
+                informazioni, riguardanti il vostro browser Internet, le vostre abitudini di navigazione e le informazioni sul vostro computer
+                anche attraverso l&#039;utilizzo di cookie. Le nostre pratiche relative alla raccolta, all&#039;uso e alla divulgazione delle vostre
+                Le informazioni sono trattate nella nostra Informativa sulla privacy, disponibile all&#039;indirizzo: Informativa sulla privacy, che sono incorporati
+                qui per riferimento. Vi invitiamo a rivedere periodicamente la nostra Politica sulla privacy, che può essere soggetta a
+                modifiche di tanto in tanto. Accedendo o utilizzando il nostro Servizio, l&#039;utente acconsente alle condizioni
+                stipulato nella nostra Informativa sulla privacy.
+                <br>
+                <br>
+                13. Risoluzione delle controversie<br>
+                Per qualsiasi controversia con noi, l&#039;utente accetta di contattarci prima all&#039;indirizzo: support@freevideoguard.com e
+                cercare di risolvere la controversia con noi in modo informale. Se non siamo stati in grado di risolvere la controversia con voi
+                In via informale, ciascuno di noi accetta, in base alle presenti Condizioni esecutive, di risolvere qualsiasi reclamo e, se non altrimenti
+                richiesto da una controversia di diritto imperativo o da una controversia derivante da o in connessione con o in relazione a
+                le presenti Condizioni mediante arbitrato vincolante ed esclusivamente da parte dell&#039;American Arbitration Association (&quot;AAA&quot;). TUTTI
+                LE RICHIESTE DEVONO ESSERE PRESENTATE A TITOLO INDIVIDUALE, E NON IN QUALITÀ DI ATTORE O DI MEMBRO DELLA CLASSE IN
+                QUALSIASI PRETESA PROCEDURA DI CLASSE O DI RAPPRESENTANZA E L&#039;ARBITRO NON PUÒ CONSOLIDARE PIÙ DI UNA
+                LE RIVENDICAZIONI DELLA PERSONA. L&#039;UTENTE ACCETTA CHE, ENTRANDO IN QUESTI TERMINI, LEI E NOI RINUNCIAMO CIASCUNO AL DIRITTO DI
+                UN PROCESSO CON GIURIA O PER PARTECIPARE A UNA CLASS ACTION.
+                Dovete includere il vostro nome e l&#039;indirizzo di residenza, e una chiara dichiarazione che volete rinunciare a tutto questo
+                accordo di arbitrato. Questo accordo arbitrale sopravvivrà alla risoluzione delle presenti Condizioni. Questi
+                I termini sono regolati e interpretati in conformità con le leggi dello Stato di New York, senza dare
+                in base a qualsiasi principio di conflitto di leggi e in particolare non sarà governato dalle Nazioni Unite
+                le convenzioni sui contratti di vendita internazionale di beni, se applicabili in altro modo. Per qualsiasi azione a
+                in base alla legge o in via equitativa in relazione alla disposizione arbitrale di questi Termini e Condizioni, l&#039;utente accetta di
+                risolvere qualsiasi controversia con l&#039;utente esclusivamente in un tribunale statale o federale situato a New York, Manhattan
+                e di sottomettersi alla giurisdizione personale dei tribunali della Contea di New York al fine di
+                a dirimere tutte le controversie di questo tipo. Qualsiasi causa di azione legale che potreste avere in relazione al servizio è limitata a
+                tempo ad un (1) anno dal verificarsi dell&#039;incidente, e sarà definitivamente interdetto in seguito.
+                <br>
+                <br>
+                14. Varie<br>
+                Le presenti Condizioni, costituiscono l&#039;intero accordo tra le parti in merito all&#039;utilizzo delle
+                Prodotto e il nostro servizio. Se una qualsiasi disposizione di questi Termini è ritenuta non applicabile, tale disposizione
+                è riformata solo nella misura necessaria a renderla esecutiva e tale decisione non pregiudica
+                l&#039;applicabilità di tale disposizione in altre circostanze, o delle restanti disposizioni del presente documento
+                in ogni circostanza. La nostra incapacità di far valere i nostri diritti o di agire contro di voi in caso di
+                qualsiasi violazione ai sensi del presente documento non sarà considerata come una rinuncia a tali diritti o ad azioni successive nella
+                evento di future violazioni. Il presente EULA e qualsiasi diritto qui concesso non può essere assegnato da voi senza il nostro
+                previo consenso scritto. Possiamo cedere i nostri diritti in base al presente Contratto a terzi presso la nostra sede.
+                a sola discrezione.
+                <br>
+                <br>
+                15. Informazioni di contatto<br>
+                Se avete domande, contattateci via e-mail: <a href="mailto:support@freevideoguard.com">support@freevideoguard.com</a>
+            </div>
+            <div class="block-additional-content">
+                Facendo clic sul pulsante &quot;Accetta e continua&quot;, verrai
+                <span
+                    class="inline ">reindirizzato alla pagina del Chrome Web Store</span>
+                <span
+                    class="inline hidden">reindirizzato alla pagina del Edge Web Store</span>
+                <span
+                    class="inline for-firefox hidden">suggerito da</span>
+                dove potrai installare questa estensione. Facendo clic sul pulsante
+                <span
+                    class="inline for-another ">&quot;Aggiungi&quot;</span>
+                <span
+                    class="inline hidden">&quot;Ottieni&quot;</span>
+                <span
+                    class="inline for-firefox ff-only hidden">&quot;Prosegui con l`installazione&quot;</span>
+                e installando questa estensione nel browser, accetti i
+                <a target="_blank"
+                   href="https://freevideoguard.com/terms">termini di utilizzo</a> e
+                <a target="_blank" href="https://freevideoguard.com/privacy">l&#039;informativa sulla privacy</a>.
+            </div>
+            <div class="block-footer">
+                <div class="flex align-items-center">
+                    <img class="for-another chrome-store-image "
+                         src="/img/common/chrome-web-store.jpg" alt="Available in chrome store">
+                    <img class="for-edge chrome-store-image hidden"
+                         src="/img/common/edge-web-store.png" alt="Available in edge store">
+                    <img class="for-firefox chrome-store-image hidden"
+                         src="/img/common/firefox.png" alt="Available in firefox store">
+                </div>
+                <button class="js-action" id="promo5" data-trigger-helper>
+                    Accetta e continua
+                </button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-wrapper">
+                ©2020 Video AdBlocker |
+                <a target="_blank" href="https://freevideoguard.com/privacy">Informativa sulla privacy</a> |
+                <a target="_blank" href="https://freevideoguard.com/terms">Termini di utilizzo</a> |
+                <a href="mailto:support@freevideoguard.com">support@freevideoguard.com</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    if (window.location !== window.parent.location) {
+        document.querySelector('.footer').classList.add('hidden');
+        document.querySelector('body').classList.add('transparent');
+    }
+</script>
+
+<div class="exit-popup-wrapper-new hidden" data-popup-exit-layer>
+    <div class="exit-popup-new">
+        <div class="popup-title-new">
+            Desideri guardare gli annunci pubblicitari?
+        </div>
+        <div class="popup-text-new">
+            Per non visualizzare costantemente annunci pubblicitari, è necessario installare Video AdBlocker nel browser
+        </div>
+        <ul class="popup-list-new">
+            <li>Video AdBlocker è assolutamente gratuito!</li>
+            <li>Tutela della privacy garantita!</li>
+            <li>Di&#039; addio agli annunci pubblicitari una volta per tutte!</li>
+        </ul>
+        <div class="popup-footer-new js-action" id="exitLayer2" data-trigger-helper>
+            <button class="popup-button-new">
+                Rimuove gli annunci pubblicitari&nbsp;&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11"><g><g><path fill="#fff" d="M5.599 6.875l-4.205 4.126-1.402-1.376L4.197 5.5-.008 1.375 1.394-.001l4.205 4.126L7 5.5z"/></g></g></svg>
+            </button>
+        </div>
+        <div class="popup-close-button-new" data-close-wrap>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(0,0,0,.3)" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </div>
+    </div>
+</div>
+
+    <div class="popup-wrap " data-popup-wrap>
+    <div class="next" data-next>
+        <div class="popup-img"></div>
+        <div class="popup-info">
+            <div class="skip-block">
+                <img src="/img/lander3/webstore-icon.png.svg" alt="Webstore icon" class="skip-block-img-1 ">
+                <img src="/img/lander3/firefox-3.svg" alt="Firefox icon" class="skip-block-img-1 hidden">
+                <img src="/img/common/microsoft-icon.svg" alt="Edge icon" class="skip-block-img-1 hidden">
+                <img src="/img/lander2/opera.svg" alt="Opera icon" class="skip-block-img-1 hidden">
+                <img src="/img/lander3/star-rating.svg" alt="Star rating icon" class="skip-block-img-2">
+                <div class="skip-block-text-1">Valutazione di 4,3 stelle nel</div>
+                <div class="skip-block-text-2 ">Chrome Web Store</div>
+                <div class="skip-block-text-2 hidden">Firefox Add-ons</div>
+                <div class="skip-block-text-2 hidden">Microsoft Edge Web Store</div>
+                <div class="skip-block-text-2 hidden">extensionlp.opera_add_ons</div>
+            </div>
+            <h2 class="head">
+                Goditi una vita senza pubblicità
+            </h2>
+            <a class="btn-container js-action" id="exitLayer1" data-trigger-helper>
+                <div class="btn-text-1 exit-layer">Blocca gli annunci pubblicitari ora</div>
+                <div class="btn-text-2 exit-layer-2">È gratis!</div>
+                <div class="btn-icon">
+                    <img src="/img/lander3/arrow.svg" alt="Arrow icon">
+                </div>
+            </a>
+            <button class="btn-no" data-close-wrap>No, adoro gli annunci pubblicitari</button>
+        </div>
+    </div>
+    <div class="hand-wrap hand-wrap-chrome open" data-hand>
+        <div class="bc for-another">
+            <div id="hand-container" class="w-100">
+                <div class="container hidden" id="right-option-1">
+                    <div class="wrap-main-block">
+                        <div class="main-block" style="margin-top: 0px">
+                            <div class="block-header">
+                                <div class="icon">
+                                    <img src="/img/common/icon-big.png" alt="Video Adblocker">
+                                </div>
+                                <div class="header-content">
+                                    <div class="title">AGGIUNGI VIDEO ADBLOCKER AL TUO BROWSER</div>
+                                                                            <p>1. Fai clic su &quot;Aggiungi”</p>
+                                        <p >2. Fai clic su &quot;Aggiungi estensione&quot;</p>
+                                                                    </div>
+                                <div class="step title no-wrap">
+                                    PASSAGGIO 2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="hand-container no-bg-hand-container hidden  max-width-none-2 " id="right-option-2">
+                    <div class="hand"
+                                                  >
+                        <div class="helper-block flex-end">
+                            <div class="helper-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px"
+                                     width="130px" height="130px" viewBox="0 0 444.822 444.822">
+                                    <g>
+                                        <path fill="#ffff00"
+                                              d="M423.264,178.297c-6.19-7.139-14.229-10.707-24.126-10.707H198.148L281.8,83.937c7.234-7.229,10.848-15.891,10.848-25.981   c0-10.085-3.613-18.747-10.848-25.979l-21.413-21.129C253.156,3.619,244.59,0,234.693,0c-10.089,0-18.752,3.615-25.981,10.848   L22.848,196.428c-7.043,7.423-10.564,16.084-10.564,25.981c0,10.089,3.521,18.654,10.564,25.693l185.864,186.152   c7.422,7.043,16.083,10.567,25.981,10.567c10.085,0,18.65-3.524,25.693-10.567l21.413-21.693   c7.234-6.851,10.848-15.42,10.848-25.693c0-10.284-3.613-18.853-10.848-25.7l-83.652-83.939h200.991   c9.896,0,17.936-3.569,24.126-10.707c6.184-7.139,9.274-15.749,9.274-25.838v-36.545   C432.542,194.05,429.448,185.437,423.265,178.297z"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="helper-message">
+                                <div class="message-wrapper">
+                                    Fai clic su<br>
+                                                                            <span>&#039;Aggiungi&#039;</span><br>
+                                                                        per eseguire l&#039;installazione
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hand-container for-firefox">
+            <div class="hand">
+                <div class="arrow-wrap">
+                    <div class="arrow">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="btn-wrap" style="font-family: 'Poppins', sans-serif;">
+                    <p>1. Fai clic su &quot;Prosegui con l`installazione&quot;</p>
+                    <p>2. Fai clic su &quot;Installa&quot; per aggiungere un&#039;estensione</p>
+                    <div class="flex mt-10 justify-content-center">
+                                                    <div class="certificate-item">
+                                <img class="certificate-image" src="/img/common/cert1.jpg" alt="Certificate">
+                            </div>
+                            <div class="certificate-item">
+                                <img class="certificate-image" src="/img/common/cert3.jpg" alt="Certificate">
+                            </div>
+                            <div class="certificate-item">
+                                <img class="certificate-image" src="/img/common/cert2.jpg" alt="Certificate">
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="exit-popup-wrapper hidden" data-alternate-exit-popup>
+    <div class="exit-popup">
+        Sei sicuro di voler cancellare l&#039;installazione?
+        <img src="/img/common/icon-big.png" alt="Video Adblocker">
+        <div class="popup-footer">
+            <button class="popup-button popup-button_text" data-close-popup>Sì</button>
+            <button class="popup-button js-action">No</button>
+        </div>
+    </div>
+</div>
+
+<div class="info-popup-wrapper hidden">
+    <div class="info-popup">
+        <div class="close-button" data-close-info-popup>
+            x
+        </div>
+        <div class="popup-heading">
+            Perché viene visualizzata questa pagina?
+        </div>
+        <div class="popup-text">
+            Uno dei motivi per cui visualizzi questa pagina è che Video AdBlocker desidera raggiungere le persone che vogliono eliminare gli annunci pubblicitari.
+            <br>
+            <br>
+            Potrebbero esserci altri motivi per cui visualizzi questa pagina, tra cui il fatto che Video AdBlocker pubblicizza i propri prodotti su un sito che hai visitato di recente.
+        </div>
+    </div>
+</div>
+
+<div class="info-button hidden" data-iframe-only data-show-info-popup>
+    <img src="https://freevideoguard.com/img/iframe/info_outline.svg" alt="Info">
+</div>
+
+<div class="iframe-close-btn hidden" data-iframe-only data-destroy-frame>
+    <img src="https://freevideoguard.com/img/iframe/close.svg" alt="Close">
+</div>
+
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NRZN2LN');</script>
+<!-- End Google Tag Manager -->
+
+<noscript id="deferred-styles">
+    <link rel="stylesheet" type="text/css" href="/build/css/landers-6b96f5d132.common.css"/>
+</noscript>
+
+<script>
+    const body = document.querySelector('body');
+    if (voluum_id) {
+        body.classList.add("zero-opacity");
+    }
+</script>
+
+<script>
+    var loadDeferredStyles = function () {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement);
+        addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(function () {
+        window.setTimeout(loadDeferredStyles, 0);
+    });
+    else window.addEventListener('load', loadDeferredStyles);
+</script>
+
+<script>
+    </script>
+
+<script async src="/build/js/app-4367160fd3.js"></script>
+
+</body>

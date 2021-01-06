@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en-us" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+
+<title>KrakenFiles.com - your best space to host files</title>
+<meta name="description" content="Store your files on our unlimit drive for free. Audio, Video and any files.">
+<meta name="keywords" content="KrakenFiles, files, share, drive, free, unlimit, fast, disk">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="google-site-verification" content="iL1e-YEaUXOnh4az4fgmGpALGaXGMjevD-eFRtwGItU" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production-plugins.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-skins.min.css">
+<link href="css/theme/style.css?v=1.17.1" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="css/uploader/jquery.fileupload.css">
+
+<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+<link rel="apple-touch-icon" href="https://krakenfiles.com/img/splash/sptouch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://krakenfiles.com/img/splash/touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://krakenfiles.com/img/splash/touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://krakenfiles.com/img/splash/touch-icon-ipad-retina.png">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+   google_ad_client: "ca-pub-6888611493668088",
+   enable_page_level_ads: true
+  });
+ </script>
+</head>
+<body class="desktop-detected menu-on-top fixed-header container pace-done smart-style-2">
+
+<header id="header">
+<div id="logo-group">
+
+<span id="logo"> <a href="index.html"><img src="img/krakenfiles-logo.png" alt="KrakenFiles.com"></a> </span>
+
+</div>
+
+<div class="pull-right">
+
+
+<ul class="header-dropdown-list login-top-txt">
+<li>
+<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="modal" id="login_link"> <span> Log In </span> </a>
+</li>
+</ul>
+<ul class="header-dropdown-list">
+<li>
+<a href="https://krakenfiles.com/register/" class="dropdown-toggle"> <i class="fa fa-lock"></i> <span> Sign up </span> </a>
+</li>
+</ul>
+
+</div>
+
+</header>
+
+<script>
+    $(document).ready(function() {
+        $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+            _title : function(title) {
+                if (!this.options.title) {
+                    title.html("&#160;");
+                } else {
+                    title.html(this.options.title);
+                }
+            }
+        }));
+
+        // Dialog click
+        $('#login_link').click(function() {
+            $('#login_dialog').dialog('open');
+            return false;
+
+        });
+
+        $('#login_dialog').dialog({
+            autoOpen : false,
+            width : 600,
+            resizable : false,
+            modal : true,
+            position: { my: "top", at: "center", of: $('#left-panel') },
+            title : "<div class='widget-header'> <img src='img/logotype.png' width='50' alt='KrakenFiles'><span>Login to Kraken</span></div>",
+            buttons : [{
+                html : "<i class='fa fa-times'></i>&nbsp; Cancel",
+                "class" : "btn btn-default",
+                click : function() {
+                    $(this).dialog("close");
+                }
+            },
+            {
+                html : "<i class='fa fa-sign-in'></i>&nbsp; Login",
+                "class" : "btn btn-primary",
+                click : function() {
+                    $('#login-form-dialog').submit();
+                }
+            }]
+        });
+    });
+
+</script>
+
+
+<div id="login_dialog" style="display: none;">
+<div class="modal-body no-padding">
+<form action="https://krakenfiles.com/login_check" method="post" id="login-form-dialog" class="smart-form">
+<input type="hidden" name="_csrf_token" value="kwZqerG0dl78AkiMht8_TY7SKKnv8qlYudIa2zPXBnE" />
+<fieldset>
+<section>
+<div class="row">
+<label class="label col col-2">Username</label>
+<div class="col col-10">
+<label class="input"> <i class="icon-append fa fa-user"></i>
+<input type="text" id="username" name="_username" required="required" autocomplete="username" tabindex="1" />
+</label>
+</div>
+</div>
+</section>
+<section>
+<div class="row">
+<label class="label col col-2">Password</label>
+<div class="col col-10">
+<label class="input"> <i class="icon-append fa fa-lock"></i>
+<input type="password" id="password" name="_password" required="required" autocomplete="current-password" tabindex="2" />
+</label>
+<div class="note">
+<a href="https://krakenfiles.com/resetting/request">Forgot password?</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="row">
+<div class="col col-2"></div>
+<div class="col col-10">
+<label class="checkbox">
+<input type="checkbox" id="remember_me" name="_remember_me" checked tabindex="3">
+<i></i>Remember me</label>
+</div>
+</div>
+</section>
+</fieldset>
+<button type="submit" class="hidden">Log in</button>
+</form>
+</div>
+</div>
+
+<aside id="left-panel">
+
+<div class="login-info">
+<span> 
+<a href="index.html" id="show-shortcut" data-action="toggleShortcut">
+<img src="img/avatars/sunny.png" alt="me" class="online" />
+<span>
+john.doe
+</span>
+<i class="fa fa-angle-down"></i>
+</a>
+</span>
+</div>
+
+<nav>
+
+<ul>
+<li>
+<a href="index.html" title="Home"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Home</span></a>
+</li>
+<li>
+<a href="https://krakenfiles.com/faq"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">F.A.Q</span></a>
+</li>
+<li>
+<a href="https://krakenfiles.com/blog"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">Blog</span> <span class="badge pull-right inbox-badge margin-right-13">1</span></a>
+</li>
+<li>
+<a href="https://krakenfiles.com/contact"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">Contact</span></a>
+</li>
+</ul>
+</nav>
+<div style="right:100px;position: absolute;">
+<img src="img/logotype.png" />
+</div>
+</aside>
+
+<div id="main" role="main">
+
+<div id="ribbon">
+<a href="index.html">
+<span class="ribbon-button-alignment">
+<span class="btn btn-ribbon">
+<i class="fa fa-home"></i>
+</span>
+</span>
+</a>
+
+<ol class="breadcrumb">
+<li>Home</li>
+</ol>
+
+<div class="welcome">
+<div class="col-md-8 margin-top-5">
+Welcome, on our files cloud. You can store here any your files.
+</div>
+<div class="col-md-4 homePage-checkers margin-top-5">
+<i class="fa fa-check"></i> 100% FREE <br />
+<i class="fa fa-check"></i> No Download Limits <br />
+<i class="fa fa-check"></i> Up to <strong>500 MB</strong> per File <br />
+<i class="fa fa-check"></i> Unlimited Disk Space
+</div>
+</div>
+</div>
+
+
+<div id="content">
+<div class="row">
+<div class="panel-body">
+<form id="fileupload" class="form-inline domainsearch clearfix" method="POST" enctype="multipart/form-data">
+<div class="input-files">
+<div class="col-sm-2">
+<span class="btn btn-success fileinput-button">
+<i class="glyphicon glyphicon-plus"></i>
+<span>Add files...</span>
+<input type="file" name="files[]" multiple id="input-files-button">
+</span>
+</div>
+<div class="col-sm-3 row fileupload-buttonbar" style="display:none;">
+<button type="submit" class="btn btn-primary start button-upload">
+<i class="glyphicon glyphicon-upload"></i>
+<span>Start upload your files</span>
+</button>
+<span class="fileupload-process"></span>
+</div>
+
+<div class="col-lg-6 fileupload-progress fade">
+
+<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+<div class="progress-bar progress-bar-success" style="width:0%;"></div>
+</div>
+
+<div class="progress-extended">&nbsp;</div>
+</div>
+<div class="col-md-12">
+<span style="font-size:10px">* By uploading a file You agree to the
+<a href="https://krakenfiles.com/terms">Terms and Conditions</a>.</span>
+</div>
+<div class="col-sm-12">
+<div class="table-wrap">
+<div class="table-responsive upload-area" id="upload-area">
+<div class="box-container-bg">
+<div class="box-container-bg-fix">
+<table role="presentation" class="table table-striped mb-0">
+<thead>
+<tr>
+<th style="width: 60%">File name</th>
+<th style="width: 20%">Progress</th>
+<th style="width: 10%">Size</th>
+<th class="text-nowrap" style="width: 10%">Action</th>
+</tr>
+</thead>
+<tbody class="files">
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+
+<script id="template-upload" type="text/x-tmpl">
+                    
+                    {% for (var i=0, file; file=o.files[i]; i++) { %}
+
+                    <tr class="template-upload fade">
+                        <td class="name" >{%=file.name%} <strong class="error text-danger"></strong></td>
+                        <td>
+                             <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+                         </td>
+
+                        <td> <span class="size">Processing...</span></td>
+
+                        <td class="text-nowrap">
+                            {% if (!i && !o.options.autoUpload) { %}
+                            <button class="start" style="display: none" disabled>
+                                <i class="glyphicon glyphicon-upload"></i>
+                            </button>
+                            {% } %}
+                            <a href="index.html#" class="cancel" title="Remove from upload"><i class="fa fa-close text-danger" style="font-size: 16px;padding-left: 20px;"></i> </a>
+                        </td>
+                    </tr>
+                    {% } %}
+                    
+
+            </script>
+
+<script id="template-download" type="text/x-tmpl">
+                    
+                    {% for (var i=0, file; file=o.files[i]; i++) { %}
+
+                    <tr class="template-upload fade uploaded">
+                        <td class="name" >
+                            {% if (file.url) { %}
+                                <a href="https://krakenfiles.com/{%=file.url%}" title="{%=file.name%}" class="sucess-upload-link">{%=file.name%}</a> <br/>
+                                <textarea onclick="this.focus();this.select()" class="textarea-uploaded-link">https://krakenfiles.com{%=file.url%}</textarea><i class="fa fa-clipboard" title="copy to clipboard" aria-hidden="true"></i>
+                            {% } else { %}
+                                {%=file.name%}
+                            {% } %}
+                        </td>
+
+                        <td>
+                        {% if (file.url) { %}
+                               <span style="color:green;font-size: 16px;padding-left: 25px;"><i class="fa fa-check"></i></span>
+                            {% } else { %}
+                                {% if (file.error) { %} - <span style="color:red;">{%=file.error%}{% } %}</span>
+                            {% } %}
+                         </td>
+
+                        <td class="size"> {%=o.formatFileSize(file.size)%}</td>
+
+                        <td class="text-nowrap">
+                            {% if (file.url) { %}
+                            <a href="https://krakenfiles.com/{%=file.url%}" class="sucess" title="Open file"><i class="fa fa-folder-open" style="font-size: 16px;padding-left: 20px;"></i> </a>
+                            {% } %}
+                        </td>
+                    </tr>
+                    {% } %}
+                    
+
+            </script>
+</div>
+<script>
+            $(function () {
+                'use strict';
+
+                // Initialize the jQuery File Upload widget:
+                $('#fileupload').fileupload({
+                    maxChunkSize: 20000000, // 20 MB
+                    disableImagePreview: true,
+                    disableVideoPreview: true,
+                    url: "//s3.krakenfiles.com/_uploader/gallery/upload",
+                    maxFileSize: 524288000,
+                    sequentialUploads: true
+                });
+
+                
+                $(document).on('click', '.fa-clipboard', function () {
+                    $(this).css("color", 'green');
+                    $(this).animate({
+                        color: "#b5b5b5"
+                    }, 1500);
+                    var $temp = $("<input>");
+                    $("body").append($temp);
+                    $temp.val($(this).closest('td').find('.textarea-uploaded-link').text()).select();
+                    document.execCommand("copy");
+                    $temp.remove();
+                })
+            });
+        </script>
+<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+Probably the best file hosting in your internet.
+</div>
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-12">
+<ul id="sparks" class="">
+<li class="sparks-info">
+<h5> Stored files <span class="txt-color-blue"><i class="fa fa-file" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;117,171</span></h5>
+<div class="sparkline txt-color-blue hidden-mobile hidden-md hidden-sm">
+1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471
+</div>
+</li>
+<li class="sparks-info">
+<h5> Site Traffic <span class="txt-color-purple"><i class="fa fa-arrow-circle-up" data-rel="bootstrap-tooltip" title="Increased"></i>&nbsp;45%</span></h5>
+<div class="sparkline txt-color-purple hidden-mobile hidden-md hidden-sm">
+110,150,300,130,400,240,220,310,220,300, 270, 210
+</div>
+</li>
+<li class="sparks-info">
+<h5> Users <span class="txt-color-greenDark"><i class="fa fa-users"></i>&nbsp;2447</span></h5>
+<div class="sparkline txt-color-greenDark hidden-mobile hidden-md hidden-sm">
+110,150,300,130,400,240,220,310,220,300, 270, 210
+</div>
+</li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="col-md-12 news-box">
+<div class="col-md-12 label">
+News:
+</div>
+<div class="col-md-12 news">
+<div class="col-md-1 date">
+30.12.2020
+</div>
+<div class="col-md-10 text">
+<strong><a href="https://krakenfiles.com/blog">We come back to you</a></strong>
+<span class="description">We apologize for the inconvenience. For better quality of service we need to migrate our servers.</span>
+</div>
+</div>
+<div class="col-md-12 news">
+<div class="col-md-1 date">
+16.11.2019
+</div>
+<div class="col-md-10 text">
+<strong><a href="https://krakenfiles.com/blog">We improve our service</a></strong>
+<span class="description">We have to remove old unused files because we must protect our service before spammers.</span>
+</div>
+</div>
+<div class="col-md-12 news">
+<div class="col-md-1 date">
+25.05.2019
+</div>
+<div class="col-md-10 text">
+<strong><a href="https://krakenfiles.com/blog">500 MB - new limit per file</a></strong>
+<span class="description">Today is a big day. Now you can upload your big files to your disk space. 500 MB is a new limit upload on each file.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="page-footer">
+<div class="row">
+<div class="col-xs-12 col-sm-6">
+<span class="txt-color-white">KrakenFiles.com <span class="hidden-xs"> - Free file hosting</span> © 2019</span>
+</div>
+<div class="col-xs-6 col-sm-6 text-right hidden-xs">
+<div class="txt-color-white inline-block">
+<i class="txt-color-blueLight hidden-mobile">Stable <strong>v1.0</strong> </i>
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/cookie.min.js"></script>
+<script src="js/theme/customMain.js"></script>
+<script src="js/uploader/vendor/jquery.ui.widget.js"></script>
+<script src="js/uploader/tmpl.min.js"></script>
+<script src="js/uploader/jquery.fileupload.js"></script>
+<script src="js/uploader/jquery.fileupload-process.js"></script>
+<script src="js/uploader/jquery.fileupload-validate.js"></script>
+<script src="js/uploader/jquery.fileupload-ui.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
+<script src="js/app.config.js"></script>
+<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
+<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+<script src="js/plugin/fastclick/fastclick.min.js"></script>
+<!--[if IE 8]>
+<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+<![endif]-->
+
+<script src="js/app.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-24309699-8"></script>
+<script>
+    // DO NOT REMOVE : GLOBAL FUNCTIONS!
+    $(document).ready(function() {
+        pageSetUp();
+    });
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-24309699-8');
+
+</script>
+</body>
+</html>

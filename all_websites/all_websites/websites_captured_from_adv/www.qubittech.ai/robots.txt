@@ -1,0 +1,22 @@
+User-agent: Yandex
+Disallow: /performance/
+Disallow: /accounts/signup/
+Disallow: /ref/
+Disallow: /*?*page=
+
+
+User-agent: Googlebot
+Disallow: /performance/
+Disallow: /accounts/signup/
+Disallow: /ref/
+Disallow: /*?*page=
+
+
+User-agent: *
+Disallow: /performance/
+Disallow: /accounts/signup/
+Disallow: /ref/
+Disallow: /*?*page=
+
+
+Sitemap: https://qubittech.ai/sitemap.xml

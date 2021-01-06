@@ -1,0 +1,11 @@
+ul.latestnews li{
+	margin:0.25%;
+	padding:0.25%;
+	position:relative;
+	float:right;
+	width:97%;
+	padding-right:2%;
+}
+ul.latestnews li.row1{
+	background-color:#EFEFEF;
+}

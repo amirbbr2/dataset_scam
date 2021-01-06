@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="120mm"
+   height="120mm"
+   viewBox="0 0 425.19685039 425.19685039"
+   id="svg2816"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="ico003.svg">
+  <defs
+     id="defs2818" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="45.09843"
+     inkscape:cy="204.09843"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g5385"
+     id="namedview2820"
+     showgrid="false"
+     units="mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-global="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-maximized="1"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-grids="true"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8">
+    <sodipodi:guide
+       orientation="1,0"
+       position="212.59843,0"
+       id="guide3337" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,212.59843"
+       id="guide3339" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3351"
+       units="mm"
+       spacingx="1mm"
+       spacingy="1mm"
+       empspacing="5" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2822">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="Template"
+     inkscape:label="Layer 1"
+     style="fill:none;stroke:#000000;stroke-width:0.35433071px">
+    <path
+       style="fill:#000000"
+       d=""
+       id="path5330"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000000"
+       d=""
+       id="path5326"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g5385"
+       transform="translate(-230,1)">
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:0.69639271px;stroke-opacity:0;fill-opacity:0.07058824"
+         d="M 446.4055,350.20592 C 435.97893,346.99343 424.78946,336.902 418.60446,325.133 c -3.33351,-6.34311 -4.39562,-11.93391 -4.60965,-24.26436 -0.3122,-17.98656 1.34656,-15.53515 -25.03247,-36.99459 l -11.40483,-9.27788 -12.78154,2.54056 c -41.40727,8.23046 -71.68666,-24.37934 -61.61608,-66.35825 7.45524,-31.07691 44.32035,-46.11824 74.11311,-30.23887 l 11.57529,6.16957 45.04691,-21.2482 c 34.25312,-16.1569 45.19906,-22.18154 45.68197,-25.14334 6.27649,-38.495208 33.99667,-57.19406 70.62166,-47.638349 12.97099,3.384219 28.10365,18.516879 31.48786,31.487859 8.16523,31.29561 -5.93277,59.2354 -34.00753,67.39696 -14.25547,4.14417 -25.7004,2.78871 -40.57404,-4.80537 l -11.18458,-5.71051 -43.84592,20.56366 c -24.11525,11.31 -44.50075,21.20437 -45.30109,21.98749 -0.80034,0.78311 -2.00193,5.41296 -2.67021,10.28856 l -1.21504,8.86473 16.42783,13.66617 c 9.03532,7.5164 17.80327,14.73318 19.48437,16.03731 2.40477,1.86551 5.09058,1.75893 12.59595,-0.49986 12.13627,-3.65247 17.5039,-3.61027 30.46773,0.23956 19.86018,5.89786 37.40822,29.33136 37.40822,49.95463 0,20.03652 -16.23844,42.78914 -34.28201,48.03454 -12.80322,3.72201 -26.54817,3.72944 -38.58487,0.0208 z"
+         id="path5397"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

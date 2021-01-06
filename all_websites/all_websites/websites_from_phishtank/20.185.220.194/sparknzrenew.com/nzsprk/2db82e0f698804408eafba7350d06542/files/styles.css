@@ -1,0 +1,243 @@
+@font-face { 
+font-family: 'AvenirNextLTPro-Regular';
+src: url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"), url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg"), url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"), url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype");
+}
+@font-face {
+font-family: 'AvenirNextLTPro-Medium';
+src: url("font2.ttf");
+/*src: url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot"), url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg"), url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"), url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype");*/
+
+}
+@font-face {
+font-family: 'AvenirNextLTPro-Demi';
+src:  url("font1.woff") format("woff");
+}
+@font-face {
+font-family: 'AvenirNextLTPro-Bold';
+src: url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix") format("eot"), url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/ed104d8c-7f39-4e8b-90a9-4076be06b857.svg#ed104d8c-7f39-4e8b-90a9-4076be06b857") format("svg"), url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff"), url("https://www.spark.co.nz/etc/designs/onespark/clientlib-site/fonts/Avenir/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf") format("truetype");
+}
+@font-face {
+  font-family: "spark-icon-family";
+  src: url("icon.eot");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+  font-family: "spark-icon-family";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #E8E8E8;
+}
+
+.menutoptop {
+  font-size: 12px;
+  height: 14px;
+
+}
+.menutoptop li {
+  border: none;
+  background: none;
+  padding: 0;
+  padding-left: 17px;
+  padding-right: 17px;
+  border-right: 1px solid rgba(226, 226, 226, 0.5);
+  font-family: 'AvenirNextLTPro-Medium';
+    height: 14px;
+    font-weight: 500;
+    color: #666;
+
+}
+.menutop {
+  font-size: 12px;
+  height: 53px;
+
+}
+.menutop li {
+  border: none;
+  background: none;
+  padding: 0;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 5px;
+
+    color: #666666;
+    font-family: 'AvenirNextLTPro-Medium';
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 30px;
+    position: relative;
+
+}
+.welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+header {
+  background-color: #fff;
+}
+.navber_mobile {
+  height: 62px;
+    padding: 0;
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.1);
+  padding: 0 25px;
+  position: relative;
+  width: 100%;
+}
+.navber_cont {
+  padding-top: 5px;
+  margin: 0 2.5% 0 2.5% !important;
+  width: 95%;
+  height: 28px;
+  border-bottom: 1px solid rgba(178, 178, 178, 0.5);
+}
+
+.navber_main {
+  padding-top: 5px;
+  margin: 0 2.5% 0 2.5% !important;
+  width: 95%;
+  height: 50px;
+
+}
+
+footer {
+  background-color: #fff;
+  margin-top: 30px;
+}
+.footercont {
+  padding: 20px 0 40px;
+}
+.footercont .title {
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 22px;
+    margin-bottom: 22px;
+}
+.main-form h2 {
+  font-family: 'AvenirNextLTPro-Demi';
+  color: #333;
+    font-size: 30px;
+    line-height: normal;
+    font-weight: 600;
+}
+.footercont h2 {
+  font-family: 'AvenirNextLTPro-Demi';
+  font-size: 21px;
+  color: #333;
+  outline: 0;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.main-form {
+    width: 530px;
+    background-color: #fff;
+    padding: 60px 40px;
+    margin: 73px auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,.14);
+    position: relative;
+    font-family: 'AvenirNextLTPro-Medium';
+    margin-bottom: 20px;
+}
+.thankyou {
+  width: 450px;
+    padding: 60px 40px;
+    margin: 73px auto;
+    position: relative;
+    font-family: 'AvenirNextLTPro-Medium';
+    margin-bottom: 20px;
+}
+.inputdiv {
+  margin: 44px 0 5px;
+}
+.inputdiv.m_b {
+  margin: 22px 0 5px;
+}
+.inputdiv input {
+  font-size: 16px;
+  font-family: AvenirNextLTPro-Medium;
+}
+.inputdiv label {
+  color: #b2b2b2;
+  font-family: AvenirNextLTPro-Medium;
+  font-weight: 500;
+  font-size: 16px;
+
+}
+.boxdiv {
+  margin: 33px 0 5px;
+}
+.boxdiv input {
+  font-size: 16px;
+  font-family: AvenirNextLTPro-Medium;
+}
+.boxdiv label {
+  color: #666666;
+  font-family: AvenirNextLTPro-Medium;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btnlink {
+  font-family: AvenirNextLTPro-Demi;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0096e6;
+    min-width: 108px;
+    height: 38px;
+    background-color:rgba(0,0,0,0);
+    text-transform: none;
+    width: auto;
+    display: inline-block;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+.btnlink:focus {
+  outline: none
+}
+.btn-primary {
+  font-family: AvenirNextLTPro-Demi;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  min-width: 108px;
+  height: 38px;
+  background-color: #0096e6;
+  line-height: 25px;
+  border: 0;
+  text-transform: none;
+  width: auto;
+  padding: 5px 8px;
+  display: inline-block;
+}
+.btn-primary:disabled {
+  background-color: #bdbbbb !important;
+}
+
+.error_message {
+  color: red;
+  font-size: 10px;
+}
+/* footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  footer p {
+    margin-bottom: .25rem;
+  }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); } */

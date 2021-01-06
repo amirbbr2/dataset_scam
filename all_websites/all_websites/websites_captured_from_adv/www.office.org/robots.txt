@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /datenschutz
+Disallow: /static
+Disallow: /eula
+Disallow: /deinstallation
+Disallow: /impressum
+Disallow: *impressum.png
+Disallow: *entfernen_win10.png
+Disallow: *entfernen_win7.png
+Disallow: *index.html

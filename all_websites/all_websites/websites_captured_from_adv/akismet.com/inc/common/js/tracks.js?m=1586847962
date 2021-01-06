@@ -1,0 +1,31 @@
+/**
+ * Some wrapper functions for Tracks event tracking to reduce code duplication
+ * and to allow us to add global event properties to every event.
+ *
+ * With these functions, we can also log events to the console during debugging
+ * to make it easier to see which events are being triggered.
+ */
+
+function akismet_tracks_event( event_name, event_properties ) {
+	if ( ! event_properties ) {
+		event_properties = {};
+	}
+
+	event_properties.logged_in = is_user_logged_in;
+
+	if ( typeof SANDBOXED != 'undefined' && SANDBOXED ) {
+		console.log( "Event", event_name, event_properties );
+	}
+
+	_tkq = window._tkq || [];
+	_tkq.push( [ 'recordEvent', event_name, event_properties ] );
+}
+
+function akismet_tracks_identify( user_id ) {
+	if ( typeof SANDBOXED != 'undefined' && SANDBOXED ) {
+		console.log( "User Identification", user_id );
+	}
+
+	_tkq = window._tkq || [];
+	_tkq.push( [ 'identifyUser', user_id ] );
+}

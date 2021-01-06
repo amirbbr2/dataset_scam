@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=2">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="csrf-token" content="VS4oNHLtZHDyoLBnX5ae1uOQPBusOHEcMJgiTzgs">
+
+<title></title>
+
+
+<meta name="title" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+
+
+
+
+<link rel="stylesheet" href="feed/css/common.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/flexslider.min.css">
+    <link rel="stylesheet" href="feed/assets/default/css/flex.css">
+    <link rel="stylesheet" href="feed/assets/default/css/styles.css">
+    <link rel="stylesheet" href="feed/assets/default/css/query.css">
+
+
+    
+    
+
+</head>
+<body style="background-image: url(robots.txt)">
+<div class="wrapper">
+    <div class="wrapper-inner">
+        <div class="preheader">
+    <div class="menu-button-holder">
+        <div class="menu-button-layout" flex layout="row" layout-align="end start">
+            <button class="menu-button" type="button" name="">
+        <span class="menu-button-inner">
+          <span class="menu-button-inner-line"></span>
+        </span>
+            </button>
+        </div>
+    </div>
+    <nav role="menu" class="preheader-menu menu">
+        <ul class="clearfix">
+            <li class="nav-item">
+                <a href="http://yourwownewz.com/feed/pages/about"
+                   title="About"
+                >
+                    About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="http://yourwownewz.com/feed/pages/privacy-policy"
+                   title="Contact"
+                >
+                    Privacy Policy
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="http://yourwownewz.com/feed/pages/terms-of-use"
+                   title="Policy"
+                >
+                    Terms of Use
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="http://yourwownewz.com/feed/pages/dmca-policy"
+                   title="Policy"
+                >
+                    DMCA Policy
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="http://yourwownewz.com/feed/pages/unsubscribing"
+                   title="Policy"
+                >
+                    Unsubscribing
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- header -->
+<header class="site-header">
+    <div class="header-inner" flex layout="row" layout-sm="column" layout-align="start stretch" layout-wrap>
+
+                            <div class="logo-text" flex="none" layout="row" layout-align="center center">
+                <a href="http://yourwownewz.com/feed" title="" flex="none" layout="row"
+                   layout-align="start start">
+                    <span class="logo-text-name" flex="none">
+                        Breaking News
+                    </span>
+                </a>
+            </div>
+        
+        <div class="ad-header-logo" flex layout="row" layout-align="center center">
+            <div class="ad-header-logo-content">
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="header-menu">
+        <div class="menu-button-holder">
+            <div class="menu-button-layout" flex layout="row" layout-align="end start">
+                <button class="menu-button" type="button" name="">
+          <span class="menu-button-inner">
+            <span class="menu-button-inner-line"></span>
+          </span>
+                </button>
+            </div>
+        </div>
+        <nav role="menu" class="menu">
+            <ul class="clearfix">
+                                    <li class="nav-item">
+                        <a href="http://yourwownewz.com/feed/categories/financial-news"
+                           title=" Financial News">
+                            Financial News
+                        </a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="http://yourwownewz.com/feed/categories/tech-news"
+                           title=" Tech News">
+                            Tech News
+                        </a>
+                    </li>
+                                    <li class="nav-item">
+                        <a href="http://yourwownewz.com/feed/categories/entertainment"
+                           title=" Entertainment">
+                            Entertainment
+                        </a>
+                    </li>
+                            </ul>
+        </nav>
+    </div>
+
+    
+</header>
+<!-- /header -->
+
+        <section role="main" class="main">
+                            <div class="header-carousel-wrap">
+    <div class="header-carousel-left flexslider">
+        <ul class="slides">
+                            <li>
+                    <div class="post-carousel-item">
+                        <a href="http://yourwownewz.com/feed/posts/whats-on-tv-saturday-plus-sunday-talk-shows-smallfoot" title="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;" class="list-stacked-item-global-link"></a>
+
+                        <figure class="list-stacked-img">
+                            <a href="http://yourwownewz.com/feed/posts/whats-on-tv-saturday-plus-sunday-talk-shows-smallfoot" title="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                                <img src="feed/img/default.png" alt="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                            </a>
+                        </figure>
+
+                        <article class="list-stacked-content">
+                            <header class="list-stacked-item-header">
+                                <h3 class="list-stacked-item-title">
+                                    What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;
+                                </h3>
+                            </header>
+
+                            <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                6:19pm, 25th December, 2020
+            </span>
+        </div>
+    </div>
+</div>                        </article>
+                    </div>
+                </li>
+                            <li>
+                    <div class="post-carousel-item">
+                        <a href="http://yourwownewz.com/feed/posts/whats-on-tv-this-week-new-years-eve-the-rose-parade-laura-ingalls-wilder-and-more" title="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more" class="list-stacked-item-global-link"></a>
+
+                        <figure class="list-stacked-img">
+                            <a href="http://yourwownewz.com/feed/posts/whats-on-tv-this-week-new-years-eve-the-rose-parade-laura-ingalls-wilder-and-more" title="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                                <img src="feed/img/default.png" alt="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                            </a>
+                        </figure>
+
+                        <article class="list-stacked-content">
+                            <header class="list-stacked-item-header">
+                                <h3 class="list-stacked-item-title">
+                                    What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more
+                                </h3>
+                            </header>
+
+                            <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                12:39pm, 25th December, 2020
+            </span>
+        </div>
+    </div>
+</div>                        </article>
+                    </div>
+                </li>
+                            <li>
+                    <div class="post-carousel-item">
+                        <a href="http://yourwownewz.com/feed/posts/how-accurate-is-bridgertons-tale-of-sex-and-scandal-in-regency-england-we-asked" title="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked" class="list-stacked-item-global-link"></a>
+
+                        <figure class="list-stacked-img">
+                            <a href="http://yourwownewz.com/feed/posts/how-accurate-is-bridgertons-tale-of-sex-and-scandal-in-regency-england-we-asked" title="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                                <img src="feed/img/default.png" alt="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                            </a>
+                        </figure>
+
+                        <article class="list-stacked-content">
+                            <header class="list-stacked-item-header">
+                                <h3 class="list-stacked-item-title">
+                                    How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked
+                                </h3>
+                            </header>
+
+                            <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                9:34am, 25th December, 2020
+            </span>
+        </div>
+    </div>
+</div>                        </article>
+                    </div>
+                </li>
+                            <li>
+                    <div class="post-carousel-item">
+                        <a href="http://yourwownewz.com/feed/posts/whats-on-tv-friday-call-the-midwife-holiday-special" title="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;" class="list-stacked-item-global-link"></a>
+
+                        <figure class="list-stacked-img">
+                            <a href="http://yourwownewz.com/feed/posts/whats-on-tv-friday-call-the-midwife-holiday-special" title="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;">
+                                <img src="feed/img/default.png" alt="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;">
+                            </a>
+                        </figure>
+
+                        <article class="list-stacked-content">
+                            <header class="list-stacked-item-header">
+                                <h3 class="list-stacked-item-title">
+                                    What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;
+                                </h3>
+                            </header>
+
+                            <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                8:11pm, 24th December, 2020
+            </span>
+        </div>
+    </div>
+</div>                        </article>
+                    </div>
+                </li>
+                            <li>
+                    <div class="post-carousel-item">
+                        <a href="http://yourwownewz.com/feed/posts/whats-playing-at-the-drive-in-gal-gadot-in-wonder-woman-1984-and-more" title="What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more" class="list-stacked-item-global-link"></a>
+
+                        <figure class="list-stacked-img">
+                            <a href="http://yourwownewz.com/feed/posts/whats-playing-at-the-drive-in-gal-gadot-in-wonder-woman-1984-and-more" title="What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more">
+                                <img src="feed/img/default.png" alt="What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more">
+                            </a>
+                        </figure>
+
+                        <article class="list-stacked-content">
+                            <header class="list-stacked-item-header">
+                                <h3 class="list-stacked-item-title">
+                                    What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more
+                                </h3>
+                            </header>
+
+                            <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                6:38pm, 24th December, 2020
+            </span>
+        </div>
+    </div>
+</div>                        </article>
+                    </div>
+                </li>
+                    </ul>
+    </div>
+    <div class="header-carousel-right">
+                    <div class="post-carousel-item">
+                <a href="http://yourwownewz.com/feed/posts/whodini-rapper-john-ecstasy-fletcher-hip-hop-pioneer-dies-at-56" title="Whodini rapper John &#039;Ecstasy&#039; Fletcher, hip-hop pioneer, dies at 56" class="list-stacked-item-global-link"></a>
+
+                <figure class="list-stacked-img">
+                    <a href="http://yourwownewz.com/feed/posts/whodini-rapper-john-ecstasy-fletcher-hip-hop-pioneer-dies-at-56" title="Whodini rapper John &#039;Ecstasy&#039; Fletcher, hip-hop pioneer, dies at 56">
+                        <img src="feed/img/default.png" alt="Whodini rapper John &#039;Ecstasy&#039; Fletcher, hip-hop pioneer, dies at 56">
+                    </a>
+                </figure>
+
+                <article class="list-stacked-content">
+                    <header class="list-stacked-item-header">
+                        <h3 class="list-stacked-item-title">
+                            Whodini rapper John &#039;Ecstasy&#039; Fletcher, hip-hop pioneer, dies at 56
+                        </h3>
+                    </header>
+
+                    <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                3:02pm, 24th December, 2020
+            </span>
+        </div>
+    </div>
+</div>                </article>
+            </div>
+                    <div class="post-carousel-item">
+                <a href="http://yourwownewz.com/feed/posts/comedy-show-normalize-everything-aims-to-de-stigmatize-mental-illness-by-joking-about-it" title="Comedy show &#039;Normalize Everything&#039; aims to de-stigmatize mental illness by joking about it" class="list-stacked-item-global-link"></a>
+
+                <figure class="list-stacked-img">
+                    <a href="http://yourwownewz.com/feed/posts/comedy-show-normalize-everything-aims-to-de-stigmatize-mental-illness-by-joking-about-it" title="Comedy show &#039;Normalize Everything&#039; aims to de-stigmatize mental illness by joking about it">
+                        <img src="feed/img/default.png" alt="Comedy show &#039;Normalize Everything&#039; aims to de-stigmatize mental illness by joking about it">
+                    </a>
+                </figure>
+
+                <article class="list-stacked-content">
+                    <header class="list-stacked-item-header">
+                        <h3 class="list-stacked-item-title">
+                            Comedy show &#039;Normalize Everything&#039; aims to de-stigmatize mental illness by joking about it
+                        </h3>
+                    </header>
+
+                    <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                12:58pm, 24th December, 2020
+            </span>
+        </div>
+    </div>
+</div>                </article>
+            </div>
+            </div>
+</div>
+
+<div style="clear: both"></div>
+
+    
+    <div class="grid" flex layout="row" layout-sm="column" layout-align="start start">
+        <div class="grid-25 order-sm-2 grid-sm-100" flex flex-sm="none">
+                            <article class="list-item list-item-column hide-desc open-desc-sm ">
+        <div class="list-item-layout" flex layout="column" layout-align="start start">
+
+            <figure class="list-item-img" flex="none">
+                <div class="list-item-category-in-img">
+                                            <a href="http://yourwownewz.com/feed/categories/entertainment"
+                           title="Entertainment">
+                            Entertainment
+                        </a>
+                                    </div>
+
+                <a href="http://yourwownewz.com/feed/posts/whats-on-tv-this-week-new-years-eve-the-rose-parade-laura-ingalls-wilder-and-more" title="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                                            <img src="feed/img/default.png" alt="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                                    </a>
+            </figure>
+
+            <div class="list-item-content" flex="none" flex-m="auto">
+                <header class="list-item-header">
+                    <h3 class="list-item-title">
+                        <a href="http://yourwownewz.com/feed/posts/whats-on-tv-this-week-new-years-eve-the-rose-parade-laura-ingalls-wilder-and-more" title="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                            What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more
+                        </a>
+                    </h3>
+                </header>
+
+                <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                12:39pm, 25th December, 2020
+            </span>
+        </div>
+    </div>
+</div>
+                                    <div class="list-item-desc">
+                        TV highlights for Dec. 27-Jan. 2 include New Year's Eve celebrations, a Rose Parade special and a profile of Laura Ingalls Wilder on PBS.
+                    </div>
+                            </div>
+        </div>
+    </article>
+                            <article class="list-item list-item-column hide-desc open-desc-sm ">
+        <div class="list-item-layout" flex layout="column" layout-align="start start">
+
+            <figure class="list-item-img" flex="none">
+                <div class="list-item-category-in-img">
+                                            <a href="http://yourwownewz.com/feed/categories/entertainment"
+                           title="Entertainment">
+                            Entertainment
+                        </a>
+                                    </div>
+
+                <a href="http://yourwownewz.com/feed/posts/how-accurate-is-bridgertons-tale-of-sex-and-scandal-in-regency-england-we-asked" title="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                                            <img src="feed/img/default.png" alt="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                                    </a>
+            </figure>
+
+            <div class="list-item-content" flex="none" flex-m="auto">
+                <header class="list-item-header">
+                    <h3 class="list-item-title">
+                        <a href="http://yourwownewz.com/feed/posts/how-accurate-is-bridgertons-tale-of-sex-and-scandal-in-regency-england-we-asked" title="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                            How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked
+                        </a>
+                    </h3>
+                </header>
+
+                <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                9:34am, 25th December, 2020
+            </span>
+        </div>
+    </div>
+</div>
+                                    <div class="list-item-desc">
+                        Historians help us sort through fact and fiction in executive producer Shonda Rhimes' saucy Netflix drama about the 19th century English marriage market.
+                    </div>
+                            </div>
+        </div>
+    </article>
+                    </div>
+        <div class="grid-50 order-sm-1 grid-sm-100" flex flex-sm="none">
+            <article class="list-item list-item-column  ">
+        <div class="list-item-layout" flex layout="column" layout-align="start start">
+
+            <figure class="list-item-img" flex="none">
+                <div class="list-item-category-in-img">
+                                            <a href="http://yourwownewz.com/feed/categories/entertainment"
+                           title="Entertainment">
+                            Entertainment
+                        </a>
+                                    </div>
+
+                <a href="http://yourwownewz.com/feed/posts/whats-on-tv-saturday-plus-sunday-talk-shows-smallfoot" title="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                                            <img src="feed/img/default.png" alt="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                                    </a>
+            </figure>
+
+            <div class="list-item-content" flex="none" flex-m="auto">
+                <header class="list-item-header">
+                    <h3 class="list-item-title">
+                        <a href="http://yourwownewz.com/feed/posts/whats-on-tv-saturday-plus-sunday-talk-shows-smallfoot" title="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                            What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;
+                        </a>
+                    </h3>
+                </header>
+
+                <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                6:19pm, 25th December, 2020
+            </span>
+        </div>
+    </div>
+</div>
+                                    <div class="list-item-desc">
+                        What's on TV Saturday, Dec. 26, plus Sunday talk shows: "Smallfoot" on Toon; college football; college basketball; NFL football
+                    </div>
+                            </div>
+        </div>
+    </article>
+        </div>
+        <div class="grid-25 order-sm-2 grid-sm-100" flex flex-sm="none">
+                            <article class="list-item list-item-column hide-desc open-desc-sm ">
+        <div class="list-item-layout" flex layout="column" layout-align="start start">
+
+            <figure class="list-item-img" flex="none">
+                <div class="list-item-category-in-img">
+                                            <a href="http://yourwownewz.com/feed/categories/entertainment"
+                           title="Entertainment">
+                            Entertainment
+                        </a>
+                                    </div>
+
+                <a href="http://yourwownewz.com/feed/posts/whats-on-tv-friday-call-the-midwife-holiday-special" title="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;">
+                                            <img src="feed/img/default.png" alt="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;">
+                                    </a>
+            </figure>
+
+            <div class="list-item-content" flex="none" flex-m="auto">
+                <header class="list-item-header">
+                    <h3 class="list-item-title">
+                        <a href="http://yourwownewz.com/feed/posts/whats-on-tv-friday-call-the-midwife-holiday-special" title="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;">
+                            What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;
+                        </a>
+                    </h3>
+                </header>
+
+                <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                8:11pm, 24th December, 2020
+            </span>
+        </div>
+    </div>
+</div>
+                                    <div class="list-item-desc">
+                        What's on TV Friday, Dec. 25: "Call the Midwife Holiday Special" on PBS; Christmas movies and specials; "Gordon Ramsay: Uncharted" on National Geographic
+                    </div>
+                            </div>
+        </div>
+    </article>
+                            <article class="list-item list-item-column hide-desc open-desc-sm ">
+        <div class="list-item-layout" flex layout="column" layout-align="start start">
+
+            <figure class="list-item-img" flex="none">
+                <div class="list-item-category-in-img">
+                                            <a href="http://yourwownewz.com/feed/categories/entertainment"
+                           title="Entertainment">
+                            Entertainment
+                        </a>
+                                    </div>
+
+                <a href="http://yourwownewz.com/feed/posts/whats-playing-at-the-drive-in-gal-gadot-in-wonder-woman-1984-and-more" title="What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more">
+                                            <img src="feed/img/default.png" alt="What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more">
+                                    </a>
+            </figure>
+
+            <div class="list-item-content" flex="none" flex-m="auto">
+                <header class="list-item-header">
+                    <h3 class="list-item-title">
+                        <a href="http://yourwownewz.com/feed/posts/whats-playing-at-the-drive-in-gal-gadot-in-wonder-woman-1984-and-more" title="What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more">
+                            What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more
+                        </a>
+                    </h3>
+                </header>
+
+                <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                6:38pm, 24th December, 2020
+            </span>
+        </div>
+    </div>
+</div>
+                                    <div class="list-item-desc">
+                        Find a flick with our guide to new and classic movies playing outdoors at L.A.-area drive-ins, pop-ups and rooftops.
+                    </div>
+                            </div>
+        </div>
+    </article>
+                    </div>
+    </div>
+
+    <div class="grid" flex layout="row" layout-sm="column" layout-align="start start">
+        <div class="grid-66 grid-sm-100" flex flex-sm="none">
+
+            <!-- lineup post -->
+            <div class="lineup-post lineup-post-has-image">
+                <figure class="lineup-post-img-wrapper">
+                                            <a href="http://yourwownewz.com/feed/posts/whats-on-tv-this-week-new-years-eve-the-rose-parade-laura-ingalls-wilder-and-more"
+                           title="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                            <img src="feed/img/default.png"
+                                 alt="#">
+                        </a>
+                                    </figure>
+                <article class="lineup-post-content">
+                    <div class="lineup-post-list">
+                        <ul>
+                                                            <li>
+                                    <a href="http://yourwownewz.com/feed/posts/whats-on-tv-saturday-plus-sunday-talk-shows-smallfoot" title="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                                        What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="http://yourwownewz.com/feed/posts/whats-on-tv-this-week-new-years-eve-the-rose-parade-laura-ingalls-wilder-and-more" title="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                                        What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="http://yourwownewz.com/feed/posts/how-accurate-is-bridgertons-tale-of-sex-and-scandal-in-regency-england-we-asked" title="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                                        How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked
+                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="http://yourwownewz.com/feed/posts/whats-on-tv-friday-call-the-midwife-holiday-special" title="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;">
+                                        What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </article>
+            </div>
+            <!-- /lineup post -->
+        </div>
+
+        <div class="grid-33 grid-sm-100" flex="none">
+            <!-- tabs -->
+<div class="tabs">
+  <div class="tabs-switch">
+    <div class="tabs-switch-layout" flex layout="row" layout-align="start stretch">
+      <button data-tab="tab_1" class="tabs-switch-button tabs-switch-button-active" type="button" name="" flex>
+        <span class="tabs-switch-button-layout" flex layout="row" layout-align="center center">
+          <span class="tabs-switch-button-ico">
+            <i class="fas fa-newspaper"></i>
+          </span>
+        </span>
+      </button>
+      <button data-tab="tab_2" class="tabs-switch-button" type="button" name="" flex>
+        <span class="tabs-switch-button-layout" flex layout="row" layout-align="center center">
+          <span class="tabs-switch-button-ico">
+            <i class="fas fa-tags"></i>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class="tabs-content">
+    <div data-tab-content="tab_1" class="tabs-content-item tabs-content-item-active">
+      
+      <div class="tabs-posts-list">
+        <ul>
+                      <li>
+              <a href="http://yourwownewz.com/feed/posts/whats-on-tv-saturday-plus-sunday-talk-shows-smallfoot" title="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;
+              </a>
+            </li>
+                      <li>
+              <a href="http://yourwownewz.com/feed/posts/whats-on-tv-this-week-new-years-eve-the-rose-parade-laura-ingalls-wilder-and-more" title="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more
+              </a>
+            </li>
+                      <li>
+              <a href="http://yourwownewz.com/feed/posts/how-accurate-is-bridgertons-tale-of-sex-and-scandal-in-regency-england-we-asked" title="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked
+              </a>
+            </li>
+                      <li>
+              <a href="http://yourwownewz.com/feed/posts/whats-on-tv-friday-call-the-midwife-holiday-special" title="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;">
+                What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;
+              </a>
+            </li>
+                      <li>
+              <a href="http://yourwownewz.com/feed/posts/whats-playing-at-the-drive-in-gal-gadot-in-wonder-woman-1984-and-more" title="What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more">
+                What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more
+              </a>
+            </li>
+                      <li>
+              <a href="http://yourwownewz.com/feed/posts/whodini-rapper-john-ecstasy-fletcher-hip-hop-pioneer-dies-at-56" title="Whodini rapper John &#039;Ecstasy&#039; Fletcher, hip-hop pioneer, dies at 56">
+                Whodini rapper John &#039;Ecstasy&#039; Fletcher, hip-hop pioneer, dies at 56
+              </a>
+            </li>
+                      <li>
+              <a href="http://yourwownewz.com/feed/posts/comedy-show-normalize-everything-aims-to-de-stigmatize-mental-illness-by-joking-about-it" title="Comedy show &#039;Normalize Everything&#039; aims to de-stigmatize mental illness by joking about it">
+                Comedy show &#039;Normalize Everything&#039; aims to de-stigmatize mental illness by joking about it
+              </a>
+            </li>
+                      <li>
+              <a href="http://yourwownewz.com/feed/posts/upright-citizens-brigade-sells-sunset-site-this-theater-was-a-home-for-so-many" title="Upright Citizens Brigade sells Sunset site: &#039;This theater was a home for so many&#039;">
+                Upright Citizens Brigade sells Sunset site: &#039;This theater was a home for so many&#039;
+              </a>
+            </li>
+                      <li>
+              <a href="http://yourwownewz.com/feed/posts/how-the-crew-of-pixars-soul-designed-a-kid-friendly-afterlife" title="How the crew of Pixar&#039;s &#039;Soul&#039; designed a kid-friendly afterlife">
+                How the crew of Pixar&#039;s &#039;Soul&#039; designed a kid-friendly afterlife
+              </a>
+            </li>
+                      <li>
+              <a href="http://yourwownewz.com/feed/posts/despite-tom-cruise-rant-over-covid-19-safety-uk-remains-film-shoot-hub" title="Despite Tom Cruise rant over COVID-19 safety, U.K. remains film shoot hub">
+                Despite Tom Cruise rant over COVID-19 safety, U.K. remains film shoot hub
+              </a>
+            </li>
+                  </ul>
+      </div>
+
+    </div>
+    <div data-tab-content="tab_2" class="tabs-content-item">
+      
+      <div class="tags-cloud clearfix">
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags" title="" style="font-size: 19px;">
+            
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#1" title="#1" style="font-size: 17px;">
+            #1
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#1044" title="#1044" style="font-size: 26px;">
+            #1044
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#1111" title="#1111" style="font-size: 27px;">
+            #1111
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#14" title="#14" style="font-size: 14px;">
+            #14
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#2018" title="#2018" style="font-size: 30px;">
+            #2018
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#43" title="#43" style="font-size: 29px;">
+            #43
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#47" title="#47" style="font-size: 20px;">
+            #47
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#52" title="#52" style="font-size: 14px;">
+            #52
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#5minshairstyle#easyhairstyle#easyweddinghairstyle#easybridalhairstyle#hairstyle" title="#5minshairstyle#easyhairstyle#easyweddinghairstyle#easybridalhairstyle#hairstyle" style="font-size: 25px;">
+            #5minshairstyle#easyhairstyle#easyweddinghairstyle#easybridalhairstyle#hairstyle
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#77" title="#77" style="font-size: 22px;">
+            #77
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#82" title="#82" style="font-size: 26px;">
+            #82
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#abcc#exchange#best" title="#abcc#exchange#best" style="font-size: 20px;">
+            #abcc#exchange#best
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#abexercises" title="#abexercises" style="font-size: 26px;">
+            #abexercises
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#abs" title="#abs" style="font-size: 35px;">
+            #abs
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#ada" title="#ada" style="font-size: 29px;">
+            #ada
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#adidaswomen" title="#adidaswomen" style="font-size: 24px;">
+            #adidaswomen
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#aesthetics" title="#aesthetics" style="font-size: 25px;">
+            #aesthetics
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#altcoins" title="#altcoins" style="font-size: 28px;">
+            #altcoins
+          </a>
+                  <a class="tags-cloud-item" href="http://yourwownewz.com/feed/tags/#anastasia" title="#anastasia" style="font-size: 14px;">
+            #anastasia
+          </a>
+              </div>
+      
+    </div>
+  </div>
+</div>
+<!-- /tabs -->        </div>
+
+    </div>
+
+    <div class="list-images">
+    <div class="list-images-layout" flex="none" layout="row" layout-align="center center" layout-wrap>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/whats-on-tv-saturday-plus-sunday-talk-shows-smallfoot"
+                   title="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/whats-on-tv-this-week-new-years-eve-the-rose-parade-laura-ingalls-wilder-and-more"
+                   title="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/how-accurate-is-bridgertons-tale-of-sex-and-scandal-in-regency-england-we-asked"
+                   title="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/whats-on-tv-friday-call-the-midwife-holiday-special"
+                   title="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/whats-playing-at-the-drive-in-gal-gadot-in-wonder-woman-1984-and-more"
+                   title="What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/whodini-rapper-john-ecstasy-fletcher-hip-hop-pioneer-dies-at-56"
+                   title="Whodini rapper John &#039;Ecstasy&#039; Fletcher, hip-hop pioneer, dies at 56"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="Whodini rapper John &#039;Ecstasy&#039; Fletcher, hip-hop pioneer, dies at 56">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/comedy-show-normalize-everything-aims-to-de-stigmatize-mental-illness-by-joking-about-it"
+                   title="Comedy show &#039;Normalize Everything&#039; aims to de-stigmatize mental illness by joking about it"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="Comedy show &#039;Normalize Everything&#039; aims to de-stigmatize mental illness by joking about it">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/upright-citizens-brigade-sells-sunset-site-this-theater-was-a-home-for-so-many"
+                   title="Upright Citizens Brigade sells Sunset site: &#039;This theater was a home for so many&#039;"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="Upright Citizens Brigade sells Sunset site: &#039;This theater was a home for so many&#039;">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/how-the-crew-of-pixars-soul-designed-a-kid-friendly-afterlife"
+                   title="How the crew of Pixar&#039;s &#039;Soul&#039; designed a kid-friendly afterlife"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="How the crew of Pixar&#039;s &#039;Soul&#039; designed a kid-friendly afterlife">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/despite-tom-cruise-rant-over-covid-19-safety-uk-remains-film-shoot-hub"
+                   title="Despite Tom Cruise rant over COVID-19 safety, U.K. remains film shoot hub"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="Despite Tom Cruise rant over COVID-19 safety, U.K. remains film shoot hub">
+                </a>
+            </div>
+            </div>
+</div>
+    <div class="grid" flex layout="row" layout-m="column" layout-align="start start">
+                    <div class="grid-33 grid-m-100" flex flex-m="none">
+                <div class="posts-for-category">
+                    <div class="posts-for-category-header">
+                        <h3 class="posts-for-category-title">
+                            <a href="http://yourwownewz.com/feed/categories/financial-news"
+                               title="Financial News">
+                                Financial News
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="posts-for-category-content">
+                        
+                                            </div>
+                </div>
+            </div>
+                    <div class="grid-33 grid-m-100" flex flex-m="none">
+                <div class="posts-for-category">
+                    <div class="posts-for-category-header">
+                        <h3 class="posts-for-category-title">
+                            <a href="http://yourwownewz.com/feed/categories/tech-news"
+                               title="Tech News">
+                                Tech News
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="posts-for-category-content">
+                        <article class="list-item list-item-column hide-desc open-desc-sm ">
+        <div class="list-item-layout" flex layout="column" layout-align="start start">
+
+            <figure class="list-item-img" flex="none">
+                <div class="list-item-category-in-img">
+                                            <a href="http://yourwownewz.com/feed/categories/tech-news"
+                           title="Tech News">
+                            Tech News
+                        </a>
+                                    </div>
+
+                <a href="http://yourwownewz.com/feed/posts/facebook-takes-down-trump-ads-over-organized-hate-policy" title="Facebook takes down Trump ads over &#039;organized hate&#039; policy">
+                                            <img src="feed/img/default.png" alt="Facebook takes down Trump ads over &#039;organized hate&#039; policy">
+                                    </a>
+            </figure>
+
+            <div class="list-item-content" flex="none" flex-m="auto">
+                <header class="list-item-header">
+                    <h3 class="list-item-title">
+                        <a href="http://yourwownewz.com/feed/posts/facebook-takes-down-trump-ads-over-organized-hate-policy" title="Facebook takes down Trump ads over &#039;organized hate&#039; policy">
+                            Facebook takes down Trump ads over &#039;organized hate&#039; policy
+                        </a>
+                    </h3>
+                </header>
+
+                <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                2:21pm, 18th June, 2020
+            </span>
+        </div>
+    </div>
+</div>
+                                    <div class="list-item-desc">
+                        Facebook Inc said on Thursday it took down posts and ads run by the re-election campaign of U.S. President Donald Trump for violating its policy against organized hate.
+                    </div>
+                            </div>
+        </div>
+    </article>
+
+                                                    <article class="list-item list-item-small">
+        <div class="list-item-layout" flex layout="row" layout-m="column" layout-align="start start">
+            <figure class="list-item-img" flex="none">
+                <div class="list-item-category-in-img">
+                    <a href="http://yourwownewz.com/feed/categories/tech-news"
+                       title="Tech News">
+                        Tech News
+                    </a>
+                </div>
+
+                <a href="http://yourwownewz.com/feed/posts/exclusive-massive-spying-on-users-of-googles-chrome-shows-new-security-weakness" title="Exclusive: Massive spying on users of Google&#039;s Chrome shows new security weakness">
+                    <img src="feed/img/default.png" alt="Exclusive: Massive spying on users of Google&#039;s Chrome shows new security weakness">
+                </a>
+            </figure>
+
+            <div class="list-item-content" flex flex-m="none">
+                <header class="list-item-header">
+                    <h3 class="list-item-title">
+                        <a href="http://yourwownewz.com/feed/posts/exclusive-massive-spying-on-users-of-googles-chrome-shows-new-security-weakness" title="Exclusive: Massive spying on users of Google&#039;s Chrome shows new security weakness">
+                            Exclusive: Massive spying on users of Google&#039;s Chrome shows new security weakness
+                        </a>
+                    </h3>
+                </header>
+
+                <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                12:16pm, 18th June, 2020
+            </span>
+        </div>
+    </div>
+</div>            </div>
+        </div>
+    </article>
+                                                    <article class="list-item list-item-small">
+        <div class="list-item-layout" flex layout="row" layout-m="column" layout-align="start start">
+            <figure class="list-item-img" flex="none">
+                <div class="list-item-category-in-img">
+                    <a href="http://yourwownewz.com/feed/categories/tech-news"
+                       title="Tech News">
+                        Tech News
+                    </a>
+                </div>
+
+                <a href="http://yourwownewz.com/feed/posts/amazon-valentino-file-joint-lawsuit-over-shoes-counterfeiting" title="Amazon, Valentino file joint lawsuit over shoes counterfeiting">
+                    <img src="feed/img/default.png" alt="Amazon, Valentino file joint lawsuit over shoes counterfeiting">
+                </a>
+            </figure>
+
+            <div class="list-item-content" flex flex-m="none">
+                <header class="list-item-header">
+                    <h3 class="list-item-title">
+                        <a href="http://yourwownewz.com/feed/posts/amazon-valentino-file-joint-lawsuit-over-shoes-counterfeiting" title="Amazon, Valentino file joint lawsuit over shoes counterfeiting">
+                            Amazon, Valentino file joint lawsuit over shoes counterfeiting
+                        </a>
+                    </h3>
+                </header>
+
+                <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                10:10am, 18th June, 2020
+            </span>
+        </div>
+    </div>
+</div>            </div>
+        </div>
+    </article>
+                                            </div>
+                </div>
+            </div>
+                    <div class="grid-33 grid-m-100" flex flex-m="none">
+                <div class="posts-for-category">
+                    <div class="posts-for-category-header">
+                        <h3 class="posts-for-category-title">
+                            <a href="http://yourwownewz.com/feed/categories/entertainment"
+                               title="Entertainment">
+                                Entertainment
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="posts-for-category-content">
+                        <article class="list-item list-item-column hide-desc open-desc-sm ">
+        <div class="list-item-layout" flex layout="column" layout-align="start start">
+
+            <figure class="list-item-img" flex="none">
+                <div class="list-item-category-in-img">
+                                            <a href="http://yourwownewz.com/feed/categories/entertainment"
+                           title="Entertainment">
+                            Entertainment
+                        </a>
+                                    </div>
+
+                <a href="http://yourwownewz.com/feed/posts/whats-on-tv-saturday-plus-sunday-talk-shows-smallfoot" title="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                                            <img src="feed/img/default.png" alt="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                                    </a>
+            </figure>
+
+            <div class="list-item-content" flex="none" flex-m="auto">
+                <header class="list-item-header">
+                    <h3 class="list-item-title">
+                        <a href="http://yourwownewz.com/feed/posts/whats-on-tv-saturday-plus-sunday-talk-shows-smallfoot" title="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                            What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;
+                        </a>
+                    </h3>
+                </header>
+
+                <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                6:19pm, 25th December, 2020
+            </span>
+        </div>
+    </div>
+</div>
+                                    <div class="list-item-desc">
+                        What's on TV Saturday, Dec. 26, plus Sunday talk shows: "Smallfoot" on Toon; college football; college basketball; NFL football
+                    </div>
+                            </div>
+        </div>
+    </article>
+
+                                                    <article class="list-item list-item-small">
+        <div class="list-item-layout" flex layout="row" layout-m="column" layout-align="start start">
+            <figure class="list-item-img" flex="none">
+                <div class="list-item-category-in-img">
+                    <a href="http://yourwownewz.com/feed/categories/entertainment"
+                       title="Entertainment">
+                        Entertainment
+                    </a>
+                </div>
+
+                <a href="http://yourwownewz.com/feed/posts/whats-on-tv-this-week-new-years-eve-the-rose-parade-laura-ingalls-wilder-and-more" title="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                    <img src="feed/img/default.png" alt="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                </a>
+            </figure>
+
+            <div class="list-item-content" flex flex-m="none">
+                <header class="list-item-header">
+                    <h3 class="list-item-title">
+                        <a href="http://yourwownewz.com/feed/posts/whats-on-tv-this-week-new-years-eve-the-rose-parade-laura-ingalls-wilder-and-more" title="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                            What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more
+                        </a>
+                    </h3>
+                </header>
+
+                <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                12:39pm, 25th December, 2020
+            </span>
+        </div>
+    </div>
+</div>            </div>
+        </div>
+    </article>
+                                                    <article class="list-item list-item-small">
+        <div class="list-item-layout" flex layout="row" layout-m="column" layout-align="start start">
+            <figure class="list-item-img" flex="none">
+                <div class="list-item-category-in-img">
+                    <a href="http://yourwownewz.com/feed/categories/entertainment"
+                       title="Entertainment">
+                        Entertainment
+                    </a>
+                </div>
+
+                <a href="http://yourwownewz.com/feed/posts/how-accurate-is-bridgertons-tale-of-sex-and-scandal-in-regency-england-we-asked" title="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                    <img src="feed/img/default.png" alt="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                </a>
+            </figure>
+
+            <div class="list-item-content" flex flex-m="none">
+                <header class="list-item-header">
+                    <h3 class="list-item-title">
+                        <a href="http://yourwownewz.com/feed/posts/how-accurate-is-bridgertons-tale-of-sex-and-scandal-in-regency-england-we-asked" title="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                            How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked
+                        </a>
+                    </h3>
+                </header>
+
+                <div class="meta">
+    <div class="meta-item">
+        <div class="meta-item-layout" flex="none" layout="row" layout-align="start center">
+            <i class="meta-icon" flex="none">
+                <i class="far fa-clock"></i>
+            </i>
+            <span class="meta-item-text" flex="none">
+                9:34am, 25th December, 2020
+            </span>
+        </div>
+    </div>
+</div>            </div>
+        </div>
+    </article>
+                                            </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- footer -->
+<footer class="site-footer">
+    <div class="footer-layout" flex layout="row" layout-sm="column" layout-align="start start">
+
+        <div class="footer-block" flex flex-sm="none">
+            <header class="footer-block-header">
+                <h4 class="footer-block-title">Categories</h4>
+            </header>
+            <div class="footer-block-content">
+                <nav class="footer-menu" role="menu">
+                    <ul class="clearfix">
+                                                    <li class="nav-item">
+                                <a href="http://yourwownewz.com/feed/categories/financial-news"
+                                   title=" Financial News"
+                                >
+                                    Financial News
+                                </a>
+                            </li>
+                                                    <li class="nav-item">
+                                <a href="http://yourwownewz.com/feed/categories/tech-news"
+                                   title=" Tech News"
+                                >
+                                    Tech News
+                                </a>
+                            </li>
+                                                    <li class="nav-item">
+                                <a href="http://yourwownewz.com/feed/categories/entertainment"
+                                   title=" Entertainment"
+                                >
+                                    Entertainment
+                                </a>
+                            </li>
+                                            </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer-block" flex flex-sm="none">
+            <header class="footer-block-header">
+                <h4 class="footer-block-title">Must read!</h4>
+            </header>
+            <div class="footer-block-content">
+                <div class="list-images">
+    <div class="list-images-layout" flex="none" layout="row" layout-align="center center" layout-wrap>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/whats-on-tv-saturday-plus-sunday-talk-shows-smallfoot"
+                   title="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="What&#039;s on TV Saturday, plus Sunday talk shows: &#039;Smallfoot&#039;">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/whats-on-tv-this-week-new-years-eve-the-rose-parade-laura-ingalls-wilder-and-more"
+                   title="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="What&#039;s on TV This Week: New Year&#039;s Eve, the Rose Parade, Laura Ingalls Wilder and more">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/how-accurate-is-bridgertons-tale-of-sex-and-scandal-in-regency-england-we-asked"
+                   title="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="How accurate is &#039;Bridgerton&#039;s&#039; tale of sex and scandal in Regency England? We asked">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/whats-on-tv-friday-call-the-midwife-holiday-special"
+                   title="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="What&#039;s on TV Friday: &#039;Call the Midwife Holiday Special&#039;">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/whats-playing-at-the-drive-in-gal-gadot-in-wonder-woman-1984-and-more"
+                   title="What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="What&#039;s playing at the drive-in: Gal Gadot in &#039;Wonder Woman 1984&#039; and more">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/whodini-rapper-john-ecstasy-fletcher-hip-hop-pioneer-dies-at-56"
+                   title="Whodini rapper John &#039;Ecstasy&#039; Fletcher, hip-hop pioneer, dies at 56"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="Whodini rapper John &#039;Ecstasy&#039; Fletcher, hip-hop pioneer, dies at 56">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/comedy-show-normalize-everything-aims-to-de-stigmatize-mental-illness-by-joking-about-it"
+                   title="Comedy show &#039;Normalize Everything&#039; aims to de-stigmatize mental illness by joking about it"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="Comedy show &#039;Normalize Everything&#039; aims to de-stigmatize mental illness by joking about it">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/upright-citizens-brigade-sells-sunset-site-this-theater-was-a-home-for-so-many"
+                   title="Upright Citizens Brigade sells Sunset site: &#039;This theater was a home for so many&#039;"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="Upright Citizens Brigade sells Sunset site: &#039;This theater was a home for so many&#039;">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/how-the-crew-of-pixars-soul-designed-a-kid-friendly-afterlife"
+                   title="How the crew of Pixar&#039;s &#039;Soul&#039; designed a kid-friendly afterlife"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="How the crew of Pixar&#039;s &#039;Soul&#039; designed a kid-friendly afterlife">
+                </a>
+            </div>
+                    <div class="list-item-images">
+                <a href="http://yourwownewz.com/feed/posts/despite-tom-cruise-rant-over-covid-19-safety-uk-remains-film-shoot-hub"
+                   title="Despite Tom Cruise rant over COVID-19 safety, U.K. remains film shoot hub"
+                   class="list-item-images-link"
+                >
+                    <img src="feed/img/default.png"
+                         alt="Despite Tom Cruise rant over COVID-19 safety, U.K. remains film shoot hub">
+                </a>
+            </div>
+            </div>
+</div>            </div>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        Copyright &copy; 2017-2020 by yourwownewz.com<br>
+        All rights reserved. All articles, images, product names, logos, and brands are property of their respective
+        owners. All company, product and service names used in this website are for identification purposes only. Use of
+        these names, logos, and brands does not imply endorsement unless specified.<br>
+        By using this site, you agree to the
+        <a href="http://yourwownewz.com/feed/pages/terms-of-use" title="Terms of Use">Terms of Use</a>
+        and <a href="http://yourwownewz.com/feed/pages/privacy-policy" title="PrivacyPolicy">Privacy Policy</a>.
+    </div>
+
+</footer>
+<!-- /footer -->    </div>
+</div>
+
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="feed/assets/default/js/fontawesome-all.min.js"></script>
+<script type="text/javascript" src="feed/assets/default/js/main.js"></script>
+<script type='text/javascript' src='feed/js/common.js'></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider.min.js"></script>
+    <script>
+        $(function () {
+            var $slider = $('.flexslider');
+
+            $slider.flexslider({
+                animation: "slide"
+            });
+
+            setInterval(function () {
+                $slider.flexslider("next");
+            }, 3000)
+        });
+    </script>
+<script type="text/javascript" src="https://inpagepush.com/400/3084016" data-cfasync="false" async="async"></script>
+<script src="https://pushsar.com/pfe/current/tag.min.js?z=3084019" data-cfasync="false" async></script>
+<!-- Push notification disabled -->
+</body>
+</html>

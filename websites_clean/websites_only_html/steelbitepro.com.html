@@ -1,0 +1,283 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Steel Bite Pro - Video Presentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://embed.videodelivery.net">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/poppins.css">
+<link rel="stylesheet" type="text/css" href="../css/video.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<style type="text/css">
+    		h1 {
+          font-size: 1rem;
+        }
+        h2 {
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+        #player-wrapper {
+          position:relative;
+          width:auto;
+          background-color: #222;
+        }
+        #stream {
+          width: 100%;
+        }
+        #glass {
+          background-color: transparent;
+          background-repeat:no-repeat;
+          background-size: cover;
+          width:100%;
+          height:100%;
+          position:absolute;
+          left:0%;
+          right:0%;
+          top:0%;
+          bottom:0%;
+          margin:auto;
+          background-position: center;
+        }
+        #playpause {
+          background: rgba(0,0,0,0.4);
+          background-size: cover;
+          width:100%;
+          height:100%;
+          position:absolute;
+          left:0%;
+          right:0%;
+          top:0%;
+          bottom:0%;
+          margin:auto;
+          background-position: center;
+        }
+        video::-webkit-media-text-track-display {
+          font-size: 80%;
+        }
+        @media (min-width: 768px) {
+          h1 {
+            font-size: 2rem;
+          }
+          h2 {
+            font-size: 1.6rem;
+          }
+        }
+        @media (min-width: 1024px) {
+          video::-webkit-media-text-track-display {
+            font-size: 140%;
+          }
+        }
+        a.soundButton {
+          position: absolute;
+          color: #fff!important;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          padding: 20px;
+          background: rgba(0,0,0,0.4);
+          cursor: pointer;
+          z-index: 3;
+        }
+        .soundButton > img {
+          width: 75%;
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        #playpause {
+          visibility: hidden;
+        }
+        #playpause > img {
+          width: 75%;
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        #stream_container {
+          position:relative;
+        }
+      </style>
+<script src="https://www.googleoptimize.com/optimize.js?id=OPT-KG4XTTM"></script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58QDVVR');</script>
+ </head>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58QDVVR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="container">
+<div class="row">
+<div class="col-12 py-2">
+<h1 class="text-center"><b>Do This 60 Seconds Dental Trick Before <br> Going to Bed Tonight To Rebuild Your Teeth <br class="d-none d-md-block"> and Gums And Get Rid of Tooth Decay</b></h1>
+<h2 class="text-center color-yellow pb-2">Users Say It's Better Than Implants</h2>
+</div>
+</div>
+</div>
+<div class="container" id="stream_container">
+ </div>
+<script>
+   function htmlToElement(html) {
+    var template = document.createElement('template');
+    html = html.trim();
+    template.innerHTML = html;
+    return template.content.firstChild;
+  }
+
+  var video_captions = "./captions/captions.vtt";
+  var videos = {
+   "landscape":"c53c72a79044b259797d26db18037139",
+   "portrait":"97bc8ffc88481c58d81d3dcc12648b6f"
+ };
+ var video_id = videos[window.innerHeight>window.innerWidth?"portrait":"landscape"];
+
+ document.getElementById(
+  'stream_container'
+  ).appendChild(htmlToElement('<div id="player-wrapper"><stream src="' + video_id + '" id="stream" preload autoplay muted temporary-sandbox-opt-out>'
+   + '<img src="https://videodelivery.net/' + video_id + '/thumbnails/thumbnail.jpg?width=800" id="spash" style="position:absolute;width:100%;z-index:2">'
+   + '</stream>'
+   + '<div id="glass"></div>'
+   + '<div id="playpause" style="z-index:3"><img class="img-fluid mx-auto d-block" src="../img/continue.svg" ></div>'
+   + '<a class="soundButton" id="unmute" onclick="toggleMute()"><img class="img-fluid mx-auto d-block" src="../img/sound.svg"></a>'
+   +'</div>'
+   ));
+
+  var script = document.createElement('script');
+  script.src = "https://embed.videodelivery.net/embed/r4xu.fla9.latest.js?video=" + video_id + "";
+  document.getElementsByTagName('head')[0].appendChild(script);
+
+  var v = document.getElementsByTagName("stream")[0];
+  v.addEventListener("canplay", function() {
+   document.getElementById("spash").style.display = "none";
+ }, true);
+
+
+</script>
+<div class="container">
+
+<div class="main-cta my-5 py-4" id="btn-cta">
+
+<section>
+<div class="container py-3">
+<div class="row text-center align-items-end ">
+
+<div class="price-box mb-5 mb-lg-0 col-lg-4 order-3 order-lg-0">
+<h1 class="h6 text-uppercase font-weight-bold py-3 mb-0 grey-bg">BASIC</h1>
+<div class="bg-white p-3 p-sm-5 custom-border shadow">
+<h1 class="h6 text-uppercase mb-4 supply">1 MONTH SUPPLY</h1>
+<img class="img-fluid mx-auto pt-3" src="../img/sbp1-min.png">
+<h2 class="h1 font-weight-bold pt-1 pb-3 color-purpel">$69<span class="text-small font-weight-normal color-purpel"><small>/bottle</small></span></h2>
+<div class="custom-separator my-2 mx-auto bg-primary"></div>
+<a href="https://steelbite.pay.clickbank.net/?cbitems=1&cbfid=44332&cbskin=30340&hop=griiyo" class="btn btn-warning btn-block shadow rounded-pill py-3"><h3 class="mb-1">BUY NOW</h3></a>
+<h4 class="text-small font-weight-normal ml-2"><s>$99</s> <span class="h3 font-weight-bold color-purpel">$69</span></h4>
+<ul class="list-unstyled my-4 text-small text-left">
+<li class="mb-3 text-center"><span class="pr-2"><img src="../img/truck-min.png" alt=""></span> Free Shipping*</li>
+</ul>
+</div>
+</div>
+
+
+<div class="price-box mb-5 mb-lg-0 col-lg-4 order-lg-2">
+<h1 class="h6 text-uppercase font-weight-bold py-3 mb-0 purpel-bg">BEST VALUE</h1>
+<div class="bg-white p-3 p-sm-5 custom-border shadow">
+<h1 class="h6 text-uppercase mb-4 supply">6 MONTH SUPPLY</h1>
+<img class="img-fluid mx-auto pt-3" src="../img/sbp6-min.png">
+<h2 class="h1 font-weight-bold pt-1 pb-3 color-purpel">$49<span class="text-small font-weight-normal color-purpel"><small>/bottle</small></span></h2>
+<div class="custom-separator my-2 mx-auto bg-primary"></div>
+<a href="https://steelbite.pay.clickbank.net/?cbitems=3&cbfid=44332&cbskin=30342&hop=griiyo" class="btn btn-warning btn-block shadow rounded-pill py-3"><h3 class="mb-1">BUY NOW</h3></a>
+<h4 class="text-small font-weight-normal ml-2"><s>$594</s> <span class="h3 font-weight-bold color-purpel">$294</span></h4>
+<ul class="list-unstyled my-4 text-small text-left">
+<li class="mb-3 text-center"><span class="pr-2"><img src="../img/truck-min.png" alt=""></span> Free Shipping*</li>
+</ul>
+</div>
+</div>
+
+
+<div class="price-box mb-5 mb-lg-0 col-lg-4 order-2 order-lg-3">
+<h1 class="h6 text-uppercase font-weight-bold py-3 mb-0 grey-bg">MOST POPULAR</h1>
+<div class="bg-white p-3 p-sm-5 custom-border shadow">
+<h1 class="h6 text-uppercase mb-4 supply">3 MONTH SUPPLY</h1>
+<img class="img-fluid mx-auto pt-3" src="../img/sbp3-min.png">
+<h2 class="h1 font-weight-bold pt-1 pb-3 color-purpel">$59<span class="text-small font-weight-normal color-purpel"><small>/bottle</small></span></h2>
+<div class="custom-separator my-2 mx-auto bg-primary"></div>
+<a href="https://steelbite.pay.clickbank.net/?cbitems=2&cbfid=44332&cbskin=30341&hop=griiyo" class="btn btn-warning btn-block shadow rounded-pill py-3"><h3 class="mb-1">BUY NOW</h3></a>
+<h4 class="text-small font-weight-normal ml-2"><s>$297</s> <span class="h3 font-weight-bold color-purpel">$177</span></h4>
+<ul class="list-unstyled my-4 text-small text-left">
+<li class="mb-3 text-center"><span class="pr-2"><img src="../img/truck-min.png" alt=""></span> Free Shipping*</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+</div>
+
+</div>
+<div class="py-5"></div>
+<div class="py-5"></div>
+<div class="py-5"></div>
+<div class="container">
+<div class="row">
+<div class="col-12 text-center">
+<a class="text-center go-text" href="/story.php?subid=">Prefer To Read? Get the full story here</a>
+</div>
+</div>
+</div>
+<div class="py-5"></div>
+<script type="text/javascript" src="js/stream-mobile.js"></script>
+
+<script type="text/javascript">
+  var video = document.getElementById('stream');
+  function toggleMute(){
+   video.muted = !video.muted;
+   document.getElementById('unmute').style.display = "none";
+ }
+</script>
+
+<footer>
+<div class="footer-wrapper position-relative overflow-hidden">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="footer-menu">
+<ul class="pt-5">
+<li class="footer-menu-links"><a href="../index.php" target="_blank">Home</a></li>
+<li class="footer-menu-links"><a href="/text.php#start-now?subid=">Get Started</a></li>
+<li class="footer-menu-links"><a href="../help/contact-us.php" target="_blank">Contact</a></li>
+<li class="footer-menu-links"><a href="../help/references.php" target="_blank">References</a></li>
+<li class="footer-menu-links"><a href="../help/terms.php" target="_blank">Terms Of Use</a></li>
+<li class="footer-menu-links"><a href="../help/disclaimer.php" target="_blank">Disclaimer</a></li>
+<li class="footer-menu-links"><a href="../help/privacy.php" target="_blank">Privacy Policy</a></li>
+<li class="footer-menu-links"><a href="../help/shipping.php" target="_blank">Shipping Policy</a></li>
+<li class="footer-menu-links"><a href="../help/refunds.php" target="_blank">Refund Policy</a></li>
+<li class="footer-menu-links"><a href="../help/affiliates.php" target="_blank">Affiliates</a></li>
+</ul>
+</div>
+<div class="footer-main-section pt-4">
+<p class="text-center">Statements on this website have not been evaluated by the Food and Drug Administration. Products are not intended to diagnose, treat, cure or prevent any disease. If you are pregnant, nursing, taking medication, or have a medical condition, consult your physician before using our products.</p>
+<p class="text-center pt-3">ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 South Entertainment Ave, Suite 410, Boise, Idaho, 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.</p>
+<p class="text-center pt-3">*For international shipping (outside of the United States), shipping fees will apply. <a class="footer-link" href="../help/shipping.php" target="_blank">Read more here</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<p><span id=disclaimer></span></p>
+<div class="copyright mt-5 py-4">
+<h3 class="text-center">Copyright &copy; 2020 <b><a class="color-yellow" href="https://steelbitepro.com">SteelBitePro</a></b> | All Rights Reserved</h3>
+</div>
+</div>
+
+<script src='//cbtb.clickbank.net/?vendor=steelbite'></script></footer>
+</body>
+</html>

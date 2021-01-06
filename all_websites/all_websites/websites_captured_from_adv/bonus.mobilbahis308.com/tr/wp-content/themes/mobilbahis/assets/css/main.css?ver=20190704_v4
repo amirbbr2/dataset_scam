@@ -1,0 +1,930 @@
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}
+body,div,ul,ol,dl,dt,dd,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,textarea,th,td,p { margin:0; padding:0 }
+table {	border-collapse:collapse; border-spacing:0 }
+fieldset,img { border:0 }
+ol,ul { list-style:none }
+li{ vertical-align: bottom;}
+caption,th { font-style:normal;	font-weight:normal;	text-align:left }
+h1,h2,h3,h4,h5,h6 { font-size:100%;	font-weight:normal }
+a{ text-decoration:none; outline:none }
+:focus{ outline:none }
+p{ padding:10px 0 5px}
+article, aside, details, figcaption, figure, footer, header, optgroup, nav, section, video { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+img{vertical-align:middle}
+textarea {resize: vertical}
+a{ color:#dedede; -webkit-transition: all 0.3s;transition: all 0.3s;}
+a:hover{ text-decoration: none; color:#eee}
+a,button{ cursor:pointer}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::selection{ background-color: #000; color:#eaeaea}
+h1,h2,h3,h4,h5,h6{ font-weight: 800}
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;touch-action:manipulation;-moz-backface-visibility:hidden}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{background:0 0;color:inherit;border:none;padding:0!important;font:inherit}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-ms-touch-action:pan-y;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-carousel .animated{animation-duration:1s;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{animation-name:fadeOut}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}.owl-carousel .owl-item .owl-lazy:not([src]),.owl-carousel .owl-item .owl-lazy[src^=""]{max-height:0}.owl-carousel .owl-item img.owl-lazy{transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;transition:transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.owl-theme .owl-nav [class*=owl-]{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#D6D6D6;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*=owl-]:hover{background:#869791;color:#FFF;text-decoration:none}.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#D6D6D6;display:block;-webkit-backface-visibility:visible;transition:opacity .2s ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
+/* FONTFACE
+300 light
+400 normal
+600 semibold
+700 bold
+800 extrabold
+*/
+span.small{ font-size: 80%}
+.navbar .glyphicon {
+  position: absolute;
+  top: 8px;
+  left: -19px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.navbar .glyphicon-play-circle:before {
+  content: "\e029";
+}
+
+div.embed-responsive{ margin: 20px auto 0}
+
+ul.default-list,ul.default-list li{ list-style: disc outside}
+ul.default-list{ padding: 10px 20px; font-size: 0.9em}
+ul.default-list li{ }
+ul.default-list li ul{ padding-left: 15px; list-style-type: circle }
+ul.default-list li ul li{ list-style-type: circle }
+ul.default-list li a{ color:#dedede }
+ul.default-list li a:hover{ text-decoration: underline }
+
+.c ul,.c ul li{ list-style: disc outside}
+.c ul{ padding: 10px 20px; font-size: 0.9em}
+.c ul li{ }
+.c ul li ul{ padding-left: 15px; list-style-type: circle }
+.c ul li ul li{ list-style-type: circle }
+.c ul li a{ }
+.c ul li a:hover{ text-decoration: underline }
+
+.c ol,.c ol li{ list-style-type: decimal;}
+.c ol{ padding: 10px 20px; font-size: 0.9em}
+.c ol li{ }
+.c ol li ol{ padding-left: 15px; list-style-type: lower-alpha; }
+.c ol li ol li{ list-style-type: lower-alpha; }
+.c ol li a{ }
+.c ol li a:hover{ text-decoration: underline }
+
+.img-full{ width: 100%; height: auto}
+
+.link{ background: #FFC328; text-align:center;border:2px solid #FFC328; color: #171717; min-width: 120px; line-height: 35px; height: 36px; border-radius: 100px; font-size: 13px; font-weight: 800; display: inline-block;
+  padding: 0 15px; margin-top: 10px; transition: all 0.3s;-webkit-transition: all 0.3s; font-style: italic}
+.link:hover{ color: #fff;background: #2449A0; border-color: #2449A0}
+.link-red{ background: #DD0D0D;border-color:#DD0D0D }
+.link-red:hover{ }
+.link-white{ background: none; border-color:#fff}
+.link-white:hover{ background: #fff; color: #D33030; border-color: #fff}
+.link-black{ background: none; border-color:#222; color: #222}
+.link-black:hover{ background: #222; color: #efefef; border-color: #222}
+.button-wrapper{ padding: 30px 0 50px;  margin: 15px 0 0}
+.button,.lnk{text-align:center; background: #242424; border-radius: 8px;  color: #FFC328; display: inline-block; margin: 35px auto; line-height: 20px; min-height: 40px; padding: 10px 20px; font-weight: 700; font-size: 16px; text-decoration: none;
+  transform: skew(-21deg);font-style: italic;/*position: relative;left: 50%; transform: translateX(-50%);*/}
+.button>span,.lnk>span,.button>i,.lnk>i{transform: skew(21deg); display: inline-block}
+
+
+.button-wrapper a.button{  font-size: 15px; color:#242424; background:#FFC328; margin-right: 5px }
+.button-wrapper a.button:hover{  background:#EAB01C;}
+.button-wrapper a.button:last-child{   margin-right: 0 }
+.button-wrapper a.button span,.button-wrapper a.lnk span{  text-decoration: none}
+
+.button:hover,.lnk:hover{background:#1e1e1e;}
+.button-wrapper .button{ margin: 5px auto 0}
+.header-info .button-wrapper{ padding: 30px 0 10px; margin-top:0}
+.cbw,.cmbw{ border:none; padding: 10px 0 20px}
+.cbw a.button,.cmbw a.button{ text-decoration: none}
+.cmbw br{ display: none}
+
+html{ overflow-x: hidden}
+body{font:400 16px/1.5em 'Open Sans', Helvetica, Arial, sans-serif;background: #0D0D0D; color: #dedede;border-top:1px solid #FFC328  }
+#wrapper{ background: #171717; position: relative; width: 100%; z-index: 3 }
+#wrapper-overlay{ background: rgba(38,36,49,0.7); position: absolute; left: 0; top:0;z-index: 3; width: 100%; height: 100%}
+
+.tag-list{ padding: 60px 0 0}
+.tag-list h6{ font-size: 14px; line-height: 16px; display: block; padding: 0 0 15px; font-weight: 600; color:#888}
+.c .tag-list a{ display: inline-block; padding: 7px 17px; text-align: center; border-radius: 100px; color: #888; font-weight: 600; background: #2F2F2F; margin: 5px 10px 5px 0; font-size: 12px; line-height: 20px; text-decoration: none}
+.c .tag-list a:hover{ background: #3f3f3f}
+
+.container{ max-width: 1190px !important; position: relative}
+.v-a{}
+.v-a:before{ content: '';display: inline-block;height: 100%;vertical-align: middle;margin-right: -0.25em;}
+
+.shdw{
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.15), 0 2px 5px 0 rgba(0,0,0,0.11);
+  border-radius: 6px;
+  }
+.container{ padding-right: 10px; padding-left: 10px }
+
+.row{ margin-left: -10px; margin-right: -10px}
+.row>div[class^="col-"]{ padding-left: 10px; padding-right: 10px}
+
+#header{ position: absolute; left: 0; top:0; width: 100%; z-index: 3 }
+
+#header .navbar{}
+#header .nav-item:last-child{ padding-right: 0; padding-left: 20px; border: none}
+#header .nav-link.home-link{ }
+#header .navbar-toggler{ position: absolute; right: 10px; top:10px; padding: 0.5rem 0; outline:none}
+#header .navbar-toggler-icon{ width: 1.3em; height: 1.3em }
+.navbar-inverse .navbar-toggler-icon {
+  background: url(../images/menu-collapse.png) no-repeat center center; background-size: 20px auto;
+}
+
+#header .navbar-brand{ padding: 1rem 0}
+#header .navbar-brand img{ margin-top:-5px}
+.navbar-top{ position: relative; height: 85px; border-bottom: 1px solid #2d2d2d}
+.navbar-top:after{ display: block; content: ''; background: transparent url(../images/mobilbahis.png) no-repeat center 0; background-size: 114px auto;
+  width: 114px; height: 16px; position: absolute; top: 50%;left: 24px; margin-top: -13px  }
+.nb-close{  position: absolute; right: 25px; top:50%; margin-top:-15px; height: 30px; width: 30px;  outline:none; border:none; background: none;}
+.nb-close:not(:disabled):not(.disabled){cursor:pointer}
+.nb-close .navbar-toggler-icon{ background: url(../images/nb-close.png) no-repeat center center; background-size: 14px auto; width: 100%; height: 100%}
+
+#header .navbar-collapse{ display: block;width: 80%; height: 100%; background: #171717; position: fixed; right: -100%; top:0; z-index: 1}
+#header .navbar-nav{ font-style: italic}
+#header .navbar-collapse.show{ }
+#header .nav-item{  border-bottom: 1px solid #2d2d2d; padding: 0 }
+#header .nav-link{ color:#dedede; font-size: 14px; font-weight: 600;padding: 20px 24px; position: relative}
+#header .nav-link:before{ content: ''; display: block; right: 20px; top:50%; position: absolute; width: 20px; height: 30px; margin-top: -15px; background-repeat: no-repeat; background-position: center center; background-size: 20px auto}
+
+#header .nav-link:hover{opacity: 0.7}
+#header .nav-link.video-link{ color:#FFC328  }
+#header .nav-link.video-link:before{ background-image: url(../images/link-video-2x.png)  }
+#header .nav-link.bs-link:before{ background-image: url(../images/link-bs-2x.png)  }
+#header .nav-link.oy-link:before{ background-image: url(../images/link-oy-2x.png)   }
+#header .bs-link{  }
+#header .oy-link{  }
+#header .ha-link{     background: #FFC328; color: #070707; width: 100%; font-size: 15px  }
+#header .home-link{ color:#666; font-weight: 600;position: absolute; bottom:0; left: 0; background: #2F2F2F; text-align: center; width: 100%; min-height: 20px; line-height: 20px }
+.navbar-home{ background: transparent url('../images/home.png') no-repeat 0 0; background-size: 20px 17px; text-indent: -9999em; width: 20px; height: 17px; position: absolute; left:10px; top:22px}
+#header .nav-link.home-link:before{ display: none}
+
+#footer{line-height: 1.3em; color: #444; text-align: center;background: #0D0D0D;  border-top:1px solid #FFC328; margin-top: 70px; padding: 25px 0; font-style: italic; }
+
+.single #footer{ margin-top: 0 }
+
+.f-top{ padding: 15px 0; text-align: center}
+.f-text{ padding: 15px 5px; font-size: 14px}
+.menu-social{ text-align: center; padding: 15px 0;  }
+.menu-social>li{ display: inline}
+.menu-social>li>a{ padding: 0 5px}
+.menu-social>li i{ display: inline-block; width: 27px; height: 24px; background: transparent url(../images/i-facebook.png) no-repeat center 0; background-size: auto 24px; text-indent: -9999em; -webkit-transition: all 0.3s; /* Safari */
+  transition: all 0.3s; opacity: 0.2;}
+.menu-social>li.ms-t a{ padding-right: 3px}
+.menu-social>li.ms-t i{ background-image: url(../images/i-twitter.png);}
+.menu-social>li.ms-i i{ background-image: url(../images/i-instagram.png); background-size: auto 22px; background-position: center 1px }
+.menu-social>li a:hover i{ opacity: 1;}
+.menu-footer-support{padding: 15px 0 0;font-size: 12px; line-height: 1.3em; color: #444; text-align: center}
+.menu-footer-support>li{display: inline}
+.menu-footer-support>li>a{color: #444; padding: 0 5px; text-decoration: underline}
+.menu-footer-support>li>a:hover{color: #d4cfeb;}
+
+/*--------------------------------------------------------------
+# Promo
+--------------------------------------------------------------*/
+#promo,#header-section{ position: relative; min-height: 150px  }
+.page #header-section{ overflow: hidden }
+#promo{ background: #171717; overflow: hidden }
+#promo .overlay,#header-section .overlay{ display: block; position: absolute; top:0; left: 0; width: 100%; height: 100%;}
+#header-section .overlay{ background: #171717; opacity: 0.7}
+#promo .overlay{ background: #171717; opacity: 0.6}
+#promo .overlay .p-o-b{ display: block; position: absolute; left: 0; bottom:0; width: 100%; height: 50%; max-height: 330px;background-image: linear-gradient(180deg, rgba(23,23,23,0.00) 0%, #000000 100%);}
+.single-post #header-section{ border-bottom:1px solid #FFC328}
+
+#promo .owl-carousel{ position: absolute; left: 0; top:0; width: 100%; height: 100%;  }
+#promo .owl-stage-outer,
+#promo .owl-item,
+#promo .item,
+#promo .owl-stage{ height: 100%}
+
+body.page #header-section.no-img{ height: 80px}
+
+#promo .owl-dots{ position: absolute; left:0; bottom:35px; width: 100%}
+#promo  .owl-dots .owl-dot span { position: relative; width: 8px; height: 16px; background: #FFC328; transform: skew(-21deg); border-radius: 2px; padding: 0; margin: 0 1px}
+#promo  .owl-dots .owl-dot {
+  display: inline-block;zoom: 1; opacity: 0.2;
+}
+
+#promo .owl-prev,#promo .owl-next{ position: absolute; background: transparent; top:0; height: 100%; max-width: 125px; width: 30%}
+#promo .owl-prev{ left:0}
+#promo .owl-next{ right: 0}
+#promo .owl-prev i,#promo .owl-next i{ position: absolute; display:block; top:50%; left:50%; margin:-12px 0 0 -8px; width: 15px; height: 24px; opacity: 0.3; text-indent: -9999em;}
+#promo .owl-prev i{ background: transparent url(../images/p-prev.png) no-repeat center center;background-size: 100% auto}
+#promo .owl-next i{background: transparent url(../images/p-next.png) no-repeat center center;background-size: 100% auto }
+#promo .owl-prev:hover i,#promo .owl-next:hover i{ opacity: 1}
+
+#promo .owl-dots .owl-dot.active { opacity: 1 }
+
+.p-bg,.hs-bg{ text-align: center;background-repeat:  no-repeat; background-position: center 0; background-size: cover; width: 100%; height: 100%; position: absolute; left: 0; top: 0}
+.hs-bg{ background-position: center center}
+.p-container{ text-align: center; position: absolute; left: 0; top:0; width: 100%; height: 100%}
+.p-c-container{ color:#171717;z-index: 2; position: relative;display: inline-block;
+  vertical-align: middle; max-width: 99%; text-align: center }
+
+.p-c em.tag{ font-style: normal; font-weight: 700}
+.p-c>div{padding: 0 20px}
+
+.p-c h4{ font-weight: 800; font-size: 22px; padding: 10px 25px; color:#171717; font-style: italic; line-height: 30px;transform: skew(-21deg); background: #ffc328; display: inline-block;border-radius: 10px;}
+.p-c h4>span{ display:inline-block;transform: skew(21deg);}
+.p-c h4 p{ padding: 0}
+.p-c p{ padding: 5px 0}
+.p-c p~p{ padding:0}
+/* fazla p gelirse*/
+.p-c .p-link{transform: skew(-21deg); background: #242424; border-radius: 8px; border:none;  padding: 10px 15px; min-width: 105px; line-height: 25px; color: #FFC328; font-weight: 700; text-align: center; display: inline-block; font-style: italic; margin: -5px auto 0; font-size: 14px; line-height: 20px}
+.p-c .p-link>span{ display: inline-block;transform: skew(21deg); }
+.p-c .p-link:hover,.p-c .p-link:active{ background-color: #131313 }
+
+.new{ display: block; position: absolute; left: 12px; top:12px; background: transparent url(../images/yeni.png) no-repeat 0 0; background-size: 100% auto; width:49px; height: 20px }
+.s-b-c{ display: none}
+
+/*--------------------------------------------------------------
+# Category Nav
+--------------------------------------------------------------*/
+#cat-nav{ background: #FFC328;box-shadow: 0 12px 8px 0 rgba(0,0,0,0.35); overflow: hidden;margin: 0 auto; position: relative}
+#cat-nav nav{ display: block; max-width: 1170px; margin: 0 auto; overflow: hidden; overflow-x: auto; overflow-y: hidden; white-space: nowrap; will-change: scroll-position; -webkit-overflow-scrolling:touch }
+#cat-nav ul{ text-align: center; }
+#cat-nav ul li{ display: inline-block;  flex: 1 }
+#cat-nav ul li a{ font-size: 13px; line-height: 30px; padding: 15px 10px; font-weight: 700; color:#171717; display: block; position: relative; vertical-align: middle }
+#cat-nav ul li a:hover{  opacity: 0.8 }
+#cat-nav ul li.active a{ opacity: 1; background: #171717; color: #FFC328  }
+
+#cat-nav ul li i{ height: 25px; width: 25px; display: inline-block; vertical-align: middle; margin-right: 8px;background: transparent url('../images/cat-nav-icons.png') no-repeat center center; }
+#cat-nav ul li i img{  }
+#cat-nav ul li.cn-b i{background-position: 0 0}
+#cat-nav ul li.cn-lc i{ background-position: -50px 0}
+#cat-nav ul li.cn-c i{ background-position: -100px 0}
+#cat-nav ul li.cn-p i{ background-position: -150px 0}
+#cat-nav ul li.cn-gk i{ background-position: -200px 0}
+#cat-nav ul li.cn-b.active  i{background-position: 0 -50px}
+#cat-nav ul li.cn-lc.active  a i{ background-position: -50px -50px}
+#cat-nav ul li.cn-c.active  a i{ background-position: -100px -50px}
+#cat-nav ul li.cn-p.active  a i{ background-position: -150px -50px}
+#cat-nav ul li.cn-gk.active  a i{ background-position: -200px -50px}
+
+section.s{ padding: 70px 0 0}
+section.s-bonuslar{ }
+section.s-bonuslar img{ display: inline-block; float: left; margin-right: 10px; border-radius: 3px; max-width: 165px; height: auto}
+.s-b-inner{ overflow: hidden; padding: 5px 5% 5px 5px; position: relative; margin-top: 1px; border:1px solid #2a2a2a;  font-style: italic }
+.s-b-inner .arrow{ background: transparent url(../images/b-arrow.png) no-repeat center 0; background-size: 8px auto; width: 8px; height: 12px; display: block; position: absolute; right: 15px;
+  bottom:15px }
+.s-b-inner.ph{ border: 1px dashed #2A2A2A; border-radius: 4px; padding: 10px;background: transparent url('../images/ph-icon.png') no-repeat center center; background-size:143px auto;}
+.s-b-inner.ph img{  width: auto; height: auto; float: none; border-radius: 0; margin: 0 auto}
+.s-b-inner.ph img.ph-logo{ position: absolute; left: 50%; bottom:50px; margin-left: -53px}
+
+.ph-none .ph-content{ min-height: 340px}
+.s-bonuslar .row>div{ padding-bottom: 5px}
+
+.s-b-inner h4{ font-size: 12px; font-weight: 700; color: #5D5D5D; padding: 10px 0 3px}
+.s-b-inner h3{ font-size: 14px; font-weight: 600; line-height:1.35em; color:#dedede }
+.s-b-inner .lnk{ display: none;}
+
+.s-header{ padding: 0 0 60px; text-align: center; position: relative; color:#444}
+.s-header h2,.s-header h1{ font-size: 18px; line-height: 1.2em; padding-bottom: 5px }
+.s-header h2:before,.s-header h1:before{ content: ''; background: transparent url('../images/mb-icon.png') no-repeat center center; background-size: 31px auto; width: 31px; height: 24px; display: block; margin: 0 auto 10px}
+.s-header em{ font-size: 14px; line-height: 1.2em; color: #444; display: inline-block }
+
+body.category-bahis .s.banner{ padding-top: 0}
+
+section.s-odds{text-align: center; margin-bottom:-70px  }
+section.s-odds>.container{ padding: 0 }
+.odds-list>div>div.container{padding:30px 25px;background: #282828;  }
+.odds-list>div:nth-child(even)>div.container{ background: none}
+.odds-list{font-style: italic; color:#dedede}
+.o-images{ border-bottom: 2px solid #ccc; padding-bottom: 20px; margin-bottom: 20px; max-height: 76px}
+section.s-odds .o-images img{ margin: 0 8px; display: inline; width: auto}
+.o-time{ display: block; color: #999;font-style: normal }
+.o-date{ display: block;font-size: 13px; line-height: 1.2em; text-align: center; position: relative;  }
+
+.s-odds strong{ display: block; font-weight: 600; font-size: 16px; line-height: 1.3em; vertical-align: bottom; padding: 15px 0  }
+.s-odds strong span{ display: inline-block; width: 46%; padding: 0 0 0 30px; text-align: left ;white-space: nowrap; text-overflow: ellipsis;overflow: hidden;}
+.s-odds strong span:first-of-type{ padding: 0 30px 0 0; text-align: right }
+.s-odds .s-header ul{ display: none; float: right; text-align: right; font-size: 14px; font-weight: 700; color: #999 }
+.s-odds .s-header ul>li{ display: inline-block; text-align: center;margin-left: 1px;min-width: 50px; padding: 5px 9px }
+ul.odds{ text-align: center}
+ul.odds>li{ display: inline-block; color:#fff; background: #454545; border-radius: 2px; margin-left: 1px; font-size: 14px; line-height: 15px; font-weight: 700; text-align: center; min-width: 50px; padding: 5px 9px}
+ul.odds>li:first-child{ margin-left: 0}
+ul.odds>li:hover{ background: #FFC328; color:#171717}
+
+.leauge-logo{ display: inline-block; position: absolute; left: 50%; top:50%; margin: -17px 0 0 -17px; vertical-align: middle; width: 33px; height: 30px; padding: 0 5px; text-align: center;  /*background: transparent url('../images/leagues/tsl-2x.png') no-repeat center center; background-size:23px auto; */}
+.o-tsl .leauge-logo{ }
+
+.single section.s.s-odds-flag{ padding: 0; margin-bottom: 70px; overflow: hidden}
+.s-odds-flag .odds-list>div:first-child{ border-top:none}
+.s-odds-flag .odds-list>div:last-child{ }
+.s-odds-flag strong span{ position:relative; padding:0 0 0 65px; height: 40px; line-height: 40px; }
+.s-odds-flag strong span:first-of-type{ padding: 0 65px 0 0}
+.s-odds-flag strong span img{ position:absolute; top:0; left: 20px}
+.s-odds-flag strong span:first-of-type img{ right: 20px; left: auto}
+@media (max-width: 375px){
+  .s-odds-flag .row>div[class^="col-"]{ padding: 0}
+  .s-odds-flag strong span{ }
+  .s-odds-flag .odds-list>div>div.container{ padding-left: 0; padding-right: 0}
+  .s-odds-flag strong span img{  left: 17px}
+  .s-odds-flag strong span:first-of-type img{ right: 17px; }
+
+}
+
+
+
+
+
+section.s.s-casino{ margin-bottom: -70px }
+section.s-casino .owl-carousel{  margin: 0 auto; position: relative}
+section.s-casino .owl-stage-outer{  }
+section.s-casino .owl-stage{  overflow: hidden;  margin: 0 auto}
+section.s-casino .item{ }
+section.s-casino .owl-item:first-child{ }
+section.s-casino .item a{ display: block; }
+section.s-casino .owl-carousel .owl-item img{ max-width: 1400px; margin: 0 auto}
+section.s-casino  .owl-nav{ position: static; margin: 0}
+section.s-casino .owl-nav .owl-prev,section.s-casino .owl-nav .owl-next{ position: absolute; background: transparent; top:0; height: 100%; max-width: 75px; width: 30%; padding: 0; margin: 0}
+section.s-casino .owl-nav .owl-prev{ left:0}
+section.s-casino .owl-nav .owl-next{ right: 0}
+section.s-casino .owl-nav .owl-prev i,section.s-casino  .owl-next i{ position: absolute; display:block; top:50%; left:50%; margin:-12px 0 0 -8px; width: 15px; height: 24px; opacity: 0.3; text-indent: -9999em;}
+section.s-casino .owl-nav .owl-prev i{ background: transparent url(../images/c-prev.png) no-repeat center center;background-size: 100% auto}
+section.s-casino .owl-nav .owl-next i{background: transparent url(../images/c-next.png) no-repeat center center;background-size: 100% auto }
+section.s-casino .owl-nav .owl-prev:hover,section.s-casino .owl-nav .owl-next:hover{ background: transparent}
+section.s-casino .owl-nav .owl-prev:hover i,section.s-casino .owl-nav .owl-next:hover i{ opacity: 1}
+
+.single section.s{ padding:20px 0}
+#banner-top{ }
+.banner-top-inner{ overflow: hidden; }
+.banner-top-inner{ /* Rectangle 9: */
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.20);
+}
+#banner-top .top-banner-bg{ text-align: center}
+#banner-top .top-banner-bg img{ display: block; max-width: 100%; height: auto; margin: 0 auto}
+
+.banner-bg{ background-repeat:  no-repeat; background-position: center 0; background-size: cover; width: 100%; height: 100%;}
+.banner-bg img{ margin: 0 auto; display: block}
+
+ul.gk-list{ font-size: 14px;border-top: 1px solid #ccc}
+ul.gk-list>li{border-bottom: 1px solid #ccc}
+ul.gk-list>li:nth-child(even){background: #e3e3e3}
+ul.gk-list>li>a{ padding: 15px 40px; display:block; position: relative}
+ul.gk-list>li>a:before{ display: block; content: ''; background: transparent url(../images/b-arrow.png) no-repeat center 0; background-size: 15px auto;
+  width: 15px; height: 15px; position: absolute; top: 50%; margin-top: -5px; left: 10px; }
+ul.gk-list>li>a:after{ display: block; content: ''; background: transparent url(../images/10.png) no-repeat center 0; background-size: 25px auto;
+  width: 25px; height: 20px; position: absolute; top: 50%; margin-top: -10px; right: 15px; }
+ul.gk-list>li>a:hover{ background: #efefef }
+.read-more{ font-size: 14px; color: #FFC328; text-decoration: underline; text-align: center; display: inline-block; margin: 15px auto 0}
+
+#header-section .v-a{ position: absolute; width: 100%; height: 100%; top:0; left: 0; text-align: center }
+#header-section .hs-inner{ color: #fff;z-index: 2;display: inline-block;vertical-align: middle; max-width: 99%;text-align: center; font-size: 14px; line-height: 1.3em }
+#header-section h1{ font-size: 36px; line-height: 1.2em; padding:35px 10px 0; margin: 0 auto}
+body.category-genel-kampanyalar #header-section h1{ font-size: 30px; max-width: 90% }
+body.error404 #header-section h1,
+body.tag #header-section h1,
+body.archive #header-section h1{ color:#FFC328}
+#header-section p{ padding:0 0 5px; font-style: italic}
+
+#header-section img.img-category{ max-width: 150%; width: 100%}
+#header-section:after{ display: block; content: ''; position: absolute; top:0; left: 0; width: 100%; height: 40%;opacity: 0.8;
+  background-image: linear-gradient(-180deg, #000000 0%, #000000 30%, rgba(0,0,0,0.00) 100%);}
+.category #header-section:after{ display: none}
+
+.back{ background: #FFC328 url(../images/back.png) no-repeat center center; border-radius:100px; background-size: 8px auto; width: 36px; height: 36px; text-indent: -9999em; display: block; position: absolute; bottom:-18px; left: 6%}
+.back:hover{ background-color: #EAB01C; }
+
+.header-info{  padding: 40px 0 20px;}
+.header-info .container{   padding: 0 6%   }
+.header-info h1{ font-size: 24px; line-height: 1.2em; font-weight: 700; font-style: italic}
+.header-info h2{ font-size: 14px; line-height: 1.2em; font-weight: 700; color:#dedede; font-style: italic}
+.header-info h2 a{ color:#444 }
+.content{ background: #171717; padding-bottom: 40px}
+
+.content .c{ background: #171717; padding: 20px 6% 30px; font-size: 16px; line-height: 1.6em}
+.content .c h2,
+.content .c h3,
+.content .c h4,
+.content .c p{ padding: 15px 0}
+.content .c h1,
+.content .c h2,
+.content .c h3,
+.content .c h4,
+.content .c strong,
+.content .c b{ font-weight: 700}
+.c a,.c a span{ text-decoration: underline }
+.content .c p.pn{ padding: 5px 0}
+/* empty <p> */
+.content .c p:first-child{ padding-top: 0}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.content .c .alignleft {
+  display: inline;
+  float: left;
+  margin:0 1em 0.5em 0;
+}
+
+.content .c .alignright {
+  display: inline;
+  float: right;
+  margin:0 0 0.5em 1em;
+}
+
+.content .c .aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .c table.aligncenter{
+  display: table
+}
+
+.content .c img.size-full{ max-width: 100%; height: auto}
+.c table.table,.modal-body table{ margin-top: 30px; margin-bottom: 30px;/*border-bottom: 1px solid #282828;*/ font-size: 0.9em; width: 100%}
+.modal-body table{margin: 0}
+.c table.table thead,.modal-body table thead{background:#FFC328; border-radius: 4px }
+.c table.table thead th,.modal-body table thead th{border:none; font-weight: 700; color:#171717 }
+.c table.table tr{ height: auto}
+.c table.table td{ padding: .7rem .75rem; width: auto; border-top-color: #282828 }
+
+.c table:not(.table-no-title)>tr:first-child{background:#2e2e2e; border-radius: 4px }
+.c table:not(.table-no-title)>tr:first-child td{border:none; font-weight: 700 }
+.c table tbody>tr:nth-child(odd){ background: #282828}
+
+.c table.table-no-bg td,.c table.table-no-bg tr{ background: transparent !important;}
+.c table.table table{ border:none; background: none; font-size: 1em; margin:0}
+.container.c table table td{ border:none; background: none; padding: .2rem}
+
+.kosullar table.table tbody tr:nth-child(odd){ background: transparent}
+.kosullar{background: #2F2F2F; font-size: 13px; line-height: 1.4em; color:#888;border-radius: 4px; margin: 20px 0 0; clear: both}
+
+  .kosullar>ul{ padding-bottom: 20px}
+  .kosullar ul{ padding: 0 25px 20px 35px}
+  .kosullar h5,.kosullar .k-content>strong{ padding: 15px 25px 10px 35px}
+  .kosullar ul, .kosullar ul li{list-style: disc outside}
+  .kosullar ul li{padding: 10px 0; font-size: 1em }
+  .kosullar ul li a{ text-decoration: underline; color:#888}
+  .kosullar ul li ul{padding: 10px 15px 0px 15px; list-style-type: circle}
+  .kosullar ul li ul li{list-style-type: circle;padding: 5px 0 5px 0; }
+
+
+ .content .social-button-wrap{ margin: 25px 0 0;}
+ .content .social-button-wrap h3{ font-size: 14px; line-height: 18px; padding: 15px 0 0}
+ .content .social-button-wrap a{     -webkit-transition: none;
+   transition: none}
+
+.c .btn-kosullar{ display: block; padding: 17px 7px; font-weight: 700; color: #888; font-size: 13px; text-decoration: none }
+.btn-kosullar:before{content:""; display: block; clear: both; width: 100%; height: 1px}
+.btn-kosullar:hover{  }
+.btn-kosullar>i{ display: inline-block; font-style: normal; padding:0 8px 0 0;top:0; font-size: 14px; position: relative}
+
+.similar-posts{ background: #1E1E1E; padding: 50px 0}
+
+.s404 { font-size: 24px; line-height: 1.5em}
+.s404 h2{ font-size: 42px; line-height: 50px}
+
+/*--------------------------------------------------------------
+# Video
+--------------------------------------------------------------*/
+.c .wp-video{ width: 100% !important}
+.c .mejs-container {
+  width: 100% !important;
+  height: auto !important;
+  padding-top: 56.25%; /* 16:9*/
+}
+.c .mejs-overlay,.c .mejs-poster {
+  width: 100% !important;
+  height: 100% !important;
+}
+.c .mejs-mediaelement video {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/*--------------------------------------------------------------
+# navitagiton.pagination
+--------------------------------------------------------------*/
+
+.navigation.pagination{ text-align: center; display: block; clear: both; padding-top: 20px}
+.navigation.pagination .page-numbers{ padding: 2px 5px; min-width: 30px; border-radius: 4px; line-height: 25px; color: #666; text-align: center; background: #dedede; font-size: 14px; display: inline-block;font-weight: 600}
+.navigation.pagination .page-numbers.prev,
+.navigation.pagination .page-numbers.next,
+.navigation.pagination .page-numbers.dots{ background: none;  }
+.navigation.pagination .page-numbers.current{ background: none; color: #999}
+.navigation.pagination .page-numbers.prev,
+.navigation.pagination .page-numbers.next{ font-size: 16px;}
+.navigation.pagination .page-numbers.current:hover{  color: #999}
+.navigation.pagination .page-numbers:hover{ color: #444}
+
+/*--------------------------------------------------------------
+# priceBoost
+--------------------------------------------------------------*/
+dl.priceBoost,dl.accordion{ padding: 20px 0;font-size: 1em}
+dl.priceBoost a{ text-decoration: none}
+dl.priceBoost a span{ text-decoration: none}
+dl.priceBoost p{ padding: 0 !important;}
+dl.priceBoost dt,dl.accordion dt{ background: #282828; border-radius: 4px; padding: 15px 30px 15px 15px; font-weight: 600; margin-top: 10px; cursor:pointer; position: relative;}
+dl.priceBoost dt{ background: #ffbb23; padding: 10px 30px 10px 15px; color:#171717; }
+dl.priceBoost dt span{  font-size: 0.8em; color:#373737; padding-left: 5px}
+dl.priceBoost dt:first-child,dl.accordion dt:first-child{  margin-top: 0}
+dl.priceBoost dt:hover,dl.accordion dt:hover{  background: #2a2a2a}
+dl.priceBoost dt:hover{  background: #FFC328}
+dl.priceBoost dt:after{  content: "\f347"; font-family: "dashicons"; position:absolute; right:15px; top:12px;
+  -webkit-transition: -webkit-transform .1s linear; transition: transform .1s linear,-webkit-transform .1s linear}
+dl.priceBoost dt.closed:after{  -webkit-transform: rotate(-90deg);transform: rotate(-90deg);}
+dl.priceBoost dd,dl.accordion dd{ font-size: 1em; margin-bottom: 20px}
+dl.accordion dt:after{  content: "\f347"; font-family: "dashicons"; position:absolute; right:15px; top:15px;
+  -webkit-transition: -webkit-transform .1s linear; transition: transform .1s linear,-webkit-transform .1s linear;-webkit-transform: rotate(-90deg);transform: rotate(-90deg);}
+dl.accordion dt.opened:after{-webkit-transform: rotate(0);transform: rotate(0);  }
+dl.accordion dd{ padding: 15px; display: none}
+dl.accordion dd p:first-child{ padding-top: 0}
+dl.priceBoost dd div.pbodds{ position: relative;  padding: 16px 20% 16px 15px; border-top: 1px solid #ddd}
+dl.priceBoost dd div.pbodds:first-child{  border:none; margin-top: 0}
+ul.pB{ list-style: none; overflow: hidden; position: absolute; right: 15px; top:15px; text-align: center; padding: 0}
+ul.pB>li{ list-style: none; float: left; padding: 0 5px; color:#666; font-weight: 600;}
+ul.pB>li:first-child{text-decoration: line-through; font-weight: 500 }
+ul.pB>li span{ background: #FFC328; padding: 1px 15px 0; border-radius: 100px; color:#171717; display: inline-block; text-align: center; min-width: 70px; cursor: pointer; font-weight: 700}
+ul.pB>li span:hover{ background: #FFC328;}
+ul.pB>li:first-child span{ background: #cecece; color:#444;text-decoration: line-through }
+.pBDesc{ display: block; font-size: 0.9em; padding: 5px 15px 0; color:#666}
+
+.content-btn-container{ text-align: center; padding: 20px 0 10px; }
+.c .content-btn-container h3{  font-weight: bold;padding: 0 0 0 9%; }
+.c .content-btn-container div:first-child h3{  font-weight: bold;padding: 0 9% 0 0;}
+.content-btn-container div .button-wrapper{ border:none; padding: 0 0 0 9%; margin: 20px 0; position: relative}
+.content-btn-container div:first-child .button-wrapper{ padding: 0 9% 0 0; }
+.content-btn-container div:first-child .button-wrapper:after{ content: ""; height: 100%; width: 1px; border-left: 1px solid #FFC328; position: absolute; right: -11px; top:0 }
+.content-btn-container .button{ text-decoration: none; width: 100%; margin: 0 auto}
+
+.content-top{ padding: 10px 0 20px;  text-align: left}
+.content-top>div{ padding: 0; max-width: 1190px; margin: 0 auto}
+.content-top>div p{ padding: 15px 0 10px }
+.content-top>div strong{ color:#FFC328; font-weight: 600 }
+.content-top .content-btn-container{ padding-top: 40px}
+.c-top-ipy{}
+.c-top-ipy p{ position: relative; padding-left: 55px !important;}
+.c-top-ipy .ipy-i{ position: absolute; left: 0; top:10px}
+
+
+
+
+/*--------------------------------------------------------------
+# Calendar
+--------------------------------------------------------------*/
+.row.gutter-5{ margin-left: -5px; margin-right: -5px; padding: 15px 0}
+.row.gutter-5>div[class^="col-"]{padding: 5px}
+.cd{  padding-bottom: 100%; position: relative ;font-size: 0.9em }
+.cd.active{  z-index: 2  }
+.cd a{ transition: all 0.3s;-webkit-transition: all 0.3s; text-decoration: none }
+.cd a,.cd.disabled a:hover{ display: block; background: transparent url(../images/calendar-2x.png) no-repeat 12px 12px; background-size:14px 14px;  box-shadow: none; position: absolute; left: 0; top:0; width: 100%; height: 100%;border: 1px solid #ccc; text-align: center; color:#444;justify-content: center;}
+.cd a:hover{ background-color: #fff;border-color: #bbb; box-shadow: 0 0 30px 0 #ccc; }
+.cd.active a{ color:#171717; background-color: #FFC328; background-image:url(../images/calendar-w-2x.png);  border-color:#FFC328;box-shadow: 0 0 30px 0 #ccc; z-index: 2 }
+
+.cd.disabled{ opacity: 0.4}
+.cd.disabled em{ background: #999; font-weight: bold; line-height:25px; height: 22px; width: 22px; left: 50%; margin-left: -11px; color: #fff; border-radius: 11px; font-size: 16px; font-style: normal; font-weight: 700 }
+.cd.disabled a{cursor:default;color:#666}
+
+.cd a strong{  display: inline-block; vertical-align: middle;font-size:2em ; line-height: 1em; margin-top: -10px}
+.cd a strong span{ font-size: 0.4em; line-height: 1em; display:block; text-decoration:none}
+.cd a em{ color:#999; position: absolute; left: 0; bottom:9%; width: 100%; font-size: 0.7em}
+.cd.active a em{ color:#fff;}
+
+.cd a:before{content: '';display: inline-block;height: 100%;vertical-align: middle;margin-right: -0.25em;}
+
+.cd a:after{
+  transition: all 0.3s;-webkit-transition: all 0.3s;content: '';
+  opacity: 0;position: absolute;bottom: -10px;left: 50%;width: 0;height: 0;
+  margin-bottom: -10px;margin-left:-10px;
+  border-top: solid 10px #FFC328;border-left: solid 10px transparent;border-right: solid 10px transparent;border-bottom: solid 10px transparent;background: none !important;
+}
+
+.cd.active a:after{ opacity: 1}
+.cd.closed a *{ opacity: 0.6}
+.cd.closed a:hover *{ opacity: 1}
+.cd.closed.active a *{ opacity: 1}
+
+
+.cDetailContainer{ background: #fff; width: 100%; margin: 0; padding: 20px 0}
+.c-content-wrapper{ padding: 0 5px; overflow: hidden}
+.c-content-wrapper>div{ display: none;  -webkit-transition: all 0.3s; /* Safari */transition: all 0.3s;}
+.c-content-wrapper>div.show{ display: block }
+.c-content-wrapper>div.active{ display: block }
+
+
+.c .calendar-image{ padding: 0 0 30px}
+.c .calendar-image img{ border-radius: 2px}
+.c .calendar-title{ padding: 0 0 15px}
+.c .calendar-title h2{ padding: 0; font-size: 1.2em}
+.c .calendar-content{}
+
+.c .c-nav{ padding: 0 5px 0 0; list-style: none!important;}
+.c-nav>li{ border-bottom: 1px solid #ddd; padding: 0 0 10px; margin: 10px 0; font-size: 0.9em; line-height: 1.2em; font-weight: 600; list-style: none!important;}
+.c-nav>li:first-child{ margin-top: 0}
+.c-nav>li>a{ display:block; text-decoration: none; opacity: 0.5; color: #222; padding: 5px 0 5px 15px; background: transparent url(../images/bullet.png) no-repeat 3px 10px; background-size:6px 6px;white-space: nowrap;
+  overflow: hidden;text-overflow: ellipsis; }
+.c-nav>li.active>a{ opacity: 1}
+.c-nav>li>a:hover{ opacity: 0.8; text-decoration: none!important;}
+.c-nav em{ display: block; color:#FFC328; font-size: 0.87em; font-weight: 500}
+
+.loading{ text-align: center; padding: 50px;animation: blinker 1s linear infinite;}
+@keyframes blinker {
+  50% { opacity: 0.2; }
+}
+
+
+
+/*--------------------------------------------------------------
+# Phishing
+--------------------------------------------------------------*/
+
+div.phishing{ text-align: center}
+div.phishing-top img{ padding: 50px 0}
+
+/*body.postid-3052 .container.c{ padding-left: 0; padding-right: 0}
+body.postid-3052 section.content{ overflow: hidden} */
+div.phishing-items{ padding: 60px 0 30px}
+div.phishing-items p{ padding: 0; margin: 0 }
+div.phishing-item{ text-align: left; position: relative; padding: 60px 0}
+div.phishing-item img{ }
+div.phishing-item-grey{ background: #f5f5f5}
+div.phishing-item:before{ position:absolute; top:0; left:-200%; content: ""; display: block; width: 600%; height: 100%; border-bottom:1px solid #dedede; background: #fefefe}
+div.phishing-item-grey:before{ background: #f5f5f5; }
+div.phishing-item .row:before,div.phishing-item:last-of-type .row:after{ position:absolute; top:-20px; left:50%; margin-left: -20px; content: ""; display: block; width: 40px; height: 40px;  background: transparent url(../images/phishing/phishing-ok.png) no-repeat 0 0;background-size: 40px 40px;}
+
+div.phishing-item:last-of-type .row:after{ top:auto; bottom:-20px}
+
+div.phishing .phishing-title{ font-size: 130%; font-weight: 700}
+div.phishing div.phishing-what{}
+div.phishing div.phishing-what p{ padding: 0}
+
+ul.phishing-links{ text-align: left; list-style: none; padding: 30px 0}
+ul.phishing-links li{ padding: 5px 0; list-style: none}
+ul.phishing-links li a{ display: block; background: #FFC328;
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(0,0,0,0.07) 100%);
+  box-shadow: 0 3px 7px 0 rgba(0,0,0,0.26);
+  border-radius: 4px; color:#fff; font-weight: 600; text-decoration: none; padding: 10px 30px 10px 90px; min-height: 70px; position: relative}
+
+ul.phishing-links li a:hover{ text-decoration: none}
+ul.phishing-links li a:before{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  min-height: 70px;
+  vertical-align: middle;
+  margin-right: -0.25em;}
+ul.phishing-links li a strong{ display: inline-block; vertical-align: middle}
+
+ul.phishing-links li span.phishing-icon{ display: block; width: 90px; height: 100%; position: absolute; left: 0; top:0;vertical-align: middle ; text-decoration: none }
+ul.phishing-links li.phishing-link-wa span.phishing-icon{ background: transparent url(../images/phishing/phishing-wa.png) no-repeat center center; background-size: 40px 41px }
+ul.phishing-links li.phishing-link-app span.phishing-icon{ background: transparent url(../images/phishing/phishing-app.png) no-repeat center center; background-size: 26px 41px}
+ul.phishing-links li.phishing-link-tw span.phishing-icon{ background: transparent url(../images/phishing/phishing-tw.png) no-repeat center center; background-size: 44px 45px}
+
+@media (max-width: 768px){
+  div.phishing{ text-align: center}
+  div.phishing-item{ text-align: center}
+  div.phishing-item div.col-lg-3{ margin-bottom: 40px}
+  ul.phishing-links li a{ padding: 20px; text-align: center}
+  ul.phishing-links li span.phishing-icon{ position: static; height: 45px; width: 100%; margin: 0 auto 20px}
+  ul.phishing-links li a:before{ display: none}
+
+}
+
+@media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    -ms-flex: 0 0 14.2857%;
+    flex: 0 0 14.2857%;
+    max-width: 14.2857%;
+  }
+}
+
+@media (max-width: 992px){
+  .cd{ font-size: 1em}
+  .cd a{ background-size: 12px 12px; background-position: 10% 10% }
+  .cd a strong{ }
+  .cd a em{ font-size: 0.9em; bottom: 7% }
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 767px){
+  .ph-none:first-child{ display: block !important;}
+  .ph-none:first-child .ph-content{ margin:15px auto; min-height: 100px}
+  .ph-none:first-child .s-b-inner.ph{ padding: 20px}
+  .ph-none:first-child .s-b-inner.ph img.ph-logo{ display: none}
+  .c table.table table{ width: 100% !important; clear:both; float: none}
+  .content .c table.table table td img{ float: none; margin-left: auto; margin-right: auto; display: block}
+
+  .content-top{  padding: 25px 0 5px}
+  .content-btn-container{ padding: 20px 0; border-bottom: 1px solid #dedede; margin-bottom: 20px}
+  .content-top .content-btn-container{ border:none;}
+
+  .c .content-btn-container div:first-child h3{  padding: 0}
+  .content-btn-container div .button-wrapper{ padding:0 }
+  .content-btn-container div:first-child .button-wrapper{ padding: 0 }
+  .content-btn-container div:first-child{ margin-bottom: 10px }
+  .content-btn-container div:first-child .button-wrapper:after{ display: none }
+
+  .content-btn-container .button{ max-width: 400px}
+
+  .c-nav{ padding: 0 20px}
+  .c-nav>li{ line-height: 1.5em}
+  .c-nav a{ overflow: hidden}
+  .c-nav em{ display: inline-block; float: left; max-width: 33%;    white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}
+  .c-nav strong{ display: inline-block; float: left; padding-left:1%;width: 66%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+}
+
+@media (max-width: 576px){
+
+  .v-a div.d-none.d-sm-block{ background: none !important;}
+
+  dl.priceBoost{ text-align: center; }
+  dl.priceBoost dt{ padding: 15px 23px 15px 10px;}
+  dl.priceBoost dt:after{ right: 10px}
+  dl.priceBoost dt span{  padding-left: 2px}
+
+  ul.pB{ position: static; text-align: center; padding-top: 15px}
+  ul.pB>li{ float: none; display: inline-block}
+  ul.pB>li span{ padding: 5px 15px}
+  dl.priceBoost dd div.pbodds{ padding: 16px}
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #header .navbar-brand img{ width:213px; height: auto; position: relative; top:5px; margin-top: 0}
+  .f-brand img{ width:130px; height: auto; }
+  .s-bonuslar .row>div{ padding-bottom: 15px}
+    #header .navbar-brand{ padding: 0.5rem 0}
+    #header-section img.img-category{ max-width: 100%; width: auto; visibility: hidden}
+    .category #header-section:after{ display: block}
+    .category #header-section .overlay{ background: #363349; opacity: 0.3}
+    body.category-genel-kampanyalar #header-section h1{ max-width: 100%}
+  .p-c{ padding-top: 40px; text-align: center}
+  .c table.table-small{width:50%}
+
+ }
+
+/*  Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .banner-top-inner.shdw{box-shadow: 0 25px 70px 0 rgba(0,0,0,0.20);}
+  #promo .overlay{ background: transparent }
+  #promo .overlay .p-o-t{ display: block; position: absolute; left: 0; top:0; width: 100%; height: 50%; max-height: 154px;background:linear-gradient(180deg, #171717 0%, rgba(0,0,0,0.00) 99%) ;}
+  #promo .overlay:before,#promo .overlay:after{content:'';display: block; position: absolute;  top:0; width: 50%; height: 100%; max-width: 300px}
+  #promo .overlay:before{ left: 0;background-image: linear-gradient(270deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.90) 100%);}
+  #promo .overlay:after{right: 0;background-image: linear-gradient(270deg, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.00) 100%);}
+  #promo .p-bottom{ display: none }
+  #promo .v-a:before{ display: none}
+  .p-c-container{  max-width: 1190px; padding: 0 10px; text-align: center; margin: 0 auto; position: relative; width: 100%; height: 100%}
+  .p-c{ position: absolute; left: 10%; bottom:40px;  z-index: 3; padding-top: 0; width: 80%}
+
+  #promo .owl-prev,#promo .owl-next{ max-width: 100px;}
+  section.s-casino .owl-nav .owl-prev,section.s-casino .owl-nav .owl-next{ max-width: 100px}
+
+  .f-top{ text-align: left;padding: 25px 0; }
+  ul.menu-social{ padding: 25px 0;float:right}
+  .f-text{ }
+  section.s-odds{ margin-bottom: 0}
+
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  body{ font-size: 18px; line-height:1.5em }
+  #header .navbar{ padding-top: 1.4rem; margin: 0 -1rem}
+
+  .s-bonuslar .row>div{ padding-bottom: 20px}
+
+  #cat-nav ul li { }
+  #cat-nav ul li a{ font-size: 16px; padding:15px 30px }
+  #cat-nav ul li i{ position: relative; top:-1px}
+
+  body.page #header-section.no-img{ height: 100px; min-height: 100px}
+
+  #banner-top{}
+  section.s-casino .item{ width: auto}
+  section.s-casino .owl-stage-outer{ padding-left: 0}
+
+  #header .navbar-collapse{ display: none;width: auto; height: auto; background: transparent; position: static; right: auto; top:auto; z-index: 1}
+  #header .navbar-nav{  }
+  #header .navbar-collapse.show{ }
+  #header .nav-item{  border-bottom: none }
+  #header .nav-link{ padding: .5rem 20px; font-size: 16px  }
+  #header .ha-link{        border-radius: 100px;
+    padding: .6rem 38px .6rem;
+    line-height: 22px;
+     }
+  #header .nav-link.home-link{ border:1px solid #fff; border-radius: 100px; font-size: 13px; font-weight: 600; color: #fff; padding: .6rem 22px .6rem 42px ; position: relative; left: auto; bottom: auto; background: transparent; width: auto }
+  #header .nav-link.home-link>span{ }
+  #header .nav-link.home-link:before{ content:''; display: block; background: transparent url(../images/home.png) no-repeat center center; background-size: 16px auto; width: 20px; height: 100%; position: absolute; left: 16px; top:14px;  }
+  #wrapper{ margin-left: 0!important;}
+  #header .nav-link:before{ display: none}
+  #header .nav-link.video-link:before{ display: block; background-image: url(../images/link-video-d-2x.png); right: auto; left: -10px; height: 12px; margin-top: -7px}
+
+  .p-c{ bottom: 70px}
+  .p-c h4{ font-size: 32px; line-height: 40px; padding:10px 35px  }
+  .p-c em.tag{ font-size: 16px; line-height: 20px; font-weight: 500}
+  .p-c .p-link{ font-size: 18px; line-height: inherit; padding: 10px 20px; min-width: 125px }
+
+  #promo .owl-prev,#promo .owl-next{ max-width: 150px;}
+  section.s-casino .owl-nav .owl-prev,section.s-casino .owl-nav .owl-next{ max-width: 150px}
+
+  body.category #header-section .overlay{ }
+  .s-header h2,.s-header h1{ font-size: 18px; line-height: 1.2em; letter-spacing: 5px}
+  .s-header h2:before,.s-header h1:before{ width: 42px; height: 33px; background-size: 42px auto; margin-bottom: 15px}
+  .s-header em{ font-size: 16px; line-height: 1.2em}
+
+  #header-section{ min-height: 300px}
+  #header-section .hs-inner{ vertical-align: bottom}
+  #header-section .hs-inner p{display: none}
+  #header-section h1,body.category-genel-kampanyalar #header-section h1{ font-size: 107px; line-height: 110px; position: relative; bottom: -25px}
+  body.category #header-section h1{ display:none;}
+
+  .s-b-inner{ padding: 5px; height: 100%; text-align: center}
+  section.s-bonuslar img{ width: 100%; height: auto; margin: 0 auto 15px; max-width: 414px}
+  .s-b-inner h3{ font-size: 18px; line-height: 23px; padding: 0 15px;/* min-height: 46px*/}
+  .s-b-inner h4{  padding: 0 15px 5px; font-size: 16px}
+  .s-b-inner .lnk{  display: inline-block; }
+  .s-b-inner .arrow{ display: none}
+  .new{ width: 70px; height: 24px;left:30px; top:30px;}
+  .s-b-c{ display:block; padding:20px 15px 20px 20px; margin: 20px -5px 20px; font-size: 14px; line-height: 20px; color: #666; border-top: 1px solid #ddd; border-bottom:1px solid #ddd}
+
+  .odds-list>div>div.container{ padding-top: 0; padding-bottom: 0;border-radius: 6px}
+  .o-time{  }
+  .o-date{ text-align: left; padding-left: 30px; font-size: 14px }
+  .o-date:before{ display: block; content: ''; width: 15px; height: 16px; position: absolute; left: 0;
+    top: 50%; background: transparent url('../images/odds-calendar.png') no-repeat 0 0; background-size: 15px 16px; margin-top: -8px; opacity: 0.3 }
+
+  .s-bonuslar>.container>.row{ margin-bottom: -20px}
+  .s-odds strong{ font-size: 16px; line-height: 1.3em; padding: 25px 0 }
+  ul.odds{ text-align: right}
+  .header-info .container{ padding: 0 12% }
+  .header-info h1{ font-size: 36px; line-height: 1.2em}
+  .header-info h2{ font-size: 16px; line-height: 1.2em}
+  .button-wrapper a.button{font-size: 18px; }
+  .button,.lnk{ height: 46px; padding: 13px 30px; }
+  .content .c{ font-size: 18px; line-height: 1.6em; padding: 30px 11%}
+  .header-info .container{  padding: 0 11%  }
+  .content-top>div{ }
+  .back{ left: 25px; background-size:11px auto; width: 50px; height: 50px; bottom:-25px }
+  .btn-kosullar{padding: 25px 17px; font-size: 14px }
+  .c .tag-list a{ font-size: 13px}
+  .c table.table{ font-size: 0.85em}
+  .kosullar{ font-size: 13px}
+  dl.priceBoost{  font-size: 0.9em}
+
+ }
+
+/*  Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #promo .owl-prev,#promo .owl-next{ max-width: 200px;}
+  section.s-casino .owl-nav .owl-prev,section.s-casino .owl-nav .owl-next{ max-width: 200px}
+  .p-c h4{ font-size: 36px; line-height: 42px }
+ }
+@media (min-width: 1400px) {
+  #promo .owl-prev,#promo .owl-next{ max-width: 300px;}
+  section.s-casino .owl-nav .owl-prev,section.s-casino .owl-nav .owl-next{ max-width: 300px}
+}
+
+@media (min-width: 1920px) {
+section#promo{ max-height: 800px}
+section#promo>img.d-none.d-sm-block{ width: 100%;}
+.p-c{ bottom:140px }
+.content .c{ padding: 30px 9%}
+  .header-info .container{  padding: 0 9%  }
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 240dpi) {
+  ul.gk-list>li>a:after{ background-image:url(../images/10-2x.png) }
+  .navbar-top:after{ background-image:url(../images/mobilbahis-2x.png) }
+  .new{background-image:url(../images/yeni-2x.png)}
+  .o-date:before{background-image:url(../images/odds-calendar-2x.png)}
+  .s-b-inner.ph{background-image:url(../images/ph-icon-2x.png)}
+  .s-header h2:before,.s-header h1:before{background-image:url(../images/mb-icon-2x.png)}
+  #cat-nav ul li i{ background-image:  url('../images/cat-nav-icons-2x.png'); background-size: 250px 100px }
+}

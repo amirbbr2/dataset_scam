@@ -1,0 +1,1407 @@
+if(!window.A4J){window.A4J={}
+}function Sarissa(){}Sarissa.VERSION="0.9.9.3";
+Sarissa.PARSED_OK="Document contains no parsing errors";
+Sarissa.PARSED_EMPTY="Document is empty";
+Sarissa.PARSED_UNKNOWN_ERROR="Not well-formed or other error";
+Sarissa.IS_ENABLED_TRANSFORM_NODE=false;
+Sarissa.REMOTE_CALL_FLAG="gr.abiss.sarissa.REMOTE_CALL_FLAG";
+Sarissa._sarissa_iNsCounter=0;
+Sarissa._SARISSA_IEPREFIX4XSLPARAM="";
+Sarissa._SARISSA_HAS_DOM_IMPLEMENTATION=document.implementation&&true;
+Sarissa._SARISSA_HAS_DOM_CREATE_DOCUMENT=Sarissa._SARISSA_HAS_DOM_IMPLEMENTATION&&document.implementation.createDocument;
+Sarissa._SARISSA_HAS_DOM_FEATURE=Sarissa._SARISSA_HAS_DOM_IMPLEMENTATION&&document.implementation.hasFeature;
+Sarissa._SARISSA_IS_MOZ=Sarissa._SARISSA_HAS_DOM_CREATE_DOCUMENT&&Sarissa._SARISSA_HAS_DOM_FEATURE;
+Sarissa._SARISSA_IS_SAFARI=navigator.userAgent.toLowerCase().indexOf("safari")!=-1||navigator.userAgent.toLowerCase().indexOf("konqueror")!=-1;
+Sarissa._SARISSA_IS_SAFARI_OLD=Sarissa._SARISSA_IS_SAFARI&&(parseInt((navigator.userAgent.match(/AppleWebKit\/(\d+)/)||{})[1],10)<420);
+Sarissa._SARISSA_IS_IE11=!!(navigator.userAgent.match(/Trident/)&&!navigator.userAgent.match(/MSIE/));
+Sarissa._SARISSA_IS_IE=(document.all&&window.ActiveXObject&&navigator.userAgent.toLowerCase().indexOf("msie")>-1&&navigator.userAgent.toLowerCase().indexOf("opera")==-1)||Sarissa._SARISSA_IS_IE11;
+Sarissa._SARISSA_IS_IE9=(Sarissa._SARISSA_IS_IE&&(parseFloat(navigator.appVersion.substring(navigator.appVersion.indexOf("MSIE")+5)))>=9)||Sarissa._SARISSA_IS_IE11;
+Sarissa._SARISSA_IS_OPERA=navigator.userAgent.toLowerCase().indexOf("opera")!=-1;
+if(!window.Node||!Node.ELEMENT_NODE){Node={ELEMENT_NODE:1,ATTRIBUTE_NODE:2,TEXT_NODE:3,CDATA_SECTION_NODE:4,ENTITY_REFERENCE_NODE:5,ENTITY_NODE:6,PROCESSING_INSTRUCTION_NODE:7,COMMENT_NODE:8,DOCUMENT_NODE:9,DOCUMENT_TYPE_NODE:10,DOCUMENT_FRAGMENT_NODE:11,NOTATION_NODE:12}
+}if(Sarissa._SARISSA_IS_SAFARI_OLD){HTMLHtmlElement=document.createElement("html").constructor;
+Node=HTMLElement={};
+HTMLElement.prototype=HTMLHtmlElement.__proto__.__proto__;
+HTMLDocument=Document=document.constructor;
+var x=new DOMParser();
+XMLDocument=x.constructor;
+Element=x.parseFromString("<Single />","text/xml").documentElement.constructor;
+x=null
+}if(typeof XMLDocument=="undefined"&&typeof Document!="undefined"){XMLDocument=Document
+}if(Sarissa._SARISSA_IS_IE){if(!Sarissa._SARISSA_IS_IE9){tridIndex=navigator.userAgent.toLowerCase().indexOf("trident/");
+tridVer=navigator.userAgent.substring(tridIndex+8,tridIndex+11);
+if(tridIndex>0&&parseFloat(tridVer)>=5){Sarissa._SARISSA_IS_IE9=true
+}}Sarissa._SARISSA_IEPREFIX4XSLPARAM="xsl:";
+var _SARISSA_DOM_PROGID="";
+var _SARISSA_XMLHTTP_PROGID="";
+var _SARISSA_DOM_XMLWRITER="";
+Sarissa.pickRecentProgID=function(f){var d=false,h;
+var g;
+for(var b=0;
+b<f.length&&!d;
+b++){try{var a=new ActiveXObject(f[b]);
+g=f[b];
+d=true
+}catch(c){h=c
+}}if(!d){throw"Could not retrieve a valid progID of Class: "+f[f.length-1]+". (original exception: "+h+")"
+}f=null;
+return g
+};
+_SARISSA_DOM_PROGID=null;
+_SARISSA_THREADEDDOM_PROGID=null;
+_SARISSA_XSLTEMPLATE_PROGID=null;
+_SARISSA_XMLHTTP_PROGID=null;
+Sarissa.originalXMLHttpRequest=window.XMLHttpRequest;
+XMLHttpRequest=function(){if(!_SARISSA_XMLHTTP_PROGID){_SARISSA_XMLHTTP_PROGID=Sarissa.pickRecentProgID(["Msxml2.XMLHTTP.6.0","MSXML2.XMLHTTP.3.0","MSXML2.XMLHTTP","Microsoft.XMLHTTP"])
+}return new ActiveXObject(_SARISSA_XMLHTTP_PROGID)
+};
+Sarissa.getDomDocument=function(d,c){if(!_SARISSA_DOM_PROGID){_SARISSA_DOM_PROGID=Sarissa.pickRecentProgID(["Msxml2.DOMDocument.6.0","Msxml2.DOMDocument.3.0","MSXML2.DOMDocument","MSXML.DOMDocument","Microsoft.XMLDOM"])
+}var a=new ActiveXObject(_SARISSA_DOM_PROGID);
+if(c){var b="";
+if(d){if(c.indexOf(":")>1){b=c.substring(0,c.indexOf(":"));
+c=c.substring(c.indexOf(":")+1)
+}else{b="a"+(Sarissa._sarissa_iNsCounter++)
+}}if(d){a.loadXML("<"+b+":"+c+" xmlns:"+b+'="'+d+'" />')
+}else{a.loadXML("<"+c+" />")
+}}return a
+};
+Sarissa.getParseErrorText=function(a){var c=Sarissa.PARSED_OK;
+if(a&&a.parseError&&a.parseError.errorCode&&a.parseError.errorCode!=0){c="XML Parsing Error: "+a.parseError.reason+"\nLocation: "+a.parseError.url+"\nLine Number "+a.parseError.line+", Column "+a.parseError.linepos+":\n"+a.parseError.srcText+"\n";
+for(var b=0;
+b<a.parseError.linepos;
+b++){c+="-"
+}c+="^\n"
+}else{if(a.documentElement===null){c=Sarissa.PARSED_EMPTY
+}}return c
+};
+Sarissa.setXpathNamespaces=function(a,b){a.setProperty("SelectionLanguage","XPath");
+a.setProperty("SelectionNamespaces",b)
+};
+XSLTProcessor=function(){if(!_SARISSA_XSLTEMPLATE_PROGID){_SARISSA_XSLTEMPLATE_PROGID=Sarissa.pickRecentProgID(["Msxml2.XSLTemplate.6.0","MSXML2.XSLTemplate.3.0"])
+}this.template=new ActiveXObject(_SARISSA_XSLTEMPLATE_PROGID);
+this.processor=null
+};
+XSLTProcessor.prototype.importStylesheet=function(d){if(!_SARISSA_THREADEDDOM_PROGID){_SARISSA_THREADEDDOM_PROGID=Sarissa.pickRecentProgID(["MSXML2.FreeThreadedDOMDocument.6.0","MSXML2.FreeThreadedDOMDocument.3.0"])
+}d.setProperty("SelectionLanguage","XPath");
+d.setProperty("SelectionNamespaces","xmlns:xsl='http://www.w3.org/1999/XSL/Transform'");
+var c=new ActiveXObject(_SARISSA_THREADEDDOM_PROGID);
+try{c.resolveExternals=true;
+c.setProperty("AllowDocumentFunction",true)
+}catch(b){}if(d.url&&d.selectSingleNode("//xsl:*[local-name() = 'import' or local-name() = 'include']")!=null){c.async=false;
+c.load(d.url)
+}else{c.loadXML(d.xml)
+}c.setProperty("SelectionNamespaces","xmlns:xsl='http://www.w3.org/1999/XSL/Transform'");
+var a=c.selectSingleNode("//xsl:output");
+if(a){this.outputMethod=a.getAttribute("method")
+}else{delete this.outputMethod
+}this.template.stylesheet=c;
+this.processor=this.template.createProcessor();
+this.paramsSet=[]
+};
+XSLTProcessor.prototype.transformToDocument=function(c){var b;
+if(_SARISSA_THREADEDDOM_PROGID){this.processor.input=c;
+b=new ActiveXObject(_SARISSA_DOM_PROGID);
+this.processor.output=b;
+this.processor.transform();
+return b
+}else{if(!_SARISSA_DOM_XMLWRITER){_SARISSA_DOM_XMLWRITER=Sarissa.pickRecentProgID(["Msxml2.MXXMLWriter.6.0","Msxml2.MXXMLWriter.3.0","MSXML2.MXXMLWriter","MSXML.MXXMLWriter","Microsoft.XMLDOM"])
+}this.processor.input=c;
+b=new ActiveXObject(_SARISSA_DOM_XMLWRITER);
+this.processor.output=b;
+this.processor.transform();
+var a=new ActiveXObject(_SARISSA_DOM_PROGID);
+a.loadXML(b.output+"");
+return a
+}};
+XSLTProcessor.prototype.transformToFragment=function(i,d){this.processor.input=i;
+this.processor.transform();
+var g=this.processor.output;
+var h=d.createDocumentFragment();
+var b;
+if(this.outputMethod=="text"){h.appendChild(d.createTextNode(g))
+}else{if(d.body&&d.body.innerHTML){b=d.createElement("div");
+b.innerHTML=g;
+while(b.hasChildNodes()){h.appendChild(b.firstChild)
+}}else{var a=new ActiveXObject(_SARISSA_DOM_PROGID);
+if(g.substring(0,5)=="<?xml"){g=g.substring(g.indexOf("?>")+2)
+}var c="".concat("<my>",g,"</my>");
+a.loadXML(c);
+b=a.documentElement;
+while(b.hasChildNodes()){h.appendChild(b.firstChild)
+}}}return h
+};
+XSLTProcessor.prototype.setParameter=function(c,a,b){b=b?b:"";
+if(c){this.processor.addParameter(a,b,c)
+}else{this.processor.addParameter(a,b)
+}c=""+(c||"");
+if(!this.paramsSet[c]){this.paramsSet[c]=[]
+}this.paramsSet[c][a]=b
+};
+XSLTProcessor.prototype.getParameter=function(b,a){b=""+(b||"");
+if(this.paramsSet[b]&&this.paramsSet[b][a]){return this.paramsSet[b][a]
+}else{return null
+}};
+XSLTProcessor.prototype.clearParameters=function(){for(var b in this.paramsSet){for(var a in this.paramsSet[b]){if(b!=""){this.processor.addParameter(a,"",b)
+}else{this.processor.addParameter(a,"")
+}}}this.paramsSet=[]
+}
+}else{if(Sarissa._SARISSA_HAS_DOM_CREATE_DOCUMENT){Sarissa.__handleLoad__=function(a){Sarissa.__setReadyState__(a,4)
+};
+_sarissa_XMLDocument_onload=function(){Sarissa.__handleLoad__(this)
+};
+Sarissa.__setReadyState__=function(a,b){a.readyState=b;
+a.readystate=b;
+if(a.onreadystatechange!=null&&typeof a.onreadystatechange=="function"){a.onreadystatechange()
+}};
+Sarissa.getDomDocument=function(c,b){var a=document.implementation.createDocument(c?c:null,b?b:null,null);
+if(!a.onreadystatechange){a.onreadystatechange=null
+}if(!a.readyState){a.readyState=0
+}a.addEventListener("load",_sarissa_XMLDocument_onload,false);
+return a
+};
+if(window.XMLDocument){}else{if(Sarissa._SARISSA_HAS_DOM_FEATURE&&window.Document&&!Document.prototype.load&&document.implementation.hasFeature("LS","3.0")){Sarissa.getDomDocument=function(c,b){var a=document.implementation.createDocument(c?c:null,b?b:null,null);
+return a
+}
+}else{Sarissa.getDomDocument=function(c,b){var a=document.implementation.createDocument(c?c:null,b?b:null,null);
+if(a&&(c||b)&&!a.documentElement){a.appendChild(a.createElementNS(c,b))
+}return a
+}
+}}}}if(!window.DOMParser||Sarissa._SARISSA_IS_IE9){if(Sarissa._SARISSA_IS_SAFARI){DOMParser=function(){};
+DOMParser.prototype.parseFromString=function(b,c){var a=new XMLHttpRequest();
+a.open("GET","data:text/xml;charset=utf-8,"+encodeURIComponent(b),false);
+a.send(null);
+return a.responseXML
+}
+}else{if(Sarissa.getDomDocument&&Sarissa.getDomDocument()&&Sarissa.getDomDocument(null,"bar").xml){DOMParser=function(){};
+DOMParser.prototype.parseFromString=function(a,c){var b=Sarissa.getDomDocument();
+b.loadXML(a);
+return b
+}
+}}}if(((typeof(document.importNode)=="undefined")&&Sarissa._SARISSA_IS_IE)||Sarissa._SARISSA_IS_IE9){try{var importTable={TBODY:["<table>","</table>"],THEAD:["<table>","</table>"],TFOOT:["<table>","</table>"],TR:["<table><tbody>","</tbody></table>"],TH:["<table><thead><tr>","</tr></thead></table>"],TD:["<table><tbody><tr>","</tr></tbody></table>"],OPTION:["<select>","</select>"]};
+document.importNode=function(n,h){var j;
+if(n.nodeName=="#text"){return document.createTextNode(n.data)
+}else{var d=n.nodeName.toUpperCase();
+var b=importTable[d];
+var c;
+if(h){c=n.xml?n.xml:n.outerHTML
+}else{c=n.xml?n.cloneNode(false).xml:n.cloneNode(false).outerHTML
+}var l=document.createElement("div");
+if(b){c=b[0]+c+b[1]
+}l.innerHTML=c;
+var m=new Array(l.firstChild);
+var o;
+while(!o){var a=new Array();
+for(var g=0;
+g<m.length&&!o;
+g++){var f=m[g];
+while(f){if(f.tagName&&f.tagName.toUpperCase()==d){o=f;
+break
+}else{if(f.firstChild){a.push(f.firstChild)
+}f=f.nextSibling
+}}}m=a
+}return o
+}}
+}catch(e){}}if(!Sarissa.getParseErrorText){Sarissa.getParseErrorText=function(a){var c=Sarissa.PARSED_OK;
+if(!a.documentElement){c=Sarissa.PARSED_EMPTY
+}else{if(a.documentElement.tagName=="parsererror"){c=a.documentElement.firstChild.data;
+c+="\n"+a.documentElement.firstChild.nextSibling.firstChild.data
+}else{if(a.getElementsByTagName("parsererror").length>0){var b=a.getElementsByTagName("parsererror")[0];
+c=Sarissa.getText(b,true)+"\n"
+}else{if(a.parseError&&a.parseError.errorCode!=0){c=Sarissa.PARSED_UNKNOWN_ERROR
+}}}}return c
+}
+}Sarissa.getText=function(h,b){var f="";
+var c=h.childNodes;
+for(var d=0;
+d<c.length;
+d++){var g=c[d];
+var a=g.nodeType;
+if(a==Node.TEXT_NODE||a==Node.CDATA_SECTION_NODE){f+=g.data
+}else{if(b===true&&(a==Node.ELEMENT_NODE||a==Node.DOCUMENT_NODE||a==Node.DOCUMENT_FRAGMENT_NODE)){f+=Sarissa.getText(g,true)
+}}}return f
+};
+if((!window.XMLSerializer||Sarissa._SARISSA_IS_IE9)&&Sarissa.getDomDocument&&Sarissa.getDomDocument("","foo",null).xml){XMLSerializer=function(){};
+XMLSerializer.prototype.serializeToString=function(a){return a.xml
+}
+}Sarissa.stripTags=function(a){return a?a.replace(/<[^>]+>/g,""):a
+};
+Sarissa.clearChildNodes=function(a){while(a.firstChild){a.removeChild(a.firstChild)
+}};
+Sarissa.copyChildNodes=function(d,f,g){if(Sarissa._SARISSA_IS_SAFARI&&f.nodeType==Node.DOCUMENT_NODE){f=f.documentElement
+}if((!d)||(!f)){throw"Both source and destination nodes must be provided"
+}if(!g){Sarissa.clearChildNodes(f)
+}var b=f.nodeType==Node.DOCUMENT_NODE?f:f.ownerDocument;
+var a=d.childNodes;
+var c;
+if(typeof(b.importNode)!="undefined"){for(c=0;
+c<a.length;
+c++){f.appendChild(b.importNode(a[c],true))
+}}else{for(c=0;
+c<a.length;
+c++){f.appendChild(a[c].cloneNode(true))
+}}};
+Sarissa.moveChildNodes=function(d,f,g){if((!d)||(!f)){throw"Both source and destination nodes must be provided"
+}if(!g){Sarissa.clearChildNodes(f)
+}var a=d.childNodes;
+if(d.ownerDocument==f.ownerDocument){while(d.firstChild){f.appendChild(d.firstChild)
+}}else{var b=f.nodeType==Node.DOCUMENT_NODE?f:f.ownerDocument;
+var c;
+if(typeof(b.importNode)!="undefined"){for(c=0;
+c<a.length;
+c++){f.appendChild(b.importNode(a[c],true))
+}}else{for(c=0;
+c<a.length;
+c++){f.appendChild(a[c].cloneNode(true))
+}}Sarissa.clearChildNodes(d)
+}};
+Sarissa.xmlize=function(f,h,d){d=d?d:"";
+var g=d+"<"+h+">";
+var b=false;
+if(!(f instanceof Object)||f instanceof Number||f instanceof String||f instanceof Boolean||f instanceof Date){g+=Sarissa.escape(""+f);
+b=true
+}else{g+="\n";
+var a=f instanceof Array;
+for(var c in f){g+=Sarissa.xmlize(f[c],(a?'array-item key="'+c+'"':c),d+"   ")
+}g+=d
+}return(g+=(h.indexOf(" ")!=-1?"</array-item>\n":"</"+h+">\n"))
+};
+Sarissa.escape=function(a){return a.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&apos;")
+};
+Sarissa.unescape=function(a){return a.replace(/&apos;/g,"'").replace(/&quot;/g,'"').replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/&amp;/g,"&")
+};
+Sarissa.updateCursor=function(b,a){if(b&&b.style&&b.style.cursor!=undefined){b.style.cursor=a
+}};
+Sarissa.updateContentFromURI=function(c,i,a,h,f){try{Sarissa.updateCursor(i,"wait");
+var b=new XMLHttpRequest();
+b.open("GET",c,true);
+b.onreadystatechange=function(){if(b.readyState==4){try{var j=b.responseXML;
+if(j&&Sarissa.getParseErrorText(j)==Sarissa.PARSED_OK){Sarissa.updateContentFromNode(b.responseXML,i,a);
+h(c,i)
+}else{throw Sarissa.getParseErrorText(j)
+}}catch(l){if(h){h(c,i,l)
+}else{throw l
+}}}};
+if(f){var g="Sat, 1 Jan 2000 00:00:00 GMT";
+b.setRequestHeader("If-Modified-Since",g)
+}b.send("")
+}catch(d){Sarissa.updateCursor(i,"auto");
+if(h){h(c,i,d)
+}else{throw d
+}}};
+Sarissa.updateContentFromNode=function(f,g,a){try{Sarissa.updateCursor(g,"wait");
+Sarissa.clearChildNodes(g);
+var b=f.nodeType==Node.DOCUMENT_NODE?f:f.ownerDocument;
+if(b.parseError&&b.parseError.errorCode!=0){var d=document.createElement("pre");
+d.appendChild(document.createTextNode(Sarissa.getParseErrorText(b)));
+g.appendChild(d)
+}else{if(a){f=a.transformToDocument(f)
+}if(g.tagName.toLowerCase()=="textarea"||g.tagName.toLowerCase()=="input"){g.value=new XMLSerializer().serializeToString(f)
+}else{if(f.nodeType==Node.DOCUMENT_NODE||f.ownerDocument.documentElement==f){g.innerHTML=new XMLSerializer().serializeToString(f)
+}else{g.appendChild(g.ownerDocument.importNode(f,true))
+}}}}catch(c){throw c
+}finally{Sarissa.updateCursor(g,"auto")
+}};
+Sarissa.formToQueryString=function(h){var a="";
+for(var g=0;
+g<h.elements.length;
+g++){var f=h.elements[g];
+var d=f.getAttribute("name")?f.getAttribute("name"):f.getAttribute("id");
+if(d&&((!f.disabled)||f.type=="hidden")){switch(f.type){case"hidden":case"text":case"textarea":case"password":a+=d+"="+encodeURIComponent(f.value)+"&";
+break;
+case"select-one":a+=d+"="+encodeURIComponent(f.options[f.selectedIndex].value)+"&";
+break;
+case"select-multiple":for(var c=0;
+c<f.length;
+c++){var b=f.options[c];
+if(b.selected===true){a+=d+"[]="+encodeURIComponent(b.value)+"&"
+}}break;
+case"checkbox":case"radio":if(f.checked){a+=d+"="+encodeURIComponent(f.value)+"&"
+}break
+}}}return a.substr(0,a.length-1)
+};
+Sarissa.updateContentFromForm=function(g,i,a,h){try{Sarissa.updateCursor(i,"wait");
+var f=Sarissa.formToQueryString(g)+"&"+Sarissa.REMOTE_CALL_FLAG+"=true";
+var b=new XMLHttpRequest();
+var c=g.getAttribute("method")&&g.getAttribute("method").toLowerCase()=="get";
+if(c){b.open("GET",g.getAttribute("action")+"?"+f,true)
+}else{b.open("POST",g.getAttribute("action"),true);
+b.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+b.setRequestHeader("Content-length",f.length);
+b.setRequestHeader("Connection","close")
+}b.onreadystatechange=function(){try{if(b.readyState==4){var j=b.responseXML;
+if(j&&Sarissa.getParseErrorText(j)==Sarissa.PARSED_OK){Sarissa.updateContentFromNode(b.responseXML,i,a);
+h(g,i)
+}else{throw Sarissa.getParseErrorText(j)
+}}}catch(l){if(h){h(g,i,l)
+}else{throw l
+}}};
+b.send(c?"":f)
+}catch(d){Sarissa.updateCursor(i,"auto");
+if(h){h(g,i,d)
+}else{throw d
+}}return false
+};
+A4J.AJAX={};
+A4J.AJAX.VIEW_ROOT_ID="_viewRoot";
+A4J.AJAX.Stub=function(){};
+A4J.AJAX.isWebKit=navigator.userAgent.search(/( AppleWebKit\/)([^ ]+)/)!=-1;
+A4J.AJAX.XMLHttpRequest=function(a){this._query=a;
+this._documentElement=window.document.documentElement
+};
+A4J.AJAX.XMLHttpRequest.prototype={_query:null,_timeout:0,_timeoutID:null,onready:null,_parsingStatus:Sarissa.PARSED_EMPTY,_errorMessage:"XML Response object not set",_contentType:null,_onerror:function(c,a,b){if(a!=599&&c.getResponseText()){A4J.AJAX.replacePage(c)
+}},onfinish:null,options:{},domEvt:null,form:null,_request:null,_aborted:false,_documentElement:null,setRequestTimeout:function(a){this._timeout=a
+},send:function(){this._request=new XMLHttpRequest();
+var c=this;
+this._request.onreadystatechange=function(){if(window.document.documentElement!=c._documentElement){LOG.warn("Page for current request have been unloaded - abort processing");
+if(!c._status_stopped){A4J.AJAX.status(c.containerId,c.options.status,false);
+c._status_stopped=true
+}c.abort();
+return
+}LOG.debug("Request state : "+c._request.readyState);
+if(c._request.readyState==4){if(c._aborted){A4J.AJAX.status(c.containerId,c.options.status,false);
+A4J.AJAX.popQueue(c);
+return
+}LOG.debug("Request end with state 4");
+if(c._timeoutID){window.clearTimeout(c._timeoutID)
+}var g;
+var d;
+try{g=c._request.status;
+d=c._request.statusText
+}catch(f){LOG.error("request don't have status code - network problem, "+f.message);
+g=599;
+d="Network error"
+}if(g==200){try{LOG.debug("Response  with content-type: "+c.getResponseHeader("Content-Type"));
+LOG.debug("Full response content: ",c.getResponseText())
+}catch(f){}if(c._request.responseXML){c._parsingStatus=Sarissa.getParseErrorText(c._request.responseXML);
+if(c._parsingStatus==Sarissa.PARSED_OK&&Sarissa.setXpathNamespaces){Sarissa.setXpathNamespaces(c._request.responseXML,"xmlns='http://www.w3.org/1999/xhtml'")
+}}if(c.onready){c.onready(c)
+}}else{c._errorMessage="Request error, status : "+g+" "+d;
+LOG.error(c._errorMessage);
+if(typeof(c._onerror)=="function"){c._onerror(c,g,c._errorMessage)
+}if(c.onfinish){c.onfinish(c)
+}}c=undefined
+}};
+try{LOG.debug("Start XmlHttpRequest");
+this._request.open("POST",this._query.getActionUrl(""),true);
+var b="application/x-www-form-urlencoded; charset=UTF-8";
+this._request.setRequestHeader("Content-Type",b)
+}catch(a){LOG.debug("XmlHttpRequest not support setRequestHeader - use GET instead of POST");
+this._request.open("GET",this._query.getActionUrl("")+"?"+this._query.getQueryString(),true)
+}this._request.send(this._query.getQueryString());
+if(this._timeout>0){this._timeoutID=window.setTimeout(function(){LOG.warn("request stopped due to timeout");
+if(!c._aborted){if(typeof(A4J.AJAX.onAbort)=="function"){A4J.AJAX.onAbort(c)
+}}c._aborted=true;
+c._request.onreadystatechange=A4J.AJAX.Stub;
+c._request.abort();
+if(c._onerror){c._errorMessage="Request timeout";
+c._onerror(c,500,c._errorMessage)
+}if(c.onfinish){c.onfinish(c)
+}c._request=undefined;
+c=undefined
+},this._timeout)
+}},abort:function(){this._oncomplete_aborted=true;
+if(!this._aborted){if(typeof(A4J.AJAX.onAbort)=="function"){A4J.AJAX.onAbort(this)
+}}this._aborted=true
+},getResponseText:function(){try{return this._request.responseText
+}catch(a){return null
+}},getError:function(){return this._errorMessage
+},getParserStatus:function(){return this._parsingStatus
+},getContentType:function(){if(!this._contentType){var b=this.getResponseHeader("Content-Type");
+if(b){var a=b.indexOf(";");
+if(a>=0){this._contentType=b.substring(0,a)
+}else{this._contentType=b
+}}else{this._contentType="text/html"
+}}return this._contentType
+},getResponseHeader:function(b){var a;
+try{a=this._request.getResponseHeader(b);
+if(a===""){a=undefined
+}}catch(f){}if(!a){LOG.debug("Header "+b+" not found, search in <meta>");
+if(this._parsingStatus==Sarissa.PARSED_OK){var g=this.getElementsByTagName("meta");
+for(var c=0;
+c<g.length;
+c++){var d=g[c];
+LOG.debug("Find <meta name='"+d.getAttribute("name")+"' content='"+d.getAttribute("content")+"'>");
+if(d.getAttribute("name")==b){a=d.getAttribute("content");
+break
+}}}}return a
+},getElementsByTagName:function(a,c){if(!c){c=this._request.responseXML
+}LOG.debug("search for elements by name '"+a+"'  in element "+c.nodeName);
+var f;
+try{f=c.selectNodes('.//*[local-name()="'+a+'"]')
+}catch(b){try{f=c.getElementsByTagName(a)
+}catch(d){LOG.debug("getElementsByTagName found no elements, "+d.Message)
+}}return f
+},getElementById:function(b){var a=this._request.responseXML;
+if(a){if(typeof(a.getElementById)!="undefined"){LOG.debug("call getElementById for id= "+b);
+return a.getElementById(b)
+}else{if(typeof(a.selectSingleNode)!="undefined"){LOG.debug("call selectSingleNode for id= "+b);
+return a.selectSingleNode("//*[@id='"+b+"']")
+}else{if(typeof(a.nodeFromID)!="undefined"){LOG.debug("call nodeFromID for id= "+b);
+return a.nodeFromID(b)
+}}}LOG.error("No functions for getElementById found ")
+}else{LOG.debug("No parsed XML document in response")
+}return null
+},getJSON:function(id){var data;
+var dataElement=this.getElementById(id);
+if(dataElement){try{data=Sarissa.getText(dataElement,true);
+data=window.eval("("+data+")")
+}catch(e){LOG.error("Error on parsing JSON data "+e.message,data)
+}}return data
+},_evaluateScript:function(node){var includeComments=!A4J.AJAX.isXhtmlScriptMode();
+var newscript=A4J.AJAX.getText(node,includeComments);
+try{LOG.debug("Evaluate script replaced area in document: ",newscript);
+if(window.execScript){window.execScript(newscript)
+}else{window.eval(newscript)
+}LOG.debug("Script evaluation succeeded")
+}catch(e){LOG.error("ERROR Evaluate script:  Error name: "+e.name+e.message?". Error message: "+e.message:"")
+}},evaluateQueueScript:function(){var a=this.getElementById("org.ajax4jsf.queue_script");
+if(a){this._evaluateScript(a)
+}},evalScripts:function(a,b){var d=this.getElementsByTagName("script",a);
+LOG.debug("Scripts in updated part count : "+d.length);
+if(d.length>0){var c=this;
+window.setTimeout(function(){for(var f=0;
+f<d.length;
+f++){c._evaluateScript(d[f])
+}d=null;
+if(b){c.doFinish()
+}c=undefined
+},0)
+}else{if(b){this.doFinish()
+}}},updatePagePart:function(i,d){var c=this.getElementById(i);
+if(!c){LOG.error("New node for ID "+i+" is not present in response");
+if(d){this.doFinish()
+}return
+}var a=window.document.getElementById(i);
+if(a){if(window.RichFaces&&window.RichFaces.Memory){window.RichFaces.Memory.clean(a,true)
+}var b=a.parentNode;
+if(!window.opera&&!A4J.AJAX.isWebkitBreakingAmps()&&a.outerHTML&&!a.tagName.match(/(tbody|thead|tfoot|tr|th|td)/i)){LOG.debug("Replace content of node by outerHTML()");
+if(!Sarissa._SARISSA_IS_IE||a.tagName.toLowerCase()!="table"){try{a.innerHTML=""
+}catch(g){LOG.error("Error to clear node content by innerHTML "+g.message);
+Sarissa.clearChildNodes(a)
+}}a.outerHTML=new XMLSerializer().serializeToString(c)
+}else{Sarissa.clearChildNodes(a);
+if(A4J.AJAX.isWebKit){try{c.normalize()
+}catch(g){LOG.error("Node normalization failed "+g.message)
+}}var f=window.document.importNode(c,true);
+LOG.debug("Replace content of node by replaceChild()");
+var h=null;
+A4J.AJAX.TestReplacedGetElementByIdVisibility();
+if(!A4J.AJAX._testReplacedGetElementByIdVisibility){LOG.debug("Temporarily substituting document.getElementById() to work around WebKit issue");
+h=document.getElementById;
+document.getElementById=function(n){var l=h.apply(document,arguments);
+if(!l){var n=arguments[0];
+LOG.debug("Element [@id='"+n+"'] was not found in document, trying to locate XPath match");
+try{var j=f.ownerDocument.evaluate("//*[@id='"+n+"']",f,null,XPathResult.ANY_UNORDERED_NODE_TYPE);
+if(j){l=j.singleNodeValue
+}LOG.debug("XPath located: "+l)
+}catch(m){LOG.error("Error locating [@id='"+n+"'] element: "+m.message)
+}}return l
+}
+}try{b.replaceChild(f,a)
+}finally{if(h){LOG.debug("Restoring document.getElementById()");
+document.getElementById=h
+}}}if(!A4J.AJAX._scriptEvaluated){this.evalScripts(c,d)
+}LOG.debug("Update part of page for Id: "+i+" successful")
+}else{LOG.warn("Node for replace by response with id "+i+" not found in document");
+if(!A4J.AJAX._scriptEvaluated&&d){this.doFinish()
+}}if(A4J.AJAX._scriptEvaluated&&d){this.doFinish()
+}},doFinish:function(){if(this.onfinish){this.onfinish(this)
+}},appendNewHeadElements:function(g){var c=this._appendNewElements("script","src",null,null,["type","language","charset"]);
+var f=this;
+c.concat(this._appendNewElements("link","href","class",["component","user"],["type","rev","media"],{"class":"className"},function(i,h){f._copyAttribute(i,h,"rel")
+}));
+if(c.length==0){g();
+return
+}A4J.AJAX.headElementsCounter=c.length;
+var a=function(){if(this.readyState=="loaded"||this.readyState=="complete"){this.onreadystatechange=null;
+this.onload=null;
+g()
+}};
+var d=function(){this.onreadystatechange=null;
+this.onload=null;
+g()
+};
+for(var b=0;
+b<c.length;
+b++){c[b].onreadystatechange=a;
+c[b].onload=d
+}},_appendNewElements:function(B,u,C,r,n,b,d){var f=document.getElementsByTagName("head")[0]||document.documentElement;
+var c=this.getElementsByTagName(B);
+var p=document.getElementsByTagName(B);
+var g=(b&&b[C])||C;
+var q=[];
+var v={};
+if(r){var t=0;
+for(var s=0;
+s<p.length;
+s++){var h=p[s];
+var w=h[g];
+for(;
+t<r.length&&r[t]!=w;
+t++){v[r[t]]=h
+}if(t==r.length){break
+}}}for(var t=0;
+t<c.length;
+t++){var a=c[t];
+var l=a.getAttribute(u);
+var o;
+if(r){o=a.getAttribute(C)
+}if(l){var z=false;
+LOG.debug("<"+B+"> in response with src="+l);
+for(var s=0;
+s<p.length;
+s++){if(this._noSessionHref(l)==this._noSessionHref(p[s].getAttribute(u))){LOG.debug("Such element exist in document");
+if(C){var A=p[s][g];
+if((!o^!A)||(o&&A&&o!=A)){LOG.warn("Roles are different")
+}}z=true;
+break
+}}if(!z){var y=document.createElement(B);
+y.setAttribute(u,l);
+for(var s=0;
+s<n.length;
+s++){this._copyAttribute(a,y,n[s])
+}if(o){y[g]=o
+}LOG.debug("append element to document");
+for(var s=0;
+s<A4J.AJAX._headTransformers.length;
+s++){A4J.AJAX._headTransformers[s](y)
+}var m=v[o];
+if(m&&m.parentNode){m.parentNode.insertBefore(y,m)
+}else{f.appendChild(y)
+}if(d){d(a,y)
+}if(B!="link"||y.type.toLowerCase()=="text/javascript"){q.push(y)
+}}}}return q
+},_noSessionHref:function(a){var b=a;
+if(a){var c=a.lastIndexOf(";jsessionid=");
+if(c>0){b=a.substring(0,c);
+var d=a.lastIndexOf("?");
+if(d>c){b=b+a.substring(d)
+}}}return b
+},_copyAttribute:function(c,d,a){var b=c.getAttribute(a);
+if(b){d.setAttribute(a,b)
+}}};
+A4J.AJAX.Listener=function(a){this.onafterajax=a
+};
+A4J.AJAX.AjaxListener=function(a,b){this[a]=b
+};
+A4J.AJAX._listeners=[];
+A4J.AJAX.AddListener=function(a){A4J.AJAX._listeners.push(a)
+};
+A4J.AJAX.removeListeners=function(a){A4J.AJAX._listeners=[]
+};
+A4J.AJAX.removeListener=function(b){for(var a=A4J.AJAX._listeners.length-1;
+a>=0;
+a--){if(A4J.AJAX._listeners[a]==b){A4J.AJAX._listeners.splice(a,1)
+}}};
+A4J.AJAX.HeadElementTransformer=function(a){this.elt=a
+};
+A4J.AJAX._headTransformers=[];
+A4J.AJAX.AddHeadElementTransformer=function(a){A4J.AJAX._headTransformers.push(a)
+};
+A4J.AJAX.SetZeroRequestDelay=function(a){if(typeof a.requestDelay=="undefined"){a.requestDelay=0
+}};
+A4J.AJAX._pollers={};
+A4J.AJAX.Poll=function(b,a){A4J.AJAX.StopPoll(a.pollId);
+if(!a.onerror){a.onerror=function(f,c,d){if(typeof(A4J.AJAX.onError)=="function"){A4J.AJAX.onError(f,c,d)
+}A4J.AJAX.Poll(b,a)
+}
+}if(!a.onqueuerequestdrop){a.onqueuerequestdrop=function(){A4J.AJAX.Poll(b,a)
+}
+}A4J.AJAX.SetZeroRequestDelay(a);
+A4J.AJAX._pollers[a.pollId]=window.setTimeout(function(){A4J.AJAX._pollers[a.pollId]=undefined;
+if((typeof(a.onsubmit)=="function")&&(a.onsubmit()==false)){A4J.AJAX.Poll(b,a)
+}else{A4J.AJAX.Submit(b,null,a)
+}},a.pollinterval)
+};
+A4J.AJAX.StopPoll=function(a){if(A4J.AJAX._pollers[a]){window.clearTimeout(A4J.AJAX._pollers[a]);
+A4J.AJAX._pollers[a]=undefined
+}};
+A4J.AJAX.Push=function(b,a){A4J.AJAX.StopPush(a.pushId);
+a.onerror=function(){A4J.AJAX.Push(b,a)
+};
+a.onqueuerequestdrop=function(){LOG.debug("Push main request dropped from queue")
+};
+A4J.AJAX._pollers[a.pushId]=window.setTimeout(function(){var c=new XMLHttpRequest();
+c.onreadystatechange=function(){if(c.readyState==4){try{if(c.status==200){if(c.getResponseHeader("Ajax-Push-Status")=="READY"){A4J.AJAX.SetZeroRequestDelay(a);
+A4J.AJAX.Submit(b||a.dummyForm,null,a)
+}}}catch(d){}c=null;
+A4J.AJAX._pollers[a.pushId]=null;
+A4J.AJAX.Push(b,a)
+}};
+A4J.AJAX.SendPush(c,a)
+},a.pushinterval)
+};
+A4J.AJAX.SendPush=function(c,b){var a=b.pushUrl||b.actionUrl;
+c.open("HEAD",a,true);
+c.setRequestHeader("Ajax-Push-Key",b.pushId);
+if(b.timeout){c.setRequestHeader("Timeout",b.timeout)
+}c.send(null)
+};
+A4J.AJAX.StopPush=function(a){if(A4J.AJAX._pollers[a]){window.clearTimeout(A4J.AJAX._pollers[a]);
+A4J.AJAX._pollers[a]=null
+}};
+A4J.AJAX.CloneObject=function(c,b){var a={};
+for(var d in c){if(b&&typeof(evt[prop])=="function"){continue
+}a[d]=c[d]
+}return a
+};
+A4J.AJAX.SubmitForm=function(c,a){var b=A4J.AJAX.CloneObject(a);
+if(A4J._formInput){LOG.debug("Form submitted by button "+A4J._formInput.id);
+b.control=A4J._formInput;
+A4J._formInput=null;
+b.submitByForm=true
+}A4J.AJAX.Submit(c,null,b)
+};
+A4J.AJAX.SubmiteventsQueue=function(a){a.submit()
+};
+A4J.AJAX.CloneEvent=function(a){var b;
+a=a||window.event||null;
+if(a){try{b=A4J.AJAX.CloneObject(a,false)
+}catch(c){LOG.warn("Exception on clone event "+c.name+":"+c.message)
+}LOG.debug("Have Event "+b+" with properties: target: "+b.target+", srcElement: "+b.srcElement+", type: "+b.type)
+}return b
+};
+A4J.AJAX.PrepareQuery=function(h,g,c){for(var a=0;
+a<A4J.AJAX._listeners.length;
+a++){var f=A4J.AJAX._listeners[a];
+if(f.onbeforeajax){f.onbeforeajax(h,g,c)
+}}LOG.debug("Query preparation for form '"+h+"' requested");
+var d=window.document.getElementById(h);
+if((!d||d.nodeName.toUpperCase()!="FORM")&&g){var b=g.target||g.srcElement||null;
+if(b){d=A4J.AJAX.locateForm(b)
+}}if(!c.submitByForm&&d&&d.onsubmit){LOG.debug("Form have onsubmit function, call it");
+if(d.onsubmit()==false){return false
+}}var i=new A4J.Query(c.containerId,d);
+i.appendFormControls(c.single,c.control);
+if(c.parameters){i.appendParameters(c.parameters)
+}if(c.actionUrl){i.setActionUrl(c.actionUrl)
+}return i
+};
+A4J.AJAX.SubmitQuery=function(h,b,g){var f=new A4J.AJAX.XMLHttpRequest(h);
+var d=h._form;
+var a=h._containerId;
+f.options=b;
+f.containerId=a;
+f.domEvt=g;
+f.form=d;
+if(b.timeout){f.setRequestTimeout(b.timeout)
+}f.onready=A4J.AJAX.processResponse;
+if(b.onerror){f._onerror=b.onerror
+}else{if(typeof(A4J.AJAX.onError)=="function"){f._onerror=A4J.AJAX.onError
+}}var c=b.queueonerror;
+if(c){var i=f._onerror;
+if(i){f._onerror=function(){c.apply(this,arguments);
+i.apply(this,arguments)
+}
+}else{f._onerror=c
+}}f.onfinish=A4J.AJAX.finishRequest;
+LOG.debug("NEW AJAX REQUEST !!! with form: "+(d.id||d.name||d));
+A4J.AJAX.status(a,b.status,true);
+f.send();
+return f
+};
+A4J.AJAX.Submit=function(g,c,b){var f=A4J.AJAX.CloneEvent(c);
+var d=A4J.AJAX.PrepareQuery(g,f,b);
+if(d){var a=A4J.AJAX.EventQueue.getOrCreateQueue(b,g);
+if(a){a.push(d,b,f)
+}else{A4J.AJAX.SubmitQuery(d,b,f)
+}}return false
+};
+A4J.AJAX.SubmitRequest=function(f,b,a){var d=A4J.AJAX.CloneEvent(b);
+var c=A4J.AJAX.PrepareQuery(f,d,a);
+if(c){A4J.AJAX.SubmitQuery(c,a,d)
+}return false
+};
+A4J.AJAX.processResponseAfterUpdateHeadElements=function(c,b){c.evaluateQueueScript();
+for(var a=0;
+a<b.length;
+a++){var d=b[a];
+LOG.debug("Update page part from call parameter for ID "+d);
+c.updatePagePart(d,a==b.length-1)
+}};
+A4J.AJAX.headElementsCounter=0;
+A4J.AJAX.processResponse=function(a){A4J.AJAX.TestScriptEvaluation();
+var f=a.options;
+var v=a.getResponseHeader("Ajax-Response");
+var t=a.getResponseHeader("Ajax-Expired");
+if(t&&typeof(A4J.AJAX.onExpired)=="function"){var j=A4J.AJAX.onExpired(window.location,t);
+if(j){window.location=j;
+return
+}}if(v!="true"){LOG.warn("No ajax response header ");
+var j=a.getResponseHeader("Location");
+try{if(v=="redirect"&&j){window.location=j
+}else{if(v=="reload"){window.location.reload(true)
+}else{A4J.AJAX.replacePage(a)
+}}}catch(q){LOG.error("Error redirect to new location ")
+}}else{if(a.getParserStatus()==Sarissa.PARSED_OK){if(f.onbeforedomupdate||f.queueonbeforedomupdate){var o=a.domEvt;
+var u=a.getJSON("_ajax:data");
+LOG.debug("Call local onbeforedomupdate function before replacing elemements");
+if(f.onbeforedomupdate){f.onbeforedomupdate(a,o,u)
+}if(f.queueonbeforedomupdate){f.queueonbeforedomupdate(a,o,u)
+}}var b=a.getResponseHeader("Ajax-Update-Ids");
+var n;
+var h=function(){if(A4J.AJAX.headElementsCounter!=0){LOG.debug("Script "+A4J.AJAX.headElementsCounter+" was loaded");
+--A4J.AJAX.headElementsCounter
+}if(A4J.AJAX.headElementsCounter==0){A4J.AJAX.processResponseAfterUpdateHeadElements(a,n)
+}};
+if(f.affected){n=f.affected;
+a.appendNewHeadElements(h)
+}else{if(b&&b!=""){LOG.debug("Update page by list of rendered areas from response "+b);
+n=b.split(",");
+a.appendNewHeadElements(h)
+}else{LOG.warn("No information in response about elements to replace");
+a.doFinish()
+}}var s=a.getElementById("ajax-view-state");
+if(s!=null){var l=f.parameters["org.ajax4jsf.portlet.NAMESPACE"];
+LOG.debug("Namespace for hidden view-state input fields is "+l);
+var i=l?window.document.getElementById(l):window.document;
+var c=i.getElementsByTagName("input");
+try{var p=a.getElementsByTagName("input",s);
+A4J.AJAX.replaceViewState(c,p)
+}catch(q){LOG.warn("No elements 'input' in response")
+}try{var p=a.getElementsByTagName("INPUT",s);
+A4J.AJAX.replaceViewState(c,p)
+}catch(q){LOG.warn("No elements 'INPUT' in response")
+}}for(var m=0;
+m<A4J.AJAX._listeners.length;
+m++){var g=A4J.AJAX._listeners[m];
+if(g.onafterajax){var u=a.getJSON("_ajax:data");
+g.onafterajax(a,a.domEvt,u)
+}}var r=a.getJSON("_A4J.AJAX.focus");
+if(r){LOG.debug("focus must be set to control "+r);
+var d=false;
+if(a.form){d=a.form.elements[r]
+}if(!d){LOG.debug("No control element "+r+" in submitted form");
+d=document.getElementById(r)
+}if(d){LOG.debug("Set focus to control ");
+d.focus();
+if(d.select){d.select()
+}}else{LOG.warn("Element for set focus not found")
+}}else{LOG.debug("No focus information in response")
+}}else{LOG.error("Error parsing XML");
+LOG.error("Parse Error: "+a.getParserStatus())
+}}};
+A4J.AJAX.replacePage=function(b){if(!b.getResponseText()){LOG.warn("No content in response for replace current page");
+return
+}LOG.debug("replace all page content with response");
+var a=Sarissa._SARISSA_IS_IE;
+var c=window.document.open;
+if(a){LOG.debug("setup custom document.open method");
+window.document.open=function(f,h,d,g){c(f,h,d,g)
+}
+}window.setTimeout(function(){var f=false;
+try{var n=b.getContentType();
+var l=a?b.getResponseText().replace(/(<script(?!\s+src=))/igm,"$1 defer "):b.getResponseText();
+window.document.open(n,"replace");
+if(window.LOG){LOG.debug("window.document has opened for writing")
+}f=true;
+window.document.write(l);
+if(window.LOG){LOG.debug("window.document has been writed")
+}window.document.close();
+if(window.LOG){LOG.debug("window.document has been closed for writing")
+}if(a){window.location.reload(false)
+}}catch(m){if(window.LOG){LOG.debug("exception during write page content "+m.Message)
+}if(f){window.document.close()
+}var j=(new DOMParser()).parseFromString(b.getResponseText(),"text/xml");
+if(Sarissa.getParseErrorText(j)==Sarissa.PARSED_OK){if(window.LOG){LOG.debug("response has parsed as DOM documnet.")
+}Sarissa.clearChildNodes(window.document.documentElement);
+var d=j.documentElement.childNodes;
+for(var g=0;
+g<d.length;
+g++){if(d[g].nodeType==1){if(window.LOG){LOG.debug("append new node in document")
+}var h=window.document.importNode(d[g],true);
+window.document.documentElement.appendChild(h)
+}}}else{if(window.LOG){LOG.error("Error parsing response",Sarissa.getParseErrorText(j))
+}}}finally{window.document.open=c
+}if(window.LOG){LOG.debug("page content has been replaced")
+}},0)
+};
+A4J.AJAX.replaceViewState=function(a,f){LOG.debug("Replace value for inputs: "+a.length+" by new values: "+f.length);
+if((f.length>0)&&(a.length>0)){for(var d=0;
+d<f.length;
+d++){var g=f[d];
+LOG.debug("Input in response: "+g.getAttribute("name"));
+for(var c=0;
+c<a.length;
+c++){var b=a[c];
+if(b.name==g.getAttribute("name")){LOG.debug("Found same input on page with type: "+b.type);
+b.setAttribute("autocomplete","off");
+b.value=g.getAttribute("value")
+}}}}};
+A4J.AJAX.finishRequest=function(c){var b=c.options;
+if(!c._oncomplete_aborted){var a;
+try{a=c.getElementById("org.ajax4jsf.oncomplete")
+}catch(d){LOG.warn("Error reading oncomplete from request "+d.message)
+}if(a){LOG.debug("Call request oncomplete function after processing updates");
+window.setTimeout(function(){var h=c.domEvt;
+var i;
+try{i=c.getJSON("_ajax:data")
+}catch(l){LOG.warn("Error reading data from request "+l.message)
+}try{var j=null;
+if(h){j=h.target?h.target:h.srcElement
+}var g=Sarissa.getText(a,true);
+var f=new Function("request","event","data",g);
+f.call(j,c,h,i);
+if(b.queueoncomplete){b.queueoncomplete.call(j,c,h,i)
+}}catch(l){LOG.error("Error evaluate oncomplete function "+l.Message)
+}A4J.AJAX.status(c.containerId,b.status,false)
+},0)
+}else{if(b.oncomplete||b.queueoncomplete){LOG.debug("Call local oncomplete function after processing updates");
+window.setTimeout(function(){var f=c.domEvt;
+var g;
+try{g=c.getJSON("_ajax:data")
+}catch(h){LOG.warn("Error reading data from request "+h.message)
+}if(b.oncomplete){b.oncomplete(c,f,g)
+}if(b.queueoncomplete){b.queueoncomplete(c,f,g)
+}A4J.AJAX.status(c.containerId,b.status,false)
+},0)
+}else{LOG.debug("Processing updates finished, no oncomplete function to call");
+setTimeout(function(){A4J.AJAX.status(c.containerId,b.status,false)
+},0)
+}}}else{LOG.debug("Aborted request, won't call oncomplete at all");
+setTimeout(function(){A4J.AJAX.status(c.containerId,b.status,false)
+},0)
+}A4J.AJAX.popQueue(c)
+};
+A4J.AJAX.popQueue=function(a){if(a.shouldNotifyQueue&&a.queue){a.queue.pop()
+}};
+A4J.AJAX.getCursorPos=function(f){if(f.selectionEnd!=null){return f.selectionEnd
+}var d=document.selection.createRange();
+var c=d.compareEndPoints("StartToEnd",d)==0;
+if(!c){d.collapse(false)
+}var a=d.getBookmark();
+return a.charCodeAt(2)-2
+};
+A4J.AJAX.locateForm=function(b){var a=b;
+while(a&&a.nodeName.toLowerCase()!="form"){a=a.parentNode
+}return a
+};
+A4J.AJAX.getElementById=function(f,b){var d=b["org.ajax4jsf.portlet.NAMESPACE"];
+var a=d?window.document.getElementById(d):window.document;
+var c;
+if(a){c=a.getElementById(f)
+}else{LOG.error("No root element for portlet namespace "+d+" on page")
+}return c
+};
+A4J.AJAX._requestsCounts={};
+A4J.AJAX.status=function(f,a,g){try{a=a||f+":status";
+A4J.AJAX._requestsCounts[a]=(A4J.AJAX._requestsCounts[a]||0)+(g?1:-1);
+var c=document.getElementById(a+".start");
+var b=document.getElementById(a+".stop");
+if(A4J.AJAX._requestsCounts[a]>0){if(b){b.style.display="none"
+}if(c){c.style.display=""
+}}else{if(c){c.style.display="none"
+}if(b){b.style.display=""
+}}if(g){if(c&&(typeof(c.onstart)=="function")){c.onstart()
+}}else{if(b&&(typeof(b.onstop)=="function")){b.onstop()
+}}}catch(d){LOG.error("Exception on status change: ")
+}};
+A4J.Query=function(a,c){var b=a||A4J.AJAX.VIEW_ROOT_ID;
+this._query={AJAXREQUEST:b};
+this._oldSubmit=null;
+this._form=c;
+this._containerId=b;
+this._actionUrl=(this._form.action)?this._form.action:this._form
+};
+A4J.Query.prototype={_form:null,_actionUrl:null,_ext:"",_query:{},_oldSubmit:null,_pageBase:window.location.protocol+"//"+window.location.host,hidden:function(a){this._value_query(a);
+if((a.name.length>4)&&(a.name.lastIndexOf("_idcl")==(a.name.length-5))){a.value=""
+}else{if((a.name.length>12)&&(a.name.lastIndexOf("_link_hidden_")==(a.name.length-13))){a.value=""
+}}},text:function(a){this._value_query(a)
+},textarea:function(a){this._value_query(a)
+},"select-one":function(a){if(a.selectedIndex!=-1){this._value_query(a)
+}},password:function(a){this._value_query(a)
+},file:function(a){this._value_query(a)
+},radio:function(a){this._radio_query(a)
+},checkbox:function(a){this._check_query(a)
+},"select-multiple":function(f){var b=f.name;
+var a=f.options;
+for(var c=0;
+c<f.length;
+c++){var d=a[c];
+this._addOption(b,d)
+}},_addOption:function(a,b){if(b.selected){if(!this._query[a]){this._query[a]=[]
+}this._query[a][this._query[a].length]=b.value
+}},image:function(b,a){if(a){this._value_query(b)
+}},button:function(b,a){if(a){this._value_query(b)
+}},submit:function(b,a){if(a){this._value_query(b)
+}},link:function(b,a){if(a){this._value_query(b);
+if(b.parameters){this.appendParameters(b.parameters)
+}}},input:function(b,a){if(a){this.link(b,a);
+if(b.control){this.appendControl(b.control,a)
+}}},appendControl:function(b,a){if(this[b.type]){this[b.type](b,a)
+}else{this._appendById(b.id||b)
+}},appendFormControls:function(g,d){try{var c=this._form.elements;
+if(c){var b=0;
+for(b=0;
+b<c.length;
+b++){var f=c[b];
+if(f==d){continue
+}try{if(!g||f.type=="hidden"){this.appendControl(f,false)
+}}catch(a){LOG.error("exception in building query ( append form control ) "+a)
+}}}}catch(h){LOG.warn("Error with append form controls to query "+h)
+}if(d){this.appendControl(d,true)
+}},appendParameters:function(a){for(k in a){if(typeof Object.prototype[k]=="undefined"){LOG.debug("parameter "+k+" with value "+a[k]);
+this.appendParameter(k,a[k])
+}}},setActionUrl:function(a){this._actionUrl=a
+},getActionUrl:function(a){var b=this._actionUrl;
+var c=b.indexOf("?");
+if(b.substring(0,1)=="/"){b=this._pageBase+b
+}if(!a){a=this._ext
+}if(c>=0){return b.substring(0,c)+a+b.substring(c)
+}else{return b+a
+}},getQueryString:function(){var a="";
+var d;
+var g=[];
+var f;
+for(var c in this._query){if(typeof Object.prototype[c]=="undefined"){d=this._query[c];
+f=this._encode(c);
+if(d instanceof Object){for(var b=0;
+b<d.length;
+b++){g.push(f);
+g.push("=");
+g.push(this._encode(d[b]));
+g.push("&")
+}}else{g.push(f);
+g.push("=");
+g.push(this._encode(d));
+g.push("&")
+}}}a=g.join("");
+LOG.debug("QueryString: "+a);
+return a
+},_appendById:function(a){this.appendParameter(this._form.id+"_link_hidden_",a)
+},_value_query:function(a){if(a.name){LOG.debug("Append "+a.type+" control "+a.name+" with value ["+a.value+"] and value attribute ["+a.getAttribute("value")+"]");
+if(null!=a.value){this.appendParameter(a.name,a.value)
+}}else{LOG.debug("Ignored "+a.type+" no-name control with value ["+a.value+"] and value attribute ["+a.getAttribute("value")+"]")
+}},_check_query:function(a){if(a.checked){this.appendParameter(a.name,a.value?a.value:"on")
+}},_radio_query:function(a){if(a.checked){this.appendParameter(a.name,a.value?a.value:"")
+}},appendParameter:function(a,b){if(!this._query[a]){this._query[a]=b;
+return
+}else{if(!(this._query[a] instanceof Object)){this._query[a]=[this._query[a]]
+}}this._query[a][this._query[a].length]=b
+},_encode:function(a){try{return encodeURIComponent(a)
+}catch(b){var c=escape(a);
+return c.split("+").join("%2B")
+}}};
+A4J.AJAX.getText=function(h,c){var f="";
+var b=h.childNodes;
+for(var d=0;
+d<b.length;
+d++){var g=b[d];
+var a=g.nodeType;
+if(a==Node.TEXT_NODE||a==Node.CDATA_SECTION_NODE||(c&&a==Node.COMMENT_NODE)){f+=g.data
+}else{if(a==Node.ELEMENT_NODE||a==Node.DOCUMENT_NODE||a==Node.DOCUMENT_FRAGMENT_NODE){f+=arguments.callee(g,c)
+}}}return f
+};
+A4J.AJAX.isWebkitBreakingAmps=function(){if(!this._webkitBreakingAmps){var a=document.createElement("div");
+a.innerHTML="<a href='#a=a&#38;b=b'>link</a>";
+var b=a.firstChild;
+if(b&&b.getAttribute&&/&#38;b=b$/.test(b.getAttribute("href"))){this._webkitBreakingAmps=2
+}else{this._webkitBreakingAmps=1
+}}return this._webkitBreakingAmps>1
+};
+A4J.AJAX.isXhtmlScriptMode=function(){if(!this._xhtmlScriptMode){var a=document.createElement("div");
+a.innerHTML="<script type='text/javascript'><!--\r\n/**/\r\n//--><\/script>";
+var d=false;
+var b=a.firstChild;
+while(b){if(b.nodeType==Node.ELEMENT_NODE){var f=b.firstChild;
+while(f){if(f.nodeType==Node.COMMENT_NODE){d=true;
+break
+}f=f.nextSibling
+}break
+}b=b.nextSibling
+}if(d){this._xhtmlScriptMode=2
+}else{this._xhtmlScriptMode=1
+}}return this._xhtmlScriptMode>1
+};
+A4J.AJAX._scriptEvaluated=false;
+A4J.AJAX.TestScriptEvaluation=function(){if((!document.all||window.opera)&&!A4J.AJAX._scriptTested){try{var c=Sarissa.getDomDocument();
+var a=document.createElement("span");
+document.body.appendChild(a);
+var g="<html xmlns='http://www.w3.org/1999/xhtml'><script>A4J.AJAX._scriptEvaluated=true;<\/script></html>";
+c=(new DOMParser()).parseFromString(g,"text/xml");
+var b=c.getElementsByTagName("script")[0];
+if(!window.opera&&!A4J.AJAX.isWebkitBreakingAmps()&&a.outerHTML){a.outerHTML=new XMLSerializer().serializeToString(b)
+}else{var f;
+f=window.document.importNode(b,true);
+document.body.replaceChild(f,a)
+}}catch(d){}}A4J.AJAX._scriptTested=true
+};
+A4J.AJAX.TestReplacedGetElementByIdVisibility=function(){if(!A4J.AJAX._replacedGetElementByIdVisibilityTested){A4J.AJAX._replacedGetElementByIdVisibilityTested=true;
+A4J.AJAX._testReplacedGetElementByIdVisibility=true;
+A4J.AJAX.TestScriptEvaluation();
+if(A4J.AJAX._scriptEvaluated){try{var b=document.createElement("span");
+document.body.appendChild(b);
+var f="<html xmlns='http://www.w3.org/1999/xhtml'><span id='_A4J_AJAX_TestReplacedGetElementByIdVisibility'><script>A4J.AJAX._testReplacedGetElementByIdVisibility = !!(document.getElementById('_A4J_AJAX_TestReplacedGetElementByIdVisibility'));<\/script></span></html>";
+oDomDoc=(new DOMParser()).parseFromString(f,"text/xml");
+var a=oDomDoc.getElementsByTagName("span")[0];
+var d;
+d=window.document.importNode(a,true);
+document.body.replaceChild(d,b);
+document.body.removeChild(d)
+}catch(c){LOG.error("Error testing replaced elements getElementById() visibility: "+c.message)
+}}}};
+A4J.AJAX._eventQueues={};
+A4J.AJAX.EventQueue=function(){var f="dropNew";
+var i="dropNext";
+var b="fireNew";
+var g="fireNext";
+var h=function(m,l){for(var j in l){m[j]=l[j]
+}};
+var a=function(l){var m={};
+for(var j in l){m[j]=l[j]
+}for(var j in this.requestOptions){if(typeof m[j]=="undefined"){m[j]=this.requestOptions[j]
+}}return m
+};
+var c=function(){var j=function(l,o,m,n){this.queue=l;
+this.query=o;
+this.options=m;
+this.event=n;
+this.similarityGroupingId=this.options.similarityGroupingId;
+this.eventsCount=1
+};
+h(j.prototype,{isIgnoreDupResponses:function(){return this.options.ignoreDupResponses
+},getSimilarityGroupingId:function(){return this.similarityGroupingId
+},setSimilarityGroupingId:function(l){this.similarityGroupingId=l
+},submit:function(){this.query.appendParameter("AJAX:EVENTS_COUNT",this.eventsCount);
+this.request=A4J.AJAX.SubmitQuery(this.query,this.options,this.event);
+var l=this.queue;
+this.request.queue=l;
+return this.request
+},abort:function(){if(this.request&&!this.aborted){this.aborted=true;
+this.request.abort()
+}},ondrop:function(){var l=this.options.onqueuerequestdrop;
+if(l){l.call(this.queue,this.query,this.options,this.event)
+}},onRequestDelayPassed:function(){this.readyToSubmit=true;
+this.queue.submitFirst()
+},startTimer:function(){var l=this.options.requestDelay;
+LOG.debug("Queue will wait "+(l||0)+"ms before submit");
+if(l){var m=this;
+this.timer=setTimeout(function(){try{m.onRequestDelayPassed()
+}finally{m.timer=undefined;
+m=undefined
+}},l)
+}else{this.onRequestDelayPassed()
+}},stopTimer:function(){if(this.timer){clearTimeout(this.timer);
+this.timer=undefined
+}},clearEntry:function(){this.stopTimer();
+if(this.request){this.request.shouldNotifyQueue=false;
+this.request=undefined
+}},getEventsCount:function(){return this.eventsCount
+},setEventsCount:function(l){this.eventsCount=l
+},getEventArguments:function(){return[this.query,this.options,this.event]
+}});
+return j
+}();
+var d=function(l,m,j){this.items=new Array();
+this.name=l;
+this.queueOptions=m||{};
+this.requestOptions=j||{}
+};
+h(d.prototype,{submitFirst:function(){var l=this.items[0];
+if(l){if(!l.request){if(l.readyToSubmit){LOG.debug("Queue '"+this.name+"' will submit request NOW");
+var j=l.submit();
+j.shouldNotifyQueue=true;
+if(this.requestOptions.queueonsubmit){this.requestOptions.queueonsubmit.call(this,j)
+}}else{LOG.debug("First item is not ready to be submitted yet")
+}}}else{LOG.debug("Queue is empty now")
+}},getSize:function(){return this.items.length
+},getMaximumSize:function(){return this.queueOptions.size
+},isFull:function(){return this.getSize()==this.getMaximumSize()
+},getSizeExceededBehavior:function(){var j=this.queueOptions.sizeExceededBehavior;
+if(!j){j=i
+}return j
+},queue:function(j){this.items.push(j);
+if(this.queueOptions.onrequestqueue){LOG.debug("Call onrequestqueue handler");
+this.queueOptions.onrequestqueue.apply(this,j.getEventArguments())
+}},dequeue:function(){var j=this.items.shift();
+if(this.queueOptions.onrequestdequeue){LOG.debug("Call onrequestdequeue handler");
+this.queueOptions.onrequestdequeue.apply(this,j.getEventArguments())
+}},push:function(o,j,l){var v=a.call(this,j);
+var t=new c(this,o,v,l);
+var n=t.getSimilarityGroupingId();
+var s=this.items.length-1;
+var u=this.items[s];
+var m=false;
+if(u){if(u.getSimilarityGroupingId()==n){LOG.debug("Similar request currently in queue '"+this.name+"'");
+if(u.request){LOG.debug("Request has already beeen sent to server");
+if(t.isIgnoreDupResponses()){LOG.debug("Duplicate responses ignore requested");
+if(!this.isFull()){u.abort();
+LOG.debug("Response for the current request will be ignored")
+}else{LOG.debug("Queue is full, cannot set to ignore response for the current request")
+}}}else{LOG.debug("Combine similar requests and reset timer");
+m=true;
+u.stopTimer();
+t.setEventsCount(u.getEventsCount()+1);
+this.items[s]=t;
+t.startTimer()
+}}else{LOG.debug("Last queue entry is not the last anymore. Stopping requestDelay timer and marking entry as ready for submission");
+u.stopTimer();
+u.setSimilarityGroupingId(undefined);
+u.readyToSubmit=true
+}}if(!m){if(this.isFull()){LOG.debug("Queue '"+this.name+"' is currently full");
+var r=this.getSizeExceededBehavior();
+var q=0;
+while(this.items[q]&&this.items[q].request){q++
+}if(this.queueOptions.onsizeexceeded){this.queueOptions.onsizeexceeded.apply(this,t.getEventArguments())
+}if(r==f){LOG.debug("Queue '"+this.name+"' is going to drop new item");
+t.ondrop();
+m=true
+}else{if(r==i){LOG.debug("Queue '"+this.name+"' is going to drop ["+q+"] item that is the next one");
+var p=this.items.splice(q,1)[0];
+if(p){LOG.debug("Item dropped from queue");
+p.stopTimer();
+p.ondrop()
+}else{LOG.debug("There's no such item, will handle new request instead");
+t.ondrop();
+m=true
+}}else{if(r==b){LOG.debug("Queue '"+this.name+"' will submit new request");
+t.submit();
+m=true
+}else{if(r==g){LOG.debug("Queue '"+this.name+"' is going to drop and fire immediately ["+q+"] item that is the next one");
+var p=this.items.splice(q,1)[0];
+if(p){LOG.debug("Item dropped from queue");
+p.stopTimer();
+p.submit()
+}else{LOG.debug("There's no such item, will handle new request instead");
+t.submit();
+m=true
+}}}}}}this.submitFirst()
+}if(!m){this.queue(t);
+LOG.debug("New request added to queue '"+this.name+"'. Queue similarityGroupingId changed to "+n);
+t.startTimer()
+}},pop:function(){LOG.debug("After request: queue '"+this.name+"'");
+this.dequeue();
+LOG.debug("There are "+this.items.length+" requests more in this queue");
+this.submitFirst()
+},clear:function(){var l=this.items.length;
+for(var j=0;
+j<this.items.length;
+j++){this.items[j].clearEntry()
+}this.items.splice(0,l)
+}});
+return d
+}();
+A4J.AJAX.EventQueue.DEFAULT_QUEUE_NAME="org.richfaces.queue.global";
+A4J.AJAX.EventQueue.getQueue=function(a){return A4J.AJAX._eventQueues[a]
+};
+A4J.AJAX.EventQueue.getQueues=function(){return A4J.AJAX._eventQueues
+};
+A4J.AJAX.EventQueue.addQueue=function(a){var b=a.name;
+if(A4J.AJAX._eventQueues[b]){throw"Queue already registered"
+}else{LOG.debug("Adding queue '"+b+"' to queues registry");
+A4J.AJAX._eventQueues[b]=a
+}};
+A4J.AJAX.EventQueue.removeQueue=function(b){var a=A4J.AJAX._eventQueues[b];
+if(a){a.clear()
+}delete A4J.AJAX._eventQueues[b]
+};
+A4J.AJAX.EventQueue.getOrCreateQueue=function(){var a=function(c,d){if(d){return d+":"+c
+}else{return c
+}};
+var b=function(c,d){if(d){return d+c
+}else{return c
+}};
+return function(f,l){var i=f.eventsQueue;
+var h=f.namespace;
+var d;
+var g;
+var j;
+if(i){LOG.debug("Look up queue with name '"+i+"'");
+d=a(i,l);
+g=b(i,h);
+j=g
+}else{LOG.debug("Look up queue with default name");
+d=l;
+g=b(A4J.AJAX.EventQueue.DEFAULT_QUEUE_NAME,h);
+j=f.implicitEventsQueue
+}var c=A4J.AJAX._eventQueues[d];
+if(!c){c=A4J.AJAX._eventQueues[g];
+if(!c){if(j){c=A4J.AJAX._eventQueues[j];
+if(!c){LOG.debug("Creating new transient queue '"+j+"' with default settings");
+c=new A4J.AJAX.EventQueue(j);
+c._transient=true;
+A4J.AJAX.EventQueue.addQueue(c)
+}else{LOG.debug("Found transient queue '"+j+"'")
+}}}else{LOG.debug("Found view queue '"+g+"'")
+}}else{LOG.debug("Found form queue '"+d+"'")
+}return c
+}
+}();
+(function(){var a=function(){var c=A4J.AJAX.EventQueue.getQueues();
+for(var d in c){var b=c[d];
+b.clear()
+}};
+if(window.addEventListener){window.addEventListener("unload",a,false)
+}else{window.attachEvent("onunload",a)
+}})();
+if(!window.LOG){window.LOG={}
+}LOG.Level=function(b,c,a){this.name=b;
+this.priority=c;
+if(a){this.color=a
+}};
+LOG.OFF=new LOG.Level("off",1000);
+LOG.FATAL=new LOG.Level("fatal",900,"red");
+LOG.ERROR=new LOG.Level("error",800,"red");
+LOG.WARN=new LOG.Level("warn",500,"yellow");
+LOG.INFO=new LOG.Level("info",400,"blue");
+LOG.DEBUG=new LOG.Level("debug",300,"darkblue");
+LOG.ALL=new LOG.Level("all",100);
+LOG.A4J_DEBUG=new LOG.Level("a4j_debug",0,"green");
+LOG.LEVEL=LOG.OFF;
+LOG._window=null;
+LOG.transmitToServer=true;
+LOG.consoleDivId="logConsole";
+LOG.styles={a4j_debug:"green",debug:"darkblue",info:"blue",warn:"yellow",error:"red",fatal:"red"};
+LOG.a4j_debug=function(b,a){LOG._log(b,LOG.A4J_DEBUG,a)
+};
+LOG.debug=function(b,a){LOG._log(b,LOG.DEBUG,a)
+};
+LOG.info=function(b,a){LOG._log(b,LOG.INFO,a)
+};
+LOG.warn=function(b,a){LOG._log(b,LOG.WARN,a)
+};
+LOG.error=function(b,a){LOG._log(b,LOG.ERROR,a)
+};
+LOG.fatal=function(b,a){LOG._log(b,LOG.FATAL,a)
+};
+LOG.registerPopup=function(b,c,f,a,g){if(!LOG._onkeydown){LOG._onkeydown=document.onkeydown
+}var d=b.toUpperCase();
+document.onkeydown=function(h){if(window.event){h=window.event
+}if(String.fromCharCode(h.keyCode)==d&h.shiftKey&h.ctrlKey){LOG.LEVEL=g;
+LOG.openWindow(c,"width="+f+",height="+a+",toolbar=no,scrollbars=yes,location=no,statusbar=no,menubar=no,resizable=yes,left = "+((screen.width-f)/2)+",top ="+((screen.height-a)/2))
+}else{if(LOG._onkeydown){LOG._onkeydown(h)
+}}}
+};
+LOG.clear=function(){if(LOG._window&&LOG._window.document){consoleDiv=LOG._window.document.body
+}else{consoleDiv=window.document.getElementById(LOG.consoleDivId)
+}consoleDiv.innerHTML='<button onclick="LOG.clear()">Clear</button><br />'
+};
+LOG.openWindow=function(b,c){if(LOG._window){LOG._window.focus()
+}else{LOG._window=window.open("",b,c);
+LOG._window.LOG=LOG;
+LOG.clear();
+var a=LOG;
+LOG._window.onunload=function(){a._window.LOG=null;
+a._window=null;
+a.LEVEL=a.OFF;
+a=undefined
+}
+}};
+LOG._log=function(c,a,b){if(a.priority>=LOG.LEVEL.priority){LOG._logToConsole(c,a,b);
+if(LOG.transmitToServer){LOG._logToServer(c,a)
+}}};
+LOG._time=function(){var d=new Date();
+var a=d.getHours();
+var c=d.getMinutes();
+if(c<10){c="0"+c
+}var f=d.getSeconds();
+if(f<10){f="0"+f
+}var b=d.getTime()%1000;
+if(b<100){b="0"+b
+}if(b<10){b="0"+b
+}return a+":"+c+":"+f+","+b
+};
+LOG._logToConsole=function(c,b,f){var g;
+var h;
+if(LOG._window&&LOG._window.document){h=LOG._window.document;
+g=LOG._window.document.body
+}else{h=window.document;
+g=window.document.getElementById(LOG.consoleDivId)
+}if(g){var i=h.createElement("span");
+i.style.color=b.color;
+i.appendChild(h.createTextNode(b.name+"["+LOG._time()+"]: "));
+var a=h.createElement("div");
+var j=h.createTextNode(c);
+a.appendChild(i);
+a.appendChild(j);
+if(f){var d=h.createElement("span");
+j=h.createTextNode(f);
+d.appendChild(j);
+a.appendChild(d)
+}g.appendChild(a)
+}else{}};
+LOG._logToServer=function(c,a){var b=a.name.substring(0,1)+c
+};
+LOG._requestCallBack=function(){};
+if(!window.RichFaces){window.RichFaces={}
+}if(!window.RichFaces.Memory){window.RichFaces.Memory={nodeCleaners:{},componentCleaners:{},addCleaner:function(a,b){this.nodeCleaners[a]=b
+},addComponentCleaner:function(b,c,a){this.componentCleaners[b]={cleaner:c,checker:a}
+},applyCleaners:function(b,c,d){for(var a in this.nodeCleaners){this.nodeCleaners[a](b,c)
+}for(var a in this.componentCleaners){if(this.componentCleaners[a].checker(b,c)){d.push(b)
+}}},_clean:function(g,f,h){if(g){this.applyCleaners(g,f,h);
+var b=g.all;
+if(b){var a=0;
+var d=b.length;
+for(var a=0;
+a<d;
+a++){this.applyCleaners(b[a],f,h)
+}}else{var c=g.firstChild;
+while(c){this._clean(c,f,h);
+c=c.nextSibling
+}}}},_cleanComponentNodes:function(f,d){for(var b=0;
+b<f.length;
+b++){var c=f[b];
+for(var a in this.componentCleaners){this.componentCleaners[a].cleaner(c,d)
+}}},clean:function(b,a){var c=[];
+this._clean(b,a,c);
+this._cleanComponentNodes(c,a);
+c=null
+}};
+window.RichFaces.Memory.addComponentCleaner("richfaces",function(d,f){var b=d.component;
+if(b){var c=b["rich:destructor"];
+if(c){var a=b[c];
+if(a){a.call(b,f)
+}}}},function(a,b){return(a.component&&a.component["rich:destructor"])
+});
+if(window.attachEvent){window.attachEvent("onunload",function(){var a=window.RichFaces.Memory;
+a.clean(document);
+a.clean(window)
+})
+}}if(!window.A4J){window.A4J={}
+}if(!A4J.findForm){function _JSFFormSubmit(j,m,g,l){var c=(typeof m=="string"?document.getElementById(m):m);
+if(c){var b=[];
+var h=c.target;
+if(g){c.target=g
+}if(l){for(var d in l){b.push(d);
+if(c.elements[d]){c.elements[d].value=l[d]
+}else{var i=document.createElement("input");
+i.type="hidden";
+i.id=d;
+i.name=d;
+i.value=l[d];
+if(d==="javax.faces.portletbridge.STATE_ID"&&c.firstChild){c.insertBefore(i,c.firstChild)
+}else{c.appendChild(i)
+}}}}var f;
+if(c.fireEvent){f=c.fireEvent("onsubmit")
+}else{var a=document.createEvent("HTMLEvents");
+a.initEvent("submit",true,true);
+f=c.dispatchEvent(a)
+}if(f){c.submit()
+}_clearJSFFormParameters(m,h,b)
+}else{alert("Form "+m+" not found in document")
+}return false
+}function _clearJSFFormParameters(d,h,a){var f=(typeof d=="string"?document.getElementById(d):d);
+if(f){if(h){f.target=h
+}else{f.target=""
+}if(a){for(var c=0;
+c<a.length;
+c++){var g=f.elements[a[c]];
+if(g){var b=g.parentNode;
+if(b){b.removeChild(g)
+}}}}}}function clearFormHiddenParams(b,c,a){_clearJSFFormParameters(b,c,a)
+}A4J.findForm=function(a){var b=a;
+do{b=b.parentNode
+}while(b&&b.nodeName.toLowerCase()!="form");
+if(!b){b={reset:function(){},submit:function(){}}
+}return b
+};
+A4J._formInput=null;
+A4J.setupForm=function(c){var b=(typeof c=="string"?window.document.getElementById(c):c);
+var a="click";
+if(b.addEventListener){b.addEventListener(a,A4J._observer,false)
+}else{if(b.attachEvent){b.attachEvent("on"+a,A4J._observer)
+}}};
+A4J._observer=function(a){var b=a.target||a.srcElement;
+if(b&&b.nodeName.toUpperCase()=="INPUT"&&b.type.toUpperCase()=="SUBMIT"){A4J._formInput=b
+}else{A4J._formInput=null
+}}
+};

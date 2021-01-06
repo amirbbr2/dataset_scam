@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /out.php?id=*
+Disallow: /videos/naughty/*
+Disallow: /videos/sexy/*
+Disallow: /track/hot/*.json
+Disallow: /track/sexy/*.json
+Disallow: /track/naughty/*.json

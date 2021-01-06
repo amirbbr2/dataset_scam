@@ -1,0 +1,3 @@
+Sitemap: https://inhumanity.com/sitemaps/sitemap-index.xml
+User-agent: *
+Disallow:

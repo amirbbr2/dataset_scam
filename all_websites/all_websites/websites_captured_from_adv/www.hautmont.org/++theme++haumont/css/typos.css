@@ -1,0 +1,33 @@
+/**************************************************************************************************************/
+/*
+			CENTRE SPIRITUEL DU HAUMONT - Typos utlisees sur le site			
+*/
+/**************************************************************************************************************/
+
+
+@font-face {
+    font-family: 'RALEWAYregular';
+    src: url('../typos/RALEWAY-webfont.eot');
+    src: url('../typos/RALEWAY-webfont.eot?') format('embedded-opentype'),
+         url('../typos/RALEWAY-webfont.woff2') format('woff2'),
+         url('../typos/RALEWAY-webfont.woff') format('woff'),
+         url('../typos/RALEWAY-webfont.ttf') format('truetype'),
+         url('../typos/RALEWAY-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	letter-spacing:normal;
+}
+
+
+@font-face {
+    font-family: 'RALEWAYbold';
+    src: url('../typos/RALEWAY-BOLD-webfont.eot');
+    src: url('../typos/RALEWAY-BOLD-webfont.eot?') format('embedded-opentype'),
+         url('../typos/RALEWAY-BOLD-webfont.woff2') format('woff2'),
+         url('../typos/RALEWAY-BOLD-webfont.woff') format('woff'),
+         url('../typos/RALEWAY-BOLD-webfont.ttf') format('truetype'),
+         url('../typos/RALEWAY-BOLD-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	letter-spacing:normal;
+}

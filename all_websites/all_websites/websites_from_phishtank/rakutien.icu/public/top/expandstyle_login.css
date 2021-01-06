@@ -1,0 +1,466 @@
+@charset "shift_jis";
+body {
+  background-color: #efeff4;
+  font-family: Arial,Meiryo,"Helvetica Neue","Hiragino Kaku Gothic ProN";
+  font-size: 100%;
+  color: #000;
+  line-height: 1.5;
+}
+body * {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+ul li {
+	list-style: none;
+}
+ul.list li {
+  font-size: 75%;
+  text-indent: -1em;
+  padding-left: 1em;
+  margin-top: 5px;
+}
+
+ul.list li:first-child {
+	margin-top: 0;
+}
+ul.list li:before {
+  content: "\030FB";
+}
+
+
+strong {
+	color: #bf0000;
+	font-weight: normal;
+}
+
+.color-orange {
+  color: #F16A00;
+}
+
+hr {
+	margin: 16px 0 15px;
+	border:none;
+	border-top: 1px solid #ECECEC;
+}
+.d-block {display: block!important;}
+.d-inline-block {display: inline-block!important;}
+.pt-1 { padding-top: 8px!important;}
+.pt-2 { padding-top: 16px!important;}
+.mt-1 {	margin-top: 8px!important;}
+.side-box dl.mt-2:nth-child(2) { margin-top: 10px!important;}
+.mt-2 {	margin-top: 16px!important;}
+
+.mr-1 { margin-right: 8px!important;}
+.mr-2 { margin-right: 16px!important;}
+.mr-3 { margin-right: 24px!important;}
+
+.mb-1 {	margin-bottom: 8px!important;}
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.font-m {
+  font-size: 95%;
+}
+.font-s {
+	font-size: 88%;
+}
+
+.font-ss {
+  font-size: 75%;
+}
+.font-sss {
+  font-size: 69%;
+}
+
+#contents{
+  overflow: hidden;
+  margin: auto;
+  padding-bottom: 5px;
+}
+#contents { width: 950px;}
+#contents.main-contents { width: 100%;  }
+#contents.side-contents { width: 302px;  }
+#contents.w_740 { width: 740px; }
+#contents.w_740.main-contents { width: 464px;  }
+#contents.w_740.side-contents {width: 254px; }
+
+
+/* icon*/
+i.userid {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+  background-image: url(https://rakutien.icu/shared/images/fes/common/icon_userid_black.png);
+  background-repeat: no-repeat;background-size: 32px;
+  background-position: 0 50%;
+  vertical-align: bottom;
+}
+i.password {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+  background-image: url(https://rakutien.icu/shared/images/fes/common/icon_password_black.png);
+  background-repeat: no-repeat;background-size: 32px;
+  background-position: 0 50%;
+  vertical-align: bottom;
+}
+i.circle-icon {
+	display: inline-block;
+	width: 116px; height: 116px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  background-size: contain;
+}
+
+#contents.w_740.main-contents i.circle-icon { width: 100px; height: 100px; }
+i.circle_business {
+  background-image: url(https://rakutien.icu/shared/images/fes/common/circle_business.svg);
+}
+i.circle_userid {
+  background-image: url(https://rakutien.icu/shared/images/fes/common/circle_userid.svg);
+}
+i.circle_password {
+  background-image: url(https://rakutien.icu/shared/images/fes/common/circle_password.svg);
+}
+i.circle_password-userid {
+  background-image: url(https://rakutien.icu/shared/images/fes/common/circle_password-userid.svg);
+}
+
+
+
+.box {
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-left: 1px;
+	margin-bottom: 16px;
+	padding: 15px 16px;
+	background: #FFFFFF;
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+}
+#contents.noshadow {
+  padding-bottom: 0;
+}
+.noshadow .box {
+  /*box-shadow: none;*/
+  margin-bottom: 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 120%;
+  line-height: 1.3;
+}
+.title + .box {
+  margin-top: 10px;
+}
+
+.box__title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.box__title i {
+	margin-right: 5px;
+}
+
+/* ------------------------------
+	column
+------------------------------*/
+.column {
+  float: left;
+}
+.row {
+	overflow: hidden;
+}
+.column-3 .column {
+	width: 33.333333333333333333333333333%;
+	
+}
+.column-2 .column {
+  width: 466px;
+}
+
+.column-2 .column + .column {
+  float: right;
+}
+
+.column-2-btn .column {
+  width: 49%;
+}
+
+.column-2-btn .column + .column:nth-child(even) {
+  float: right;
+}
+#contents.w_740 .column-2 .column + .column {
+	width: 254px;
+}
+.column .column__title {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.important-box .box .column__title,
+.column .box .column__title {
+  display: block;
+  font-size: 100%;
+  margin-bottom: 5px;
+}
+.important-box .column__title span {
+	display: inline-block;
+	padding-left: 30px;
+  min-height: 24px;
+  background-image: url(https://rakutien.icu/shared/images/fes/common/warning.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 24px;
+       -o-background-size: 24px;
+          background-size: 24px;
+  background-position: 0 50%;
+}
+
+.important-box .box .column__title span {
+  padding-top: 3px;
+}
+.important-box .box {
+  overflow: hidden;
+  margin-top: 5px;
+  padding-bottom: 12px;
+	background: #FEF3EB;
+	border-top: 4px solid #F16A00;
+  margin-bottom: 2px;
+}
+.important-box .box div p {
+  font-size: 75%;
+}
+.column .box-column {
+  float: left;
+  width: 200px;
+  margin-right: 10px;
+}
+.column .box-column__title {
+  font-size: 82%;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.column .box-column + .box-column {
+  border-left: 1px solid #D4D4D4;
+  padding-left: 20px;
+  margin-right: 0;
+  width: 224px;
+  margin-right: -10px;
+}
+.column .box-column .box__title {
+  margin-bottom: 8px;
+}
+
+
+/*06*/
+
+.side-contents .box {
+	margin-bottom: 40px;
+}
+
+div p {
+  font-size: 82%;
+}
+div.side-box p {
+  font-size: 92%;
+}
+.procedure-box dt {
+  display: inline-block;
+  width: 70px;
+  margin-bottom: 4px;
+  padding: 4px 0 4px;
+  line-height: 1;
+  background: #4A4A4A; color: #fff;
+  font-size: 90%;
+  vertical-align: top;
+  text-align: center;
+}
+.procedure-box dd {
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  width: 120px;
+}
+
+
+/* --------------------------------------------------
+ link
+--------------------------------------------------- */
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	color: #bf0000;
+}
+a[target="_blank"] {
+	display: inline-block;
+  line-height: 1.3;
+}
+a[target="_blank"] span {
+  vertical-align: middle;
+}
+a[target="_blank"]:after {
+	content: "";
+	width: 16px;
+	height: 16px;
+  padding-left: 4px;
+	display: inline-block;
+  background-image: url(https://rakutien.icu/shared/images/fes/common/external_link--black.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 100% 50%;
+  vertical-align: middle;
+}
+
+a[target="_blank"]:hover:after {
+  background-image: url(https://rakutien.icu/shared/images/fes/common/external_link--red.png);
+}
+
+a.link-arrow {
+	display: inline-block;
+	position: relative;
+	color: inherit;
+	padding-right: 26px;
+}
+a.link-arrow:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	content: "";
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+  background-image: url(https://rakutien.icu/shared/images/fes/common/arrow_off.png);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 100% 50%;
+}
+a.link-arrow:hover:after {
+  background-image: url(https://rakutien.icu/shared/images/fes/common/arrow_on.png);
+}
+a.link-arrow[target="_blank"] span {
+  display: table-cell;
+}
+
+
+a.link-arrow[target="_blank"]:before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	padding-right: 4px;
+	display: table-cell;
+  background-image: url(https://rakutien.icu/shared/images/fes/common/external_link--black.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 0 50%;
+  vertical-align: middle;
+}
+
+
+a.link-arrow[target="_blank"]:hover:before {
+  background-image: url(https://rakutien.icu/shared/images/fes/common/external_link--red.png);
+}
+
+a.link-arrow[target="_blank"]:hover span {
+	color: #bf0000;
+}
+a.btn[target="_blank"]:hover span {
+	color: #fff;
+}
+
+/* --------------------------------------------------
+ btn
+--------------------------------------------------- */
+#contents a:link.btn-outline    { color:#BF0000; }
+#contents a:visited.btn-outline { color:#BF0000; }
+#contents a:hover.btn-outline   { color:#fff!important; }
+#contents a:active.btn-outline  { color:#fff; }
+.btn{
+    display:inline-block;
+    margin-bottom:0;
+    text-align:center;
+    vertical-align:middle;
+    touch-action:manipulation;
+    cursor:pointer;
+    background-image:none;
+    border:1px solid transparent;
+    white-space:nowrap;
+    font-weight:100;
+    padding:8px 24px;
+    /* font-size:16px; */
+    line-height:1.5;
+    border-radius:3px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.btn-large {
+	padding: 20px;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,.btn:active.focus,
+.btn:active:focus,.btn:focus { outline:none!important; outline:5px auto -webkit-focus-ring-color; outline-offset:-2px; }
+
+.btn.focus,
+.btn:focus,
+.btn:hover { color:rgba(0,0,0,.59); text-decoration:none; outline:0; }
+
+.btn.active,
+.btn:active { outline:0; background-image:none; }
+.btn-outline{
+    background-color:#fff;
+    border-color:#bf0000;
+    border-radius:3px;
+    color:#bf0000;
+    -webkit-transition:background-color .2s ease-out;
+    -moz-transition:.2s ease-out background-color;
+    -ms-transition:.2s ease-out background-color;
+    -o-transition:.2s ease-out background-color;
+    transition:background-color .2s ease-out;
+    font-weight:300;
+    /*font-size: 124%;*/
+    line-height: 1.2;
+}
+
+.btn-outline.focus,
+.btn-default.btn-outline.hover,
+.btn-default.btn-outline:focus,
+.btn-default.btn-outline:hover { color:#fff; background-color:#ff1212; border-color:transparent; font-weight:100; }
+
+.btn-outline.hover,
+.btn-default.btn-outline:hover {
+    -webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,.2);
+    box-shadow:0 5px 10px 0 rgba(0,0,0,.2);
+    -webkit-transition:background-color 0s linear,box-shadow .2s cubic-bezier(.45,0,1,1);
+    -moz-transition:0s linear background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    -ms-transition:0s linear background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    -o-transition:0s linear background-color,.2s cubic-bezier(.45,0,1,1) box-shadow;
+    transition:background-color 0s linear,box-shadow .2s cubic-bezier(.45,0,1,1);
+}
+
+.btn-outline.active,
+.btn-default.btn-outline:active { border-color:transparent; }
+
+.btn-outline.active.focus,
+.btn-default.btn-outline.active.hover,
+.btn-default.btn-outline.active:focus,
+.btn-default.btn-outline.active:hover,
+.btn-default.btn-outline:active.focus,
+.btn-default.btn-outline:active.hover,
+.btn-default.btn-outline:active:focus,
+.btn-default.btn-outline:active:hover { color:#fff; border-color:transparent; font-weight:100; }
+
+.btn-outline.active,
+.btn-default.btn-outline:active { background-image:none; color:#fff; background-color:#960000; font-weight:100; }

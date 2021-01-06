@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /administrator/
+Disallow: /attachments/
+Disallow: /cli/
+Disallow: /images/
+Disallow: /includes/
+Disallow: /language/
+Disallow: /libraries/
+Disallow: /logs/
+Disallow: /modules/
+Disallow: /plugins/
+Disallow: /tmp/
+Allow: /
+Allow: /sitemap.xml
+Sitemap: http://www.jahandozh.com/sitemap.xml

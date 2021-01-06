@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>icon-win</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cryptobrowser_site-cryptotab--c" transform="translate(-210.000000, -928.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="first" transform="translate(-32.000000, -61.000000)">
+                <g id="card" transform="translate(152.000000, 461.000000)">
+                    <g id="btn" transform="translate(70.000000, 510.000000)">
+                        <g id="up">
+                            <path d="M20,21.44925 L29.75,20.1 L29.75,29.55075 L20,29.55075 L20,21.44925 Z M30.94925,19.94925 L44,18 L44,29.4 L30.94925,29.4 L30.94925,19.94925 Z M20,30.6 L29.75,30.6 L29.75,40.05075 L20,38.6985 L20,30.6 Z M30.94925,30.6 L44,30.6 L44,42 L31.1,40.19925 L30.94925,30.6 Z" id="icon-win"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

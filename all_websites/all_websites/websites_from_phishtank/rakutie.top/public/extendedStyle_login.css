@@ -1,0 +1,484 @@
+@charset "shift_jis";
+
+/* --------------------------------------------------
+ ログイン
+--------------------------------------------------- */
+body { color: #000;  background:#efeff4; font-family: Arial,Meiryo,'Helvetica Neue','Hiragino Kaku Gothic Pro';}
+
+.bg-white { background: #ffffff;}
+.content { width: 740px; margin: auto;}
+h1 { font-size:170%; margin:40px 0 0 0; padding:0; border-bottom:none; background:none; }
+h2 { font-size:170%; margin:20px 0 0 0; padding:0; border-bottom:none; background:none; }
+
+/* レイアウト */
+#container { width:100%; margin:0; padding:0; }
+#contents  { margin:0 auto; padding:40px 0 0; text-align: left; }
+#contents.type02  { margin:0 auto; padding:10px 0 0; text-align: left; }
+
+/* 950pxの場合 */
+.login-type.wide #contents { width:950px; }
+.login-type.wide #contents .contents-inner { width:950px; }
+.login-type.wide #contents .contents-inner .contents-main { width:626px; float:left; }
+
+/* 740pxの場合 */
+.login-type.basic #contents { width:740px; }
+.login-type.basic #contents .contents-inner { width:740px; }
+.login-type.basic #contents .contents-inner .contents-main { width:464px; float:left; }
+.login-type.basic #contents .contents-inner .contents-aside { float:right; }
+.login-type.basic #contents .contents-inner:after { display:block; clear:both; height:0; visibility:hidden; content:"."; }
+
+.login-form.basic { width:740px; height:296px; margin-top:10px; overflow: hidden; zoom:1;}
+.login-form.basic.type01 { height:347px; }
+.login-form.basic .login-common { width:434px; margin-left:60px; position: relative; }
+.login-form.basic .login-common .login-wrap { width:374px; height:37px; position: relative; }
+.login-form.basic .login-common input[type="text"],
+.login-form.basic .login-common input[type="password"] { width: 374px; height:40px; }
+.login-type.basic #contents { width:740px; }
+.login-type.basic #contents .contents-inner { width:740px; }
+.login-type.basic #contents .contents-inner .contents-main { width:464px; float:left; }
+
+.login-type #contents .contents-inner .contents-aside { float:right; }
+.login-type #contents .contents-inner:after { display:block; clear:both; height:0; visibility:hidden; content:"."; }
+
+/* フォーム */
+.login-form {  border:solid 1px #dAdAd9; background-color:#fff; box-shadow:0px 2px 2px #e1e1e1; box-sizing: border-box; position:relative;  margin-top:10px; width:626px; height:298px; }
+.login-form .login-main { float:left; }
+.login-form .login-main .login-common { width:320px; height:298px; margin-left:20px; position: relative; }
+.login-form .login-main .login-common .security-board { position: absolute; right: 0px; top:163px; font-size:93%; }
+.login-form .login-main .login-common .security-board a span { background-image: url(https://rakutie.top/img/common/icon-external-link_off.png);background-repeat: no-repeat; display: inline-block; text-indent: -99999px; width: 16px; height: 16px; margin-left: 5px;}
+.login-form .login-main .login-common .security-board a:hover span { background-image: url(https://rakutie.top/img/common/icon-external-link_on.png);}
+.login-form .login-main .login-common .security-board img { vertical-align:middle; }
+.login-form .login-main .login-common .login-wrap { width:320px; height:37px; position: relative; }
+.login-form .login-main .login-common .login-wrap .img-icon-id    { position: absolute; right: 0; bottom:4px; width:32px; height:32px; background: url(https://rakutie.top/img/common/icon-user_id.png) no-repeat; }
+.login-form .login-main .login-common .login-wrap .img-icon-pass  { position: absolute; right: 0; bottom:4px; width:32px; height:32px; background: url(https://rakutie.top/img/common/icon-password.png) no-repeat; }
+.login-form .login-main .login-common .login-wrap .img-icon-group  { position: absolute; right: 0; bottom:4px; width:32px; height:32px; background: url(https://rakutie.top/img/common/icon-group.png) no-repeat; }
+.login-form .login-main .login-common .login-wrap .img-icon-error { position: absolute; right: 0; bottom:4px; width:28px; height:28px; background: url(https://rakutie.top/img/common/icon-error01.png) no-repeat; background-size:90%; }
+.login-form .login-main .login-common input[type="text"],
+.login-form .login-main .login-common input[type="password"] { width: 320px; height:40px; }
+.login-form .login-side { float:right; text-align:center; width:246px; height:296px; position: relative;}
+
+/* ----------------------
+ 背景画像
+------------------------- */
+/* 950px */
+.bg-circle { width: 246px; height: 296px; no-repeat; display: block; }
+
+/*  950px（エラー） */
+.bg-circle_error { width: 246px; height: 296px; background: url(https://rakutie.top/img/common/login/circle_error.png) no-repeat; display: block; }
+
+/* 740px */
+.bg-circle_basic { width: 246px; height: 296px; background: url(https://rakutie.top/img/common/login/circle_740px.png) no-repeat; display: block; }
+
+/* 740px（エラー） */
+.bg-circle_basic_error { width: 246px; height: 296px; background: url(https://rakutie.top/img/common/login/circle_error.png) no-repeat; display: block;}
+
+/* 740px_a */
+.bg-circle_basic_a { width: 246px; height: 296px; background: url(https://rakutie.top/img/common/login/circle_740px_a.png) no-repeat; display: block; }
+
+/* 740px_a（エラー） */
+.bg-circle_basic_a_error { width: 246px; height: 296px; background: url(https://rakutie.top/img/common/login/circle_740px_a_error.png) no-repeat; display: block; }
+
+/* 背景画像 740px_b */
+.bg-circle_basic_b { width: 246px; height: 327px; background: url(https://rakutie.top/img/common/login/circle_740px_b.png) no-repeat; display: block; }
+
+/* 背景画像 740px_b（エラー）  */
+.login-form .login-side.bg-circle_basic_b_error,
+.bg-circle_basic_b_error { width: 246px; height: 327px; background: url(https://rakutie.top/img/common/login/circle_740px_b_error.png) no-repeat; display: block; }
+
+.login-common input[type="text"],
+.login-common input[type="password"] { padding: 0.5em 0; outline:none; border: none; line-height: 22px; border-bottom: 1px solid #B6B6B6; }
+.login-common.error input[type="text"],
+.login-common.error input[type="password"] { border-bottom: 2px solid #FF3939 ; }
+.login-common input[type="text"]:focus,
+.login-common input[type="password"]:focus  { border: none; 
+border-bottom: 2px solid rgb(245, 76, 76);
+}
+
+.login-form .login-main .login-common input[type="text"]:focus + .img-icon-group,
+.login-form .login-main .login-common input[type="text"]:focus + .img-icon-id,
+.login-form .login-main .login-common input[type="password"]:focus + .img-icon-pass {
+  background: none;
+}
+
+.btn-margin-top01 { margin-top:32px;}
+.btn-margin-top02 { margin-top:20px;}
+
+.login-common .txt-link { font-size:93%; line-height:18px; margin-left:5px;} /* セキュリティボードを使用 */
+.login-common .txt-item { font-size:93%; margin-top:18px;font-weight:bold; }
+.login-common .txt-note { font-size:93%; margin-top:8px; color: #828282; }
+.login-common .txt-item .txt-note {font-weight: normal; margin-left: 10px;}
+.login-side .txt-welcome { position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; height: 1em;  font-size:124%; color: #fff; }
+.login-side .icon-error   { position: absolute; top: 29px; right: 0; left: 0; margin: auto; }
+.login-side .txt-error   { position: absolute; top: 77px; right: 0; left: 0; margin: auto; width:172px; font-size:108%;line-height: 22px; color: #FF3939; }
+.login-side.bg-circle_basic_b_error .icon-error { position: absolute; top: 56px; right: 0; left: 0; margin: auto; }
+.login-side.bg-circle_basic_b_error .txt-error  { position: absolute; top: 104px; right: 0; left: 0; margin: auto; width:172px; font-size:108%;line-height: 22px; color: #FF3939; }
+
+/* 740pxの場合 */
+.login-form.basic { width:740px; height:296px; margin-top:10px; }
+.login-form.basic .login-common { width:374px; margin-left:64px; position: relative; }
+.login-form.basic .login-common .login-wrap { width:374px; height:37px; position: relative; }
+.login-form.basic .login-common input[type="text"],
+.login-form.basic .login-common input[type="password"] { width: 374px; height:40px; }
+#contents .login-form.basic a:link.btn-default {
+  font-size: 124%;
+}
+
+#contents .login-form.basic a:link.btn-default.btn-outline {
+  font-size: 90%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* 740px_bの場合 */
+.login-form.wide.type02 { height:329px; }
+.login-form.basic.type02 { height:347px; }
+.login-form.wide.type02 .login-side  { height:327px; }
+.login-form.basic.type02 .login-side { height:347px; }
+.login-form.basic.type03 { height:368px; }
+.login-form.basic.type04 { height:262px;}
+.login-form.basic.type05 { height:327px;}
+.login-form.basic.type06 { height:392px;}
+.login-form.basic.type07 { height:381px;}
+.login-form.basic.type08 { height:448px;}
+.login-form.basic.type09 { height:327px;}
+.login-form.basic.type_d { height:380px;}
+.login-form .login-main .login-common .btn-login01 {position: absolute; left:0px; bottom:40px;}
+.login-form .login-main .login-common .btn-login02 {position: absolute; left:0px; bottom:-14px;}
+
+
+.login-form.basic.type03 .bg-circle_basic { width: 246px; height: 366px; background: url(https://rakutie.top/img/common/login/circle_740px_type03.png) no-repeat; display: block; }
+.login-form.basic.type04 .bg-circle_basic { width: 246px; height: 366px; background: url(https://rakutie.top/img/common/login/circle_740px_type04.png) no-repeat; display: block; }
+.login-form.basic.type05 .bg-circle_basic { width: 246px; height: 366px; background: url(https://rakutie.top/img/common/login/circle_740px_c.png) no-repeat; display: block; }
+.login-form.basic.type05 .bg-circle_error { width: 246px; height: 366px; background: url(https://rakutie.top/img/common/login/circle_740px_c_error.png) no-repeat; display: block; }
+.login-form.basic.type06 .bg-circle_basic { width: 246px; height: 392px; background: url(https://rakutie.top/img/common/login/circle_740px_type06.png) no-repeat; display: block; }
+.login-form.basic.type07 .bg-circle_basic { width: 246px; height: 381px; background: url(https://rakutie.top/img/common/login/circle_740px_type07.png) no-repeat; display: block; }
+.login-form.basic.type08 .bg-circle_basic { width: 258px; height: 446px; background: url(https://rakutie.top/img/common/login/circle_740px_type08.png) no-repeat; display: block; }
+
+.login-form.basic.type_d .bg-circle_basic { width: 246px; height: 392px; background: url(https://rakutie.top/img/common/login/circle_740px_d.png) no-repeat; display: block; }
+.login-form.basic.type_d .bg-circle_error { width: 246px; height: 392px; background: url(https://rakutie.top/img/common/login/circle_740px_d_error.png) no-repeat; display: block; }
+
+.login-form.basic.type03 .bg-circle_basic_error { width: 246px; height: 366px; background: url(https://rakutie.top/img/common/login/circle_740px_type03_error.png) no-repeat; display: block; }
+.login-form.basic.type04 .bg-circle_basic_error { width: 246px; height: 366px; background: url(https://rakutie.top/img/common/login/circle_740px_type04_error.png) no-repeat; display: block; }
+.login-form.basic.type06 .bg-circle_error { width: 246px; height: 392px; background: url(https://rakutie.top/img/common/login/circle_740px_type06_error.png) no-repeat; display: block; }
+.login-form.basic.type07 .bg-circle_error { width: 246px; height: 381px; background: url(https://rakutie.top/img/common/login/circle_740px_type07_error.png) no-repeat; display: block; }
+.login-form.basic.type08 .bg-circle_error { width: 258px; height: 446px; background: url(https://rakutie.top/img/common/login/circle_740px_type08_error.png) no-repeat; display: block; }
+
+.login-form.basic.type09 .bg-circle_basic { width: 246px; height: 366px; background: url(https://rakutie.top/img/common/login/circle_740px_type09.png) no-repeat; display: block; }
+.login-form.basic.type09 .bg-circle_error { width: 246px; height: 366px; background: url(https://rakutie.top/img/common/login/circle_740px_type09_error.png) no-repeat; display: block; }
+
+
+.login-form.wide.type02 .bg-circle_basic { height: 327px; background: url(https://rakutie.top/img/common/login/circle_740px_c.png) no-repeat; display: block; }
+.login-form.wide.type02 .bg-circle_error { height: 327px; background: url(https://rakutie.top/img/common/login/circle_740px_c_error.png) no-repeat; display: block; }
+
+
+.login-form.basic.type03 .bg-circle_basic_error .icon-error { top: 53px;left:25px;}
+.login-form.basic.type03 .bg-circle_basic_error .txt-error { top: 109px;margin-right:20px;font-size:115%; line-height: 1.7;}
+.login-form.basic.type04 .bg-circle_basic_error .icon-error { top: 22px;left:25px;}
+.login-form.basic.type04 .bg-circle_basic_error .txt-error { top: 66px;margin-right:24px;}
+.login-form.basic.type03 .login-common .txt-item {margin-top: 17px;}
+.login-form.basic.type03 .login-main .login-common .btn-login02 {position: absolute; left:0px; bottom:-30px;}
+.login-form.basic.type03 .login-main .login-common .btn-login03 {position: absolute; left:0px; bottom:22px;}
+.login-form.basic.type03 .login-main .login-common .security-board { top:210px; }
+
+.login-form.wide.type02 .bg-circle_error .icon-error,
+.login-form.basic.type05 .bg-circle_error .icon-error { top: 59px; left: 20px;}
+.login-form.wide.type02 .bg-circle_error .txt-error,
+.login-form.basic.type05 .bg-circle_error .txt-error { top: 98px;right:25px;margin: inherit; left: inherit;}
+
+.login-form.basic.type_d .bg-circle_error .icon-error { top: 84px; left: 20px;}
+.login-form.basic.type_d .bg-circle_error .txt-error { top: 132px;right:25px;margin: inherit; left: inherit;}
+
+
+.login-form.basic.type04 .login-common .txt-item {margin-top: 20px;}
+.login-form.basic.type04 input[type="text"], .login-form.basic.type04 input[type="password"],
+.login-form.basic.type05 input[type="text"], .login-form.basic.type05 input[type="password"] {
+  background-color: inherit;
+}
+.login-form.basic.type04 .login-main .login-common .btn-login01 {position: absolute; left:0px; bottom:77px;}
+.login-form.basic.type04 .login-main .login-common .security-board { top:138px; }
+
+
+.login-form.basic.type05 .login-main .login-common .btn-login01 {position: absolute; left:0px; bottom: 0;}
+.login-form.basic.type05 .login-main .login-common .security-board { top:215px; }
+
+
+.login-form.basic.type06 .login-main .login-common .btn-login01 {position: absolute; left:0px; bottom: -55px;width: 374px;height: 58px;line-height: 58px;padding: 0;}
+.login-form.basic.type06 .login-main .login-common .security-board { top: inherit; bottom: 10px; }
+.login-form.basic.type06 .login-common input[type="text"], .login-form.basic.type06 .login-common input[type="password"] {height: 30px;}
+.login-form.basic.type06 .login-common .login-wrap {height: 30px;}
+
+.login-form.basic.type06 .bg-circle_error .icon-error { top: 40px; left: 20px;}
+.login-form.basic.type06 .bg-circle_error .txt-error { top: 91px;right:22px;margin: inherit; left: inherit; font-size: 115%; line-height: 2;}
+
+.login-form.basic.type07 .login-main .login-common .security-board { top: inherit; bottom: 10px; }
+.login-form.basic.type07 .login-main .login-common .btn-login01 {position: absolute; left:0px; bottom: -55px;width: 374px;height: 58px;line-height: 58px;padding: 0;}
+.login-form.basic.type07 .login-common input[type="text"], .login-form.basic.type07 .login-common input[type="password"] {height: 30px;}
+.login-form.basic.type07 .login-common .login-wrap {height: 30px;}
+
+
+.login-form.basic.type07 .bg-circle_error .icon-error { top: 71px; left: 20px;}
+.login-form.basic.type07 .bg-circle_error .txt-error { top: 119px;right:25px;margin: inherit; left: inherit;}
+.login-form.basic.type08 .bg-circle_error .icon-error { top: 56px; left: 20px;}
+.login-form.basic.type08 .bg-circle_error .txt-error { top: 114px;right:25px;margin: inherit; left: inherit; font-size: 115%; line-height: 2;}
+
+
+.login-form.basic.type09 .login-main .login-common .btn-login01 {position: absolute; left:0px; bottom: 0;}
+.login-form.basic.type09 .login-main .login-common .security-board { top:215px; }
+.login-form.basic.type09 .bg-circle_error .icon-error { left: 40px;}
+.login-form.basic.type09 .bg-circle_error .txt-error { left:60px;margin: inherit;line-height: 2;}
+
+
+.login-form.type_auto .login-main .login-common,
+.login-form.basic.type_auto .login-main .login-common { height:auto;}
+.login-form.type_auto.type_btn-1 .login-main .login-common .security-board,
+.login-form.basic.type_auto.type_btn-1 .login-main .login-common .security-board { top: inherit; bottom: 65px; }
+.login-form.type_auto.type_btn-2 .login-main .login-common .security-board,
+.login-form.basic.type_auto.type_btn-2 .login-main .login-common .security-board { top: inherit; bottom: 138px; }
+.login-form.type_auto .login-main .login-common .btn-login01,
+.login-form.basic.type_auto .login-main .login-common .btn-login01 {position: relative; bottom: inherit;width: 374px;height: 58px;line-height: 58px; margin-top: 30px;padding:0;}
+.login-form.basic.type_auto .login-main .login-common .btn-login02 {position: relative; bottom: inherit;width: 374px;height: 58px;line-height: 58px; margin-top: 15px;}
+
+.login-message {
+  border: solid 1px #dAdAd9;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px #e1e1e1;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 2px;
+    padding: 15px 90px;
+}
+
+.icon-info {
+  display: inline-block;
+  content:"";
+  width: 24px;
+  height: 24px;
+  margin-bottom: 1px;
+  background: url(https://rakutie.top/img/common/icon-info.png) no-repeat;
+  vertical-align: middle;
+}
+.login-message ol {
+  margin-top: 10px;
+  vertical-align: middle;
+  background-position: 50%;
+}
+.login-message .icon-info {
+  margin-left: -30px;
+  margin-right: 6px;
+}
+.login-message li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* ----------------------
+ ボタン 950px
+ ------------------------ */
+.login-type.wide .btn-login-01  { width: 320px; height: 58px; line-height: 58px; padding:0;}
+
+/* ----------------------
+ ボタン 740px
+ ------------------------ */
+.login-type.basic .btn-login-01 { width: 374px; height: 58px; line-height: 58px; padding:0;}
+.login-type.basic .btn-login-02 { width: 278px; height: 58px; line-height: 58px; padding:0;}
+.login-type.basic .btn-login-03 { width: 374px; height: 40px; line-height: 40px; padding:0;}
+.login-type.basic .btn-back { width: 76px; height: 58px; line-height: 58px;  padding:0;}
+
+/* セグメントバナー領域 */
+#login-segment {width:626px; margin-top:40px;}
+#login-segment .bnr-segment01 { float:left; }
+#login-segment .bnr-segment02 { float:right; }
+#login-segment:after { display: block; height: 0px; visibility: hidden; clear: both; content: "."}
+
+.login-txt01 { margin-top:25px; font-size:124%; }
+.login-txt02 { margin:10px 0; font-size:108%; line-height: 22px;}
+
+
+.list-link {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.list-link li {
+  float: left;
+  width: 365px;
+  margin: 10px 0 2px;
+}
+.list-link li:nth-child(even) {
+  float: right;
+}
+.list-link .btn {
+  height: 61px;
+  padding-right: 40px;
+  border-bottom: 1px solid #ECECEC;
+  background-color: #fff;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  box-shadow: 0px 2px 2px #e1e1e1;
+  line-height: 1.2;
+}
+.list-link .btn:after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  background: url(https://rakutie.top/img/common/arrow_off.png) top left no-repeat;
+  background-size: 24px 24px;
+}
+#contents .list-link .btn:hover { text-decoration: none; }
+.list-link .btn:hover .txt { color: #BF0000;}
+
+.list-link .btn:hover:after {
+  background-image: url(https://rakutie.top/img/common/arrow_on.png);
+}
+.btn_external { background-image: url(https://rakutie.top/img/common/icon-external-link_off.png);background-repeat: no-repeat; background-size: 16px 16px; background-position: 20px 50%; padding-left: 40px;}
+a.btn_external:hover { background-image: url(https://rakutie.top/img/common/icon-external-link_on.png);}
+
+.list-link .txt {
+  font-size: 124%;
+  width: 285px;
+  white-space: normal;
+  color: #000;
+}
+
+
+.section-box {
+  border: solid 1px #dAdAd9;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px #e1e1e1;
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px;
+}
+
+.section-box a:link.btn-default {
+    font-size: 124%;
+}
+
+.tab-nav {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.tab-nav li {
+  float: left;
+  width: 366px;
+  margin: 15px 0 2px;
+  vertical-align: bottom;
+}
+.tab-nav li:nth-child(even) {
+  float: right;
+}
+.tab-nav .tab {
+  position: relative;
+  display: block;
+  width: 366px;
+  height: 54px;
+  margin: 0;
+  padding: 0 40px;
+  border-bottom: 1px solid #ECECEC;
+  border-radius: 4px 4px 0 0;
+  background-color: #fff;
+  vertical-align: middle;
+  text-align: center;
+  box-shadow: 0px 2px 2px #e1e1e1;
+  line-height: 54px;
+  font-size: 137%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.tab-nav .tab {
+  font-size: 100%;
+}
+
+.tab-nav .tab.active {
+  height: 64px;
+  margin-top: 0;
+  line-height: 64px;
+  border-top: 4px solid #bf0000;
+}
+.tab-nav .tab .line2-text {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  line-height: 1.4;
+  text-align: left;
+}
+.tab-nav .tab .line2-text span {
+  display: block;
+  font-weight: normal;
+  font-size: 79%;
+}
+.tab-nav .tab .txt:before {
+  display: inline-block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-size: 40px 40px;
+  vertical-align: middle;
+}
+.tab-nav .tab.active .txt,
+.tab-nav .tab:hover .txt {
+  color: #BF0000;
+}
+
+.tab-nav .tab .txt.icon01:before {
+  background: url(https://rakutie.top/img/common/icon-user_1-off.png) top left no-repeat;
+}
+.tab-nav .tab.active .txt.icon01:before,
+.tab-nav .tab:hover .txt.icon01:before {
+  background-image: url(https://rakutie.top/img/common/icon-user_1-on.png);
+}
+.tab-nav .tab .txt.icon02:before {
+  background: url(https://rakutie.top/img/common/icon-user_2-off.png) top left no-repeat;
+}
+.tab-nav .tab.active .txt.icon02:before,
+.tab-nav .tab:hover .txt.icon02:before {
+  background-image: url(https://rakutie.top/img/common/icon-user_2-on.png);
+}
+
+
+#contents .tab-nav .tab:hover {
+  text-decoration: none;  
+}
+.tab-nav .txt {
+  font-size: 124%;
+  width: 285px;
+  white-space: normal;
+  color: #000;
+}
+
+
+.icon-external{
+  display: inline-block;
+  content:"";
+  width: 16px;
+  height: 16px;
+  margin-bottom: 3px;
+  background: url(https://rakutie.top/img/common/icon-external-link_off.png) no-repeat 0 50%;
+  vertical-align: middle;
+}
+.icon-external_red{
+  display: inline-block;
+  content:"";
+  width: 16px;
+  height: 16px;
+  margin-bottom: 3px;
+  background: url(https://rakutie.top/img/common/icon-external-link_on.png) no-repeat 0 50%;
+  vertical-align: middle;
+}
+.icon-corporatePlus-circle {
+  display: inline-block;
+  content:"";
+  width: 58px;
+  height: 58px;
+  margin-bottom: 3px;
+  background: url(https://rakutie.top/img/common/icon-corporate++circle.png) no-repeat 0 50%;
+  vertical-align: middle;
+}

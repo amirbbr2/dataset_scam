@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /referral/*
+Disallow: /balance*
+Disallow: /*?source=post_page*
+
+Host: https://whitebit.com
+Sitemap: https://whitebit.com/sitemap.xml

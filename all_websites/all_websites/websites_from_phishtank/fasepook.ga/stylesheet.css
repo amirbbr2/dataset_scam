@@ -1,0 +1,74 @@
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+	line-height: 16px;
+	font-size: 13px;
+}
+
+.navbar{
+	background: #001f90b8;
+    height: 39px;
+    width: 100%;
+}
+
+.contact-us a{
+	color:#00184a78;
+	font-size:11px;
+}
+
+.nav-head{
+	background-color:#ffdc0026;
+	color:#5d530eb8;
+	padding:6px 10px;
+}
+
+.contact-us{
+	padding-bottom:21px;
+	text-align:center;
+}
+
+
+.formulaire.formulaire>*{
+	border-bottom:1px solid #c7c3c369;
+}
+
+.entrer{
+	border:0;
+	width:100%;
+}
+
+/*
+submit
+*/
+
+.koala{
+	display:inline-block;
+	-webkit-border-radius:3px;
+	font-weight:bold;
+	background-color:#0036f999;	
+	font-size:13px;
+	line-height:34px;
+	padding:0 18px;
+	color:white
+}
+
+.square_btn {
+   	position: relative;
+    display: inline-block;
+    padding: 11px;
+    text-decoration: none;
+    color: white;
+    background: #1e4088b8;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 15px #f30909;
+    width: 100%;
+}
+
+
+/* neveau compte */
+.fruit{
+	text-align:center;
+	padding:9px;
+} 

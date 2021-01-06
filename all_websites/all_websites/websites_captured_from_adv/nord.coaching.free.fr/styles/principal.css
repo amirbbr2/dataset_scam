@@ -1,0 +1,211 @@
+/* Coaching-Lille */
+
+* { margin:0;padding:0; }
+
+body {
+	background-color:#ffffff;
+	font:normal 0.7em "Trebuchet MS", Verdana, Tahoma, Sans-serif;
+	color:#777777;
+}
+
+#page {
+	width:770px;
+	margin:15px auto;
+}
+
+p { text-align:justify; }
+
+h1 {
+	/* background:url(../images/interface/logo2.png) top left no-repeat; 
+	text-indent:-9000px;
+	font:"Times New Roman", Times, serif;
+	font-size:24px;
+	font-style:italic;
+	font-stretch:expanded; */
+	width:480px;
+	height:27px;
+	/* background:url(../images/interface/puce_titre.png) left no-repeat; */
+	text-indent:25px;
+	font-size:20px;
+	padding-left:32px;
+}
+
+abbr, acronym { border:0; }
+
+em { color:#FF7200;font-style:normal; }
+
+p#slogan {
+	text-transform:uppercase;
+	width:220px;
+	text-align:left;
+	padding-left:38px;
+}
+
+.citation {position:absolute;
+width:470px;
+height:61px;
+z-index:1;
+/* left:528px;
+top: 103px; */
+left:528px;
+top: 146px;
+color: #FFFFFF;
+font-size:14px;
+font-style:normal;
+letter-spacing:2px;
+line-height:24px;}
+
+.cadre {
+width:200px;
+text-align:center;
+}
+
+ul#menu {
+	list-style-type:none;
+	width:500px;
+	text-align:center;
+	height:15px;
+	float:right;
+}
+
+ul#menu li {
+	display:inline;
+}
+
+ul#menu a {
+	display:block;
+	float:right;
+	width:80px;
+	height:100%;
+	color:#777777;
+	text-decoration:none;
+	border-right:1px solid #EEEEEE;
+}
+
+ul#menu a:hover {
+	display:block;
+	float:right
+	width:80px;
+	height:100%;
+	color:#FE7A10;
+	text-decoration:none;
+	border-right:1px solid #EEEEEE;
+}
+
+#header {
+	background:url(../images/interface/header.jpg) top left no-repeat;
+	width:770px;
+	height:216px;
+	/* margin-top:20px;
+	padding-top:25px; */
+	margin-top:20px;
+	padding-top:25px;
+	padding-left:35px;
+	color:#777777;
+}
+
+#header h2 {
+	color:#777777;
+	font:bold 1.5em "Trebuchet MS", Sans-serif;
+	background:url(../images/interface/puce_titre.png) left no-repeat;
+	height:20px;
+	text-indent:25px;
+}
+
+#header h2 span {
+	color:#999999;
+}
+
+#header ul { list-style-type:none; }
+
+#header li {
+	padding-left:15px;
+}
+
+#header p { padding:5px 20px; }
+
+#header a { color:#777777;text-decoration:none; }
+#header a:hover { color:#FE7A10;text-decoration:none; }
+
+#gauche {
+	width:211px;
+	float:left;
+	display:inline;
+	margin:0 0 0 29px;
+	/*  width:211px;
+	float:left;
+	margin:0 0 0 29px;	*/
+}
+
+#gauche h2 {
+	background:url(../images/interface/bas_titre.png) bottom left no-repeat;
+	color:#777777;
+	font:bold 1.5em "Trebuchet MS", Sans-serif;
+	border-left:4px solid #FE7A10;
+	text-indent:5px;
+	margin:5px 0;
+}
+
+#gauche h2 span { color:#BFBFBF; }
+
+#gauche ul { margin:9px auto 28px auto; }
+#gauche li {list-style-type:none; }
+#gauche a { font-weight:normal; text-decoration:none; color:#777777;}
+#gauche a:hover { color:#FE7A10;}
+
+#droite {
+	width:480px;
+	float:left;
+	margin:-65px 0 0 40px;
+	}
+
+#droite h2 {
+	background:url(../images/interface/bas_titre.png) bottom left no-repeat;
+	color:#8A8A8A;
+	font:bold 1.5em "Trebuchet MS", Sans-serif;
+	border-left:4px solid #FE7A10;
+	text-indent:5px;
+	margin:5px 0;
+}
+
+#droite h2 span { color:#BFBFBF; }
+
+p#copyright {
+	background:url(../images/interface/footer.png) left top no-repeat;
+	width:770px;
+	height:22px;
+	float:left;
+	margin-top:10px;
+	font-size:9px;
+	text-align:center;
+	padding-top:3px;
+	color:white;
+}
+
+p#copyright a { color:white;text-decoration:none; }
+
+table {
+	border-width:thin;
+	border-spacing: ;
+	border-style: dotted;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: black;
+}
+table th {
+	border-width: 1px;
+	padding: 4px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: ;
+}
+table td {
+	border-width: 1px;
+	padding: 4px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	-moz-border-radius: ;
+}
+

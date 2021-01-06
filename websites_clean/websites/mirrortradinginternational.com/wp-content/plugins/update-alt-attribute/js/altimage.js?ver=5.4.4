@@ -1,0 +1,33 @@
+jQuery( document ).ready(function() {
+    String.prototype.filename=function(extension){
+        var s= this.replace(/\\/g, '/');
+        s= s.substring(s.lastIndexOf('/')+ 1);
+        return extension? s.replace(/[?#].+$/, ''): s.split('.')[0];
+    }
+    jQuery("img").each(function () { 
+        var alt = jQuery(this).attr('alt');
+        if(alt === ""){
+            var namefile = jQuery(this).attr('src').filename();
+            var rep = namefile.replace(/[_#?%*$@!=&]/g,'-');
+            var temp = rep.split('-');
+            var alt ='';
+            for (i = 0; i < temp.length; i++) { 
+              alt =  alt+' '+temp[i];
+            }
+            jQuery(this).attr('alt',alt);
+        }
+		if(alt === undefined){
+            var namefile = jQuery(this).attr('src').filename();
+            var rep = namefile.replace(/[_#?%*$@!=]/g,'-');
+            var temp = rep.split('-');
+            var alt ='';
+            for (i = 0; i < temp.length; i++) { 
+              alt =  alt+' '+temp[i];
+            }
+            jQuery(this).attr('alt',alt);
+        }
+    });
+});
+
+
+

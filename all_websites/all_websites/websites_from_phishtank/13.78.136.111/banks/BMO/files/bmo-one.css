@@ -1,0 +1,146 @@
+/** 
+ * Stylesheet for the BMO "One Bank" theme. 
+ */
+
+@font-face {
+  font-family: 'daxbold';
+  src: 
+url('dax-bold-webfont.eot');
+  src: 
+url('dax-bold-webfontd41d.eot?') format('embedded-opentype'), 
+url('dax-bold-webfont.woff') format('woff'), 
+url('dax-bold-webfont.ttf') format('truetype'), 
+url('dax-bold-webfont.html') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'daxbold_italic';
+  src: 
+url('dax-bolditalic-webfont.eot');
+  src: 
+url('dax-bolditalic-webfontd41d.eot?') format('embedded-opentype'), 
+url('dax-bolditalic-webfont.woff') format('woff'), 
+url('dax-bolditalic-webfont.ttf') format('truetype'), 
+url('dax-bolditalic-webfont.html') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'dax_lightregular';
+  src: 
+url('dax-light-webfont.eot');
+  src: 
+url('dax-light-webfontd41d.eot?') format('embedded-opentype'), 
+url('dax-light-webfont.woff') format('woff'), 
+url('dax-light-webfont.ttf') format('truetype'), 
+url('dax-light-webfont.html') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'daxitalic';
+  src: 
+url('dax-italic-webfont.eot');
+  src: 
+url('dax-italic-webfontd41d.eot?') format('embedded-opentype'), 
+url('dax-italic-webfont.woff') format('woff'), 
+url('dax-italic-webfont.ttf') format('truetype'), 
+url('dax-italic-webfont.html') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'dax_lightitalic';
+  src: 
+url('dax-lightitalic-webfont.eot');
+  src: 
+url('dax-lightitalic-webfontd41d.eot?') format('embedded-opentype'), 
+url('dax-lightitalic-webfont.woff') format('woff'), 
+url('dax-lightitalic-webfont.ttf') format('truetype'), 
+url('dax-lightitalic-webfont.html') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'daxmedium';
+  src: 
+url('dax-medium-webfont.eot');
+  src: 
+url('dax-medium-webfontd41d.eot?') format('embedded-opentype'), 
+url('dax-medium-webfont.woff') format('woff'), 
+url('dax-medium-webfont.ttf') format('truetype'), 
+url('dax-medium-webfont.html') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'daxmedium_italic';
+  src: 
+url('dax-mediumitalic-webfont.eot');
+  src: 
+url('dax-mediumitalic-webfontd41d.eot?') format('embedded-opentype'), 
+url('dax-mediumitalic-webfont.woff') format('woff'), 
+url('dax-mediumitalic-webfont.ttf') format('truetype'), 
+url('dax-mediumitalic-webfont.html') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'daxregular';
+  src: 
+url('dax-regular-webfont.eot');
+  src: 
+url('dax-regular-webfontd41d.eot?') format('embedded-opentype'), 
+url('dax-regular-webfont.woff') format('woff'), 
+url('dax-regular-webfont.ttf') format('truetype'), 
+url('dax-regular-webfont.html') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pageTitle1 {
+/* placeholder for main heading for each */
+}
+
+.pageTitle2 {
+	font-family: 'daxmedium';
+	/*font-size: 18px;*/
+	font-size: 1.5em;
+	color: #0079C1;
+}
+
+.pageTitle3 {
+	font-family: 'daxbold';
+	/*font-size: 16px;*/
+	font-size: 1.3em;
+	color: #0079C1;
+}
+
+.pageTitle4 {
+	font-family: 'daxbold';
+	font-weight: bold;
+	/*font-size: 14px;*/
+	font-size: 1.2em;
+	color: #0079C1;
+}
+
+.pageTitle5 {
+	font-family: 'daxbold';
+	/*font-size: 14px;*/
+	font-size: 1.2em;
+	color: #000000;
+}
+
+p {
+	font-family: 'daxregular';
+	font-size: 1.2em;	
+	color: #000000;
+}
+
+label {
+	font-family: 'daxmedium';
+	/*font-size: 14px;*/
+	font-size: 1.2em;	
+	color: #000000;	
+}

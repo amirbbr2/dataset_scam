@@ -1,0 +1,7 @@
+Sitemap: https://sarasparklesboutique.com/sitemap.xml
+Sitemap: https://sarasparklesboutique.com/news-sitemap.xml
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://sarasparklesboutique.com/wp-sitemap.xml

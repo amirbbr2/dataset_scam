@@ -1,0 +1,37 @@
+
+.backstretch-opacity-1 .backstretch {
+  opacity: 0.1; }
+
+.backstretch-opacity-2 .backstretch {
+  opacity: 0.2; }
+
+.backstretch-opacity-3 .backstretch {
+  opacity: 0.3; }
+
+.backstretch-opacity-4 .backstretch {
+  opacity: 0.4; }
+
+.backstretch-opacity-5 .backstretch {
+  opacity: 0.5; }
+
+.backstretch-opacity-6 .backstretch {
+  opacity: 0.6; }
+
+.backstretch-opacity-7 .backstretch {
+  opacity: 0.7; }
+
+.backstretch-opacity-8 .backstretch {
+  opacity: 0.8; }
+
+.backstretch-opacity-9 .backstretch {
+  opacity: 0.9; }
+
+.page-container {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px; }
+  .page-container .navbar,
+  .page-container .jumbotron {
+    border-radius: 2px; }
+
+/*# sourceMappingURL=tutorial.css.map */

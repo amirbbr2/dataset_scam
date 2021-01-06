@@ -1,0 +1,23 @@
+.wpml-ls-menu-item .wpml-ls-flag{display:inline;vertical-align:baseline;width:18px;height:12px}.wpml-ls-menu-item .wpml-ls-flag+span{margin-left:.3em}.rtl .wpml-ls-menu-item .wpml-ls-flag+span{margin-left:0;margin-right:.3em}
+img.computta_flag {
+    width: 18px;
+    margin-right: 10px;
+}
+.banner img.computta_flag {
+    width: 25px;
+    vertical-align: top;
+}
+ul.primary-menu .menu-item-has-children.wpml-ls-item > a:after {
+    top: 7px;
+    right: 18px;
+}
+@media (min-width: 960px) {
+    .wpml-ls-current-language > a .computta_native {
+        display: none;
+    }
+}
+@media (max-width: 959px) {
+    #navigation ul.primary-menu > li.wpml-ls-current-language > a {
+        color: #1e73be!important;
+    }
+}

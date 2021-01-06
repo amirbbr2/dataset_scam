@@ -1,0 +1,108 @@
+
+/* - ++resource++resources/archives.css - */
+@media screen {
+/* https://www.hautmont.org/portal_css/++resource++resources/archives.css?original=1 */
+/* */
+.state-backuped {
+color: #7F0000 !important;
+}
+.state-protected {
+color: #814DC4 !important
+}
+/* */
+#plone-contentmenu-workflow .state-backuped {
+padding: 0 0.5em;
+background-color: #7F0000;
+border: 0.1em solid #7F0000;
+color: White !important;
+border-radius: 0.5em;
+-webkit-border-radius: 0.5em;
+-moz-border-radius: 0.5em;
+}
+#plone-contentmenu-workflow .state-protected {
+padding: 0 0.5em;
+background-color: #814DC4;
+border: 0.1em solid #814DC4;
+color: White !important;
+border-radius: 0.5em;
+-webkit-border-radius: 0.5em;
+-moz-border-radius: 0.5em;
+}
+/* */
+#portal-column-content h2 strong#search-term {
+color: #000000;
+font-style: italic;
+text-transform: none;
+}
+#portal-column-content #content-core #search-results-archives{
+padding:10px;
+background:#f3f3ef;
+border:none;
+}
+#portal-column-content #content-core #search-results-archives .element{
+float:left;
+margin:0 0 20px;
+width:45%;
+font-size:1em;
+}
+#portal-column-content #content-core #search-results-archives label{
+font-size:1em;
+font-family:verdana;
+font-style:normal;
+font-weight:normal;
+font-size:1.1em;
+}
+#portal-column-content #content-core #search-results-archives .element:nth-child(even){
+float:right;
+}
+#portal-column-content #content-core #search-results-archives .element .label{
+display:block;
+font-size:1.2em;
+font-weight:bold;
+text-transform:uppercase;
+}
+#portal-column-content #content-core #search-results-archives #search-archives .colonne{
+float: left;
+margin-right: 2em;
+}
+#portal-column-content #content-core #search-results-archives input[type=submit]{
+clear:both;
+display:block;
+padding:5px 10px;
+background:#000;
+border:none;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+behavior: url(++resource++PIE.htc);
+color:#fff;
+font-weight:bold;
+font-size:1em;
+cursor:pointer;
+}
+#portal-column-content #content-core #search-results-archives p#number-resultats{
+display:block;
+margin:10px 0 0;
+padding:10px 0 0;
+border-top:1px solid #fff;
+font-size:1.4em;
+}
+/* */
+.portletArchives #searcharchives-form input[type=submit]{
+clear:both;
+display:block;
+padding:5px 10px;
+background:#000;
+border:none;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+behavior: url(++resource++PIE.htc);
+color:#fff;
+font-weight:bold;
+font-size:1em;
+cursor:pointer;
+}
+
+}
+

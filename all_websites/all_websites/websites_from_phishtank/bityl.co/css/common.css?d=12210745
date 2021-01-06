@@ -1,0 +1,91 @@
+/* /public/css/.. */
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 300 !important;
+    background-image: url('../img/bg1.jpg');
+}
+
+a {
+ cursor: pointer;
+}
+
+.defaultFont {
+    color: #3c71b9;
+    text-shadow: 0 0 1.5px #8ebbe2;
+}
+
+.bgTitlesLeft {
+    padding: 5px 0 5px 30px;
+    border-radius: 25px;
+    /* Gradient Design - https://cssgradient.io/ */
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(234, 241, 247) 6%, rgba(255,255,255,1) 100%);
+}
+.bgTitlesLeft > h6 {
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.bgTitlesCenter {
+    letter-spacing: 2px;
+    /* Gradient Design - https://cssgradient.io/ */
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgb(235, 239, 245) 49%, rgba(255,255,255,1) 100%);
+}
+
+/* For notifyjs notifications */
+.notifyjs-bootstrap-base {
+    font-weight: inherit !important; //Veeresh
+    width: 360px !important;
+    white-space: nowrap !important;
+    margin-top: 70px !important;
+    background-position-y: 10px !important;
+}
+span[data-notify-text] {
+    font-size: medium;
+    font-weight: 400;
+    white-space: pre-wrap !important;
+    word-break: break-word; /* If long url or string, then it will break into words*/
+}
+
+.urlError {
+    color: #e62a0a;
+    text-shadow: 0 0 1px #d6430b;
+}
+
+/* Tooltip - BEGIN */
+.utooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+    color: #577ee0;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+.utooltip .utooltiptext {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #fbf3eb;
+    border: 1px solid #deceb6;
+    color: #583917;
+    box-shadow: 0 0.125rem 0.50rem #deceb6 !important;
+    border-radius: 3px;
+    padding: 2px 7px;
+    position: absolute;
+    z-index: 1;
+    font-size: small;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+    margin-left: 5px;
+    text-align: left !important;
+}
+.utooltip:hover .utooltiptext {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+.utooltipInfoIcon {
+    font-size: small;
+    cursor: pointer;
+}
+/* Tooltip - BEGIN */

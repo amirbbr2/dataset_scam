@@ -1,0 +1,86 @@
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+
+
+/* Mobile 
+@media (max-width: 1200px) {
+	
+	table.responsive { margin-bottom: 0; }
+	.table-wrapper{float: right; width: 100%}
+	.pinned { position: absolute; right: 0px; top: 0; background: #fff; }
+	.pinned table {  width: 100%; }
+	table td{  line-height:30px !important }
+	.pinned table th, .pinned table td { white-space: nowrap; }
+	.pinned td:last-child { border-bottom: 0; }
+	
+	div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden;}
+	div.table-wrapper div.scrollable { margin-right: 142px; }
+	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; direction:rtl;}	
+	
+	table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
+	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display:none;}
+	
+	.text-p{width:100% !important}
+	.tab-pane img {display:none !important;}
+	.plan-host {display:none}
+	.green {height:77px !important }
+	
+	
+	
+}
+
+
+*/
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+
+/* Mobile */
+@media (max-width: 1200px) {
+	.tab-pane table{ width:100%}
+	 table.responsive { margin-bottom: 0; }
+	.table-wrapper{float: right; width: 100%}
+	.pinned { position: absolute; right: 0; top: 0; background: #fff;overflow: hidden; }
+	.pinned table { border-radius:0 3px 3px 0px;}
+	.pinned table th, .pinned table td { white-space: nowrap; }
+	.pinned td:last-child { border-bottom: 0; }
+	
+	div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden;  }
+	div.table-wrapper div.scrollable { margin-right: 175px; }
+	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden;}	
+	table td{  line-height:29px !important }
+	table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
+	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
+	.scrollable table{width:100%;}
+	.text-p{width:100% !important}
+	.tab-pane img {display:none !important;}
+	.plan-host {display:none}
+	
+}

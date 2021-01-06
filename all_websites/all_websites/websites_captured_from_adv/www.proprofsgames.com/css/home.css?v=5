@@ -1,0 +1,188 @@
+/*Descktop end*/
+/*Ipad*/
+
+@media only screen and (min-width: 768px) and (max-width: 5000px) {
+.quiz-soft-rpt h4 { font-size: 20px; font-weight: 400;}
+.bdr-bt-nt {border-bottom: none !important;}
+.bdr-nt {border-right: none !important;}
+.quiz-soft-rpt p {line-height: 21px;}
+.quiz-soft-rpt {border-right: 1px solid #e7e7e7;border-bottom: 1px solid #e7e7e7;color: #67666a;padding: 15px 5% 5px; position: relative; margin: 0 5px;   min-height: 219px;}
+.quiz-rpt { margin-top: 30px;}
+.image-games img { width: 100%;}
+.image-games1 img {width: 100%;}
+.image-games:hover .image-hover {display: block;}
+.image-games1:hover .image-hover1 { display: block;}
+.image-games { position: relative;}
+.image-games1 { position: relative;}
+.image-hover {position: absolute; width: 100%; background-color: #4e94cf;display: none;color: #fff; opacity: 0.9; bottom: 4px;}
+.image-games1 img:hover { box-shadow: 1px 1px 5px #999;}
+.image-games img:hover {box-shadow: 1px 1px 5px #999;}
+.image-titles {text-align: center;color: #3b5997;font-size: 17px; margin-top: 10px;margin-bottom: 10px;}
+.image-titles a { text-decoration: none !important;}
+a:hover {color: #000;}
+.image-hover a { color: #fff !important;text-decoration: none !important;padding: 15px 0px;width: 100%;display: block;}
+.image-hover1 a {color: #fff !important;text-decoration: none !important;padding: 15px 0px;width: 100%;display: block;}
+.image-hover1 {position: absolute;width: 100%;background-color: #4e94cf; display: none; color: #fff;opacity: 0.8; bottom: 4px;}
+#content .para {padding-top: 0px !important;}
+#dropdownMenu7 { text-decoration: none !important;}
+.sign-up2.btn-blue { color: #fff !important; text-decoration: none !important;}
+#cssmenu > ul > li.active {background: #fff !important;}
+.navbar .nav > li > a:hover {color: #fff !important;text-decoration: none !important;}
+
+.main-headings {margin-top: 15px;}
+.main-headings h1 {font-size: 40px;text-align: center; color: #df7000;  margin-bottom: 10px;line-height: 52px;}
+.main-headings h2 {font-size: 24px;color: #3a3a3a;line-height: 32px;text-align: center;margin-top: 5px;font-weight: 400;}
+.main-headings h2 {margin-bottom: 50px;}
+.main-headings h2 span { color: #3b5997;}
+.ad {text-align: center;display: block;margin: 0px auto 20px;}
+.para {font-size: 16px;color: #5f5f5f;line-height: 24px;text-align: center;margin-bottom: 20px;}
+.create-game {margin-bottom: 10px;text-align: center;color: #67666a;font-family: 'Roboto', sans-serif;line-height: 32px;font-size: 32px;font-weight: 500; padding: 20px 0 0 0;}
+.grey-background {background-color: #fafafa;}
+#cssmenu > ul > li:hover { background-color: #3c8ac9 !important; color: #fff !important; text-decoration: none;}
+#cssmenu > ul > li > a:hover {color: #fff !important;}
+#cssmenu ul ul a:hover {color: #fff !important; text-decoration: none; background-color: #3c8ac9;}
+}
+/*Ipad end*/
+/*481-767Smart phone landscap*/
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+.quiz-soft-rpt h4 { font-size: 20px; font-weight: 400;}
+.bdr-bt-nt {border-bottom: none !important;}
+.bdr-nt {border-right: none !important;}
+.quiz-soft-rpt p {line-height: 21px;}
+.quiz-soft-rpt {border-right: 1px solid #e7e7e7;border-bottom: 1px solid #e7e7e7;color: #67666a;padding: 15px 5% 5px; position: relative; margin: 0 5px;   min-height: 219px;}
+.quiz-rpt { margin-top: 30px;}
+.image-games img { width: 100%; height:247px;}
+.image-games1 img {width: 100%;}
+.image-games:hover .image-hover {display: block;}
+.image-games1:hover .image-hover1 { display: block;}
+.image-games { position: relative;}
+.image-games1 { position: relative;}
+.image-hover {position: absolute; width: 100%; background-color: #4e94cf;display: none;color: #fff; opacity: 0.9; bottom: 0;}
+.image-games1 img:hover { box-shadow: 1px 1px 5px #999;}
+.image-games img:hover {box-shadow: 1px 1px 5px #999;}
+.image-titles {text-align: center;color: #3b5997;font-size: 17px; margin-top: 10px;margin-bottom: 25px;}
+.image-titles a { text-decoration: none !important;}
+a:hover {color: #000;}
+.image-hover a { color: #fff !important;text-decoration: none !important;padding: 15px 0px;width: 100%;display: block;}
+.image-hover1 a {color: #fff !important;text-decoration: none !important;padding: 15px 0px;width: 100%;display: block;}
+.image-hover1 {position: absolute;width: 100%;background-color: #4e94cf; display: none; color: #fff;opacity: 0.8; bottom: 0;}
+#content .para {padding-top: 0px !important;}
+#dropdownMenu7 { text-decoration: none !important;}
+.sign-up2.btn-blue { color: #fff !important; text-decoration: none !important;}
+#cssmenu > ul > li.active {background: #fff !important;}
+.navbar .nav > li > a:hover {color: #fff !important;text-decoration: none !important;}
+.login-sign-btn { color: #fff !important; text-decoration: none !important;font-family: MyriadPro-Regular;}
+.main-headings {margin-top: 15px;}
+.main-headings h1 {font-size: 40px;text-align: center; color: #df7000;  margin-bottom: 10px;line-height: 52px;}
+.main-headings h2 {font-size: 24px;color: #3a3a3a;line-height: 32px;text-align: center;margin-top: 5px;font-weight: 400;}
+.main-headings h2 {margin-bottom: 50px;}
+.main-headings h2 span { color: #3b5997;}
+.ad {text-align: center;display: block;margin: 0px auto 20px;}
+.para {font-size: 16px;color: #5f5f5f;line-height: 24px;text-align: center;margin-bottom: 20px;}
+.create-game {margin-bottom: 10px;text-align: center;color: #67666a;font-family: 'Roboto', sans-serif;line-height: 32px;font-size: 32px;font-weight: 500; padding: 20px 0 0 0;}
+.grey-background {background-color: #fafafa;}
+#cssmenu > ul > li:hover { background-color: #3c8ac9 !important; color: #fff !important; text-decoration: none;}
+#cssmenu > ul > li > a:hover {color: #fff !important;}
+#cssmenu ul ul a:hover {color: #fff !important; text-decoration: none; background-color: #3c8ac9;}
+
+}
+/*301-480 Mobile phone/iphone*/
+
+@media only screen and (min-width: 301px) and (max-width: 480px) {
+.quiz-soft-rpt h4 { font-size: 20px; font-weight: 400;}
+.bdr-bt-nt {border-bottom: none !important;}
+.bdr-nt {border-right: none !important;}
+.quiz-soft-rpt p {line-height: 21px;}
+.quiz-soft-rpt {border-right: 1px solid #e7e7e7;border-bottom: 1px solid #e7e7e7;color: #67666a;padding: 15px 5% 5px; position: relative; margin: 0 5px;   min-height: 219px;}
+.quiz-rpt { margin-top: 30px;}
+.image-games img { width: 100%; height:247px;}
+.image-games1 img {width: 100%;}
+.image-games:hover .image-hover {display: block;}
+.image-games1:hover .image-hover1 { display: block;}
+.image-games { position: relative;}
+.image-games1 { position: relative;}
+.image-hover {position: absolute; width: 100%; background-color: #4e94cf;display: none;color: #fff; opacity: 0.9; bottom: 0;}
+.image-games1 img:hover { box-shadow: 1px 1px 5px #999;}
+.image-games img:hover {box-shadow: 1px 1px 5px #999;}
+.image-titles {text-align: center;color: #3b5997;font-size: 17px; margin-top: 10px;margin-bottom: 25px;}
+.image-titles a { text-decoration: none !important;}
+a:hover {color: #000;}
+.image-hover a { color: #fff !important;text-decoration: none !important;padding: 15px 0px;width: 100%;display: block;}
+.image-hover1 a {color: #fff !important;text-decoration: none !important;padding: 15px 0px;width: 100%;display: block;}
+.image-hover1 {position: absolute;width: 100%;background-color: #4e94cf; display: none; color: #fff;opacity: 0.8; bottom: 0;}
+#content .para {padding-top: 0px !important;}
+#dropdownMenu7 { text-decoration: none !important;}
+.sign-up2.btn-blue { color: #fff !important; text-decoration: none !important;}
+#cssmenu > ul > li.active {background: #fff !important;}
+.navbar .nav > li > a:hover {color: #fff !important;text-decoration: none !important;}
+.login-sign-btn { text-decoration: none !important;font-family: MyriadPro-Regular;}
+.main-headings {margin-top: 15px;}
+.main-headings h1 {font-size: 40px;text-align: center; color: #df7000;  margin-bottom: 10px;line-height: 52px;}
+.main-headings h2 {font-size: 24px;color: #3a3a3a;line-height: 32px;text-align: center;margin-top: 5px;font-weight: 400;}
+.main-headings h2 {margin-bottom: 50px;}
+.main-headings h2 span { color: #3b5997;}
+.ad {text-align: center;display: block;margin: 0px auto 20px;}
+.para {font-size: 16px;color: #5f5f5f;line-height: 24px;text-align: center;margin-bottom: 20px;}
+.create-game {margin-bottom: 10px;text-align: center;color: #67666a;font-family: 'Roboto', sans-serif;line-height: 32px;font-size: 32px;font-weight: 500; padding: 20px 0 0 0;}
+.grey-background {background-color: #fafafa;}
+#cssmenu > ul > li:hover { background-color: #3c8ac9 !important; color: #fff !important; text-decoration: none;}
+#cssmenu > ul > li > a:hover {color: #fff !important;}
+#cssmenu ul ul a:hover {color: #fff !important; text-decoration: none; background-color: #3c8ac9;}
+}
+/*0-300 phone with 3 inch*/
+
+@media only screen and (min-width: 0px) and (max-width: 300px) {
+	
+.quiz-soft-rpt h4 { font-size: 20px; font-weight: 400;}
+.bdr-bt-nt {border-bottom: none !important;}
+.bdr-nt {border-right: none !important;}
+.quiz-soft-rpt p {line-height: 21px;}
+.quiz-soft-rpt {border-right: 1px solid #e7e7e7;border-bottom: 1px solid #e7e7e7;color: #67666a;padding: 15px 5% 5px; position: relative; margin: 0 5px;   min-height: 219px;}
+.quiz-rpt { margin-top: 30px;}
+.image-games img { width: 100%; height:247px;}
+.image-games1 img {width: 100%;}
+.image-games:hover .image-hover {display: block;}
+.image-games1:hover .image-hover1 { display: block;}
+.image-games { position: relative;}
+.image-games1 { position: relative;}
+.image-hover {position: absolute; width: 100%; background-color: #4e94cf;display: none;color: #fff; opacity: 0.9; bottom: 0;}
+.image-games1 img:hover { box-shadow: 1px 1px 5px #999;}
+.image-games img:hover {box-shadow: 1px 1px 5px #999;}
+.image-titles {text-align: center;color: #3b5997;font-size: 17px; margin-top: 10px;margin-bottom: 22px; }
+.image-titles a { text-decoration: none !important;}
+a:hover {color: #000;}
+.image-hover a { color: #fff !important;text-decoration: none !important;padding: 15px 0px;width: 100%;display: block;}
+.image-hover1 a {color: #fff !important;text-decoration: none !important;padding: 15px 0px;width: 100%;display: block;}
+.image-hover1 {position: absolute;width: 100%;background-color: #4e94cf; display: none; color: #fff;opacity: 0.8; bottom: 0;}
+#content .para {padding-top: 0px !important;}
+#dropdownMenu7 { text-decoration: none !important;}
+.sign-up2.btn-blue { color: #fff !important; text-decoration: none !important;}
+#cssmenu > ul > li.active {background: #fff !important;}
+.navbar .nav > li > a:hover {color: #fff !important;text-decoration: none !important;}
+.login-sign-btn { text-decoration: none !important;font-family: MyriadPro-Regular;}
+.main-headings {margin-top: 15px;}
+.main-headings h1 {font-size: 40px;text-align: center; color: #df7000;  margin-bottom: 10px;line-height: 52px;}
+.main-headings h2 {font-size: 24px;color: #3a3a3a;line-height: 32px;text-align: center;margin-top: 5px;font-weight: 400;}
+.main-headings h2 {margin-bottom: 50px;}
+.main-headings h2 span { color: #3b5997;}
+.ad {text-align: center;display: block;margin: 0px auto 20px;}
+.para {font-size: 16px;color: #5f5f5f;line-height: 24px;text-align: center;margin-bottom: 20px;}
+.create-game {margin-bottom: 10px;text-align: center;color: #67666a;font-family: 'Roboto', sans-serif;line-height: 32px;font-size: 32px;font-weight: 500; padding: 20px 0 0 0;}
+.grey-background {background-color: #fafafa;}
+#cssmenu > ul > li:hover { background-color: #3c8ac9 !important; color: #fff !important; text-decoration: none;}
+#cssmenu > ul > li > a:hover {color: #fff !important;}
+#cssmenu ul ul a:hover {color: #fff !important; text-decoration: none; background-color: #3c8ac9;}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+.main-headings h1 {font-size: 19px; line-height: 22px;  }
+#content .para {text-align: center; }
+.para {text-align: center; }
+.main-headings h2 {font-size: 16px;margin-bottom: 20px; font-weight:400; }
+.create-game {padding-bottom: 0px; padding-top: 20px; }
+.container {margin: 0 20px !important;}
+}
+@media only screen and (min-device-width: 0px) and (max-device-width: 753px) {
+ .add_728 {display: none;}
+}

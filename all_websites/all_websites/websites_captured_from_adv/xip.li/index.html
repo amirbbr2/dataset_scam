@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	        
+                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Language" content="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/png" href="http://xip.li/DOMtemplates/xip.li/images/favicon.ico" />
+
+        <!-- Meta Data-->
+        <title>Xip.li SEO Analyser And SEO LINK Generator</title>
+                
+        <meta property="site_name" content="XipLi SEO Analyser And SEO LINK Generator"/>
+        <meta name="description" content="Xip.li helps to identify your SEO mistakes and optimize your web page URL contents for a better search engine ranking." />
+        <meta name="keywords" content="SEO LINK,xipli, xip li, xip.li, SEO,  seo audit tool, better ranking, free seo" />
+        <meta name="author" content="Balaji" />
+        
+        <!-- Open Graph -->
+        <meta property="og:title" content="Xip.li SEO Analyser And SEO LINK Generator" />
+        <meta property="og:site_name" content="XipLi SEO Analyser And SEO LINK Generator" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Xip.li helps to identify your SEO mistakes and optimize your web page URL contents for a better search engine ranking." />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        
+        <link rel="canonical" href="index.html" />
+        <link rel="alternate" hreflang="&lt;br /&gt;&lt;b&gt;Notice&lt;/b&gt;:  Undefined offset: 7 in &lt;b&gt;/home/xip/public_html/admin/theme/default/language-editor.php&lt;/b&gt; on line &lt;b&gt;69&lt;/b&gt;&lt;br /&gt;" href="http://xip.li/en/" />
+
+        <!-- Main style -->
+        <link href="theme/default/css/bootstrap.min.css" rel="stylesheet" />
+        
+        <!-- Font-Awesome -->
+        <link href="theme/default/css/font-awesome.min.css" rel="stylesheet" />
+       
+        <!-- Custom Theme style -->
+        <link href="DOMtemplates/xip.li/css/custom.css?v=61" rel="stylesheet" type="text/css" />
+        
+                
+        <!-- jQuery 1.10.2 -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <script src="template/core/core.js" type="text/javascript"></script>
+
+         <script type="text/javascript">
+         
+            function loadCaptcha() {
+                $("#captcha_container").empty();
+                setTimeout(function () {
+                    grecaptcha.render('captcha_container', {
+                        'sitekey': '6LdrshQUAAAAAOwZQAiwBpYMgayK4A40reBf0eoJ'
+                    });
+                }, 500);
+            }
+
+            $(document).ready(function () {
+                $('input[name="shrink_type"]').change(function () {
+                    if ($(this).val() === 'text') {
+                        $('#text-shrink').show();
+                        $('#link-shrink').hide();
+                    }
+                    else {
+                        $('#text-shrink').hide();
+                        $('#link-shrink').show();
+                    }
+                });
+                $("#setting").click(function () {
+                    $(this).hide();
+                    $("#settings_container").show(150);
+                });
+                $("#language").change(function () {
+                    if ($(this).val() === 'wysiwyg') {
+                                                $('#text').css("direction", "rtl").trumbowyg({
+                            lang: 'fa',
+                            btns: [
+                                ['formatting', 'direction'],
+                                ['strong', 'em', 'del'],
+                                ['superscript', 'subscript'],
+                                ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+                                ['insertImage'],
+                                ['link'],
+                                ['foreColor', 'backColor'],
+                                ['unorderedList', 'orderedList'],
+                                ['horizontalRule'],
+                                ['removeformat'],
+                                ['viewHTML'],
+                                ['undo', 'redo'], // Only supported in Blink browsers
+                                ['fullscreen']
+                            ],
+                            minimalLinks: true
+                        });
+                                                $('.trumbowyg-editor').focus();
+                    }
+                    else if ($(this).val() === 'text') {
+                        $('#text').css("direction", "rtl").trumbowyg('destroy');
+                    }
+                    else {
+                        $('#text').css("direction", "ltr").trumbowyg('destroy');
+                    }
+                });
+                $("input[name=public]").change(function () {
+                    if ($(this).val() === 'private')
+                        $('#password_container').show(150);
+                    else
+                        $('#password_container').hide(150);
+                });
+                $("select[name=expire]").change(function () {
+                    if ($(this).val() === 'view')
+                        $('#view_expire_container').show(150);
+                    else
+                        $('#view_expire_container').hide(150);
+                });
+
+
+                $("#form-wrapper").on('click', '#link_setting', function () {
+                    $(this).hide();
+                    $("#link_settings_container").show(150);
+                });
+
+                $("#form-wrapper").on('change', 'input[name=link_public]', function () {
+                    if ($(this).val() === 'private')
+                        $('#link_password_container').show(150);
+                    else
+                        $('#link_password_container').hide(150);
+                });
+
+                $("#form-wrapper").on('change', "select[name=link_expire]", function () {
+                    if ($(this).val() === 'view')
+                        $('#link_view_expire_container').show(150);
+                    else
+                        $('#link_view_expire_container').hide(150);
+                });
+            });
+
+            function shrink(obj, e) {
+                if ($(obj).find("#g-recaptcha-response").length == 0)
+                {
+                    e.preventDefault();
+                    alert("Click the button I'm not a robot");
+                    return false;
+                }
+                if($(obj).find("#g-recaptcha-response").val().length == 0)
+                {
+                    e.preventDefault();
+                    alert("Click the button I'm not a robot");
+                    return false;
+                }
+                /*{
+                    alert('Click the button I'm not a robot');
+                    return;
+                }*/
+                if (obj.id === 'text_shrink_form') {
+                    ajax_form2(obj, e, $('#text-shrink'));
+                }
+                else if ($('#shrink_url').val() != '') {
+
+                    ajax_form(obj, e, $('#form-wrapper'));
+                } else {
+                    e.preventDefault();
+                    alert('Please enter the URL');
+                }
+            }
+
+            function ajax_form2(form, e, cnt1, cnt2) {
+                e.preventDefault();
+                if (!cnt1)
+                    cnt1 = $('#content-wrapper');
+                if (!cnt2)
+                    cnt2 = cnt1;
+
+                $.ajax({
+                    url: form.action,
+                    type: 'POST',
+                    data: $(form).serialize(),
+                    beforeSend: function () {
+                        cnt1.css({position: 'relative'}).append('<div id="ajax_black_screen"></div>');
+                        $('#ajax_black_screen').css({height: cnt1.height()}).append('<span><img src="template/core/images/loading10.gif" id="ajax_loading" alt="loading" /></span>');
+                    },
+                    success: function (data) {
+                        data = data.replace(/\\&quot;/g, "\"");
+                        data = data.replace(/\\&#039;/g, "'");
+                        data = data.replace(/\\"/g, '"');
+                        data = data.replace(/\\'/g, "'");
+                        cnt2.html(data);
+                        loadCaptcha();
+                        $('#ajax_black_screen').remove();
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        $('#ajax_black_screen').remove();
+                        form.submit();
+                    }
+                });
+            }
+        </script>
+        <style>
+            .bg-seob{
+                background-color: #00aeef;
+                color: #fff;
+                border: 1px solid #3498DB;
+            }
+        </style>
+            </head>
+
+<body data-spy="scroll" data-target="#scroll-menu" data-offset="50" id="top">  
+
+
+
+
+<!-- mobile-nav -->
+<nav class="mobile-nav">
+
+	<ul class="main-nav">
+        <li><a href="index.html">Analyse</a></li><li><a href="http://xip.li/site-vs-site">Site vs Site</a></li><li><a href="http://xip.li/recent">Recent Sites</a></li><li><a href="http://xip.li/page/terms">Terms</a></li><li><a href="http://xip.li/page/privacy-policy">Privacy Policy</a></li><li><a href="http://xip.li/page/api">API</a></li><li><a href="http://xip.li/page/dmca">DMCA</a></li><li><a href="http://xip.li/contact">Contact</a></li>        
+	</ul>
+    
+	<!--<ul class="login-nav">
+        	</ul>-->
+			
+	<ul class="main-nav">
+		<li class="wrapper-submenu">
+            			<a href="javascript:void(0)">EN <i class="fa fa-angle-down"></i></a>
+			<div class="submenu">
+				<ul class="submenu-nav">
+                    <li><a href="http://xip.li/en">English</a></li>				</ul>
+				<span class="arrow"></span>
+			</div>
+            		</li>
+	</ul>
+
+	
+</nav>
+<!-- mobile-nav -->
+
+<div class="main-content">
+    <!-- desktop-nav -->
+    <div class="wrapper-header navbar-fixed-top">
+	  	
+		<div class="container main-header" id="header">
+		
+			<a href="index.html">
+                <div class="logo">
+                    <img width="150px" class="themeLogoImg" src="DOMtemplates/xip.li/images/logo.png?v=1" />                </div>
+			</a>
+			            
+            <a href="javascript:void(0)" class="start-mobile-nav"><span class="fa fa-bars"></span></a>	
+          
+			<nav class="desktop-nav">
+			
+				<ul class="main-nav">
+                    <li><a href="index.html">Analyse</a></li><li><a href="http://xip.li/site-vs-site">Site vs Site</a></li><li><a href="http://xip.li/recent">Recent Sites</a></li><li><a href="http://xip.li/page/terms">Terms</a></li><li><a href="http://xip.li/page/privacy-policy">Privacy Policy</a></li><li><a href="http://xip.li/page/api">API</a></li><li><a href="http://xip.li/page/dmca">DMCA</a></li><li><a href="http://xip.li/contact">Contact</a></li>                   
+				</ul>
+                <ul class="login-nav">
+                    					<li class="dropdown">
+						<a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><i class="fa fa-globe fa-lg"></i></a>
+						<ul class="dropdown-menu">
+                            <li><a href="http://xip.li/en">English</a></li>						</ul>
+					</li>
+					<li class="lang-li"><a>EN</a></li>
+                    				</ul>
+			</nav>
+
+		</div>		
+	</div>
+    <!-- desktop-nav b-ala-j-i -->
+    
+        <section class="headturbo" id="headturbo" style="background:url('DOMtemplates/xip.li/images/splash-header.jpg')" >
+        <div class="headturbo-wrap" id="headturbo-wrap">
+            <div class="texture-overlay"></div>
+            <div class="container">
+            <div class="row">
+            <div style="height: 870px;" class="headturbo-img pull-right hidden-xs">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <div class="headturbo-content">
+                            <h1 class="pulse">Instantly Analyze Your Link SEO Issues</h1>
+                            <h2>Helps to identify your SEO LINK mistakes and better optimize your Link content.</h2>
+                            <div id="form-wrapper">
+                                <form method="post" action="http://xip.li/en/link/shrink"
+                                    onsubmit="shrink(this,event);" style="margin: 10px auto !important;">
+                                    <div class="input-group input-group-lg" id="shrinkresult">
+                                        <input name="url" id="shrink_url" type="text" placeholder="http://" dir="ltr"
+                                            value="" class="form-control">
+                                        <span class="input-group-btn">
+                                            <button type="submit" id="submita"
+                                                    class="btn bg-seob">Analyse</button>
+                                        </span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-5">
+                                            <div class="g-recaptcha" data-sitekey="6LeTuKsUAAAAAJNAnREstHJMglbdWB4Qc0H014XO"></div>
+                                            <!--span class="help-block">
+                                                <span style='color:#F00'>Click the button I'm not a robot</span>
+                                            </span-->
+                                        </div>
+                                    </div>
+                                    <script src="https://www.google.com/recaptcha/api.js"></script>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+					
+								                <div class="col-md-12 text-center"></br>
+</div>
+
+
+            </div>
+        </div>
+    </section>
+    </div>		  
+              <div align="center">
+
+
+</div>
+
+
+<div class="bg-grey-color">
+
+
+
+	<!-- begin .container -->
+
+	<div class="container">
+
+		
+
+        <ul id="featured">
+
+          <li>
+
+            <span class="circleBox"><span class="fa fa-line-chart"></span></span>
+
+            <h4>Unlimited LINK Analysis</h4>
+
+            <p>Run unlimited analysis on your link from our most powerful servers. Stored reports make it easy to view progress and past work.</p>
+
+          </li>
+
+          <li>
+
+            <span class="circleBox"><span class="fa fa-server"></span></span>
+
+            <h4>In-Depth SEO Reviews</h4>
+
+            <p>With our in-depth website and link analysis learn how to fix your SEO issues with clear definitions for each SEO metrics.</p>
+
+          </li>
+
+          <li>
+
+            <span class="circleBox"><span class="fa fa-thumbs-o-up"></span></span>
+
+            <h4>Competitive Analysis with SEO Link</h4>
+
+            <p>Side-by-side SEO comparisons with your competitors. See how your SEO can improve against the competition.</p>
+
+          </li>
+
+        </ul>
+
+        
+
+	</div>
+
+	<!-- end .container -->
+
+	
+
+</div>
+
+
+
+<div class="container">
+
+      <div class="row">
+
+          <div id="latest-site">
+
+              <div class="col-md-12">
+
+                <div class="latest-heading">
+
+                  <h4><span class="heading-icon"><i class="fa fa-envira"></i></span>Recently Listed</h4>
+
+                  <a class="btn btn-primary btn-sm pull-right" href="http://xip.li/recent">View More <i class="fa fa-long-arrow-right"></i></a>
+
+                </div>
+
+              </div>
+
+			  
+              <div class="col-md-12">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Horizontal-responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1546540126740810"
+     data-ad-slot="4251382846"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+
+
+
+              <style>
+
+                  @media (min-width: 992px) {
+
+                      .image-overlay{
+
+                          max-height: 200px;
+
+                          width: 100%;
+
+                          object-fit: cover;
+
+                          object-position: 0 0;
+
+                      }
+
+                  }
+
+              </style>
+
+            <div class="row latest-content">
+
+            
+            <div class="col-md-4">
+
+                <div class="sites-block">
+
+                   
+
+                    <div class="caption">
+
+                        <a href="http://xip.li/domain/sabadl.xyz">Sabadl.xyz</a>
+
+                    </div>
+
+                    <div class="details clearfix">
+
+                          <span><strong class="recentStrong">75<span style="font-size: 12px;">/100</span></strong>Score</span>
+
+                          <span><strong class="recentStrong">3,117,000</strong>Global Rank</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+			
+
+            
+            <div class="col-md-4">
+
+                <div class="sites-block">
+
+                   
+
+                    <div class="caption">
+
+                        <a href="http://xip.li/domain/oksi.ir">Oksi.ir</a>
+
+                    </div>
+
+                    <div class="details clearfix">
+
+                          <span><strong class="recentStrong">57<span style="font-size: 12px;">/100</span></strong>Score</span>
+
+                          <span><strong class="recentStrong">714,075</strong>Global Rank</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+			
+
+            
+            <div class="col-md-4">
+
+                <div class="sites-block">
+
+                   
+
+                    <div class="caption">
+
+                        <a href="http://xip.li/domain/alltypehacks.in">Alltypehacks.in</a>
+
+                    </div>
+
+                    <div class="details clearfix">
+
+                          <span><strong class="recentStrong">69<span style="font-size: 12px;">/100</span></strong>Score</span>
+
+                          <span><strong class="recentStrong">1,830,091</strong>Global Rank</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+			
+
+            </div><div class="row latest-content">
+            <div class="col-md-4">
+
+                <div class="sites-block">
+
+                   
+
+                    <div class="caption">
+
+                        <a href="http://xip.li/domain/suprafiles.co">Suprafiles.co</a>
+
+                    </div>
+
+                    <div class="details clearfix">
+
+                          <span><strong class="recentStrong">60<span style="font-size: 12px;">/100</span></strong>Score</span>
+
+                          <span><strong class="recentStrong">3,382,176</strong>Global Rank</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+			
+
+            
+			
+
+			
+              <div class="col-md-12">
+
+
+</div>
+
+
+            </div><!-- /.row -->
+
+             
+
+			  
+
+			 
+
+          </div>
+
+      </div>
+
+</div>
+
+<footer>
+    <div class="container">
+    <div class="row">
+    
+        <div class="col-md-9 col-sm-12 right-border">
+            <div class="footer-about">
+            <h2 class="footer-title">About Us</h2>
+            <p>Our aim to make SEO Link with search engine optimization (SEO) easy. We provide simple, professional-quality SEO analysis and critical SEO monitoring for URLs & websites. By making our tools intuitive and easy to understand, we've helped thousands of small-business owners, webmasters and SEO professionals improve their online presence.</p>
+            </div>
+            <div class="copyright hidden-sm hidden-xs">
+            <p>Copyright  ©   2019  xip.li . All rights reserved.</p>
+            </div>
+        </div>
+        <!--
+        <div class="col-md-6 col-sm-12"> <div class="col-md-6 col-sm-6">
+            <div class="contact-info">
+            <h2 class="footer-title">Contact Info</h2>
+            
+            <div class="single"><i class="fa fa-map-marker"></i><p></p></div>
+            
+            <div class="single"><i class="fa fa-phone"></i><p></p></div>
+            
+            <div class="single"><i class="fa fa-envelope"></i><p></p></div>
+            
+            <div class="social-icon">
+            	<ul class="list-inline">
+                    <li><a href="" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="" target="_blank" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="" target="_blank" rel="nofollow"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="" target="_blank" rel="nofollow"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div> </div>
+        -->
+        <div class="col-md-3 col-sm-6 left-border">
+            <div class="navigation">
+            <h2 class="footer-title">Navigation</h2>
+            <ul class="list-unstyled">
+                <li><a href="index.html">Analyse</a></li><li><a href="http://xip.li/site-vs-site">Site vs Site</a></li><li><a href="http://xip.li/recent">Recent Sites</a></li><li><a href="http://xip.li/page/terms">Terms</a></li><li><a href="http://xip.li/page/privacy-policy">Privacy Policy</a></li><li><a href="http://xip.li/page/api">API</a></li><li><a href="http://xip.li/page/dmca">DMCA</a></li><li><a href="http://xip.li/page/disclaimer">Disclaimer</a></li><li><a href="http://xip.li/contact">Contact</a></li>            </ul>
+            </div>
+        </div>
+        
+        <div class="clearfix"></div>
+        
+        <div class="copyright visible-sm visible-xs">
+            <p>Copyright  ©   2019  xip.li . All rights reserved.</p>
+        </div>
+        
+        </div>
+        
+    </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap -->
+<script src="theme/default/js/bootstrap.min.js" type="text/javascript"></script>
+
+ <script type='text/javascript' src='theme/default/js/particleground.min.js'></script> <script type='text/javascript' src='theme/default/js/sweetalert.min.js'></script>
+
+<!-- App JS -->
+<script src="theme/default/js/app.js?v=3" type="text/javascript"></script>
+
+<!-- Master JS -->
+<script src="http://xip.li/rainbow/master-js" type="text/javascript"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-150437791-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Sign in -->
+<div class="modal fade loginme" id="signin" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Sign In</h4>
+			</div>
+            <form method="POST" action="http://xip.li/account/login" class="loginme-form">
+			<div class="modal-body">
+				<div class="alert alert-warning">
+					<button type="button" class="close dismiss">&times;</button><span></span>
+				</div>
+                				<div class="form-group connect-with">
+					<div class="info">Sign in using social network</div>
+					<a href="http://xip.li/facebook/login" class="connect facebook" title="Sign in using Facebook">Facebook</a>
+		        	<a href="http://xip.li/google/login" class="connect google" title="Sign in using Google">Google</a>  	
+		        	<a href="http://xip.li/twitter/login" class="connect twitter" title="Sign in using Twitter">Twitter</a>		        
+			    </div>
+                   				<div class="info">Sign in with your username</div>
+				<div class="form-group">
+					<label>Username <br />
+						<input type="text" name="username" class="form-input width96" />
+					</label>
+				</div>	
+				<div class="form-group">
+					<label>Password <br />
+						<input type="password" name="password" class="form-input width96" />
+					</label>
+				</div>
+			</div>
+			<div class="modal-footer"> <br />
+				<button type="submit" class="btn btn-primary pull-left">Sign In</button>
+				<div class="pull-right align-right">
+				    <a href="http://xip.li/account/forget">Forgot Password</a><br />
+					<a href="http://xip.li/account/resend">Resend Activation Email</a>
+				</div>
+			</div>
+			 <input type="hidden" name="signin" value="d8fb6b3025248f8621acb15a7bc33694" />
+             <input type="hidden" name="quick" value="242664c730168490566e75dcaf26b7fb" />
+			</form> 
+		</div>
+	</div>
+</div>  
+
+<!-- Sign up -->
+<div class="modal fade loginme" id="signup" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Sign Up</h4>
+			</div>
+			<form action="http://xip.li/account/register" method="POST" class="loginme-form">
+			<div class="modal-body">
+				<div class="alert alert-warning">
+					<button type="button" class="close dismiss">&times;</button><span></span>
+				</div>
+                				<div class="form-group connect-with">
+					<div class="info">Sign in using social network</div>
+					<a href="http://xip.li/facebook/login" class="connect facebook" title="Sign in using Facebook">Facebook</a>
+		        	<a href="http://xip.li/google/login" class="connect google" title="Sign in using Google">Google</a>  	
+		        	<a href="http://xip.li/twitter/login" class="connect twitter" title="Sign in using Twitter">Twitter</a>		        
+			    </div>
+                   				<div class="info">Sign up with your email address</div>
+				<div class="form-group">
+					<label>Username <br />
+						<input type="text" name="username" class="form-input width96" />
+					</label>
+				</div>	
+				<div class="form-group">
+					<label>Email <br />
+						<input type="text" name="email" class="form-input width96" />
+					</label>
+				</div>
+				<div class="form-group">
+					<label>Full Name <br />
+						<input type="text" name="full" class="form-input width96" />
+					</label>
+				</div>
+				<div class="form-group">
+					<label>Password <br />
+						<input type="password" name="password" class="form-input width96" />
+					</label>
+				</div>
+				</div>
+			<div class="modal-footer"> <br />
+				<button type="submit" class="btn btn-primary">Sign Up</button>	
+			</div>
+			<input type="hidden" name="signup" value="d8fb6b3025248f8621acb15a7bc33694" />
+            <input type="hidden" name="quick" value="61be108aef245cef5e64b7fbdba3ee7c" />
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- XD Box -->
+<div class="modal fade loginme" id="xdBox" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button id="xdClose" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="xdTitle"></h4>
+			</div>
+			<div class="modal-body" id="xdContent">
+
+            </div>
+		</div>
+	</div>
+</div>
+	
+            			
+</body>
+</html>

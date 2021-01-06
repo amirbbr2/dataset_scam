@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://www.recaptcha.net/recaptcha/api.js?render=6Ld3snoUAAAAAOd74jcJlLUueKSm3HpGOOzbZKYe"></script>
+  <style>
+    h2 {
+      color: green;
+    }
+    #thank_you {
+      visibility: hidden;
+    }
+    .g-recaptcha > div > div {
+      margin 10px auto !important;
+      text-align: center;
+      width: auto !important;
+      height: auto !important;
+    }
+    .center {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center
+    }
+  </style>
+</head>
+<body>
+  <script type='text/javascript' charset='utf-8'>
+    grecaptcha.ready(function() {
+      grecaptcha.execute("6Ld3snoUAAAAAOd74jcJlLUueKSm3HpGOOzbZKYe", {
+        action: 'captcha_page'
+      }).then(function(response) {
+        var xhr = new XMLHttpRequest();
+        var params = {
+          appendix: "",
+          response: response
+        };
+
+        xhr.open('GET', "/1511173/112169/recaptcha/verify?" + paramsToString(params), true);
+
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4 && xhr.status == 200) {
+            var response = JSON.parse(xhr.responseText);
+
+            document.getElementById('please_prove').style.visibility = 'hidden';
+            document.getElementById('thank_you').style.visibility = 'visible';
+            document.getElementById('site_url').innerHTML = response.url;
+            document.getElementById('site_url').setAttribute('href', response.url);
+
+            window.location.href = response.url;
+          }
+        };
+
+        xhr.send();
+      });
+
+      function paramsToString(obj) {
+        var str = [];
+        for (var p in obj)
+          if (obj.hasOwnProperty(p)) {
+            str.push(encodeURIComponent(p) + '=' + encodeURIComponent(obj[p]));
+          }
+        return str.join('&');
+      }
+    });
+  </script>
+
+  <div class='center'>
+    <div id='please_prove'>
+      <small>Please wait, before proceeding to the site, we must verify that you are not a robot.</small>
+    </div>
+    <div id='thank_you'>
+      <h2>Thank you very much!</h2>
+      Please wait a few seconds, we are redirecting you to the site <a id='site_url'></a>...
+    </div>
+  </div>
+</body>
+</html>

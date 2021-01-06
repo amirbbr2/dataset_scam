@@ -1,0 +1,876 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xmlns="//www.w3.org/1999/xhtml" translate="no"><head>
+<meta name="google" content="notranslate" />
+
+<script language="javascript" type="text/javascript">
+function disableCtrlKeyCombination(e)
+{
+	//list all CTRL + key combinations you want to disable
+	var forbiddenKeys = new Array('a','c','v','s');
+	var key;
+	var isCtrl;
+	if(window.event)
+	{ 
+		key = window.event.keyCode;     //IE
+		if(window.event.ctrlKey)
+		isCtrl = true;
+		else
+		isCtrl = false;
+	}
+	else
+	{
+		key = e.which;     //firefox
+		if(e.ctrlKey)
+		isCtrl = true;
+		else
+		isCtrl = false;
+	}
+	
+	//if ctrl is pressed check if other key is in forbidenKeys array
+	if(isCtrl)
+	{
+		for(var i=0; i <forbiddenKeys.length; i++)
+		{
+			//case-insensitive comparation
+			if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+			{
+				//alert('Key combination CTRL + '+String.fromCharCode(key) +' has been disabled.');
+				return false;
+			}
+		}
+	}
+	return true;
+}
+
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Week 1 - Week 9 Diagnostic Test Algebra 1 EOC</title>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+<META NAME="Bingbot" CONTENT="NOINDEX, NOFOLLOW">
+<link rel="canonical" href="https://www.proprofs.com/quiz-school/story.php?title=week-9-practice-test-2" />
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/api/css/new_button_style.css?v=5" media="screen" />
+<link href="/quiz-school/css/uglobal180511116_new33.css?v=73.0" rel="stylesheet" type="text/css" media="screen" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!--[if IE]>
+		<link href="/quiz-school/css/ieQMmobile.css?v=23" rel="stylesheet" type="text/css" />
+	<![endif]-->
+<!--[if !IE]><!-->
+<link href="/quiz-school/css/qm_story_paid.css?v=49.3" rel="stylesheet" type="text/css" />
+<!--<![endif]-->
+<link type="text/css" rel="stylesheet" media="screen" href="/quiz-school/css/jquery.alerts_new.css" />
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-D2VF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-D2VF');</script>
+
+</head>
+<body style="-ms-overflow-style: scrollbar; ">
+<input type="hidden" name="totalPagesInDoc" id="totalPagesInDoc" value="0" />
+<input type="hidden" name="currentPagesNum" id="currentPagesNum" value="0" />
+<style>
+		
+	
+@media only screen and (min-width : 0px) and (max-width : 767px){
+	/*.brightness_slider{ background-size:100% 100% !important;}*/
+	#qm_the_header IMG{ height:auto !important;}
+	 
+		}
+			img[data-latex]{vertical-align:middle !important; margin:0 0px !important;}			
+</style>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+<style>
+	body.opacityOff{opacity: 0;}
+ </style>
+<script>
+ 	var bodyTag	=	document.getElementsByTagName("body")[0];
+	bodyTag.addEventListener("load", offsss(), false);
+	function offsss(){						
+		document.querySelector('body').classList += ' opacityOff';
+	}
+	document.addEventListener('DOMContentLoaded', function(){
+		if( $('[hidecq]').length > 0 ){
+			$('[hidecq]').each(function(i,e){
+				$(e).parents('.required-area').hide();
+			});
+		}
+		$('body').removeClass('opacityOff');
+	});
+</script>
+<style>
+	@media only screen and (min-width : 0px) and (max-width : 767px){
+		.video_container{position:relative;padding-bottom:52.25%;padding-top:30px;height:0;overflow:hidden;margin-top:13px;}
+		.video_container iframe,.video_container object,.video_container embed{position:absolute;top:0;left:0;width:97%;height:90%;}
+		#qm_the_header IMG{ height:auto !important;}
+		}
+		@media only screen and (min-width : 1024px){
+		#qm_the_header{ margin-bottom:15px;}
+		}
+	#fancybox-inner { width:532px !important;
+	height: 150px !important; } 
+	#fancybox-outer { width:88% !important; }
+	</style>
+<style>
+	input:focus {
+    border:1px solid #3c8ac9;
+	}
+#question-bg-area input[type=text], input[type=email], input[type=password], select
+{
+	-webkit-box-shadow: inset 0 0 0px 9999px white;
+}
+	@media(min-width: 100px) and (max-width:500px) {
+		#question-desc-align SPAN, #question-desc-align, #question-box-area{
+			padding-right: 0px !important
+		}
+	}
+
+.arabic_label{
+	height:22px;
+    width:255px;
+    }
+	
+.questions_class{
+	float:left;
+	
+	}
+	
+.arabic_question{
+	 float:right;
+	 margin-right:58px;
+   }
+	
+.arabic_lang{
+	text-align:right;
+    position: relative; bottom:4px;
+    margin-right:58px;
+    direction:rtl;
+   }
+   .arabic_lang input{
+
+	   style=""
+   }
+.arabic_button{
+	
+	 text-align:right;
+	 margin-right:58px;
+	 float:right;
+   }
+   .arabic_float{
+   	float: right;
+   }
+	
+	@font-face{
+	font-family: 'gothic';
+	src: url('/var/www/web1/web/api/fonts/gothic.eot');
+
+	src: local('gothic'), url('/var/www/web1/web/api/fonts/gothic.woff') format('woff'), url('/var/www/web1/web/api/fonts/gothic.ttf') format('truetype');
+	}	 
+			@font-face {
+	font-family: 'HPSimplified';	
+	src: url('https://www.proprofs.com/api/fonts/HPSimplified.eot');
+	src: url('https://www.proprofs.com/api/fonts/HPSimplified.eot?#iefix') format('embedded-opentype'),
+	url('https://www.proprofs.com/api/fonts/HPSimplified.woff') format('woff'),
+	url('https://www.proprofs.com/api/fonts/HPSimplified.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;		 
+		 
+	}	 
+	
+	
+@font-face {
+		 font-family: 'HPSimplified Bold';	
+	src: url('https://www.proprofs.com/api/fonts/HPSimplified Bold.eot');
+	src: url('https://www.proprofs.com/api/fonts/HPSimplified Bold.eot?#iefix') format('embedded-opentype'),
+	url('https://www.proprofs.com/api/fonts/HPSimplified Bold.woff') format('woff'),
+	url('https://www.proprofs.com/api/fonts/HPSimplified Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;		
+	}
+	
+	
+	@font-face {
+						  font-family: 'Lobster Two';
+						  font-style: normal;
+						  font-weight: 400;
+						  src: local('Lobster Two'), local('LobsterTwo'), url(https://themes.googleusercontent.com/static/fonts/lobstertwo/v5/Law3VVulBOoxyKPkrNsAaIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+						}	
+						
+						@font-face {
+  font-family: 'Rammetto One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rammetto One Regular'), local('RammettoOne-Regular'), url(https://themes.googleusercontent.com/static/fonts/rammettoone/v3/mh0uQ1tV8QgSx9v_KyEYPHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+				@font-face {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Philosopher'), url(https://themes.googleusercontent.com/static/fonts/philosopher/v5/OttjxgcoEsufOGSINYBGLYbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 700;
+
+  src: local('Philosopher Bold'), local('Philosopher-Bold'), url(https://themes.googleusercontent.com/static/fonts/philosopher/v5/napvkewXG9Gqby5vwGHICDqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Philosopher';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Philosopher Italic'), local('Philosopher-Italic'), url(https://themes.googleusercontent.com/static/fonts/philosopher/v5/_9Hnc_gz9k7Qq6uKaeHKmdkZXW4sYc4BjuAIFc1SXII.woff) format('woff');
+}
+@font-face {
+  font-family: 'Philosopher';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Philosopher Bold Italic'), local('Philosopher-BoldItalic'), url(https://themes.googleusercontent.com/static/fonts/philosopher/v5/PuKlryTcvTj7-qZWfLCFIARV2F9RPTaqyJ4QibDfkzM.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Karma';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karma Regular'), local('Karma-Regular'), url(https://fonts.gstatic.com/s/karma/v2/xNwY0rzBXIEoSeEnAAbQCg.woff) format('woff');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karma';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karma Regular'), local('Karma-Regular'), url(https://fonts.gstatic.com/s/karma/v2/E4YVLCG37sfvbHtA5q6EAQ.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+	
+#question-box-area { background-color:#FFF; }
+</style>
+<style type="text/css">
+	.brightness_slider{ background-color:#ffffff !important; opacity:1 ; min-height:100%; min-width:100%; z-index:-5; top:0; left:0; position:fixed; filter:brightness(100%); -webkit-filter:brightness(100%) }
+	
+	.brightness_slider_edge{ background-color:#ffffff !important; opacity:1 ; min-height:100%; min-width:100%; z-index:-5; top:0; left:0; position:fixed; }
+	
+	#question-box-area  { background-color:transparent; border:none !important;}
+	.qnumber, .qTitle, #question-bg-area, FORM, .qnumber { background:transparent !important; text-align:left; }
+	#qm_the_header IMG { max-width:100% !important; }
+	.questions_class, .m_timers, .qnumber, .required_box STRONG { color:#080808 !important; }	
+		
+	</style>
+<style>
+	.qnumber, .m_timers{font-weight: normal !important;}
+/*#m_main-wrapper{margin: 50px auto 0px !important;}*/
+@media only screen and (max-width: 500px) {
+	.user_email{ width: 224px !important} 
+}
+@media only screen and (max-width: 700px) {
+	#m_main-wrapper{ margin-top:6px!important} 
+}
+
+
+</style>
+
+<div id="brightness_slider" class="brightness_slider"></div>
+<div id="m_main-wrapper" style=" ;">
+<div id="question-box-area">
+<div id="qm_the_header" class="story_header_text" style="min-height:0px; width:auto; padding:0px; padding-left:5%; background-color:#transparent;">
+<div>
+<span style=" vertical-align:middle; color:#000000; font-family:Roboto,sans-serif; font-size:14px ;"></span>
+</div>
+</div>
+
+<h1 class="qTitle" style="color:#080808; font-family:Verdana; font-size:20px;">Week 1 - Week 9 Diagnostic Test Algebra 1 EOC</h1>
+<div class="qnumber " style="color: #080808 !important ; background:#fff;">
+<div class="" style="float:left; font-family:Verdana">
+25 Questions
+</div>
+<div style="float:right; margin-right:5px;">
+<span style="color:#707070; font-size:15px; font-weight:bold;" class="m_timers">
+80&nbsp;Minutes
+</span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+<div id="question-bg-area">
+
+<style type="text/css">
+				#question-desc-align SPAN, #question-desc-align, #question-box-area
+				{
+					color:#080808 !important;
+					font-family:Verdana !important;
+					font-size:18px !important;
+					padding-right: 50px;
+				}
+				#question-desc-align SPAN {padding-right: 0;}
+				</style>
+ <style type="text/css">
+           .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 700px; margin-bottom:10px; width:100%; } 
+                       .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+           </style>
+<div class="question-desc" id="question-desc-align" style="margin-right:56px; ">
+<span style="text-align:;">
+<strong><span style="background-color:#ecf0f1;">Every question matters!</span><br><span style="background-color:#ecf0f1;">Take your time!</span><br><span style="background-color:#ecf0f1;">Do your best and don't settle and let a question beat you!</span><br><span style="background-color:#ecf0f1;">The harder you work the luckier you get! FACT</span></strong>
+</span>
+</div>
+<div class="clear"></div>
+<div id="errorInfoDiv" style="border-color: rgb(0, 0, 0); display: none; color: #444;margin: 0;padding: 0; margin-left:0px; max-width:50%; min-width:290px;">
+<div id="errorInfo" align=""><span id="errormsg"></span></div>
+</div>
+
+<style>
+                @media only screen  and (max-width: 500px) and (min-width: 300px){ .marg_add{ margin-left: 0px; } }
+                #required_email{ padding: 2px !important; }
+				.setting_drop{background-color:#EEE;cursor:pointer;width:42px; height:22px; float:right}
+				.story-setting{width:207px; float:right}
+				.label_setting{margin-top: 2px;}
+				.setting_drop:hover{background-color:#E6E6E6;}
+				#show-pop{width:208px; border:1px solid rgba(0,0,0,0.2); min-height:70px;position:absolute; background:#FFFFFF; display:none; z-index:1000;}
+				label.label_setting { float: left; font-weight: bold;font-size: 12px; margin-left: 11px;	}
+				#messageupdate {background-color: #EEEEEE!important;border: 1px solid #EEEEEE;float: left;color: #4d4d4d;display: none;font-size: 12px;
+					   height: 35px;padding: 2px 0 0 10px;font-weight: normal;font-family: Helvetica,Arial,sans-serif;
+				}
+				.select-box{float:left; margin:-4px 0px 2px 3px}
+				.select-box select{width: 57px; padding:1px;}
+				.label_Hover {float: left; margin-left:3px; width:194px;font-size: 12px;font-family: Helvetica,Arial,sans-serif;padding: 6px;	font-weight: normal;}
+				input[type="submit"] {	-webkit-appearance: none;  }
+				</style>
+<noscript>
+							<style type="text/css">
+                            .quizstartForms{ display:none;}
+                            </style>
+                                                       <meta http-equiv="refresh" content="0;url=/quiz-school/story.php?title=week-9-practice-test-2&sc=1">
+                                                   </noscript>
+<form id="quizstartForm" class="quizstartForms 1" name="quizstartForm" action="/quiz-school/quizstart.php" method="POST" onsubmit="return startQuiz();">
+<input name="start" value="True" type="hidden" />
+<input type="hidden" name="ql" value="0" id="ql" class="ql">
+<input type="hidden" name="quiz_language" id="quiz_language" value="en">
+<input type="hidden" name="iframe_width_value_final" id="iframe_width_value_final" value="" />
+<input type="hidden" name="id" id="id" value="2329970" />
+<input type="hidden" name="q_from" id="q_from" value="story" />
+<input type="hidden" name="title" id="title" value="week-9-practice-test-2" />
+<input type="hidden" name="save_lead_form_value" id="save_lead_form_value" value="0">
+<input name="quiz_required_name" id="quiz_required_name" type="hidden" value="1" />
+<input name="quiz_required_email" id="quiz_required_email" type="hidden" value="0" />
+<input name="quiz_required_id" id="quiz_required_id" type="hidden" value="1" />
+<input name="quiz_required_phone" id="quiz_required_phone" type="hidden" value="0" />
+<input name="quiz_required_address" id="quiz_required_address" type="hidden" value="0" />
+<input name="quiz_required_custom" id="quiz_required_custom" type="hidden" value="0" />
+<input type="hidden" name="Validate_name" id="Validate_name" value="" />
+<input type="hidden" name="Validate_id" id="Validate_id" value="Please enter your ID" />
+<input type="hidden" name="Validate_email" id="Validate_email" value="Please enter your email-Id " />
+<input type="hidden" name="Invalid_email" id="Invalid_email" value="Invalid email ID" />
+<input type="hidden" name="Validate_phone" id="Validate_phone" value="Please enter your phone no" />
+<input type="hidden" name="Validate_address" id="Validate_address" value="Please enter your address" />
+<input type="hidden" name="Validate_password" id="Validate_password" value="This content is protected by the author by an additional access password.
+Please enter the quiz password or contact quiz author" />
+<input type="hidden" name="max_attempt_validation" id="max_attempt_validation" value="You have reached the maximum number of allowed attempts. Contact the instructor to re-take quiz." />
+<input type="hidden" name="partial_attempt_count" id="partial_attempt_count" value="0" />
+<input type="hidden" value="100000" id="att_count" name="att_count" class="user_name">
+<input type="hidden" name="quiztype" id="quiztype" value="SQ" />
+<input type="hidden" name="OK" id="OK" value="OK" />
+<input type="hidden" name="quizid" id="quizid" value="2329970" />
+<input type="hidden" name="hid_test" id="hid_test" value="" />
+<input type="hidden" name="iprange" id="iprange" value="false" />
+<input type="hidden" name="iprange_sec" id="iprange_sec" value="0" />
+<input type="hidden" name="author_customer" id="author_customer" value="1" />
+<input type="hidden" name="checktitle" id="checktitle" value="1" />
+<input type="hidden" name="course_attempt_id" id="course_attempt_id" value="" />
+<input type="hidden" name="cookie_index" id="cookie_index" value="" />
+<input type="hidden" name="minimum_skipping_mark" id="minimum_skipping_mark" value="" />
+<input type="hidden" name="parms_classroom" id="parms_classroom" value="" />
+<input type="hidden" name="data_carrier" id="data_carrier" value="" />
+<input type="hidden" name="cqi" id="cqi" value="0" />
+<input name="quiz_required_pwd" type="hidden" id="quiz_required_pwd" value="0" />
+<input type="hidden" id="user_from_course" name="user_from_course" value="0" />
+
+<div class="required-area" style="display:;">
+<div class="">
+<div id="user_name_required" class="b 2">
+<strong><label id="user_name" for="user_name">Name</label></strong><br />
+<input type="text" class="user_name" name="usrname" id="usrname" value="" placeholder="First Name" style="width: 124px;" maxlength="40" aria-labelledby="user_name">
+<input type="text" class="lastname" name="lastname" id="lastname" placeholder="Last Name" value="" style="width: 124px;" maxlength="40" aria-labelledby="user_name">
+<input type="hidden" value="First Name" id="first_name" name="first_name" class="user_name">
+<input type="hidden" value="" id="last_name" name="last_name" class="user_name">
+<input type="hidden" value="Please enter first and last name" id="name_validation" name="name_validation" class="user_name">
+</div>
+</div>
+</div>
+<div class="clear"></div>
+
+<div class="required-area" style="display:;">
+<div class="">
+<strong>Student ID</strong><br />
+<input class="user_id" autocomplete="off" name="required_id" id="required_id" value="" style=" " type="text" placeholder="Student ID"> </div>
+</div>
+
+<div class="clear"></div>
+<input type="hidden" name="totalCustomQuestion" id="totalCustomQuestion" value="0" />
+<input type="hidden" name="cannot_skipped" id="cannot_skipped" value="This question marked as required to provide an answer" />
+
+<input name="manage_user_id" type="hidden" id="manage_user_id" value="1200463" />
+<input name="quiz_manage_users_value" type="hidden" id="quiz_manage_users_value" value="0" />
+<input name="check_manage_user" type="hidden" id="check_manage_user" value="0" />
+<div class="clear"></div>
+<div class="required-area" style="display:;">
+<div id="changing-2329970"></div>
+</div>
+<input type="hidden" name="save_resume_hid" id="save_resume_hid" value="0" />
+<input type="hidden" name="uid" id="uid" value="" />
+<div class=" marg_add 1" style="width:auto;">
+<style type="text/css">
+						@media only screen 
+							and (max-width : 319px)
+							and (min-width:200px ){
+								.btn_class { margin-left: 3px !important; }
+								.the_btn_pre{ margin-left: 3px !important; }
+								.loader_styl{ position: unset; }
+							}
+
+						@media only screen 
+							
+							(min-width:300px ){
+								.btn_class { margin-left: 3px !important; }
+								.the_btn_pre{ margin-left: 0px !important; }
+							}
+							
+							.loader_styl{
+								background-color: #fff;
+							  	border-radius: 12px;    
+							    background-position: center;    
+							    background-size: 100%;
+							    height: 25px;
+							    width: 25px;
+							    background-repeat: no-repeat;
+							    float: left;
+							    margin: 7px 0 0 5px;
+							    position: absolute;
+							    z-index: 9000;
+							    display:none;
+							}
+						.the_btn_pre {
+							color: #FFFFFF;
+							font-size: 16px !important;
+							/*padding:10px 52px !important;*/
+							text-decoration: none !important;
+							border-radius: 2px !important;
+							float: left;
+							
+							cursor:pointer;
+							font-weight:normal;
+							background-image: none !important;
+							min-width: 125px !important;
+							height: 42px !important;
+							/*background:url(/quiz-school/img/layout/alert-overlay.png) !important;*/
+							/*text-shadow:0 -1px 1px rgba(0,0,0,0.25);*/
+							/*box-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px 0px;*/
+							background:#000306 !important;
+							color:#ffffff  !important;
+							border:0px solid #000306 !important;
+							font-family:Verdana !important;
+							}
+							.the_btn_pre:hover,.the_btn_pre:focus{opacity:0.9;}
+							input[type="submit"] {	-webkit-appearance: none;  }
+						</style>
+<input type="submit" style="color:#000;" onSubmit="startQuiz();" class="the_btn_pre" style="margin-left:0px;" value="Begin Test" title="Begin Test" />
+<span id="loadershow" class="loader_styl"><img src="/quiz-school/loader.gif" border="0" style="margin:4px 0px 0px 5px;" alt="Please wait..."></span>
+<span class="addUserErr" id="addUserErr" style="float: none;color: red;margin: 9px 0px 0px 7px; display:none;">Unable to allow access temporarily. Please contact the instructor.</span>
+</div>
+<div class="clear"></div>
+<input name="daysDiff" value="2606" type="hidden" />
+</form>
+
+<div class="clear"></div>
+</div> 
+
+<style type="text/css">
+#powerdlnk{
+font-family: Arial Bold; 
+text-decoration: none;
+
+color: #AAAAAA;
+}
+
+.new_powered{
+ color: #AAAAAA;
+    float: right;
+    font-size: 12px;
+    text-align: right;
+
+}
+
+.new_powered:hover{
+color: #3b5998;
+}
+.new_powered:hover #powerdlnk{
+color:#3b5998;
+}
+#powrdby_new_footer{
+	border: medium none !important;
+    font-size: 11px;
+    height: 52px;
+    margin:-2px auto 0;
+	padding-left: 2px;
+    text-align: center;
+    width: 950px;
+}
+#m_powrdby_new_footer{
+	border: medium none !important;
+    font-size: 11px;
+    height: 52px;
+    margin:-2px auto 0;
+	padding-left: 2px;
+    text-align: center;
+	bottom:0;
+	left:0;
+	/*position:fixed;*/
+}
+
+.new_powered {
+    background: url("/quiz-school/img/poweredimg.png") no-repeat scroll 2px 1px transparent;
+height: 30px;
+padding: 12px 0px 0px 17px;
+margin: auto;
+width:100px;
+}
+#m_powrdby_new_footer { background-color:transparent !important; }
+</style>
+<div class="clear"></div>
+<div id="m_powrdby_new_footer" style="width:99%">
+<div style="border-bottom: 1px solid; color: rgb(235, 235, 235); margin: 4px 40px;"></div>
+<div style="padding-right: 40px; height: 35px; padding-top: 15px;">
+<a target="_blank" title="Create your own online quiz" href="/quiz-school/create-a-quiz/?utm_source=Powered_by&utm_medium=Embed_link&utm_campaign=Measuring_powered_by" style="" id="powerdlnk" style="margin-top: -10px; float: left;">
+<div class="new_powered">
+
+</div>
+</a>
+</div>
+</div>
+
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+
+<div id="footer">
+
+
+</div>
+
+
+
+
+
+
+<script src="/quiz-school/js/jquery/1.8.3/jquery.min.js"></script>
+<script src="/quiz-school/js/jquery.placeholder.js"></script>
+
+<script language="javascript" src="/quiz-school/js/quizpwd_ub.js?v=314"></script>
+<script type="text/javascript" src="/quiz-school/js/changeStatus4.js"></script>
+<script type="text/javascript" src="/quiz-school/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/quiz-school/js/jquery.alerts_new.js"></script>
+<link type="text/css" href="/quiz-school/css/d_attempt.css" rel="stylesheet" media="screen" />
+<link rel="stylesheet" type="text/css" href="/quiz-school/customize_embed/customize-embed.css" />
+<script type="text/javascript" src="/api/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
+<script type="text/javascript" src="/api/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/api/fancybox/jquery.fancybox-1.3.1.css" media="screen">
+<script>
+                       $(function() {
+                               $('input, textarea').placeholder({customClass:'my-placeholder'});
+                           
+                       });
+               </script>
+<script type="text/javascript">   
+		
+		$("a.forgot_password").fancybox({
+		'scrolling'     : 'no',
+		'autoDimensions': false,
+		'autoScale'     : false,
+		'width'         : 600,
+		'height'        : 'auto',
+		'transitionIn'  : 'none',
+		'transitionOut'	: 'none'
+	
+		});
+		
+		$("a.change_password").fancybox({
+			'scrolling'     : 'no',
+			'autoDimensions': false,
+			'autoScale'     : false,
+			'width'         : 600,
+			'height'        : 'auto',
+			'transitionIn'  : 'none',
+			'transitionOut'	: 'none'
+		
+		});
+		
+		function save_mode(){
+		  $("#messageupdate").fadeIn(30).fadeOut(4000);
+		}
+		
+		function show_loader() {
+			document.getElementById('loadershow').style.display = 'inline';			
+			
+		}
+		
+		function resizeImg() {
+			var maxWidth = 500;
+			for(var i=0; imgEle=document.getElementsByTagName('img')[i];i++){
+				if (imgEle.width > maxWidth){ imgEle.height = Math.round(((maxWidth)/imgEle.width)*imgEle.height); imgEle.width = (maxWidth); }
+				imgEle.style.visibility='visible';
+			}   
+		}
+		
+		 function enabletitle1()
+            {
+              $('.us_preview').tipsy({gravity: 's'});    
+            }
+            
+		$(document).ready(function() { 
+		                   $("#show_instruction").live("click", function(e){
+                e.preventDefault();
+                $('#basic-modal-content').modal({
+                    maxHeight: 330,
+                    maxWidth: 780                                
+                });
+            });
+            
+            $("#give-feedback").live("click", function(e){
+			 $.fancybox({				
+						'autoScale'        : false,
+						'autoDimensions'   : false,
+						'transitionIn'     : 'none',
+						'transitionOut'    : 'none',
+						'width'            : 550,
+						'height'           : 425,		
+						'titleShow'        : false,
+						'centerOnScroll'   : true,
+						'href'             : '#boxes',
+						'onClosed': function() { 
+								$('#feedback-form input').val('');
+								$('#feedback-form textarea').val('');
+								$('#feedback-form span').empty();
+								$('#feedback-form select').val('none');
+								}     
+						});	
+			 
+                        });
+						
+				$(".us_share").live("click", function(e) {
+					var link = $(this).attr('rel');
+					$.fancybox({
+					'autoScale'        : false,
+					'autoDimensions'   : false,
+					'transitionIn'    : 'none',
+					'transitionOut'    : 'none',
+					'width'        : 700,
+					'height'        : 250,
+					'titleShow' : false,
+					'href'      : link
+					});
+				});	
+									
+				$("#share_embed").live("click", function(e){
+					var link = $(this).attr('rel');
+					$.fancybox({
+					'autoScale'        : false,
+					'autoDimensions'   : false,
+					'transitionIn'    : 'none',
+					'transitionOut'    : 'none',
+					'width'        : 700,
+					'height'        : 250,
+					'titleShow' : false,
+					'href'      : link
+					});
+				});	
+            
+           $("#cancel_my_subscription").live("click", function(e){
+            e.preventDefault();
+			$.modal.close();
+			$('#ppquizmaker_upgrade_message').modal({
+                maxHeight: 500,
+                maxWidth: 800                               
+            });
+		   });
+		   
+		   $("#show_cancel").live("click", function(e){
+            e.preventDefault();
+			
+			$('#show_cancel_instruction').modal({
+                maxHeight: 236,
+                maxWidth: 800                               
+            });
+		   });
+		   
+		    $("#procced_to_cancel").live("click", function(e){
+            e.preventDefault();
+				$.modal.close();
+			$('#show_cancel_instruction_1').modal({
+                maxHeight: 325,
+                maxWidth: 800                               
+            });
+		   });
+		   
+		   $("#procced_to_cancel_1").live("click", function(e){
+            e.preventDefault();
+				$.modal.close();
+			$('#show_cancel_instruction_2').modal({
+                maxHeight: 440,
+                maxWidth: 800                               
+            });
+		   });
+		  
+		   $("#cancel_close").live("click", function(e){
+            e.preventDefault();
+				$.modal.close();
+		   });
+		   
+		      
+		    $("#show_reactivate_instructions").live("click", function(e){
+                e.preventDefault();
+                $('#basic-modal-content-reactivate').modal({
+                    maxHeight: 290,
+                    maxWidth: 780                                
+                });
+            });
+            
+            $("#show_change_password_instructions").live("click", function(e){
+                e.preventDefault();
+                $('#basic-modal-content-change-password').modal({
+                    maxHeight: 200,
+                    maxWidth: 400                                
+                });
+            });
+            
+            $("#show_notification_instruction").live("click", function(e){
+                e.preventDefault();
+                $('#basic-modal-content-notification').modal({
+                    maxHeight: 340,
+                    maxWidth: 780                                
+                });
+            });
+            
+             $("#invoice_modal_show").live("click", function(e){
+                e.preventDefault();
+                $('#show_invoice_list_in_popup').modal({
+                    maxHeight: 150,
+                    maxWidth: 550                                
+                });
+            });
+			$("a.redlink").live("click",function()
+			{
+			    var quiz_id = $(this).attr('id');
+			   jConfirm('Are you sure you want to delete this quiz?','Delete Quiz ?',function(r)
+			   {
+			      if(r == true)
+				  {
+				   	window.location.href = "QS_delete.php?id="+quiz_id;
+					
+				  }
+				  if(r == false)
+				  {
+				    return false;
+				  }
+			   });
+			});
+       
+	   
+			
+		$( "#setting-pop" ).click( function(e) {
+		  $( "#show-pop" ).toggle();
+		  e.stopPropagation();
+		})
+		
+		$(document).click(function(e) {
+			if (!$(e.target).is('#show-pop, #show-pop *')) {
+				$("#show-pop").hide();
+			}
+		});
+	  
+		 $( ".label_Hover" ).mouseover(function() {
+			 $(this).css("background-color",'#E9E9E9');
+		  }).mouseout(function() {
+			 $(this).css("background-color","");
+		});
+  
+  
+  
+	
+ 
+        });
+		
+	
+	
+	$.removeCookie("sp_min2329970");
+	$.removeCookie("sp_sec2329970");//Remove time cookeis
+	$.removeCookie("sp_sec2329970", {path: '/quiz-school'});//Remove time cookeis
+	
+		
+	 
+</script>
+<style type="text/css">@media (max-width: 480px){.mob_resume_quiz{margin-left: 45px !important;}}</style>
+<div style="display:none">
+<div id="PauseAndResume">
+<div id="step">
+<div class="selleracounttop"></div>
+<div class="mainaccountbox" style="padding: 10px; width:250px; margin-top:0">
+<div style="width: width:603px;">
+<div />
+<div style=" padding:7px 0px 0px 0px; margin-top:11px; border-radius:5px; moz-border-radius:5px; webkit-border-radius:5px; height:85px;">
+<div style="padding-left: 0px;  margin-top: 0px;">
+<div class="mob_resume_quiz" style=" float: left; width: 180px; margin-left: 21px; ">
+<p style="margin-bottom: 10px;">Previous session detected</p>
+<p style="color: rgb(255, 255, 255); border-radius: 5px 5px 5px 5px; padding: 8px 15px;" class="btn_class btn-big primary" onclick="submit_p_form();">Resume Quiz </p>
+</div>
+</div>
+</div>
+</div>
+ </div>
+</div>
+</div>
+</div>
+
+</div>
+<script>
+ $( document ).ready(function() { 
+
+ 	$(".get_find_on_inner img").addClass("findimg");
+ 		var data_url=$(".get_find_on_inner img").attr('scr');
+ 	$(".get_find_on_inner img").attr("data-src",data_url);
+
+ var docmode = document.documentMode;
+         if($.browser.version<='9.0' && (docmode==8 || docmode==9 || docmode==7 )){
+                if ( window.location !== window.parent.location ) {
+                               $('#m_main-wrapper').css('width','100%');
+                               $('#question-box-area').attr('style','width: 100% !important');
+                               
+                       }
+                 }
+				 
+				var res = navigator.appVersion.match(/Edge/g);
+				if(res=='Edge')
+				{
+					$('#brightness_slider').removeClass('brightness_slider');
+					$('#brightness_slider').addClass('brightness_slider_edge');
+				}
+				 
+        });
+
+ </script>
+<script type="text/javascript">
+
+</script>
+<script type="text/javascript" src="/quiz-school/js/jquery.lazyload.js"></script>
+
+</body>
+</html>
+<style>
+	.story_inline_error{color: #D8000C;margin-bottom: 5px;}
+	.required-area input[type='password']{margin-top: 10px !important;}
+</style>

@@ -1,0 +1,1332 @@
+/*-------------------------------------------------------------------------
+ Top Paage PC Common
+--------------------------------------------------------------------------*/
+/* clearfix */
+.top-visual .container,
+.urgency dl,
+.ser-mer,
+.top-pp,
+.product-info,
+.product-info-primary-main,
+.product-info-secondary-loan,
+.product-info-secondary-personal,
+.tw-fb-btn {
+    *zoom: 1;
+}
+.top-visual .container:before, .top-visual .container:after,
+.urgency dl:before,
+.urgency dl:after,
+.ser-mer:before,
+.ser-mer:after,
+.top-pp:before,
+.top-pp:after,
+.product-info:before,
+.product-info:after,
+.product-info-primary-main:before,
+.product-info-primary-main:after,
+.product-info-secondary-loan:before,
+.product-info-secondary-loan:after,
+.product-info-secondary-personal:before,
+.product-info-secondary-personal:after,
+.tw-fb-btn:before,
+.tw-fb-btn:after {
+    content: "";
+    display: table;
+}
+.top-visual .container:after,
+.urgency dl:after,
+.ser-mer:after,
+.top-pp:after,
+.product-info:after,
+.product-info-primary-main:after,
+.product-info-secondary-loan:after,
+.product-info-secondary-personal:after,
+.tw-fb-btn:after {
+    clear: both;
+}
+
+/* hidetext */
+.shoppingrevo li a,
+.cashing li a,
+.applepay li a,
+.nsa li a,
+.point-service li a,
+.profit-info li a,
+.sub-qr li,
+.tw-fb-btn li a {
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+/*-------------------------------------------------------------------------
+  Top page For PC Style (640px Over)
+--------------------------------------------------------------------------*/
+/* Top Main Visual*/
+.top-visual {
+    padding-top: 10px;
+    overflow: hidden;
+    background: url(http://www.aplvs.com/images/bg_visual.gif) 0 100% repeat-x;
+    height: 450px;
+}
+
+.top-visual .container {
+    padding: 0 10px;
+    background: none;
+}
+
+.top-primary {
+    width: 200px;
+    float: left;
+}
+.top-primary .login-box {
+    background-color: #FFF;
+    line-height: 1.5;
+}
+
+.top-secondary {
+    width: 700px;
+    float: right;
+}
+
+/*-------------------------------------------------------------------------
+ Module Urgency-box
+--------------------------------------------------------------------------*/
+.urgency {
+    background: transparent url(http://www.aplvs.com/images/urgency-mark.png) no-repeat 14px 16px;
+}
+.urgency dl {
+    margin-left: 50px;
+}
+.urgency dl dt {
+    float: left;
+    width: 135px;
+}
+.urgency dl dd {
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+.urgency dl dd:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+/*-------------------------------------------------------------------------
+ Module Usage-details (Box Transform Button)
+--------------------------------------------------------------------------*/
+.usage-details {
+    border: solid 2px #af7d00;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 1.5em;
+}
+.usage-details a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+.usage-details a span {
+    padding-left: 0.5em;
+    background: transparent url(../images/icon-arrow-bk.png) no-repeat 0 45%;
+}
+.usage-details a:hover {
+    color: #af7e00;
+}
+
+/*-------------------------------------------------------------------------
+ Module Top layout
+--------------------------------------------------------------------------*/
+.top-mod {
+    position: relative;
+    margin-bottom: 4em;
+}
+
+.top-mod-title {
+    border-bottom: solid 2px #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-size: 2rem;
+}
+
+.top-mod-title_02 {
+    padding-bottom: 30px;
+}
+
+.trans-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent url(../images/icon-arrow-bk.png) no-repeat 0 45%;
+    padding-left: 0.8em;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.trans-btn_02 {
+    top: 23px;
+}
+
+/*-------------------------------------------------------------------------
+ Recommendation
+--------------------------------------------------------------------------*/
+.top-rec p {
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+}
+.top-rec .top-rec-img img {
+    width: 220px;
+    height: auto;
+}
+
+/*-------------------------------------------------------------------------
+ Service Merit
+--------------------------------------------------------------------------*/
+.ser-mer li {
+    float: left;
+    text-align: center;
+    margin-right: 8px;
+}
+.ser-mer li:last-child {
+    margin-right: 0;
+}
+.ser-mer li a {
+    background: transparent url(../images/index_symbol.png) no-repeat 50% 0;
+    display: block;
+    width: 110px;
+    padding-top: 96px;
+    color: #333;
+    text-decoration: none;
+    height:0px;
+    vertical-align:middle;
+
+}
+.ser-mer li a:hover {
+    color: #af7e00;
+}
+
+.ser-mer li a.ser-mer-symbol01 {
+    background-position: 50% 0px;
+}
+.ser-mer li a.ser-mer-symbol02 {
+    background-position: 50% -96px;
+}
+.ser-mer li a.ser-mer-symbol03 {
+    background-position: 50% -192px;
+}
+.ser-mer li a.ser-mer-symbol04 {
+    background-position: 50% -288px;
+}
+.ser-mer li a.ser-mer-symbol05 {
+    background-position: 50% -384px;
+}
+.ser-mer li a.ser-mer-symbol06 {
+    background-position: 50% -480px;
+}
+
+/*-------------------------------------------------------------------------
+ Shopping Revo & Cashing
+--------------------------------------------------------------------------*/
+.top-revo {
+    width: 342px;
+    float: left;
+}
+
+.top-nsa {
+    width: 342px;
+    float: right;
+}
+
+.top-cashing {
+    width: 342px;
+    float: left;
+}
+
+/* Shoppping revo */
+.revo {
+    position: relative;
+    height: 113px;
+}
+.revo li a {
+    display: block;
+    width: 342px;
+    height: 103px;
+    background: transparent url(http://www.aplvs.com/images/index_revo.png) no-repeat 0 0;
+    position: absolute;
+}
+.revo li a:hover {
+    opacity: 0.8;
+}
+
+/* NSA */
+.nsa {
+    position: relative;
+    height: 113px;
+}
+.nsa li {
+    margin-bottom: 10px;
+}
+.nsa li a {
+    display: block;
+    width: 342px;
+    height: 103px;
+    background: transparent url(http://www.aplvs.com/images/index_nsa.png) no-repeat 0 0;
+    position: absolute;
+}
+.nsa li a:hover {
+    opacity: 0.8;
+}
+
+/* Apple Pay */
+.applepay {
+    position: relative;
+    height: 113px;
+}
+.applepay li {
+    margin-bottom: 10px;
+}
+.applepay li a {
+    display: block;
+    width: 342px;
+    height: 103px;
+    background: transparent url(../images/index_applepay.jpg) no-repeat 0 0;
+    position: absolute;
+}
+.applepay li a:hover {
+    opacity: 0.8;
+}
+
+/* anshin */
+.anshin {
+    position: relative;
+    height: 113px;
+}
+.anshin li {
+    margin-bottom: 10px;
+}
+.anshin li a {
+    display: block;
+    width: 342px;
+    height: 103px;
+    background: transparent url(http://www.aplvs.com/images/sub-anshin-bg.jpg) no-repeat 0 0;
+    position: absolute;
+}
+.anshin li a:hover {
+    opacity: 0.8;
+}
+
+/* security */
+.security {
+    position: relative;
+    height: 113px;
+}
+.security li {
+    margin-bottom: 10px;
+}
+.security li a {
+    display: block;
+    width: 342px;
+    height: 103px;
+    background: transparent url(http://www.aplvs.com/images/sub-3dsecure-bg.jpg) no-repeat 0 0;
+    position: absolute;
+}
+.top-trim-img.security a:hover {
+    opacity: 0.8;
+}
+
+/* Cashing */
+.cashing {
+    position: relative;
+    height: 113px;
+}
+.cashing li a {
+    display: block;
+    width: 342px;
+    height: 103px;
+    background: transparent url(../images/index_cashing.png) no-repeat 0 0;
+    position: absolute;
+}
+.cashing li a:hover {
+    opacity: 0.8;
+}
+.security:hover {
+    opacity: 0.8;
+}
+
+
+/*-------------------------------------------------------------------------
+ Point Service & Profit Info
+--------------------------------------------------------------------------*/
+.top-point {
+    width: 460px;
+    float: left;
+}
+
+.top-profit {
+    width: 225px;
+    float: right;
+}
+
+/* Point Service */
+.point-service {
+    position: relative;
+    height: 170px;
+}
+.point-service li a {
+    display: block;
+}
+.point-service li a:hover {
+    opacity: 0.8;
+}
+.point-service li:nth-child(1) a {
+    /* T-POINT */
+    width: 225px;
+    height: 100px;
+    background: transparent url(../images/index_point_bnr01.png) no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.point-service li:nth-child(2) a {
+    /* T-POINT Campaign*/
+    width: 225px;
+    height: 60px;
+    background: transparent url(../images/index_point_bnr02.png) no-repeat 0 0;
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+.point-service li:nth-child(3) a {
+    /* Point Service */
+    width: 225px;
+    height: 100px;
+    background: transparent url(../images/index_point_bnr03.png) no-repeat 0 0;
+    position: absolute;
+    top: 0;
+    left: 235px;
+}
+.point-service li:nth-child(4) a {
+    /* Present 2013 */
+    width: 225px;
+    height: 60px;
+    background: transparent url(../images/index_point_bnr04.png) no-repeat 0 0;
+    position: absolute;
+    top: 110px;
+    left: 235px;
+}
+
+/* Profit Info */
+.profit-info li {
+    margin-bottom: 10px;
+}
+.profit-info li:last-child {
+    margin-bottom: 0;
+}
+.profit-info li a {
+    width: 220px;
+    height: 50px;
+    display: block;
+    background: transparent url(../images/index_profit_bnr.png) no-repeat 0 0;
+}
+.profit-info li a:hover {
+    opacity: 0.8;
+}
+.profit-info li:nth-child(1) a {
+    /* Entertainment and Ticket*/
+    background-position: 0 0;
+}
+.profit-info li:nth-child(2) a {
+    /* Travel */
+    background-position: 0 -50px;
+}
+.profit-info li:nth-child(3) a {
+    /* Shopping */
+    background-position: 0 -100px;
+}
+
+/*-------------------------------------------------------------------------
+ Product info
+--------------------------------------------------------------------------*/
+.product-info p {
+    line-height: 1.5;
+}
+
+/* Product info Primary */
+.product-info-primary {
+    width: 444px;
+    float: left;
+}
+
+.product-info-primary-main {
+    margin-bottom: 2em;
+}
+.product-info-primary-main .product-info-primary-main-img {
+    float: left;
+    margin-right: 2em;
+}
+
+/* Product info Secondary */
+.product-info-secondary {
+    width: 220px;
+    float: right;
+}
+.product-info-secondary img {
+    margin-bottom: 0.5em;
+}
+
+.product-info-secondary-loan {
+    margin-bottom: 2em;
+}
+
+/*-------------------------------------------------------------------------
+ Aside(Banner and Utility) for Official Site Top
+--------------------------------------------------------------------------*/
+/* Banner Area */
+.top-sub {
+    border-bottom: dotted 1px #333;
+}
+.top-sub li {
+    border-top: dotted 1px #333;
+    padding: 15px 0;
+}
+.top-sub li a {
+    margin-bottom: 0;
+}
+
+.top-sub2 {
+    margin-top: -40px;
+    border-bottom: dotted 1px #333;
+}
+.top-sub2 li {
+    border-top: dotted 1px #333;
+    padding: 15px 0;
+}
+.top-sub2 li a {
+    margin-bottom: 0;
+}
+/* Top QR Code image */
+.sub-qr li {
+    width: 200px;
+    height: 75px;
+    display: block;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    background: transparent url(http://www.aplvs.com/images/sub-aside-top-qr.png) no-repeat 0 0;
+    border-bottom: dotted 1px #333;
+}
+
+/* Top  Twitter FaceBook Button */
+.tw-fb-btn li a {
+    display: block;
+}
+
+.tw {
+    background: transparent url(../images/sub-aside-top.png) no-repeat 0 0;
+    width: 200px;
+    height: 46px;
+}
+.tw:hover {
+    background-position: -200px 0;
+}
+
+.fb {
+    background: transparent url(../images/sub-aside-top.png) no-repeat 0 -46px;
+    width: 200px;
+    height: 33px;
+}
+.fb:hover {
+    background-position: -200px -46px;
+}
+
+.fb-like {
+    width: 200px;
+    text-align: center;
+    margin: -1em 0 0.5em;
+}
+
+/*-------------------------------------------------------------------------
+  slide
+ -------------------------------------------------------------------------*/
+/* slide */
+#slide {
+    position: relative;
+}
+
+/* pager */
+#slide .slide_prev,
+#slide .slide_next {
+    width: 30px;
+    height: 50px;
+    display: block;
+    top: 149px;
+    position: absolute;
+}
+
+#slide .slide_prev {
+    left: -35px;
+    background: url(http://www.aplvs.com/img/slide/btn_slide_prev.gif) no-repeat 0 0;
+}
+
+#slide .slide_next {
+    right: -35px;
+    background: url(http://www.aplvs.com/img/slide/btn_slide_next.gif) no-repeat 0 0;
+}
+
+#slide .slide_main {
+    overflow: hidden;
+    position: relative;
+}
+
+#slide .slide_img {
+    position: relative;
+}
+
+#slide .slide_img li {
+    float: left;
+}
+
+/* thumbnail */
+#slide .slide_thum {
+    margin-top: 45px;
+    text-align: center;
+    letter-spacing: -0.4em;
+}
+
+#slide .slide_thum li {
+    letter-spacing: normal;
+    display: inline-block;
+    position: relative;
+}
+
+#slide .slide_thum li.active span {
+    display: block;
+    background: url(http://www.aplvs.com/images/bg_active.png) no-repeat 0 0;
+    position: absolute;
+    z-index: 100;
+    width: 132px;
+    height: 66px;
+    top: -10px;
+    left: 0;
+}
+
+#slide .slide_thum li + li {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    /*------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------
+     Top Paage (*** For Small Device ***)
+    --------------------------------------------------------------------------*/
+    /* clearfix */
+    .product-info-secondary-loan .sd-area-ex,
+    .product-info-secondary-personal .sd-area-ex,
+    .tw-fb-btn li a {
+        *zoom: 1;
+    }
+    .product-info-secondary-loan .sd-area-ex:before, .product-info-secondary-loan .sd-area-ex:after,
+    .product-info-secondary-personal .sd-area-ex:before,
+    .product-info-secondary-personal .sd-area-ex:after,
+    .tw-fb-btn li a:before,
+    .tw-fb-btn li a:after {
+        content: "";
+        display: table;
+    }
+    .product-info-secondary-loan .sd-area-ex:after,
+    .product-info-secondary-personal .sd-area-ex:after,
+    .tw-fb-btn li a:after {
+        clear: both;
+    }
+
+    /* release-hidetext */
+    .revo li a,
+    .cashing li a,
+    .applepay li a,
+    .nsa li a,
+    .point-service li a,
+    .profit-info li a,
+    .tw-fb-btn li a {
+        overflow: visible;
+        text-indent: 0;
+        white-space: normal;
+    }
+
+    /*-------------------------------------------------------------------------
+      Top page  (*** For Small Device ***)
+    --------------------------------------------------------------------------*/
+    .top-visual {
+        padding-top: 20px;
+        background-image: none;
+        height: auto;
+        overflow: inherit;
+    }
+    .top-visual .container {
+        padding: 0;
+        background-image: none;
+    }
+
+    .top-primary {
+        width: auto;
+        float: none;
+    }
+    .top-primary .login-box {
+        line-height: 1;
+        margin-bottom: 1em;
+    }
+
+    .top-secondary {
+        width: auto;
+        float: none;
+    }
+
+    /* Top Contents Area */
+    .top-layout {
+        padding-top: 0;
+    }
+
+    /*-------------------------------------------------------------------------
+      Module Urgency-box  (*** For Small Device ***)
+    --------------------------------------------------------------------------*/
+    .urgency dl dt {
+        float: none;
+        width: auto;
+    }
+    .urgency dl dd {
+        overflow: inherit;
+        margin-bottom: 1em;
+    }
+    .urgency dl dd:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+    /*-------------------------------------------------------------------------
+      Module Usage-details (Box Transform Button *** For Small Device ***)
+    --------------------------------------------------------------------------*/
+    .usage-details {
+        margin-bottom: 1em;
+        text-align: left;
+        background: transparent url(http://www.aplvs.com/images/sd-arrow-bg.png) no-repeat 98% 50%;
+    }
+    .usage-details a {
+        padding-right: 2em;
+    }
+    .usage-details a span {
+        background-image: none;
+        padding-left: 0;
+    }
+
+    .top-mod {
+        position: inherit;
+        margin-bottom: 1em;
+    }
+
+    .top-mod-title {
+        border-bottom: none;
+        border-left: solid 6px #55936B;
+        padding: 3px 0 0 10px;
+        margin-bottom: 10px;
+    }
+
+    .trans-btn {
+        -moz-box-sizing: border-box;
+        background-color: #fefefe;
+        background-image: none;
+        background: -webkit-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+        background: -moz-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+        background: -o-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+        background: linear-gradient(to top, #e7e7e7, #fefefe 45%);
+        background: url("../images/icon-arrow-bk.png"), -webkit-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+        background: url("../images/icon-arrow-bk.png"), -moz-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+        background: url("../images/icon-arrow-bk.png"), -o-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+        background: url("../images/icon-arrow-bk.png"), linear-gradient(to top, #e7e7e7, #fefefe 50%);
+        background-position: 97% 50%,0 0;
+        background-repeat: no-repeat;
+        border: 1px solid;
+        border-color: #e3e3e3 #b2b2b2 #999 #dedede;
+        box-sizing: border-box;
+        color: #333;
+        color: #333;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-bottom: 1em;
+        padding: 8px 25px 8px 15px;
+        position: inherit;
+        text-align: center;
+        text-decoration: none;
+    }
+    .trans-btn:hover {
+        background-color: #e7e7e7;
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), -webkit-linear-gradient(top, #e7e7e7, #fefefe 50%);
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), -moz-linear-gradient(top, #e7e7e7, #fefefe 50%);
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), -o-linear-gradient(top, #e7e7e7, #fefefe 50%);
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), linear-gradient(to bottom, #e7e7e7, #fefefe 50%);
+        background-position: 97% 50%,0 0;
+        background-repeat: no-repeat;
+        border: 1px solid #e4e2e2;
+        color: #333;
+    }
+
+    /*-------------------------------------------------------------------------
+      Recommendation (*** For Small Device ***)
+    --------------------------------------------------------------------------*/
+    .top-rec p {
+        margin-bottom: 0.5em;
+        line-height: 1.5;
+    }
+    .top-rec .top-rec-img {
+        text-align:center;
+    }
+    .top-rec .col-4 {
+        border-bottom: dotted 1px #333;
+    }
+
+    /*-------------------------------------------------------------------------
+     Service Merit (*** For Small Device ***)
+    --------------------------------------------------------------------------*/
+    .ser-mer {
+        border-bottom: 1px solid #ddd;
+        margin: 0 -10px;
+    }
+    .ser-mer li {
+        float: none;
+        text-align: left;
+        margin-right: 0;
+    }
+    .ser-mer li a {
+        width: auto;
+        background-repeat: no-repeat;
+        background-position: 98% 50% !important;
+        background-image: url(http://www.aplvs.com/shared/img/bg/sd-arrow-bg.png);
+        border-top: solid 1px #ddd;
+        color: #333;
+        color: #007fcb;
+        display: block;
+        font-size: 14px;
+        font-size: 1.4rem;
+        padding: 15px 20px 32px 15px;
+        text-decoration: none;
+    }
+    .ser-mer li a:hover {
+        background-color: #ddd;
+        color: #26aeff;
+    }
+
+    /*-------------------------------------------------------------------------
+     Shopping Revo & Cashing (*** For Small Device ***)
+    --------------------------------------------------------------------------*/
+    .top-revo {
+        width: auto;
+        float: none;
+    }
+
+    .top-cashing {
+        width: auto;
+        float: none;
+    }
+
+    .top-nsa {
+        width: auto;
+        float: none;
+    }
+
+    /* Shopping Revo */
+    .revo {
+        border-bottom: solid 1px #ddd;
+        position: inherit;
+        height: auto;
+        margin: 0 -10px;
+    }
+    .revo li a {
+        background-image: none !important;
+        position: inherit !important;
+        height: auto !important;
+        width: auto !important;
+        background-repeat: no-repeat !important;
+        background-position: 98% 50% !important;
+        background-image: url(http://www.aplvs.com/shared/img/bg/sd-arrow-bg.png) !important;
+        border-top: solid 1px #ddd;
+        color: #333;
+        color: #007fcb;
+        display: block;
+        font-size: 14px;
+        font-size: 1.4rem;
+        padding: 15px 25px 15px 15px;
+        text-decoration: none;
+        line-height: 1.2;
+    }
+    .revo li a:hover {
+        background-color: #ddd;
+        color: #26aeff;
+        opacity: 1;
+    }
+
+    /* Cashing */
+    .cashing {
+        border-bottom: solid 1px #ddd;
+        margin: 0 -10px;
+    }
+    .cashing li {
+        margin-bottom: 0;
+    }
+    .cashing li a {
+        background-image: none !important;
+        position: inherit !important;
+        width:auto !important;
+        height: auto !important;
+        background-repeat: no-repeat !important;
+        background-position: 98% 50% !important;
+        background-image: url(http://www.aplvs.com/shared/img/bg/sd-arrow-bg.png) !important;
+        border-top: solid 1px #ddd;
+        color: #333;
+        color: #007fcb;
+        display: block;
+        font-size: 14px;
+        font-size: 1.4rem;
+        padding: 15px 25px 15px 15px;
+        text-decoration: none;
+        line-height: 1.2;
+    }
+    .cashing li a:hover {
+        background-color: #ddd;
+        color: #26aeff;
+        opacity: 1;
+    }
+
+    /* NSA */
+    .nsa {
+        border-bottom: solid 1px #ddd;
+        margin: 0 -10px;
+    }
+    .nsa li {
+        margin-bottom: 0;
+    }
+    .nsa li a {
+        background-image: none !important;
+        position: inherit !important;
+        width:auto !important;
+        height: auto !important;
+        background-repeat: no-repeat !important;
+        background-position: 98% 50% !important;
+        background-image: url(http://www.aplvs.com/shared/img/bg/sd-arrow-bg.png) !important;
+        border-top: solid 1px #ddd;
+        color: #333;
+        color: #007fcb;
+        display: block;
+        font-size: 14px;
+        font-size: 1.4rem;
+        padding: 15px 25px 15px 15px;
+        text-decoration: none;
+        line-height: 1.2;
+    }
+    .nsa li a:hover {
+        background-color: #ddd;
+        color: #26aeff;
+        opacity: 1;
+    }
+
+    /* ApplePay */
+    .applepay {
+        border-bottom: solid 1px #ddd;
+        margin: 0 -10px;
+    }
+    .applepay li ,.security li ,.anshin li {
+        margin-bottom: 0;
+    }
+    .applepay li a ,.security li a ,.anshin li a{
+        background-image: none !important;
+        position: inherit !important;
+        width:auto !important;
+        height: auto !important;
+        background-repeat: no-repeat !important;
+        background-position: 98% 50% !important;
+        background-image: url(http://www.aplvs.com/shared/img/bg/sd-arrow-bg.png) !important;
+        border-top: solid 1px #ddd;
+        color: #333;
+        color: #007fcb;
+        display: block;
+        font-size: 14px;
+        font-size: 1.4rem;
+        padding: 15px 25px 15px 15px;
+        text-decoration: none;
+        line-height: 1.2;
+    }
+    .applepay li a:hover ,.security li a:hover ,.anshin li a:hover{
+        background-color: #ddd;
+        color: #26aeff;
+        opacity: 1;
+    }
+
+
+    /*-------------------------------------------------------------------------
+       Point Service & Profit Info (*** For Small Device ***)
+      --------------------------------------------------------------------------*/
+    .top-point {
+        width: auto;
+        float: none;
+    }
+
+    .top-profit {
+        width: auto;
+        float: none;
+    }
+
+    /* Point Service */
+    .point-service {
+        border-bottom: solid 1px #ddd;
+        position: inherit;
+        height: auto;
+        margin: 0 -10px;
+    }
+    .point-service li a {
+        background-image: none !important;
+        position: inherit !important;
+        height: auto !important;
+        width: auto !important;
+        background-repeat: no-repeat !important;
+        background-position: 98% 50% !important;
+        background-image: url(http://www.aplvs.com/shared/img/bg/sd-arrow-bg.png) !important;
+        border-top: solid 1px #ddd;
+        color: #333;
+        color: #007fcb;
+        display: block;
+        font-size: 14px;
+        font-size: 1.4rem;
+        padding: 15px 25px 15px 15px;
+        text-decoration: none;
+        line-height: 1.2;
+    }
+    .point-service li a:hover {
+        background-color: #ddd;
+        color: #26aeff;
+        opacity: 1;
+    }
+
+    /* Profit Info */
+    .profit-info {
+        border-bottom: solid 1px #ddd;
+        margin: 0 -10px;
+    }
+    .profit-info li {
+        margin-bottom: 0;
+    }
+    .profit-info li a {
+        width: auto;
+        height: auto;
+        background-repeat: no-repeat !important;
+        background-position: 98% 50% !important;
+        background-image: url(http://www.aplvs.com/shared/img/bg/sd-arrow-bg.png) !important;
+        border-top: solid 1px #ddd;
+        color: #333;
+        color: #007fcb;
+        display: block;
+        font-size: 14px;
+        font-size: 1.4rem;
+        padding: 15px 25px 15px 15px;
+        text-decoration: none;
+        line-height: 1.2;
+    }
+    .profit-info li a:hover {
+        background-color: #ddd;
+        color: #26aeff;
+        opacity: 1;
+    }
+
+    /*-------------------------------------------------------------------------
+     Product info (*** For Small Device ***)
+    --------------------------------------------------------------------------*/
+    .product-info {
+        border-top: 2px solid #333;
+        border-bottom: 2px solid #333;
+        padding: 10px;
+        padding-bottom: 0;
+        margin: 0 -10px 1em;
+        background: -webkit-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+        background: -moz-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+        background: -o-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+        background: linear-gradient(to bottom, #ffffff 0%, #ffffff 3px, #f1f1f1 3px, #ffffff 40px);
+    }
+
+    /* Product info Primary */
+    .product-info-primary {
+        width: auto;
+        float: none;
+        margin-bottom: 1em;
+    }
+
+    .product-info-primary-main {
+        margin: 0 -10px 1em;
+        padding: 0 10px;
+    }
+    .product-info-primary-main .product-info-primary-main-img {
+        float: none;
+        margin: 0 0 1em 0;
+        text-align: center;
+    }
+    .product-info-primary-main:hover {
+        background-color: #EEE;
+    }
+
+    /* Product info Secondary */
+    .product-info-secondary {
+        width: auto;
+        float: none;
+    }
+    .product-info-secondary img {
+        margin-bottom: 0.5em;
+    }
+
+    .product-info-secondary-loan {
+        border-top: 2px solid #333;
+        padding: 10px;
+        margin: 0 -10px;
+        background: -webkit-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+        background: -moz-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+        background: -o-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+        background: linear-gradient(to bottom, #ffffff 0%, #ffffff 3px, #f1f1f1 3px, #ffffff 40px);
+    }
+    .product-info-secondary-loan .sd-area-ex {
+        margin: -10px;
+        padding: 10px;
+    }
+    .product-info-secondary-loan .sd-area-ex:hover {
+        background-color: #EEE;
+    }
+
+    .product-info-secondary-personal {
+        border-top: 2px solid #333;
+        padding: 10px;
+        margin: 0 -10px;
+        background: -webkit-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+        background: -moz-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+        background: -o-linear-gradient(top, white 0%, white 3px, #f1f1f1 3px, white 40px);
+        background: linear-gradient(to bottom, #ffffff 0%, #ffffff 3px, #f1f1f1 3px, #ffffff 40px);
+    }
+    .product-info-secondary-personal.certification{
+        border-top:none;
+        padding-top:0;
+    }
+    .product-info-secondary-personal .sd-area-ex {
+        margin: -10px;
+        padding: 10px;
+    }
+    .product-info-secondary-personal .sd-area-ex:hover {
+        background-color: #EEE;
+    }
+
+    /* Trimming image */
+    .top-trim-img {
+        position: relative;
+        width: 110px;
+        height: 70px;
+        overflow: hidden;
+        float: left;
+        margin-right: 1em;
+    }
+    .top-trim-img img {
+        position: absolute;
+        left: -55px;
+    }
+
+    .top-trim-img img.sp_insurance {
+        position: absolute;
+        left: 0px;
+    }
+
+    .top-trim-img img.sp_security {
+        position: absolute;
+        left: 0px;
+    }
+
+    .top-trim-img img.sp_anshin {
+        position: absolute;
+        left: 0px;
+    }
+
+    /*  Aside(Banner and Utility) for Official Site Top
+    --------------------------------------------------------------------------*/
+    /* Banner Area */
+    .top-sub {
+        border-bottom: solid 1px #CCC;
+    }
+    .top-sub li {
+        border-top: none;
+        padding: 0;
+    }
+    .top-sub li a {
+        margin-bottom: 0;
+    }
+
+    .top-sub2 {
+        margin-top: 0px;
+        border-bottom: solid 1px #CCC;
+    }
+    .top-sub2 li {
+        border-top: none;
+        padding: 0;
+    }
+    .top-sub2 li a {
+        margin-bottom: 0;
+    }
+
+    /* Top QR Code image */
+    .sub-qr {
+        display: none;
+    }
+
+    /* Top  Twitter FaceBook Button*/
+    .tw-fb-btn {
+        margin: 1em auto 0;
+        max-width: 320px;
+    }
+    .tw-fb-btn li a {
+        -moz-box-sizing: border-box;
+        font-size: 14px;
+        font-size: 1.4rem;
+        background: -webkit-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+        background: -moz-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+        background: -o-linear-gradient(bottom, #e7e7e7, #fefefe 45%);
+        background: linear-gradient(to top, #e7e7e7, #fefefe 45%);
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), -webkit-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), -moz-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), -o-linear-gradient(bottom, #e7e7e7, #fefefe 50%);
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), linear-gradient(to top, #e7e7e7, #fefefe 50%);
+        background-color: #fefefe;
+        background-position: 97% 50%,0 0;
+        background-repeat: no-repeat;
+        border: 1px solid;
+        border-color: #e3e3e3 #b2b2b2 #999 #dedede;
+        box-sizing: border-box;
+        color: #333;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1.3;
+        margin-bottom: 1em;
+        padding: 10px 25px 10px 10px;
+        text-align: left;
+        text-decoration: none;
+    }
+    .tw-fb-btn li a:hover {
+        background-color: #e7e7e7;
+        background: -webkit-linear-gradient(top, #e7e7e7, #fefefe 45%);
+        background: -moz-linear-gradient(top, #e7e7e7, #fefefe 45%);
+        background: -o-linear-gradient(top, #e7e7e7, #fefefe 45%);
+        background: linear-gradient(to bottom, #e7e7e7, #fefefe 45%);
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), -webkit-linear-gradient(top, #e7e7e7, #fefefe 50%);
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), -moz-linear-gradient(top, #e7e7e7, #fefefe 50%);
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), -o-linear-gradient(top, #e7e7e7, #fefefe 50%);
+        background: url("http://www.aplvs.com/shared/img/bg/icon-arrow-bk.png"), linear-gradient(to bottom, #e7e7e7, #fefefe 50%);
+        background-position: 97% 50%,0 0;
+        background-repeat: no-repeat;
+        border: 1px solid #e4e2e2;
+        color: #333;
+    }
+    .tw-fb-btn li a i {
+        float: left;
+    }
+
+    .tw {
+        background-image: none;
+        width: 145px;
+        height: auto;
+        float: left;
+    }
+
+    .fb {
+        background-image: none;
+        width: 145px;
+        height: auto;
+        float: right;
+    }
+
+    .fb-like {
+        display: none !important;
+    }
+
+    /* Privacy Mark */
+    .privacy-mark {
+        text-align: right;
+        margin-bottom: 2em;
+    }
+
+    /*-------------------------------------------------------------------------
+      slide
+     -------------------------------------------------------------------------*/
+    #slide .slide_img li img {
+        max-width: 100%;
+        display: block;
+    }
+
+    /* thumbnail */
+    #slide {
+        background: #000000;
+        margin: 0 -10px;
+    }
+
+    #slide .slide_thum {
+        height: 30px;
+        text-align: center;
+        margin: 0;
+        padding-top: 8px;
+    }
+
+    #slide .slide_thum li {
+        float: none;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    #slide .slide_thum li.active {
+        background: #af7e00;
+    }
+
+    #slide .slide_thum li img {
+        display: none;
+    }
+
+    #slide .slide_thum li.active span {
+        display: none;
+    }
+
+    /* btn */
+    #slide .slide_next,
+    #slide .slide_prev {
+        width: 50px;
+        height: 30px;
+        top: auto;
+        bottom: 0;
+    }
+
+    #slide .slide_next {
+        right: 0;
+        background: url(http://www.aplvs.com/shared/img/slide/controls.png) no-repeat -60px 0;
+    }
+
+    #slide .slide_prev {
+        left: 0;
+        background: url(http://www.aplvs.com/shared/img/slide/controls.png) no-repeat 0 0;
+    }
+    /*------------------------------------------------------------------------*/
+}
+
+.sp{
+    display:none;
+}
+.pc{
+    display:block;
+}
+
+
+@media screen and (max-width: 640px) {
+    .pc{
+        display:none;
+    }
+    .sp{
+        display:block;
+    }
+}

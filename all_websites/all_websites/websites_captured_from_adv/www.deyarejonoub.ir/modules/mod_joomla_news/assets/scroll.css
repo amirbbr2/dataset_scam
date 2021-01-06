@@ -1,0 +1,75 @@
+.scroll1 .list_carousel {
+	float:right;
+	width:100%;
+}
+.scroll1 .prev {
+	float: right;
+	display:block;
+	background:url(images/right2.png);
+	background-repeat:no-repeat;
+	background-position:right center;
+	width:30px;
+	height:141px;
+	font-size:0px;
+	color:#CCCCCC;
+	margin-left:6px;
+}
+.scroll1 .next {
+	float: left;
+	display:block;
+	background:url(images/left2.png);
+	background-repeat:no-repeat;
+	background-position:right center;
+	width:30px;
+	height:141px;
+	font-size:0px;
+	color:#CCCCCC;
+}
+.scroll1 .list_carousel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	float:left;
+}
+.scroll1 .list_carousel li {
+	color: #999;
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+	float: left;
+	margin-left:4px;
+}
+.scroll1 .list_carousel li img{
+	background:#FFFFFF;
+}
+.scroll1 .list_carousel.responsive {
+	width: auto;
+	margin-left: 0;
+}
+.clearfix {
+	float: none;
+	clear: both;
+}
+.scroll1 .pager {
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-top:-10px;
+}
+.scroll1 .pager a {
+	margin: 0 5px;
+	text-decoration: none;
+	width:14px;
+	height:14px;
+	background:#CCCCCC;
+	display:inline-table;
+	font-size:0px;
+	border-radius:100px;
+	box-shadow:1px 1px 5px -3px #000 inset;
+}
+.scroll1 .pager a.selected {
+	text-decoration: underline;
+	background:#999999;
+}

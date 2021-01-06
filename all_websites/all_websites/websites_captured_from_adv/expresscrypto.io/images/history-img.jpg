@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="https://expresscrypto.io/images/logo_x.png" sizes="32x32">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=1.0' />
+<meta name="description" content="">
+<meta name="author" content="ExpressCrypto">
+<title>ExpressCrypto | 404</title>
+
+<link href="https://expresscrypto.io/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://expresscrypto.io/toastr/toastr.css" rel="stylesheet" />
+<link href="https://expresscrypto.io/css/main.css" rel="stylesheet">
+<link href="https://expresscrypto.io/css/style.css" rel="stylesheet">
+<link href="https://expresscrypto.io/css/styleDashboard.css" rel="stylesheet">
+<link href="https://expresscrypto.io/css/responsive.css" rel="stylesheet">
+<link href="https://expresscrypto.io/fonts/flaticon.css" rel="stylesheet">
+
+<link href="https://expresscrypto.io/css/logo.css" rel="stylesheet">
+<link href="https://expresscrypto.io/css/logo.scss" rel="stylesheet">
+
+<script src="https://expresscrypto.io/js/modernizr.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+<link href="https://expresscrypto.io/assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="cursor" style="font-family: Open Sans, sans-serif;">
+
+<div id="wrap">
+
+<header class="sticky">
+<div class="container">
+
+<div class="logo"> <a href="../fonts/Flaticon.svg"><img class="img-responsive" src="logo.png" alt=""></a> </div>
+<nav class="navbar ownmenu navbar-expand-lg ">
+<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span><i class="fas fa-bars"></i></span> </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="nav">
+<li class="scroll active"><a href="../index.html#home" style="background-color: transparent;">Home</a></li>
+<li class="scroll"> <a href="../index.html#about" style="background-color: transparent;">About</a> </li>
+<li class="scroll"> <a href="../index.html#features" style="background-color: transparent;">features</a> </li>
+<li class="scroll"> <a href="../index.html#stats" style="background-color: transparent;">Stats</a> </li>
+<li class="scroll"> <a href="../index.html#contact" style="background-color: transparent;">Contact</a> </li>
+<li style="padding-top:2px;"><button class="btn" style="align:center; width:80px;height:35px;text-align: center;border-radius: 50px;" onclick="window.location.href='signup'">Signup</button></li>
+<li style="padding-top:2px;"><button class="btn" style="align:center; width:80px;height:35px;text-align: center;border-radius: 50px;" onclick="window.location.href='login'">Login</button></li>
+</ul>
+</div>
+</nav>
+</div>
+<div class="clearfix"></div>
+</header>
+
+
+<div id="content">
+<section class="simple-head" data-stellar-background-ratio="0.5">
+
+<div id="particles-js" style="height:700px"></div>
+<div class="position-center-center cont-left">
+<div class="container">
+<div class="well" style="background-color:#2c3645;color:white">
+<h2><b>Oops!</b> 404 page not found</h2>
+<p style="font-size:14px">We can't seem to find the page you're looking for</p>
+<img src="https://expresscrypto.io/images/404.png" style="width:200px;" />
+<b>All done here!</b>
+<a href="../index.html">Back to home!</a>
+<p style="font-size:14px">You can contact support team: <a href="https://expresscrypto.io/cdn-cgi/l/email-protection#f88b8d8888978a8cb89d80888a9d8b8b9b8a81888c97d69197"><span class="__cf_email__" data-cfemail="582b2d2828372a2c183d20282a3d2b2b3b2a21282c37763137">[email&#160;protected]</span></a> for more information!</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-8ES1N2JB0Q"></script>
+<script>
+    setInterval(function() {
+        var nowTime = new Date(new Date().toLocaleString("en-US", {timeZone: "Europe/Paris"}));
+        var strMonths=strDates=strHours=strMinutes=strSeconds="00";
+        if (nowTime.getMonth()+1 < 10) { strMonths = '0' + (nowTime.getMonth()+1)+''; }else{ strMonths = nowTime.getMonth()+1; }
+        if (nowTime.getDate() < 10) { strDates = '0' + nowTime.getDate()+''; }else{ strDates = nowTime.getDate(); }
+        if (nowTime.getHours() < 10) { strHours = '0' + nowTime.getHours()+''; }else{ strHours = nowTime.getHours(); }
+        if (nowTime.getMinutes() < 10) { strMinutes = '0' + nowTime.getMinutes()+''; }else{ strMinutes = nowTime.getMinutes(); }
+        if (nowTime.getSeconds() < 10) { strSeconds = '0' + nowTime.getSeconds()+''; }else{ strSeconds = nowTime.getSeconds(); }
+        document.getElementById("DateServerNow").innerHTML =nowTime.getFullYear()+"-"+strMonths+"-"+strDates+" "+strHours+":"+strMinutes+":"+strSeconds;
+    }, 990);
+</script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-8ES1N2JB0Q');
+</script>
+<footer style="padding-bottom:25px;">
+<div class="rights" style="padding-top:25px;">
+<div class="container">
+<div class="row">
+<div class="col">
+<p>2021 © ExpressCrypto, All rights reserved<br /><b class="col text-center" style="font-size:13px;margin-top:10px"><a href="https://expresscrypto.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="53202623233c212713362b232136202030212a23273c7d3a3c">[email&#160;protected]</a></b></p>
+</div>
+<div class="col text-center"><img class="img-responsive" src="logo.png" alt="" style="width:150px;margin-left:0px"><br><a href="../fonts/Flaticon.svg#." style="margin-left:0px"><b id="DateServerNow" style="font-size:13px"></b></a></div>
+<div class="col text-right"> <a href="https://expresscrypto.io/terms" target="_blank">Terms of Service </a> <a href="https://expresscrypto.io/privacy" target="_blank">Privacy Policy </a> <a href="https://expresscrypto.io/cdn-cgi/l/email-protection#43303633332c313703263b333126303020313a33372c6d2a2c">Contact Us</a></div>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://expresscrypto.io/js/jquery-1.11.3.min.js"></script>
+<script src="https://expresscrypto.io/js/bootstrap.min.js"></script>
+<script src="https://expresscrypto.io/js/particles.min.js"></script>
+<script src="https://expresscrypto.io/js/jquery.counterup.min.js"></script>
+<script src="https://expresscrypto.io/js/jquery.sticky.js"></script>
+<script src="https://expresscrypto.io/js/jquery.magnific-popup.min.js"></script>
+<script src="https://expresscrypto.io/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</body>
+</html>

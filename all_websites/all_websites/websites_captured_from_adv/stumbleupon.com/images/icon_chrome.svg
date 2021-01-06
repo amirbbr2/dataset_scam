@@ -1,0 +1,32 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="20.1721" cy="20.1724" rx="12.6047" ry="12.6047" fill="white"/>
+<path d="M20.1721 33.4704C27.5164 33.4704 33.4701 27.5167 33.4701 20.1724C33.4701 12.8281 27.5164 6.87437 20.1721 6.87437C12.8278 6.87437 6.87412 12.8281 6.87412 20.1724C6.87412 27.5167 12.8278 33.4704 20.1721 33.4704Z" stroke="white" stroke-opacity="0.1" stroke-width="1.38652"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="7" y="7" width="26" height="26">
+<ellipse cx="20.1721" cy="20.1724" rx="12.6047" ry="12.6047" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="7" y="7" width="26" height="26">
+<ellipse cx="20.1719" cy="20.1721" rx="12.7051" ry="12.7051" fill="white"/>
+</mask>
+<g mask="url(#mask1)">
+<path d="M9.48926 7.46729H31.5788V14.3973H19.8843L15.1921 23.0599L9.48926 13.3145V7.46729Z" fill="#DB4437"/>
+<path d="M16.6359 20.3886L15.1921 23.0596L9.48926 13.3142L16.6359 20.3886Z" fill="#B83628"/>
+</g>
+<mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="36" height="36">
+<ellipse cx="20.1719" cy="20.1724" rx="12.7051" ry="12.7051" transform="rotate(-120 20.1719 20.1724)" fill="white"/>
+</mask>
+<g mask="url(#mask2)">
+<path d="M14.5107 35.7773L3.46599 16.6473L9.46758 13.1822L15.3148 23.3099L25.1629 23.0422L19.5746 32.8537L14.5107 35.7773Z" fill="#0F9D58"/>
+<path d="M22.1275 23.1272L25.1625 23.042L19.5742 32.8535L22.1275 23.1272Z" fill="#108A4F"/>
+</g>
+<mask id="mask3" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="36" height="36">
+<ellipse cx="20.1426" cy="20.2026" rx="12.7051" ry="12.7051" transform="rotate(120 20.1426 20.2026)" fill="white"/>
+</mask>
+<g mask="url(#mask3)">
+<path d="M36.4873 17.3027L25.4425 36.4328L19.441 32.9678L25.2882 22.8401L20.1323 14.4452L31.4235 14.3791L36.4873 17.3027Z" fill="#FFCD40"/>
+<path d="M21.7239 17.0311L20.101 14.3792L31.4238 14.3792L21.7239 17.0311Z" fill="#E2A330"/>
+</g>
+<ellipse cx="20.1722" cy="20.1725" rx="5.79529" ry="5.79528" fill="#F1F1F1"/>
+<ellipse cx="20.1714" cy="20.1721" rx="4.63623" ry="4.63623" fill="#4285F4"/>
+</g>
+</svg>

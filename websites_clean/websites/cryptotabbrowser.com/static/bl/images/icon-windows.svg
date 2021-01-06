@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icon-windows</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="get.cryptobrowser_site-download-btn-first-block" transform="translate(-749.000000, -675.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="first" transform="translate(30.000000, 150.000000)">
+                <g id="btn-desktop" transform="translate(630.000000, 441.000000)">
+                    <g id="up-win" transform="translate(0.000000, 66.000000)">
+                        <path d="M89,21.44925 L98.75,20.1 L98.75,29.55075 L89,29.55075 L89,21.44925 Z M99.94925,19.94925 L113,18 L113,29.4 L99.94925,29.4 L99.94925,19.94925 Z M89,30.6 L98.75,30.6 L98.75,40.05075 L89,38.6985 L89,30.6 Z M99.94925,30.6 L113,30.6 L113,42 L100.1,40.19925 L99.94925,30.6 Z" id="icon-windows"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

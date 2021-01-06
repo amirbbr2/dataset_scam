@@ -1,0 +1,174 @@
+function win2unicode (str){
+    if (str == null){ return null;}
+    var result = "";
+    var o_code = "";
+    var i_code = "";
+    for (var I=0; I < str.length; I++){
+        i_code = str.charCodeAt(I);
+
+        if (i_code == 184){
+            o_code = 1105;
+        } else if (i_code == 168){
+            o_code = 1025;
+        } else if (i_code > 191 && i_code < 256){
+            o_code = i_code + 848;
+        } else {
+            o_code = i_code;
+        }
+        result = result + String.fromCharCode(o_code);
+    }
+
+    return result;
+}
+
+var Home = {
+    uId : LiCi.getCookie("bbuserid"),
+    uName : win2unicode( LiCi.getCookie("bbusername")),
+    uDomain : LiCi.getCookie("jurl")
+}
+
+Home.userbar = function () {
+	if (Home.uName) {
+		var tpl = '<a href="'+this.uDomain+'profile" class="username">'+this.uName+'</a> '+
+			'<span class="userlinks">'+
+				'<a href="'+this.uDomain+'friends">Мои друзья</a> |'+
+				'<a href="'+this.uDomain+'">Мой дневник</a> |'+
+				'<a href="/journal_post.php?journalid='+this.uId+'">Написать</a> |'+
+				'<a href="/journals.php?s=&action1=login" class="exit">Выйти</a>'+
+				'</span>';
+	} else {
+		var tpl = '<a href="/journal_register.php">Создать дневник</a> | '+
+			'<a href="/top">Рейтинг дневников</a>';
+	}
+	LiCi.$('_li-panel').innerHTML = tpl;
+}
+
+
+Home.services = {
+	clName : 'li-serv_popup'
+}
+
+Home.services.init = function() {
+	['stat', 'blog', 'mail'].forEach(function(id) {
+		LiCi.eventAdd (LiCi.$('_li-serv_'+id), "click", function () {		
+			Home.services.open(this, id);
+			this.href = 'javascript:void(0)';
+		});
+	});
+}
+Home.services.open = function(e, id) {
+	Home.services.close();
+	var wrapper = LiCi.$('_li-serv_'+id+'_pop');
+	wrapper.style.display = 'block';
+	wrapper.style.left = LiCi.offset.left(e)+'px';
+	// First field focus
+		var fields = LiCi.$(id+'_login_form');
+		var elements = fields.elements;
+		elements[0].focus();
+}
+
+Home.services.init_dom = function() {
+	Home.services.popup(
+		'stat',
+		'Вход в статистику',
+		'stat_login_form', '/stat/',
+		'http://www.liveinternet.ru/stat/?what=reminder',
+		[['input','text','url','Адрес сайта'],['input','password','password','Пароль']]
+	);
+	Home.services.popup(
+		'blog',
+		'Вход в дневники',
+		'diary_login_form', 'http://www.liveinternet.ru/member.php',
+		'http://www.liveinternet.ru/member.php?action=lostpw',
+		[['input','text','username','Имя'],['input','password','password','Пароль'],['input','hidden','action','login'],['input','hidden','charset','utf']]
+	);
+	Home.services.popup(
+		'mail',
+		'Вход в почту',
+		'mail_login_form', 'http://g.liveinternet.ru/auth/setcookie.php',
+		'http://g.liveinternet.ru/recover.php',
+		[['input','text','login','Логин'],[[['liveinternet.ru','@liveinternet.ru'],['li.ru','@li.ru']],'select','domain','Домен'],['input','password','pass','Пароль']]
+	);		
+}
+Home.services.popup = function( id, pName, fName, fAction, forgetUrl, fields ) {
+	
+	//this.close();
+	LiCi.eventAdd (LiCi.$('_li-serv_'+id), "click", function () {		
+		Home.services.open( this, id, fName );
+		this.href = 'javascript:void(0)';
+	});
+	
+	var wrapper = document.createElement('div');
+	wrapper.className = this.clName;
+	wrapper.id = '_li-serv_'+id+'_pop';
+	wrapper.style.display = 'none';
+	document.body.appendChild( wrapper );
+	
+	var tplFields = '';
+	for (i = 0; i<fields.length; i++) {
+		if (fields[i][1]=='text' || fields[i][1]=='password') {
+			tplFields += '<p>'+
+				'<b>'+fields[i][3]+'</b>'+
+				'<input type="'+fields[i][1]+'" name="'+id+'_'+fields[i][2]+'" />'+
+			'</p>';
+		} else if (fields[i][1]=='select') {
+			var tplSelect = '';
+			for (j = 0; j<fields[i][0].length; j++) {
+				tplSelect += '<option value="'+fields[i][0][j][0]+'">'+fields[i][0][j][1]+'</option>';
+			}
+			tplFields += '<p>'+
+				'<b>'+fields[i][3]+'</b>'+
+				'<select name='+fields[i][2]+'>'+
+					tplSelect+
+				'</select>'+
+			'</p>';
+		} else {
+			tplFields += '<input type="'+fields[i][1]+'" name="'+fields[i][2]+'" value="'+fields[i][3]+'" />';	
+		}
+	}	
+	
+	var tplBody = '<strong>'+pName+'</strong><em title="Закрыть" onclick="Home.services.close()">x</em>'+
+		'<form method="post" name="'+fName+'" id="'+fName+'" action="'+fAction+'">'+
+			tplFields+
+			'<span>'+
+				'<a href="'+forgetUrl+'">Напомнить пароль</a>'+
+				'<input type="submit" value="Войти">'+
+			'</span>'+
+		'</form>';
+	wrapper.innerHTML = tplBody;
+}
+Home.services.close = function() {
+	var popup = LiCi.$_(this.clName);
+	if (popup) {
+		for (i = 0; i<popup.length; i++) {
+			popup[i].style.display = 'none';
+		}
+	}
+}
+Home.services.open_dom = function( e, id, name ) {
+	Home.services.close();
+	var wrapper = LiCi.$('_li-serv_'+id+'_pop');
+	wrapper.style.display = 'block';
+	wrapper.style.left = LiCi.offset.left(e)+'px';
+	// First field focus
+		var fields = LiCi.$(name);
+		var elements = fields.elements;
+		elements[0].focus();
+	// Restore original fields names
+		LiCi.eventAdd (fields, "submit", function () {
+			for (i = 0; i<elements.length; i++) {
+				var name = LiCi.Strings.rpls( id+'_', '', elements[i].name );
+				elements[i].name = name;
+			}
+		});
+}
+
+LiCi.domReady (function(){
+	
+	Home.services.init();	
+	Home.userbar();
+	if ($('#searcharea') && $('#searcharea').length > 0) {
+		document.getElementById('searcharea').focus();
+	}
+	
+});

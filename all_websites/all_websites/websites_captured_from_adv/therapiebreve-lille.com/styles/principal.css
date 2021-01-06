@@ -1,0 +1,88 @@
+/* Feuille de style Cabinet de Psychothérapie Brève  */
+
+body {
+	background: url("../images/fond.png") repeat-x #FAFFFA;
+	color:#00FF66;
+	font:70% Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	}
+	
+div#contenu {
+	background:  url("../images/bonsai1.png") no-repeat; 
+	background-position:10% 40%;
+	width:648px;
+	/*width:618px;*/
+	height:auto;
+	margin:auto;
+	}
+
+ul , li { margin:0; padding:0; list-style-type:none; }
+a { color:#4C4C4B; text-decoration:none; font-weight:bold; }
+a:hover { color:#666666; font-weight:bold; }
+a img { border:0; }
+h1, h2, h3, h4, h5 { margin:0; font-size:100%; font-weight:normal; }
+p { margin:0; padding:5px; font-size:90%; }
+div.clear { clear:both; }
+
+div#header {
+	/*background:url('./algorithme/logo_lwi.gif') no-repeat;*/
+	background:  url("../images/logo.jpg") no-repeat;
+	width:482px;
+	padding-left:175px;
+	padding-top:12px;
+	/*padding-left:20px;*/
+	height:126px;
+	/*text-transform:uppercase;*/
+	margin-bottom:40px;
+	}
+	
+/* Titre principal */
+h1 { font-size:200%; color:#f0fff0; font-style:italic; } 
+
+/* Titre secondaire color:#B0D40A; */
+h1 span { display:block; font-size:10px; color:#FFDD88; letter-spacing:2px; font-style:italic;}
+
+ul#menu { height:24px; position:absolute; top:101px; }
+#menu li { display:inline; margin-right:16px;}
+#menu a {  font-weight:normal;  padding-bottom:9px;color:#FFFFFF; }
+#menu a:hover { background: url("../images/menu_top_hover.gif") no-repeat bottom; }
+
+div#menu_droite {
+	width:161px;
+	/*width:180px;*/
+	height:auto;
+	float:right;
+	text-align:center;
+	}
+	
+#menu_droite h2 {
+	background: url("../images/fond_menu.png") no-repeat;
+	width:158px;
+	/*width:178px;*/
+	height:25px;
+	font-size:120%;
+
+	color:#FFF;
+	padding-top:5px;
+	margin:auto auto -3px auto;
+	}
+
+#menu_droite ul { margin:10px auto 14px auto; }
+#menu_droite a { font-weight:normal; }
+#menu_droite a:hover { color:#FF9933;} /* color:#A5D005; */
+
+div#texte {
+	float:left;
+	width:400px;
+	margin-left:16px !important;
+	margin-left:8px;
+	color:#333333;
+	}
+
+div.post { margin-bottom:50px; }
+.post h2 { border-bottom:1px dotted #030303; text-transform:uppercase; color:#B0D40A; font-size:150%; }
+.post h3 { border-bottom:1px dotted #030303; color:#B0D40A; font-size:150%; }
+p.infos { color:#D6D6D5; font-size:80%; }
+
+p#footer { clear:both; text-align:center; color:#666666; 	 }

@@ -1,0 +1,199 @@
+.languages-item{
+    text-transform: capitalize;
+}
+
+.languages-list{
+    right: 71px;
+}
+
+.language-changer i{
+    margin: 0px 10px;
+}
+
+.section-header .information{
+    max-width: 100%;
+}
+
+.select-options li{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul.view li.grid .meta-data::-webkit-scrollbar {
+    display: none;
+}
+ul.view li.grid .meta-data::-webkit-scrollbar-track {
+    display: none;
+}
+ul.view li.grid .meta-data::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.aside-navigation button {
+    line-height: 69px;
+}
+
+header.main h1{
+    font-size: 25px;
+}
+
+header.main span.text{
+    font-family: "helvetica_regular";
+    font-weight: 400;
+}
+
+header.main span.text strong{
+    font-family: "helvetica_bold";
+    font-weight: 400;
+}
+
+form.search-form input{
+    font-size: 17px;
+}
+
+form.search-form input.user-search{
+    color: #4f98f2;
+}
+
+form.search-form input.user-search::placeholder{
+    color: #4f98f2;
+}
+
+.user-stats{
+    margin-bottom: 50px;
+}
+
+a.add-video{
+    line-height: 29px;
+}
+
+.user-stats ul li{
+    font-size: 15px;
+}
+
+span.textarea-placeholder{
+    font-size: 15px;
+    left: 30px;
+    right: 30px;
+}
+
+.submission-form span.textarea-placeholder strong{
+    font-family: "helvetica_regular";
+    font-weight: 400;
+}
+
+.submission-form .textarea textarea{
+    padding: 0px 30px;
+}
+
+#submission{
+    position: relative;
+    top: 3px;
+}
+
+section.submit .tips{
+    margin-top: 55px;
+    text-align: justify;
+}
+
+section.submit .tips p{
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+section.submit .tips h3{
+    margin-top: 15px;
+}
+
+.page-section h2{
+    font-weight: 400;
+}
+
+.page-section{
+    text-align: justify;
+}
+
+article.video h1{
+    font-size: 20px;
+}
+
+article.video .meta-data{
+    font-size: 13px;
+}
+
+.comments-form .textarea textarea{
+    font-size: 15px;
+}
+
+.aside-navigation.user-actions span.text{
+    margin-left: 19px;
+}
+
+.aside-navigation.sub-menu-element>li>a span.text{
+    margin-left: 21px;
+}
+
+li.comment-item .option-holder:hover .options-btn{
+    color: #f24f86;
+}
+
+li.comment-item{
+    margin-top: 30px;
+}
+
+form.comments-form{
+    margin-bottom: 30px;
+}
+
+.content{
+    padding: 40px 0px;
+}
+
+button.submit,
+a.logout{
+    font-size: 15px;
+}
+
+.form-information p{
+    line-height: 22px;
+}
+
+.tip-body{
+    margin-top: 25px;
+}
+
+a.logout{
+    background: #fff;
+    color: #f24f86;
+}
+
+a.logout:hover{
+    background: #f24f86;
+    color: #ffffff;
+}
+
+.input input,
+span.input-placeholder,
+.cover-input label{
+    font-size: 15px;
+}
+
+.languages + .languages {
+    margin-right: 20px;
+}
+
+.quality + .quality::before{
+    content: '|';
+    float: left;
+    position: relative;
+    top: -1px;
+    margin: 0px 10px;
+}
+
+@media (max-width: 629px) and (min-width: 320px){
+    .content {
+        padding: 0px !important;
+    }
+}

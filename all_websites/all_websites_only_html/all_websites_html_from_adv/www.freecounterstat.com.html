@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> :  > sciences > mathematics</title>
+<meta name="description" content=" > sciences > mathematics, " />
+<meta name="keywords" content=" > sciences > mathematics" />
+<meta name="rating" content="General" />
+<link rel="stylesheet" media="all" href="/commun/geozoom/css/style_flags.css?d=2021"/>
+<link href="/commun/geozoom/css/style.css?d=2021" rel="stylesheet" type="text/css"/>
+<meta name="robots" content="noindex, nofollow, noarchive" />
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+<script src="/commun/geozoom/js/jquery-2.1.4.js"></script>
+<script src="/commun/geozoom/js/jquery-ui_1.11.4.js"></script>
+<script src="/commun/geozoom/js/jquery.inview.min.js"></script>
+
+<script src="/commun/openlayer/OpenLayers.js" type="text/javascript"></script>
+        <script type="text/javascript">
+OpenLayers.Strategy.AttributeCluster = OpenLayers.Class(OpenLayers.Strategy.Cluster, {
+    /**
+     * the attribute to use for comparison
+     */
+    attribute: null,
+    /**
+     * Method: shouldCluster
+     * Determine whether to include a feature in a given cluster.
+     *
+     * Parameters:
+     * cluster - {<OpenLayers.Feature.Vector>} A cluster.
+     * feature - {<OpenLayers.Feature.Vector>} A feature.
+     *
+     * Returns:
+     * {Boolean} The feature should be included in the cluster.
+     */
+    shouldCluster: function(cluster, feature) {
+        var cc_attrval = cluster.cluster[0].attributes[this.attribute];
+        var fc_attrval = feature.attributes[this.attribute];
+        var superProto = OpenLayers.Strategy.Cluster.prototype;
+        return cc_attrval === fc_attrval &&
+               superProto.shouldCluster.apply(this, arguments);
+    },
+    CLASS_NAME: "OpenLayers.Strategy.AttributeCluster"
+});
+                             
+var features_off = [];
+features_off.push(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(-6.248800,53.333801 ), {city:"Dublin<br>Country: Ireland",clazz : 0,visitor:185},{fillOpacity : 0.8,fillColor : '#CC0000',pointRadius : 15 ,strokeWidth : 1, strokeColor : '#000000',strokeOpacity : 0.2}));
+features_off.push(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(-6.248800,53.333801 ), {city:"Dublin<br>Country: Ireland",clazz : 1,visitor:5},{fillOpacity : 0.8,fillColor : '#006600',pointRadius : 5 ,strokeWidth : 1, strokeColor : '#000000',strokeOpacity : 0.2}));
+features_off.push(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(5.509700,51.764400 ), {city:"Oss<br>Country: Netherlands",clazz : 0,visitor:1},{fillOpacity : 0.8,fillColor : '#CC0000',pointRadius : 3 ,strokeWidth : 1, strokeColor : '#000000',strokeOpacity : 0.2}));
+features_off.push(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(-78.863800,42.955399 ), {city:"Buffalo<br>Country: United States",clazz : 0,visitor:1},{fillOpacity : 0.8,fillColor : '#CC0000',pointRadius : 3 ,strokeWidth : 1, strokeColor : '#000000',strokeOpacity : 0.2}));
+features_off.push(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(-98.304901,26.294600 ), {city:"Mission<br>Country: United States",clazz : 0,visitor:1},{fillOpacity : 0.8,fillColor : '#CC0000',pointRadius : 3 ,strokeWidth : 1, strokeColor : '#000000',strokeOpacity : 0.2}));
+features_off.push(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(-95.364403,29.771999 ), {city:"Houston<br>Country: United States",clazz : 0,visitor:1},{fillOpacity : 0.8,fillColor : '#CC0000',pointRadius : 3 ,strokeWidth : 1, strokeColor : '#000000',strokeOpacity : 0.2}));
+features_off.push(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(-79.512802,43.850300 ), {city:"Maple<br>Country: Canada",clazz : 0,visitor:1},{fillOpacity : 0.8,fillColor : '#CC0000',pointRadius : 3 ,strokeWidth : 1, strokeColor : '#000000',strokeOpacity : 0.2}));
+features_off.push(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(-96.554398,32.934601 ), {city:"Rowlett<br>Country: United States",clazz : 0,visitor:1},{fillOpacity : 0.8,fillColor : '#CC0000',pointRadius : 3 ,strokeWidth : 1, strokeColor : '#000000',strokeOpacity : 0.2}));
+features_off.push(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(-97.821999,37.750999 ), {city:"Undefined<br>Country: United States",clazz : 0,visitor:1},{fillOpacity : 0.8,fillColor : '#CC0000',pointRadius : 3 ,strokeWidth : 1, strokeColor : '#000000',strokeOpacity : 0.2}));
+features_off.push(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(-120.992104,46.805801 ), {city:"Naches<br>Country: United States",clazz : 0,visitor:1},{fillOpacity : 0.8,fillColor : '#CC0000',pointRadius : 3 ,strokeWidth : 1, strokeColor : '#000000',strokeOpacity : 0.2}));
+features_off.push(new OpenLayers.Feature.Vector(new OpenLayers.Geometry.Point(-110.778198,32.215099 ), {city:"Tucson<br>Country: United States",clazz : 0,visitor:1},{fillOpacity : 0.8,fillColor : '#CC0000',pointRadius : 3 ,strokeWidth : 1, strokeColor : '#000000',strokeOpacity : 0.2}));
+
+var coef = 0.3;
+var Lon_user = -6.248800;
+var Lat_user = 53.333801;
+var city_user = "Dublin";
+var country_user = "Ireland";
+var region_user = "Dublin";
+var distance = "12";
+var threshold = "7";
+ 
+            // create a semi-random grid of features to be clustered
+	   function init() {
+document.getElementById('liste_pays_map').scrollTop=0;
+
+       //window.scrollTo(0,0);
+		/*var map = new OpenLayers.Map('map', {controls : [
+		new OpenLayers.Control.PanZoomBar(),
+		new OpenLayers.Control.Navigation(),
+		new OpenLayers.Control.OverviewMap()
+		],
+		div : map, maxResolution:'auto',
+		center: new OpenLayers.LonLat(0,0),
+		zoom:1,
+		numZoomLevels : 6
+		});*/
+		 
+	/*	var base = new OpenLayers.Layer.WMS(
+                "Natural Earth", 
+		//"http://nepomuk.openstreetmap.org",
+		"http://maps.opengeo.org/geowebcache/service/wms",
+//		"http://91.121.78.203:8080/geoserver/geomap/wms",
+//?service=WMS&version=1.1.0&request=GetMap&layers=geomap:HYP_50M_SR&styles=&bbox=-179.99999999999997,-89.99999999998201,179.99999999996405,90.0&width=660&height=330&srs=EPSG:404000&format=application/openlayers
+               // {layers: "bluemarble"}
+		{layers: "geomap:HYP_50M_SR_W"}
+               // {layers: "geomap:land_shallow_topo_21600"}
+              // {layers: "geomap:NE1_LR_LC_SR_W_DR"}
+	//	{layers: "geomap:land_shallow_topo_21600"}
+
+            );*/
+     var mapOptions = { 
+projection: new OpenLayers.Projection('EPSG:4326'),
+//maxExtent: new OpenLayers.Bounds(-180.0,-90.0,180.0,90.0),
+units: "degrees",
+controls : [
+                new OpenLayers.Control.PanZoomBar({displayScale:true}),
+                new OpenLayers.Control.Navigation(),
+                //new OpenLayers.Control.OverviewMap()
+                ],
+                 
+		maxResolution:'auto',
+                center: new OpenLayers.LonLat(0,0)
+		
+};
+var map = new OpenLayers.Map('map', mapOptions );
+
+
+var base = new OpenLayers.Layer.WMS(
+        "Natural Earth", 
+	//"https://ahocevar.com/geoserver/wms",
+		//"http://54.38.94.82:8080/geoserver/freecounter/wms",
+		"https://www.freecounterstat.com/geoserver/freecounter/wms",
+		//{LAYERS: 'ne:NE1_HR_LC_SR_W_DR', VERSION: '1.1.1'},
+                {LAYERS: "freecounter:NE2_50M_SR_W"},
+		//{LAYERS: "freecounter:NE2_HR_LC_SR_W"},
+                 {'maxResolution': "auto",'numZoomLevels': 8}
+
+            );
+
+
+
+
+                var style = new OpenLayers.Style({
+                    pointRadius: "${radius}",
+                    fillColor: "${getColor}",
+                    fillOpacity: 0.8,
+                    strokeColor: "${getColor}",
+                    //strokeWidth: "${width}",
+		    strokeWidth: 1,
+                    strokeOpacity: 0.2,
+		    strokeColor: "#000000" 
+                }, {
+                    context: {
+                        width: function(feature) {
+                            return (feature.cluster) ? 2 : 1;
+                        },
+                        radius: function(feature) {
+                      
+                            if(feature.cluster) {
+				var mbvis=0;
+				        for(var i=0; i<feature.attributes.count;i++){
+				        mbvis+=Number(feature.cluster[i].attributes.visitor);
+					}
+                            }
+			if(mbvis <= 10 * coef){ mbvi=3;}
+                        else if(mbvis <= 50 * coef){ mbvi=5;}
+                        else if(mbvis <= 100 * coef){ mbvi=7;}
+                        else if(mbvis <= 500 * coef){ mbvi=10;}
+                        else if(mbvis <= 1000 * coef){ mbvi=15;}
+			else if(mbvis <= 10000 * coef){ mbvi=20;}
+                        else { mbvi=25;}
+			return mbvi;
+                        }
+                    ,
+		    getColor: function(feature){
+	              var color = '#CC0000';
+          		  if (feature.attributes.clazz && feature.attributes.clazz === 1) {
+              		  color = '#006600';
+           		  } else if(feature.cluster) {
+                	  var onlyFour = true;
+                		for (var i = 0; i < feature.cluster.length; i++) {
+                    			if (onlyFour && feature.cluster[i].attributes.clazz !== 1) {
+                        		onlyFour = false;
+                    			}
+                		}
+                		if (onlyFour === true) {
+        	            	color = '#006600';
+                		}
+            		  }
+            	     return color;
+       		     }
+		}
+                });
+                
+                //strategy = new OpenLayers.Strategy.Cluster();
+		strategy = new OpenLayers.Strategy.AttributeCluster({attribute:'clazz'});
+                clusters = new OpenLayers.Layer.Vector("Clusters", {
+                    strategies: [strategy],
+                    styleMap: new OpenLayers.StyleMap({
+                        "default": style,
+                        "select": {
+                            fillColor: "#8aeeef",
+                            strokeColor: "#A40000"
+                        }
+                    }),
+
+		//popup
+		
+        eventListeners:{
+            'featureselected':function(evt){
+                var feature = evt.feature;
+		var mbvis=0;
+		var nbcity=0;
+		if(feature.cluster) {
+		   for(var i=0; i<feature.attributes.count;i++){
+                   mbvis+=Number(feature.cluster[i].attributes.visitor);
+		   nbcity++;
+                   }
+		var city="Number city : "+nbcity;
+		var zoom ="<br> Zoom for detail";
+		} else {
+		mbvis=feature.attributes.visitor;
+	        var city="City : "+feature.attributes.city;
+		var zoom ="";
+		}
+                var popup = new OpenLayers.Popup.FramedCloud("popup",
+                    OpenLayers.LonLat.fromString(feature.geometry.toShortString()),
+                    null,
+                    "<div style='font-size:.8em'>" + city +"<br> Number visitors : " + mbvis + zoom +"</div>",
+                    null,
+                    true
+		    
+                );
+                feature.popup = popup;
+                map.addPopup(popup,true);
+            },
+            'featureunselected':function(evt){
+                var feature = evt.feature;
+                map.removePopup(feature.popup);
+                feature.popup.destroy();
+                feature.popup = null;
+            }
+        }
+        });
+//Marker
+				
+                                var markers = new OpenLayers.Layer.Markers( "Markers" );
+                                var size = new OpenLayers.Size(24,24);
+	var offset = new OpenLayers.Pixel(-(size.w/2), -(size.h/2));
+        var icon = new OpenLayers.Icon('/commun/openlayer/img/you.gif',size,offset);
+        var point= new OpenLayers.Marker(new OpenLayers.LonLat(Lon_user,Lat_user),icon); 
+                        //marker.events.register('mousedown', marker, function(evt) { alert(this.icon.url); OpenLayers.Event.stop(evt); });
+        markers.addMarker(point);
+                        
+             var popup = new OpenLayers.Popup.FramedCloud("popup",
+                    new OpenLayers.LonLat(Lon_user,Lat_user),
+                    null,
+                    "<div style='font-size:.8em'>Your country : " + country_user + "<br>Your region : "+ region_user + "<br>Your city : " + city_user + "</div>",
+		   null,
+                    true
+                );
+                var select = new OpenLayers.Control.SelectFeature(
+                    clusters, {hover: true}
+                );
+                map.addControl(select);
+                select.activate();
+		map.addLayers([base,clusters,markers]);
+		//Zoom data php
+		map.setCenter(new OpenLayers.LonLat(-6.248800, 53.333801), 2);map.addPopup(popup);		reset(features_off);
+
+         	//document.getElementById('list').innerHTML=info_country;
+            }
+            //var distance = 30;
+            //var threshold = 10;
+            function reset(features_off) {
+                strategy.distance = distance || strategy.distance;
+                strategy.threshold = threshold || strategy.threshold;
+                clusters.removeFeatures(clusters.features_off);
+                clusters.addFeatures(features_off);
+            }
+window.onload=function(){
+init();
+}
+        </script>
+
+
+
+<style>
+.h_slider{
+z-index:7777;
+}
+</style>
+</head>
+<body>
+<div class="menu-stats">
+<div>
+<h1>Freecounterstat</h1>
+<ul>
+<li><label class="btn" for="modal-one">QrCode Statistics</label></li>
+<li><a href="index.php" title="Homepage web counters">Homepage</a></li>
+<li><a href="step_1.php" title="Sign up free">Sign-up free</a></li>
+<li><a href="instructions-modif.php" title="Changing web counter">Changing counter</a></li>
+<li><a href="extensions-browser.php" title="Chrome and Opera">Chrome and Opera</a></li>
+<li><a href="contact.php" title="Contact">Contact</a></li>
+</ul>
+</div>
+</div><div class="main-stats">
+<div class="box-infos">
+<div class="blk-title"><span class="title-ariane-cat"> > sciences > mathematics</span></div>
+<div class="blk-info">
+
+
+<!-- stat -->
+<div class="box-content">
+<span class="blk-icon"><i class="box-deco a-info"></i></span>
+<span class="box-text"><label>Currently online</label> <span class="sum_onl">5</span></span>
+<span class="box-number"><label> Yesterday Total day</label> <em>195</em></span>
+<span class="box-description"><label>Today projection</label> <em>194</em>   <strong class="evolution-moins">-29.45 %</strong> </span> <!--<tt> 20:00</tt>-->
+</div>
+<div class="box-content centre">
+<span class="blk-icon"><i class="box-deco b-info"></i></span>
+<span class="box-text"><label>Total visitors at <tt> 20:00</tt></label> <em>194</em></span>
+<span class="box-number"><label>Yesterday same time</label> <em>155</em>  <strong class="evolution-plus">25.16 %</strong></span>
+
+<span class="box-description"><label>the last week</label> <em>218</em>  <strong class="evolution-moins">-11.01 %</strong></span>
+</div>
+<div class="box-content">
+<span class="blk-icon"><i class="box-deco c-info"></i></span>
+<span class="box-text"><label>Total visites at <tt> 20:00</tt></label> <em>256</em></span>
+<span class="box-number"><label>yesterday same time</label> <em>206</em>  <strong class="evolution-plus">24.27 %</strong></span>
+
+<span class="box-description"><label>the last week</label> <em>274</em>  <strong class="evolution-moins">-6.57 %</strong></span>
+</div>
+<!-- end stat -->
+</div>
+
+
+<div class="NavStats">
+<ul class="TabNavGroup">
+  <li class="TabPanNavSelected" tabindex="0" onclick="aff_div(1,'')">Today Cities Map</li>
+  <li class="TabPanNav" tabindex="0" onclick="aff_div(4,'month')">Monthly Cities Map</li>
+  <li class="TabPanNav" tabindex="0" onclick="aff_div(5,'30days')">Last 30 Days Cities Map</li>
+  <li class="TabPanNav" tabindex="0" onclick="aff_div(2,'')">Total Countries Map</li>
+<!--  <li class="TabPanNav" tabindex="0" onclick="aff_div(3,'')">Live Feed</li>-->
+</ul>
+</div>
+<a name="zoomcity"></a>
+<div class="bloc100">
+<div class="blk-title"><span class="title-world-map">Map of city visitors (Day)</span></div>
+ <div class="bloc80">
+   <div class="box-map"><div id="map" class="smallmap"><!--Map Is Out For Upgrade. Please Try Again Later--></div>
+ </div>
+ </div>
+ <div class="bloc20">
+  <div id="liste_pays_map" class="liste_pays_map">
+  <table border="0" cellpadding="0" cellspacing="0" id="flags_map">
+  <tr><td colspan="2">Total visitor 199 <span style="font-size:9px;color:#006600">Onl 5</span></td></tr><tr><td id="fl_ie"></td><td><div id="tot_IE"><a href="javascript:onMouseDown=affich_city('ie')">Ireland &nbsp;&nbsp;190 <span style="font-size:9px;color:#006600;">Onl 5</span></a></div></td></tr>
+<tr id="ci_ie" style="display:none;"><td>&nbsp;</td><td>&nbsp;&nbsp;<a href="javascript:onMouseDown=zoom_city(53.333801,-6.248800,'IE')"><span style="font-size:9px;color:#CC0000">Dublin&nbsp;&nbsp;185</span> <span style="font-size:9px;color:#006600">Onl 5</span></a><br>
+</td></tr>
+<tr><td id="fl_us"></td><td><div id="tot_US"><a href="javascript:onMouseDown=affich_city('us')">United States &nbsp;&nbsp;7 </a></div></td></tr>
+<tr id="ci_us" style="display:none;"><td>&nbsp;</td><td>&nbsp;&nbsp;<a href="javascript:onMouseDown=zoom_city(37.750999,-97.821999,'US')"><span style="font-size:9px;color:#CC0000">Undefined&nbsp;&nbsp;1</span> </a><br>
+&nbsp;&nbsp;<a href="javascript:onMouseDown=zoom_city(46.805801,-120.992104,'US')"><span style="font-size:9px;color:#CC0000">Naches&nbsp;&nbsp;1</span> </a><br>
+&nbsp;&nbsp;<a href="javascript:onMouseDown=zoom_city(32.215099,-110.778198,'US')"><span style="font-size:9px;color:#CC0000">Tucson&nbsp;&nbsp;1</span> </a><br>
+&nbsp;&nbsp;<a href="javascript:onMouseDown=zoom_city(32.934601,-96.554398,'US')"><span style="font-size:9px;color:#CC0000">Rowlett&nbsp;&nbsp;1</span> </a><br>
+&nbsp;&nbsp;<a href="javascript:onMouseDown=zoom_city(29.771999,-95.364403,'US')"><span style="font-size:9px;color:#CC0000">Houston&nbsp;&nbsp;1</span> </a><br>
+&nbsp;&nbsp;<a href="javascript:onMouseDown=zoom_city(42.955399,-78.863800,'US')"><span style="font-size:9px;color:#CC0000">Buffalo&nbsp;&nbsp;1</span> </a><br>
+&nbsp;&nbsp;<a href="javascript:onMouseDown=zoom_city(26.294600,-98.304901,'US')"><span style="font-size:9px;color:#CC0000">Mission&nbsp;&nbsp;1</span> </a><br>
+</td></tr>
+<tr><td id="fl_ca"></td><td><div id="tot_CA"><a href="javascript:onMouseDown=affich_city('ca')">Canada &nbsp;&nbsp;1 </a></div></td></tr>
+<tr id="ci_ca" style="display:none;"><td>&nbsp;</td><td>&nbsp;&nbsp;<a href="javascript:onMouseDown=zoom_city(43.850300,-79.512802,'CA')"><span style="font-size:9px;color:#CC0000">Maple&nbsp;&nbsp;1</span> </a><br>
+</td></tr>
+<tr><td id="fl_nl"></td><td><div id="tot_NL"><a href="javascript:onMouseDown=affich_city('nl')">Netherlands &nbsp;&nbsp;1 </a></div></td></tr>
+<tr id="ci_nl" style="display:none;"><td>&nbsp;</td><td>&nbsp;&nbsp;<a href="javascript:onMouseDown=zoom_city(51.764400,5.509700,'NL')"><span style="font-size:9px;color:#CC0000">Oss&nbsp;&nbsp;1</span> </a><br>
+</td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>  </table>
+  </div>
+ </div>
+</div>
+
+<div class="bloc100" id="div_stats" style="display:block;">
+<div class="blk-title"><span class="title-world-statistics">Statistics</span></div>
+<div id="iframe_stats" style="min-height:550px;"></div>
+</div>
+<script>
+var bool_stat=false;
+        function affiche_stat(){
+                if(bool_stat==false){
+                $("#iframe_stats").html('<iframe  width="100%" height="550" frameborder="0" scroll="auto" src="https://counter8.idealstats.com/idealstat_dev.php?c=055c36b95506f16dea1d21e6903f0b5d&tab=2&base=counter8&tg=2&u=1609911224"></iframe>');
+                $("#div_stats").css("display","block");
+                bool_stat=true;
+                }
+                else{
+                $("#div_stats").css("display","none");
+                bool_stat=false;
+                }
+        }
+$( document ).ready(function() {
+affiche_stat();
+});
+</script>
+
+
+ <a name="tab3"></a>
+<div class="bloc25">
+<div class="blk-title"><span class="title-feed">Last Visitors city</span></div>
+<!--
+<div class="promo">
+<ul>
+<li class="promo_en">
+<script data-cfasync="false" type="text/javascript" src="https://www.brightonclick.com/a/display.php?r=1497917"></script>
+</li>
+</ul>
+</div>
+-->
+ <div class="box-feed" id="box-feed" style="max-height:660px;min-height:660px;">
+ <ul>
+ <li class="blk-feed">
+  <div id="resfeed"></div>
+  <script>
+  //$(document).ready(function(){
+  	$("#box-feed").on('inview', function(event, visible){
+     if(visible)
+     {
+ 	  $.getScript("https://counter8.freecounterstat.com/private/res_geofeed2.js?c=055c36b95506f16dea1d21e6903f0b5d", function( data, textStatus, jqxhr ) {
+      console.log( data ); // Data returned
+      console.log( textStatus ); // Success
+      console.log( jqxhr.status ); // 200
+      console.log( "Load was performed." );
+      });
+     }
+     else
+     {
+      $("#resfeed").empty();
+     }
+	});
+	//});
+  </script>
+   </li>
+ </ul>
+ </div>
+</div>
+<div class="bloc75">
+<div class="box-graph" style="display:none">
+<div class="blk-title"><span class="title-graphs-evolution" id="graph_cumul">Accumulated hourly</span></div>
+ <div class="graphiiiiii graph01">
+ <ul class="menu-graph01">
+  <li class="synth_title">Cumul</li>
+  <li class="synth_day"><a href="javascript:onmousedown=synth_jour_mois('jour')">Day</a></li>
+  <li class="synth_month"><a href="javascript:onmousedown=synth_jour_mois('mois')">Month</a></li>
+  <!--<li class="synth_an"><a href="javascript:onmousedown=synth_jour_mois('an')">TRAD_YEAR</a></li>-->
+
+<!-- <li id="legendline"><label></label> <ul><li class="couleur3" title="Last week"></li> <li class="couleur2" title="Yesterday"></li> <li class="couleur1" title="Today"></li> <li class="couleur4" title="Project"></li></ul></li>-->
+<li id="legendline"></li>
+ </ul>
+<div id="synthese_jour" style="position: relative; height: 250px;"></div>
+<div id="synthese_mois" style="position: relative; height: 250px;"></div>
+<div id="synthese_an" style="position: relative; height: 250px;"></div>
+ </div>
+ </div>
+
+<div class="box-graph">
+<div class="blk-title"><span class="title-graphs-evolution" id="graph_evol">Evolution by hour</span></div>
+ <div class="graphiiiii graph01">
+<ul class="menu-graph01">
+<li class="synth_title">Evolution</li>
+<li class="synth_day"><a href="javascript:onmousedown=bar_jour_mois('jour')">Day</a></li>
+<li class="synth_month"><a href="javascript:onmousedown=bar_jour_mois('mois')">Month</a></li>
+<!--<li id="legendbar"><label title="Label"></label> <ul><li class="couleur2" title="Last week"></li> <li class="couleur3" title="Yesterday"></li> <li class="couleur1" title="Today"></li> <li class="couleur4" title="Project"></li></ul></li>-->
+<li id="legendbar"></li>
+</ul>
+<div id="bar_jour" style="position: relative; height: 250px;"></div>
+<div id="bar_mois" style="position: relative; height: 250px;"></div>
+ </div>
+</div>
+ <a name="tab2"></a>
+<div class="box-graph">
+<div class="blk-title"><span class="title-graphs-country">Total Visitors by Country</span></div>
+ <div class="box-mapcountry">
+<!--<ul class="menu-graph01">
+ <li>Country</li>
+ </ul>-->
+
+ <div id="world-map" style="height: 300px;"></div></div>
+</div>
+
+</div>
+
+<div class="bloc100">
+
+<div class="box-infos">
+<div class="blk-graph-info blka">
+<div class="blk-title"><span class="title-user-hardware">Device type</span></div>
+	<div class="box-chart">
+	<div class="box-pie-chart">
+	<canvas id="pieChart" height="150"></canvas>
+	</div>
+	<div class="box-chart-legend">
+	 <ul class="chart-legend clearfix">
+	<li style="color:#f56954"> computer</li>
+	 <li style="color:#00a65a"> smartphone</li>
+	         </ul>
+	</div>
+	</div>
+</div>
+<div class="blk-graph-info blkb">
+<div class="blk-title"><span class="title-user-system">Operating system</span></div>
+	<div class="box-chart">
+	<div class="box-pie-chart">
+	<canvas id="pieChart1" height="150"></canvas>
+	</div>
+	<div class="box-chart-legend">
+	 <ul class="chart-legend clearfix">
+	<li style="color:#f56954"> lin</li>
+	 <li style="color:#00a65a"> windows</li>
+	 <li style="color:#f39c12"> mac</li>
+	 <li style="color:#00c0ef"> iphone os</li>
+	         </ul>
+	</div>
+	</div>
+</div>
+<div class="blk-graph-info blkc">
+<div class="blk-title"><span class="title-user-browser">Browser used</span></div>
+<div class="box-chart">
+	<div class="box-pie-chart">
+        <canvas id="pieChart2" height="150"></canvas>
+        </div>
+        <div class="box-chart-legend">
+         <ul class="chart-legend clearfix">
+        <li style="color:#f56954"> chrome</li><li style="color:#00a65a"> safari</li>        </ul>
+        </div>
+</div>
+</div>
+<div class="blk-graph-info blkd">
+<div class="blk-title"><span class="title-user-resolution">Screen resolutions</span></div>
+<div class="box-chart">
+	<div class="box-pie-chart">
+        <canvas id="pieChart3" height="150"></canvas>
+        </div>
+        <div class="box-chart-legend">
+         <ul class="chart-legend clearfix">
+        <li style="color:#f56954"> 600*800</li><li style="color:#00a65a"> 768*1366</li><li style="color:#f39c12"> 896*414</li><li style="color:#00c0ef"> 700*1050</li><li style="color:#3c8dbc"> 900*1440</li>        </ul>
+        </div>
+</div>
+</div>
+</div>
+<!--
+<div class="blk-title">title feed</div>
+<div class="box-feed">
+<ul>
+<li class="blk-feed">
+<div id="resfeed"></div>
+<script src="http://counter8.freecounterstat.com/private/res_geofeed2.js?c=055c36b95506f16dea1d21e6903f0b5d"></script>
+</li>
+</ul>
+</div>
+-->
+
+</div>
+<div class="footer">
+<span id="sfc778ca958cf4225f12464ef01d5a8fb69"></span>
+
+<script type="text/javascript">
+(function() {
+	//tabLM
+ var vscf = document.createElement('script'); vscf.type = 'text/javascript';vscf.async = true;
+ vscf.src = 'https://counter1.fcs.ovh/private/counter_async.js?c=778ca958cf4225f12464ef01d5a8fb69&FCS_type=622&FCS_coef=0.6&FCS_rest=&FCS_resc=F0F5F7&FCS_clic=1&FC_visi=0';
+ var vs = document.getElementsByTagName('script')[0]; vs.parentNode.insertBefore(vscf, vs);
+ })();
+</script>
+
+<!-- gAnalytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92768382-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- end gAnalytics -->
+
+<p><a href="https://www.compteurdevisite.com/" title="Compteur de visite" target="_blank">Compteur <span class="fr"></span></a>
+ <a href="https://www.contadorvisitasgratis.com/" title="Contador visitas gratis" target="_blank">Contador <span class="es"></span></a>
+ <a href="https://www.webcontadores.com/" title="Web contadores" target="_blank">Contador <span class="br-pt"></span></a>
+ <a href="https://www.contatoreaccessi.com/" title="Contatore accessi" target="_blank">Contatore <span class="it"></span></a>
+ <a href="https://www.besucherstatistiken.com/" title="Besucherstatistiken" target="_blank">Counter <span class="de"></span></a>
+ <a href="http://www.countergeo.com/" title="Geolocate your visitors" target="_blank">Countergeo: Geolocate your visitors</a></p>
+<script src="https://geo1.geocontador.com/private/blind_countergeo.js?c=1148d394c3e3c68bc001de52660b9e51"></script>
+
+
+<!-- nav -->
+<div class="menu-mobile">
+<form method="post">
+<select onChange="location.href = '' + this.options[this.selectedIndex].value + '';">
+<option label="Statistics"></option>
+<option value="index.php" label="Homepage"></option>
+<option value="step_1.php" label="Sign up free"></option>
+<option value="extensions-browser.php" label="Chrome and Opera"></option>
+<option value="contact.php" label="Contact"></option>
+</select>
+</form>
+</div>
+<!-- end nav -->
+</div>
+</div>
+<!-- qrcode -->
+<div class="modal">
+  <input class="modal-open" id="modal-one" type="checkbox" hidden>
+  <div class="modal-wrap" aria-hidden="true" role="dialog">
+    <label class="modal-overlay" for="modal-one"></label>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h2>QR Code</h2>
+        <label class="btn-close" for="modal-one" aria-hidden="true">×</label>
+      </div>
+      <div class="modal-body">
+        <p>
+<img src="commun/qrcode.png?1609911224" alt="qrcode" />  </p>
+      </div>
+      <div class="modal-footer">
+        <label class="btn btn-primary" for="modal-one"> </label>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end qrcode -->
+<div class="mano"></div>
+
+ <script src="/commun/geozoom/js/Chart.min.js"></script>
+ <script src="/commun/geozoom/js/raphael-min_2.1.0.js"></script>
+ <script src="/commun/geozoom/js/morris.min_0.5.1.js"></script>
+ <script src="/commun/geozoom/js/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+ <script src="/commun/geozoom/js/worldmap.js" type="text/javascript"></script>
+
+<script>
+ $(function() {
+    $( "#tabs" ).tabs();
+    $( document ).tooltip();
+ });
+
+
+
+
+  //- PIE CHART -
+  //-------------
+  // Get context with jQuery - using jQuery's .get() method.
+
+   var pieChartCanvas = $("#pieChart").get(0).getContext("2d");
+  var pieChart = new Chart(pieChartCanvas);
+  var PieData = [
+{
+        value: 194,
+        color: "#f56954",
+        highlight: "#f56954",
+        label: "computer"
+        },
+{
+        value: 1,
+        color: "#00a65a",
+        highlight: "#00a65a",
+        label: "smartphone"
+        },
+  ];
+  var pieOptions = {
+    //Boolean - Whether we should show a stroke on each segment
+    segmentShowStroke: true,
+    //String - The colour of each segment stroke
+    segmentStrokeColor: "#fff",
+    //Number - The width of each segment stroke
+    segmentStrokeWidth: 1,
+    //Number - The percentage of the chart that we cut out of the middle
+    percentageInnerCutout: 50, // This is 0 for Pie charts
+    //Number - Amount of animation steps
+    animationSteps: 100,
+    //String - Animation easing effect
+    animationEasing: "easeOutBounce",
+    //Boolean - Whether we animate the rotation of the Doughnut
+    animateRotate: true,
+    //Boolean - Whether we animate scaling the Doughnut from the centre
+    animateScale: false,
+    //Boolean - whether to make the chart responsive to window resizing
+    responsive: true,
+    // Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
+    maintainAspectRatio: false,
+    //String - A legend template
+    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>",
+    //String - A tooltip template
+//    tooltipTemplate: "<%=value %> <%=label%> users"
+tooltipTemplate: "<%=value %> users"
+  };
+  //Create pie or douhnut chart
+  // You can switch between pie and douhnut using the method below.
+  $("#pieChart").on('inview', function(event, visible) {
+ if(visible){$(function(){pieChart.Doughnut(PieData, pieOptions);});}
+ else{$("#pieChart").empty();}
+ });
+  //pieChart.Doughnut(PieData, pieOptions);
+
+
+  var pieChartCanvas1 = $("#pieChart1").get(0).getContext("2d");
+  var pieChart1 = new Chart(pieChartCanvas1);
+  var PieData1 = [
+{
+        value: 190,
+        color: "#f56954",
+        highlight: "#f56954",
+        label: "lin"
+        },
+{
+        value: 2,
+        color: "#00a65a",
+        highlight: "#00a65a",
+        label: "windows"
+        },
+{
+        value: 2,
+        color: "#f39c12",
+        highlight: "#f39c12",
+        label: "mac"
+        },
+{
+        value: 1,
+        color: "#00c0ef",
+        highlight: "#00c0ef",
+        label: "iphone os"
+        },
+  ];
+
+ $("#pieChart1").on('inview', function(event, visible) {
+ if(visible){$(function(){pieChart1.Doughnut(PieData1, pieOptions);});}
+ else{$("#pieChart1").empty();}
+ });
+
+  var pieChartCanvas2 = $("#pieChart2").get(0).getContext("2d");
+  var pieChart2 = new Chart(pieChartCanvas2);
+  var PieData2 = [
+{
+        value: 193,
+        color: "#f56954",
+        highlight: "#f56954",
+        label: "chrome"
+        },
+{
+        value: 2,
+        color: "#00a65a",
+        highlight: "#00a65a",
+        label: "safari"
+        },
+  ];
+
+$("#pieChart2").on('inview', function(event, visible) {
+ if(visible){$(function(){pieChart2.Doughnut(PieData2, pieOptions);});}
+ else{$("#pieChart2").empty();}
+ });
+
+//pieChart2.Doughnut(PieData2, pieOptions);
+var pieChartCanvas3 = $("#pieChart3").get(0).getContext("2d");
+var pieChart3 = new Chart(pieChartCanvas3);
+var PieData3 = [
+{
+        value: 188,
+        color: "#f56954",
+        highlight: "#f56954",
+        label: "600*800"
+        },
+{
+        value: 4,
+        color: "#00a65a",
+        highlight: "#00a65a",
+        label: "768*1366"
+        },
+{
+        value: 1,
+        color: "#f39c12",
+        highlight: "#f39c12",
+        label: "896*414"
+        },
+{
+        value: 1,
+        color: "#00c0ef",
+        highlight: "#00c0ef",
+        label: "700*1050"
+        },
+{
+        value: 1,
+        color: "#3c8dbc",
+        highlight: "#3c8dbc",
+        label: "900*1440"
+        },
+  ];
+  $("#pieChart3").on('inview', function(event, visible) {
+ if(visible){$(function(){pieChart3.Doughnut(PieData3, pieOptions);});}
+ else{$("#pieChart3").empty();}
+ });
+//pieChart3.Doughnut(PieData3, pieOptions);
+
+var tab_code_marker=new Array('EU');
+var tab_label=new Array();
+tab_label['US']='Untd States<br>Total : 7478';
+tab_label['IE']='Ireland<br>Total : 2600<br>Online : 5';
+tab_label['CN']='China<br>Total : 136';
+tab_label['CA']='Canada<br>Total : 76';
+tab_label['IN']='India<br>Total : 51';
+tab_label['PH']='Philippines<br>Total : 43';
+tab_label['DE']='Germany<br>Total : 37';
+tab_label['GB']='Untd Kingdom<br>Total : 36';
+tab_label['FR']='France<br>Total : 32<br>Online : 1';
+tab_label['IT']='Italy<br>Total : 32';
+tab_label['AE']='Arab Emirates<br>Total : 25';
+tab_label['MX']='Mexico<br>Total : 18';
+tab_label['EG']='Egypt<br>Total : 14';
+tab_label['AU']='Australia<br>Total : 14';
+tab_label['A1']='Undefined<br>Total : 11';
+tab_label['MY']='Malaysia<br>Total : 9';
+tab_label['SG']='Singapore<br>Total : 8';
+tab_label['NL']='Netherlands<br>Total : 8';
+tab_label['ID']='Indonesia<br>Total : 7';
+tab_label['TH']='Thailand<br>Total : 7';
+tab_label['RU']='Russia<br>Total : 7';
+tab_label['BR']='Brazil<br>Total : 7';
+tab_label['KR']='Korea<br>Total : 7';
+tab_label['UA']='Ukraine<br>Total : 6';
+tab_label['TR']='Turkey<br>Total : 6';
+tab_label['AP']='Asia Pacific<br>Total : 6';
+tab_label['HK']='Hong Kong<br>Total : 6';
+tab_label['AT']='Austria<br>Total : 5';
+tab_label['ZA']='South Africa<br>Total : 5';
+tab_label['PK']='Pakistan<br>Total : 4';
+tab_label['SA']='Saudi Arabia<br>Total : 4';
+tab_label['LK']='Sri Lanka<br>Total : 4';
+tab_label['CO']='Colombia<br>Total : 3';
+tab_label['EU']='Europe<br>Total : 3';
+tab_label['JO']='Jordan<br>Total : 3';
+tab_label['BD']='Bangladesh<br>Total : 3';
+tab_label['FI']='Finland<br>Total : 3';
+tab_label['MM']='Myanmar<br>Total : 3';
+tab_label['RO']='Romania<br>Total : 2';
+tab_label['VN']='Vietnam<br>Total : 2';
+tab_label['TW']='Taiwan<br>Total : 2';
+tab_label['MA']='Morocco<br>Total : 2';
+tab_label['CZ']='Czech Rpb<br>Total : 2';
+tab_label['NA']='Namibia<br>Total : 2';
+tab_label['DZ']='Algeria<br>Total : 2';
+tab_label['BG']='Bulgaria<br>Total : 2';
+tab_label['BE']='Belgium<br>Total : 2';
+tab_label['JP']='Japan<br>Total : 2';
+tab_label['PS']='Palestinian<br>Total : 2';
+tab_label['QA']='Qatar<br>Total : 2';
+tab_label['SE']='Sweden<br>Total : 2';
+tab_label['LY']='Libyan<br>Total : 2';
+tab_label['GR']='Greece<br>Total : 1';
+tab_label['LC']='Saint Lucia<br>Total : 1';
+tab_label['NZ']='New Zealand<br>Total : 1';
+tab_label['TT']='Trinidad Tobago<br>Total : 1';
+tab_label['GH']='Ghana<br>Total : 1';
+tab_label['EE']='Estonia<br>Total : 1';
+tab_label['AM']='Armenia<br>Total : 1';
+tab_label['MT']='Malta<br>Total : 1';
+tab_label['GF']='French Guiana<br>Total : 1';
+tab_label['PE']='Peru<br>Total : 1';
+tab_label['BZ']='Belize<br>Total : 1';
+tab_label['IR']='Iran<br>Total : 1';
+tab_label['SK']='Slovakia<br>Total : 1';
+tab_label['KE']='Kenya<br>Total : 1';
+tab_label['BY']='Belarus<br>Total : 1';
+tab_label['BW']='Botswana<br>Total : 1';
+tab_label['CH']='Switzerland<br>Total : 1';
+tab_label['LB']='Lebanon<br>Total : 1';
+tab_label['IQ']='Iraq<br>Total : 1';
+tab_label['TZ']='Tanzania<br>Total : 1';
+tab_label['IL']='Israel<br>Total : 1';
+tab_label['NG']='Nigeria<br>Total : 1';
+tab_label['UG']='Uganda<br>Total : 1';
+tab_label['HU']='Hungary<br>Total : 1';
+tab_label['CY']='Cyprus<br>Total : 1';
+tab_label['KY']='Cayman Islands<br>Total : 1';
+tab_label['BS']='Bahamas<br>Total : 1';
+tab_label['RS']='Serbia<br>Total : 1';
+tab_label['DK']='Denmark<br>Total : 1';
+tab_label['DO']='Dominican<br>Total : 1';
+
+var visitorsData = {
+"US": 7478
+,"IE": 2600
+,"CN": 136
+,"CA": 76
+,"IN": 51
+,"PH": 43
+,"DE": 37
+,"GB": 36
+,"FR": 32
+,"IT": 32
+,"AE": 25
+,"MX": 18
+,"EG": 14
+,"AU": 14
+,"A1": 11
+,"MY": 9
+,"SG": 8
+,"NL": 8
+,"ID": 7
+,"TH": 7
+,"RU": 7
+,"BR": 7
+,"KR": 7
+,"UA": 6
+,"TR": 6
+,"AP": 6
+,"HK": 6
+,"AT": 5
+,"ZA": 5
+,"PK": 4
+,"SA": 4
+,"LK": 4
+,"CO": 3
+,"JO": 3
+,"BD": 3
+,"FI": 3
+,"MM": 3
+,"RO": 2
+,"VN": 2
+,"TW": 2
+,"MA": 2
+,"CZ": 2
+,"NA": 2
+,"DZ": 2
+,"BG": 2
+,"BE": 2
+,"JP": 2
+,"PS": 2
+,"QA": 2
+,"SE": 2
+,"LY": 2
+,"GR": 1
+,"LC": 1
+,"NZ": 1
+,"TT": 1
+,"GH": 1
+,"EE": 1
+,"AM": 1
+,"MT": 1
+,"GF": 1
+,"PE": 1
+,"BZ": 1
+,"IR": 1
+,"SK": 1
+,"KE": 1
+,"BY": 1
+,"BW": 1
+,"CH": 1
+,"LB": 1
+,"IQ": 1
+,"TZ": 1
+,"IL": 1
+,"NG": 1
+,"UG": 1
+,"HU": 1
+,"CY": 1
+,"KY": 1
+,"BS": 1
+,"RS": 1
+,"DK": 1
+,"DO": 1
+        };
+//  $('#map1').vectorMap('set', 'focus', code);
+   	$("#world-map").on('inview', function(event, visible) {
+    if (visible) {
+   	$(function() {
+           $('#world-map').vectorMap({
+                map : 'world_mill_en',
+                zoomMax:15,
+                backgroundColor : "transparent",
+                //backgroundColor : "#cccccc",
+	//	focusOn: {
+        //        region: 'BR',
+        //        scale: 4
+        //        },
+
+                regionStyle : {
+                        initial : {
+                                fill : '#e4e4e4',
+                                "fill-opacity" : 1,
+                                stroke : 'none',
+                                "stroke-width" : 0,
+                                "stroke-opacity" : 1
+                        }
+                },
+markers:  [{latLng: [48, 7], name: 'Europe', style: {r: 1.5, fill: '#b8ffd3'}}
+],                series : {
+                        regions : [{
+                                values : visitorsData,
+                                //scale : ["#92c1dc", "#ebf4f9"],
+				 scale:{"7478": "#c81414"
+,"2600": "#3ecdb8"
+,"136": "#a8ffcc"
+,"76": "#abffcd"
+,"51": "#adffce"
+,"43": "#adffce"
+,"37": "#adffce"
+,"36": "#adffce"
+,"32": "#adffce"
+,"32": "#adffce"
+,"25": "#b0ffcf"
+,"18": "#b0ffcf"
+,"14": "#b0ffcf"
+,"14": "#b0ffcf"
+,"11": "#b0ffcf"
+,"9": "#b0ffcf"
+,"8": "#b0ffcf"
+,"8": "#b0ffcf"
+,"7": "#b0ffcf"
+,"7": "#b0ffcf"
+,"7": "#b0ffcf"
+,"7": "#b0ffcf"
+,"7": "#b0ffcf"
+,"6": "#b3ffd1"
+,"6": "#b3ffd1"
+,"6": "#b3ffd1"
+,"6": "#b3ffd1"
+,"5": "#b3ffd1"
+,"5": "#b3ffd1"
+,"4": "#b6ffd2"
+,"4": "#b6ffd2"
+,"4": "#b6ffd2"
+,"3": "#b8ffd3"
+,"3": "#b8ffd3"
+,"3": "#b8ffd3"
+,"3": "#b8ffd3"
+,"3": "#b8ffd3"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"2": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+,"1": "#bbffd4"
+},
+				 legend: {horizontal: true,title: 'Color' },
+                                normalizeFunction : 'polynomial'
+                        }]
+                },
+                onRegionLabelShow : function(e, el, code) {
+                        if ( typeof visitorsData[code] != "undefined")
+                               // el.html(el.html() + ': ' + visitorsData[code] + ' new visitors');
+				//el.html(el.html()+"<table><tr><td><img src=\"http://counter8.freecounterstat.com:8080/flag4/perneo/"+code+".png\"></td><td valign=\"middle\">"+visitorsData[code]+"</td></tr></table>");
+				el.html(affiche_label("region",el,code));
+
+                },
+                onMarkerLabelShow: function(e, el, code) {
+					el.html(affiche_label("marker",el,code));
+				},
+		//setFocus:{region: 'CA',scale:10}
+
+        });
+        });//fin ready inview jvector
+      	}
+      	else {
+      	$("#world-map").empty();
+      	}
+	});
+        function affiche_label(type,label,code){
+if(type=="marker"){code_iso=tab_code_marker[code].substr(0,2);code_label=tab_code_marker[code];}
+else{code_iso=code;code_label=code;}
+if(tab_label[code_label]==undefined){tab_label[code_label]=label.html();}
+//var res="<table><tr><td><img src=\"http://geo1.geocompteur.com:8080/flag4/perneo/"+code+".png\"></td><td valign=\"middle\">"+ label.html()+"</td></tr></table>";
+var res="<table><tr><td><img src=\"https://counter8.freecounterstat.com:8080/flag4/perneo/"+code_iso+".png\"></td><td valign=\"middle\">"+tab_label[code_label]+"</td></tr></table>";
+return(res);
+}
+
+
+	//$('#world-map').vectorMap('set', 'focus', 'IE');
+
+
+        var line1 = new Morris.Line({
+                element : 'synthese_jour',
+                resize : true,
+                data : [
+ {    y : '2021-01-06 01:00:00',
+                        item1 : 0,
+                        item2 : 0,
+			item3 : 0,
+			item4 : 0,
+                }, {    y : '2021-01-06 02:00:00',
+                        item1 : 16,
+                        item2 : 0,
+			item3 : 9,
+			item4 : 16,
+                }, {    y : '2021-01-06 03:00:00',
+                        item1 : 16,
+                        item2 : 0,
+			item3 : 17,
+			item4 : 16,
+                }, {    y : '2021-01-06 04:00:00',
+                        item1 : 40,
+                        item2 : 0,
+			item3 : 18,
+			item4 : 40,
+                }, {    y : '2021-01-06 05:00:00',
+                        item1 : 40,
+                        item2 : 0,
+			item3 : 38,
+			item4 : 40,
+                }, {    y : '2021-01-06 06:00:00',
+                        item1 : 62,
+                        item2 : 0,
+			item3 : 55,
+			item4 : 62,
+                }, {    y : '2021-01-06 07:00:00',
+                        item1 : 63,
+                        item2 : 0,
+			item3 : 68,
+			item4 : 63,
+                }, {    y : '2021-01-06 08:00:00',
+                        item1 : 78,
+                        item2 : 0,
+			item3 : 72,
+			item4 : 78,
+                }, {    y : '2021-01-06 09:00:00',
+                        item1 : 79,
+                        item2 : 0,
+			item3 : 72,
+			item4 : 79,
+                }, {    y : '2021-01-06 10:00:00',
+                        item1 : 97,
+                        item2 : 0,
+			item3 : 98,
+			item4 : 97,
+                }, {    y : '2021-01-06 11:00:00',
+                        item1 : 97,
+                        item2 : 0,
+			item3 : 117,
+			item4 : 97,
+                }, {    y : '2021-01-06 12:00:00',
+                        item1 : 118,
+                        item2 : 0,
+			item3 : 129,
+			item4 : 118,
+                }, {    y : '2021-01-06 13:00:00',
+                        item1 : 118,
+                        item2 : 0,
+			item3 : 129,
+			item4 : 118,
+                }, {    y : '2021-01-06 14:00:00',
+                        item1 : 134,
+                        item2 : 0,
+			item3 : 149,
+			item4 : 134,
+                }, {    y : '2021-01-06 15:00:00',
+                        item1 : 150,
+                        item2 : 0,
+			item3 : 156,
+			item4 : 150,
+                }, {    y : '2021-01-06 16:00:00',
+                        item1 : 153,
+                        item2 : 0,
+			item3 : 177,
+			item4 : 153,
+                }, {    y : '2021-01-06 17:00:00',
+                        item1 : 173,
+                        item2 : 0,
+			item3 : 184,
+			item4 : 173,
+                }, {    y : '2021-01-06 18:00:00',
+                        item1 : 174,
+                        item2 : 0,
+			item3 : 187,
+			item4 : 174,
+                }, {    y : '2021-01-06 19:00:00',
+                        item1 : 194,
+                        item2 : 0,
+			item3 : 206,
+			item4 : 194,
+                }, {    y : '2021-01-06 20:00:00',
+                        item1 : 194,
+                        item2 : 0,
+			item3 : 218,
+			item4 : 194,
+                }, {    y : '2021-01-06 21:00:00',
+                        item1 : null,
+                        item2 : 0,
+			item3 : 240,
+			item4 : 194,
+                }, {    y : '2021-01-06 22:00:00',
+                        item1 : null,
+                        item2 : 0,
+			item3 : 240,
+			item4 : 194,
+                }, {    y : '2021-01-06 23:00:00',
+                        item1 : null,
+                        item2 : 0,
+			item3 : 258,
+			item4 : 194,
+                }, {    y : '2021-01-06 24:00:00',
+                        item1 : null,
+                        item2 : 0,
+			item3 : 275,
+			item4 : 194,
+                }                ],
+                 xkey : 'y',
+                ykeys : ['item1','item4', 'item2','item3'],
+		//ykeys : ['item1', 'item4', 'item2','item3'],
+                xLabelFormat: function(d) {
+                	 return d.getHours()+':00';
+        		},
+        		lineColors: ['#37B7F3','#CCCCCC','#3CC051','#FCB322'],
+		        pointFillColors: ['#37B7F3','#CCCCCC','#3CC051','#FCB322'],
+
+                labels : ["Today","Project","Yesterday","Last week"],
+    hideHover: 'auto',
+   dateFormat: function (x) { return new Date(x).getHours()+':00'; }
+        });
+line1.options.labels.forEach(function(label, i){
+    var legendItem = $('<span></span>').text(label).css('color', line1.options.lineColors[i])
+    $('#legendline').append(legendItem);
+})
+//$('#res_synthese').html($('#synthese_jour').html());
+
+var area2 = new Morris.Line({
+                element : 'synthese_mois',
+                resize : true,
+                data : [
+ {    y : '2021-01-02',
+                        item1 : 228,
+			item4 : 228,
+                        item2 : 13,
+                         item3 : 0
+                }, {    y : '2021-01-03',
+                        item1 : 429,
+			item4 : 429,
+                        item2 : 30,
+                         item3 : 0
+                }, {    y : '2021-01-04',
+                        item1 : 624,
+			item4 : 624,
+                        item2 : 41,
+                         item3 : 0
+                }, {    y : '2021-01-05',
+                        item1 : 624,
+			item4 : 624,
+                        item2 : 49,
+                         item3 : 0
+                }, {    y : '2021-01-06',
+                        item1 : null,
+			item4 : 843,
+                        item2 : 57,
+                         item3 : 0
+                }, {    y : '2021-01-07',
+                        item1 : null,
+			item4 : 1062,
+                        item2 : 72,
+                         item3 : 0
+                }, {    y : '2021-01-08',
+                        item1 : null,
+			item4 : 1281,
+                        item2 : 93,
+                         item3 : 0
+                }, {    y : '2021-01-09',
+                        item1 : null,
+			item4 : 1500,
+                        item2 : 110,
+                         item3 : 0
+                }, {    y : '2021-01-10',
+                        item1 : null,
+			item4 : 1719,
+                        item2 : 122,
+                         item3 : 0
+                }, {    y : '2021-01-11',
+                        item1 : null,
+			item4 : 1938,
+                        item2 : 159,
+                         item3 : 0
+                }, {    y : '2021-01-12',
+                        item1 : null,
+			item4 : 2157,
+                        item2 : 163,
+                         item3 : 0
+                }, {    y : '2021-01-13',
+                        item1 : null,
+			item4 : 2376,
+                        item2 : 177,
+                         item3 : 0
+                }, {    y : '2021-01-14',
+                        item1 : null,
+			item4 : 2595,
+                        item2 : 191,
+                         item3 : 0
+                }, {    y : '2021-01-15',
+                        item1 : null,
+			item4 : 2814,
+                        item2 : 208,
+                         item3 : 0
+                }, {    y : '2021-01-16',
+                        item1 : null,
+			item4 : 3033,
+                        item2 : 340,
+                         item3 : 0
+                }, {    y : '2021-01-17',
+                        item1 : null,
+			item4 : 3252,
+                        item2 : 393,
+                         item3 : 0
+                }, {    y : '2021-01-18',
+                        item1 : null,
+			item4 : 3471,
+                        item2 : 473,
+                         item3 : 0
+                }, {    y : '2021-01-19',
+                        item1 : null,
+			item4 : 3690,
+                        item2 : 559,
+                         item3 : 0
+                }, {    y : '2021-01-20',
+                        item1 : null,
+			item4 : 3909,
+                        item2 : 595,
+                         item3 : 0
+                }, {    y : '2021-01-21',
+                        item1 : null,
+			item4 : 4128,
+                        item2 : 601,
+                         item3 : 0
+                }, {    y : '2021-01-22',
+                        item1 : null,
+			item4 : 4347,
+                        item2 : 608,
+                         item3 : 0
+                }, {    y : '2021-01-23',
+                        item1 : null,
+			item4 : 4566,
+                        item2 : 617,
+                         item3 : 0
+                }, {    y : '2021-01-24',
+                        item1 : null,
+			item4 : 4785,
+                        item2 : 624,
+                         item3 : 0
+                }, {    y : '2021-01-25',
+                        item1 : null,
+			item4 : 5004,
+                        item2 : 627,
+                         item3 : 0
+                }, {    y : '2021-01-26',
+                        item1 : null,
+			item4 : 5223,
+                        item2 : 652,
+                         item3 : 0
+                }, {    y : '2021-01-27',
+                        item1 : null,
+			item4 : 5442,
+                        item2 : 936,
+                         item3 : 0
+                }, {    y : '2021-01-28',
+                        item1 : null,
+			item4 : 5661,
+                        item2 : 1207,
+                         item3 : 0
+                }, {    y : '2021-01-29',
+                        item1 : null,
+			item4 : 5880,
+                        item2 : 1482,
+                         item3 : 0
+                }, {    y : '2021-01-30',
+                        item1 : null,
+			item4 : 6099,
+                        item2 : 1685,
+                         item3 : 0
+                }, {    y : '2021-01-31',
+                        item1 : null,
+			item4 : 6318,
+                        item2 : 1908,
+                         item3 : 0
+                }, {    y : '2021-01-01',
+                        item1 : null,
+			item4 : 6746,
+                        item2 : 1921,
+                         item3 : 0
+                }                ],
+                 xkey : 'y',
+                ykeys : ['item1','item4','item2','item3'],
+                xLabelFormat: function(d) {
+        	  	return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear();
+          		},
+         		lineColors: ['#37B7F3','#CCCCCC','#3CC051','#FCB322'],
+		        pointFillColors: ['#37B7F3','#CCCCCC','#3CC051','#FCB322'],
+
+
+                labels : ["This month","Project","Last month","This time last year" ],
+    hideHover: 'auto',
+   dateFormat: function (x) { return new Date(x).toDateString(); }
+   //dateFormat: function (x) { return new Date(x).toLocaleDateString(); }
+
+        });
+$('#synthese_mois').css('display','none');
+
+var line_an = new Morris.Line({
+                element : 'synthese_an',
+                resize : true,
+                data : [
+                ],
+                 xkey : 'y',
+                ykeys : ['item1'],
+                xLabelFormat: function(d) {
+        	  	return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear();
+          		},
+         		lineColors: ['#37B7F3'],
+		        pointFillColors: ['#37B7F3'],
+
+
+                labels : ["TRAD_EVOL_AN"],
+    hideHover: 'auto',
+   dateFormat: function (x) { return new Date(x).toDateString(); }
+   //dateFormat: function (x) { return new Date(x).toLocaleDateString(); }
+
+        });
+$('#synthese_an').css('display','none');
+
+var bar1 = new Morris.Bar({
+                element : 'bar_jour',
+                resize : true,
+                parseTime: false,
+                data : [
+ {    y : '2021-01-06 01:00:00',
+			 item1 : 0,
+        	         item2 : 0,
+                         item3 : 0
+	
+                }, {    y : '2021-01-06 02:00:00',
+			 item1 : 16,
+        	         item2 : 0,
+                         item3 : 9
+	
+                }, {    y : '2021-01-06 03:00:00',
+			 item1 : 0,
+        	         item2 : 0,
+                         item3 : 8
+	
+                }, {    y : '2021-01-06 04:00:00',
+			 item1 : 24,
+        	         item2 : 0,
+                         item3 : 1
+	
+                }, {    y : '2021-01-06 05:00:00',
+			 item1 : 0,
+        	         item2 : 0,
+                         item3 : 20
+	
+                }, {    y : '2021-01-06 06:00:00',
+			 item1 : 22,
+        	         item2 : 0,
+                         item3 : 17
+	
+                }, {    y : '2021-01-06 07:00:00',
+			 item1 : 1,
+        	         item2 : 0,
+                         item3 : 13
+	
+                }, {    y : '2021-01-06 08:00:00',
+			 item1 : 15,
+        	         item2 : 0,
+                         item3 : 4
+	
+                }, {    y : '2021-01-06 09:00:00',
+			 item1 : 1,
+        	         item2 : 0,
+                         item3 : 0
+	
+                }, {    y : '2021-01-06 10:00:00',
+			 item1 : 18,
+        	         item2 : 0,
+                         item3 : 26
+	
+                }, {    y : '2021-01-06 11:00:00',
+			 item1 : 0,
+        	         item2 : 0,
+                         item3 : 19
+	
+                }, {    y : '2021-01-06 12:00:00',
+			 item1 : 21,
+        	         item2 : 0,
+                         item3 : 12
+	
+                }, {    y : '2021-01-06 13:00:00',
+			 item1 : 0,
+        	         item2 : 0,
+                         item3 : 0
+	
+                }, {    y : '2021-01-06 14:00:00',
+			 item1 : 16,
+        	         item2 : 0,
+                         item3 : 20
+	
+                }, {    y : '2021-01-06 15:00:00',
+			 item1 : 16,
+        	         item2 : 0,
+                         item3 : 7
+	
+                }, {    y : '2021-01-06 16:00:00',
+			 item1 : 3,
+        	         item2 : 0,
+                         item3 : 21
+	
+                }, {    y : '2021-01-06 17:00:00',
+			 item1 : 20,
+        	         item2 : 0,
+                         item3 : 7
+	
+                }, {    y : '2021-01-06 18:00:00',
+			 item1 : 1,
+        	         item2 : 0,
+                         item3 : 3
+	
+                }, {    y : '2021-01-06 19:00:00',
+			 item1 : 20,
+        	         item2 : 0,
+                         item3 : 19
+	
+                }, {    y : '2021-01-06 20:00:00',
+			 item1 : 0,
+        	         item2 : 0,
+                         item3 : 12
+	
+                }, {    y : '2021-01-06 21:00:00',
+			 item1 : 0,
+        	         item2 : 0,
+                         item3 : 22
+	
+                }, {    y : '2021-01-06 22:00:00',
+			 item1 : 0,
+        	         item2 : 0,
+                         item3 : 0
+	
+                }, {    y : '2021-01-06 23:00:00',
+			 item1 : 0,
+        	         item2 : 0,
+                         item3 : 18
+	
+                }, {    y : '2021-01-06 24:00:00',
+			 item1 : 0,
+        	         item2 : 0,
+                         item3 : 17
+	
+                }                ],
+                 xkey : 'y',
+                ykeys : ['item1', 'item2','item3'],
+                barColors: ['#37B7F3','#3CC051','#FCB322'],
+
+
+                //xLabelFormat: function(d) {
+        	  	//return new Date(d).toDateString();
+          		//},
+                labels : ["Today", "Yesterday", "Last week"],
+                //labels : ["Last week", "Yesterday","Today" ],
+    		hideHover: 'auto',
+		dateFormat: function (x) { return new Date(x).toDateString(); },
+		hoverCallback: function(index, options, content) {return(content);}
+        });
+
+bar1.options.labels.forEach(function(label, i){
+    var legendItem = $('<span></span>').text(label).css('color', bar1.options.barColors[i])
+    $('#legendbar').append(legendItem);
+});
+
+
+var bar2 = new Morris.Bar({
+                element : 'bar_mois',
+                resize : true,
+                parseTime: false,
+                data : [
+ {    y : '2021-01-02',
+                        item1 : 228,
+                        item2 : 13,
+                        item3 : 0
+                }, {    y : '2021-01-03',
+                        item1 : 201,
+                        item2 : 17,
+                        item3 : 0
+                }, {    y : '2021-01-04',
+                        item1 : 195,
+                        item2 : 11,
+                        item3 : 0
+                }, {    y : '2021-01-05',
+                        item1 : 0,
+                        item2 : 8,
+                        item3 : 0
+                }, {    y : '2021-01-06',
+                        item1 : 0,
+                        item2 : 8,
+                        item3 : 0
+                }, {    y : '2021-01-07',
+                        item1 : 0,
+                        item2 : 15,
+                        item3 : 0
+                }, {    y : '2021-01-08',
+                        item1 : 0,
+                        item2 : 21,
+                        item3 : 0
+                }, {    y : '2021-01-09',
+                        item1 : 0,
+                        item2 : 17,
+                        item3 : 0
+                }, {    y : '2021-01-10',
+                        item1 : 0,
+                        item2 : 12,
+                        item3 : 0
+                }, {    y : '2021-01-11',
+                        item1 : 0,
+                        item2 : 37,
+                        item3 : 0
+                }, {    y : '2021-01-12',
+                        item1 : 0,
+                        item2 : 4,
+                        item3 : 0
+                }, {    y : '2021-01-13',
+                        item1 : 0,
+                        item2 : 14,
+                        item3 : 0
+                }, {    y : '2021-01-14',
+                        item1 : 0,
+                        item2 : 14,
+                        item3 : 0
+                }, {    y : '2021-01-15',
+                        item1 : 0,
+                        item2 : 17,
+                        item3 : 0
+                }, {    y : '2021-01-16',
+                        item1 : 0,
+                        item2 : 132,
+                        item3 : 0
+                }, {    y : '2021-01-17',
+                        item1 : 0,
+                        item2 : 53,
+                        item3 : 0
+                }, {    y : '2021-01-18',
+                        item1 : 0,
+                        item2 : 80,
+                        item3 : 0
+                }, {    y : '2021-01-19',
+                        item1 : 0,
+                        item2 : 86,
+                        item3 : 0
+                }, {    y : '2021-01-20',
+                        item1 : 0,
+                        item2 : 36,
+                        item3 : 0
+                }, {    y : '2021-01-21',
+                        item1 : 0,
+                        item2 : 6,
+                        item3 : 0
+                }, {    y : '2021-01-22',
+                        item1 : 0,
+                        item2 : 7,
+                        item3 : 0
+                }, {    y : '2021-01-23',
+                        item1 : 0,
+                        item2 : 9,
+                        item3 : 0
+                }, {    y : '2021-01-24',
+                        item1 : 0,
+                        item2 : 7,
+                        item3 : 0
+                }, {    y : '2021-01-25',
+                        item1 : 0,
+                        item2 : 3,
+                        item3 : 0
+                }, {    y : '2021-01-26',
+                        item1 : 0,
+                        item2 : 25,
+                        item3 : 0
+                }, {    y : '2021-01-27',
+                        item1 : 0,
+                        item2 : 284,
+                        item3 : 0
+                }, {    y : '2021-01-28',
+                        item1 : 0,
+                        item2 : 271,
+                        item3 : 0
+                }, {    y : '2021-01-29',
+                        item1 : 0,
+                        item2 : 275,
+                        item3 : 0
+                }, {    y : '2021-01-30',
+                        item1 : 0,
+                        item2 : 203,
+                        item3 : 0
+                }, {    y : '2021-01-31',
+                        item1 : 0,
+                        item2 : 223,
+                        item3 : 0
+                }, {    y : '2021-01-01',
+                        item1 : 209,
+                        item2 : 13,
+                        item3 : 0
+                }                ],
+                 xkey : 'y',
+                ykeys : ['item1', 'item2', 'item3'],
+                labels : ["This month","Last month","This time last year"],
+                barColors: ['#37B7F3','#3CC051','#FCB322'],
+		hideHover: 'auto',
+		dateFormat: function (x) { return new Date(x).toDateString(); },
+                hoverCallback: function(index, options, content) {return(content);}
+        });
+$('#bar_mois').css('display','none');
+
+function synth_jour_mois(t)
+{
+ if(t=='jour'){
+ $("#synthese_mois").css("display", "none");
+ $("#synthese_jour").css("display", "block");
+ $("#synthese_an").css("display", "none");
+ $("#graph_cumul").html('Accumulated hourly');
+ $('#legendline').html('');
+ line1.options.labels.forEach(function(label, i){
+    var legendItem = $('<span></span>').text(label).css('color', line1.options.lineColors[i])
+    $('#legendline').append(legendItem);
+ })
+ }
+ else if(t=='an'){
+ $("#synthese_jour").css("display", "none");
+ $("#synthese_mois").css("display", "none");
+ $("#synthese_an").css("display", "block");
+ $("#graph_cumul").html('Day accumulated by day');
+ $('#legendline').html('');
+ line_an.options.labels.forEach(function(label, i){
+    var legendItem = $('<span></span>').text(label).css('color', line_an.options.lineColors[i])
+    $('#legendline').append(legendItem);
+ })
+ }
+ else{
+ $("#synthese_jour").css("display", "none");
+ $("#synthese_mois").css("display", "block");
+ $("#synthese_an").css("display", "none");
+ $("#graph_cumul").html('Day accumulated by day');
+ $('#legendline').html('');
+ area2.options.labels.forEach(function(label, i){
+    var legendItem = $('<span></span>').text(label).css('color', area2.options.lineColors[i])
+    $('#legendline').append(legendItem);
+ })
+ }
+}
+function bar_jour_mois(t)
+{
+ $('#legendbar').html('');
+ if(t=='jour'){
+ $("#bar_mois").css("display", "none");
+ $("#bar_jour").css("display", "block");
+ $("#graph_evol").html('Evolution by hour');
+  bar1.options.labels.forEach(function(label, i){
+  var legendItem = $('<span></span>').text(label).css('color', bar1.options.barColors[i])
+  $('#legendbar').append(legendItem);
+  });
+ }
+ else{
+ $("#bar_jour").css("display", "none");
+ $("#bar_mois").css("display", "block");
+ $("#graph_evol").html('Evolution by day');
+  bar2.options.labels.forEach(function(label, i){
+  var legendItem = $('<span></span>').text(label).css('color', bar2.options.barColors[i])
+  $('#legendbar').append(legendItem);
+  });
+ }
+}
+function aff_div(n,m){
+nav = navigator.appName;
+if(n==2 || n==3){document.location='geozoom.php?c=055c36b95506f16dea1d21e6903f0b5d&base=counter8&tab='+n+'&month='+m+'#tab'+n;
+}
+else if(n==6){affiche_stat();}
+else{
+document.location='geozoom.php?c=055c36b95506f16dea1d21e6903f0b5d&base=counter8&tab='+n+'&month='+m;
+}
+}
+
+function affich_city(k){
+if(document.getElementById('ci_'+k).style.display=="none"){
+document.getElementById('ci_'+k).style.display="table-row";
+}
+else{
+document.getElementById('ci_'+k).style.display="none";
+}
+}
+
+function zoom_city(lat,lon,iso){
+//t=getScrollXY();
+//sc=t[1];
+sc= document.getElementById('liste_pays_map').scrollTop;
+document.location='geozoom.php?c=055c36b95506f16dea1d21e6903f0b5d&base=counter8&tab=1&month=&lat='+lat+'&lon='+lon+'&iso='+iso+'&sc='+sc+'#zoomcity';
+}
+function getScrollXY() {
+  var scrOfX = 0, scrOfY = 0;
+  if( typeof( window.pageYOffset ) == 'number' ) {
+    //Netscape compliant
+    scrOfY = window.pageYOffset;
+    scrOfX = window.pageXOffset;
+  } else if( document.body && ( document.body.scrollLeft || document.body.scrollTop ) ) {
+    //DOM compliant
+    scrOfY = document.body.scrollTop;
+    scrOfX = document.body.scrollLeft;
+  } else if( document.documentElement && ( document.documentElement.scrollLeft || document.documentElement.scrollTop ) ) {
+    //IE6 standards compliant mode
+    scrOfY = document.documentElement.scrollTop;
+    scrOfX = document.documentElement.scrollLeft;
+  }
+  return [ scrOfX, scrOfY ];
+
+}
+</script>
+<div class="nav_flags">
+<!-- menu flags -->
+<ul>
+<li class="fl-mobile"><span class="fl-en"></span> <ul>
+<li></li>
+<li><a class="fl-fr" href="https://www.compteurdevisite.com" rel="nofollow"></a></li>
+<li><a class="fl-it" href="https://www.contatoreaccessi.com" rel="nofollow"></a></li>
+<li><a class="fl-es" href="https://www.contadorvisitasgratis.com" rel="nofollow"></a></li>
+<li><a class="fl-pt-br" href="https://www.webcontadores.com" rel="nofollow"></a></li>
+<li><a class="fl-de" href="https://www.besucherstatistiken.com" rel="nofollow"></a></li>
+</ul>
+</li>
+</ul></div>
+
+</body>
+</html>

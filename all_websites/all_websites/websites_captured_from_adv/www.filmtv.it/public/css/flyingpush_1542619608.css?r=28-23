@@ -1,0 +1,10 @@
+#av-pushdown-wrapper {
+    background-color: #000000;
+    position: relative;
+}
+.advCollapse {
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    visibility: hidden;
+}

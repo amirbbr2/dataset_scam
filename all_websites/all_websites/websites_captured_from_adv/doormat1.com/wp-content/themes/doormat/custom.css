@@ -1,0 +1,424 @@
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.en_number {
+    font-family: EN_IRANSans !important;
+}
+
+/*------------------------------*/
+
+#primary-menu {
+    float: inherit;
+}
+
+#header.full-header #primary-menu > ul {
+    border-left: 0px solid #EEE;
+}
+
+/*------------------------------*/
+
+.feature-box.fbox-light .fbox-icon i, .feature-box.fbox-light .fbox-icon img {
+    color: #1abc9c;
+}
+
+.fbox-effect .fbox-icon i:hover, .fbox-effect:hover .fbox-icon i {
+    background-color: #1abc9c4a;
+}
+
+.fbox-effect .fbox-icon i:after {
+    box-shadow: 0 0 0 2px #1abc9c;
+}
+
+/*------------------------------*/
+
+.telegram-color {
+    background: #0088CC
+}
+
+.telegram-color:hover {
+    background: #00aaff !important;
+}
+
+/*------------------------------*/
+
+.commentlist ul.children .comment-wrap {
+     padding-right: 35px;
+}
+
+.commentlist ul.children .comment-reply-link,
+.commentlist ul.children .review-comment-ratings {
+    left: 20px;
+}
+
+/*------------------------------*/
+
+span.phone {
+    text-align: left;
+    direction: ltr !important;
+    letter-spacing: 2px;
+}
+
+.dark .slider-caption, .dark .slider-caption h2 {
+    text-shadow: 1px 2px 3px #000000;
+}
+
+.slider-caption p {
+    direction: rtl;
+    text-shadow: 1px 1px 1px #000000;
+    font-weight: 500;
+}
+
+/*Grid*/
+/*------------------------------*/
+
+.entry-title h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: inline-block;
+}
+
+
+/*For Grid*/
+/*------------------------------*/
+
+.post-grid .entry {
+    margin-left: 0px;
+}
+
+.post-grid .entry {
+    padding-right: 0px;
+    padding-left: 40px;
+}
+
+/*For Grid 2*/
+/*------------------------------*/
+
+.post-grid.grid-2 .entry {
+    margin-left: 0px;
+}
+
+.post-grid.grid-2 .entry {
+    padding-right: 0px;
+    padding-left: 40px;
+}
+
+/*Remove letter spacing*/
+/*------------------------------*/
+
+label,
+.heading-block h1,
+.heading-block h2,
+.heading-block h3,
+.heading-block h4,
+.emphasis-title h1,
+.emphasis-title h2,
+.button.button-xlarge,
+.slider-caption h2,
+.entry-title h2,
+.widget > h4,
+.counter + h5,
+.feature-box h3 span.subtitle,
+#page-title h1,
+#top-search form input,
+#primary-menu ul li > a,
+.feature-box h3 {
+    letter-spacing: 0;
+}
+
+/* Divider */
+/*------------------------------*/
+
+.fancy-title h1, .fancy-title h2, .fancy-title h3, .fancy-title h4, .fancy-title h5, .fancy-title h6 {
+    padding-right: 15px;
+}
+
+/* Entry content */
+/*------------------------------*/
+.entry-content ul {
+    margin-right: 35px;
+}
+
+/* Pagenavi */
+/*------------------------------*/
+
+.wp-pagenavi a, .wp-pagenavi span {
+    float: right;
+}
+
+/* get-orders */
+/*------------------------------*/
+
+.get-orders.content-wrap {
+    padding-bottom: 25px;
+}
+
+.get-orders.content-wrap .entry:after {
+    height: 0px;
+}
+
+.portfolio-overlay a {
+    margin-right: -10px;
+}
+
+.order-form {
+
+}
+
+.order-form .error-color {
+    color: #ff0000 !important;
+}
+
+.order-form label.file-upload {
+    font-size: 0;
+    text-align: center;
+    display: block;
+    background: rgba(0, 163, 255, 0.09);
+    border: solid 1px rgba(25, 136, 255, 0.32);
+    height: 130px;
+    position: relative;
+}
+
+.order-form label.file-upload.broken {
+    border: solid 1px rgb(255, 0, 0);
+}
+
+.order-form label:after{
+    font-family: 'font-icons';
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 0px #000000;
+}
+
+.order-form label.file-upload:after{
+    content: '\e746';
+    color: #9f9f9f;
+
+}
+
+.order-form label.file-upload.uploaded:after{
+    content: '\e988';
+    color: #2db300;
+}
+
+.order-form label.file-upload.broken:after{
+    content: '\eadb';
+    color: #ff0000;
+}
+
+.order-form input[type="file"] {
+    display: none;
+}
+
+.upload-box {
+    position: relative;
+}
+
+.upload-box .clear-file {
+    position: absolute;
+    top: 13px;
+    right: 4px;
+    cursor: pointer;
+    z-index: 9999999999;
+    display: none;
+}
+
+.upload-box .clear-file:after {
+    content: '\e082';
+    display: block;
+    width: 10px;
+    height: 10px;
+    font: 20px/0px 'Simple-Line-Icons';
+    color: #ff0000;
+}
+
+/*Tick*/
+/*------------------------------*/
+
+.tick-box {
+    display: none;
+    margin: 0 auto 50px auto;
+    width: 170px;
+    height: 170px;
+}
+
+.circ{
+    opacity: 0;
+    stroke-dasharray: 130;
+    stroke-dashoffset: 130;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.tick{
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    -webkit-transition: stroke-dashoffset 1s 0.5s ease-out;
+    -moz-transition: stroke-dashoffset 1s 0.5s ease-out;
+    -ms-transition: stroke-dashoffset 1s 0.5s ease-out;
+    -o-transition: stroke-dashoffset 1s 0.5s ease-out;
+    transition: stroke-dashoffset 1s 0.5s ease-out;
+}
+
+.drawn + svg .path{
+    opacity: 1;
+    stroke-dashoffset: 0;
+}
+
+.order-number{
+    text-align: center;
+    font-size: 17px;
+    margin-top: 15px;
+    color: #42bd00;
+    font-weight: bold;
+}
+
+/*Pricing*/
+/*------------------------------*/
+
+.my_pricing {
+
+}
+
+.my_pricing .parent-term {
+    background: rgba(255, 212, 37, 0.51);
+}
+
+.my_pricing tr.parent-term a,
+.my_pricing tr.parent-term a:active,
+.my_pricing tr.parent-term a:visited {
+    color: #0b0b0b;
+}
+
+.my_pricing td.child-term.level-1 {
+    padding-right: 10px;
+}
+
+.my_pricing td.child-term.level-2 {
+    padding-right: 30px;
+}
+
+.my_pricing td.child-term a,
+.my_pricing td.child-term a:active,
+.my_pricing td.child-term a:visited {
+    color: #0b0b0b;
+    padding-right: 20px;
+}
+
+.my_pricing td.child-term a:before{
+    content: "\e054";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    font-size: 15px;
+    font-family: 'lined-icons';
+    position: absolute;
+    right: 20px;
+}
+
+.my_pricing td.child-term.level-2 a:before{
+    right: 40px;
+    transform: rotate(45deg);
+}
+
+.my_pricing td.service-item.level-1 {
+    padding-right: 46px;
+}
+
+.my_pricing td.service-item.level-2 {
+    padding-right: 70px;
+}
+
+.my_pricing td.service-item a:before{
+    content: "\e049";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    font-family: 'lined-icons';
+    position: absolute;
+    right: 42px;
+    line-height: 24px;
+}
+
+.my_pricing td.service-item.level-2 a:before{
+    right: 66px;
+}
+
+.mfp-title {
+    text-align: center;
+    padding-right: 0px;
+    direction: rtl;
+    font-family: EN_IRANSans;
+}
+
+.si-share span {
+    float: right;
+    padding-left: 20px;
+}
+
+.tab-content ul {
+    margin-right: 33px;
+}
+
+/*ADS archive*/
+/*------------------------------*/
+
+.ads.small-thumbs .entry-image {
+    width: 170px;
+}
+
+/*Single ads */
+/*------------------------------*/
+
+.single-ads {
+
+}
+
+.single-ads a.btn:hover {
+    color: #ffffff !important;
+}
+
+.ads.single-post .entry-meta {
+    margin-bottom: 0;
+}
+
+.single-ads.small-thumbs .entry-image {
+    width: 350px;
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+/*Similar archive*/
+/*------------------------------*/
+
+.ads.mpost .entry-image,
+.ads.mpost .entry-image a,
+.ads.mpost .entry-image img{
+    width: 170px;
+    height: auto;
+}
+
+/*Single image*/
+/*------------------------------*/
+
+.wp-block-image img {
+    border: solid 1px #c1c1c1;
+}

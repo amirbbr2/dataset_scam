@@ -1,0 +1,94 @@
+/*CIBC Specific Global*/
+.btn {
+	-webkit-appearance: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+#signon-button {
+	border: 1px solid #336699;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d7aad), color-stop(100%, #295285));
+	background: -webkit-linear-gradient(#3d7aad, #295285);
+	background: -moz-linear-gradient(#3d7aad, #295285);
+	background: linear-gradient(#3d7aad, #295285);
+	background-color: #3d7aad;
+	color: white;
+}
+.button-set .btn-positive {
+	border: 1px solid #336699;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d7aad), color-stop(100%, #295285));
+	background: -webkit-linear-gradient(#3d7aad, #295285);
+	background: -moz-linear-gradient(#3d7aad, #295285);
+	background: linear-gradient(#3d7aad, #295285);
+	background-color: #3d7aad;
+	color: white;
+}
+.btn-negative{
+	color: #AF0B1C;
+}
+.add-button{
+	color:#2b7ab3;
+}
+a.file-link{
+	color:#AF0B1C;
+}
+.tab-control a.active {
+	color: #AF0B1C;
+}
+.alert-style{
+	color:#AF0B1C;
+}
+.alert-box{
+	outline: solid #AF0B1C 1px;
+}
+.alert-box p{
+	color:#AF0B1C !important;
+}
+#next-link, #previous-link{
+	color: #AF0B1C;
+}
+/*CIBC Specific Signon Header*/
+header {
+	border-bottom:0.33em solid #AF0B1C;
+}
+#header-logo {
+	width: 150px;
+	height: 45px;
+	top: -0.2em;
+}
+#header-title .title {
+	color: #AF0B1C;
+}
+/*CIBC Specific Drawer*/
+#drawer-menu .drawer-menu-header {
+	background-color: #B0171C;
+	color: #fff;
+}
+
+/*CIBC Specific Error Msgs*/
+.global-error-form-wrapper {
+	border: 1px solid #AF0B1C;
+	color: #AF0B1C;
+}
+.global-error-form-wrapper:before {
+	border-top: 17px solid #AF0B1C;
+}
+.error.help-msg:before, .tool-tip:before {
+	border-bottom: 10px solid #AF0B1C;
+}
+.error.help-msg, .tool-tip {
+	background-color: #AF0B1C;
+}
+.inline-error {
+	border: 2px solid #AF0B1C;
+	color: #AF0B1C;
+}
+.error input[type=text], .error input[type=email], .error input[type=password], .error input[type=tel], .error input[type=number],
+.error select, .error select:hover, .error select:focus, .error-fs{
+	background-color: #fff3f3 !important;
+	border: 1px solid #c10927 !important;
+}
+
+#confirm-ad-space{
+	background: #AF0B1C;
+}

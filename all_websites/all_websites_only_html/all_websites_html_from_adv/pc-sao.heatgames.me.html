@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Sword art online - A Massive Multi-player Strategy Game - Free play</title>
+        <meta name="msvalidate.01" content=""/>
+        <meta name="keywords" content="sword art online,SAO,SAO H5,sword art online MMORPG,sword art online strategy,sword art online anime games,mmorpg online game: sword art online,sword art online RPG,adventure quest in SAO,perfect world of SAO ,sword art online alo,SAO's memory,sword fighting games,sword art online character,go to SAO virtual world"/>
+        <meta name="description" content="Sword art online，H5 game based on the famous novel Sword Art Online. Classic storyline and various gameplay.Goddesses are waitting for save!"/>
+        <meta name="google-site-verification" content="BwFEUkpa-ZCumdLOnTuncoGVIizqvoFcqABa4SMyC9o"/>
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Sword Art Online">
+        <meta name="apple-mobile-web-app-title" content="Sword Art Online">
+        <meta property="og:image" content="https://sitesource.heatgames.me/style/official/single_game/sao2/lang_common/img/icon-200.png?20200521" />
+        
+        <link rel="icon" sizes="512x512" href="https://sitesource.heatgames.me/style/official/single_game/sao2/lang_common/img/icon-android-512.png?20200521">
+        <link rel="apple-touch-icon" sizes="512x512" href="https://sitesource.heatgames.me/style/official/single_game/sao2/lang_common/img/icon-ios-512.png?20200521">
+        
+        <link rel="manifest" href="/web_resource/chrome_manifest?token=">
+        <link rel="dns-prefetch" href="https://user.pocketgames.me">
+        <link rel="dns-prefetch" href="http://sitesource.oph5.me">
+        <link rel="dns-prefetch" href="https://pay.pocketgames.me">
+        
+        <link type="text/css" rel="stylesheet" href="https://sitesource.heatgames.me/style/official/common/lang_common/css/official_common.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://sitesource.heatgames.me/style/official/common/lang_common/css/sign.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://sitesource.heatgames.me/style/official/single_game/sao2w/lang_common/css/common.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://sitesource.heatgames.me/style/common/css/addtohomescreen.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://sitesource.heatgames.me/plugins/jquery-ui/jquery-ui-1.10.4.custom.min.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://sitesource.heatgames.me/plugins/fancybox/jquery.fancybox.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://sitesource.heatgames.me/plugins/jquery-ui/jquery.datetimepicker.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://sitesource.heatgames.me/plugins/tooltipster/tooltipster.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://sitesource.heatgames.me/style/official/single_game/sao2w/lang_common/css/swiper.min.css?20200521" />
+        <link type="text/css" rel="stylesheet" href="https://sitesource.heatgames.me/style/official/common/intlTelInput.css?20200521" />
+
+        <script type="text/javascript" src="https://sitesource.heatgames.me/js/official/jquery/jquery-1.8.3.min.js?20200521"></script>
+        <script type="text/javascript" src="https://sitesource.heatgames.me/plugins/jquery-ui/jquery-ui-1.10.4.custom.min.js?20200521"></script>
+        <script type="text/javascript" src="https://sitesource.heatgames.me/plugins/fancybox/jquery.fancybox.min.js?20200521"></script>
+        <script type="text/javascript" src="https://sitesource.heatgames.me/plugins/jquery-ui/jquery.datetimepicker.js?20200521"></script>
+        <script type="text/javascript" src="https://sitesource.heatgames.me/plugins/tooltipster/jquery.tooltipster.min.js?20200521"></script>
+        
+        <script type="text/javascript" src="https://sitesource.heatgames.me/js/official/common/addtohomescreen.js?20200521"></script>
+        <script type="text/javascript" src="https://sitesource.heatgames.me/js/official/common/new_official_common.js?20200521"></script>
+        <script type="text/javascript" src="https://sitesource.heatgames.me/js/official/common/new_register.js?20200521"></script>
+        <script type="text/javascript" src="https://sitesource.heatgames.me/js/official/common/pc.js?20200521"></script>
+        <script type="text/javascript" src="https://sitesource.heatgames.me/js/official/common/swiper-3.4.2.min.js?20200521"></script>
+        <script type="text/javascript" src="https://sitesource.heatgames.me/js/official/common/intlTelInput.min.js?20200521"></script>
+    </head>
+    <body id="swordHome">
+<div class="containerBox">
+    <div class="topbox">
+            <!-- choose language -S -->
+                <div class="languageWrap">
+            <a href="javascript:void(0);" class="default">
+                <img src="https://sitesource.heatgames.me/style/official/common/lang_common/img/languages/en.gif?20200521"/>
+                English                            </a>
+
+                    </div>
+        <script type="text/javascript">
+        $(function () {
+            $('a.chooseLanguage').click(function () {
+                show_status_dialog('loading', "Switching to the " +  $.trim($(this).text()), true, 2000);
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/static_resource/change_user_language',
+                    data: {
+                        'set_language': $(this).attr('set_language')
+                    },
+                    dataType: 'json',
+                    success: function (data) {
+                        if (true == data.status) {
+                            var current_url = window.location.href;
+                            window.location.href = current_url.replace(/_lang\=([A-Za-z0-9\-]{2,6})([&]{0,1})/, '');
+
+                            //window.location.reload();
+                        }
+                    }
+                });
+
+                return false;
+            });
+        });
+        </script>
+        <!-- choose language -E -->
+        <div class="top">
+        <div class="topleft">
+            <div class="all_hover">
+                <a href="javascript:void(0);" class="all">All Games</a>
+                <ul class="all_game" style="display:none">
+                    <li style="text-indent:999px;"></li>
+                                                                                                                                        <li>
+                                <a href="http://pc-sao.heatgames.me" class="game_120000029"
+                                   title="Sword Art Online">Sword Art Online</a>
+                            </li>
+                                                                                                                                                                                                                                            </ul>
+            </div>
+        </div>
+        
+        <div class="top_center">
+            Sword Art Online        </div>
+
+        <div class="topright" id="top_right">
+            <!--  email box -S -->
+            <div class="emailInfoTip">
+                
+                <a href="//pc-sao.heatgames.me" style="display:block; float:right">
+                    <img src="https://sitesource.heatgames.me/style/platform_logos/heatgames.me/official_logo.png?20200521" title="heatgames.me" alt="heatgames.me"/>
+                </a>
+            </div>
+            <!--  email box -E -->
+
+                            <!--  Tip Message -->
+                <script>
+                    var registerTip = new Object();
+                    registerTip.unameCue = "User name between the 6-16 characters.";
+                    registerTip.emailCue = "Please enter a valid Email.";
+                    registerTip.phoneCue = "Please enter a valid mobile number.";
+                    registerTip.passwordCue = "At least 6 numbers and characters!";
+                    registerTip.confirmPasswordCue = "Please enter your password again.";
+
+                    registerTip.unameNull = "User name between the 6-16 characters.";
+                    registerTip.emailNull = "Please enter a valid Email.";
+                    registerTip.passwordNull = "6 to 20 letters, numbers, and special characters!";
+                    registerTip.confirmPasswordNull = "Please enter your password again!";
+
+                    registerTip.checkUname = "Verifying User Name ......";
+                    registerTip.checkEmail = "Verifying Email ......";
+                    registerTip.loading = "Loading.....";
+                    registerTip.wrongPassUsername = "Wrong User Name or Password";
+
+                    registerTip.unameError = "User Name Already Exists!";
+                    registerTip.emailError = "Email already in use Or Error!";
+                    registerTip.passwordError = "6 to 20 letters, numbers, and special characters!";
+                    registerTip.confirmPasswordError = "The Passwords do not match!";
+                    registerTip.registerSuccess = "Register Successfully";
+
+                                        $(document).ready(function(){
+                        $.ajax({
+                            type: 'GET',
+                            url: 'https://user.instantfuns.com/auth/client_auto_login?client_auto_login_url=FlhCEBIIOU04TBEBTERZWRxdUVFCAwNfABFKDgQ%2BTkRMV0ZcV29EARFdEBAHBj1NAEJMWW1ZW1dfCkA%3D&client_id=H5_PLATFORM&is_encrypted=1&request_time=1609824928&secure_hash=fec4cdc6fea033cd74e2295a52eb7aaf',
+                            async: false,
+                            dataType: "jsonp",
+                            jsonp: "callback",//传�?�给请求处理程序或页面的，用以获得jsonp回调函数名的参数�?(�?般默认为:callback)
+                            jsonpCallback:"callback",//自定义的jsonp回调函数名，默认未jquery自动生成的随机函数名，也可以写�???”jquery会自动处�?
+                            success: function(result){
+                                if(result.status == 'success'){
+                                    $.ajax({
+                                        type: 'GET',
+                                        url: result.syn_login_url,
+                                        async: false,
+                                        dataType: "json",
+                                        success: function(data){
+                                            if( data.status){
+                                                getUserInfo(data.login_info);
+                                            }
+                                        }
+                                    });
+                                }
+                            },
+                            error: function(xhr){
+                                //jsonp 方式此方法不被触�?.原因可能是dataType如果指定为jsonp的话,就已经不是ajax事件�?
+                                //请求出错处理
+                                //alert("请求出错(请检查相关度网络状况.)");
+                            },
+                            complete: function(XMLHttpRequest, textStatus){
+
+                            }
+                        });
+                    });
+                                    </script>
+
+                <!--  not login -->
+                <div>
+                    <div class="signbox" style="display:block">
+                        <input type="hidden" id="signin" redirect="1" />
+                        <input type="hidden" id="lottery_login_box" reload="needreload" />
+                        <a href="javascript:void(0);" title="Login"
+                           dialog_type="Login" id="loginInBtn" class="login_btn show_form"
+                           data-type="phone"
+                           link="/static_resource/show_login">Log In</a>
+                        <a href="javascript:void(0);" title="Sign Up"
+                           dialog_type="Sign Up" class="sign_up_btn show_form"
+                           data-type="phone"
+                           link="/static_resource/show_sign_up">Sign Up</a>
+                    </div>
+                    <ul class="toplogos">
+                                            </ul>
+                </div>
+                <div id="dialog_form" showOut="Hide"></div>
+                    </div>
+
+                    <div class="topright" id="ajaxLoginWidget" style="display:none;">
+
+                <!--  email box -S -->
+                <div class="emailInfoTip">
+                    
+                    <a href="/" style="display:block; float:right">
+                        <img src="https://sitesource.heatgames.me/style/platform_logos/heatgames.me/official_logo.png?20200521" title="heatgames.me" alt="heatgames.me"/>
+                    </a>
+                </div>
+                <!--  email box -E -->
+
+                <!-- login user -->
+                <div>
+                    <div class="user_info">
+                        <span title="" id="bannerEmail" class="left">Hi,&nbsp;</span>
+
+                        <!-- email auth -S -->
+                        <script>
+                            $(function () {
+                                $('.tooltip, .emailNotice').tooltipster({
+                                    animation: 'fade',
+                                    delay: 200,
+                                    theme: 'tooltipster-default',
+                                    touchDevices: false,
+                                    trigger: 'hover',
+                                    timer: 4000,
+                                    onlyOne: true,
+                                    position:'right'
+                                });
+
+                                // class autoDisplay
+                                $('.tooltip').tooltipster('show', testCallBack);
+
+                                function testCallBack() {}
+                            });
+                        </script>
+                        <b class="tipVerityEmail tooltip tooltipstered"></b>
+                        <!-- email auth -E -->
+                        <ul class="logout">
+                            <li style="text-indent:999px;"></li>
+                                                        <li>
+                                <a href="/static_resource/show_user_profile" class="various fancybox.ajax user_infobg1">
+                                    Account Settings                                                                    </a>
+                            </li>
+                                                        <li style="border-bottom:none">
+                                <a href="javascript:void(0);" class="user_infobg2 user_logout_btn">Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+
+    </div>
+</div>
+<script>
+    var changePassword = new Object();
+    changePassword.passwordFormatError = "Please make sure your new password 6 to 16 letters, numbers, and special characters!";
+    changePassword.passwordNotEqual = "The password you input is not the same!";
+    changePassword.passwordEqual = "New password and Old password is the same!";
+    changePassword.needReLogin = "You'll automatically log out!";
+    var accountTip = new Object();
+    accountTip.logOut = "Log Out....";
+    accountTip.logOutError = "Sign Out Error, Try Again";
+    accountTip.loginSuccess = "Login Successfully";
+    
+    var isExecClientInfo = "";
+</script>
+<script>
+    if(window.top !== window){
+        $('.topbox').hide();
+    }
+</script>
+        <div class="centerTopN">
+            <div class="centerLeague">
+                <input type="hidden" id="lottery_login_box" reload="needreload" />
+                <div class="headerLeague">
+                        <h2 class="logo"><img src="https://sitesource.heatgames.me/style/official/single_game/sao2w/lang_common/img/logo.png?20200521" width="182" height="40" alt="logo"></h2>
+                        <a href="/static_resource/savelocal?url=http%3A%2F%2Fpc-sao.heatgames.me&name=Sword+Art+Online" class="downLoad">SAVE GAME</a>
+                        <span class="full_screen">Full Screen</span>
+                </div>
+                                                <iframe src="//saogamesource.heatgames.me/sao2/beta/play_pc.html?sdkLang=en&ts=1609824928&jf_iframe=1&media_source=1013&campaign=10043311&site_id=26a75b44aed6&subject=" style="width:100%; min-width:750px; height:680px;overflow:hidden; border:0;" scrolling="no" scroll="no" frameborder="no"></iframe>
+                            </div>
+                         <div class="codeTip">
+                <a href="javascript:;"><img src="https://sitesource.heatgames.me/style/platform_logos/heatgames.me/play_on_phone_sao2.png?20200521" width="88" height="88" alt="Scan to play Sword Art Online on phone" title="Scan to play Sword Art Online on phone"> </a>
+            </div>
+            <div class="download clearfix">
+                <!--
+                <a href="https://play.google.com/store/apps/details?id=com.heatgames.me" target="_blank">Android app on Google Play</a>
+                <a href="#">Available on the App Store</a>
+                -->
+            </div>
+        </div>
+        <div class="centerHome">
+        <div class="centerTopS">
+                        <div class="noticeBox">
+                <h2 class="noticeBoxT">News<a href="/news" target="_blank"><span class="moreT">more</span></a></h2>
+                <div class="textList">
+                    <ul>
+                                                <li>
+                            <a class="typeListText" href="/article/aid/672" target="_blank">SERVER S241 LAUNCHING ON Jan 3 ,2021(EST)</a>
+                            <span>01-02</span>
+                        </li>
+                                                <li>
+                            <a class="typeListText" href="/article/aid/673" target="_blank">Upadates and Server merge Maintenance on Dec 31</a>
+                            <span>12-31</span>
+                        </li>
+                                                <li>
+                            <a class="typeListText" href="/article/aid/671" target="_blank">SERVER S240 LAUNCHING ON Dec 29 ,2020(EST)</a>
+                            <span>12-30</span>
+                        </li>
+                                                <li>
+                            <a class="typeListText" href="/article/aid/666" target="_blank">SERVER S239 LAUNCHING ON Dec 24 ,2020(EST)</a>
+                            <span>12-24</span>
+                        </li>
+                                                <li>
+                            <a class="typeListText" href="/article/aid/665" target="_blank">Update Maintenance on 24/12</a>
+                            <span>12-24</span>
+                        </li>
+                                                <li>
+                            <a class="typeListText" href="/article/aid/663" target="_blank">Upadates and Server merge Maintenance on Dec 17</a>
+                            <span>12-17</span>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+                                                        </div>
+        <div class="bottomR">
+        <div class="centerTopC">
+                <a href="/guides" class="guides" target="_blank"><span class="gameGuideCur"></span>Guides</a>
+            </div>
+                        <a class="likeBox clearfix" href="https://www.facebook.com/SAO-community-340556079946704/" target="_blank">
+                <p>Follow on</p>
+                <p class="last">Facebook</p>
+            </a>
+            <div class="noticeBoxSupport clearfix">
+                <h2 class="noticeBoxT">Support</h2>
+                <div class="supportBox">
+                    <div class="supportCon"><a href="Mailto:support@heatgames.me?subject=Question+For+Sword+Art+Online">support@heatgames.me</a></div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+<script>
+    var interval = 900000;
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        paginationClickable: true,
+        autoplay: 3000,
+        loop: true,
+        pagination: '.swiper-pagination'
+    });
+</script>
+<script type="text/javascript" src="https://sitesource.heatgames.me/js/official/clipboard/clipboard.min.js?20200521"></script>
+<script type="text/javascript" src="https://sitesource.heatgames.me/js/official/common/gift_new.js?20200521"></script>
+
+<div class="footerWrap">
+    <div class="footerBox">
+        <dl>
+            <dt><span class="dlbg1"></span>Support</dt>
+            <dd>
+                                    <a href="Mailto:support@heatgames.me?subject=Question+For+Sword+Art+Online">Support</a>
+                            </dd>
+            <dd><a href="javascript:void(0);" link="/static_resource/privacy_policy" class="showBigialog Privacy" title="Privacy Policy">Privacy Policy</a></dd>
+            <dd><a href="javascript:void(0);" link="/static_resource/terms_of_service_heatgames" class="showBigialog Terms" title="Terms of Service">Terms of Service</a></dd>
+                                </dl>
+        <dl>
+            <dt><span class="dlbg2"></span>All Games</dt>
+                                                                                        <dd>
+                        <a href="http://pc-sao.heatgames.me" class="game_120000029" title="Sword Art Online">Sword Art Online</a>
+                    </dd>
+                                                                                                                                                    </dl>
+        <dl>
+            <dt><span class="dlbg3"></span>Account Settings</dt>
+                                </dl>
+        <dl>
+            <dt><span class="dlbg4"></span>Company</dt>
+                        <dd><a href="Mailto:support@heatgames.me">Contact Us</a></dd>
+                                            </dl>
+        <div class="footerBox_logo">
+            <img src="https://sitesource.heatgames.me/style/platform_logos/heatgames.me/footer_logo_new.png?20200521" width="129" height="67" title=""/>
+            <p>Copyright  All rights reserved to MIRACLE WORLD Ltd.<br>fl 7, ofis 26, Tvardishki prohod 23 Sofia 1000, Sofia, ul.</p>
+        </div>
+    </div>
+</div>
+</body>
+<div id="dialog-box">
+    <div class="content"></div>
+</div>
+<div class="centerBoxBackgroundImage footerboxBackgroundImage hiddenBox"></div>
+
+<script type="text/javascript" language="javascript">
+    var loginStatus = "nologin";
+    var standalone = "FALSE";
+    var media_source = "media_source=1013&campaign=10043311&site_id=26a75b44aed6&subject=";
+    var shareId = "";
+    var accountTip = new Object();
+    accountTip.logOut = "Log Out....";
+    accountTip.logOutError = "Sign Out Error, Try Again";
+    accountTip.loginSuccess = "Login Successfully";
+    accountTip.needLoginToAccess = "You must login to receive rewards!";
+
+    var registerTip = new Object();
+    registerTip.unameCue = "User name between the 6-16 characters.";
+    registerTip.emailCue = "Please enter a valid Email.";
+    registerTip.phoneCue = "Please enter a valid mobile number.";
+    registerTip.passwordCue = "At least 6 numbers and characters!";
+    registerTip.confirmPasswordCue = "Please enter your password again.";
+
+    registerTip.unameNull = "User name between the 6-16 characters.";
+    registerTip.emailNull = "Please enter a valid Email.";
+    registerTip.passwordNull = "6 to 20 letters, numbers, and special characters!";
+    registerTip.confirmPasswordNull = "Please enter your password again!";
+
+    registerTip.checkUname = "Verifying User Name ......";
+    registerTip.checkEmail = "Verifying Email ......";
+    registerTip.loading = "Loading.....";
+    registerTip.wrongPassUsername = "Wrong User Name or Password";
+
+    registerTip.unameError = "User Name Already Exists!";
+    registerTip.emailError = "Email already in use Or Error!";
+    registerTip.passwordError = "6 to 20 letters, numbers, and special characters!";
+    registerTip.confirmPasswordError = "The Passwords do not match!";
+    registerTip.registerSuccess = "Register Successfully";
+
+    var changePassword = new Object();
+    changePassword.passwordFormatError = "Please make sure your new password 6 to 16 letters, numbers, and special characters!";
+    changePassword.passwordNotEqual = "The password you input is not the same!";
+    changePassword.passwordEqual = "New password and Old password is the same!";
+    changePassword.needReLogin = "You'll automatically log out!";
+
+    var pageArgu = new Object();
+    pageArgu.noSelectServer = "Please select a server.";
+    pageArgu.copySuccess = "Gift code copied successfully!";
+    pageArgu.noGiftCode = "Gift code is no longer available.";
+    pageArgu.makeGiftCodeFail = "Gift code is no longer available.";
+    pageArgu.zclipSWFPath = "https://sitesource.heatgames.me/plugins/zclip/ZeroClipboard.swf?20200521";
+    var loginStatus = "nologin";
+    var needLogin = new Object();
+    needLogin.needLoginToAccess = "You must login to receive rewards!";
+        $('.center_aninmatbg').animate({
+        opacity: '1'
+    }, 3000);
+    
+</script>
+<script>
+    if(window.top !== window){
+        $('.footerWrap').hide();
+    }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148096538-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148096538-1');
+</script></html>

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /admin/
+SITEMAP : http://sph-co.com/sitemap.xml

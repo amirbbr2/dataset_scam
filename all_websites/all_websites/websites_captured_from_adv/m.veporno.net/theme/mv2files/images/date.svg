@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 26 32" enable-background="new 0 0 26 32" xml:space="preserve">
+<g id="calendar_1_">
+	<path fill="#333332" d="M23.8,2.4h-3.5V0.8C20.3,0.3,20,0,19.5,0s-0.8,0.3-0.8,0.8v1.6h-4.9V0.8C13.8,0.3,13.5,0,13,0
+		s-0.8,0.3-0.8,0.8v1.6H7.3V0.8C7.3,0.3,7,0,6.5,0S5.7,0.3,5.7,0.8v1.6H2.2C1,2.4,0,3.4,0,4.6v19.3c0,1.2,1,2.2,2.2,2.2h21.7
+		c1.2,0,2.2-1,2.2-2.2V4.6C26,3.4,25,2.4,23.8,2.4z M24.4,23.8c0,0.3-0.2,0.6-0.6,0.6H2.1c-0.3,0-0.6-0.2-0.6-0.6V4.5
+		C1.5,4.2,1.8,4,2.1,4h3.5v1.6c0,0.5,0.3,0.8,0.8,0.8s0.8-0.3,0.8-0.8V4h4.9v1.6c0,0.5,0.3,0.8,0.8,0.8s0.8-0.3,0.8-0.8V4h4.9v1.6
+		c0,0.5,0.3,0.8,0.8,0.8s0.8-0.3,0.8-0.8V4h3.5c0.3,0,0.6,0.2,0.6,0.6L24.4,23.8L24.4,23.8z"/>
+	<rect x="5.7" y="9.8" fill="#333332" width="3.2" height="2.4"/>
+	<rect x="5.7" y="13.8" fill="#333332" width="3.2" height="2.4"/>
+	<rect x="5.7" y="17.9" fill="#333332" width="3.2" height="2.4"/>
+	<rect x="11.4" y="17.9" fill="#333332" width="3.2" height="2.4"/>
+	<rect x="11.4" y="13.8" fill="#333332" width="3.2" height="2.4"/>
+	<rect x="11.4" y="9.8" fill="#333332" width="3.2" height="2.4"/>
+	<rect x="17.1" y="17.9" fill="#333332" width="3.2" height="2.4"/>
+	<rect x="17.1" y="13.8" fill="#333332" width="3.2" height="2.4"/>
+	<rect x="17.1" y="9.8" fill="#333332" width="3.2" height="2.4"/>
+</g>
+</svg>

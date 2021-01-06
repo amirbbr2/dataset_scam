@@ -1,0 +1,10 @@
+User-Agent: *
+Disallow: /stats.php
+Disallow: /stats.php?*
+Disallow: /geozoom.php
+Disallow: /geozoom.php?*
+Disallow: /library_counters/
+Disallow: /artichow/
+Disallow: /adw/
+Disallow: /style/
+Disallow: /style_stat/

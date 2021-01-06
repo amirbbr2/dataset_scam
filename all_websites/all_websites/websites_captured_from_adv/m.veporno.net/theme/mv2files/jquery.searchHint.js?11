@@ -1,0 +1,24 @@
+_searchHintText=false;(function($){$.fn.searchHint=function(options){var config={ajaxUrl:'/ajax/search.php',submitOnClick:true,submitCheck:false,addWordIcon:false,defList:false,listWidthAdd:0};if(options){$.extend(config,options);}
+config.list=$("<div class='searchHint'></div>");$('body').append(config.list);this.each(function(){var input=$(this);var selected=false
+var selectedFirst=false
+var ajax=false
+var val=false;function onSubmit(e){var query=$('input[name=q]',this).val();if(query!=selected&&selectedFirst)selected=selectedFirst;$('input[name=new]',this).attr('disabled',(query==selected));}
+function onKey(e){if(e.keyCode==13&&!config.submitOnClick){config.list.hide();return false;}
+if(e.keyCode==40){e.preventDefault();onSelect(true);}
+if(e.keyCode==38){e.preventDefault();onSelect(false);}}
+function onKeyUp(e){var valOld=input.data('searchList');var valCurr=input.val();if(valOld!=valCurr){input.data('searchList',valCurr);_searchHintText=input;var timeOut=500;timeOut=0;setTimeout(onQueryTime,timeOut);}}
+function onFocus(e){onQuery(input.val(),true);}
+function onIn(){input.unbind('blur',onOut);}
+function onOut(){config.list.hide();}
+function onSelect(up){var selected=$('.sel',config.list);var all=$('.item',config.list);var selectedNext;if(selected.size()){if(up){selectedNext=selected.next();if(!selectedNext.size())selectedNext=all.eq(0);}else{selectedNext=selected.prev();if(!selectedNext.size())selectedNext=all.eq(all.size()-1);}}else selectedNext=all.eq(0);if(!selectedNext.size())return;all.removeClass('sel');selectedNext.addClass('sel');selected=selectedNext.text();input.data('searchList',selected).val(selected);}
+function onShowList(el){var pos=el.offset();var h=el.outerHeight();var w=el.outerWidth()+config.listWidthAdd;config.list.css({'left':pos.left,'top':(pos.top+h),'width':w});setTimeout(function(){if($("#header_search_button").length&&$('#header_search_button').hasClass('opened')){config.list.fadeIn(100);}
+else{config.list.fadeIn(100);}},300);}
+function onQueryDone(data){var html="";if(data[0])selectedFirst=data[0].replace(/<\/?[^>]+>/gi,'');$.each(data,function(index,value){html+="<a class='item'>";if(config.addWordIcon)html+="<div class='arrow'></div>";html+="<span>"+value+"</span></a>";});config.list.html(html);$('span',config.list).bind('click',onClick);if(config.addWordIcon)$('.arrow',config.list).bind('click',onClickWord);onShowList(input);input.unbind('blur',onOut).bind('blur',onOut);}
+function onTimer(firstTime){var valOld=input.data('searchList');var valCurr=input.val();if(valOld==valCurr)return;input.data('searchList',valCurr);if(valCurr)input.parent().addClass('sFill');else input.parent().removeClass('sFill');if(!firstTime)onQuery(valCurr,true);}
+function onQueryTime(){onQuery(input.val())}
+function onQuery(text,cheked){if(!cheked){var valOld=input.data('searchList');var valCurr=input.val();if(valOld==valCurr)return;input.data('searchList',valCurr);}
+if(ajax)ajax.abort();if(!text.length){if(config.defList){onQueryDone(config.defList);}else{config.list.hide();return;}}
+ajax=$.ajax({'url':config.ajaxUrl,'data':{'q':text},'dataType':'json','context':input[0]}).done(onQueryDone).always(function(data){ajax=false;});}
+function onClick(e){e.preventDefault();selected=$(this).text();input.val(selected);config.list.hide();input.closest('form').find('input[name=from]').val('suggestion');if(config.submitOnClick)input.closest('form').submit();}
+function onClickWord(e){e.preventDefault();e.stopPropagation();selected=$(this).parent().text();input.val(selected).focus();config.list.hide();onQuery(selected);return false;}
+input.attr('autocomplete','off');config.list.bind('mouseenter',onIn).bind('mouseleave',onOut);if(config.submitCheck)input.closest('form').bind('submit',onSubmit);input.bind('keydown',onKey).bind('focus',onFocus);onTimer(true);setInterval(onTimer,1000);});return this;};})(jQuery);

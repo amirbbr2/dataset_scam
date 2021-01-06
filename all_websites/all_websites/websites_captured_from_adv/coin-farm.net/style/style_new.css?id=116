@@ -1,0 +1,167 @@
+
+
+	.button_top:hover {
+    background: #b3c20e;
+    color: #ffffff;
+    background-color: -webkit-linear-gradient(top, #b3c20e, #a2b30d);
+    background-color: -moz-linear-gradient(top, #b3c20e, #a2b30d);
+    background-color: -ms-linear-gradient(top, #b3c20e, #a2b30d);
+    background-color: -o-linear-gradient(top, #b3c20e, #a2b30d);
+    background-color: linear-gradient(to bottom, #b3c20e, #a2b30d);
+    border: none;
+    -webkit-box-shadow: 0px 4px 1px -1px #5B6600;
+    -moz-box-shadow: 0px 4px 1px -1px #5B6600;
+    box-shadow: 0px 4px 1px -1px #5B6600;
+    text-decoration: none;
+}
+
+
+.button_top:active {
+
+	border: none;
+    margin-top: -87px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+	-webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+
+}
+
+.button_top {
+    position: absolute;
+    color: #ffffff;
+    font: bold 14px "Arial Black";
+    padding: 10px 20px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #A2B300;
+    background-color: -webkit-linear-gradient(top, #A2B300, #93A500);
+    background-color: -moz-linear-gradient(top, #A2B300, #93A500);
+    background-color: -ms-linear-gradient(top, #A2B300, #93A500);
+    background-color: -o-linear-gradient(top, #A2B300, #93A500);
+    background-color: linear-gradient(to bottom, #A2B300, #93A500);
+    -webkit-box-shadow: 0px 4px 1px -1px #5B6600;
+    -moz-box-shadow: 0px 4px 1px -1px #5B6600;
+    box-shadow: 0px 4px 1px -1px #5B6600;
+    -webkit-transition: background-color .3s ease;
+    -moz-transition: background-color .3s ease;
+    -ms-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+}
+
+.registration {
+    margin-left: 921px;
+    margin-top: -91px;
+    font-size: 11px;
+}
+
+.enter {
+    margin-left: 1122px;
+    margin-top: -91px;
+    font-size: 11px;
+}
+
+.notify-success{
+	color:green;
+	font-weight: 600;
+	text-align: center;
+}
+.notify-danger{
+	color:red;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+[class^="notify-"]{
+    padding: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 4px;
+    margin-top:18px;
+    text-align: center;
+		font-weight: 600;
+ -webkit-animation: fadein 0.4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.4s; /* Firefox < 16 */
+     -ms-animation: fadein 0.4s; /* Internet Explorer */
+      -o-animation: fadein 0.4s; /* Opera < 12.1 */
+         animation: fadein 0.4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.notify-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.notify-success {
+    color: #0c8a0e;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.notify-danger {
+    color: #d05654;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.notify-warning {
+	color: #8a6d3b;
+	background-color: #fff1d5;
+	border-color: #f7e6c2;
+}
+
+
+.hr3 {
+    border: none;
+    background-color: #f4f0de;
+    color: #ecd5a3;
+    height: 2px;
+}
+.ins-m-footer{
+  margin:15px 0 0 0;
+  text-align:center;
+  font-size: 16px;
+}
+.lowercase{
+  text-transform: none !important;
+  padding-top: 6px;
+}

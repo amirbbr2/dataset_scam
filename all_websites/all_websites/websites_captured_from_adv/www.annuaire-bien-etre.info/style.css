@@ -1,0 +1,229 @@
+body {
+	background-color:#FFFFFF;
+	margin:0 0 0 0;
+}
+
+td {
+	FONT-FAMILY: "lucida grande", Tahoma, Verdana, Arial, Sans-Serif; 
+	FONT-SIZE:13px;
+	color:#333333;
+}
+
+
+
+h1 {
+	FONT-FAMILY: "lucida grande", Tahoma, Verdana, Arial, Sans-Serif; 
+	FONT-SIZE:20px;
+	color:#339933;
+	font-weight:800;
+	
+}
+
+h2 {
+	FONT-FAMILY: "lucida grande", Tahoma, Verdana, Arial, Sans-Serif; 
+	FONT-SIZE:15px;
+	color:#163869;
+	font-weight:800;
+	padding: 20px 0px 0px 0px;
+	
+}
+
+h3 {
+	FONT-FAMILY: "lucida grande", Tahoma, Verdana, Arial, Sans-Serif; 
+	FONT-SIZE:15px;
+	color:#163869;
+	font-weight:800;
+	padding: 0px 0px 0px 0px;
+	margin:0px;
+	
+}
+
+h6 {
+	FONT-FAMILY: "lucida grande", Tahoma, Verdana, Arial, Sans-Serif; 
+	FONT-SIZE:11px;
+	color:#163869;
+	font-weight:500;
+	padding: 0px 0px 0px 0px;
+	margin:0px;
+	
+}
+
+ul {
+	padding: 0px 0px 20px 20px;
+	margin:0px;
+}
+
+hr {
+	height: 0px; 
+	border: solid #cccccc 0px; 
+	border-top-width: 1px;
+}
+
+
+/* ------------------------------------------------------ */
+/* menu principal */
+#navTextAccueil  {
+	font: bold 13px Arial, Helvetica, sans-serif;
+	text-align:center;
+	background-image:url(template/menu-accueil.jpg);
+	color: #FFFFFF;
+	text-decoration: none;
+	display:block;
+	text-align:left;
+	padding-top:10px;
+	padding-left:20px;
+	padding-right:20px;
+	height:35px;
+	}
+	
+#navTextAccueil:hover {
+	color:#FFFFFF;
+	background-image:url(template/menu-c.jpg);
+	}
+
+#navTextAnnuaire  {
+	font: bold 13px Arial, Helvetica, sans-serif;
+	text-align : center;	
+	background-image:url(template/menu-annuaire.jpg);
+	color: #FFFFFF;
+	text-decoration: none;
+	display:block;
+	text-align:left;
+	padding-top:9px;
+	padding-left:20px;
+	padding-right:20px;
+	height:47px;
+	}
+	
+#navTextAnnuaire:hover {
+	color:#FFFFFF;
+	background-image:url(template/menu-c.jpg);
+	}
+
+#navTextSpecialite  {
+	font: bold 13px Arial, Helvetica, sans-serif;
+	text-align : center;	
+	background-image:url(template/menu-specialite.jpg);
+	color: #FFFFFF;
+	text-decoration: none;
+	display:block;
+	text-align:left;
+	padding-top:9px;
+	padding-left:20px;
+	padding-right:20px;
+	height:47px;
+	}
+	
+#navTextSpecialite:hover {
+	color:#FFFFFF;
+	background-image:url(template/menu-c.jpg);
+	}
+
+#navTextAgenda  {
+	font: bold 13px Arial, Helvetica, sans-serif;
+	text-align : center;	
+	background-image:url(template/menu-agenda.jpg);
+	color: #FFFFFF;
+	text-decoration: none;
+	display:block;
+	text-align:left;
+	padding-top:9px;
+	padding-left:20px;
+	padding-right:20px;
+	height:47px;
+	}
+	
+#navTextAgenda:hover {
+	color:#FFFFFF;
+	background-image:url(template/menu-c.jpg);
+	}
+
+
+#navTextForum  {
+	font: bold 13px Arial, Helvetica, sans-serif;
+	text-align : center;	
+	background-image:url(template/menu-forum.jpg);
+	color: #FFFFFF;
+	text-decoration: none;
+	display:block;
+	text-align:left;
+	padding-top:9px;
+	padding-left:20px;
+	padding-right:20px;
+	height:47px;
+	}
+	
+#navTextForum:hover {
+	color:#FFFFFF;
+	background-image:url(template/menu-c.jpg);
+	}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------- */
+/* HEADER SEARCH */
+#FormulaireRecherche{
+	height:30px;
+	width:338px;
+}
+
+#FormulaireRecherche .Element{
+	margin:0;
+	padding:0;
+	border:1px solid #B2C1D7;
+	width:160px;
+	height:29px;
+	background:#FFFFFF;
+	display:block;
+	float:left;
+	margin-right:4px;
+}
+
+#FormulaireRecherche input#recherche_therapeute, 
+#FormulaireRecherche input#recherche_stage {
+	display:block;
+	float:left;
+	width:118px;
+	height:29px;
+	line-height:30px;
+	padding:0 2px 0 5px;
+	border:0 !important;
+	font-size:12px;
+	font-weight:normal;
+	color:#333333;
+}
+#FormulaireRecherche input.FormulaireRechercheBtn {
+	display: block;
+	float: left;
+	width: 30px;
+	height: 22px;
+	padding: 3px 2px 0 0;
+}
+
+
+
+
+.navigationpage {
+	font: normal 11px "lucida grande", Tahoma, Verdana, Arial, Sans-Serif; 
+	padding: 20px 0px 3px 0px;
+	}
+
+
+
+
+A {
+	font-family:"lucida grande", Tahoma, Verdana, Arial, Sans-Serif; 
+	text-decoration:none; 
+	color:#333399;
+	}
+	
+A:hover {
+	font-family:"lucida grande", Tahoma; 
+	color:#FF6600;
+	}
+
+

@@ -1,0 +1,8 @@
+User-agent: *
+
+Sitemap: https://www.camsoda.com/sitemaps/index.xml
+Sitemap: https://it.camsoda.com/sitemaps/it/index.xml
+Sitemap: https://es.camsoda.com/sitemaps/es/index.xml
+Sitemap: https://fr.camsoda.com/sitemaps/fr/index.xml
+Sitemap: https://de.camsoda.com/sitemaps/de/index.xml
+Sitemap: https://nl.camsoda.com/sitemaps/nl/index.xml

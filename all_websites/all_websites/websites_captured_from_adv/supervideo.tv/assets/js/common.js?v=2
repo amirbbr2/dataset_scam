@@ -1,0 +1,1 @@
+$(function(){new TypeIt('[data-toggle="typeit"]',{speed:50,startDelay:900}).go();$('.js-share-folder .btn').on('click',function(){$('.js-share-folder').toggleClass('folder-share_is-active');});$('.js-copy-codes').on('click',function(){$(this).closest('.js-codes').find('textarea').select();document.execCommand('copy');$('span',this).text('Copied!');});});

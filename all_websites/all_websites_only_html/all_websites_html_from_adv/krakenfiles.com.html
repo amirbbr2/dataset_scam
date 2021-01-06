@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-us" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+
+<title>MF_Doom-Vomit-VLS-2006-FTD.rar</title>
+<meta name="description" content="Store your files on our unlimit drive for free. Audio, Video and any files.">
+<meta name="keywords" content="KrakenFiles, files, share, drive, free, unlimit, fast, disk">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="google-site-verification" content="iL1e-YEaUXOnh4az4fgmGpALGaXGMjevD-eFRtwGItU" />
+<meta name="robots" content="noindex">
+
+<link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" media="screen" href="/css/smartadmin-production-plugins.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/smartadmin-production.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/smartadmin-skins.min.css">
+<link href="/css/theme/style.css?v=1.17.1" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="/css/uploader/jquery.fileupload.css">
+
+<link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+<link rel="apple-touch-icon" href="/img/splash/sptouch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/splash/touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/splash/touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/splash/touch-icon-ipad-retina.png">
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+   google_ad_client: "ca-pub-6888611493668088",
+   enable_page_level_ads: true
+  });
+ </script>
+</head>
+<body class="desktop-detected menu-on-top fixed-header container pace-done smart-style-2">
+
+<header id="header">
+<div id="logo-group">
+
+<span id="logo"> <a href="/"><img src="/img/krakenfiles-logo.png" alt="KrakenFiles.com"></a> </span>
+
+</div>
+
+<div class="pull-right">
+
+
+<ul class="header-dropdown-list login-top-txt">
+<li>
+<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="modal" id="login_link"> <span> Log In </span> </a>
+</li>
+</ul>
+<ul class="header-dropdown-list">
+<li>
+<a href="/register/" class="dropdown-toggle"> <i class="fa fa-lock"></i> <span> Sign up </span> </a>
+</li>
+</ul>
+
+</div>
+
+</header>
+
+<script>
+    $(document).ready(function() {
+        $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+            _title : function(title) {
+                if (!this.options.title) {
+                    title.html("&#160;");
+                } else {
+                    title.html(this.options.title);
+                }
+            }
+        }));
+
+        // Dialog click
+        $('#login_link').click(function() {
+            $('#login_dialog').dialog('open');
+            return false;
+
+        });
+
+        $('#login_dialog').dialog({
+            autoOpen : false,
+            width : 600,
+            resizable : false,
+            modal : true,
+            position: { my: "top", at: "center", of: $('#left-panel') },
+            title : "<div class='widget-header'> <img src='/img/logotype.png' width='50' alt='KrakenFiles'><span>Login to Kraken</span></div>",
+            buttons : [{
+                html : "<i class='fa fa-times'></i>&nbsp; Cancel",
+                "class" : "btn btn-default",
+                click : function() {
+                    $(this).dialog("close");
+                }
+            },
+            {
+                html : "<i class='fa fa-sign-in'></i>&nbsp; Login",
+                "class" : "btn btn-primary",
+                click : function() {
+                    $('#login-form-dialog').submit();
+                }
+            }]
+        });
+    });
+
+</script>
+
+
+<div id="login_dialog" style="display: none;">
+<div class="modal-body no-padding">
+<form action="/login_check" method="post" id="login-form-dialog" class="smart-form">
+<input type="hidden" name="_csrf_token" value="c6UtGgf6Syp0MV1cASk-JMD4jD8yi8MKMFFgDimCdjg" />
+<fieldset>
+<section>
+<div class="row">
+<label class="label col col-2">Username</label>
+<div class="col col-10">
+<label class="input"> <i class="icon-append fa fa-user"></i>
+<input type="text" id="username" name="_username" required="required" autocomplete="username" tabindex="1" />
+</label>
+</div>
+</div>
+</section>
+<section>
+<div class="row">
+<label class="label col col-2">Password</label>
+<div class="col col-10">
+<label class="input"> <i class="icon-append fa fa-lock"></i>
+<input type="password" id="password" name="_password" required="required" autocomplete="current-password" tabindex="2" />
+</label>
+<div class="note">
+<a href="/resetting/request">Forgot password?</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="row">
+<div class="col col-2"></div>
+<div class="col col-10">
+<label class="checkbox">
+ <input type="checkbox" id="remember_me" name="_remember_me" checked tabindex="3">
+<i></i>Remember me</label>
+</div>
+</div>
+</section>
+</fieldset>
+<button type="submit" class="hidden">Log in</button>
+</form>
+</div>
+</div>
+
+<aside id="left-panel">
+
+<div class="login-info">
+<span> 
+<a href="/" id="show-shortcut" data-action="toggleShortcut">
+<img src="/img/avatars/sunny.png" alt="me" class="online" />
+<span>
+john.doe
+</span>
+<i class="fa fa-angle-down"></i>
+</a>
+</span>
+</div>
+
+<nav>
+
+<ul>
+<li>
+<a href="/" title="Home"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Home</span></a>
+</li>
+<li>
+<a href="/faq"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">F.A.Q</span></a>
+</li>
+<li>
+<a href="/blog"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">Blog</span> <span class="badge pull-right inbox-badge margin-right-13">1</span></a>
+</li>
+<li>
+<a href="/contact"><i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">Contact</span></a>
+</li>
+</ul>
+</nav>
+<div style="right:100px;position: absolute;">
+<img src="/img/logotype.png" />
+</div>
+</aside>
+
+<div id="main" role="main">
+
+<div id="ribbon">
+<a href="/">
+<span class="ribbon-button-alignment">
+<span class="btn btn-ribbon">
+<i class="fa fa-home"></i>
+</span>
+</span>
+</a>
+
+<ol class="breadcrumb">
+<li>Home</li> > <a href="/view/f673692c8c/file.html">MF_Doom-Vomit-VLS-2006-FTD.rar</a>
+</ol>
+</div>
+
+<div class="container-fluid">
+
+<div class="row" data-file-hash="f673692c8c">
+<div class="col-md-11 showfile-infobar">
+<div class="col-md-7 info-bar title">
+<img src="/img/icon_file_universal.png">
+<div class="dfilename">MF_Doom-Vomit-VLS-2006-FTD.rar</div>
+<div class="uploaded">
+Uploaded on <b>01-01-2021</b> 20:06:14
+</div>
+</div>
+<div class="col-md-2 info-bar downloads">
+<span class="statd">Downloads</span>
+<span>4</span>
+</div>
+<div class="col-md-2 info-bar stats">
+<ul>
+<li>size: <span>34.23 MB</span></li>
+<li>views: <span>15</span></li>
+<li>last download: <span>04-01-2021</span></li>
+</ul>
+</div>
+</div>
+<div class="col-sm-10 file-info-ads">
+<div class="col-md-8 mt-8 file-preview">
+no preview
+<div class="row">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:600px;height:250px" data-ad-client="ca-pub-6888611493668088" data-ad-slot="3816632643"></ins>
+<script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+</div>
+</div>
+<div class="col-md-4">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6888611493668088" data-ad-slot="7026670408" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+<br />
+<form action="/download/f673692c8c" method="POST" id="dl-form">
+<input class="hidden" name="token" value="YXNkejUzNERTZmRzU0RGY3YzMmY2NzM2OTJjOGM" title="dl-token" id="dl-token" />
+<button type="submit" class="btn btn-success btn-dwn"><i class="fa fa-download"></i><span class="btn-text"> Download file</span></button>
+</form>
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-6888611493668088" data-ad-slot="7251917331"></ins>
+<script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+
+                    eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('b 1(){c{7 2.a!==2.d}f(e){7 8}}9(1()){$(\'#q-n\').5(\'g o 0 p m <l><3>h://i.j/k/\'+$(\'[4-0-6]\').4(\'0-6\')+\'/0.5</3>\')}',27,27,'file|inIframe|window|strong|data|html|hash|return|true|if|self|function|try|top||catch|To|https|krakenfiles|com|view|br|visit|form|download|please|dl'.split('|'),0,{}))
+
+                </script>
+</div>
+
+
+<div class="row">
+<div class="col-sm-12">
+<div class="panel panel-default card-view">
+<div class="panel-wrapper collapse in">
+<div class="panel-body">
+<div class="tab-struct custom-tab-1 product-desc-tab">
+<ul role="tablist" class="nav nav-tabs nav-tabs-responsive" id="myTabs_7">
+<li class="active" role="presentation"><a aria-expanded="true" data-toggle="tab" role="tab" id="descri_tab" href="#descri_tab_detail"><span>Kraken on fire!</span></a></li>
+<li role="presentation" class="next"><a data-toggle="tab" id="adi_info_tab" role="tab" href="#adi_info_tab_detail" aria-expanded="false"><span>How to report abuse</span></a></li> </ul>
+<div class="tab-content" id="myTabContent_7">
+<div id="descri_tab_detail" class="tab-pane fade active in pt-0 margin-top-10" role="tabpanel">
+<p class="pt-15">Welcome to KrakenFiles.com. We are free file hosting where everyone can store any files as long as it possible. We want to show why Kraken is best place to share music, videos, images and docs with other users. Be sure that Kraken is not just a file hosting but somthing more...</p>
+<div class="welcome">
+<div class="col-md-6 homePage-checkers margin-top-5">
+<i class="fa fa-check"></i> KrakenFiles is 100% FREE <br />
+<i class="fa fa-check"></i> No Download Limits and transfer speed<br />
+<i class="fa fa-check"></i> You can store Up to 500 MB per File <br />
+</div>
+<div class="col-md-6 homePage-checkers margin-top-5">
+ <i class="fa fa-check"></i> We offer unlimited Disk Space for your files <br />
+<i class="fa fa-check"></i> NO annoying ads
+</div>
+</div>
+</div>
+<div id="adi_info_tab_detail" class="tab-pane pt-0 fade" role="tabpanel">
+<p>Report illegal files, please <a href="/report-abuse/f673692c8c">click here</a> and send full link to us!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="page-footer">
+<div class="row">
+<div class="col-xs-12 col-sm-6">
+<span class="txt-color-white">KrakenFiles.com <span class="hidden-xs"> - Free file hosting</span> © 2019</span>
+</div>
+<div class="col-xs-6 col-sm-6 text-right hidden-xs">
+<div class="txt-color-white inline-block">
+<i class="txt-color-blueLight hidden-mobile">Stable <strong>v1.0</strong> </i>
+</div>
+</div>
+</div>
+</div>
+
+<script src="/js/cookie.min.js"></script>
+<script src="/js/theme/customMain.js"></script>
+<script src="/js/uploader/vendor/jquery.ui.widget.js"></script>
+<script src="/js/uploader/tmpl.min.js"></script>
+<script src="/js/uploader/jquery.fileupload.js"></script>
+<script src="/js/uploader/jquery.fileupload-process.js"></script>
+<script src="/js/uploader/jquery.fileupload-validate.js"></script>
+<script src="/js/uploader/jquery.fileupload-ui.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script data-pace-options='{ "restartOnRequestAfter": true }' src="/js/plugin/pace/pace.min.js"></script>
+<script src="/js/app.config.js"></script>
+<script src="/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+<script src="/js/bootstrap/bootstrap.min.js"></script>
+<script src="/js/plugin/sparkline/jquery.sparkline.min.js"></script>
+<script src="/js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+<script src="/js/plugin/fastclick/fastclick.min.js"></script>
+<!--[if IE 8]>
+<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+<![endif]-->
+
+<script src="/js/app.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-24309699-8"></script>
+<script>
+    // DO NOT REMOVE : GLOBAL FUNCTIONS!
+    $(document).ready(function() {
+        pageSetUp();
+    });
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-24309699-8');
+
+</script>
+</body>
+</html>

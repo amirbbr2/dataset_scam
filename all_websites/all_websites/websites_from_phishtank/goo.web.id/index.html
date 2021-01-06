@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="17cuOasux7OR3jpjmcRbQ9qXvCEN6MH2hVj4CXqX">
+    <meta name="description" content="Goo URL Shortener, create beautiful links for your business">
+
+    <title>Goo URL Shortener</title>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    Goo
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Authentication Links -->
+                                                    <li class="nav-item">
+                                <a class="nav-link" href="https://goo.web.id/login">Login</a>
+                            </li>
+                                                            <li class="nav-item">
+                                    <a class="nav-link" href="https://goo.web.id/register">Register</a>
+                                </li>
+                                                                        </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-4">
+            <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">URL Shortener</div>
+                <div class="card-body">
+                    <form method="POST" action="https://goo.web.id/shortlink">
+                        <div class="input-group mb-3">
+                            <input id="link" type="url" name="link" class="form-control" placeholder="Enter URL" autocomplete="off" required>
+                            <div class="input-group-append">
+                                <button id="btn-submit" class="btn btn-success" type="button" data-clipboard-target="#link">Generate Shorten Link</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </main>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        new ClipboardJS('#btn-submit');
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $("#btn-submit").click(function(e) {
+            e.preventDefault();
+            if ($("#btn-submit").text() != "Copy") {
+                var link = $("input[name=link]").val();
+                $.ajax({
+                    type: 'POST',
+                    url: "https://goo.web.id/shortlink",
+                    data: {
+                        link: link
+                    },
+                    success: function(data) {
+                        $("#link").val("https://goo.web.id/" + data.code);
+                        $("#btn-submit").text("Copy");
+                    }
+                });
+            }
+        });
+    });
+</script>
+</body>
+</html>

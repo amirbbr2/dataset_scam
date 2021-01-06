@@ -1,0 +1,211 @@
+body {
+margin : 0 ;
+padding : 0 ; 
+background : #fff ;
+text-align : center;
+font-size : 0.7em;
+color : #575449 ;
+font-family : arial ;
+line-height : 18px;  }
+
+#site { 
+width : 740px;
+margin : 0 auto;
+text-align : left  ;
+}     
+     
+h1 {
+color : #759111;
+margin : 0 0 5px 0;
+padding : 20px 0 0 0 ; 
+font-size : 2em ;
+text-transform : uppercase ;
+font-weight : normal;  
+}
+
+#header { 
+height : 158px;
+background : url(../images/header3.jpg) no-repeat;
+margin : 0 0 30px 0
+}
+   
+#menu {
+height : 25px ; 
+margin : 0  ;
+}
+	
+#menu  ul{
+list-style : none ;
+margin : 0; 
+padding : 0 ;
+}
+
+#menu  li{
+float : left ;
+text-transform : uppercase ; 
+font-size : 90%; 
+}
+
+#menu  li a{
+margin : 0 ; 
+padding : 0 10px 0 0 ; 
+text-decoration : none ;    
+color : #CB9728 ;
+font-weight : bold ;
+}
+
+#menu  li a:hover{
+text-decoration:none;
+color :#C72727;
+}
+	
+#content {overflow : auto ; }
+
+#contenu {
+width : 495px ; 
+background : transparent ; 
+float  : left ;
+margin : 0;
+padding : 0 40px 0 0 ;
+}
+   
+.post {
+margin : 0 0 50px 0 ; 
+overflow : auto; 
+}   
+
+.post  h2 {
+font-size : 1.6em ; 
+/* text-transform : uppercase ; */
+padding-left:35px;
+line-height:30px;
+margin: 0 ;
+color : #759111; 
+font-weight:400;
+/* clear : left ;  */
+
+  background-image: url(../images/puce10.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  /* padding-right: 28px; */
+ 
+}
+
+.post  .sous-h2 {
+margin : 0 ;
+padding : 0;
+font-weight:normal;
+color : #CB9728 ;
+font-size : 90%;  
+}
+   
+.post img {
+float  : left ;
+margin : 0 20px 0 0
+}
+
+.post p {}
+
+.meta-comment {padding : 10px 0 0 0; color : #CB9728 ; clear : left ; }
+.meta-comment a {color : #759111}
+   
+#side {
+width : 180px ;
+background : #fff ; 
+float  : left ;
+padding-left:15px;
+padding-top:10px;
+padding-bottom:8px;
+padding-right:0px;
+text-align : justify;
+margin-top:10px;
+border:1px dashed;
+border-color:#990000;
+}
+	
+#side h2 {
+font-size : 1.6em ;
+margin : 0 ;
+padding :  15px 0 0 0 ; 
+color : #759111 ; 
+font-weight : normal;
+/* background : url(../images/side-h2-3.jpg) no-repeat;   */
+}
+
+#side h2:first-child {
+padding :   0 ; 
+background : #fff ;  
+}
+	
+#side ul{
+/* list-style : none ; */
+margin : 8px 0 5px 0 ;
+padding-left:18px;
+color : #000;
+list-style-type: disc;
+list-style-image: url(../images/puce3.png);
+list-style-position:inherit;
+}
+ 
+#side li{
+margin : 0 ; 
+padding : 0 0 2px 0; 
+}
+  
+#side li a{
+color : #C8901B ;
+text-decoration : none ;
+/* border-top : 1px solid #759111 ;  */
+display : block ;
+height : 18px;
+line-height : 18px;   
+}
+
+#side li:first-child a{
+border-top: 0; 
+}
+
+#side li a:hover{
+text-decoration : none ;
+color : #C72727; 
+}
+
+#side p{
+margin : 10px 0 15px 0 ; 
+padding : 0;  
+}
+
+.amazone {
+text-align:center;
+margin-bottom:15px;
+margin-left:2px;
+}
+ 
+#footer { 
+height :29px;
+font-size : 90%;
+background : url(../images/footer2.jpg);
+border-bottom : 20px solid #fff ;   
+}
+
+#footer p { 
+margin : 0;
+padding : 7px 0 0 20px ; 
+color : #fff; 
+}
+
+#footer a { 
+color : #fff;
+text-decoration : none ;  
+}
+
+#footer a:hover { 
+color : #fff;
+text-decoration : underline ;  
+}
+   
+   
+ 
+
+
+

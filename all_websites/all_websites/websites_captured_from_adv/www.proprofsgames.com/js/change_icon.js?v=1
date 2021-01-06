@@ -1,0 +1,204 @@
+ var icons={
+
+            settingMouseOver:function(){
+                document.querySelector("#settingButton a .settingButton").setAttribute("class","settingButton-hover");                      
+                                       },
+            settingMouseOverOut:function(){                          
+               document.querySelector("#settingButton a .settingButton-hover").setAttribute("class","settingButton");
+
+            },
+            shareMouseOver:function(){                          
+                document.querySelector("#shareButton a .shareButton").setAttribute("class","shareButton-hover");
+
+            },
+            shareMouseOverOut:function(){
+               document.querySelector("#shareButton a .shareButton-hover").setAttribute("class","shareButton");
+
+            },
+            reportMouseOver:function(){
+                document.querySelector("#reportButton a .reportButton").setAttribute("class","reportButton-hover");
+
+            },
+            reportMouseOverOut:function(){  
+               document.querySelector("#reportButton a .reportButton-hover").setAttribute("class","reportButton");
+
+            },
+            previewMouseOver:function(){                           
+                document.querySelector("#previewButton1 a .previewButton").setAttribute("class","previewButton-hover");
+
+            },
+            previewMouseOverOut:function(){                        
+
+               document.querySelector("#previewButton1 a .previewButton-hover").setAttribute("class","previewButton");
+            },
+            editMouseOver:function(){ 
+
+                edit=document.querySelectorAll(".icon .editIcon");
+                for(i=0;i<edit.length;i++)
+                {
+                    edit[i].setAttribute("class","editIcon-hover");
+                }
+
+            },
+            editMouseOverOut:function(){                        
+
+               editOver=document.querySelectorAll(".icon .editIcon-hover");
+               for(i=0;i<editOver.length;i++)
+                {
+                    editOver[i].setAttribute("class","editIcon");
+                }
+            },
+            copyMouseOver:function(){ 
+
+                copy=document.querySelectorAll(".icon .copyIcon");
+                for(i=0;i<copy.length;i++)
+                {
+                    copy[i].setAttribute("class","copyIcon-hover");
+                }
+
+            },
+            copyMouseOverOut:function(){                        
+
+               copyOver=document.querySelectorAll(".icon .copyIcon-hover");
+               for(i=0;i<copyOver.length;i++)
+                {
+                    copyOver[i].setAttribute("class","copyIcon");
+                }
+            },
+            dragMouseOver:function(){ 
+
+                drag=document.querySelectorAll(".icon .dragIcon");
+                for(i=0;i<drag.length;i++)
+                {
+                    drag[i].setAttribute("class","dragIcon-hover");
+                }
+
+            },
+            dragMouseOverOut:function(){                        
+
+               dragOver=document.querySelectorAll(".icon .dragIcon-hover");
+               for(i=0;i<dragOver.length;i++)
+                {
+                    dragOver[i].setAttribute("class","dragIcon");
+                }
+            },
+            previewIconMouseOver:function(){ 
+
+                preview=document.querySelectorAll(".icon .previewIcon");
+                for(i=0;i<preview.length;i++)
+                {
+                    preview[i].setAttribute("class","previewIcon-hover");
+                }
+
+            },
+            previewIconMouseOverOut:function(){                        
+
+               previewOver=document.querySelectorAll(".icon .previewIcon-hover");
+               for(i=0;i<previewOver.length;i++)
+                {
+                    previewOver[i].setAttribute("class","previewIcon");
+                }
+            },                       
+            deleteMouseOver:function(){ 
+
+                del=document.querySelectorAll(".deleteIcon");
+                for(i=0;i<del.length;i++)
+                {
+                    del[i].setAttribute("class","deleteIcon-hover");
+                }
+
+            },
+            deleteMouseOverOut:function(){                        
+
+               deleteOver=document.querySelectorAll(".deleteIcon-hover");
+               for(i=0;i<deleteOver.length;i++)
+                {
+                    deleteOver[i].setAttribute("class","deleteIcon");
+                }
+            },                       
+            userMenuOver:function(){ 
+
+                menu=document.querySelectorAll(".userMenu");
+                for(i=0;i<menu.length;i++)
+                {
+                    menu[i].setAttribute("class","userMenu-hover");
+                }
+
+            },
+            userMenuMouseOverOut:function(){                        
+
+               menu=document.querySelectorAll(".userMenu-hover");
+               for(i=0;i<menu.length;i++)
+                {
+                    menu[i].setAttribute("class","userMenu");
+                }
+            },                       
+            quizMenuOver:function(){ 
+
+                menu=document.querySelectorAll(".quizMenu");
+                for(i=0;i<menu.length;i++)
+                {
+                    menu[i].setAttribute("class","quizMenu-hover");
+                }
+
+            },
+            quizMenuMouseOverOut:function(){                        
+
+               menu=document.querySelectorAll(".quizMenu-hover");
+               for(i=0;i<menu.length;i++)
+                {
+                    menu[i].setAttribute("class","quizMenu");
+                }
+            },                       
+            instructorMenuOver:function(){ 
+
+                menu=document.querySelectorAll(".instructorMenu");
+                for(i=0;i<menu.length;i++)
+                {
+                    menu[i].setAttribute("class","instructorMenu-hover");
+                }
+
+            },
+            instructorMenuMouseOverOut:function(){                        
+
+               menu=document.querySelectorAll(".instructorMenu-hover");
+               for(i=0;i<menu.length;i++)
+                {
+                    menu[i].setAttribute("class","instructorMenu");
+                }
+            },                       
+            myaccountIconOver:function(){ 
+
+                menu=document.querySelectorAll(".myaccountIcon");
+                for(i=0;i<menu.length;i++)
+                {
+                    menu[i].setAttribute("class","myaccountIcon-hover");
+                }
+
+            },
+            myaccountIconOverOut:function(){                        
+
+               menu=document.querySelectorAll(".myaccountIcon-hover");
+               for(i=0;i<menu.length;i++)
+                {
+                    menu[i].setAttribute("class","myaccountIcon");
+                }
+            },logoutIconOver:function(){ 
+
+                menu=document.querySelectorAll(".logoutIcon");
+                for(i=0;i<menu.length;i++)
+                {
+                    menu[i].setAttribute("class","logoutIcon-hover");
+                }
+
+            },
+            logoutIconOverOut:function(){                        
+
+               menu=document.querySelectorAll(".logoutIcon-hover");
+               for(i=0;i<menu.length;i++)
+                {
+                    menu[i].setAttribute("class","logoutIcon");
+                }
+            }
+            
+        }

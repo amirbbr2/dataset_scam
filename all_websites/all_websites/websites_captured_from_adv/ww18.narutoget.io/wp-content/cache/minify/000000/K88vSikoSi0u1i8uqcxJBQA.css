@@ -1,0 +1,133 @@
+*{padding:0;margin:0;}
+body{font-family:Trebuchet MS, Helvetica, Lucida Sans, Tahoma, Arial, sans-serif;font-size:8pt;color:#000000;background-color:#F7F7F7;align:center;margin-top:30px;}
+img{border:none;}
+a{color:#000;text-decoration:none;}
+a:hover{color:#000;text-decoration:underline;}
+table{width:100%;border-collapse:;}
+table.details{font-size:12pt;}
+th{font-size:12pt;}
+th, tr, td{padding:0.2em;text-align:left;}
+.rowtrack tr:hover{background-color:#e8e6d9;}
+.listlink{font-size:10pt;}
+.listdetail{letter-spacing:0.05em;color:#aaaaaa;}
+.bad{font-weight:bold;color:#bb0000;}
+.tblseeders, .tblleechers{width:44%;font-size:11pt;}
+.tblseeders{float:left;text-align:right;}
+.tblleechers{float:right;text-align:left;}
+.tv_show{width:22em;margin:1em;height:7em;float:left;}
+.tv_show h2{}
+.tipbot{ width:588px; clear:both; color:#151515; background:#f0f0f0; padding:10px; line-height:20px;}
+.tipbot h3{ font-weight:normal; display:inline-block; font-size:12px;}
+p, form, span{padding:0;margin:0;}
+hr{border:none;border-bottom:1px solid black;}
+h1, h2, h3{}
+h1{font-size:18pt;font-weight:bold;margin-bottom:0.4em;border-bottom:1px dashed #cccccc;padding-bottom:5px;}
+h2{font-size:15pt;font-weight:bold;margin-bottom:0.4em;}
+#hcont{background-color:#005694;}
+#logo{background-color:#040518;overflow:hidden;}
+#userinfo{color:#ffffff;float:right;text-align:right;margin:5px;font-size:9pt;}
+#userinfo a{color:#7e7f82;}
+#userinfo a:hover{color:#ffffff;}
+#lognreg a{font-size:10pt;color:#b8b9c8;}
+#loginbox{background-color:#d4d9f6;font-size:10pt;padding:1ex;border-bottom:1px solid #cccccc;}
+#useraction input{font-size:10pt;background-color:#ffffff;border:1px #cfcbba solid;}
+#closer{width:16px;height:16px;background-image:url("../../../../static.suprnova.tfr.se/gfx/close.png");background-repeat:no-repeat;float:right;cursor:pointer;}
+#register{padding:1em;}
+#register .error{color:#5a0b0b;}
+#main{background-color:#ffffff;border:1px solid #000;border-top:1px solid #005695;border-bottom:none;margin:0;}
+#header{display:block;background-color:#FFCC00;height:2.5em;border-bottom:1px #807e7f solid;clear:left;}
+#links{font-weight:bold;background-color:#FFCB0A;border-bottom:1px solid #;font-size:12pt;color:#000;text-transform:uppercase;}
+#links a{padding:1ex;display:block;float:left;color:#000;}
+#content a{text-decoration:none;}
+#links a:hover, #content a:hover{text-decoration:underline;}
+#search{font-size:10pt;padding:5px;background-color:#FEFFE4;border-bottom:1px #cfcbba sollid;}
+#search input, #search select{font-family:Trebuchet MS, Helvetica, Arial, sans-serif;margin:0.2em;color:#212121;background-color:#ffffff;border:1px #cfcbba solid;font-size:14pt;width:45%;padding:0.2em;}
+#search select{width:auto;font-size:14pt;color:#807e7f;}
+#searchcloud{font-family:Arial, Helvetica;font-size:10pt;letter-spacing:1pt;margin:2em;text-decoration:none;}
+#news{border-bottom:1px #807e7f solid;font-size:10pt;}
+#notice{font-size:10pt;}
+.author{font-size:10px;color:#888888;text-align:right;}
+#content, #results{border-bottom:1px solid #807e7f;padding:1em;}
+#download{float:left;padding:0;border:none;display:block;font-weight:bold;text-transform:uppercase;margin-bottom:0.5em;font-size:14pt;}
+#download img{float:left;margin-right:0.5em;}
+#download div{padding-top:0.5em;}
+#download span#details, #rate div#details{font-size:8pt;font-weight:normal;}
+#rate{width:5em;margin:0;float:right;font-size:16pt;}
+.small{font-size:8pt;}
+#files{}
+#profile{padding:1em;}
+#loading{width:100px;height:100px;background-image:url("../../../../static.suprnova.tfr.se/gfx/loading.gif");background-position:center center;background-repeat:no-repeat;display:block;margin:auto;}
+textarea #nfo{}
+#footer{border-top:1px #C0C0C0 solid;}
+#stats{font-size:9pt;background-color:#fff;border-bottom:0px solid #807e7f;padding:1em;text-align:center;color:#000;}
+#stats a{color:#000;}
+#bottom{height:1em;}
+.profilecat{margin:auto;width:66%;}
+.profilecat select{width:6em;}
+.profilecatitem{margin:0.5em;background-color:#eeeeee;border:dotted 1px #d4d4d4;width:20%;float:left;text-align:center;padding:0.5em;}
+#comments{margin-top:2em;}
+.comment{font-size:10pt;margin-bottom:1em;}
+.commentarea{font-family:Trebuchet MS, Helvetica, Lucida Sans, Tahoma, Arial, sans-serif;background-color:#eeeeee;border:dotted 1px #c2c4c8;}
+.signature{border-top:dotted 1px #d4d4d4;font-size:8pt;color:#aaaaaa;}
+form#password, form#upload{font-size:12pt;}
+form#password input, form#upload input, select{font-size:12pt;width:70%;text-align:center;}
+form#password td, form#upload td{text-align:center;}
+div#toggle{text-align:center;}
+div#toggle .active, .inactive{margin:0.2em;padding:0.2em 0.4em;border:1px solid;}
+div#toggle .active{color:#031245;border-color:#031245;}
+div#toggle .inactive{color:#000;background-color:#031245;border-color:#afb2bc;}
+.lhand{margin:10px;float:left;}
+.rhand{float:right;}
+.clr{display:inline-block;}
+.clr{display:block;}
+.clr:after{content:".";clear:both;display:block;height:0;visibility:hidden;}
+* html .clr{height:1%;}
+#wrap2{width:100%;}
+#main2{float:left;width:500px;}
+#main2 h2, #main h3, #main p{padding:0 0px;}
+#sidebar2{float:right;width:240px;}
+#sidebar2 ul{margin-bottom:0;}
+#sidebar2 h3, #sidebar p{padding:0 0px 0 0;}
+#wrapper{text-align:left;width:;}
+#header{margin:0 0 px 0;}
+#side-a{float:left;width:730px;padding:1em;}
+#side-b{margin:0;float:left;background-color:#fff;width:169px;height:1%}
+#footer{clear:both;}
+#message{margin:0;background-color:#F2F2F2;width:100%;height:20px}
+.tipbot{ width:650px; clear:both; color:#151515; background:#f0f0f0; padding:4px; line-height:20px;}
+.tipbot h3{ font-weight:normal; display:inline-block; font-size:12px;}
+
+
+/*
+*  START host-tab system design
+*/
+span.hostname,a.hostname{
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+a.hostname{
+    background: url("../../../../template/images/host_1.png") repeat scroll 0 0 transparent;
+    color: #333333;
+}
+a.hostname:hover 
+, span.hostname{
+    background: url("../../../../template/images/host_2.png") repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+}
+
+/*
+*  END host-tab system design
+*/
+
+div#sitepicker{position:absolute;top:0;left:0;right:0;height:26px;background:#fff url(http://i.imgur.com/zZzUr9s.gif) repeat-x}
+div#sitepicker a{text-decoration:none}
+div#sitepicker ul{list-style:none;width:1000px;height:26px;margin:0 auto}
+div#sitepicker ul li{float:left;font-size:12px;line-height:25px;padding:0 20px}
+ 
+div#sitepicker ul li.last{float:right}
+div#sitepicker ul li a{color:#000;text-transform:uppercase}
+div#sitepicker ul li a#active{color:#000;font-weight:700}
+div#sitepicker ul li a:hover{color:#0b586b}

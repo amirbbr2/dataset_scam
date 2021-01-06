@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /forgot-password
+Disallow: /blacklabel
+Disallow: /cam/*/*lp=*
+Disallow: /cam/*lp=*
+Disallow: *?nojs=*
+Disallow: *&nojs=*
+Disallow: *?stno=*
+Disallow: *&stno=*
+Disallow: *sakey=*
+Disallow: *sabasic=*
+
+User-agent: proximic
+Disallow: /

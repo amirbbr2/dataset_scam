@@ -1,0 +1,615 @@
+
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7 ltie8 ltie9" lang="es"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 ltie9" lang="es"><![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="es">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="initial-scale=1.0" />	
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">	
+	<link rel="pingback" href="https://haciendalosalmendros.com/xmlrpc.php" />
+	<title>Hacienda los Almendros &#8211; Los Almendros</title>
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Hacienda los Almendros &raquo; Feed" href="https://haciendalosalmendros.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hacienda los Almendros &raquo; Feed de los comentarios" href="https://haciendalosalmendros.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Hacienda los Almendros &raquo; Comentario Homepage del feed" href="https://haciendalosalmendros.com/homepage/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/haciendalosalmendros.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wl-wrgf-swipe-css-css'  href='https://haciendalosalmendros.com/wp-content/plugins/responsive-gallery-with-lightbox/lightbox/swipebox/swipebox.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wrgf-hover-pack-css-css'  href='https://haciendalosalmendros.com/wp-content/plugins/responsive-gallery-with-lightbox/css/hover-pack.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wrgf-boot-strap-css-css'  href='https://haciendalosalmendros.com/wp-content/plugins/responsive-gallery-with-lightbox/css/bootstrap.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wrgf-img-gallery-css-css'  href='https://haciendalosalmendros.com/wp-content/plugins/responsive-gallery-with-lightbox/css/img-gallery.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wrgf-font-awesome-4-css'  href='https://haciendalosalmendros.com/wp-content/plugins/responsive-gallery-with-lightbox/css/font-awesome-latest/css/font-awesome.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://haciendalosalmendros.com/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://haciendalosalmendros.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9' type='text/css' media='all' />
+<link rel='stylesheet' id='hotel-style-css'  href='https://haciendalosalmendros.com/wp-content/plugins/gdlr-hostel/gdlr-hotel.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tcpc-style-css'  href='https://haciendalosalmendros.com/wp-content/plugins/tc-product-catalog/assets/css/tcpc.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/style.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='Open-Sans-google-font-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&#038;subset=greek%2Ccyrillic-ext%2Ccyrillic%2Clatin%2Clatin-ext%2Cvietnamese%2Cgreek-ext&#038;ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='Merriweather-google-font-css'  href='https://fonts.googleapis.com/css?family=Merriweather%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%2C900%2C900italic&#038;subset=latin%2Clatin-ext&#038;ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='superfish-css'  href='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/superfish/css/superfish.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='dlmenu-css'  href='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/dl-menu/component.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/font-awesome-new/css/font-awesome.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-fancybox-css'  href='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/fancybox/jquery.fancybox.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='hotelmaster-flexslider-css'  href='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/flexslider/flexslider.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='style-responsive-css'  href='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/stylesheet/style-responsive.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='style-custom-css'  href='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/stylesheet/style-custom.css?1506488571&#038;ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-main-css'  href='https://haciendalosalmendros.com/wp-content/plugins/masterslider/public/assets/css/masterslider.main.css?ver=2.29.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ms-custom-css'  href='https://haciendalosalmendros.com/wp-content/uploads/masterslider/custom.css?ver=4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='__EPYT__style-css'  href='https://haciendalosalmendros.com/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=5.4.2' type='text/css' media='all' />
+<style id='__EPYT__style-inline-css' type='text/css'>
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/plugins/responsive-gallery-with-lightbox/js/hover-pack.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/plugins/responsive-gallery-with-lightbox/lightbox/swipebox/jquery.swipebox.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/plugins/responsive-gallery-with-lightbox/js/masonry.pkgd.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/plugins/responsive-gallery-with-lightbox/js/imagesloaded.pkgd.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://maps.google.com/maps/api/js?key=AIzaSyDcLK4VhR4Fmq7ge9wv2WnN0L5fNdZ-JXA&#038;libraries=geometry%2Cplaces%2Cweather%2Cpanoramio%2Cdrawing&#038;language=es&#038;ver=5.4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpgmp_local = {"all_location":"All","show_locations":"Show Locations","sort_by":"Sort by","wpgmp_not_working":"not working...","place_icon_url":"https:\/\/haciendalosalmendros.com\/wp-content\/plugins\/wp-google-map-plugin\/assets\/images\/icons\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/plugins/wp-google-map-plugin/assets/js/maps.js?ver=2.3.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/haciendalosalmendros.com\/wp-admin\/admin-ajax.php","security":"859910551e","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/haciendalosalmendros.com\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"11.8.2","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","stopMobileBuffer":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=5.4.2'></script>
+<link rel='https://api.w.org/' href='https://haciendalosalmendros.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://haciendalosalmendros.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://haciendalosalmendros.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4.2" />
+<link rel="canonical" href="https://haciendalosalmendros.com/" />
+<link rel='shortlink' href='https://haciendalosalmendros.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://haciendalosalmendros.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaciendalosalmendros.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://haciendalosalmendros.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhaciendalosalmendros.com%2F&#038;format=xml" />
+<script>var ms_grabbing_curosr='https://haciendalosalmendros.com/wp-content/plugins/masterslider/public/assets/css/common/grabbing.cur',ms_grab_curosr='https://haciendalosalmendros.com/wp-content/plugins/masterslider/public/assets/css/common/grab.cur';</script>
+<meta name="generator" content="MasterSlider 2.29.0 - Responsive Touch Image Slider" />
+<!-- <meta name="NextGEN" version="2.2.14" /> -->
+<!-- load the script for older ie version -->
+<!--[if lt IE 9]>
+<script src="https://haciendalosalmendros.com/wp-content/themes/hotelmaster/javascript/html5.js" type="text/javascript"></script>
+<script src="https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/easy-pie-chart/excanvas.js" type="text/javascript"></script>
+<![endif]-->
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://haciendalosalmendros.com/wp-content/uploads/2017/08/cropped-apple-icon-180x180-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://haciendalosalmendros.com/wp-content/uploads/2017/08/cropped-apple-icon-180x180-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://haciendalosalmendros.com/wp-content/uploads/2017/08/cropped-apple-icon-180x180-180x180.png" />
+<meta name="msapplication-TileImage" content="https://haciendalosalmendros.com/wp-content/uploads/2017/08/cropped-apple-icon-180x180-270x270.png" />
+</head>
+
+<body class="home page-template-default page page-id-3720 _masterslider _msp_version_2.29.0  hotelmaster-button-classic-style  header-style-1  hotelmaster-classic-style  hotelmaster-single-classic-style">
+<div class="body-wrapper  float-menu gdlr-icon-dark gdlr-header-solid" data-home="https://haciendalosalmendros.com" >
+		<header class="gdlr-header-wrapper">
+		<!-- top navigation -->
+				<div class="top-navigation-wrapper">
+			<div class="top-navigation-container container">
+				<div class="top-navigation-left">
+					<div class="top-navigation-left-text">
+											</div>
+				</div>
+				<div class="top-navigation-right">
+					<div class="top-social-wrapper">
+						<div class="social-icon">
+<a href="mailto:info@haciendalosalmendros.com" target="_blank" >
+<img width="32" height="32" src="https://haciendalosalmendros.com/wp-content/themes/hotelmaster/images/light/social-icon/email.png" alt="Email" />
+</a>
+</div>
+<div class="social-icon">
+<a href="https://www.youtube.com/playlist?list=PLXEKnqMPNszaMgwMQb6dp4nTm2ElkV2Iz" target="_blank" >
+<img width="32" height="32" src="https://haciendalosalmendros.com/wp-content/themes/hotelmaster/images/light/social-icon/youtube.png" alt="Youtube" />
+</a>
+</div>
+<div class="clear"></div>					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="top-navigation-divider"></div>
+		
+		<!-- logo -->
+		<div class="gdlr-header-inner">
+						<div class="gdlr-header-container container">
+				<!-- logo -->
+				<div class="gdlr-logo">
+					<div class="gdlr-logo-inner">
+						<a href="https://haciendalosalmendros.com" >
+						<img src="https://haciendalosalmendros.com/wp-content/uploads/2017/08/logo-hacienda.png" alt=""  />						</a>
+						<div class="gdlr-responsive-navigation dl-menuwrapper" id="gdlr-responsive-navigation" ><button class="dl-trigger">Open Menu</button><ul id="menu-main-menu" class="dl-menu gdlr-main-mobile-menu"><li id="menu-item-4250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3720 current_page_item menu-item-4250"><a href="https://haciendalosalmendros.com/" aria-current="page">INICIO</a></li>
+<li id="menu-item-4104" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4104"><a href="../sub_ico.png#">Galería</a>
+<ul class="dl-submenu">
+	<li id="menu-item-4692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4692"><a href="https://haciendalosalmendros.com/galeria-de-imagenes/">Caballos</a></li>
+	<li id="menu-item-4691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4691"><a href="https://haciendalosalmendros.com/ganado/">Ganado</a></li>
+	<li id="menu-item-4721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4721"><a href="https://haciendalosalmendros.com/tu-proxima-visita/">Tu próxima visita</a></li>
+</ul>
+</li>
+<li id="menu-item-4269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4269"><a href="https://haciendalosalmendros.com/contact-page/">Contáctenos</a></li>
+</ul></div>					</div>
+				</div>
+
+				<!-- navigation -->
+				<div class="gdlr-navigation-wrapper"><nav class="gdlr-navigation" id="gdlr-main-navigation" role="navigation"><ul id="menu-main-menu-1" class="sf-menu gdlr-main-menu"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3720 current_page_item menu-item-4250menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3720 current_page_item menu-item-4250 gdlr-normal-menu"><a href="https://haciendalosalmendros.com/">INICIO</a></li>
+<li  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4104menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4104 gdlr-normal-menu"><a href="../sub_ico.png#" class="sf-with-ul-pre">Galería</a>
+<ul class="sub-menu">
+	<li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4692"><a href="https://haciendalosalmendros.com/galeria-de-imagenes/">Caballos</a></li>
+	<li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4691"><a href="https://haciendalosalmendros.com/ganado/">Ganado</a></li>
+	<li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4721"><a href="https://haciendalosalmendros.com/tu-proxima-visita/">Tu próxima visita</a></li>
+</ul>
+</li>
+<li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4269menu-item menu-item-type-post_type menu-item-object-page menu-item-4269 gdlr-normal-menu"><a href="https://haciendalosalmendros.com/contact-page/">Contáctenos</a></li>
+</ul></nav>	
+<span class="gdlr-menu-search-button-sep">•</span>
+<i class="fa fa-search icon-search gdlr-menu-search-button" id="gdlr-menu-search-button" ></i>
+<div class="gdlr-menu-search" id="gdlr-menu-search">
+	<form method="get" id="searchform" action="https://haciendalosalmendros.com/">
+				<div class="search-text">
+			<input type="text" value="Type Keywords" name="s" autocomplete="off" data-default="Type Keywords" />
+		</div>
+		<input type="submit" value="" />
+		<div class="clear"></div>
+	</form>	
+</div>		
+<div class="gdlr-navigation-gimmick gdlr-pos-bottom" id="gdlr-navigation-gimmick"></div><div class="clear"></div></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</header>
+	<div id="gdlr-header-substitute" ></div>
+			<!-- is search -->	<div class="content-wrapper">
+	<div class="gdlr-content">
+
+		<!-- Above Sidebar Section-->
+						
+		<!-- Sidebar With Content Section-->
+		<div class="with-sidebar-wrapper"><section id="content-section-1" ><div class="gdlr-full-size-wrapper gdlr-show-all"  style="padding-bottom: 0px;  background-color: #ffffff; "  ><div class="gdlr-master-slider-item gdlr-slider-item gdlr-item"  style="margin-bottom: 0px;"  >
+		<!-- MasterSlider -->
+		<div id="P_MS5f832e136c05b" class="master-slider-parent ms-parent-id-4"  >
+
+			
+			<!-- MasterSlider Main -->
+			<div id="MS5f832e136c05b" class="master-slider ms-skin-default" >
+				 				 
+			<div  class="ms-slide" data-delay="7" data-fill-mode="fill"  >
+					<img src="https://haciendalosalmendros.com/wp-content/plugins/masterslider/public/assets/css/blank.gif" alt="" title="" data-src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_101532.jpg" />
+
+					<div  class="ms-layer  msp-cn-1-1" style=""    data-duration="862"  data-ease="easeOutQuint"                data-offset-x="0" data-offset-y="-117" data-origin="mc" data-position="normal" >
+<span style="color: #000000;"><strong>Hacienda</strong></span></div>
+
+					<div  class="ms-layer  msp-cn-1-3" style="width:48px;height:2px;"    data-duration="775" data-delay="525" data-ease="easeOutQuint"                data-offset-x="0" data-offset-y="-61" data-origin="mc" data-position="normal" >
+</div>
+
+					<div  class="ms-layer  msp-cn-1-2" style=""   data-effect="t(true,n,n,-500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="712" data-delay="975" data-ease="easeOutQuint"                data-offset-x="0" data-offset-y="7" data-origin="mc" data-position="normal" >
+Los Almendros</div>
+
+					<div  class="ms-layer  msp-cn-1-4" style=""   data-effect="t(true,n,n,500,n,n,n,n,n,n,n,n,n,n,n)" data-duration="750" data-delay="1462" data-ease="easeOutQuint"                data-offset-x="0" data-offset-y="90" data-origin="mc" data-position="normal" >
+Bienvenidos</div>
+
+
+				</div>
+			<div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
+					<img src="https://haciendalosalmendros.com/wp-content/plugins/masterslider/public/assets/css/blank.gif" alt="" title="" data-src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_111100.jpg" />
+
+					<div  class="ms-layer  msp-cn-1-5" style="width:344px;height:4px;"   data-effect="t(true,n,n,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="850"  data-ease="easeOutQuint"                data-offset-x="2" data-offset-y="-44" data-origin="mc" data-position="normal" >
+<strong><span style="color: #ffffff;">La Hacienda</span></strong></div>
+
+					<div  class="ms-layer  msp-cn-1-6" style=""    data-duration="937" data-delay="525" data-ease="easeOutQuint"                data-offset-x="33" data-offset-y="102" data-origin="ml" data-position="normal" >
+Birmania</div>
+
+					<div  class="ms-layer  msp-cn-1-7" style=""    data-duration="975" data-delay="1137" data-ease="easeOutQuint"                data-offset-x="176" data-offset-y="176" data-origin="ml" data-position="normal" >
+Úpala, Alajuela</div>
+
+
+				</div>
+			<div  class="ms-slide" data-delay="3" data-fill-mode="fill"  >
+					<img src="https://haciendalosalmendros.com/wp-content/plugins/masterslider/public/assets/css/blank.gif" alt="" title="" data-src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_101640.jpg" />
+
+					<div  class="ms-layer  msp-cn-1-8" style=""   data-effect="t(true,n,150,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="1212"  data-ease="easeOutQuint"                data-offset-x="28" data-offset-y="157" data-origin="bl" data-position="normal" >
+Los Almendros y GABIR S.A</div>
+
+					<div  class="ms-layer  msp-cn-1-9" style="width:509px;"     data-delay="937" data-ease="easeOutQuint"                data-offset-x="30" data-offset-y="88" data-origin="bl" data-position="normal" >
+Nuestro gran orgullo y familia.</div>
+
+
+				</div>
+			<div  class="ms-slide" data-delay="8" data-fill-mode="fill"  >
+					<img src="https://haciendalosalmendros.com/wp-content/plugins/masterslider/public/assets/css/blank.gif" alt="" title="banner" data-src="https://haciendalosalmendros.com/wp-content/uploads/2017/10/banner.jpg" />
+
+					<div  class="ms-layer" style="width:380px;height:30px;"   data-effect="t(true,n,n,n,n,n,n,n,n,n,n,n,n,n,n)" data-duration="562"  data-ease="linear"       data-parallax="20"         data-offset-x="421" data-offset-y="28" data-origin="ml" data-position="normal" >
+<h1><span style="color: #ffffff;"><strong>El campeón de la Hacienda. </strong></span></h1></div>
+
+
+				</div>
+
+			</div>
+			<!-- END MasterSlider Main -->
+
+			 
+		</div>
+		<!-- END MasterSlider -->
+
+		<script>
+		( window.MSReady = window.MSReady || [] ).push( function( $ ) {
+
+			"use strict";
+			var masterslider_c05b = new MasterSlider();
+
+			// slider controls
+			masterslider_c05b.control('arrows'     ,{ autohide:true, overVideo:true  });
+			masterslider_c05b.control('bullets'    ,{ autohide:false, overVideo:true, dir:'h', align:'bottom', space:8 , margin:25  });
+			// slider setup
+			masterslider_c05b.setup("MS5f832e136c05b", {
+				width           : 1140,
+				height          : 530,
+				minHeight       : 0,
+				space           : 0,
+				start           : 1,
+				grabCursor      : true,
+				swipe           : false,
+				mouse           : true,
+				keyboard        : false,
+				layout          : "fullwidth",
+				wheel           : false,
+				autoplay        : true,
+				instantStartLayers:false,
+				loop            : true,
+				shuffle         : false,
+				preload         : 0,
+				heightLimit     : true,
+				autoHeight      : false,
+				smoothHeight    : true,
+				endPause        : false,
+				overPause       : true,
+				fillMode        : "fill",
+				centerControls  : true,
+				startOnAppear   : false,
+				layersMode      : "center",
+				autofillTarget  : "",
+				hideLayers      : false,
+				fullscreenMargin: 0,
+				speed           : 20,
+				dir             : "h",
+				parallaxMode    : 'swipe',
+				view            : "fadeFlow"
+			});
+
+						MSScrollParallax.setup( masterslider_c05b, 30, 50, true );
+			$("head").append( "<link rel='stylesheet' id='ms-fonts'  href='http://fonts.googleapis.com/css?family=Open+Sans:300,700|Merriweather:regular' type='text/css' media='all' />" );
+
+			window.masterslider_instances = window.masterslider_instances || [];
+			window.masterslider_instances.push( masterslider_c05b );
+		});
+		</script>
+
+</div><div class="clear"></div><div class="clear"></div></div><div class="clear"></div></section><section id="content-section-2" ><div class="section-container container"><div class="gdlr-testimonial-item-wrapper" ><div class="gdlr-item-title-wrapper gdlr-item pos-center gdlr-nav-container "><div class="gdlr-item-title-head"><h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">Hacienda los Almendros</h3><div class="gdlr-item-title-carousel" ><i class="icon-angle-left gdlr-flex-prev"></i><i class="icon-angle-right gdlr-flex-next"></i></div><div class="clear"></div></div></div><div class="gdlr-item gdlr-testimonial-item carousel large plain-style"><div class="gdlr-ux gdlr-testimonial-ux"><div class="flexslider" data-type="carousel" data-nav-container="gdlr-testimonial-item" data-columns="1" ><ul class="slides" ><li class="testimonial-item"><div class="testimonial-content gdlr-skin-content"><p>Estamos ubicados en Birmania de Úpala, Alajuela. A tan solo 32 KM del centro de Úpala, carretera a La Cruz</p>
+</div><div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Ubicación</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Los Almendros</span></div></li><li class="testimonial-item"><div class="testimonial-content gdlr-skin-content"><p>Hacienda los almendros es una empresa que tiene como objetivo implementar la producción de bosque primario, la reforestación con la especie melina (Gmelina arbórea) y el desarrollo de la ganadería sostenible, con énfasis en la cría de las razas Guzerat lechero y pardo suizo Braunvieh, así como la F1 entre estas dos razas.</p>
+</div><div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Los Almendros</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Hacienda</span></div></li><li class="testimonial-item"><div class="testimonial-content gdlr-skin-content"><p>Nuestra visión contempla además, brindarle al ganadero de la zona la oportunidad de adquirir ganado mejorado genéticamente y adaptado a las condiciones del trópico. También contamos para la venta con caballos de las razas Paso Costarricense e Iberoamericano. </p>
+</div><div class="testimonial-info"><span class="testimonial-author gdlr-skin-link-color">Visión</span><span class="testimonial-position gdlr-skin-info"><span>, </span>Nuestra hacienda</span></div></li></ul></div></div></div></div><div class="clear"></div></div></section><section id="content-section-3" ><div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-service"  id="gdlr-parallax-wrapper-1" data-bgspeed="0.1" style="background-image: url('https://haciendalosalmendros.com/wp-content/uploads/2015/03/videorapidofinca-13.gif'); padding-top: 95px; padding-bottom: 15px; " ><div class="container"><div class="four columns" ><div class="gdlr-ux column-service-ux"><div class="gdlr-item gdlr-column-service-item gdlr-type-3"  style="margin-bottom: 65px;" ><div class="column-service-image" ><img src="https://haciendalosalmendros.com/wp-content/uploads/2015/03/vaca-09-17.png" alt="" width="131" height="131" /></div><div class="column-service-content-wrapper"><h3 class="column-service-title"></h3><div class="column-service-divider"></div><div class="column-service-content gdlr-skin-content"></div></div></div></div></div><div class="four columns" ><div class="gdlr-ux column-service-ux"><div class="gdlr-item gdlr-column-service-item gdlr-type-3"  style="margin-bottom: 65px;" ><div class="column-service-image" ><img src="https://haciendalosalmendros.com/wp-content/uploads/2015/03/vaca-09-17-3.png" alt="" width="131" height="131" /></div><div class="column-service-content-wrapper"><h3 class="column-service-title"></h3><div class="column-service-divider"></div><div class="column-service-content gdlr-skin-content"></div></div></div></div></div><div class="four columns" ><div class="gdlr-ux column-service-ux"><div class="gdlr-item gdlr-column-service-item gdlr-type-3"  style="margin-bottom: 65px;" ><div class="column-service-image" ><img src="https://haciendalosalmendros.com/wp-content/uploads/2015/03/vaca-09-17-4.png" alt="" width="131" height="131" /></div><div class="column-service-content-wrapper"><h3 class="column-service-title"></h3><div class="column-service-divider"></div><div class="column-service-content gdlr-skin-content"></div></div></div></div></div><div class="clear"></div><div class="four columns" ><div class="gdlr-ux column-service-ux"><div class="gdlr-item gdlr-column-service-item gdlr-type-3"  style="margin-bottom: 65px;" ><div class="column-service-image" ><img src="https://haciendalosalmendros.com/wp-content/uploads/2015/03/vaca-09-17-5.png" alt="" width="131" height="131" /></div><div class="column-service-content-wrapper"><h3 class="column-service-title"></h3><div class="column-service-divider"></div><div class="column-service-content gdlr-skin-content"></div></div></div></div></div><div class="four columns" ><div class="gdlr-ux column-service-ux"><div class="gdlr-item gdlr-column-service-item gdlr-type-3"  style="margin-bottom: 65px;" ><div class="column-service-image" ><img src="https://haciendalosalmendros.com/wp-content/uploads/2015/03/vaca-09-17-6.png" alt="" width="131" height="131" /></div><div class="column-service-content-wrapper"><h3 class="column-service-title"></h3><div class="column-service-divider"></div><div class="column-service-content gdlr-skin-content"></div></div></div></div></div><div class="four columns" ><div class="gdlr-ux column-service-ux"><div class="gdlr-item gdlr-column-service-item gdlr-type-3"  style="margin-bottom: 65px;" ><div class="column-service-image" ><img src="https://haciendalosalmendros.com/wp-content/uploads/2015/03/vaca-09-17-7.png" alt="" width="131" height="131" /></div><div class="column-service-content-wrapper"><h3 class="column-service-title"></h3><div class="column-service-divider"></div><div class="column-service-content gdlr-skin-content"></div></div></div></div></div><div class="clear"></div></div></div><div class="clear"></div></section><section id="content-section-4" ><div class="gdlr-color-wrapper  gdlr-show-all gdlr-skin-dark-skin" style="background-color: #1abc9c; padding-top: 80px; padding-bottom: 45px; " ><div class="container"><div class="clear"></div></div></div><div class="clear"></div></section><section id="content-section-5" ><div class="gdlr-parallax-wrapper gdlr-background-image gdlr-show-all gdlr-skin-dark-skin"  id="gdlr-parallax-wrapper-2" data-bgspeed="0.1" style="background-image: url('https://haciendalosalmendros.com/wp-content/uploads/2015/03/videorapidofinca-18.gif'); padding-top: 190px; padding-bottom: 120px; " ><div class="container"><div class="four columns" ><div class="gdlr-skill-item-wrapper gdlr-skin-content gdlr-item" ><div class="gdlr-skill-item-title">Guzerat</div><div class="gdlr-skill-item-dot" >•</div><div class="gdlr-skill-item-caption">Lechero</div></div></div><div class="four columns" ><div class="gdlr-skill-item-wrapper gdlr-skin-content gdlr-item" ><div class="gdlr-skill-item-title">Braunvieh</div><div class="gdlr-skill-item-dot" >•</div><div class="gdlr-skill-item-caption">Pardo Suizo</div></div></div><div class="four columns" ><div class="gdlr-skill-item-wrapper gdlr-skin-content gdlr-item" ><div class="gdlr-skill-item-title">Caballo</div><div class="gdlr-skill-item-dot" >•</div><div class="gdlr-skill-item-caption">Paso Costarricense e Iberoamericano</div></div></div><div class="clear"></div></div></div><div class="clear"></div></section><section id="content-section-6" ><div class="gdlr-color-wrapper  gdlr-show-all no-skin" style="background-color: #ffffff; padding-top: 70px; " ><div class="container"><div class="six columns" ><div class="gdlr-item gdlr-content-item" >
+     <style>
+	#weblizar_4570  .wrgf-header-label {
+		color:#FFFFFF !important;
+	}
+	
+	#weblizar_4570 .wrgf-footer-label{
+		color:#000000 !important;
+		font-size:16px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		text-align:center;
+		font-weight:normal;
+	}
+
+    #weblizar_4570 .b-link-stroke .b-top-line{
+        background: rgba(10, 194, 210, 0.5);
+    }
+    #weblizar_4570 .b-link-stroke .b-bottom-line{
+        background: rgba(10, 194, 210, 0.5);
+    }
+
+    #weblizar_4570 .b-wrapper{
+        font-family:Arial; // real name pass here
+    }
+	
+	#weblizar_4570 .wrgf-header-label{
+        font-family:Arial !important; // real name pass here
+    }
+	#weblizar_4570 .wrgf-footer-label{
+        font-family:Arial !important; // real name pass here
+    }
+	
+	@media (min-width: 992px){
+		.col-md-6 {
+			width: 49.97% !important;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+		.col-md-4 {
+			width: 33.30% !important;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+		.col-md-3 {
+			width: 24.90% !important;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+	}
+	
+	
+			@media (max-width: 992px) {
+			#weblizar_4570 .wrgf-header-label
+			{
+				display:none;
+			}
+		}
+		@media (min-width: 993px) {
+			#weblizar_4570 .wrgf-footer-label
+			{
+				display:none;
+			}
+		}
+		#weblizar_4570 a{
+		border-bottom: none;
+		overflow: hidden;
+		float: left;
+		margin-right: 0px;
+		padding-left: 0px;
+	}
+	
+	    </style>
+
+        <div  class="gal-container">
+            <!--get the post id-->
+        		
+				<!-- gallery title -->
+        <div style="font-weight: bolder; padding-bottom:10px; border-bottom:2px solid #cccccc; margin-bottom:20px; font-size:24px; ">
+			Galería		</div>
+				
+        <div class="gallery1" id="weblizar_4570">
+                        <div class="col-md-4 col-sm-6 wl-gallery">
+                    <div class="b-link-stroke b-animate-go">
+					
+													<a alt="" class="swipebox"  href="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170917_054317.jpg">
+								<img src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170917_054317-400x400.jpg" class="gall-img-responsive" alt="20170917_054317">
+								<div class="b-wrapper">
+																													<h2 class="b-from-left b-animate b-delay03 wrgf-header-label"> </h2>
+																											</div>
+							</a>
+							                    </div>
+											<h4 class="wrgf-footer-label"></h4>
+					                </div>
+                                <div class="col-md-4 col-sm-6 wl-gallery">
+                    <div class="b-link-stroke b-animate-go">
+					
+													<a alt="" class="swipebox"  href="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170917_1107040.jpg">
+								<img src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170917_1107040-400x400.jpg" class="gall-img-responsive" alt="20170917_110704(0)">
+								<div class="b-wrapper">
+																													<h2 class="b-from-left b-animate b-delay03 wrgf-header-label"> </h2>
+																											</div>
+							</a>
+							                    </div>
+											<h4 class="wrgf-footer-label"></h4>
+					                </div>
+                                <div class="col-md-4 col-sm-6 wl-gallery">
+                    <div class="b-link-stroke b-animate-go">
+					
+													<a alt="" class="swipebox"  href="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170917_070642.jpg">
+								<img src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170917_070642-400x400.jpg" class="gall-img-responsive" alt="20170917_070642">
+								<div class="b-wrapper">
+																													<h2 class="b-from-left b-animate b-delay03 wrgf-header-label"> </h2>
+																											</div>
+							</a>
+							                    </div>
+											<h4 class="wrgf-footer-label"></h4>
+					                </div>
+                                <div class="col-md-4 col-sm-6 wl-gallery">
+                    <div class="b-link-stroke b-animate-go">
+					
+													<a alt="" class="swipebox"  href="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_093246.jpg">
+								<img src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_093246-400x400.jpg" class="gall-img-responsive" alt="20170916_093246">
+								<div class="b-wrapper">
+																													<h2 class="b-from-left b-animate b-delay03 wrgf-header-label"> </h2>
+																											</div>
+							</a>
+							                    </div>
+											<h4 class="wrgf-footer-label"></h4>
+					                </div>
+                                <div class="col-md-4 col-sm-6 wl-gallery">
+                    <div class="b-link-stroke b-animate-go">
+					
+													<a alt="" class="swipebox"  href="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_111343.jpg">
+								<img src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_111343-400x400.jpg" class="gall-img-responsive" alt="20170916_111343">
+								<div class="b-wrapper">
+																													<h2 class="b-from-left b-animate b-delay03 wrgf-header-label"> </h2>
+																											</div>
+							</a>
+							                    </div>
+											<h4 class="wrgf-footer-label"></h4>
+					                </div>
+                                <div class="col-md-4 col-sm-6 wl-gallery">
+                    <div class="b-link-stroke b-animate-go">
+					
+													<a alt="" class="swipebox"  href="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_104424.jpg">
+								<img src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_104424-400x400.jpg" class="gall-img-responsive" alt="20170916_104424">
+								<div class="b-wrapper">
+																													<h2 class="b-from-left b-animate b-delay03 wrgf-header-label"> </h2>
+																											</div>
+							</a>
+							                    </div>
+											<h4 class="wrgf-footer-label"></h4>
+					                </div>
+                                <div class="col-md-4 col-sm-6 wl-gallery">
+                    <div class="b-link-stroke b-animate-go">
+					
+													<a alt="" class="swipebox"  href="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_100222.jpg">
+								<img src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_100222-400x400.jpg" class="gall-img-responsive" alt="20170916_100222">
+								<div class="b-wrapper">
+																													<h2 class="b-from-left b-animate b-delay03 wrgf-header-label"> </h2>
+																											</div>
+							</a>
+							                    </div>
+											<h4 class="wrgf-footer-label"></h4>
+					                </div>
+                                <div class="col-md-4 col-sm-6 wl-gallery">
+                    <div class="b-link-stroke b-animate-go">
+					
+													<a alt="" class="swipebox"  href="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_100312.jpg">
+								<img src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_100312-400x400.jpg" class="gall-img-responsive" alt="20170916_100312">
+								<div class="b-wrapper">
+																													<h2 class="b-from-left b-animate b-delay03 wrgf-header-label"> </h2>
+																											</div>
+							</a>
+							                    </div>
+											<h4 class="wrgf-footer-label"></h4>
+					                </div>
+                                <div class="col-md-4 col-sm-6 wl-gallery">
+                    <div class="b-link-stroke b-animate-go">
+					
+													<a alt="" class="swipebox"  href="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_095021.jpg">
+								<img src="https://haciendalosalmendros.com/wp-content/uploads/2017/09/20170916_095021-400x400.jpg" class="gall-img-responsive" alt="20170916_095021">
+								<div class="b-wrapper">
+																													<h2 class="b-from-left b-animate b-delay03 wrgf-header-label"> </h2>
+																											</div>
+							</a>
+							                    </div>
+											<h4 class="wrgf-footer-label"></h4>
+					                </div>
+                        </div>
+        </div>
+
+	<!-- swipe box-->
+	<script type="text/javascript">
+	;( function( jQuery ) {
+		jQuery( '.swipebox' ).swipebox({
+							hideBarsDelay:0,
+							hideCloseButtonOnMobile : false,
+						});
+	} )( jQuery );
+	
+	jQuery('.gallery1').imagesLoaded( function(){
+	  jQuery('.gallery1').masonry({
+	   itemSelector: '.wl-gallery',
+	   isAnimated: true,
+	   isFitWidth: true
+	  });
+	});
+	</script>
+
+    
+</div></div><div class="six columns" ><div class="gdlr-item-title-wrapper gdlr-item pos-center "><div class="gdlr-item-title-head"><h3 class="gdlr-item-title gdlr-skin-title gdlr-skin-border">Ganado - Hacienda Los Almendros</h3><div class="clear"></div></div></div><div class="gdlr-video-item gdlr-item"  ><iframe src="http://www.youtube.com/embed/-51Ki4nySjA?wmode=transparent&amp;feature=youtu.be" width="620" height="348" ></iframe></div></div><div class="clear"></div></div></div><div class="clear"></div></section></div>
+		
+		<!-- Below Sidebar Section-->
+		
+		
+	</div><!-- gdlr-content -->
+		<div class="clear" ></div>
+	</div><!-- content wrapper -->
+
+		
+	<footer class="footer-wrapper" >
+				<div class="footer-container container">
+										<div class="footer-column three columns" id="footer-widget-1" >
+					<div id="text-5" class="widget widget_text gdlr-item gdlr-widget"><h3 class="gdlr-widget-title">Datos de Contacto</h3><div class="clear"></div>			<div class="textwidget"><p><i class="gdlr-icon fa fa-phone" style="color: #333; font-size: 16px; " ></i>(506)-8392–6733</p>
+<div class="clear"></div>
+<div class="gdlr-space" style="margin-top: -15px;"></div>
+<p><i class="gdlr-icon fa fa-phone" style="color: #333; font-size: 16px; " ></i>(506)-8974–7688</p>
+<div class="clear"></div>
+<div class="gdlr-space" style="margin-top: -15px;"></div>
+<p><i class="gdlr-icon fa fa-envelope-o" style="color: #333; font-size: 16px; " ></i> info@haciendalosalmendros.com</p>
+<div class="clear"></div>
+<div class="gdlr-space" style="margin-top: 25px;"></div>
+<p><a href="http://themeforest.net/user/goodlayers/" target="_blank" rel="noopener noreferrer"><i class="gdlr-icon fa fa-facebook-square" style="color: #333333; font-size: 24px; " ></i></a> <a href="http://themeforest.net/user/goodlayers/" target="_blank" rel="noopener noreferrer"><i class="gdlr-icon fa fa-twitter-square" style="color: #333333; font-size: 24px; " ></i></a> <a href="http://themeforest.net/user/goodlayers/" target="_blank" rel="noopener noreferrer"><i class="gdlr-icon fa fa-linkedin-square" style="color: #333333; font-size: 24px; " ></i></a> <a href="http://themeforest.net/user/goodlayers/" target="_blank" rel="noopener noreferrer"><i class="gdlr-icon fa fa-google-plus-square" style="color: #333333; font-size: 24px; " ></i></a> <a href="http://themeforest.net/user/goodlayers/" target="_blank" rel="noopener noreferrer"><i class="gdlr-icon fa fa-pinterest-square" style="color: #333333; font-size: 24px; " ></i></a> <a href="http://themeforest.net/user/goodlayers/" target="_blank" rel="noopener noreferrer"><i class="gdlr-icon fa fa-flickr" style="color: #333333; font-size: 24px; " ></i></a></p>
+</div>
+		</div>				</div>
+										<div class="footer-column three columns" id="footer-widget-2" >
+							<div id="recent-posts-5" class="widget widget_recent_entries gdlr-item gdlr-widget">		<h3 class="gdlr-widget-title">Artículos reciente</h3><div class="clear"></div>		<ul>
+											<li>
+					<a href="https://haciendalosalmendros.com/hello-world/">Hello world!</a>
+									</li>
+											<li>
+					<a href="https://haciendalosalmendros.com/sem-porta-mollis-parturient/">Sem Porta Mollis Parturient</a>
+									</li>
+											<li>
+					<a href="https://haciendalosalmendros.com/nullam-lorem-mattis-purus/">Nullam Lorem Mattis Purus</a>
+									</li>
+					</ul>
+		</div>				</div>
+										<div class="footer-column six columns" id="footer-widget-3" >
+					<div id="text-10" class="widget widget_text gdlr-item gdlr-widget"><h3 class="gdlr-widget-title">Los Almendros</h3><div class="clear"></div>			<div class="textwidget"><div class="clear"></div><div class="gdlr-space" style="margin-top: 20px;"></div>
+Hacienda los almendros es una empresa que tiene como objetivo implementar la producción de bosque primario, la reforestación con la especie melina (Gmelina arbórea) y el desarrollo de la ganadería sostenible, con énfasis en la cría de las razas Guzerat lechero y pardo suizo Braunvieh, así como la F1 entre estas dos razas.
+<div class="clear"></div><div class="gdlr-space" style="margin-top: 20px;"></div></div>
+		</div>				</div>
+									<div class="clear"></div>
+		</div>
+				
+				<div class="copyright-wrapper">
+			<div class="copyright-container container">
+				<div class="copyright-left">
+					<a href="https://haciendalosalmendros.com/" style="margin-right: 10px;">Los almendros</a>|<a href="http://gabirsa.com/" style="margin-right: 10px; margin-left: 10px;">GABIR S.A</a> | <a href="../../../../../index.html" style="margin-right: 10px; margin-left: 10px;">Ganadería Birmania</a> | <a href="https://haciendalosalmendros.com/?page_id=1629" style="margin-right: 10px; margin-left: 10px;">Contáctenos</a>				</div>
+				<div class="copyright-right">
+					Copyright 2017 All Right Reserved				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+			</footer>
+	</div> <!-- body-wrapper -->
+<!-- ngg_resource_manager_marker --><script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/haciendalosalmendros.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Por favor, prueba que no eres un robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.11.4'></script>
+<script type='text/javascript'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Cerrar","currentText":"Hoy","monthNames":["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"monthNamesShort":["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],"nextText":"Siguiente","prevText":"Anterior","dayNames":["domingo","lunes","martes","mi\u00e9rcoles","jueves","viernes","s\u00e1bado"],"dayNamesShort":["Dom","Lun","Mar","Mi\u00e9","Jue","Vie","S\u00e1b"],"dayNamesMin":["D","L","M","X","J","V","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var objectL10n = {"closeText":"Done","currentText":"Today","monthNames":["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"monthNamesShort":["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],"monthStatus":"Show a different month","dayNames":["domingo","lunes","martes","mi\u00e9rcoles","jueves","viernes","s\u00e1bado"],"dayNamesShort":["Dom","Lun","Mar","Mi\u00e9","Jue","Vie","S\u00e1b"],"dayNamesMin":["D","L","M","X","J","V","S"],"firstDay":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/plugins/gdlr-hostel/gdlr-hotel.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/superfish/js/superfish.js?ver=1.0'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-includes/js/hoverIntent.min.js?ver=1.8.1'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/dl-menu/modernizr.custom.js?ver=1.0'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/dl-menu/jquery.dlmenu.js?ver=1.0'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/jquery.easing.js?ver=1.0'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/jquery.transit.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/fancybox/jquery.fancybox.pack.js?ver=1.0'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/fancybox/helpers/jquery.fancybox-media.js?ver=1.0'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/fancybox/helpers/jquery.fancybox-thumbs.js?ver=1.0'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/plugins/flexslider/jquery.flexslider.js?ver=1.0'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/themes/hotelmaster/javascript/gdlr-script.js?ver=1.0'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-includes/js/wp-embed.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://haciendalosalmendros.com/wp-content/plugins/masterslider/public/assets/js/masterslider.min.js?ver=2.29.0'></script>
+<script type="text/javascript"></script></body>
+</html>

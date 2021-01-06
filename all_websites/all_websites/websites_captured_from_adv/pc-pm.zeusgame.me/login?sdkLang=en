@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="https://mobilesource.zeusgame.me/css/index.css" />
+    <link type="text/css" rel="stylesheet" href="https://sitesource.zeusgame.me/style/official/select_server/css/index.css?20200521" />
+</head>
+
+<body>
+    <div class="openSdkWrap">
+        <div class="gameLogo_m"></div>
+        <div class="gameLogo_p"></div>
+        <a class="startBtn"></a>
+        <div class="selectTip">
+            <div class="TipLeft"></div>
+            <div class="TipChange"></div>
+            <div class="TipChoose">
+                <span>Tap to </span>
+                <a>choose server</a>
+            </div>
+        </div>
+    </div>
+    <div class="Gmask" style="visibility:initial;"></div>
+    <script type="text/javascript" src="https://sitesource.zeusgame.me/js/official/jquery/jquery-3.2.1.min.js?20200521"></script>
+    <script type="text/javascript" src="https://sitesource.zeusgame.me/js/official/swiper/swiper-4.5.0.min.js?20200521"></script>
+    <script type="text/javascript" src="https://mobilesource.zeusgame.me/js/jfsdk.min.js"></script>
+    <script>
+        window.onresize = function () {
+            if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                getRem(750, 100)
+            } else {
+                winchange()
+            }
+        };
+        function winchange() {
+            var a = $(window).width()
+            if (a <= 750) {
+                getRem(1254, 100)
+            } else {
+                getRem(882, 100)
+            }
+        }
+        function getRem(pwidth, prem) {
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth / pwidth * prem + "px";
+        }
+        if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            getRem(750, 100)
+        } else {
+            winchange();
+        }
+    </script>
+    <script>
+        var jfconf = {
+            appId: "120000001",
+            baseUrl: "//pc-pm.zeusgame.me",
+        };
+    </script>
+<script type="text/javascript" src="https://sitesource.zeusgame.me/style/official/select_server/js/index.js?20200521"></script></body>
+
+</html>

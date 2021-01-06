@@ -1,0 +1,892 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>
+Photography by Allen - </title>
+
+
+<!-- hit counter -->
+<script type="text/javascript" src="http://proofcast.com/addToHitCounter.php?psid=OA==&page=&date=20210103232848"></script>
+
+<!-- Style sheets -->
+
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen" />
+<style type="text/css">
+	.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 6px; -webkit-border-top-left-radius: 6px; -khtml-border-top-left-radius: 6px; border-top-left-radius: 6px; }
+	.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 6px; -webkit-border-top-right-radius: 6px; -khtml-border-top-right-radius: 6px; border-top-right-radius: 6px; }
+	.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { -moz-border-radius-bottomleft: 6px; -webkit-border-bottom-left-radius: 6px; -khtml-border-bottom-left-radius: 6px; border-bottom-left-radius: 6px; }
+	.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 6px; -webkit-border-bottom-right-radius: 6px; -khtml-border-bottom-right-radius: 6px; border-bottom-right-radius: 6px; }
+
+</style>
+<!--  /index.php  -->
+<!--  /index.php  -->
+<!--  /home2/hinnant/public_html/index.php  -->
+<!--  /home2/hinnant/public_html  -->
+<!--  /  -->
+<!--    -->
+<!--  0  -->
+<!--    -->
+<style>
+	body{
+	background: transparent url('../../../../gallery/global_background/grunge_overlay_small.jpg');
+	background-position: top center;
+	background-color:#000000;
+	background-repeat: repeat;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	}
+
+.stage {
+    padding-top: 8px;
+}	
+	.content-pad{
+	background: transparent url('../../../../gallery/global_stage_background/black-030.png');
+	background-repeat: repeat;
+	border: #3b3b3b 3px solid; 
+
+-moz-box-shadow:  0px 0px 10px #000000;  -webkit-box-shadow:  0px 0px 10px #000000;  box-shadow:  0px 0px 10px #000000;	}
+	
+	
+	#main{line-height:200%;}
+	#image_gallery{ margin:0px 0px 0px 0px; padding:0px; }
+	.image_container{padding:0px 0px 0px 0px; }
+	.image_sq_container{ cursor:pointer; float:left; margin-left:10px; margin-right: 2px;}
+	.gallery_thumbnails{ }
+	#studio_contact, #studio_affiliates{text-align:center; }
+	#studio_contact a {text-align:center;color:#ffffff; text-decoration:none;}
+	.error_msg{ background-color:#FFCCFF; border:1px #FF0000 solid; padding:10px; color:#000000; font-weight:bold}
+	.sub_button{background-color:#DDDDDD; border:1px #FFFFFF solid; padding:2px}
+	.sub_button:hover{background-color:#CCCCCC; border:1px #FFFFFF solid;}
+	.left_post_width{min-width:200px;}
+	.right_post_width{min-width:200px;}
+	.top_post{padding:0px 50px 0px 50px;}
+	.bottom_post{padding:0px 50px 0px 50px;}
+	#overlay_loading { position: absolute; left: 50%; top: 50%; margin-left:-20px; margin-top:-20px ;z-index:10002; }
+	.narrowcolumn{min-height:400px;}
+	.vcr_control{cursor:pointer;}
+	.gallery_playbuttons{text-align:center;}
+	.video_table a { text-decoration:none;}
+	
+
+
+
+
+	.top_post{display:none;}
+	.bottom_post{display:block;}
+	.left_post{display:none;}
+	.right_post{display:none;}
+
+
+
+	#logo{text-align:left}
+
+	.menu-item a{background-color:transparent}
+	.menu-item a{padding:5px 0}
+	#left_menu {padding:20px 0px 0px 20px; }
+	#left_social {padding:10px 0px 0px 20px; }
+
+#above_image_menu             { padding-left:0px;}
+#above_image_menu .topnav li  { float:left; margin-right:0px;}
+#above_image_menu .topnav a   { display:block;}
+
+#top_of_site_menu             { padding-left:0px;}
+#top_of_site_menu .topnav li  { float:left; margin-right:0px;}
+#top_of_site_menu .topnav a   { display:block;}
+
+#left_menu .topnav li  {clear:both;float:left; }
+#left_menu .topnav li {padding:0;}
+#left_menu .topnav a{display:block}
+#left_menu .submenu{margin-top:-28px}
+
+.secondary_menu {
+	text-align:center;
+	margin-bottom:5px;
+}
+.secondary_menu .topnav li{
+	float:none;
+	display:inline-block;
+	margin-right:0px;
+}
+
+
+
+	body, .post,  .post table, .video_table {
+		font-size: 14px;
+	}
+	body, .video_table {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+	.post, .post h2, .post table, #loading_gallery, #debug_div, #overlay_loading, .video_table {
+		color: #ffffff;
+	}
+	.post a, .post h2 a , #sidebar H2,#sidebar .widget a, #sidebar ul ul, .video_table a  {
+		color: #ededed;
+	}
+	.post a:hover, .post h2:hover, #sidebar H2, #sidebar .widget a:hover, #sidebar ul ul  {
+		color: #ededed;
+	}
+	.post small {
+		color: #ededed;
+	}
+	.slide_images, .entry img  {
+		border: solid 1px;
+	}
+	.slide_images,.entry img  {
+		border-color: #000000;
+	}
+	.slide_images, .entry img  {
+		-moz-box-shadow:  3px 3px  5px #000000;  -webkit-box-shadow:  3px 3px  5px #000000;  box-shadow:  2px 3px  5px #000000;	}
+		.slide_images_sq {
+		border: solid 1px;
+	}
+	.slide_images_sq {
+		border-color: #000000;
+	}
+	.topnav a, .topnav li ul li a   {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+	.topnav a {
+		font-size: 14px;
+	}
+	.topnav li ul li a   {
+		font-size: 14px;
+	}
+.topnav li ul{width: 70px}.topnav li ul li a{width: 50px}	.topnav li {
+		text-align: left;
+	}
+	.topnav li ul li {
+		text-align: left;
+	}
+	.topnav a, .topnav li.current_page_item ul li a span, .topnav li.current-cat ul li a span  {
+		color: #FFFFFF;
+	}
+	.topnav li.current_page_item a span, .topnav li.current-cat a span, .topnav li.current-cat-parent a, .topnav li.current_page_parent a  {
+		color: #FFFFFF;
+	}
+	.topnav a:hover {
+		color: #FFFFFF;
+	}
+	.sub-menu a {
+		color: #FFFFFF !important;
+	}
+	.sub-menu a:hover {
+		color: #FFFFFF;
+	}
+	.topnav li ul, .topnav li ul li {
+		background: transparent url('stage/black-010.png');
+	}
+	.topnav li ul li a:hover   {
+		background: transparent url('stage/black-010.png');
+	}
+	#footer {
+		color: #ededed;
+	}
+	#footer a {
+		color: #ededed;
+	}
+	#footer a:hover {
+		color: #ededed;
+	}
+	.mobile_logo, .logo_image {
+		height: px;
+	}
+
+
+
+
+
+.blogentry img{width:100% !important;}
+
+</style>
+<!--[if lt IE 9]>
+<style>
+.slide_images{  box-shadow: 0px 0px 0px #555555;}
+</style>
+<![endif]-->
+
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Photography by Allen &raquo; Feed" href="http://photographybyallen.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Photography by Allen &raquo; Comments Feed" href="http://photographybyallen.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Photography by Allen &raquo; home Comments Feed" href="http://photographybyallen.com/home/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/photographybyallen.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../../../wp-includes/css/dist/block-library/style.min.css?ver=5.3.6' type='text/css' media='all' />
+<script type='text/javascript' src='../../../../wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='../../../../wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='../js/superfish.js?ver=2.9.2'></script>
+<script type='text/javascript' src='../js/jquery.cycle.all.min.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../js/jquery.easing.1.3.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../photoswipe/lib/klass.min.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../photoswipe/code.photoswipe.jquery-3.0.5.min.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../js/cufon.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../js/font.js?ver=5.3.6'></script>
+<link rel='https://api.w.org/' href='http://photographybyallen.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://photographybyallen.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://photographybyallen.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.6" />
+<link rel="canonical" href="arrow-right.jpg" />
+<link rel='shortlink' href='arrow-right.jpg' />
+<link rel="alternate" type="application/json+oembed" href="http://photographybyallen.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fphotographybyallen.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://photographybyallen.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fphotographybyallen.com%2F&#038;format=xml" />
+<meta name="template" content="Salerno 3.1.0" />
+<meta name="generator" content="NattyWP Framework Version 2.1.5" />
+<meta name="description" content=" " />
+<link href="icons/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="../functions/css/shortcodes.css" media="screen" /><script type="text/javascript" src="../functions/js/shortcode.js"></script><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<!-- Feed link -->
+<link rel="alternate" type="application/rss+xml" title="Photography by Allen RSS Feed" href="http://photographybyallen.com/feed/" />
+<link rel="pingback" href="http://photographybyallen.com/xmlrpc.php" />
+
+
+<!-- jQuery utilities -->
+<!--[if gte IE 9]>
+	<script type="text/javascript">
+      /*<![CDATA[*/
+	     Cufon.set('engine', 'canvas');
+	    /*]]>*/
+	</script>
+<![endif]-->
+<script type="text/javascript">/*<![CDATA[*/Cufon.replace('.post .title h2 a', {hover:true});/*]]>*/</script>
+
+<!--[if IE 6]>
+      <script type='text/javascript' src='http://photographybyallen.com/wp-content/themes/salerno/js/menu.js'></script>
+    	<link rel="stylesheet" type="text/css" href="http://photographybyallen.com/wp-content/themes/salerno/ie6.css" />
+        <style type="text/css">
+            img.png {
+            filter: expression(
+            (runtimeStyle.filter == '') ? runtimeStyle.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='+src+', sizingMethod=scale)' : '',
+            width = width,
+            src = 'http://photographybyallen.com/wp-content/themes/salerno/images/px.gif');
+    }
+        </style>
+	<![endif]-->
+    
+  <!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" media="all" href="http://photographybyallen.com/wp-content/themes/salerno/ie7.css" />
+	<![endif]-->
+
+<script type="text/javascript">
+var browser_right_scrollbar = 32;
+var templatepath = 'http://photographybyallen.com/wp-content/themes/salerno';
+var loadprogress = '';
+var winW = 630;
+var winH = 460;
+var slide_top = 0;
+var slide_left = 0;
+var gallery_html = '';
+var play_status='playing';
+var currentSlide = 0;
+var iphoneScreenExtra=0;
+
+var amount_to_reveal_thumbnails = 73;
+var imagetimer = '';
+var windowHeightAdjustByBowser=0;
+
+function debug(msg){
+	$('#debug_div').html(msg+'<br>'+$('#debug_div').html());
+}
+jQuery(document).ready(function() {
+	var isiPad = navigator.userAgent.match(/iPad/i) != null;
+	var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
+	var isiPod = navigator.userAgent.match(/iPod/i) != null;
+	var isIE = navigator.userAgent.match(/MSIE/i) != null;
+	$ = jQuery;
+
+	if(isIE){
+		windowHeightAdjustByBowser=0
+	}
+
+	$(document).bind("contextmenu",function(e){
+        e.preventDefault();
+    });
+
+	
+		$('#left_menu .topnav li ul li').each(function(){
+		topmargin = (-1 * $(this).parent().position().top)-2; 
+		leftmenu  = $(this).parent().width()+20 ; 
+		$(this).parent().css({'margin-top':topmargin,'left':leftmenu});
+	});
+	$('#left_menu .sub-menu').css('margin-top','-28px');
+	
+	checkImageLoad();
+	if((isiPhone)||(isiPod)){
+		iphoneScreenExtra=120;
+	}
+	if((!isiPad)&&(!isiPhone)&&(!isiPod)){
+		$(window).resize(function(){
+			if(Math.abs($(window).width()-winW)>50){
+				window.location.href=window.location.href;
+			}
+		});
+	}
+	$(window).bind("orientationchange", function (event) {
+        window.location.href=window.location.href;
+    });
+
+	$('.image_sq_container').css('opacity',.5);
+	$('.image_sq_container_first').css('opacity',1);
+	$('.image_sq_container').click(function(){
+		$('#image_gallery').cycle('stop');
+		masterSlide = $(this).attr('master');
+		currentSlide = masterSlide;
+		$('#image_gallery').cycle({startingSlide: masterSlide}); 
+		$('#image_gallery').cycle('stop');
+		$('.image_sq_container').css('opacity',.5);
+		$(this).css('opacity',1);
+		$('.vcr_pause').attr('src','/gallery/global_vcr/None/play.png');
+		play_status='stopped';
+
+	});
+	table_width = $('#content_table').width();
+	side_width = (table_width*.9)/2;
+
+	$('.bottom_post').show();
+	thumbtimer=setTimeout("centerThumbs()",1000);
+
+	
+});
+function centerThumbs(){
+	avail_thumb_width = $('#image_gallery_thumb').width();
+	thumb_width = $('#thumb_div_containter').width();
+	thumb_padding = ((avail_thumb_width-thumb_width)/2)-12;
+	$('#thumb_div_containter').css('padding-left',thumb_padding);
+}
+function setCookie(c_name,value,exdays){
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate() + exdays);
+	var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+	document.cookie=c_name + "=" + c_value;
+}
+function checkImageLoad(){
+	currentWidth=0;
+	foundzero=false;
+	$('.slide_images').each(function(){
+		currentWidth = $(this).width();
+		currentSrc   = $(this).attr('src');
+		if(currentWidth<100){
+			imagetimer=setTimeout("checkImageLoad()",1000);
+			return false;
+		}
+	});
+	if(currentWidth==0){
+		return;
+	}
+	clearTimeout(imagetimer);
+	imagetimer=setTimeout("setSlidePositions()",1000);
+}
+function setSlidePositions(){
+	getGallerySizePosition();
+	setGalleryContainerSize();
+}
+function getGallerySizePosition(){
+//$('#image_gallery').css('background-color','#FFFFAA');
+	slide_top  = $('#image_gallery').position().top+1;
+	slide_left = $('#image_gallery').offset().left;
+	winH = $(window).height()
+	winW = $(window).width()
+}
+function setGalleryContainerSize(){
+	top_post_height = $('.top_post').height();
+	image_gallery_padding_left=$('.image_container').css('padding-left').replace('px','');
+	image_gallery_padding_right=$('.image_container').css('padding-right').replace('px','');
+	image_gallery_padding_top=$('.image_container').css('padding-top').replace('px','');
+	image_gallery_padding_bottom=$('.image_container').css('padding-bottom').replace('px','');
+	stage_top_padding = $('.stage').css('padding-top').replace('px','');
+	image_control_height=0;
+	logo_or_top_menu_height=0;
+	menu_height=0;
+	logo_or_top_menu_height=$('#logo').height();
+
+	additional_image_top_margin=0;
+	stage_border=3;
+	stage_top_margin=10;
+	image_border=1; 
+	availHeight = iphoneScreenExtra + winH - amount_to_reveal_thumbnails - image_gallery_padding_top - image_gallery_padding_bottom - image_control_height - windowHeightAdjustByBowser - stage_border - stage_top_margin -stage_top_padding - image_border - image_border - logo_or_top_menu_height - menu_height - additional_image_top_margin - top_post_height;
+	if('yes'==''){
+		debug('availHeight:'+ availHeight); 
+		debug('iphoneScreenExtra:+' + iphoneScreenExtra);
+		debug('windowHeightAdjustByBowser:-'+ windowHeightAdjustByBowser);
+		debug('menu_height:-'+ menu_height);
+		debug('amount_to_reveal_thumbnails:-'+ amount_to_reveal_thumbnails);
+		debug('image_control_height:-'+ image_control_height);
+		debug('image_border:-'+ image_border);
+		debug('image_gallery_padding_top:-'+ image_gallery_padding_top);
+		debug('image_gallery_padding_bottom:-'+ image_gallery_padding_bottom);
+		debug('image_border:-'+ image_border);
+		debug('logo_or_top_menu_height:-'+ logo_or_top_menu_height);
+		debug('stage_top_padding:-'+ stage_top_padding);
+		debug('stage_border:-'+ stage_border);
+		debug('stage_top_margin:-'+ stage_top_margin);
+		debug('winH:+'+ winH);
+		debug('additional_image_top_margin:+'+ additional_image_top_margin);
+		debug('top_post_height:+'+ top_post_height);
+		debug('<br>');
+	}
+
+	image_gallery_width = $('#image_gallery').width();
+	availWidth = image_gallery_width - image_gallery_padding_right - image_gallery_padding_left  - browser_right_scrollbar - image_border - image_border  - stage_border - stage_border;
+	if('yes'==''){
+		debug('image_gallery_width:+' + image_gallery_width);
+		debug('image_gallery_padding_right:+' + image_gallery_padding_right);
+		debug('image_gallery_padding_left:+'+ image_gallery_padding_left);
+		debug('browser_right_scrollbar:+'+ browser_right_scrollbar);
+		debug('image_border:-'+ image_border);
+	}
+
+	availRatio = availWidth/availHeight;
+	maxWidth = 0;
+	maxHeight = 0;
+	$('.slide_images').each(function(){
+		origSrc  = $(this).attr('src');
+		origWidth  = $(this).attr('orig_w');
+		origHeight = $(this).attr('orig_h');
+		origRatio = origWidth/origHeight;
+		if(origRatio>availRatio){
+			$(this).css('width',availWidth);
+			$(this).css('height',availWidth/origRatio);
+		}else{
+			$(this).css('width',availHeight*origRatio);
+			$(this).css('height',availHeight);
+		}
+		currentWidth  = $(this).width();
+		currentHeight = $(this).height();
+
+		if(maxWidth<currentWidth){
+			maxWidth=currentWidth;
+		}
+		if(maxHeight<currentHeight){
+			maxHeight=currentHeight;
+		}
+	});
+	max_image_width = $('#image_cell').attr('max_image_width');
+	max_image_height = $('#image_cell').attr('max_image_height');
+	if(max_image_width<maxWidth){
+		maxWidth=max_image_width;
+	}
+	if(max_image_height<maxHeight){
+		maxHeight=max_image_height;
+	}
+	/// fix center width
+	$left_post_display  = $('.left_post').css('display');
+	$right_post_display = $('.right_post').css('display');
+
+// above_gallery   
+// below_gallery 1  
+// left_of_gallery   
+// right_of_gallery  
+
+	/////////////
+	availRatio = availWidth/availHeight;
+	$('.slide_images').each(function(){
+		origWidth  = $(this).attr('orig_w');
+		origHeight = $(this).attr('orig_h');
+		origRatio = origWidth/origHeight;
+		if(origRatio>availRatio){
+			$(this).css('width',availWidth-10);
+		}else{
+			$(this).css('height',availHeight);
+		}
+		currentWidth  = $(this).width();
+		currentHeight = $(this).height();
+		if(maxWidth<currentWidth){
+			maxWidth=currentWidth;
+		}
+		if(maxHeight<currentHeight){
+			maxHeight=currentHeight;
+		}
+	});
+
+	if(maxHeight<availHeight){
+		maxHeight=availHeight;
+	}
+
+	setImageMargins();
+}
+function setImageMargins(){
+	maxNewTop=0;
+	newtop=0;
+	newleft=0;
+	$('#image_gallery').css('height',availHeight+(image_border*2)+10);
+	$('.slide_images').each(function(){
+		currentWidth  = $(this).width()-(image_border*2);
+		currentHeight = $(this).height()+(image_border*2);
+		newtop  = (availHeight-currentHeight)/2;
+		newleft = (availWidth-currentWidth)/2;
+		if(newtop<0){
+			newtop=0;
+		}
+		if(newleft<0){
+			newleft=0;
+		}
+		if(maxNewTop<newtop){
+			maxNewTop=newtop;
+		}
+		$(this).css({'margin-top':newtop,'margin-bottom':newtop,'margin-left':newleft,'color':newtop});
+	});
+	//$('#image_gallery').css('margin-bottom',maxNewTop);
+
+	$('#image_src_0').attr("src","gallery/10/allison_0728fc2htx2.jpg");
+	$('#image_src_1').attr("src","gallery/10/caroline_0373ar1.jpg");
+	$('#image_src_2').attr("src","gallery/10/catt_0636.jpg");
+	$('#image_src_3').attr("src","gallery/10/daniel_0159f copy.jpg");
+	$('#image_src_4').attr("src","gallery/10/trinity_0519avbg.jpg");
+	startSlideShow(currentSlide);
+}
+function startSlideShow(start_no){
+	    $('#overlay_loading').hide();
+	$('.slide_images').show();
+	$('.slide_images_sq').show();
+
+	
+	play_status='playing';
+    $('#image_gallery').cycle({
+		startingSlide:start_no,
+		easing: 'easeOutExpo',
+		fx: 'fade',
+		timeout: 6000,
+		speed: 1000,
+		before:function(currSlideElement, nextSlideElement, options, forwardFlag){
+			$('#'+$(currSlideElement).attr('id')+'_sq').css('opacity',.5);
+			$('#'+$(nextSlideElement).attr('id')+'_sq').css('opacity',1);
+			currentSlide = $('#'+$(nextSlideElement).attr('id')+'_sq').attr('master');
+		}
+	});
+	}
+function vcr_back(path){
+	play_status='stopped';
+	$('.vcr_pause').attr('src',path+'play.png');
+	goNextSlideNumber('back');
+}
+function vcr_pause(path){
+	if(play_status=='stopped'){
+		$('.vcr_pause').attr('src',path+'pause.png');
+		play_status='playing';
+		goNextSlideNumber('forward');
+		startSlideShow(currentSlide)
+	}else{
+		$('.vcr_pause').attr('src',path+'play.png');
+		play_status='stopped';
+		$('#image_gallery').cycle('stop');
+	}
+}
+function vcr_forward(path){
+	play_status='stopped';
+	$('.vcr_pause').attr('src',path+'play.png');
+	goNextSlideNumber('forward');
+}
+function goNextSlideNumber(direction){
+	numberOfSlides=5;
+	if(direction=='back'){
+		currentSlide--;
+		if(currentSlide==-1){
+			currentSlide=numberOfSlides-1;
+		}
+	}
+	if(direction=='forward'){
+		currentSlide++;
+		if(currentSlide==numberOfSlides){
+			currentSlide=0;
+		}
+	}
+	$('#image_gallery').cycle({startingSlide: currentSlide}); 
+	$('#image_gallery').cycle('stop');
+	$('.image_sq_container').css('opacity',.5);
+	$('#image_'+currentSlide+'_sq').css('opacity',1);
+	
+}
+
+
+
+
+</script>
+
+<script type="text/javascript">
+function startAudio(){
+	$('audio').mediaelementplayer({
+    // if the <video width> is not specified, this is the default
+    defaultVideoWidth: 480,
+    // if the <video height> is not specified, this is the default
+    defaultVideoHeight: 270,
+    // if set, overrides <video width>
+    videoWidth: -1,
+    // if set, overrides <video height>
+    videoHeight: -1,
+    // width of audio player
+    audioWidth: 105,
+    // height of audio player
+    audioHeight: 20,
+    // initial volume when the player starts
+	    startVolume: .3,
+    // useful for <audio> player loops
+    loop: true,
+    // enables Flash and Silverlight to resize to content size
+    enableAutosize: true,
+    // the order of controls you want on the control bar (and other plugins below)
+    features: ['playpause','volume'],
+    // Hide controls when playing and mouse is not over the video
+    alwaysShowControls: false,
+    // force iPad's native controls
+    iPadUseNativeControls: true,
+    // force iPhone's native controls
+    iPhoneUseNativeControls: false,
+    // force Android's native controls
+    AndroidUseNativeControls: false,
+    // forces the hour marker (##:00:00)
+    alwaysShowHours: false,
+    // show framecount in timecode (##:00:00:00)
+    showTimecodeFrameCount: false,
+    // used when showTimecodeFrameCount is set to true
+    framesPerSecond: 25,
+    // turns keyboard support on and off for this instance
+    enableKeyboard: true,
+    // when this player starts, it will pause other players
+    pauseOtherPlayers: true,
+    // array of keyboard commands
+    keyActions: []
+	}); 
+
+	var player = new MediaElementPlayer('#audio_player',{});
+	// ... more code ...
+//	player.pause();
+//	player.setSrc('mynewfile.mp4');
+	//player.play();
+		
+	//var flashObj = document.getElementById("me_flash_0");
+	//if(flashObj == null) {
+		   //alert("Fail to get a reference!");
+	//}
+	//flashObj.GotoFrame(5000); 
+	//flashObj.pause();
+}
+</script>
+<script src="../audio_player/mediaelement-and-player.js"></script>
+<link rel="stylesheet" href="../audio_player/mediaelementplayer.css" />
+
+
+
+<body class="home page-template page-template-gallery page-template-gallery-php page page-id-10">
+<div class="content-pad">
+
+
+<div class="stage">
+
+<div id="header"><div id="logo"><a href="arrow-right.jpg"><img src="../../../uploads/2013/02/logo.png" border="0" class="png " alt="Photography by Allen" /></a></div></div><div style="clear:both"></div> 
+
+
+
+<div class="clear"></div>
+<div id="main">		
+	<div class="columns">      
+
+<!-- END Header --><div style="clear:both;"></div>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"  height="100%" id="content_table">
+<tr>
+<td valign="top" id="menu_cell">
+ 
+
+    <div id="left_menu"><ul id="nav-ie" class="topnav fl fr sf-js-enabled"><li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://photographybyallen.com/children/"><span>children</span></a></li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="http://photographybyallen.com/seniors/"><span>seniors</span></a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="http://photographybyallen.com/families/"><span>families</span></a></li>
+<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="http://photographybyallen.com/portraits/"><span>portraits</span></a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="http://photographybyallen.com/commercial/"><span>commercial</span></a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="http://photographybyallen.com/testimonials/"><span>testimonials</span></a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="http://photographybyallen.com/contact/"><span>contact</span></a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://photographybyallen.com/about/"><span>about</span></a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="http://photographybyallen.com/clients/"><span>clients</span></a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-29"><a href="arrow-right.jpg" aria-current="page"><span>home</span></a></li>
+</ul><div style="clear:both"></div></div>
+
+
+
+<div id="left_social">
+</div>
+
+
+
+
+
+
+
+
+
+</td>
+
+<td id="left_side" >
+     				
+</td>
+<td width="100%" valign="top" align="center" id="image_cell" max_image_width="1399" max_image_height="1000" >
+    <div class="narrowcolumn singlepage" style="border:0px solid #00FF00;">
+         <div id="image_gallery">
+
+                                           <div id="image_0" class="image_container ">
+                                            <img id="image_src_0" class="slide_images" style="display:none" src="../../../../gallery/10/allison_0728fc2htx2.jpg"  orig_w="1250" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_1" class="image_container ">
+                                            <img id="image_src_1" class="slide_images" style="display:none" src="../../../../gallery/10/caroline_0373ar1.jpg"  orig_w="800" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_2" class="image_container ">
+                                            <img id="image_src_2" class="slide_images" style="display:none" src="../../../../gallery/10/catt_0636.jpg"  orig_w="1399" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_3" class="image_container ">
+                                            <img id="image_src_3" class="slide_images" style="display:none" src="../../../../gallery/10/daniel_0159f&#32;copy.jpg"  orig_w="1250" orig_h="1000" border="0"/>
+                                            </div>
+
+                                            <div id="image_4" class="image_container ">
+                                            <img id="image_src_4" class="slide_images" style="display:none" src="../../../../gallery/10/trinity_0519avbg.jpg"  orig_w="800" orig_h="1000" border="0"/>
+                                            </div>
+
+                
+		    </div>
+    <div class="clear"></div>
+    <div id="image_gallery_thumb" class="gallery_thumbnails">
+    		<div id="thumb_div_containter" style="float:left;">
+               
+                            <div id="image_0_sq" class="image_sq_container image_sq_container_first" master="0" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_allison_0728fc2htx2.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_1_sq" class="image_sq_container " master="1" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_caroline_0373ar1.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_2_sq" class="image_sq_container " master="2" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_catt_0636.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_3_sq" class="image_sq_container " master="3" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_daniel_0159f&#32;copy.jpg" border="0"/>
+                            </div>
+
+                
+                            <div id="image_4_sq" class="image_sq_container " master="4" style="width:62px">
+                            <img class="slide_images_sq" style="display:none" width="60" height="60" src="../../../../gallery/10/thumbnail_sq_trinity_0519avbg.jpg" border="0"/>
+                            </div>
+
+                		    	<div style="clear:both"></div>
+            </div>
+    	<div style="clear:both"></div>
+    </div>
+
+    <div class="clear"></div>
+    
+          							
+    <div class="post bottom_post" style="display:none">
+        
+        <div class="entry page-entry">
+                
+		                <div class="clear"></div>
+        </div>   
+    </div>	    
+			
+    				
+	</div> <!-- END Narrowcolumn -->
+<div class="clear"></div>
+
+</td>
+<td id="right_side" >
+     				
+</td>
+</tr>
+</table>
+	
+
+	
+
+
+<div id="studio_contact" class="post">
+
+
+
+<span class="foot_divider">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="foot_bus_address">3865 Green Cove Lane - Rocky Mount - NC - 27804<span class="foot_divider">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+<span class="foot_bus_phone">252-450-9128<span class="foot_divider">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+<span class="foot_bus_email">
+<script type="text/javascript">
+document.write('<a href="http://photographybyallen.com/'&#32;+&#32;'mailto:'&#32;+&#32;'photographybyallen'&#32;+&#32;'@'&#32;+&#32;'suddenlink'&#32;+&#32;'.'&#32;+'net'&#32;+&#32;'">' + 'photographybyallen' + '@' + 'suddenlink' + '.' +'net' + '</a>');
+</script>
+<span class="foot_divider">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+
+<span class="foot_social" style="white-space:nowrap">
+<span class="foot_divider">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>
+</div>
+<div id="studio_affiliates" class="post">
+<img src="../../../../gallery/global_affiliates/CPP.png" border="0"/>
+<img src="../../../../gallery/global_affiliates/PPA.png" border="0"/>
+<img src="../../../../gallery/global_affiliates/PPNC.png" border="0"/>
+<img src="../../../../gallery/global_affiliates/SEPPA.png" border="0"/>
+</div>
+<div id="footer">
+<div class="lt">Copyright &copy; 2021 All rights reserved.</div>
+<div class="rt">Site by: <a href="http://ProofCast.com">ProofCast.com</a></div>		
+<div class="clear"></div>			
+</div>
+
+
+    </div>    <!-- columns --> 
+    
+    </div>  <!-- main --> 
+   
+</div>   <!-- stage --> 
+</div>    <!-- content-pad --> 
+<div class="clear"></div>
+
+
+<script type='text/javascript' src='../../../../wp-includes/js/comment-reply.min.js?ver=5.3.6'></script>
+<script type='text/javascript' src='../../../../wp-includes/js/wp-embed.min.js?ver=5.3.6'></script>
+  
+<script type="text/javascript" charset="utf-8">
+/*<![CDATA[*/
+	Cufon.now(); 	
+	jQuery(document).ready(function() {
+			jQuery('.slideshow').cycle({
+				fx: 'fade',
+				timeout: 5000,
+				pager: '#slideshow-nav',
+				speed: 1000,
+				//prev: '#left-arrow',
+        //next: '#right-arrow',
+				pagerEvent: 'click',
+    		pauseOnPagerHover: true,
+				cleartypeNoBg: true });						
+
+
+
+	  });		
+/*]]>*/
+</script>
+<div id="debug_div"></div>     
+</body>
+</html> 
+

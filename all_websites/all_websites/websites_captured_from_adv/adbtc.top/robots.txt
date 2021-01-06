@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /index/forgot_password*
+Disallow: /index/password_change*
+Disallow: /r/l/*
+Crawl-delay: 2

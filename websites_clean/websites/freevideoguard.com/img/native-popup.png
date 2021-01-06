@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube™ Video AdBlocker</title>
+    <meta name="viewport" content="width=1024">
+    <link href="../favicon.ico" rel="shortcut icon" type="image/png">
+    <link href="../favicon.ico" rel="icon" sizes="32x32">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/video-adblocker/imjnhcoogkbmemieaehgnopdleejnmll">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
+
+    
+            <meta name="robots" content="noindex">
+    
+
+
+
+
+
+    <script>
+        var environment = 'production';
+        var ext = {browser: 'Chrome'};
+        var advancedScenario = null;
+        const locale = 'it';
+        const forceInstall = false;
+
+        function appendFontBodyClass() {
+            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                webkitRequestAnimationFrame || msRequestAnimationFrame;
+            if (raf) raf(function () {
+                window.setTimeout(function () {
+                    document.body.classList.add('fonts-loaded')
+                }, 0);
+            });
+            else window.addEventListener('load', function () {
+                document.body.classList.add('fonts-loaded')
+            });
+        }
+
+        function checkFontLoaded() {
+            try {
+                if (document.fonts.check('1em Roboto')) {
+                    appendFontBodyClass();
+                }
+            } catch (err) {
+                appendFontBodyClass();
+            }
+        }
+
+        document.fonts.ready.then(checkFontLoaded);
+        document.fonts.onloadingdone = checkFontLoaded;
+        // Fallback timeout
+        setTimeout(function () {
+            appendFontBodyClass();
+        }, 5000)
+    </script>
+
+        <style>
+        hr{border:0}.tip-learn-more,.tip-learn-more2,.tip-watch-video__text{-moz-osx-font-smoothing:grayscale}*,.yt-reinstall-modal,.yt-reinstall-modal *,:after,:before{box-sizing:border-box}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}footer,section{display:block}[hidden]{display:none}a{background-color:transparent}svg:not(:root){overflow:hidden}hr{box-sizing:content-box;height:0}button{color:inherit;font:inherit;margin:0}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{border:0;padding:0}body{background-color:#fff}html{font-size:10px}body{font-size:14px;line-height:1.42857143;color:#333}button{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}hr{margin-top:20px;margin-bottom:20px;border-top:1px solid #eee}h2,h3{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h2,h3{margin-top:20px;margin-bottom:10px}h2{font-size:30px}h3{font-size:24px}p{margin:0 0 10px}ul{margin-top:0}ul{margin-bottom:10px}@media (min-width:768px){.container{width:750px}}.container{margin-right:auto;margin-left:auto}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-right:-15px;margin-left:-15px}.col-md-4,.col-sm-4{position:relative;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:768px){.col-sm-4{float:left}.col-sm-4{width:33.33333333%}}@media (min-width:992px){.col-md-4{float:left}.col-md-4{width:33.33333333%}}.embed-responsive{overflow:hidden}.embed-responsive{position:relative;display:block;height:0;padding:0}.embed-responsive .embed-responsive-item,.embed-responsive iframe{position:absolute;top:0;bottom:0;left:0;width:100%;height:100%;border:0}.embed-responsive-16by9{padding-bottom:56.25%}.head-section{overflow:hidden}.head-section__text-1,.head-section__text-2,.head-section__top-btn{text-transform:uppercase}.container:after,.container:before,.row:after,.row:before{display:table;content:" "}.head-section__text--thin:after,.info-section__subheading-yt:after,.tip-phrase__youtube:after,.video-info__text-yt:after{content:'TM'}.container:after,.row:after{clear:both}body,html{padding:0;margin:0}.yt-reinstall-buttons--yes,body{font-family:Roboto,sans-serif}@-ms-viewport{width:device-width}a:visited{text-decoration:none;outline:0!important}[hidden]{display:none!important}body{position:relative;min-width:928px}.container{max-width:960px!important;min-width:928px!important;padding-right:16px;padding-left:16px}.head-section{width:100%;height:650px;min-height:650px;padding-bottom:20px;background:url(main/80-layers.svg) center 63px no-repeat #f9cd1c}.head-section__heading{display:flex;align-items:center;margin-top:20px;height:40px;justify-content:space-between}.head-section__top-btn{background:#fff;height:44px;width:166px;text-align:center;line-height:44px;border-radius:22px;display:inline-block;font-size:18px;font-weight:500;color:#e32524;z-index:1}.head-section__top-btn:visited{color:#e32524}.head-section__text{width:872px;margin:60px auto 293px;font-size:60px;color:#000;font-weight:500;text-align:center;line-height:72px}.head-section__text--thin{display:inline-block;position:relative;font-weight:400;margin-left:14px}.head-section__text--thin:after{font-size:24px;font-weight:700;position:absolute;top:-18px}.head-section__text-1{margin-left:-36px}.head-section__buttons{display:flex;justify-content:center;margin:auto}.action-btn--red,.action-btn--white{height:36px;line-height:36px;width:220px;font-weight:500;margin:0 8px;border-radius:2px;text-align:center;text-transform:uppercase}.action-btn--red{background-color:#e32524;color:#fff}.action-btn--white{background-color:#fff;color:#e32524}.action-btn__i--video{background:url(main/watch-video-btn-icon.svg) no-repeat;display:inline-block;height:24px;vertical-align:middle;width:30px;margin-left:-13px}.info-section{padding-top:17px}.info-section__scroll-text{position:relative;text-align:center}.info-section__scroll-icon{position:absolute;bottom:-20px;left:50%;margin-left:-26px;height:20px;width:50px}.info-section__scroll-a{font-size:16px;text-align:center;color:#e32524;font-weight:400;text-transform:uppercase}.info-section__heading{font-size:60px;color:#000;font-weight:300;text-align:center;margin-top:144px}.info-section__subheading{font-size:24px;color:#010101;width:710px;margin:30px auto;line-height:35px;font-weight:300;text-align:center}.info-section__subheading-yt{display:inline-block;margin-left:8px;margin-right:28px;position:relative}.info-section__subheading-yt:after{position:absolute;top:-5px;font-size:12px}.info-section__greytxt{font-size:18px;color:#aeaeae;font-weight:400;text-align:center}.info-section__btns-group{display:flex;margin-top:14px;justify-content:center}.store-btn-outline-wrapper{position:relative;width:300px;margin:0 8px}.store-btn-outline{display:flex;position:relative;z-index:5;justify-content:flex-start;align-items:center;gheight:66px;background-color:#fff;border:1px solid #dbdbdb;border-radius:4px}.store-btn-outline__active-link{position:absolute;bottom:-23px;background-color:#f4f4f4;border-bottom-left-radius:4px;border-bottom-right-radius:4px;width:100%;height:25px;text-align:center;color:#297cc6;font-size:12px;font-weight:500;text-transform:uppercase;line-height:28px}.store-btn-outline__text{font-size:24px;padding-left:10px;font-weight:300;color:#767676}.store-btn-outline__chrome-icon{width:70px;height:66px;background:url(main/chrome-store-icon.svg) center no-repeat}.store-btn-outline__firefox-icon{width:70px;height:66px;background:url(main/firefox-store-icon.svg) center no-repeat}.store-btn-outline:not(.active)+.store-btn-outline__active-link{display:none}.section-separator{max-width:960px;min-width:928px;margin:166px auto 130px}.info-column__icon{width:160px;height:160px;margin:auto;border-radius:50%;background-color:#f2f2f2}.info-column__heading{font-size:24px;font-weight:400;text-align:center;margin-top:45px;line-height:28px}.info-column__text{padding:0 24px;font-size:18px;font-weight:400;margin-top:28px;text-align:center}.pig-icon{background:url(main/pig-icon.svg) 11px 34px no-repeat #f2f2f2}.lock-icon{background:url(main/lock-icon.svg) 40px 22px no-repeat #f2f2f2}.trash-icon{background:url(main/trash-icon.svg) 35px 38px no-repeat #f2f2f2}.video-section{margin-top:135px;margin-bottom:140px}.video-container{width:944px;max-width:100%;height:345px;margin:auto;display:flex;position:relative}.video-elm{width:614px;min-width:614px;flex-basis:614px;position:relative;background:url(main/video-thumb.png) no-repeat #333}.video-elm__play-icon{position:absolute;top:50%;left:50%;margin-left:-31px;margin-top:-11px;opacity:.6}.video-info{background:#222;height:100%;display:flex;flex-direction:column;flex:1;justify-content:space-between}.video-info__text{color:#fff;font-size:30px;font-weight:300;line-height:36px;padding:22px 50px 10px 27px}.video-info__text-yt{position:relative;display:inline-block;margin-right:26px}.video-info__text-yt:after{position:absolute;top:-8px;font-size:14px}.video-info__links{list-style:none;margin:0;padding:0}.video-info__link-li{height:60px;border-top:1px solid #303030}.video-info__link-a{display:block;text-decoration:none;font-size:20px;font-weight:300;color:#fefefe;line-height:60px;padding-left:24px;background-color:#222}.red-section__heading,.red-section__text{color:#fff;font-weight:300;text-align:center}.video-info__link-icon--chrome,.video-info__link-icon--firefox{display:inline-block;background:url(main/chrome-store-icon.svg) center 0 no-repeat;width:40px;height:40px;vertical-align:middle;margin-right:21px;background-size:35px}.video-info__link-icon--firefox{background:url(main/firefox-store-icon.svg) center 0 no-repeat;background-size:35px}.red-section{height:636px;padding-top:132px;background:url(main/planet-bg-new.svg) center 112px no-repeat #e03232}.red-section__heading{font-size:60px;line-height:70px;margin:auto;width:750px}.red-section__text{margin:38px auto 50px;font-size:24px;line-height:36px;width:660px}.activate-btn--yellow{width:300px;height:36px;text-align:center;background-color:#f9cd1c;margin:auto;display:block;line-height:36px;color:#000;text-transform:uppercase;font-size:14px;font-weight:500;border-radius:2px}.popup__content,.yt-reinstall-modal{box-shadow:0 16px 24px rgba(0,0,0,.24)}.footer{display:flex;justify-content:space-between;align-items:center;height:80px;padding:0 16px;max-width:960px;margin:auto}.footer-left{margin:0}.reviews-link{font-size:14px;font-weight:500;color:#297cc6}.reviews-link>svg{margin-left:10px;position:relative;top:1px}.footer-left__copyright,.footer-right__text{font-weight:400;color:#aeaeae;margin:0;font-size:14px}.footer-right__text{text-align:right}.footer-right__text-link{font-size:14px;font-weight:500;margin-left:6px;color:#297cc6}[data-ripple-color]{position:relative;overflow:hidden}.popup,.popup__overlay{width:100%;height:100%;top:0;left:0}.popup{position:fixed;z-index:1999;display:flex;justify-content:center;align-items:center}.popup__overlay{min-width:100%;min-height:100%;display:block;position:absolute;background-color:rgba(0,0,0,.7);bottom:0;right:0}.popup__content{opacity:0;position:relative;width:769px;background-color:#fff}.popup__close-button{width:16px;height:16px;position:absolute;top:-25px;right:-27px;z-index:1}.col-sm-4{width:33.33333333%;float:left}.head-section>.container{position:relative}.special-click-area{position:absolute;top:286px;width:500px;height:244px;left:50%;margin-left:-250px}.popup-wrapper{position:fixed;display:flex;top:0;left:0;bottom:0;width:100%;height:100%;align-items:center;justify-content:center;background-color:rgba(0,0,0,.7);z-index:10}.yt-reinstall-modal{border-radius:2px;background-color:#fff;position:relative;font-weight:300}.yt-reinstall-modal--content{position:relative;padding:18px 23px 24px 24px;display:flex;flex-direction:column}.yt-reinstall-modal--header{font-size:34px;letter-spacing:-.8px;line-height:42px;margin-bottom:12px}.yt-reinstall-modal--buttons{display:flex;flex-direction:row;justify-content:flex-end;margin-top:10px}.yt-reinstall-modal--btn-group{display:flex;flex:1;justify-content:flex-end}.yt-reinstall-buttons--play-video{display:flex;justify-content:flex-start;height:36px;align-items:center;text-decoration:none;color:#de2b34;font-size:14px;font-weight:400;text-transform:uppercase}.yt-reinstall-buttons--play-video-icon{width:40px;height:38px;display:inline-block;vertical-align:middle;background:url(main/video-play-face.svg) no-repeat;margin-right:-3px}.yt-reinstall-buttons--btn-no,.yt-reinstall-buttons--yes{padding:0 16px;display:flex;justify-content:center;height:36px;font-weight:300;font-size:14px;text-decoration:none}.yt-reinstall-buttons--btn-no>svg,.yt-reinstall-buttons--yes>svg{margin-right:16px}.yt-reinstall-buttons--yes{background-color:#e32524;color:#fff;align-items:center;border-radius:2px;margin-left:16px}.yt-reinstall-buttons--btn-no{align-items:center;color:#888383}.yt-reinstall-modal{width:580px}.yt-reinstall-modal svg{display:none}.nReinstallPopup{position:absolute;display:flex;width:800px;height:300px}.nReinstallPopup__content{margin:auto;width:470px}.nReinstallPopup__iconLeft{position:absolute;left:9px;top:68px}.nReinstallPopup__iconRight{position:absolute;right:8px;top:80px}.nReinstallPopup__text{color:#fff;font-family:Caveat,sans-serif;font-size:40px;text-align:center;line-height:38px;-webkit-font-smoothing:antialiased}.nReinstallPopup__confirm,.nReinstallPopup__reject{text-align:center;width:192px;font-size:24px;font-family:Caveat,sans-serif;-webkit-font-smoothing:antialiased}.nReinstallPopup__buttons{display:flex;justify-content:center;margin-top:28px}.nReinstallPopup__confirm{color:#ffd801;position:relative}.nReinstallPopup__confirm .nReinstallPopup__confirmSvg{position:absolute;top:-2px;left:-1px}.nReinstallPopup__reject{color:#ffd801;margin-right:12px;position:relative}.nReinstallPopup__reject .nReinstallPopup__rejectSvg{position:absolute;left:-1px}.nReinstallPopup__rejectText{position:relative;top:3px}.yt-reinstall-buttons--play-video-icon #SvgjsSvg1292{display:none}.engLeftSVG,.otherLeftSVG,.tip-phrase{display:none}.tip-phrase{font-family:Caveat,sans-serif;color:#fff;transform:translate(0) rotate(-8deg) translateZ(0);font-style:italic;font-size:40px;-webkit-font-smoothing:antialiased;line-height:40px;margin-top:5px;margin-left:29px}.ntip-chrome__watch-icon,.tip-learn-more{font-family:Caveat,Roboto,arial,sans-serif}.tip-phrase__youtube{position:relative}.tip-phrase__youtube:after{position:absolute;top:-4px;right:-19px;font-size:14px}.tip-phrase__word{opacity:0}.ntip-chrome,.ntip-firefox{position:fixed;width:500px;height:280px;margin-left:-215px;top:218px;left:50%;z-index:12}.ntip-chrome--arrow{text-align:right;padding-right:109px;margin-top:8px}.ntip-chrome #SvgjsPath1014,.ntip-chrome #SvgjsPath1019,.ntip-chrome #SvgjsPath1023{fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.ntip-firefox{left:550px!important;top:165px!important;margin-left:0}.ntip-firefox #SvgjsPath1010,.ntip-firefox #SvgjsPath1012{stroke:#fff!important}body.win .ntip-chrome--arrow{padding-right:240px!important}body.animated-tip #SvgjsPath1019,body.animated-tip #SvgjsPath1023{stroke-dasharray:25;stroke-dashoffset:25;animation:dash .5s linear forwards;animation-delay:1.4s}body.animated-tip #SvgjsPath1014{stroke-dasharray:1000;stroke-dashoffset:1000;animation:dash 6s linear forwards}body.animated-tip #SvgjsPath1010,body.animated-tip #SvgjsPath1012{stroke-dasharray:25;stroke-dashoffset:25;animation:dash .8s ease-in-out forwards;animation-delay:1.8s}body.animated-tip #SvgjsPath1008{stroke-dasharray:775;stroke-dashoffset:775;animation:dash 5s ease-in-out forwards;animation-delay:0}@keyframes  dash{to{stroke-dashoffset:0}}.tip-watch-video__text{color:#fff;font-weight:700;font-size:17px;position:absolute;top:57px;left:13px;text-align:center;line-height:14px;padding-top:6px;-webkit-font-smoothing:antialiased}.tip-watch-video__text-upper{text-transform:uppercase}.tip-learn-more{position:relative;-webkit-font-smoothing:antialiased}.tip-learn-more__text,.tip-learn-more__text2,.tip-watch-video__text2{position:absolute;text-align:center}.tip-learn-more__text{color:#fff;font-weight:700;top:26px;line-height:18px;left:24px;width:104px;font-size:19px}.tip-watch-video__text2{color:#4483da;font-weight:700;font-size:17px;top:57px;left:17px;line-height:14px;padding-top:6px}.tip-watch-video__text-upper2{text-transform:uppercase;font-size:14px;font-weight:700}.tip-watch-video__text-down2{font-size:12px;font-weight:400}.tip-learn-more2{-webkit-font-smoothing:antialiased}.tip-learn-more__text2{color:#000;font-weight:500;font-size:13px;top:37px;left:31px;width:92px;line-height:16px}.ntip-firefox>.ntip-chrome--arrow{text-align:start}body.win.lang-it .ntip-chrome{top:240px!important}body.win.lang-it .ntip-chrome--arrow{padding-right:250px!important}body.lang-it .otherLeftSVG{display:inline-block}body.lang-it .tip-learn-more__text{top:29px;width:100px;left:28px}body.lang-it .tip-watch-video__text{left:5px;padding-top:7px}.tip-learn-more2,.tip-watch-video2{display:none}.tip-watch-video2 #SvgjsSvg3131,body.lang-it .tip-watch-video2 #SvgjsSvg1998{display:none}.tip-watch-video2{position:absolute;top:12px;left:3px}.nReinstallPopup__iconRight .tip-learn-more2{position:relative;left:3px;top:-14px}body.lang-it .tip-watch-video2 #SvgjsSvg3131{display:inline-block}body.lang-it .head-section__top-btn{width:190px;font-size:14px}body.lang-it .head-section__text{font-size:50px;width:870px}body.lang-it .head-section__buttons .action-btn{width:220px}body.lang-it .info-column__text{padding:0 18px}body.lang-it .video-info__text{font-size:28px;padding-right:16px}body.lang-it .red-section__heading{width:780px}body.lang-it .tip-phrase.it{display:block;text-align:center;position:relative;left:-55px;top:8px;line-height:35px}body.lang-it .tip-phrase.it{font-size:37px}body.reinstall_default .nReinstallPopup{display:none!important}body{overflow:hidden!important}body.landing-page{overflow:auto!important}.top-banner{position:fixed;top:0;height:56px;background-color:#fff;display:flex;flex-direction:row;width:100%;font-size:12px;font-weight:400;color:#353535}
+    </style>
+</head>
+
+<body class="landing-page animated-tip lang-it country-it reinstall_default">
+
+    <section class="head-section">
+        <div class="container">
+            <div class="head-section__heading">
+                <a href="native-popup.png" class="head-section__logo" data-install-extension style="background-image: none">
+                    <img src="new-logo.svg" alt="VideoAdblocker">
+                </a>
+                <a href="native-popup.png#" data-install-extension rel="noreferrer" data-ripple-color="rgba(0,0,0,0.1)" class="head-section__top-btn">
+                    Prova gratis adesso
+                </a>
+            </div>
+            <div class="head-section__text"><span
+                    class="head-section__text-1">Mai più pubblicità su</span>
+                <span class="head-section__text--thin">YouTube</span><br>
+                <span class="head-section__text-2">Vedi solo quello che vuoi vedere</span></div>
+            <div class="special-click-area"></div>
+            <div class="head-section__buttons">
+                <a href="native-popup.png#" data-install-extension rel="noreferrer" data-ripple-color="rgba(255,255,255,0.2)"
+                   class="action-btn action-btn--red">Attivare adesso</a>
+                <a href="native-popup.png#" data-ripple-color="rgba(0,0,0,0.1)" show-video-modal class="action-btn action-btn--white"><i
+                        class="action-btn__i--video"></i>Guarda il filmato</a></div>
+        </div>
+    </section>
+    <section class="info-section">
+        <div class="info-section__scroll-text">
+            <a href="native-popup.png#"
+               class="info-section__scroll-a">Scorri verso il basso per saperne di più
+                <span class="info-section__scroll-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="12"
+                         viewbox="0 0 34 12"><path
+                            d="M0 1l17 6.908v-.006L34 .994v3.098L17 11v.006L0 4.098z"
+                            fill="#e32524"></path></svg>
+                </span>
+            </a>
+        </div>
+        <h2 class="info-section__heading">App ufficiale gratuita</h2>
+        <h3 class="info-section__subheading">
+            <span>Installa l'app gratuita per <span class="info-section__subheading-yt">YouTube</span> nel tuo browser e goditi caricamenti più veloci e siti video senza pubblicità</span>
+
+        </h3>
+        <div class="info-section__greytxt">disponibile in</div>
+        <div class="info-section__btns-group">
+            <div class="store-btn-outline-wrapper">
+                <a href="native-popup.png#" data-store-link="store_chrome" data-main-store-btn="chrome" class="store-btn-outline" rel="noreferrer"
+                   data-class="active">
+                    <i class="store-btn-outline__chrome-icon"></i><span
+                        class="store-btn-outline__text">Chrome Web Store</span>
+                </a>
+                <a href="native-popup.png" data-install-extension rel="noreferrer"
+                   class="store-btn-outline__active-link">Prova gratis adesso</a>
+            </div>
+            <div class="store-btn-outline-wrapper">
+                <a data-store-link="store_firefox" rel="noreferrer" data-main-store-btn="firefox" class="store-btn-outline">
+                    <i class="store-btn-outline__firefox-icon"></i><span
+                        class="store-btn-outline__text">Add-ons for Firefox</span>
+                </a>
+                <div class="store-btn-outline__active-link"
+                     data-install-extension>Prova gratis adesso</div>
+            </div>
+        </div>
+    </section>
+    <hr class="section-separator">
+    <section class="icons-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="info-column">
+                        <div class="info-column__icon pig-icon"></div>
+                        <div class="info-column__heading">Video AdBlocker è assolutamente gratis</div>
+                        <div class="info-column__text">Video AdBlocker  - Utilizzo gratis e facile</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="info-column">
+                        <div class="info-column__icon lock-icon"></div>
+                        <div class="info-column__heading">Protezione della privacy garantita</div>
+                        <div class="info-column__text">Non conserviamo né utilizziamo i tuoi dati personali</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="info-column trash">
+                        <div class="info-column__icon trash-icon"></div>
+                        <div class="info-column__heading">Dì addio alla pubblicità per sempre</div>
+                        <div class="info-column__text">Blocchiamo la pubblicità su tutte le piattaforme video più popolari</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-elm">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="ytvideoLanding" frameborder="0" allowfullscreen="" data-youtube-video
+                            data-src="https://www.youtube.com/embed/AsRKLMU_6mA?rel=0&enablejsapi=1&color=white"
+                            class="embed-responsive-item"></iframe>
+                </div>
+                <div class="video-elm__play-icon" style="display: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="41" viewbox="0 0 60 41"><title>Rounded
+                            Rectangle 1
+                            copy</title>
+                        <path
+                            d="M8.594 1.04S8.124 0 29.908 0C52.293 0 51.06 1.04 51.06 1.04c3.814 0 7.25 3.11 7.25 6.95 0 0 .69.8.69 12.77 0 13.14-1.034 12.6-1.034 12.6 0 3.83-3.092 6.95-6.906 6.95 0 0 1.084.69-21.06.69-22.155 0-21.406-.69-21.406-.69-3.813 0-6.905-3.12-6.905-6.95 0 0-.69.16-.69-13.08 0-12.1.69-12.29.69-12.29 0-3.84 3.09-6.95 6.903-6.95z"
+                            class="yt_icon"></path>
+                        <path d="M24.13 28.49V12.51l15.192 8.34z" fill="#fff"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="video-info">
+                <div class="video-info__text">Video AdBlocker è l'app gratuita ufficiale per <span class="video-info__text-yt">YouTube</span>nel tuo browser
+                </div>
+                <ul class="video-info__links">
+                    <li data-ripple-color="rgba(255,255,255,0.2)" class="video-info__link-li">
+                        <a href="native-popup.png#" rel="noreferrer"  data-store-link="store_chrome" class="video-info__link-a"><i
+                                class="video-info__link-icon--chrome"></i>Chrome Web Store</a></li>
+                    <li data-ripple-color="rgba(255,255,255,0.2)" class="video-info__link-li">
+                        <a href="native-popup.png#" data-store-link="store_firefox" class="video-info__link-a"
+                           data-store-link="store_firefox"><i
+                                class="video-info__link-icon--firefox"></i>Add-ons for Firefox</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="red-section"><h3 class="red-section__heading">200 milioni di utenti in tutto il mondo utilizzano Adblocker</h3>
+        <p class="red-section__text">Unisciti a loro, clicca sul pulsante in basso &quot;attiva ora&quot;, conferma con &quot;aggiungi estensione&quot; sul tuo browser e goditi i tuoi filmati preferiti senza ritardi o pubblicità</p>
+
+        <a href="native-popup.png#" data-install-extension data-ripple-color="rgba(255,255,255,0.2)" rel="noreferrer"
+           class="activate-btn--yellow">Attiva adesso</a>
+    </section>
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="native-popup.png#" rel="noreferrer" data-store-link="store_reviews" class="reviews-link">Leggi i commenti
+                <svg xmlns="http://www.w3.org/2000/svg" preserveaspectratio="xMidYMid" width="59" height="11"
+                     viewbox="0 0 59 11">
+                    <path
+                        d="M56.25 7l.917 4L53.5 8l-3.667 3 .917-4L48 4h3.667L53.5 0l1.833 4H59l-2.75 3zm-11.083 4L41.5 8l-3.667 3 .917-4L36 4h3.667L41.5 0l1.833 4H47l-2.75 3 .917 4zm-12 0L29.5 8l-3.667 3 .917-4L24 4h3.667L29.5 0l1.833 4H35l-2.75 3 .917 4zm-12 0L17.5 8l-3.667 3 .917-4L12 4h3.667L17.5 0l1.833 4H23l-2.75 3 .917 4zm-12 0L5.5 8l-3.667 3 .917-4L0 4h3.667L5.5 0l1.833 4H11L8.25 7l.917 4z"
+                        fill="#ff9c0f" fill-rule="evenodd"></path>
+                </svg>
+            </a>
+            <p class="footer-left__copyright">© 2014—2020 freevideoguard.com</p>
+        </div>
+        <div class="footer-right">
+            <p class="footer-right__text">
+                In caso di domande o commenti,<br/> puoi sempre 
+                <a href="native-popup.png#" data-store-link="store_reviews"
+                   class="footer-right__text-link">scrivere una recensione</a>
+            </p>
+        </div>
+    </footer>
+
+    <div hidden class="popup">
+        <div class="popup__overlay"></div>
+        <div class="popup__content">
+            <div class="popup__close-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 25 25">
+                    <path fill="#fff" fill-rule="evenodd"
+                          d="M25 22.89L22.89 25 12.5 14.61 2.11 25 0 22.89 10.39 12.5 0 2.11 2.11 0 12.5 10.39 22.89 0 25 2.11 14.61 12.5 25 22.89z"></path>
+                </svg>
+            </div>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="ytvideo" frameborder="0" allowfullscreen="" data-youtube-video
+                        allow="autoplay; encrypted-media"
+                        data-src="https://www.youtube.com/embed/AsRKLMU_6mA?rel=0&enablejsapi=1&color=white"
+                        class="embed-responsive-item"></iframe>
+            </div>
+        </div>
+    </div>
+
+<div class="popup-wrapper" hidden>
+
+
+    <!--Start reinstall modal 0405-->
+    <div class="yt-reinstall-modal" hidden data-popup data-parent-modal="true" data-reinstall-popup>
+        <div class="yt-reinstall-modal--content">
+            <div class="yt-reinstall-modal--header"> Continua</div>
+            <div class="yt-reinstall-modal--buttons">
+          <span class="yt-reinstall-buttons--play-video" data-landing-link>
+          <i class=yt-reinstall-buttons--play-video-icon>
+          <svg id="SvgjsSvg1292" xmlns="http://www.w3.org/2000/svg" version="1.1" width="22" height="22"
+               viewBox="0 0 22 22"><title>Shape 1</title><desc>Created with Avocode.</desc><defs
+                  id="SvgjsDefs1293"></defs><path id="SvgjsPath1294"
+                                                  d="M701 586C694.925 586 690 581.075 690 575C690 568.925 694.925 564 701 564C707.075 564 712 568.925 712 575C712 581.075 707.075 586 701 586ZM701 565.467C695.735 565.467 691.467 569.735 691.467 575C691.467 580.265 695.735 584.533 701 584.533C706.265 584.533 710.533 580.265 710.533 575C710.533 569.735 706.265 565.467 701 565.467ZM698.066 579.566C698.066 579.092 698.066 570.772 698.066 570.445C698.066 570.0210000000001 698.4920000000001 569.706 698.913 569.9540000000001C699.25 570.153 705.986 574.162 706.561 574.5050000000001C706.938 574.7300000000001 706.932 575.2680000000001 706.561 575.4930000000002C706.147 575.7450000000001 699.385 579.7750000000002 698.895 580.0550000000002C698.537 580.2600000000002 698.066 580.0330000000001 698.066 579.5660000000001Z "
+                                                  fill="#e32524" fill-opacity="1"
+                                                  transform="matrix(1,0,0,1,-690,-564)"></path></svg>
+          </i>
+          Guarda il filmato</span>
+                <div class="yt-reinstall-modal--btn-group">
+                    <a href="native-popup.png" class="yt-reinstall-buttons--btn-no" data-action="confirm">
+                        <svg id="SvgjsSvg1000" xmlns="http://www.w3.org/2000/svg" version="1.1" width="26" height="23"
+                             viewBox="0 0 26 23">
+                            <defs id="SvgjsDefs1001"></defs>
+                            <path id="SvgjsPath1007"
+                                  d="M418.646 365.006C417.88100000000003 365.006 398.418 365.006 397.31 365.006C396.217 365.006 395.686 363.827 396.16700000000003 362.928C396.822 361.7 406.249 344.746 406.838 343.70799999999997C407.365 342.777 408.622 342.76099999999997 409.149 343.70799999999997C409.951 345.15 419.331 362.039 419.796 362.885C420.376 363.93899999999996 419.638 365.006 418.646 365.006ZM409.345 351.673L407.074 351.673L407.074 358.223L409.345 358.223ZM409.345 359.847L407.074 359.847L407.074 361.81899999999996L409.345 361.81899999999996Z "
+                                  fill="#bbbbbb" fill-opacity="1" transform="matrix(1,0,0,1,-395,-343)"></path>
+                        </svg>
+                        Non ricevere ads</a>
+                    <a href="native-popup.png#" class="yt-reinstall-buttons--yes" data-action="reject">
+                        <svg id="SvgjsSvg1000" xmlns="http://www.w3.org/2000/svg" version="1.1" width="22" height="25"
+                             viewBox="0 0 22 25">
+                            <path id="SvgjsPath1007"
+                                  d="M524.272 424.999C524.272 424.999 518.7570000000001 423.363 515.988 415.74C513.219 408.118 514.147 403.472 514.147 403.472C514.147 403.472 516.8240000000001 403.39099999999996 519.6700000000001 402.546C522.5160000000001 401.70099999999996 524.272 400 524.272 400C524.272 400 526.042 401.701 528.9100000000001 402.546C531.7790000000001 403.391 534.4750000000001 403.472 534.4750000000001 403.472C534.4750000000001 403.472 535.4110000000002 408.118 532.6200000000001 415.74C529.8300000000002 423.363 524.2720000000002 424.999 524.2720000000002 424.999ZM533.548 404.167C533.548 404.167 530.84 404.25 527.983 403.241C526.3299999999999 402.657 525.0619999999999 401.84299999999996 524.2719999999999 401.24699999999996C523.4889999999999 401.84299999999996 522.2299999999999 402.657 520.5899999999999 403.241C517.7549999999999 404.25 515.0679999999999 404.167 515.0679999999999 404.167C515.0679999999999 404.167 514.4119999999999 409.325 517.1389999999999 415.972C519.0429999999999 420.614 522.5959999999999 423.09999999999997 524.2719999999999 424.06C525.9609999999999 423.1 529.5419999999999 420.614 531.4609999999999 415.972C534.2079999999999 409.325 533.5479999999999 404.167 533.5479999999999 404.167ZM530.82 415.139C532.904 409.591 532.557 405.092 532.557 405.092C532.557 405.092 530.617 405.183 527.9540000000001 404.39799999999997C525.556 403.691 524.272 402.31499999999994 524.272 402.31499999999994L524.272 422.68399999999997C524.272 422.68399999999997 528.474 421.385 530.82 415.13899999999995Z "
+                                  fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-513,-400)"></path>
+                        </svg>
+                        No, grazie</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End reinstall modal 0405-->
+
+
+    <!--Start new tip Chrome-->
+    <div hidden class="ntip-chrome">
+
+
+        <div class="ntip-chrome--arrow">
+            <svg id="SvgjsSvg1012" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="129"
+                 viewBox="0 0 83 129">
+                <path id="SvgjsPath1014"
+                      d="M600.441 424.913C600.441 424.913 626.64 417.744 634.1790000000001 389.329C643.791 353.108 609.6550000000001 342.498 599.3370000000001 364.056C585.6280000000002 392.69899999999996 637.623 412.83099999999996 666.0590000000001 360.193C683.4520000000001 327.996 676.57 298.07399999999996 676.57 298.07399999999996 "
+                      fill="#000000" fill-opacity="0" transform="matrix(1,0,0,1,-596,-297)"></path>
+
+
+                <path id="SvgjsPath1019"
+                      d="M666.052 312.553C666.052 312.553 670.326 309.447 673.172 304.659C676.017 299.872 675.307 295.691 675.307 295.691 "
+                      fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-opacity="1" stroke="#ffffff" stroke-miterlimit="50" stroke-width="2"
+                      transform="matrix(1,0,0,1,-596,-294)"></path>
+
+                <path id="SvgjsPath1023"
+                      d="M685.402 313.189C685.402 313.189 683.7230000000001 302.771 675.9440000000001 296.351 "
+                      fill-opacity="0"
+                      fill="#ffffff" stroke-dasharray="0" stroke-linejoin="round" stroke-linecap="round"
+                      stroke-opacity="1"
+                      stroke="#ffffff" stroke-miterlimit="50" stroke-width="2"
+                      transform="matrix(1,0,0,1,-594,-295)"></path>
+
+            </svg>
+        </div>
+
+        <div class="tip-phrase en">
+            <span class="tip-phrase__word tip-phrase__word1">Watch</span>
+            <span class="tip-phrase__word tip-phrase__word2">videos</span>
+            <span class="tip-phrase__word tip-phrase__word3">without</span>
+            <span class="tip-phrase__word tip-phrase__word4">ads</span><br/>
+            <span class="tip-phrase__word tip-phrase__word5">With</span>
+            <span class="tip-phrase__word tip-phrase__word6">new </span>
+            <span class="tip-phrase__word tip-phrase__word7">feature</span>
+            <span class="tip-phrase__word tip-phrase__word8">for </span>
+            <span class="tip-phrase__word tip-phrase__word9 tip-phrase__youtube">YouTube</span>
+        </div>
+
+        <div class="tip-phrase de">
+            <span class="tip-phrase__word tip-phrase__word1">Videos</span>
+            <span class="tip-phrase__word tip-phrase__word2">ohne</span>
+            <span class="tip-phrase__word tip-phrase__word3">Werbung</span>
+            <span class="tip-phrase__word tip-phrase__word4">schauen</span><br/>
+            <span class="tip-phrase__word tip-phrase__word5">Mit</span>
+            <span class="tip-phrase__word tip-phrase__word6">der </span>
+            <span class="tip-phrase__word tip-phrase__word7">neuen</span>
+            <span class="tip-phrase__word tip-phrase__word8">Funktion </span>
+            <span class="tip-phrase__word tip-phrase__word9">für </span>
+            <span class="tip-phrase__word tip-phrase__word10 tip-phrase__youtube">YouTube</span>
+        </div>
+
+        <div class="tip-phrase fr">
+            <span class="tip-phrase__word tip-phrase__word1">Regardes</span>
+            <span class="tip-phrase__word tip-phrase__word2">les</span>
+            <span class="tip-phrase__word tip-phrase__word3">vidéos</span>
+            <span class="tip-phrase__word tip-phrase__word4">sans</span>
+            <span class="tip-phrase__word tip-phrase__word5">pub</span><br/>
+            <span class="tip-phrase__word tip-phrase__word6">Avec</span>
+            <span class="tip-phrase__word tip-phrase__word7">un</span>
+            <span class="tip-phrase__word tip-phrase__word8">nouveau </span>
+            <span class="tip-phrase__word tip-phrase__word9">paramètre </span>
+            <span class="tip-phrase__word tip-phrase__word10">pour </span>
+            <span class="tip-phrase__word tip-phrase__word11 tip-phrase__youtube">YouTube</span>
+        </div>
+
+
+        <div class="tip-phrase it">
+            <span class="tip-phrase__word tip-phrase__word1">Guarda</span>
+            <span class="tip-phrase__word tip-phrase__word2">video</span>
+            <span class="tip-phrase__word tip-phrase__word3">senza</span>
+            <span class="tip-phrase__word tip-phrase__word4">pubblicità</span><br/>
+            <span class="tip-phrase__word tip-phrase__word5">Con</span>
+            <span class="tip-phrase__word tip-phrase__word6">nuova</span>
+            <span class="tip-phrase__word tip-phrase__word7">funzionalità</span>
+            <span class="tip-phrase__word tip-phrase__word8">per </span>
+            <span class="tip-phrase__word tip-phrase__word9 tip-phrase__youtube">YouTube</span>
+        </div>
+
+
+        <div class="tip-phrase es">
+            <span class="tip-phrase__word tip-phrase__word1">Ve</span>
+            <span class="tip-phrase__word tip-phrase__word2">vídeos</span>
+            <span class="tip-phrase__word tip-phrase__word3">sin</span>
+            <span class="tip-phrase__word tip-phrase__word4">publicidad</span><br/>
+            <span class="tip-phrase__word tip-phrase__word5">Con</span>
+            <span class="tip-phrase__word tip-phrase__word6">nueva</span>
+            <span class="tip-phrase__word tip-phrase__word7">función</span>
+            <span class="tip-phrase__word tip-phrase__word8">para</span>
+            <span class="tip-phrase__word tip-phrase__word9 tip-phrase__youtube">YouTube</span>
+        </div>
+
+        <div class="tip-phrase pt">
+            <span class="tip-phrase__word tip-phrase__word1">Veja</span>
+            <span class="tip-phrase__word tip-phrase__word2">vídeos</span>
+            <span class="tip-phrase__word tip-phrase__word3">sem </span>
+            <span class="tip-phrase__word tip-phrase__word4">publicidade</span><br/>
+            <span class="tip-phrase__word tip-phrase__word5">Com </span>
+            <span class="tip-phrase__word tip-phrase__word6">nova</span>
+            <span class="tip-phrase__word tip-phrase__word7">funcionalidade</span>
+            <span class="tip-phrase__word tip-phrase__word8">para o</span>
+            <span class="tip-phrase__word tip-phrase__word9 tip-phrase__youtube">YouTube</span>
+        </div>
+
+    </div>
+    <!--End new tip Chrome-->
+
+
+    <!--Start new tip Firefox-->
+    <div hidden class="ntip-firefox">
+        <div class="ntip-chrome--arrow">
+            <svg id="SvgjsSvg1000" xmlns="http://www.w3.org/2000/svg" version="1.1" width="111" height="112"
+                 viewBox="0 0 111 112">
+
+                <!-- Long svg line starts-->
+                <path id="SvgjsPath1008"
+                      d="M437.527 319.048C437.527 319.048 410.479 318.15 396.581 292.297C378.86400000000003 259.343 409.47700000000003 241.13700000000003 424.47700000000003 259.687C444.40500000000003 284.333 398.697 315.921 358.93100000000004 271.378C334.60800000000006 244.134 334.33400000000006 213.47899999999998 334.33400000000006 213.47899999999998 "
+                      fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="round"
+                      stroke-linecap="round"
+                      stroke-opacity="1" stroke="#ffffff" stroke-miterlimit="50" stroke-width="2"
+                      transform="matrix(1,0,0,1,-328,-209)"></path>
+
+                <!-- Right arrow stars-->
+                <path id="SvgjsPath1010"
+                      d="M347.885 225.107C347.885 225.107 343.02299999999997 223.079 339.155 219.088C335.287 215.09799999999998 335.005 210.87199999999999 335.005 210.87199999999999 "
+                      fill-opacity="0" fill="#fff" stroke-dasharray="0" stroke-linejoin="round" stroke-linecap="round"
+                      stroke-opacity="1" stroke="#fff" stroke-miterlimit="50" stroke-width="2"
+                      transform="matrix(1,0,0,1,-328,-209)"></path>
+
+
+                <!-- Left arrow stars-->
+                <path id="SvgjsPath1012" d="M329.283 230.204C329.283 230.204 328.493 219.696 334.541 211.66 "
+                      fill-opacity="0"
+                      fill="#ffffff" stroke-dasharray="0" stroke-linejoin="round" stroke-linecap="round"
+                      stroke-opacity="1"
+                      stroke="#ffffff" stroke-miterlimit="50" stroke-width="2"
+                      transform="matrix(1,0,0,1,-328,-209)"></path>
+
+            </svg>
+        </div>
+
+
+        <div class="tip-phrase en">
+            <span class="tip-phrase__word tip-phrase__word1">Watch</span>
+            <span class="tip-phrase__word tip-phrase__word2">videos</span>
+            <span class="tip-phrase__word tip-phrase__word3">without</span>
+            <span class="tip-phrase__word tip-phrase__word4">ads</span><br/>
+            <span class="tip-phrase__word tip-phrase__word5">With</span>
+            <span class="tip-phrase__word tip-phrase__word6">new </span>
+            <span class="tip-phrase__word tip-phrase__word7">feature</span>
+            <span class="tip-phrase__word tip-phrase__word8">for </span>
+            <span class="tip-phrase__word tip-phrase__word9 tip-phrase__youtube">YouTube</span>
+        </div>
+
+        <div class="tip-phrase de">
+            <span class="tip-phrase__word tip-phrase__word1">Videos</span>
+            <span class="tip-phrase__word tip-phrase__word2">ohne</span>
+            <span class="tip-phrase__word tip-phrase__word3">Werbung</span>
+            <span class="tip-phrase__word tip-phrase__word4">schauen</span><br/>
+            <span class="tip-phrase__word tip-phrase__word5">Mit</span>
+            <span class="tip-phrase__word tip-phrase__word6">der </span>
+            <span class="tip-phrase__word tip-phrase__word7">neuen</span>
+            <span class="tip-phrase__word tip-phrase__word8">Funktion </span>
+            <span class="tip-phrase__word tip-phrase__word9">für </span>
+            <span class="tip-phrase__word tip-phrase__word10 tip-phrase__youtube">YouTube</span>
+        </div>
+
+        <div class="tip-phrase fr">
+            <span class="tip-phrase__word tip-phrase__word1">Regardes</span>
+            <span class="tip-phrase__word tip-phrase__word2">les</span>
+            <span class="tip-phrase__word tip-phrase__word3">vidéos</span>
+            <span class="tip-phrase__word tip-phrase__word4">sans</span>
+            <span class="tip-phrase__word tip-phrase__word5">pub</span><br/>
+            <span class="tip-phrase__word tip-phrase__word6">Avec</span>
+            <span class="tip-phrase__word tip-phrase__word7">un</span>
+            <span class="tip-phrase__word tip-phrase__word8">nouveau </span>
+            <span class="tip-phrase__word tip-phrase__word9">paramètre </span>
+            <span class="tip-phrase__word tip-phrase__word10">pour </span>
+            <span class="tip-phrase__word tip-phrase__word11 tip-phrase__youtube">YouTube</span>
+        </div>
+
+
+        <div class="tip-phrase it">
+            <span class="tip-phrase__word tip-phrase__word1">Guarda</span>
+            <span class="tip-phrase__word tip-phrase__word2">video</span>
+            <span class="tip-phrase__word tip-phrase__word3">senza</span>
+            <span class="tip-phrase__word tip-phrase__word4">pubblicità</span><br/>
+            <span class="tip-phrase__word tip-phrase__word5">Con</span>
+            <span class="tip-phrase__word tip-phrase__word6">nuova</span>
+            <span class="tip-phrase__word tip-phrase__word7">funzionalità</span>
+            <span class="tip-phrase__word tip-phrase__word8">per </span>
+            <span class="tip-phrase__word tip-phrase__word9 tip-phrase__youtube">YouTube</span>
+        </div>
+
+
+        <div class="tip-phrase es">
+            <span class="tip-phrase__word tip-phrase__word1">Ve</span>
+            <span class="tip-phrase__word tip-phrase__word2">vídeos</span>
+            <span class="tip-phrase__word tip-phrase__word3">sin</span>
+            <span class="tip-phrase__word tip-phrase__word4">publicidad</span><br/>
+            <span class="tip-phrase__word tip-phrase__word5">Con</span>
+            <span class="tip-phrase__word tip-phrase__word6">nueva</span>
+            <span class="tip-phrase__word tip-phrase__word7">función</span>
+            <span class="tip-phrase__word tip-phrase__word8">para</span>
+            <span class="tip-phrase__word tip-phrase__word9 tip-phrase__youtube">YouTube</span>
+        </div>
+
+        <div class="tip-phrase pt">
+            <span class="tip-phrase__word tip-phrase__word1">Veja</span>
+            <span class="tip-phrase__word tip-phrase__word2">vídeos</span>
+            <span class="tip-phrase__word tip-phrase__word3">sem </span>
+            <span class="tip-phrase__word tip-phrase__word4">publicidade</span><br/>
+            <span class="tip-phrase__word tip-phrase__word5">Com </span>
+            <span class="tip-phrase__word tip-phrase__word6">nova</span>
+            <span class="tip-phrase__word tip-phrase__word7">funcionalidade</span>
+            <span class="tip-phrase__word tip-phrase__word8">para o</span>
+            <span class="tip-phrase__word tip-phrase__word9 tip-phrase__youtube">YouTube</span>
+        </div>
+
+    </div>
+    <!--End new tip Firefox-->
+
+
+    <div class="top-banner" data-install-popup hidden data-parent-modal="true">
+        <div class="top-banner--left">
+            <i class="top-banner--left-logo">
+                <svg id="SvgjsSvg1000" xmlns="http://www.w3.org/2000/svg" version="1.1" width="27" height="31"
+                     viewBox="0 0 27 31">
+                    <defs id="SvgjsDefs1001"></defs>
+                    <path id="SvgjsPath1007"
+                          d="M45.9448 115.999C45.9448 115.999 38.9951 113.97 35.5054 104.518C32.0155 95.066 33.185500000000005 89.3054 33.185500000000005 89.3054C33.185500000000005 89.3054 36.5581 89.2052 40.145100000000006 88.1573C43.73210000000001 87.10950000000001 45.94480000000001 85 45.94480000000001 85C45.94480000000001 85 48.174400000000006 87.1095 51.78920000000001 88.1573C55.40370000000001 89.2052 58.802400000000006 89.3054 58.802400000000006 89.3054C58.802400000000006 89.3054 59.98120000000001 95.066 56.46450000000001 104.518C52.94790000000001 113.97 45.94480000000001 115.999 45.94480000000001 115.999ZM57.6335 90.1665C57.6335 90.1665 54.221199999999996 90.2702 50.6203 89.0184C48.538 88.2945 46.9398 87.2851 45.9448 86.546C44.957300000000004 87.2851 43.3714 88.2945 41.3051 89.0184C37.731700000000004 90.2702 34.3453 90.1665 34.3453 90.1665C34.3453 90.1665 33.519800000000004 96.5629 36.955200000000005 104.805C39.354800000000004 110.56200000000001 43.832600000000006 113.643 45.9448 114.834C48.0732 113.643 52.5855 110.562 55.0036 104.805C58.4655 96.56290000000001 57.6335 90.16650000000001 57.6335 90.16650000000001ZM54.1962 103.773C56.8221 96.8924 56.384299999999996 91.3146 56.384299999999996 91.3146C56.384299999999996 91.3146 53.94049999999999 91.4269 50.584599999999995 90.4535C47.5622 89.57700000000001 45.944799999999994 87.8703 45.944799999999994 87.8703L45.944799999999994 113.129C45.944799999999994 113.129 51.24009999999999 111.518 54.19619999999999 103.77300000000001Z "
+                          fill="#e31815" fill-opacity="1" transform="matrix(1,0,0,1,-32,-85)"></path>
+                </svg>
+            </i>
+            <span class="top-banner--left-text"> Prova il 
+        <a href="native-popup.png#" class="top-banner--left-link" target="_blank" rel="noreferrer"
+           data-store-link="store">App ufficiale gratuita</a>
+        per guardare i video senza annunci
+      </span>
+        </div>
+        <div class="top-banner--right">
+            <a href="native-popup.png#" class="top-banner--right-no" data-action="reject">No, grazie</a>
+            <button
+                class="top-banner--right-yes yt-uix-button yt-uix-button-size-default yt-uix-button-primary consent-review"
+                data-action="confirm">Attivare
+            </button>
+        </div>
+    </div>
+
+
+    <div style="display: none !important" class="ntip-chrome__lear-more tip-learn-more">
+        <svg id="SvgjsSvg1050" xmlns="http://www.w3.org/2000/svg" version="1.1" width="143" height="122"
+             viewBox="0 0 143 122"><title>Ellipse 2 copy 3</title>
+            <desc>Created with Avocode.</desc>
+            <defs id="SvgjsDefs1051"></defs>
+            <path id="SvgjsPath1052"
+                  d="M914.96 214.98L914.0550000000001 214.528C920.942 204.762 925.0000000000001 192.858 925.0000000000001 180C925.0000000000001 146.863 898.1370000000002 120 865.0000000000001 120C831.863 120 805.0000000000001 146.863 805.0000000000001 180C805.0000000000001 191.466 808.2200000000001 202.178 813.8000000000001 211.289C813.3660000000001 211.19199999999998 812.9150000000001 211.09199999999998 812.464 210.992C807.0930000000001 201.908 804 191.31699999999998 804 180C804 146.311 831.311 119 865 119C898.689 119 926 146.311 926 180C926 193.018 921.909 205.075 914.96 214.98ZM810 180C810 191.941 813.817 202.983 820.281 212L819.055 212C812.7239999999999 202.928 809 191.902 809 180C809 149.072 834.072 124 865 124C895.928 124 921 149.072 921 180C921 191.36599999999999 917.604 201.933 911.786 210.764L911.348 209.595C916.817 201.048 920 190.899 920 180C920 149.624 895.376 125 865 125C834.624 125 810 149.624 810 180ZM819.611 219.217C830.614 231.93900000000002 846.86 240 865 240C875.133 240 884.673 237.478 893.043 233.043L893.7860000000001 233.786C885.211 238.385 875.412 241 865 241C846.397 241 829.75 232.662 818.562 219.531ZM878.849 233.239C879.167 233.529 879.61 233.763 880.2040000000001 233.894C875.3670000000001 235.256 870.272 236 865.0000000000001 236C848.7170000000001 236 834.0640000000001 229.045 823.8310000000001 217.951L824.9050000000001 217.628C834.9390000000001 228.315 849.1850000000001 235 865.0000000000001 235C869.7840000000001 235 874.4240000000001 234.387 878.8490000000002 233.239ZM906.3 223.5L905.9599999999999 225.201C907.4139999999999 223.882 908.8059999999999 222.495 910.127 221.042L909.079 220.693C908.185 221.661 907.255 222.59300000000002 906.3 223.5Z "
+                  fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-788,-119)"></path>
+            <path id="SvgjsPath1053"
+                  d="M865.63 206.375L865.885 205.409L918.19607 219.24760999999998L919.4399999999999 214.82699999999997L919.9214999999999 214.96249999999998L920.227 214.56699999999998L930.3629999999999 222.39399999999998L930.05743 222.78958999999998L930.1419999999999 223.283L917.1779999999999 225.506L917.0934099999998 225.01247L916.6119999999999 224.877L917.9250899999998 220.21062L887.2347799999999 212.09094000000002L882.8759399999999 229.89101000000002L892.9919999999998 226.94500000000002L893.1314999999998 227.425L893.5019999999998 227.089L900.0164499999998 234.28173999999999L904.4739999999998 217.09499999999997L905.4419999999998 217.34599999999998L900.7519999999997 235.42899999999997L900.2676099999998 235.30339999999998L899.8969999999997 235.63899999999998L892.9706599999997 227.99246L882.3239999999997 231.093L882.1846599999998 230.61354L881.6989999999997 230.495L886.2681299999997 211.83520000000001ZM862.673 206.454L862.877 207.43300000000002L818.4993199999999 216.67906000000002L810.3539999999999 223.241L810.0412899999999 222.85248L810.1829999999999 223.33100000000002L792.2709999999998 228.64000000000001L792.1285399999998 228.15896L791.7909999999998 227.792L799.9552099999999 220.28011L788.8279999999999 217.70100000000002L788.9407499999999 217.21456000000003L788.8239999999998 216.72700000000003L805.9341799999999 212.61552000000003L805.9729999999998 212.43300000000002L806.3552999999998 212.51432000000003L806.7519999999998 212.41900000000004L806.7975999999999 212.60841000000005L819.0229999999999 215.20900000000006L818.9474599999999 215.56418000000005ZM816.3483 217.12722L801.23751 220.27554L801.3290000000001 220.375L794.0545900000001 227.06818L809.80361 222.40027ZM909.315 211.921L908.4280000000001 212.38299999999998L906.5911100000001 208.86110999999997L903.0690000000001 210.69899999999996L902.8380000000001 210.25549999999996L902.3950000000001 210.48699999999997L900.5757900000001 207.00068999999996L896.0860000000001 209.79999999999995L895.8215000000001 209.37599999999995L895.3780000000002 209.60699999999994L893.5413200000002 206.08551999999995L890.0200000000002 207.92299999999994L889.7885000000002 207.47949999999994L889.3450000000003 207.71099999999996L887.2760000000003 203.74599999999995L888.1630000000002 203.28299999999996L890.0006400000002 206.80461999999997L893.5220000000002 204.96799999999996L893.7535000000001 205.41099999999997L894.1970000000001 205.17999999999998L896.0152700000001 208.66617999999997L900.5050000000001 205.86599999999996L900.7695000000001 206.29049999999995L901.2130000000001 206.05899999999994L903.0499400000001 209.58097999999995L906.5720000000001 207.74399999999994L906.8030000000001 208.18699999999995L907.2460000000001 207.95599999999996ZM839.717 216.788L840.149 215.88600000000002L843.73191 217.60107000000002L845.447 214.01900000000003L845.898 214.23450000000003L846.191 213.82900000000004L849.7566400000001 216.40883000000002L851.4290000000001 212.91600000000003L851.8800000000001 213.13150000000002L852.1730000000001 212.72600000000003L855.7386400000001 215.30583000000001L857.4110000000002 211.81300000000002L857.8620000000002 212.0285L858.1550000000002 211.62300000000002L862.2060000000002 214.55400000000003L861.6200000000002 215.36400000000003L858.0541000000002 212.78486000000004L856.3820000000002 216.27800000000005L855.9310000000002 216.06200000000004L855.6380000000001 216.46700000000004L852.0721000000001 213.88786000000005L850.4000000000001 217.38100000000006L849.9490000000001 217.16500000000005L849.6560000000001 217.57000000000005L846.0901 214.99086000000005L844.418 218.48400000000007L843.967 218.26800000000006L843.751 218.71900000000005ZM800.56253 219.39467L817.40142 215.88629999999998L806.3685800000001 213.53938999999997L791.1181200000001 217.20463999999996ZM920.20242 215.81083L917.78937 224.38619L928.85115 222.48937ZM886.469 223.839L885.6590000000001 223.253L890.9345400000001 215.96031L890.926 215.46099999999998L891.3003500000001 215.45462999999998L891.5200000000001 215.15099999999998L892.3310000000001 215.737L891.9393700000002 216.27828L892.0800000000002 224.442L891.0800000000002 224.46L891.0457900000001 222.46068L890.8960000000001 222.93699999999998L887.879 221.98899999999998L887.93395 221.81425999999996ZM896.488 217.19L897.4300000000001 217.525L897.3474100000001 217.75731000000002C899.1613600000001 218.39562 902.0023600000001 219.95255000000003 901.0620000000001 223.288C899.7100000000002 228.08 894.0970000000001 225.40800000000002 894.0970000000001 225.40800000000002L894.0969900000001 225.40750000000003L893.6260000000001 225.24000000000004L896.0557200000001 218.40587000000005C896.0041000000001 218.38538000000005 895.9760000000001 218.37500000000006 895.9760000000001 218.37500000000006L895.9590000000001 217.37500000000006C895.9590000000001 217.37500000000006 896.12112 217.40316000000007 896.38859 217.46963000000005ZM896.96814 218.82409L894.8896 224.67045000000002C896.35782 225.08264000000003 899.37195 225.61493000000002 900.06201 223.305C900.71587 221.11458000000002 898.37641 219.54746 896.96815 218.82409ZM891.03675 221.93296L890.96307 217.62763L888.43871 221.1166Z "
+                  fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-788,-119)"></path>
+        </svg>
+        <div class="tip-learn-more__text">
+            <span>Learn more about</span>
+            <span class="tip-learn-more__text-yt">YouTube</span>
+            <span>without ads</span>
+        </div>
+    </div>
+
+
+    <!--  SECOND VARIATION OF TIPS ICONS STARTS-->
+
+
+    <div class="ntip-chrome__lear-more2 tip-learn-more2" style="display: none !important">
+        <svg id="SvgjsSvg1027" xmlns="http://www.w3.org/2000/svg" version="1.1" width="143" height="122"
+             viewBox="0 0 143 122"><title>Ellipse 2 copy 3</title>
+            <desc>Created with Avocode.</desc>
+            <defs id="SvgjsDefs1028"></defs>
+            <path id="SvgjsPath1029"
+                  d="M839 113C872.689 113 900 140.311 900 174C900 207.689 872.689 235 839 235C805.311 235 778 207.689 778 174C778 140.311 805.311 113 839 113Z "
+                  fill="#e4c101" fill-opacity="1" transform="matrix(1,0,0,1,-762,-113)"></path>
+            <path id="SvgjsPath1030"
+                  d="M839 118C869.928 118 895 143.072 895 174C895 204.928 869.928 230 839 230C808.072 230 783 204.928 783 174C783 143.072 808.072 118 839 118Z "
+                  fill="#ffd801" fill-opacity="1" transform="matrix(1,0,0,1,-762,-113)"></path>
+            <path id="SvgjsPath1031"
+                  d="M839.63 200.375L839.885 199.409L892.19607 213.24760999999998L893.4399999999999 208.82699999999997L893.9214999999999 208.96249999999998L894.227 208.56699999999998L904.3629999999999 216.39399999999998L904.05743 216.78958999999998L904.1419999999999 217.283L891.1779999999999 219.506L891.0934099999998 219.01247L890.6119999999999 218.877L891.9250899999998 214.21062L861.2347799999999 206.09094000000002L856.8759399999999 223.89101000000002L866.9919999999998 220.94500000000002L867.1314999999998 221.425L867.5019999999998 221.089L874.0164499999998 228.28173999999999L878.4739999999998 211.09499999999997L879.4419999999998 211.34599999999998L874.7519999999997 229.42899999999997L874.2676099999998 229.30339999999998L873.8969999999997 229.63899999999998L866.9706599999997 221.99246L856.3239999999997 225.093L856.1846599999998 224.61354L855.6989999999997 224.495L860.2681299999997 205.83520000000001ZM836.673 200.454L836.877 201.43300000000002L792.4993199999999 210.67906000000002L784.3539999999999 217.241L784.0412899999999 216.85248L784.1829999999999 217.33100000000002L766.2709999999998 222.64000000000001L766.1285399999998 222.15896L765.7909999999998 221.792L773.9552099999999 214.28011L762.8279999999999 211.70100000000002L762.9407499999999 211.21456000000003L762.8239999999998 210.72700000000003L779.9341799999999 206.61552000000003L779.9729999999998 206.43300000000002L780.3552999999998 206.51432000000003L780.7519999999998 206.41900000000004L780.7975999999999 206.60841000000005L793.0229999999999 209.20900000000006L792.9474599999999 209.56418000000005ZM790.3483 211.12722L775.23751 214.27554L775.3290000000001 214.375L768.0545900000001 221.06818L783.80361 216.40027ZM883.315 205.921L882.4280000000001 206.38299999999998L880.5911100000001 202.86110999999997L877.0690000000001 204.69899999999996L876.8380000000001 204.25549999999996L876.3950000000001 204.48699999999997L874.5757900000001 201.00068999999996L870.0860000000001 203.79999999999995L869.8215000000001 203.37599999999995L869.3780000000002 203.60699999999994L867.5413200000002 200.08551999999995L864.0200000000002 201.92299999999994L863.7885000000002 201.47949999999994L863.3450000000003 201.71099999999996L861.2760000000003 197.74599999999995L862.1630000000002 197.28299999999996L864.0006400000002 200.80461999999997L867.5220000000002 198.96799999999996L867.7535000000001 199.41099999999997L868.1970000000001 199.17999999999998L870.0152700000001 202.66617999999997L874.5050000000001 199.86599999999996L874.7695000000001 200.29049999999995L875.2130000000001 200.05899999999994L877.0499400000001 203.58097999999995L880.5720000000001 201.74399999999994L880.8030000000001 202.18699999999995L881.2460000000001 201.95599999999996ZM813.717 210.788L814.149 209.88600000000002L817.73191 211.60107000000002L819.447 208.01900000000003L819.898 208.23450000000003L820.191 207.82900000000004L823.7566400000001 210.40883000000002L825.4290000000001 206.91600000000003L825.8800000000001 207.13150000000002L826.1730000000001 206.72600000000003L829.7386400000001 209.30583000000001L831.4110000000002 205.81300000000002L831.8620000000002 206.0285L832.1550000000002 205.62300000000002L836.2060000000002 208.55400000000003L835.6200000000002 209.36400000000003L832.0541000000002 206.78486000000004L830.3820000000002 210.27800000000005L829.9310000000002 210.06200000000004L829.6380000000001 210.46700000000004L826.0721000000001 207.88786000000005L824.4000000000001 211.38100000000006L823.9490000000001 211.16500000000005L823.6560000000001 211.57000000000005L820.0901 208.99086000000005L818.418 212.48400000000007L817.967 212.26800000000006L817.751 212.71900000000005ZM774.56253 213.39467L791.40142 209.88629999999998L780.3685800000001 207.53938999999997L765.1181200000001 211.20463999999996ZM894.20242 209.81083L891.78937 218.38619L902.85115 216.48937ZM860.469 217.839L859.6590000000001 217.253L864.9345400000001 209.96031L864.926 209.46099999999998L865.3003500000001 209.45462999999998L865.5200000000001 209.15099999999998L866.3310000000001 209.737L865.9393700000002 210.27828L866.0800000000002 218.442L865.0800000000002 218.46L865.0457900000001 216.46068L864.8960000000001 216.93699999999998L861.879 215.98899999999998L861.93395 215.81425999999996ZM870.488 211.19L871.4300000000001 211.525L871.3474100000001 211.75731000000002C873.1613600000001 212.39562 876.0023600000001 213.95255000000003 875.0620000000001 217.288C873.7100000000002 222.08 868.0970000000001 219.40800000000002 868.0970000000001 219.40800000000002L868.0969900000001 219.40750000000003L867.6260000000001 219.24000000000004L870.0557200000001 212.40587000000005C870.0041000000001 212.38538000000005 869.9760000000001 212.37500000000006 869.9760000000001 212.37500000000006L869.9590000000001 211.37500000000006C869.9590000000001 211.37500000000006 870.12112 211.40316000000007 870.38859 211.46963000000005ZM870.96814 212.82409L868.8896 218.67045000000002C870.35782 219.08264000000003 873.37195 219.61493000000002 874.06201 217.305C874.71587 215.11458000000002 872.37641 213.54746 870.96815 212.82409ZM865.03675 215.93296L864.96307 211.62763L862.43871 215.1166Z "
+                  fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-762,-113)"></path>
+        </svg>
+        <div class="tip-learn-more__text2">
+            <span>Learn more about</span>
+            <span class="tip-learn-more__text-yt">YouTube</span>
+            <span>without ads</span>
+        </div>
+    </div>
+    <!--  SECOND VARIATION OF TIPS ICONS ENDS-->
+
+    <!--N_REINSTALL POPUP STARTS   -->
+    <div class="nReinstallPopup" hidden data-reinstall-popup data-parent-modal="true">
+
+        <div class="nReinstallPopup__iconLeft" show-video-modal>
+            <!--1st variation SVG-->
+            <div class="ntip-chrome__watch-icon tip-watch-video" data-tip-watch>
+                <svg class="engLeftSVG" id="SvgjsSvg1045" xmlns="http://www.w3.org/2000/svg" version="1.1" width="122"
+                     height="130"
+                     viewBox="0 0 122 130">
+                    <defs id="SvgjsDefs1046"></defs>
+                    <path id="SvgjsPath1047"
+                          d="M151 241C117.311 241 90 213.689 90 180C90 153.41603 107.00596 130.80349999999999 130.73234 122.44794C130.71607 122.79727 130.70045 123.15787 130.68595 123.52613000000001C107.54632999999998 131.8509 91 153.99321 91 180C91 213.137 117.863 240 151 240C184.137 240 211 213.137 211 180C211 153.38157 193.66622999999998 130.81153 169.67061999999999 122.96182999999999C169.60882999999998 122.58752999999999 169.53956 122.21409999999999 169.46204999999998 121.84382C194.12649999999996 129.66681 211.99999999999997 152.74639 211.99999999999997 180C211.99999999999997 213.689 184.68899999999996 241 150.99999999999997 241ZM151 236C120.072 236 95 210.928 95 180C95 156.27116 109.75836 135.9894 130.59674 127.83305C130.5978 128.19668 130.60167 128.5547 130.60881 128.90381C110.32858 137.0042 96 156.82856999999998 96 180C96 210.376 120.624 235 151 235C181.376 235 206 210.376 206 180C206 156.35323 191.07752 136.19225 170.13566 128.42016999999998C170.12917 128.07234999999997 170.11862 127.71228999999998 170.10306 127.34277999999999C191.62508 135.15223 207 155.78056999999998 207 179.99999C207 210.92799 181.928 235.99999 151 235.99999Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-90,-111)"></path>
+                    <path id="SvgjsPath1048"
+                          d="M150 230C143.925 230 139 225.075 139 219C139 212.925 143.925 208 150 208C156.075 208 161 212.925 161 219C161 225.075 156.075 230 150 230ZM150 209.467C144.735 209.467 140.467 213.735 140.467 219C140.467 224.265 144.735 228.533 150 228.533C155.265 228.533 159.533 224.265 159.533 219C159.533 213.735 155.265 209.467 150 209.467ZM147.066 223.566C147.066 223.092 147.066 214.772 147.066 214.445C147.066 214.021 147.492 213.706 147.913 213.95399999999998C148.25 214.153 154.98600000000002 218.16199999999998 155.561 218.50499999999997C155.93800000000002 218.72999999999996 155.93200000000002 219.26799999999997 155.561 219.49299999999997C155.14700000000002 219.74499999999998 148.38500000000002 223.77499999999998 147.895 224.05499999999998C147.537 224.26 147.066 224.033 147.066 223.56599999999997Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-90,-111)"></path>
+                    <path id="SvgjsPath1049"
+                          d="M168 149.008L168 151.5C168 161.165 160.165 169 150.5 169C140.835 169 133 161.165 133 151.5L133 149.008C130.926 148.354 130 146.684 130 144.5C130 142.316 130.926 140.645 133 139.99099999999999L133 140.49999999999997C133 140.48499999999999 133.002 140.47099999999998 133.002 140.45699999999997L133.002 131.72199999999998C133.002 131.36499999999998 133.05200000000002 131.021 133.127 130.688C133.05700000000002 130.37199999999999 133.02200000000002 130.03 133.023 129.66C133.023 129.66 132.688 122.731 135.936 119.239C139.002 115.943 141 114 141 114C141 114 140.956 116.30799999999999 142.546 117.757C143.001 118.171 143.49099999999999 118.706 143.80499999999998 119.06200000000001C143.76099999999997 120.19100000000002 143.99999999999997 121.00000000000001 143.99999999999997 121.00000000000001C143.99999999999997 121.00000000000001 142.70299999999997 120.67900000000002 141.99999999999997 120.00000000000001C140.49999999999997 118.55100000000002 139.99999999999997 116.00000000000001 139.99999999999997 116.00000000000001C139.99999999999997 116.00000000000001 139.65899999999996 117.94300000000001 136.76799999999997 121.23900000000002C133.70599999999996 124.73100000000002 134.02199999999996 131.66000000000003 134.02199999999996 131.66000000000003C134.02099999999996 132.03000000000003 134.05399999999997 132.372 134.11999999999998 132.68800000000002C134.04899999999998 133.02100000000002 134.00199999999998 133.365 134.00199999999998 133.722L134.00199999999998 134.70700000000002C134.73299999999998 132.63500000000002 135.832 130.73600000000002 137.237 129.103C137.331 129.17000000000002 137.454 129.23000000000002 137.559 129.29500000000002C137.6 129.25300000000001 137.636 129.216 137.679 129.174C137.766 129.293 137.871 129.419 137.979 129.54600000000002C138.02700000000002 129.57100000000003 138.06400000000002 129.60000000000002 138.113 129.62500000000003C138.101 129.63800000000003 138.092 129.65200000000002 138.081 129.66500000000002C139.077 130.76600000000002 140.916 131.99500000000003 144.184 132.002C148.536 132.011 156.641 128.929 160.641 127.29100000000001C160.69799999999998 127.34500000000001 160.75 127.40400000000001 160.807 127.45800000000001C161.201 127.30900000000001 161.53799999999998 127.18 161.74499999999998 127.09900000000002C164.11299999999997 129.08900000000003 165.94499999999996 131.69400000000002 166.998 134.668L166.998 133.722C166.998 133.229 166.91 132.764 166.779 132.32000000000002C166.897 132.04500000000002 166.977 131.752 166.978 131.41700000000003C167.005 122.80600000000003 164 120.00000000000003 164 120.00000000000003C164 120.00000000000003 163.971 121.35700000000003 164 122.00000000000003C164.053 123.19600000000003 163.479 123.29500000000003 163 124.00000000000003C163 124.00000000000003 161.344 119.63800000000003 156.499 118.06800000000003C151.655 116.49800000000003 151.914 115.00000000000003 151.914 115.00000000000003C151.914 115.00000000000003 151.63799999999998 116.53100000000003 152 118.00000000000003C152.107 118.43500000000003 152.068 118.85800000000003 151.967 119.24800000000003C151.661 118.74900000000004 150.829 117.32600000000004 150.5 116.06800000000003C150.116 114.59800000000003 152 113.00000000000003 152 113.00000000000003C152 113.00000000000003 151.725 114.49800000000003 156.863 116.06800000000003C162.001 117.63800000000002 163.226 122.82400000000003 163.226 122.82400000000003C163.226 122.82400000000003 163.901 121.23400000000002 163.435 120.06600000000003C163.142 119.33200000000004 163 118.00000000000003 163 118.00000000000003C163 118.00000000000003 168.005 120.80600000000003 167.977 129.41700000000003C167.976 129.75200000000004 167.891 130.04500000000002 167.766 130.32000000000002C167.905 130.764 167.998 131.229 167.998 131.722L167.998 140.465C167.998 140.477 168 140.488 168 140.5L168 139.991C170.074 140.645 171 142.316 171 144.5C171 146.684 170.074 148.354 168 149.008ZM167 140.993L167 140.5C167 135.63400000000001 164.87 131.288 161.518 128.269C157.231 129.901 148.444 133.012 143.737 133.002C140.279 132.995 138.314 131.81 137.228 130.72400000000002C135.205 133.46 134 136.836 134 140.50000000000003L134 140.99300000000002C131.926 141.502 131 142.80100000000002 131 144.50000000000003C131 146.19800000000004 131.926 147.49800000000002 134 148.00600000000003L134 151.50000000000003C134 160.61300000000003 141.387 168.00000000000003 150.5 168.00000000000003C159.613 168.00000000000003 167 160.61300000000003 167 151.50000000000003L167 148.00600000000003C169.074 147.49800000000002 170 146.19800000000004 170 144.50000000000003C170 142.80100000000002 169.074 141.50200000000004 167 140.99300000000002ZM150.499 165.008C141.597 164.936 140.989 155.99200000000002 140.989 155.99200000000002L160.00900000000001 155.99200000000002C160.00900000000001 155.99200000000002 159.401 165.079 150.49900000000002 165.008ZM150.499 164.006C158.464 164.061 159.00799999999998 156.994 159.00799999999998 156.994L141.98999999999998 156.994C141.98999999999998 156.994 142.534 163.95 150.49899999999997 164.006ZM142.5 140C144.433 140 146 141.567 146 143.5C146 145.433 144.433 147 142.5 147C140.567 147 139 145.433 139 143.5C139 141.567 140.567 140 142.5 140ZM155 143.5C155 141.567 156.567 140 158.5 140C160.433 140 162 141.567 162 143.5C162 145.433 160.433 147 158.5 147C156.567 147 155 145.433 155 143.5ZM154.946 150.015C154.946 150.015 155.863 154.01299999999998 150.5 153.999C145.137 153.98499999999999 146.054 150.015 146.054 150.015C146.054 150.015 146.367 151.95999999999998 150.5 152.00699999999998C154.633 152.05399999999997 154.946 150.015 154.946 150.015ZM140.797 137.002C138.714 137.074 136.154 136.567 137.259 136.018C137.69299999999998 135.802 140.714 135.178 142.56599999999997 135.033C144.41899999999998 134.88799999999998 147.09699999999998 135.208 146.98899999999998 136.018C146.88099999999997 136.827 142.88099999999997 136.93 140.79699999999997 137.002ZM159.573 137.002C157.701 136.93 154.107 136.827 154.01000000000002 136.01600000000002C153.913 135.205 156.31900000000002 134.88400000000001 157.98300000000003 135.02900000000002C159.64800000000002 135.175 162.36200000000002 135.8 162.75200000000004 136.01600000000002C163.74400000000003 136.56600000000003 161.44500000000005 137.07500000000002 159.57300000000004 137.002ZM142.5 145C143.328 145 144 144.328 144 143.5C144 142.672 143.328 142 142.5 142C141.672 142 141 142.672 141 143.5C141 144.328 141.672 145 142.5 145ZM159.99 143.5C159.99 142.672 159.318 142 158.49 142C157.662 142 156.99 142.672 156.99 143.5C156.99 144.328 157.662 145 158.49 145C159.318 145 159.99 144.328 159.99 143.5ZM151.943 119.328C151.458 118.935 149.799 117.538 148.90900000000002 116.068C147.86100000000002 114.335 147.00000000000003 111 147.00000000000003 111C147.00000000000003 111 145.42400000000004 112.066 144.13700000000003 114.378C143.28800000000004 115.905 143.56000000000003 117.608 143.84300000000002 118.601C143.91600000000003 117.91499999999999 144.096 117.151 144.501 116.378C145.714 114.066 146 113 146 113C146 113 147.011 116.268 148 118C148.989 119.733 151 121 151 121C151 121 151.668 120.285 151.943 119.328Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-90,-111)"></path>
+                </svg>
+
+                <svg class="otherLeftSVG" id="SvgjsSvg1000" xmlns="http://www.w3.org/2000/svg" version="1.1" width="122"
+                     height="145" viewBox="0 0 122 145"><title>Ellipse 2 copy 4</title>
+                    <desc>Created with Avocode.</desc>
+                    <defs id="SvgjsDefs1001"></defs>
+                    <path id="SvgjsPath1007"
+                          d="M183 241C149.311 241 122 213.689 122 180C122 154.04295 138.21332 131.87223 161.0651 123.06273C160.9232 123.467 160.78053 123.88278 160.63981 124.30502C138.57709 133.17094 123.00001 154.76642 123.00001 180C123.00001 213.137 149.86301 240 183.00001 240C216.13701 240 243.00001 213.137 243.00001 180C243.00001 153.99453 226.45536 131.85315 203.31759 123.5274C203.12563 123.10436 202.92865 122.68096 202.72726 122.26049C226.7354 130.46110000000002 244.00001 153.21463 244.00001 180C244.00001 213.689 216.68901 241 183.00001 241ZM183 236C152.072 236 127 210.928 127 180C127 157.5684 140.18882 138.21726999999998 159.23504 129.27805C159.14587 129.70000000000002 159.07111 130.10662000000002 159.01409 130.49173000000002C140.65597000000002 139.40227000000002 128.00001 158.22296000000003 128.00001 180.00000000000003C128.00001 210.37600000000003 152.62401 235.00000000000003 183.00001 235.00000000000003C213.37601 235.00000000000003 238.00001 210.37600000000003 238.00001 180.00000000000003C238.00001 157.81646000000003 224.86716 138.70067000000003 205.95198 130.00315000000003C205.80115999999998 129.59268000000003 205.63609 129.15096000000003 205.45811999999998 128.68510000000003C225.20522999999997 137.33976000000004 239.00000999999997 157.05887000000004 239.00000999999997 180.00000000000003C239.00000999999997 210.92800000000003 213.92800999999997 236.00000000000003 183.00000999999997 236.00000000000003Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-122,-96)"></path>
+                    <path id="SvgjsPath1008"
+                          d="M200 134.008L200 136.5C200 146.165 192.165 154 182.5 154C172.835 154 165 146.165 165 136.5L165 134.008C162.926 133.354 162 131.684 162 129.5C162 127.316 162.926 125.645 165 124.991L165 125.5C165 125.485 165.002 125.471 165.002 125.457L165.002 116.722C165.002 116.365 165.05200000000002 116.021 165.127 115.68799999999999C165.05700000000002 115.37199999999999 165.02200000000002 115.02999999999999 165.023 114.65999999999998C165.023 114.65999999999998 164.688 107.73099999999998 167.936 104.23899999999998C171.002 100.94299999999997 173 98.99999999999997 173 98.99999999999997C173 98.99999999999997 172.956 101.30799999999996 174.546 102.75699999999998C175.001 103.17099999999998 175.49099999999999 103.70599999999997 175.80499999999998 104.06199999999998C175.76099999999997 105.19099999999999 175.99999999999997 105.99999999999999 175.99999999999997 105.99999999999999C175.99999999999997 105.99999999999999 174.70299999999997 105.67899999999999 173.99999999999997 104.99999999999999C172.49999999999997 103.55099999999999 171.99999999999997 100.99999999999999 171.99999999999997 100.99999999999999C171.99999999999997 100.99999999999999 171.65899999999996 102.94299999999998 168.76799999999997 106.23899999999999C165.70599999999996 109.731 166.02199999999996 116.66 166.02199999999996 116.66C166.02099999999996 117.03 166.05399999999997 117.372 166.11999999999998 117.688C166.04899999999998 118.021 166.00199999999998 118.36500000000001 166.00199999999998 118.72200000000001L166.00199999999998 119.70700000000001C166.73299999999998 117.635 167.832 115.736 169.237 114.10300000000001C169.331 114.17 169.454 114.23 169.559 114.295C169.6 114.253 169.636 114.21600000000001 169.679 114.174C169.766 114.293 169.871 114.41900000000001 169.979 114.546C170.02700000000002 114.57100000000001 170.06400000000002 114.60000000000001 170.113 114.625C170.101 114.638 170.092 114.652 170.081 114.665C171.077 115.766 172.916 116.995 176.184 117.00200000000001C180.536 117.01100000000001 188.641 113.92900000000002 192.641 112.29100000000001C192.69799999999998 112.34500000000001 192.75 112.40400000000001 192.807 112.45800000000001C193.201 112.30900000000001 193.53799999999998 112.18 193.74499999999998 112.09900000000002C196.11299999999997 114.08900000000001 197.94499999999996 116.69400000000002 198.998 119.66800000000002L198.998 118.72200000000002C198.998 118.22900000000003 198.91 117.76400000000002 198.779 117.32000000000002C198.897 117.04500000000002 198.977 116.75200000000002 198.978 116.41700000000002C199.005 107.80600000000001 196 105.00000000000001 196 105.00000000000001C196 105.00000000000001 195.971 106.35700000000001 196 107.00000000000001C196.053 108.19600000000001 195.479 108.29500000000002 195 109.00000000000001C195 109.00000000000001 193.344 104.63800000000002 188.499 103.06800000000001C183.655 101.49800000000002 183.914 100.00000000000001 183.914 100.00000000000001C183.914 100.00000000000001 183.63799999999998 101.53100000000002 184 103.00000000000001C184.107 103.43500000000002 184.068 103.85800000000002 183.967 104.24800000000002C183.661 103.74900000000002 182.829 102.32600000000002 182.5 101.06800000000001C182.116 99.59810000000002 184 98.00000000000001 184 98.00000000000001C184 98.00000000000001 183.725 99.49760000000002 188.863 101.06800000000001C194.001 102.638 195.226 107.82400000000001 195.226 107.82400000000001C195.226 107.82400000000001 195.901 106.23400000000001 195.435 105.06600000000002C195.142 104.33200000000002 195 103.00000000000001 195 103.00000000000001C195 103.00000000000001 200.005 105.80600000000001 199.977 114.41700000000002C199.976 114.75200000000001 199.891 115.04500000000002 199.766 115.32000000000002C199.905 115.76400000000002 199.998 116.22900000000003 199.998 116.72200000000002L199.998 125.46500000000002C199.998 125.47700000000002 200 125.48800000000001 200 125.50000000000001L200 124.99100000000001C202.074 125.64500000000001 203 127.31600000000002 203 129.5C203 131.684 202.074 133.354 200 134.008ZM199 125.993L199 125.5C199 120.634 196.87 116.288 193.518 113.269C189.231 114.90100000000001 180.444 118.012 175.737 118.00200000000001C172.279 117.995 170.314 116.81000000000002 169.228 115.724C167.205 118.46000000000001 166 121.836 166 125.5L166 125.993C163.926 126.502 163 127.801 163 129.5C163 131.198 163.926 132.498 166 133.006L166 136.5C166 145.613 173.387 153 182.5 153C191.613 153 199 145.613 199 136.5L199 133.006C201.074 132.498 202 131.198 202 129.5C202 127.801 201.074 126.502 199 125.993ZM182.499 150.007C173.597 149.936 172.989 140.99200000000002 172.989 140.99200000000002L192.00900000000001 140.99200000000002C192.00900000000001 140.99200000000002 191.401 150.079 182.49900000000002 150.007ZM182.499 149.006C190.464 149.061 191.00799999999998 141.994 191.00799999999998 141.994L173.98999999999998 141.994C173.98999999999998 141.994 174.534 148.95 182.49899999999997 149.006ZM174.5 125C176.433 125 178 126.567 178 128.5C178 130.433 176.433 132 174.5 132C172.567 132 171 130.433 171 128.5C171 126.567 172.567 125 174.5 125ZM187 128.5C187 126.567 188.567 125 190.5 125C192.433 125 194 126.567 194 128.5C194 130.433 192.433 132 190.5 132C188.567 132 187 130.433 187 128.5ZM186.946 135.015C186.946 135.015 187.863 139.01299999999998 182.5 138.999C177.137 138.98499999999999 178.054 135.015 178.054 135.015C178.054 135.015 178.367 136.95999999999998 182.5 137.00699999999998C186.633 137.05399999999997 186.946 135.015 186.946 135.015ZM172.797 122.002C170.714 122.074 168.154 121.567 169.259 121.018C169.69299999999998 120.802 172.714 120.178 174.56599999999997 120.033C176.41899999999998 119.888 179.09699999999998 120.208 178.98899999999998 121.018C178.88099999999997 121.827 174.88099999999997 121.93 172.79699999999997 122.002ZM191.573 122.002C189.701 121.92999999999999 186.107 121.827 186.01000000000002 121.01599999999999C185.913 120.20499999999998 188.31900000000002 119.88399999999999 189.98300000000003 120.029C191.64800000000002 120.175 194.36200000000002 120.8 194.75200000000004 121.01599999999999C195.74400000000003 121.56599999999999 193.44500000000005 122.07499999999999 191.57300000000004 122.002ZM174.5 130C175.328 130 176 129.328 176 128.5C176 127.672 175.328 127 174.5 127C173.672 127 173 127.672 173 128.5C173 129.328 173.672 130 174.5 130ZM191.99 128.5C191.99 127.672 191.318 127 190.49 127C189.662 127 188.99 127.672 188.99 128.5C188.99 129.328 189.662 130 190.49 130C191.318 130 191.99 129.328 191.99 128.5ZM183.943 104.328C183.458 103.935 181.799 102.538 180.90900000000002 101.068C179.86100000000002 99.3351 179.00000000000003 96 179.00000000000003 96C179.00000000000003 96 177.42400000000004 97.0662 176.13700000000003 99.3784C175.28800000000004 100.905 175.56000000000003 102.608 175.84300000000002 103.601C175.91600000000003 102.91499999999999 176.096 102.151 176.501 101.378C177.714 99.0661 178 98 178 98C178 98 179.011 101.268 180 103C180.989 104.733 183 106 183 106C183 106 183.668 105.285 183.943 104.328Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-122,-96)"></path>
+                    <path id="SvgjsPath1009"
+                          d="M182 232C175.925 232 171 227.075 171 221C171 214.925 175.925 210 182 210C188.075 210 193 214.925 193 221C193 227.075 188.075 232 182 232ZM182 211.467C176.735 211.467 172.467 215.735 172.467 221C172.467 226.265 176.735 230.533 182 230.533C187.265 230.533 191.533 226.265 191.533 221C191.533 215.735 187.265 211.467 182 211.467ZM179.066 225.566C179.066 225.092 179.066 216.772 179.066 216.445C179.066 216.021 179.492 215.706 179.913 215.95399999999998C180.25 216.153 186.98600000000002 220.16199999999998 187.561 220.50499999999997C187.93800000000002 220.72999999999996 187.93200000000002 221.26799999999997 187.561 221.49299999999997C187.14700000000002 221.74499999999998 180.38500000000002 225.77499999999998 179.895 226.05499999999998C179.537 226.26 179.066 226.033 179.066 225.56599999999997Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-122,-96)"></path>
+                </svg>
+
+                <div class="tip-watch-video__text">
+                    <div class="tip-watch-video__text-upper">Guarda un filmato</div>
+                    <div class="tip-watch-video__text-down">su come funziona</div>
+                </div>
+
+            </div>
+            <!--2nd variation SVG -->
+            <div class="ntip-chrome__watch-icon2 tip-watch-video2">
+                <svg id="SvgjsSvg1998" xmlns="http://www.w3.org/2000/svg" version="1.1" width="122" height="132"
+                     viewBox="0 0 122 132"><title>Ellipse 2 copy 2</title>
+                    <path id="SvgjsPath1013"
+                          d="M183 113C216.689 113 244 140.311 244 174C244 207.689 216.689 235 183 235C149.311 235 122 207.689 122 174C122 140.311 149.311 113 183 113Z "
+                          fill="#d7d7d7" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1998"
+                          d="M183 118C213.928 118 239 143.072 239 174C239 204.928 213.928 230 183 230C152.072 230 127 204.928 127 174C127 143.072 152.072 118 183 118Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1015"
+                          d="M183 223C176.925 223 172 218.075 172 212C172 205.925 176.925 201 183 201C189.075 201 194 205.925 194 212C194 218.075 189.075 223 183 223ZM183 202.467C177.735 202.467 173.467 206.735 173.467 212C173.467 217.265 177.735 221.533 183 221.533C188.265 221.533 192.533 217.265 192.533 212C192.533 206.735 188.265 202.467 183 202.467ZM180.066 216.566C180.066 216.092 180.066 207.772 180.066 207.445C180.066 207.021 180.492 206.706 180.913 206.95399999999998C181.25 207.153 187.98600000000002 211.16199999999998 188.561 211.50499999999997C188.93800000000002 211.72999999999996 188.93200000000002 212.26799999999997 188.561 212.49299999999997C188.14700000000002 212.74499999999998 181.38500000000002 216.77499999999998 180.895 217.05499999999998C180.537 217.26 180.066 217.033 180.066 216.56599999999997Z "
+                          fill="#4483da" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1016"
+                          d="M199.78799 122.32496C199.92427 122.76446 199.99800000000002 123.2341 199.99800000000002 123.72200000000001L199.99800000000002 133.405C199.99800000000002 143.667 192.16400000000002 151.986 182.50000000000003 151.986C172.83600000000004 151.986 165.00200000000004 143.667 165.00200000000004 133.405L165.00200000000004 123.72200000000001C165.00200000000004 123.35678000000001 165.04331000000005 123.00178000000001 165.12125000000003 122.662C165.05548000000005 122.35303 165.02202000000003 122.01927 165.02300000000002 121.659C165.02300000000002 121.659 164.68800000000002 114.73100000000001 167.93600000000004 111.239C171.00200000000004 107.943 172.95600000000005 106.378 172.95600000000005 106.378C172.95600000000005 106.378 172.95600000000005 108.308 174.54600000000005 109.757C175.29200000000006 110.436 176.13700000000006 111.446 176.13700000000006 111.446C176.13700000000006 111.446 174.85100000000006 108.691 176.13700000000006 106.378C177.42400000000006 104.066 179.31900000000005 103 179.31900000000005 103C179.31900000000005 103 179.86100000000005 106.335 180.90900000000005 108.068C181.95800000000006 109.8 184.09100000000004 111.446 184.09100000000004 111.446C184.09100000000004 111.446 182.90500000000003 109.62 182.50000000000003 108.068C182.11600000000004 106.598 184.09100000000004 104.689 184.09100000000004 104.689C184.09100000000004 104.689 183.72500000000002 106.49799999999999 188.86300000000003 108.068C194.00100000000003 109.63799999999999 195.22600000000003 114.824 195.22600000000003 114.824C195.22600000000003 114.824 195.90100000000004 113.234 195.43500000000003 112.066C195.14200000000002 111.33200000000001 195.22600000000003 109.757 195.22600000000003 109.757C195.22600000000003 109.757 200.00500000000002 112.80600000000001 199.97700000000003 121.417C199.97589000000002 121.74963 199.91138000000004 122.05113 199.78799000000004 122.32496Z "
+                          fill="#212121" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1017"
+                          d="M162 136.5C162 134.316 162.926 132.645 165 131.99099999999999L165 132.49999999999997C165 122.83499999999998 172.835 114.99999999999997 182.5 114.99999999999997C192.165 114.99999999999997 200 122.83499999999997 200 132.49999999999997L200 131.99099999999999C202.074 132.64499999999998 203 134.31599999999997 203 136.5C203 138.684 202.074 140.354 200 141.008L200 143.5C200 153.165 192.165 161 182.5 161C172.835 161 165 153.165 165 143.5L165 141.008C162.926 140.354 162 138.684 162 136.5Z "
+                          fill="#f0ccad" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1018"
+                          d="M168.014 120.958C168.014 120.958 169.359 124.99 175.73700000000002 125.002C182.11400000000003 125.015 196.00700000000003 119.29299999999999 196.00700000000003 119.29299999999999C196.00700000000003 119.29299999999999 192.08600000000004 111.72099999999999 182.82600000000002 112.01299999999999C173.56600000000003 112.30499999999999 168.014 120.958 168.014 120.958Z "
+                          fill="#212121" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1321"
+                          d="M174.5 132C176.433 132 178 133.567 178 135.5C178 137.433 176.433 139 174.5 139C172.567 139 171 137.433 171 135.5C171 133.567 172.567 132 174.5 132Z "
+                          fill="#f3f4f5" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1020"
+                          d="M174.5 134C175.328 134 176 134.672 176 135.5C176 136.328 175.328 137 174.5 137C173.672 137 173 136.328 173 135.5C173 134.672 173.672 134 174.5 134Z "
+                          fill="#616465" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1021"
+                          d="M169.259 128.017C169.69299999999998 127.80199999999999 172.714 127.178 174.56599999999997 127.033C176.41899999999998 126.888 179.09699999999998 127.208 178.98899999999998 128.017C178.88099999999997 128.827 174.88099999999997 128.93 172.79699999999997 129.002C170.71399999999997 129.074 168.15399999999997 128.567 169.25899999999996 128.017Z "
+                          fill="#a68f7b" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1022"
+                          d="M194.752 128.016C194.36200000000002 127.8 191.648 127.175 189.983 127.029C188.31900000000002 126.884 185.913 127.205 186.01 128.016C186.107 128.827 189.701 128.92999999999998 191.57299999999998 129.00199999999998C193.445 129.075 195.74399999999997 128.56599999999997 194.75199999999998 128.016Z "
+                          fill="#a68f7b" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1255"
+                          d="M190.5 132C192.433 132 194 133.567 194 135.5C194 137.433 192.433 139 190.5 139C188.567 139 187 137.433 187 135.5C187 133.567 188.567 132 190.5 132Z "
+                          fill="#f3f4f5" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1024"
+                          d="M190.49 134C191.318 134 191.99 134.672 191.99 135.5C191.99 136.328 191.318 137 190.49 137C189.662 137 188.99 136.328 188.99 135.5C188.99 134.672 189.662 134 190.49 134Z "
+                          fill="#616465" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1025"
+                          d="M178.054 142.015C178.054 142.015 177.137 145.98499999999999 182.5 145.999C187.863 146.013 186.946 142.015 186.946 142.015C186.946 142.015 186.633 144.05399999999997 182.5 144.00699999999998C178.367 143.95999999999998 178.054 142.015 178.054 142.015Z "
+                          fill="#d5b194" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                    <path id="SvgjsPath1026"
+                          d="M172.989 147.992C172.989 147.992 173.597 156.93599999999998 182.499 157.007C191.40099999999998 157.079 192.009 147.99200000000002 192.009 147.99200000000002Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-122,-103)"></path>
+                </svg>
+
+                <svg id="SvgjsSvg3131" xmlns="http://www.w3.org/2000/svg" version="1.1" width="122" height="144"
+                     viewBox="0 0 122 144">
+                    <title>Ellipse 2 copy 2</title>
+                    <desc>Created with Avocode.</desc>
+                    <defs id="SvgjsDefs1001"></defs>
+                    <path id="SvgjsPath1007"
+                          d="M183 113C216.689 113 244 140.311 244 174C244 207.689 216.689 235 183 235C149.311 235 122 207.689 122 174C122 140.311 149.311 113 183 113Z "
+                          fill="#d7d7d7" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1008"
+                          d="M183 118C213.928 118 239 143.072 239 174C239 204.928 213.928 230 183 230C152.072 230 127 204.928 127 174C127 143.072 152.072 118 183 118Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1009"
+                          d="M183 227C176.925 227 172 222.075 172 216C172 209.925 176.925 205 183 205C189.075 205 194 209.925 194 216C194 222.075 189.075 227 183 227ZM183 206.467C177.735 206.467 173.467 210.735 173.467 216C173.467 221.265 177.735 225.533 183 225.533C188.265 225.533 192.533 221.265 192.533 216C192.533 210.735 188.265 206.467 183 206.467ZM180.066 220.566C180.066 220.092 180.066 211.772 180.066 211.445C180.066 211.021 180.492 210.706 180.913 210.95399999999998C181.25 211.153 187.98600000000002 215.16199999999998 188.561 215.50499999999997C188.93800000000002 215.72999999999996 188.93200000000002 216.26799999999997 188.561 216.49299999999997C188.14700000000002 216.74499999999998 181.38500000000002 220.77499999999998 180.895 221.05499999999998C180.537 221.26 180.066 221.033 180.066 220.56599999999997Z "
+                          fill="#4483da" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1010"
+                          d="M200.78799 110.32496C200.92427 110.76446 200.99800000000002 111.2341 200.99800000000002 111.72200000000001L200.99800000000002 121.405C200.99800000000002 131.667 193.16400000000002 139.986 183.50000000000003 139.986C173.83600000000004 139.986 166.00200000000004 131.667 166.00200000000004 121.40499999999999L166.00200000000004 111.72199999999998C166.00200000000004 111.35677999999999 166.04331000000005 111.00177999999998 166.12125000000003 110.66199999999998C166.05548000000005 110.35302999999998 166.02202000000003 110.01926999999998 166.02300000000002 109.65899999999998C166.02300000000002 109.65899999999998 165.68800000000002 102.73099999999998 168.93600000000004 99.23919999999998C172.00200000000004 95.94309999999999 173.95600000000005 94.37839999999998 173.95600000000005 94.37839999999998C173.95600000000005 94.37839999999998 173.95600000000005 96.30799999999998 175.54600000000005 97.75669999999998C176.29200000000006 98.43599999999998 177.13700000000006 99.44599999999998 177.13700000000006 99.44599999999998C177.13700000000006 99.44599999999998 175.85100000000006 96.69059999999999 177.13700000000006 94.37839999999998C178.42400000000006 92.06619999999998 180.31900000000005 90.99999999999999 180.31900000000005 90.99999999999999C180.31900000000005 90.99999999999999 180.86100000000005 94.33509999999998 181.90900000000005 96.06759999999998C182.95800000000006 97.80009999999999 185.09100000000004 99.44599999999998 185.09100000000004 99.44599999999998C185.09100000000004 99.44599999999998 183.90500000000003 97.61959999999998 183.50000000000003 96.06759999999998C183.11600000000004 94.59809999999999 185.09100000000004 92.68919999999999 185.09100000000004 92.68919999999999C185.09100000000004 92.68919999999999 184.72500000000002 94.49749999999999 189.86300000000003 96.06759999999998C195.00100000000003 97.63759999999998 196.22600000000003 102.82399999999998 196.22600000000003 102.82399999999998C196.22600000000003 102.82399999999998 196.90100000000004 101.23399999999998 196.43500000000003 100.06599999999999C196.14200000000002 99.33169999999998 196.22600000000003 97.7567 196.22600000000003 97.7567C196.22600000000003 97.7567 201.00500000000002 100.806 200.97700000000003 109.417C200.97589000000002 109.74963 200.91138000000004 110.05113 200.78799000000004 110.32496Z "
+                          fill="#212121" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1011"
+                          d="M163 124.5C163 122.316 163.926 120.645 166 119.991L166 120.5C166 110.83500000000001 173.835 103 183.5 103C193.165 103 201 110.835 201 120.5L201 119.991C203.074 120.645 204 122.316 204 124.5C204 126.684 203.074 128.354 201 129.008L201 131.5C201 141.165 193.165 149 183.5 149C173.835 149 166 141.165 166 131.5L166 129.008C163.926 128.354 163 126.68400000000001 163 124.50000000000001Z "
+                          fill="#f0ccad" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1012"
+                          d="M169.014 108.958C169.014 108.958 170.359 112.99 176.73700000000002 113.002C183.11400000000003 113.015 197.00700000000003 107.29299999999999 197.00700000000003 107.29299999999999C197.00700000000003 107.29299999999999 193.08600000000004 99.72139999999999 183.82600000000002 100.01299999999999C174.56600000000003 100.30499999999999 169.014 108.958 169.014 108.958Z "
+                          fill="#212121" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1013q"
+                          d="M175.5 120C177.433 120 179 121.567 179 123.5C179 125.433 177.433 127 175.5 127C173.567 127 172 125.433 172 123.5C172 121.567 173.567 120 175.5 120Z "
+                          fill="#f3f4f5" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1014q"
+                          d="M175.5 122C176.328 122 177 122.672 177 123.5C177 124.328 176.328 125 175.5 125C174.672 125 174 124.328 174 123.5C174 122.672 174.672 122 175.5 122Z "
+                          fill="#616465" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1015q"
+                          d="M170.259 116.017C170.69299999999998 115.80199999999999 173.714 115.178 175.56599999999997 115.033C177.41899999999998 114.888 180.09699999999998 115.208 179.98899999999998 116.017C179.88099999999997 116.827 175.88099999999997 116.92999999999999 173.79699999999997 117.002C171.71399999999997 117.074 169.15399999999997 116.567 170.25899999999996 116.017Z "
+                          fill="#a68f7b" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1016"
+                          d="M195.752 116.016C195.36200000000002 115.80000000000001 192.648 115.17500000000001 190.983 115.02900000000001C189.31900000000002 114.88400000000001 186.913 115.20500000000001 187.01 116.016C187.107 116.82700000000001 190.701 116.93 192.57299999999998 117.00200000000001C194.445 117.075 196.74399999999997 116.566 195.75199999999998 116.016Z "
+                          fill="#a68f7b" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1017"
+                          d="M191.5 120C193.433 120 195 121.567 195 123.5C195 125.433 193.433 127 191.5 127C189.567 127 188 125.433 188 123.5C188 121.567 189.567 120 191.5 120Z "
+                          fill="#f3f4f5" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1018"
+                          d="M191.49 122C192.318 122 192.99 122.672 192.99 123.5C192.99 124.328 192.318 125 191.49 125C190.662 125 189.99 124.328 189.99 123.5C189.99 122.672 190.662 122 191.49 122Z "
+                          fill="#616465" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1019"
+                          d="M179.054 130.015C179.054 130.015 178.137 133.98499999999999 183.5 133.999C188.863 134.013 187.946 130.015 187.946 130.015C187.946 130.015 187.633 132.05399999999997 183.5 132.00699999999998C179.367 131.95999999999998 179.054 130.015 179.054 130.015Z "
+                          fill="#d5b194" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                    <path id="SvgjsPath1020"
+                          d="M173.989 135.992C173.989 135.992 174.597 144.93599999999998 183.499 145.007C192.40099999999998 145.079 193.009 135.99200000000002 193.009 135.99200000000002Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-122,-91)"></path>
+                </svg>
+
+
+                <div class="tip-watch-video__text2">
+                    <div class="tip-watch-video__text-upper2">Guarda il filmato</div>
+                    <div class="tip-watch-video__text-down2">su come funziona</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="nReinstallPopup__iconRight" data-landing-link>
+            <!--1st variation SVG-->
+            <div class="ntip-chrome__lear-more tip-learn-more">
+                <svg id="SvgjsSvg1050" xmlns="http://www.w3.org/2000/svg" version="1.1" width="143" height="122"
+                     viewBox="0 0 143 122"><title>Ellipse 2 copy 3</title>
+                    <desc>Created with Avocode.</desc>
+                    <defs id="SvgjsDefs1051"></defs>
+                    <path id="SvgjsPath1052"
+                          d="M914.96 214.98L914.0550000000001 214.528C920.942 204.762 925.0000000000001 192.858 925.0000000000001 180C925.0000000000001 146.863 898.1370000000002 120 865.0000000000001 120C831.863 120 805.0000000000001 146.863 805.0000000000001 180C805.0000000000001 191.466 808.2200000000001 202.178 813.8000000000001 211.289C813.3660000000001 211.19199999999998 812.9150000000001 211.09199999999998 812.464 210.992C807.0930000000001 201.908 804 191.31699999999998 804 180C804 146.311 831.311 119 865 119C898.689 119 926 146.311 926 180C926 193.018 921.909 205.075 914.96 214.98ZM810 180C810 191.941 813.817 202.983 820.281 212L819.055 212C812.7239999999999 202.928 809 191.902 809 180C809 149.072 834.072 124 865 124C895.928 124 921 149.072 921 180C921 191.36599999999999 917.604 201.933 911.786 210.764L911.348 209.595C916.817 201.048 920 190.899 920 180C920 149.624 895.376 125 865 125C834.624 125 810 149.624 810 180ZM819.611 219.217C830.614 231.93900000000002 846.86 240 865 240C875.133 240 884.673 237.478 893.043 233.043L893.7860000000001 233.786C885.211 238.385 875.412 241 865 241C846.397 241 829.75 232.662 818.562 219.531ZM878.849 233.239C879.167 233.529 879.61 233.763 880.2040000000001 233.894C875.3670000000001 235.256 870.272 236 865.0000000000001 236C848.7170000000001 236 834.0640000000001 229.045 823.8310000000001 217.951L824.9050000000001 217.628C834.9390000000001 228.315 849.1850000000001 235 865.0000000000001 235C869.7840000000001 235 874.4240000000001 234.387 878.8490000000002 233.239ZM906.3 223.5L905.9599999999999 225.201C907.4139999999999 223.882 908.8059999999999 222.495 910.127 221.042L909.079 220.693C908.185 221.661 907.255 222.59300000000002 906.3 223.5Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-788,-119)"></path>
+                    <path id="SvgjsPath1053"
+                          d="M865.63 206.375L865.885 205.409L918.19607 219.24760999999998L919.4399999999999 214.82699999999997L919.9214999999999 214.96249999999998L920.227 214.56699999999998L930.3629999999999 222.39399999999998L930.05743 222.78958999999998L930.1419999999999 223.283L917.1779999999999 225.506L917.0934099999998 225.01247L916.6119999999999 224.877L917.9250899999998 220.21062L887.2347799999999 212.09094000000002L882.8759399999999 229.89101000000002L892.9919999999998 226.94500000000002L893.1314999999998 227.425L893.5019999999998 227.089L900.0164499999998 234.28173999999999L904.4739999999998 217.09499999999997L905.4419999999998 217.34599999999998L900.7519999999997 235.42899999999997L900.2676099999998 235.30339999999998L899.8969999999997 235.63899999999998L892.9706599999997 227.99246L882.3239999999997 231.093L882.1846599999998 230.61354L881.6989999999997 230.495L886.2681299999997 211.83520000000001ZM862.673 206.454L862.877 207.43300000000002L818.4993199999999 216.67906000000002L810.3539999999999 223.241L810.0412899999999 222.85248L810.1829999999999 223.33100000000002L792.2709999999998 228.64000000000001L792.1285399999998 228.15896L791.7909999999998 227.792L799.9552099999999 220.28011L788.8279999999999 217.70100000000002L788.9407499999999 217.21456000000003L788.8239999999998 216.72700000000003L805.9341799999999 212.61552000000003L805.9729999999998 212.43300000000002L806.3552999999998 212.51432000000003L806.7519999999998 212.41900000000004L806.7975999999999 212.60841000000005L819.0229999999999 215.20900000000006L818.9474599999999 215.56418000000005ZM816.3483 217.12722L801.23751 220.27554L801.3290000000001 220.375L794.0545900000001 227.06818L809.80361 222.40027ZM909.315 211.921L908.4280000000001 212.38299999999998L906.5911100000001 208.86110999999997L903.0690000000001 210.69899999999996L902.8380000000001 210.25549999999996L902.3950000000001 210.48699999999997L900.5757900000001 207.00068999999996L896.0860000000001 209.79999999999995L895.8215000000001 209.37599999999995L895.3780000000002 209.60699999999994L893.5413200000002 206.08551999999995L890.0200000000002 207.92299999999994L889.7885000000002 207.47949999999994L889.3450000000003 207.71099999999996L887.2760000000003 203.74599999999995L888.1630000000002 203.28299999999996L890.0006400000002 206.80461999999997L893.5220000000002 204.96799999999996L893.7535000000001 205.41099999999997L894.1970000000001 205.17999999999998L896.0152700000001 208.66617999999997L900.5050000000001 205.86599999999996L900.7695000000001 206.29049999999995L901.2130000000001 206.05899999999994L903.0499400000001 209.58097999999995L906.5720000000001 207.74399999999994L906.8030000000001 208.18699999999995L907.2460000000001 207.95599999999996ZM839.717 216.788L840.149 215.88600000000002L843.73191 217.60107000000002L845.447 214.01900000000003L845.898 214.23450000000003L846.191 213.82900000000004L849.7566400000001 216.40883000000002L851.4290000000001 212.91600000000003L851.8800000000001 213.13150000000002L852.1730000000001 212.72600000000003L855.7386400000001 215.30583000000001L857.4110000000002 211.81300000000002L857.8620000000002 212.0285L858.1550000000002 211.62300000000002L862.2060000000002 214.55400000000003L861.6200000000002 215.36400000000003L858.0541000000002 212.78486000000004L856.3820000000002 216.27800000000005L855.9310000000002 216.06200000000004L855.6380000000001 216.46700000000004L852.0721000000001 213.88786000000005L850.4000000000001 217.38100000000006L849.9490000000001 217.16500000000005L849.6560000000001 217.57000000000005L846.0901 214.99086000000005L844.418 218.48400000000007L843.967 218.26800000000006L843.751 218.71900000000005ZM800.56253 219.39467L817.40142 215.88629999999998L806.3685800000001 213.53938999999997L791.1181200000001 217.20463999999996ZM920.20242 215.81083L917.78937 224.38619L928.85115 222.48937ZM886.469 223.839L885.6590000000001 223.253L890.9345400000001 215.96031L890.926 215.46099999999998L891.3003500000001 215.45462999999998L891.5200000000001 215.15099999999998L892.3310000000001 215.737L891.9393700000002 216.27828L892.0800000000002 224.442L891.0800000000002 224.46L891.0457900000001 222.46068L890.8960000000001 222.93699999999998L887.879 221.98899999999998L887.93395 221.81425999999996ZM896.488 217.19L897.4300000000001 217.525L897.3474100000001 217.75731000000002C899.1613600000001 218.39562 902.0023600000001 219.95255000000003 901.0620000000001 223.288C899.7100000000002 228.08 894.0970000000001 225.40800000000002 894.0970000000001 225.40800000000002L894.0969900000001 225.40750000000003L893.6260000000001 225.24000000000004L896.0557200000001 218.40587000000005C896.0041000000001 218.38538000000005 895.9760000000001 218.37500000000006 895.9760000000001 218.37500000000006L895.9590000000001 217.37500000000006C895.9590000000001 217.37500000000006 896.12112 217.40316000000007 896.38859 217.46963000000005ZM896.96814 218.82409L894.8896 224.67045000000002C896.35782 225.08264000000003 899.37195 225.61493000000002 900.06201 223.305C900.71587 221.11458000000002 898.37641 219.54746 896.96815 218.82409ZM891.03675 221.93296L890.96307 217.62763L888.43871 221.1166Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-788,-119)"></path>
+                </svg>
+                <div class="tip-learn-more__text">
+                    Scopri di più su YouTube senza pubblicità
+                </div>
+            </div>
+            <!--2nd  variation SVG-->
+            <div class="ntip-chrome__lear-more2 tip-learn-more2">
+                <svg id="SvgjsSvg1027" xmlns="http://www.w3.org/2000/svg" version="1.1" width="143" height="122"
+                     viewBox="0 0 143 122"><title>Ellipse 2 copy 3</title>
+                    <desc>Created with Avocode.</desc>
+                    <defs id="SvgjsDefs1028"></defs>
+                    <path id="SvgjsPath1029"
+                          d="M839 113C872.689 113 900 140.311 900 174C900 207.689 872.689 235 839 235C805.311 235 778 207.689 778 174C778 140.311 805.311 113 839 113Z "
+                          fill="#e4c101" fill-opacity="1" transform="matrix(1,0,0,1,-762,-113)"></path>
+                    <path id="SvgjsPath1030"
+                          d="M839 118C869.928 118 895 143.072 895 174C895 204.928 869.928 230 839 230C808.072 230 783 204.928 783 174C783 143.072 808.072 118 839 118Z "
+                          fill="#ffd801" fill-opacity="1" transform="matrix(1,0,0,1,-762,-113)"></path>
+                    <path id="SvgjsPath1031"
+                          d="M839.63 200.375L839.885 199.409L892.19607 213.24760999999998L893.4399999999999 208.82699999999997L893.9214999999999 208.96249999999998L894.227 208.56699999999998L904.3629999999999 216.39399999999998L904.05743 216.78958999999998L904.1419999999999 217.283L891.1779999999999 219.506L891.0934099999998 219.01247L890.6119999999999 218.877L891.9250899999998 214.21062L861.2347799999999 206.09094000000002L856.8759399999999 223.89101000000002L866.9919999999998 220.94500000000002L867.1314999999998 221.425L867.5019999999998 221.089L874.0164499999998 228.28173999999999L878.4739999999998 211.09499999999997L879.4419999999998 211.34599999999998L874.7519999999997 229.42899999999997L874.2676099999998 229.30339999999998L873.8969999999997 229.63899999999998L866.9706599999997 221.99246L856.3239999999997 225.093L856.1846599999998 224.61354L855.6989999999997 224.495L860.2681299999997 205.83520000000001ZM836.673 200.454L836.877 201.43300000000002L792.4993199999999 210.67906000000002L784.3539999999999 217.241L784.0412899999999 216.85248L784.1829999999999 217.33100000000002L766.2709999999998 222.64000000000001L766.1285399999998 222.15896L765.7909999999998 221.792L773.9552099999999 214.28011L762.8279999999999 211.70100000000002L762.9407499999999 211.21456000000003L762.8239999999998 210.72700000000003L779.9341799999999 206.61552000000003L779.9729999999998 206.43300000000002L780.3552999999998 206.51432000000003L780.7519999999998 206.41900000000004L780.7975999999999 206.60841000000005L793.0229999999999 209.20900000000006L792.9474599999999 209.56418000000005ZM790.3483 211.12722L775.23751 214.27554L775.3290000000001 214.375L768.0545900000001 221.06818L783.80361 216.40027ZM883.315 205.921L882.4280000000001 206.38299999999998L880.5911100000001 202.86110999999997L877.0690000000001 204.69899999999996L876.8380000000001 204.25549999999996L876.3950000000001 204.48699999999997L874.5757900000001 201.00068999999996L870.0860000000001 203.79999999999995L869.8215000000001 203.37599999999995L869.3780000000002 203.60699999999994L867.5413200000002 200.08551999999995L864.0200000000002 201.92299999999994L863.7885000000002 201.47949999999994L863.3450000000003 201.71099999999996L861.2760000000003 197.74599999999995L862.1630000000002 197.28299999999996L864.0006400000002 200.80461999999997L867.5220000000002 198.96799999999996L867.7535000000001 199.41099999999997L868.1970000000001 199.17999999999998L870.0152700000001 202.66617999999997L874.5050000000001 199.86599999999996L874.7695000000001 200.29049999999995L875.2130000000001 200.05899999999994L877.0499400000001 203.58097999999995L880.5720000000001 201.74399999999994L880.8030000000001 202.18699999999995L881.2460000000001 201.95599999999996ZM813.717 210.788L814.149 209.88600000000002L817.73191 211.60107000000002L819.447 208.01900000000003L819.898 208.23450000000003L820.191 207.82900000000004L823.7566400000001 210.40883000000002L825.4290000000001 206.91600000000003L825.8800000000001 207.13150000000002L826.1730000000001 206.72600000000003L829.7386400000001 209.30583000000001L831.4110000000002 205.81300000000002L831.8620000000002 206.0285L832.1550000000002 205.62300000000002L836.2060000000002 208.55400000000003L835.6200000000002 209.36400000000003L832.0541000000002 206.78486000000004L830.3820000000002 210.27800000000005L829.9310000000002 210.06200000000004L829.6380000000001 210.46700000000004L826.0721000000001 207.88786000000005L824.4000000000001 211.38100000000006L823.9490000000001 211.16500000000005L823.6560000000001 211.57000000000005L820.0901 208.99086000000005L818.418 212.48400000000007L817.967 212.26800000000006L817.751 212.71900000000005ZM774.56253 213.39467L791.40142 209.88629999999998L780.3685800000001 207.53938999999997L765.1181200000001 211.20463999999996ZM894.20242 209.81083L891.78937 218.38619L902.85115 216.48937ZM860.469 217.839L859.6590000000001 217.253L864.9345400000001 209.96031L864.926 209.46099999999998L865.3003500000001 209.45462999999998L865.5200000000001 209.15099999999998L866.3310000000001 209.737L865.9393700000002 210.27828L866.0800000000002 218.442L865.0800000000002 218.46L865.0457900000001 216.46068L864.8960000000001 216.93699999999998L861.879 215.98899999999998L861.93395 215.81425999999996ZM870.488 211.19L871.4300000000001 211.525L871.3474100000001 211.75731000000002C873.1613600000001 212.39562 876.0023600000001 213.95255000000003 875.0620000000001 217.288C873.7100000000002 222.08 868.0970000000001 219.40800000000002 868.0970000000001 219.40800000000002L868.0969900000001 219.40750000000003L867.6260000000001 219.24000000000004L870.0557200000001 212.40587000000005C870.0041000000001 212.38538000000005 869.9760000000001 212.37500000000006 869.9760000000001 212.37500000000006L869.9590000000001 211.37500000000006C869.9590000000001 211.37500000000006 870.12112 211.40316000000007 870.38859 211.46963000000005ZM870.96814 212.82409L868.8896 218.67045000000002C870.35782 219.08264000000003 873.37195 219.61493000000002 874.06201 217.305C874.71587 215.11458000000002 872.37641 213.54746 870.96815 212.82409ZM865.03675 215.93296L864.96307 211.62763L862.43871 215.1166Z "
+                          fill="#ffffff" fill-opacity="1" transform="matrix(1,0,0,1,-762,-113)"></path>
+                </svg>
+
+                <div class="tip-learn-more__text2">
+                    <span>Scopri di più su YouTube senza pubblicità</span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="nReinstallPopup__content">
+            <div class="nReinstallPopup__text">Continua</div>
+            <div class="nReinstallPopup__buttons">
+
+                <div class="nReinstallPopup__reject" data-action="confirm">
+                    <svg class="nReinstallPopup__rejectSvg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="192"
+                         height="41"
+                         viewBox="0 0 192 41">
+                        <defs id="SvgjsDefs1001">
+                            <clipPath id="SvgjsClipPath1009">
+                                <path id="SvgjsPath1008"
+                                      d="M415.336 437.304C377.391 438.23699999999997 316.19100000000003 435.154 313.72700000000003 451.90999999999997C310.00000000000006 477.25699999999995 336.987 474.866 400.646 475.905C464.305 476.94399999999996 504.60900000000004 475.78 504.704 456.08299999999997C504.76300000000003 443.76899999999995 510.825 434.95599999999996 415.336 437.304Z "
+                                      fill="#ffffff"></path>
+                            </clipPath>
+                        </defs>
+                        <path id="SvgjsPath1007"
+                              d="M415.336 437.304C377.391 438.23699999999997 316.19100000000003 435.154 313.72700000000003 451.90999999999997C310.00000000000006 477.25699999999995 336.987 474.866 400.646 475.905C464.305 476.94399999999996 504.60900000000004 475.78 504.704 456.08299999999997C504.76300000000003 443.76899999999995 510.825 434.95599999999996 415.336 437.304Z "
+                              fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter"
+                              stroke-linecap="butt"
+                              stroke-opacity="1" stroke="#ffd801" stroke-miterlimit="50" stroke-width="4"
+                              clip-path="url(&quot;#SvgjsClipPath1009&quot;)"
+                              transform="matrix(1,0,0,1,-313,-436)"></path>
+                    </svg>
+                    <span class="nReinstallPopup__rejectText"> Leggi di più </span>
+                </div>
+
+                <div class="nReinstallPopup__confirm" data-action="reject">
+                    <svg class="nReinstallPopup__confirmSvg" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                         width="192"
+                         height="42"
+                         viewBox="0 0 192 42">
+                        <defs id="SvgjsDefs1011">
+                            <clipPath id="SvgjsClipPath1014">
+                                <path id="SvgjsPath1013"
+                                      d="M615.746 436.345C572.501 437.913 523.51 430.149 517.735 453.88700000000006C511.961 477.62600000000003 540.552 476.40000000000003 597.077 475.75800000000004C653.602 475.11500000000007 710.506 473.74500000000006 707.922 458.386C705.3380000000001 443.026 679.231 434.04400000000004 615.746 436.345Z "
+                                      fill="#ffffff"></path>
+                            </clipPath>
+                        </defs>
+                        <path
+                            d="M615.746 436.345C572.501 437.913 523.51 430.149 517.735 453.88700000000006C511.961 477.62600000000003 540.552 476.40000000000003 597.077 475.75800000000004C653.602 475.11500000000007 710.506 473.74500000000006 707.922 458.386C705.3380000000001 443.026 679.231 434.04400000000004 615.746 436.345Z "
+                            fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter"
+                            stroke-linecap="butt"
+                            stroke-opacity="1" stroke="#ffd801" stroke-miterlimit="50" stroke-width="4"
+                            clip-path="url(&quot;#SvgjsClipPath1014&quot;)"
+                            transform="matrix(1,0,0,1,-517,-435)"></path>
+                    </svg>
+                    <span class="nReinstallPopup__rejectText">Non ricevere ads</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--N REINSTALL POPUP ENDS-->
+
+</div>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NRZN2LN');</script>
+<!-- End Google Tag Manager -->
+
+
+<noscript id="deferred-styles">
+    <link rel="stylesheet" type="text/css" href="../build/css/new-e6fd50c668.landing.css"/>
+</noscript>
+<script>
+    var loadDeferredStyles = function () {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement);
+        addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(function () {
+        window.setTimeout(loadDeferredStyles, 0);
+    });
+    else window.addEventListener('load', loadDeferredStyles);
+</script>
+
+<script async src="../build/js/app-4367160fd3.js"></script>
+
+</body>

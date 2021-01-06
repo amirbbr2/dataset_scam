@@ -1,0 +1,154 @@
+			@font-face {
+				font-family: 'iransans';
+				font-style: normal;
+				src: url('170401094530iransans.eot');
+				src: local('iransans'), url('170401094530iransans.eot') format('embedded-opentype'), url('170401094530iransans.woff') format('woff');
+			}
+            
+            .iransans{font-family: 'iransans' !important;}
+            
+						body, h1, h2, h3, h4, h5, h6, p, blockquote, li, a{
+					font-family: 'iransans' !important;
+				}
+						.ask-me .col-md-12 p input{
+					font-family: 'iransans' !important;
+				}
+						.header-search input{
+					font-family: 'iransans' !important;
+				}
+						.f_left{
+					font-family: 'iransans' !important;
+				}
+						.login-text, .subscribe-text, .button.small, input[type=\"submit\"], .question-favorite, .question-category, .question-author-meta, .question-date, .question-comment, .question-view, .question-points, .question-category a, .question-author-meta a, .question-comment a{
+					font-family: 'iransans' !important;
+				}
+						.form-style-3 .form-inputs p{
+					font-family: 'iransans' !important;
+				}
+						.grid_1200 .form-posts .form-style label, .grid_1200 .form-style-5.form-style label{
+					font-family: 'iransans' !important;
+				}
+						.single-question .question-desc{
+					font-family: 'iransans' !important;
+				}
+						.progressbar-title{
+					font-family: 'iransans' !important;
+				}
+						.login-panel{
+					font-family: 'iransans' !important;
+				}
+						.meta-date{
+					font-family: 'iransans' !important;
+				}
+						.comment-text .question-answered{
+					font-family: 'iransans' !important;
+				}
+						.question .question-answered-done, .user-question .question-answered-done i{
+					font-family: 'iransans' !important;
+				}
+						.styled-select select{
+					font-family: 'iransans' !important;
+				}
+						.wp-core-ui .button, .wp-core-ui .button-secondary{
+					font-family: 'iransans' !important;
+				}
+						.the-title{
+					font-family: 'iransans' !important;
+				}
+						#respond label{
+					font-family: 'iransans' !important;
+				}
+						#respond input{
+					font-family: 'iransans' !important;
+				}
+						#respond textarea{
+					font-family: 'iransans' !important;
+				}
+						.commentlist li .date{
+					font-family: 'iransans' !important;
+				}
+						.comment{
+					font-family: 'iransans' !important;
+				}
+						.explain-reported textarea{
+					font-family: 'iransans' !important;
+				}
+						.login-text{
+					font-family: 'iransans' !important;
+				}
+						.rememberme{
+					font-family: 'iransans' !important;
+				}
+						.form-style-3 label, .form-style-4 label{
+					font-family: 'iransans' !important;
+				}
+						.rememberme label{
+					font-family: 'iransans' !important;
+				}
+						.question-answered{
+					font-family: 'iransans' !important;
+				}
+						.btn-container btn-inline{
+					font-family: 'iransans' !important;
+				}
+						.row div[class*=col-lg-].align_center > .uncol > .uncoltable > .uncell > .uncont .btn, .row div[class*=col-lg-].align_center > .uncol > .uncoltable > .uncell > .uncont .btn-link{
+					font-family: 'iransans' !important;
+				}
+						.main-container .row-container .row-parent .single-internal-gutter .uncont > *{
+					font-family: 'iransans' !important;
+				}
+						.uncode-cart .uncode-cart-dropdown .wc-forward:first-child{
+					font-family: 'iransans' !important;
+				}
+						.uncode-cart .wc-forward.checkout{
+					font-family: 'iransans' !important;
+				}
+						.woocommerce .cart .button, .woocommerce .cart input.button{
+					font-family: 'iransans' !important;
+				}
+						.btn.checkout, .btn.checkout-button{
+					font-family: 'iransans' !important;
+				}
+						.woocommerce form.checkout_coupon p{
+					font-family: 'iransans' !important;
+				}
+						.button{
+					font-family: 'iransans' !important;
+				}
+						.style-light input[type=\"submit\"]{
+					font-family: 'iransans' !important;
+				}
+						.style-light input[type=\"button\"]{
+					font-family: 'iransans' !important;
+				}
+						.checkout_coupon{
+					font-family: 'iransans' !important;
+				}
+						.buttons-style, input[type=\"submit\"], input[type=\"reset\"], input[type=\"button\"], button[type=\"submit\"], .btn, .btn-link, .nav-tabs, .panel-title > a span, .search_footer, .wc-forward, .wc-forward a{
+					font-family: 'iransans' !important;
+				}
+						input[type=\"submit\"], input[type=\"reset\"], input[type=\"button\"], button[type=\"submit\"]{
+					font-family: 'iransans' !important;
+				}
+						.form-row{
+					font-family: 'iransans' !important;
+				}
+						.woocommerce-Button button{
+					font-family: 'iransans' !important;
+				}
+						.style-light input[type=\"submit\"]{
+					font-family: 'iransans' !important;
+				}
+						.style-light input{
+					font-family: 'iransans' !important;
+				}
+						.woocommerce #payment .place-order .btn, .woocommerce #payment .place-order input{
+					font-family: 'iransans' !important;
+				}
+						#h2, .h2{
+					font-family: 'iransans' !important;
+				}
+						.button, .f_left.language_selector ul li a.lang_sel_sel, .more, .qoute p, .widget ul li, blockquote, body, h1, h2, h3, h4, h5, h6, input, label, select, textarea{
+					font-family: 'iransans' !important;
+				}
+		

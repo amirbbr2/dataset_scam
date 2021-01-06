@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>World of Warships—massive naval clashes. Take command of legendary vessels from the early 20th century and fight for domination on the high seas.</title>
+    <meta name="description" content="World of Warships—massive naval clashes. Take command of some of the most iconic warships from the early 20th century and experience naval battles like never before.">
+
+
+    <link href="https://wows-landings-static.gcdn.co/glows-27628/src/libs/jquery.fullpage.min.css" rel="stylesheet" type="text/css">
+    <link href="https://wows-landings-static.gcdn.co/glows-27628/src/libs/aos.css" rel="stylesheet" type="text/css">
+    <link href="https://wows-landings-static.gcdn.co/glows-27628/src/styles/style.css?v=2" rel="stylesheet" type="text/css">
+
+    <link rel="icon" type="image/png" href="https://wows-landings-static.gcdn.co/glows-27628/src/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://wows-landings-static.gcdn.co/glows-27628/src/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://wows-landings-static.gcdn.co/glows-27628/src/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://wows-landings-static.gcdn.co/glows-27628/src/favicon/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://wows-landings-static.gcdn.co/glows-27628/src/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://wows-landings-static.gcdn.co/glows-27628/src/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://wows-landings-static.gcdn.co/glows-27628/src/favicon/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" href="https://wows-landings-static.gcdn.co/glows-27628/src/favicon/safari-pinned-16x16.svg" color="#474747">
+
+
+    <meta name="twitter:title" content="World of Warships">
+    <meta property="og:title" content="World of Warships"/>
+    <meta name="description" content="World of Warships—massive naval clashes. Take command of legendary vessels from the early 20th century and fight for domination on the high seas."/>
+    <meta name="twitter:description" content="World of Warships—massive naval clashes. Take command of legendary vessels from the early 20th century and fight for domination on the high seas.">
+    <meta property="og:description" content="World of Warships—massive naval clashes. Take command of legendary vessels from the early 20th century and fight for domination on the high seas."/>
+
+    <meta name="twitter:image" content="https://wows-landings-static.gcdn.co/glows-27628/src/images/wows_social.jpg">
+    <meta property="og:image" content="https://wows-landings-static.gcdn.co/glows-27628/src/images/wows_social.jpg"/>
+    <link rel="image_src" href="https://wows-landings-static.gcdn.co/glows-27628/src/images/wows_social.jpg"/>
+
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="HandheldFriendly" content="true"/>
+
+
+    <!--[if lt IE 9]>
+        <script src="https://wows-landings-static.gcdn.co/glows-27628/src/libs/html5shiv.min.js"></script>
+        <script src="https://wows-landings-static.gcdn.co/glows-27628/src/libs/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 9]>
+        <link href="https://wows-landings-static.gcdn.co/glows-27628/src/styles/ie.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40205758-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-40205758-4');
+    </script>
+    <!-- Global site tag end -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-58Z37MT');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58Z37MT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="stub" style="background-image: url('https://wows-landings-static.gcdn.co/glows-27628/src/images/bg_nologo.jpg');">
+
+
+        <div class="stub-container">
+            <div class="logo">
+                <img class="logo_image" src="https://wows-landings-static.gcdn.co/glows-27628/src/images/logo_wot.png" alt="World Of Warships">
+            </div>
+            <div class="stub-container__description">
+                <p class="stub-container__text">
+                    Oops, you are using an outdated browser. Please upgrade to a modern, fully supported version and open the landing page.
+                </p>
+            </div>
+            <div class="cta" data-hide-btn="0">
+                <a class="cta-button cta-button_big feedbackloopcta sid" href="https://wargaming.net/registration/?game=wows&login_form=enabled&bonus_mode=BOOM" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content" style="background-image: url('https://wows-landings-static.gcdn.co/glows-27628/src/images/bg_nologo.jpg');">
+        <div class="fullscreen-bg">
+            <video class="fullscreen-bg_video" poster="https://wows-landings-static.gcdn.co/glows-27628/src/images/bg_main.jpg" autoplay="autoplay" loop="loop" muted crossorigin="anonymous">
+                <source src="https://wows-landings-static.gcdn.co/glows-27628/src/video/video_bg_animation.webm" type="video/webm"/>
+                <source src="https://wows-landings-static.gcdn.co/glows-27628/src/video/video_bg_animation.ogv" type="video/ogg">
+                <source src="https://wows-landings-static.gcdn.co/glows-27628/src/video/video_bg_animation.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div id="fullpage" class="fullpage-wrapper js-fullpage-slider">
+            <div class="fullpage-slide" id="section1" data-anchor="main-screen">
+                <div class="legends-label aos-init" data-aos="fade-down" data-aos-delay="1300" data-aos-easing="ease" data-aos-duration="300" data-aos-offset="-500">
+                    <a href="https://redir.wargaming.net/2xzucehi/" class="legends-label_link">
+                        <img src="https://wows-landings-static.gcdn.co/glows-27628/src/images/wowsl_logo_for_video.png" alt="WOWS Legends">
+                    </a>
+                </div>
+                <div class="last-screen">
+
+                    <header class="screen-header">
+                        <div class="lang-switcher" id="languageSwitcher">
+                            <div class="lang-switcher__icon">
+                                    <svg data-v-30591d11="" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="language-button__globesvg">
+                                        <g data-v-30591d11="" class="language-button__globe">
+                                            <circle data-v-30591d11="" cx="9.5" cy="9.50006" r="8.6" stroke="white" stroke-width="1.8"></circle>
+                                            <line data-v-30591d11="" x1="1.11768" y1="12.0091" x2="17.8824" y2="12.0091" stroke="white" stroke-width="1.8">
+                                            </line>
+                                            <line data-v-30591d11="" x1="1.11768" y1="7.19076" x2="17.8824" y2="7.19076" stroke="white" stroke-width="1.8">
+                                            </line>
+                                            <path data-v-30591d11=""
+                                                d="M10.0363 1.11761C11.8705 3.36807 12.9794 6.29721 12.9794 9.49997C12.9794 12.7027 11.8705 15.6319 10.0363 17.8823"
+                                                stroke="white" stroke-width="1.8"></path>
+                                            <path data-v-30591d11=""
+                                                d="M8.9637 1.11761C7.12947 3.36807 6.02063 6.29721 6.02063 9.49997C6.02063 12.7027 7.12947 15.6319 8.9637 17.8823"
+                                                stroke="white" stroke-width="1.8"></path>
+                                        </g>
+                                    </svg>
+                            </div>
+                            <div class="lang-switcher__label">English (Europe)</div>
+                        </div>
+                    </header>
+
+                    <div class="last-screen-container">
+                        <div class="desktop-none-displayed aos-init" data-aos="fade-down" data-aos-delay="300"
+                            data-aos-easing="ease" data-aos-duration="500">
+                            <div class="logo">
+                                <img class="logo_image" src="https://wows-landings-static.gcdn.co/glows-27628/src/images/logo_wot.png" alt="World Of Warships">
+                            </div>
+                        </div>
+                        <div class="aos-init" data-aos="fade-down" data-aos-delay="600" data-aos-easing="ease"
+                            data-aos-duration="500">
+                            <div class="cta" data-hide-btn="0">
+                                <a class="cta-button cta-button_big feedbackloopcta sid"
+                                    href="https://wargaming.net/registration/?game=wows&login_form=enabled&bonus_mode=BOOM" target="_blank">
+                                    PLAY FOR FREE ON PC
+                                </a>
+                            </div>
+                        </div>
+
+                        <ul class="bonuses">
+                            <li class="bonuses__item">
+                                <div class="bonuses__item-image-wrapper">
+                                    <img src="https://wows-landings-static.gcdn.co/glows-27628/src/images/doubloons.png" alt="" class="bonuses__item-image">
+                                </div>
+                                <div class="bonuses__item-texts">
+                                    <span class="bonuses__item-title">
+                                        200
+                                    </span>
+                                    <span class="bonuses__item-subtitle">
+                                        Doubloons
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="bonuses__item">
+                                <div class="bonuses__item-image-wrapper">
+                                    <img src="https://wows-landings-static.gcdn.co/glows-27628/src/images/ship-luis.png" alt="" class="bonuses__item-image">
+                                </div>
+                                <div class="bonuses__item-texts">
+                                    <span class="bonuses__item-title">
+                                        ST. LOUIS
+                                    </span>
+                                    <span class="bonuses__item-subtitle">
+                                        AMERICAN CRUISER
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="bonuses__item">
+                                <div class="bonuses__item-image-wrapper">
+                                    <img src="https://wows-landings-static.gcdn.co/glows-27628/src/images/ship-emden.png" alt="" class="bonuses__item-image">
+                                </div>
+                                <div class="bonuses__item-texts">
+                                    <span class="bonuses__item-title">
+                                        EMDEN
+                                    </span>
+                                    <span class="bonuses__item-subtitle">
+                                        PREMIUM GERMAN CRUISER
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="bonuses__item">
+                                <div class="bonuses__item-image-wrapper">
+                                    <img src="https://wows-landings-static.gcdn.co/glows-27628/src/images/restless-fire.png" alt="" class="bonuses__item-image">
+                                </div>
+                                <div class="bonuses__item-texts">
+                                    <span class="bonuses__item-title">
+                                        20x CAMOUFLAGE
+                                    </span>
+                                    <span class="bonuses__item-subtitle">
+                                        RESTLESS FIRE
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="bonuses__item">
+                                <div class="bonuses__item-image-wrapper">
+                                    <img src="https://wows-landings-static.gcdn.co/glows-27628/src/images/credits.png" alt="" class="bonuses__item-image">
+                                </div>
+                                <div class="bonuses__item-texts">
+                                    <span class="bonuses__item-title">
+                                        2,5 MILLION
+                                    </span>
+                                    <span class="bonuses__item-subtitle">
+                                        CREDITS
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li class="bonuses__item">
+                                <div class="bonuses__item-image-wrapper">
+                                    <img src="https://wows-landings-static.gcdn.co/glows-27628/src/images/premium-7-days.png" alt="" class="bonuses__item-image">
+                                </div>
+                                <div class="bonuses__item-texts">
+                                    <span class="bonuses__item-title">
+                                        7 DAYS
+                                    </span>
+                                    <span class="bonuses__item-subtitle">
+                                        OF PREMIUM
+                                    </span>
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="fullpage-slide fp-auto-height " id="section2" data-anchor="footer">
+                <footer class="page-footer aos-init" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
+                    <div class="page-footer_container">
+                        <div class="flex-layout">
+                            <div class="flex-layout_cell column-70">
+
+                                <div class="flex-layout flex-layout__t footer-links">
+                                    <div class="flex-layout_fit">
+                                        <div class="logo-footer">
+                                            <a class="logo-footer_link"
+                                                href="http://wargaming.net/" target="_blank">
+                                                <img class="logo-footer_image logo-footer_image__desk" src="https://wows-landings-static.gcdn.co/glows-27628/src/images/footer-logo.png" alt="Wargaming">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <nav class="footer-nav">
+                                        <ul class="footer-nav_list">
+                                            <li class="footer-nav_item" data-hide="0">
+                                                <a class="footer-nav_link" href="https://eu.wargaming.net/support/en/products/wows/" target="_blank">PLAYER SUPPORT</a>
+                                            </li>
+                                            <li class="footer-nav_item" data-hide="0">
+                                                <a class="footer-nav_link" href="https://legal.eu.wargaming.net/en/eula/" target="_blank">LICENSE AGREEMENT</a>
+                                            </li>
+                                            <li class="footer-nav_item" data-hide="0">
+                                                <a class="footer-nav_link" href="https://legal.eu.wargaming.net/en/privacy-policy/" target="_blank">PRIVACY POLICY</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                </div>
+                                <div class="copyright-full">
+                                    <div class="copyright">
+                                        <p class="copyright_text">
+                                            © <span class="js-copyright_start-year">2012</span>–<span class="js-copyright_actual-year"></span> Wargaming.net. All rights reserved.
+                                        </p>
+                                    </div>
+                                    <p class="copyright-full_text">
+                                        References to specific designs, models, manufacturers, and/or modifications of ships and aircraft are used only for the purpose of historical consistency and do not assume any funding or other involvement in the project on the part of the holders of trademarks. Characteristics of all models are realistically reproduced on the basis of technical elements of warships and aircraft from the first half of the 20th century. All trademarks and trademark rights pertaining to warships and aircraft are proprietary to the respective rights holders.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex-layout_cell column-30">
+                                <div class="age-rating">
+                                    <ul class="age-rating_list">
+                                        <li class="age-rating_item" data-hide="0">
+                                            <a class="age-rating_link" href="http://www.pegi.info/" target="_blank">
+                                                <img class="age-rating_image" src="https://wows-landings-static.gcdn.co/glows-27628/src/images/esrb.png" alt="PEGI Age">
+                                            </a>
+                                        </li>
+                                        <li class="age-rating_item" data-hide="0">
+                                            <a class="age-rating_link" href="http://www.pegi.info/" target="_blank">
+                                                <img class="age-rating_image" src="https://wows-landings-static.gcdn.co/glows-27628/src/images/10_icon.png" alt="PEGI Violence">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-languages" id="modalLanguages">
+        <div class="modal-languages__outer" id="modalOuterArea">
+            <div class="modal-languages__content">
+                <button class="modal-languages__close" id="modalLanguagesClose">×</button>
+                <div class="modal-languages__realms-list">
+                    
+                    <div class="modal-languages__realm">
+                        <span class="modal-languages__realm-title">
+                            СНГ
+                        </span>
+                        <ul class="modal-languages__languages-list">
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/cis-ru/">
+                                    Русский
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/cis-uk/">
+                                    Український
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/cis-kk/">
+                                    Қазақ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="modal-languages__realm">
+                        <span class="modal-languages__realm-title">
+                            Europe
+                        </span>
+                        <ul class="modal-languages__languages-list">
+                            <li class="modal-languages__language-item modal-languages__language-item--active">
+                                <a class="modal-languages__language-link"
+                                href="/glows-27628/eu-en/">
+                                    English
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link"
+                                href="/glows-27628/eu-fr/">
+                                    Français
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-it/">
+                                    Italiano
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-de/">
+                                    Deutsch
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-pl/">
+                                    Polska
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-cs/">
+                                    Čeština
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-ro/">
+                                    Român
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-hu/">
+                                    Magyar
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-sr/" >
+                                    Srpski
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-hr/" >
+                                    Hrvatski
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-fi/" >
+                                    Suomi
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-da/" >
+                                    Dansk
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-es/" >
+                                    Español
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-bg/" >
+                                    Български
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-lt/" >
+                                    Lietùvių
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-pt/" >
+                                    Português
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-sv/" >
+                                    Svenska
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-nl/" >
+                                    Nederlands
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-el/" >
+                                    Ελληνικά
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-tr/" >
+                                    Türkçe
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-no/" >
+                                    Norsk
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-et/" >
+                                    Eestlane
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/eu-lv/" >
+                                    Latvietis
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-languages__realm">
+                        <span class="modal-languages__realm-title">
+                            North America
+                        </span>
+                        <ul class="modal-languages__languages-list">
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/na-en/">
+                                    English
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/na-es-ar/">
+                                    Español | Argentina
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/na-pt-br/">
+                                    Português | Brazil
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-languages__realm">
+                        <span class="modal-languages__realm-title">
+                            Asia
+                        </span>
+                        <ul class="modal-languages__languages-list">
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/asia-en/">
+                                    English
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/asia-ms/">
+                                    Melayu
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/asia-zh-tw/">
+                                    正體字
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/asia-ja/">
+                                    日本語
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/asia-ko/">
+                                    한국어
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/asia-fil/">
+                                    Filipino
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/asia-zh-sg/">
+                                    普通話
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/asia-th/">
+                                    ภาษาไทย
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/asia-id/">
+                                    Bahasa Indonesia
+                                </a>
+                            </li>
+                            <li class="modal-languages__language-item">
+                                <a class="modal-languages__language-link" 
+                                href="/glows-27628/asia-vi/">
+                                    Tiếng Việt
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>   
+
+    <script async src="https://tenor.wargaming.net/assets/campaigns/static/campaign_data_gtm_sender.js" id="campaign-data-gtm-sender" data-script="https://tenor.wargaming.net/assets/campaigns/static/campaign_data_gtm_sender.js" data-sid_api_url="https://tenor.wargaming.net/sid"></script>
+
+    
+    <script src="https://wows-landings-static.gcdn.co/glows-27628/src/libs/jquery.min.js"></script>
+    <script src="https://wows-landings-static.gcdn.co/glows-27628/src/libs/jquery.fullpage.js"></script>
+    <script src="https://wows-landings-static.gcdn.co/glows-27628/src/libs/aos.js"></script>
+    <script src="https://wows-landings-static.gcdn.co/glows-27628/src/scripts/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', initLanguageSwitcher);
+
+        function initLanguageSwitcher (event) {
+           var languageSwitcher = document.getElementById('languageSwitcher');
+           languageSwitcher.addEventListener('click', openModalLanguages);
+
+        }
+
+        function openModalLanguages(event) {
+            var modalLanguages = document.getElementById('modalLanguages');
+            modalLanguages.classList.add('modal-languages--active', 'modal-languages--showing'); //showing - 0.3s
+            setTimeout( function () {
+                modalLanguages.classList.remove('modal-languages--showing');
+            } , 300);
+
+
+
+
+            var modalLanguagesCloseBtn = document.getElementById('modalLanguagesClose');
+            modalLanguagesCloseBtn.addEventListener('click', closeModalLanguages);
+
+            var languageModalArea = document.getElementById('modalOuterArea');
+            languageModalArea.addEventListener('click', function(event) {
+                if (event.target == this) {
+                    closeModalLanguages();
+                }
+            });
+
+            document.addEventListener('keydown', function(event) {
+                if (event.code == 'Escape') {
+                    closeModalLanguages();
+                }
+            });
+        }
+
+        function closeModalLanguages(event) {
+            modalLanguages.classList.add('modal-languages--hiding');
+            setTimeout( function () {
+                modalLanguages.classList.remove('modal-languages--active', 'modal-languages--hiding');
+            } , 300);
+        }
+    </script>
+</body>
+
+</html>

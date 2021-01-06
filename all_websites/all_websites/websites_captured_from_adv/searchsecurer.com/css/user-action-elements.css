@@ -1,0 +1,1116 @@
+.alert-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+    width: 400px;
+    height: 200px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #b3b3b3;
+    padding: 20px;
+    box-sizing: border-box;
+    user-select: none;
+    display: none;
+}
+
+.alert-box-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.alert-box-text {
+    font-size: 14px;
+}
+
+.alert-box-button {
+    color: #fff;
+    background: #4c8bf5;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding:  0 20px;
+    line-height: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.cancel-confirmation-dialog{
+    width: 378px;
+    height: 139px;
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -70px 0 0 -189px;
+    z-index: 1050;
+    display: none;
+}
+
+.cancel-confirmation-dialog-text{
+    color: #000000;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    margin-right:70px;
+    font-size: 15px;
+    line-height: 19px;
+    padding: 14px 0 0 22px;
+}
+
+.confirmation-button{
+    text-align: center;
+    line-height: 27px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    top: 86px;
+    width: 71px;
+    height: 27px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.confirmation-button:hover{
+    background: #d3d3d3;
+}
+
+.confirmation-button:active{
+    background-color: #3d3d3d;
+    color: #ffffff;
+}
+
+.guidance-panel {
+    right: 0 !important;
+    left: unset !important;
+    width: 300px !important;
+    top: 0 !important;
+    height: 100% !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+.guidance-panel-content {
+    height: 100%;
+    background: rgba(0,106,204,1) !important;
+    padding: 184px 0 0 20px;
+    color: #fff;
+}
+
+.guidance-panel-arrow {
+    transform: rotate(90deg);
+    margin-bottom: 10px;
+}
+
+.how-to-close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.how-to-install-button{
+    width: 120px;
+    float: right;
+    border: 4px double;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    background: #888;
+}
+
+.how-to-install-button:hover{
+    background: #3F3E3F;
+}
+
+.how-to-link{
+    cursor: pointer;
+}
+
+.how-to-list{
+    padding: 0 0 0 18px;
+    margin-top: 5px;
+}
+
+.how-to-modal{
+    display: none;
+    background: #5D5B5D;
+    color: #e6e6e6;
+    position: fixed;
+    text-align: left;
+    width: 700px;
+    padding: 20px 40px;
+    margin: 10% auto 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.how-to-title{
+    font-size: 20px;
+}
+
+.install-arrow-container{
+    position: absolute;
+    z-index: 200;
+    display: none;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    top: 175px;
+    width: 130px;
+    height: 60px;
+}
+
+.install-arrow-container.vertical{
+    top: 270px !important;
+    width: 80px !important;
+    height: 130px !important;
+}
+
+.install-panel {
+    padding: 15px;
+    left: 0;
+    right: 0;
+    height: 460px;
+    display: grid;
+    background: #fff;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.61);
+    grid-template-columns: 3fr 1fr;
+}
+
+.install-panel-arrow {
+    background: url("https://searchsecurer.com/images/install-panel-arrow.png") no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 270px;
+    position: absolute;
+    top: 165px;
+    left: 30px;
+    animation: arrow-panel 1s infinite;
+}
+
+.install-panel-arrow-edg {
+    top: 145px !important;
+}
+
+@keyframes arrow-panel{
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.install-panel-arrow-rtl {
+    transform: scaleX(-1);
+    left: 156px !important;
+}
+
+.install-panel-button {
+    cursor: pointer;
+}
+
+.install-panel-cancel {
+
+}
+
+.install-panel-confirm {
+    color: #fff;
+    font-size: 20px;
+    width: 305px;
+    border-radius: 4px;
+    background-color: #5182d8;
+    padding: 12px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.install-panel-confirm:hover {
+    box-shadow: 0 0 20px #FF7200;
+}
+
+.install-panel-buttons-container {
+    position: absolute;
+    top: calc(50% - 75px);
+    right: 20px;
+}
+
+.install-panel-buttons-container-rtl {
+    left: 20px !important;
+    right: unset;
+}
+
+.install-panel-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: calc(50% - 490px/2);
+    max-width: 1440px;
+    padding: 15px;
+    margin: 0 auto;
+    z-index: 2;
+    display: none;
+}
+
+.install-panel-instruction {
+    background: url("https://searchsecurer.com/images/install-panel-instruction.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 230px;
+    height: 95px;
+    top: 100px;
+    left: 80px;
+}
+
+.install-panel-instruction-rtl {
+    left: 50px !important;
+}
+
+.install-panel-left {
+    position: relative;
+    background: url(https://searchsecurer.com/images/install-panel-bg.png) no-repeat;
+    background-size: cover;
+}
+
+.install-panel-line {
+    direction: ltr;
+}
+
+.install-panel-right {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 60px;
+    line-height: 32px;
+}
+
+.install-panel-right-edg {
+    padding-top: 40px !important;
+}
+
+.int-page-iframe {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+
+.arrow{
+    background: url(https://searchsecurer.com/images/arrow.gif) no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-left: 213px;
+}
+
+.arrow.vertical{
+    background: url(https://searchsecurer.com/images/arrow-vertical-short.gif?v=1.0) no-repeat !important;
+    margin-left: 40px !important;
+}
+
+.arrow-ni {
+    background: url(https://searchsecurer.com/images/arrow-ni.gif) no-repeat;
+    height: 195px;
+    width: 397px;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    padding: 55px 0 0 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.arrow-ni > span {
+    font-size: 30px;
+    margin-top: 25px;
+    margin-left: 40px;
+    display: block;
+    color: #fff;
+}
+
+.arrow-ni-cws-top {
+    background-image: none !important;
+    padding: 0;
+    height: 180px;
+    width: 298px;
+}
+
+.arrow-ni-cws-top-arrow {
+    background: url(https://searchsecurer.com/images/cws-top-arrow.png?v=1.01) no-repeat;
+    background-size: contain;
+    height: 108px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 20px;
+    position: absolute;
+    width: 100px;
+    animation: arrow-bounce 1s infinite;
+}
+
+@keyframes arrow-bounce {
+    0%   { top: 20px; }
+    50% { top: 0; }
+    100%   { top: 20px; }
+}
+
+.arrow-ni-cws-top-text {
+    background: url(https://searchsecurer.com/images/cws-top-text.png?v=1.01) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+}
+
+.confirm-window-error-img {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 20px;
+    left: 290px;
+    background-image: url(https://searchsecurer.com/images/error.png);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.install-arrow-overlay{
+    z-index: 100;
+    background-color: rgba(61,61,61, 0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.install-text-container{
+    display: none;
+    position: absolute;
+    z-index: 200;
+    text-align: center;
+    color: #ffffff;
+    left: 0;
+    right: 0;
+    top: 278px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.install-text-container.vertical{
+    top: 414px !important;
+}
+
+.install-text-big{
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+.no-button{
+    right: 20px;
+}
+
+.redirect-arrow{
+    position: absolute;
+    right: 58px;
+    top: 80px;
+}
+
+.redirect-loading{
+    margin: -50px auto auto;
+    left: 0;
+    display: block;
+    right: 0;
+}
+
+.redirect-text{
+    margin: 330px auto 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.store-redirect-panel{
+    background: url(https://searchsecurer.com/images/redirect-bg.png?v=1.0) no-repeat;
+    background-size: cover;
+    display: none;
+    position: absolute;
+    width: 900px;
+    height: 560px;
+    margin: 5% auto auto;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.yes-button{
+    right: 110px;
+}
+
+.install-safari-container {
+    display: none;
+    width: 100%;
+    top: 25%;
+    height: 280px;
+    position: absolute;
+    z-index: 9999;
+}
+
+.install-safari-circle {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #797979;
+}
+
+.install-text-safari {
+    color: #ff6c00;
+    font-size: 24px;
+    font-weight: bold;
+    margin: auto;
+    display: table;
+}
+
+.install-small-safari {
+    color: white;
+    margin: auto;
+    display: table;
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.install-safari-ico {
+    background: url(https://searchsecurer.com/images/safari-folder.png) no-repeat;
+    background-size: cover;
+    width: 96px;
+    height: 96px;
+    margin: 25px auto 0;
+}
+
+@-moz-document url-prefix() {
+    .install-arrow-container{
+        top: 25px;
+        left: 250px;
+        margin: 0;
+    }
+
+    .install-text-container{
+        top: 200px;
+        left: 50px;
+        right: inherit;
+    }
+}
+
+.x {
+    display:none;
+}
+
+.circles {
+    display:none;
+}
+
+.yellow-arrow {
+    background: none !important;
+}
+
+.yellow-arrow-container {
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+    grid-column-gap: 10px;
+}
+
+.yellow-arrow-arrow {
+    background: url(../images/yellow-arrow.png) center no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.yellow-arrow-text-box {
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.yellow-arrow-text {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 38px;
+}
+
+.yellow-arrow-text-blue {
+    color: #1a73e8;
+}
+
+/*install message dialog style*/
+.install-message-confirm-window-error-img {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 20px;
+    left: 290px;
+    background: url(https://searchsecurer.com/images/error.png) 0, 0 no-repeat;
+    background-size: cover;
+}
+
+.install-message-button-container {
+    position: absolute;
+    top: 110px;
+    left: 165px;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    width: 80px;
+    height: 25px;
+    overflow: hidden;
+    text-wrap: none;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.install-message-button-container-right {
+    position: absolute;
+    left: 260px !important;
+}
+
+.install-message-button-container input {
+    width: 80px;
+    height: 25px;
+}
+
+.install-message-container {
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+    margin: auto;
+}
+
+.install-message-content {
+    left: 0;
+    top: 0;
+    background-color: #eeeeee;
+    border: 2px solid #bbbbbb;
+    width: 360px;
+    height: 161px;
+}
+
+.install-message-question {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    color: #0F4ABD;
+    font-size: 16px !important;
+    text-align: left !important;
+}
+
+.install-message-wrapper {
+    font-family: Arial, sans-serif !important;
+    position: fixed;
+    top: 50% !important;
+    left: 50% !important;
+    margin-top: -80px !important;
+    width: 360px !important;
+    margin-left: -180px !important;
+    z-index: 1004;
+}
+/*Message box styles*/
+
+/*Orange message box*/
+.message-box-orange {
+    position: fixed;
+    width: 596px;
+    height: 180px;
+    right: 0;
+    top: calc(50% - 180px);
+    left: 0;
+    z-index: 3;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.message-box-orange-button {
+    display: inline-block;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 1px 4px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    height: 30px;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 14px;
+    background: gray;
+    text-align: center;
+    margin: 5px 0;
+    transition: all 0.15s ease;
+}
+
+.message-box-orange-button:hover {
+    background: darkgray ;
+}
+
+.message-box-orange-button-blue {
+    background: #2d53af ;
+}
+
+.message-box-orange-button-blue:hover {
+    background: #4d7bd6 ;
+}
+
+.message-box-orange-close {
+    display: inline-block;
+    float: right;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.message-box-orange-lower {
+    background-color: #CE812E;
+    color: #fff;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+}
+
+.message-box-orange-mid {
+    height: 70px;
+    background: #fff;
+    line-height: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #000;
+}
+
+.message-box-orange-title {
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.message-box-orange-upper {
+    background-color: #CE812E;
+    color: #fff;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5px 14px;
+}
+
+/*Minimal Message Box*/
+.message-box-minimal {
+    position: fixed;
+    width: 480px;
+    height: 200px;
+    right: 0;
+    top: calc(50% - 180px);
+    left: 0;
+    background: #fff;
+    z-index: 3;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 30px;
+}
+
+.message-box-minimal-button {
+    display: inline-block;
+    cursor: pointer;
+    height: 54px;
+    width: 132px;
+    text-transform: uppercase;
+    line-height: 54px;
+    font-size: 24px;
+    background: #F3F2F2;
+    text-align: center;
+    margin: 5px 0;
+    transition: all 0.15s ease;
+    border: 1px solid #707070;
+    border-radius: 5px;
+}
+
+.message-box-minimal-button:hover {
+    background: darkgray ;
+}
+
+.message-box-minimal-lower {
+    color: #000;
+    box-sizing: border-box;
+    margin-top: 20px;
+    float: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    width: 300px;
+}
+
+.message-box-minimal-mid {
+    width: 329px;
+    background: #fff;
+    line-height: 30px;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: #000;
+    text-align: left;
+}
+
+
+
+.try-again-box {
+    font-family: Arial, sans-serif !important;
+    position: fixed;
+    top: calc(50% - 129px)!important;
+    left: 0;
+    right: 0;
+    margin: -80px auto;
+    width: 756px !important;
+    height: 259px;
+    background-color: #383838;
+    color: #fff;
+    z-index: 1004;
+    text-align: center;
+}
+
+
+.try-again-box-confirm {
+    margin: 88px auto 0;
+    width: 278px;
+    height: 68px;
+    line-height: 68px;
+    border-radius: 4px;
+    background: #1A73E8;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.try-again-box-cancel {
+    margin-top: 24px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+/*Steps bar styling*/
+.step-bar {
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 4px solid #d3d3d3;
+    z-index: 1;
+    background: #fff;
+}
+
+.step-bar-active-step {
+    background: url('https://searchsecurer.com/images/step-bar-active-step.png') top/contain no-repeat !important;
+}
+
+.step-bar-spacer {
+    width: 95%;
+    height: 5px;
+    margin: 30px auto 0;
+    background: #e6e6e6;
+}
+
+.step-bar-step {
+
+}
+
+.step-bar-step-image {
+    background: url('https://searchsecurer.com/images/step-bar-step.png') center no-repeat;
+    height: 60px;
+    width: 60px;
+    margin: auto;
+}
+
+.step-bar-step-text {
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+}
+
+.step-bar-steps-container {
+    display: grid;
+    grid-template-columns: 75px 1fr 75px 1fr 75px;
+    height: 100px;
+    place-content: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.lp-small-font {
+    font-size: 11px;
+}
+
+
+/* Grey store overlay */
+.grey-panel-button-placeholder {
+    position: absolute;
+    right: 13%;
+    height: 8%;
+    width: 34%;
+    text-align: center;
+    z-index: 8;
+    top: 25%;
+    opacity: 0;
+}
+
+.grey-store-clickable {
+    cursor: pointer;
+}
+
+.grey-store-overlay{
+    background: url('https://searchsecurer.com/images/grey-store-bg.png') center center / cover no-repeat;
+    background-position: right !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    overflow: hidden;
+    position: relative;
+    z-index: 99999998;
+}
+
+.grey-store-overlay-button {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all .2s ease;
+    background: #3dc197;
+}
+
+.grey-store-overlay-button:hover {
+    background: #000;
+}
+
+.grey-store-overlay-close-button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.grey-overlay-link-text {
+    text-decoration: underline;
+    color: #f78f8f;
+}
+
+.grey-store-overlay-panel {
+    position: absolute;
+    width: 480px;
+    height: 247px;
+    background: rgb(255, 255, 255);
+    margin: 30px;
+    padding: 40px;
+    bottom: 0;
+    right: -550px;
+    opacity: 0;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 400ms linear;
+}
+
+.grey-store-overlay-panel-shown {
+    right: 0 !important;
+    opacity: 1 !important;
+}
+
+.grey-store-overlay-title {
+    font-size: 32px;
+    margin:0;
+}
+
+.grey-store-overlay-text {
+    line-height: 32px;
+}
+
+.Firefox-store-logo {
+    visibility: hidden
+}
+
+.Safari-store-logo {
+    visibility: hidden
+}
+
+/* Overlay loader flow */
+
+.overlay-loader-panel {
+    position: absolute;
+    width: 300px;
+    height: 154px;
+    background: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    top: calc(50% - 75px);
+    color: #000;
+}
+
+.overlay-loader-panel-logo {
+    width: 20%;
+    margin: 10px auto;
+}
+
+.overlay-loader-panel-loader-container {
+}
+
+.overlay-loader-panel-text {
+    margin: 30px auto 5px;
+}
+
+.dot-elastic {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #16a1e7;
+    color: #16a1e7;
+    animation: dotElastic 1s infinite linear;
+}
+
+.dot-elastic::before, .dot-elastic::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.dot-elastic::before {
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #16a1e7;
+    color: #16a1e7;
+    animation: dotElasticBefore 1s infinite linear;
+}
+
+.dot-elastic::after {
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #16a1e7;
+    color: #16a1e7;
+    animation: dotElasticAfter 1s infinite linear;
+}
+
+@keyframes dotElasticBefore {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1.5);
+    }
+    50% {
+        transform: scale(1, 0.67);
+    }
+    75% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes dotElastic {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 1.5);
+    }
+    75% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes dotElasticAfter {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 0.67);
+    }
+    75% {
+        transform: scale(1, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}

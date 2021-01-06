@@ -1,0 +1,31 @@
+body {
+    background-color: #131526;
+    color: #FFF;
+}
+
+a {
+    color: #FFF;
+}
+
+
+.btn-primary {
+    font-size: 50px;
+}
+
+.call-action, .margin-top{
+    margin-top: 30px;
+}
+
+.margin-top-big {
+    margin-top: 100px;
+}
+
+.screenshot img {
+    border: solid 1px #1315265c;
+    border-radius: 10px;
+}
+
+
+
+
+

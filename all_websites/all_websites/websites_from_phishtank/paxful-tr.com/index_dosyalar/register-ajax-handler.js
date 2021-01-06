@@ -1,0 +1,2 @@
+(function($){$.ajaxSetup({headers:{'X-CSRF-TOKEN':$('meta[name=_token]').attr("content"),}});$(document).ready($(document).ajaxComplete(function(event,xhr){if(xhr.status===503){window.location.reload();}
+else if(xhr.status===403){var data=JSON.parse(xhr.responseText);if(data.type==='csrf_expired'){alert(data.message);}}}));})(jQuery);

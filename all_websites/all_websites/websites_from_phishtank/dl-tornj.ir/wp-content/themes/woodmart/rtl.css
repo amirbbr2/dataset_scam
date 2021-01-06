@@ -1,0 +1,1049 @@
+/**
+*
+*	Name:			IRAN Sans-Serif Font
+*	Version:		5.0
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Dec 25, 2012
+*	Updated on:		Sep 01, 2017
+*	Website:		             http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+ŁŁŁ†ŲŖ Ł‡Ų§Ū Ų§ŪŲ±Ų§Ł† Ų³Ł† Ų³Ų±ŪŁ ŪŚ© Ł†Ų±Ł… Ų§ŁŲ²Ų§Ų± Ł…Ų§Ł„Ś©ŪŲŖŪ Ł…Ų­Ų³ŁŲØ Ł…Ū Ų´ŁŲÆ. Ų¬Ł‡ŲŖ Ų¢ŚÆŲ§Ł‡Ū Ų§Ų² Ł‚ŁŲ§Ł†ŪŁ† Ų§Ų³ŲŖŁŲ§ŲÆŁ‡ Ų§Ų² Ų§ŪŁ† ŁŁŁ†ŲŖ Ł‡Ų§ Ł„Ų·ŁŲ§ ŲØŁ‡ ŁŲØ Ų³Ų§ŪŲŖ (ŁŁŁ†ŲŖ Ų§ŪŲ±Ų§Ł† ŲÆŲ§ŲŖ Ś©Ų§Ł…) Ł…Ų±Ų§Ų¬Ų¹Ł‡ Ł†Ł…Ų§ŪŪŲÆ
+--------------------------------------------------------------------------------------
+IRAN Sans-serif fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com 
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+--------------------------------------------------------------------------------------
+*	
+**/
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 900;
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum)_Black.eot');
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum)_Black.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum)_Bold.eot');
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum)_Bold.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 500;
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum)_Medium.eot');
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum)_Medium.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum)_Light.eot');
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum)_Light.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum)_UltraLight.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum).eot');
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/eot/IRANSansWeb(FaNum).eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/woff/IRANSansWeb(FaNum).woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSans/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: bold;
+	src: url('font/iranyekannum/eot/iranyekanwebboldfanum.eot');
+	src: url('font/iranyekannum/eot/iranyekanwebboldfanum.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/iranyekannum/woff/iranyekanwebboldfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/iranyekannum/ttf/iranyekanwebboldfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 100;
+	src: url('font/iranyekannum/eot/iranyekanwebthinfanum.eot');
+	src: url('font/iranyekannum/eot/iranyekanwebthinfanum.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/iranyekannum/woff/iranyekanwebthinfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/iranyekannum/ttf/iranyekanwebthinfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 300;
+	src: url('font/iranyekannum/eot/iranyekanweblightfanum.eot');
+	src: url('font/iranyekannum/eot/iranyekanweblightfanum.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/iranyekannum/woff/iranyekanweblightfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/iranyekannum/ttf/iranyekanweblightfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('font/iranyekannum/eot/iranyekanwebregularfanum.eot');
+	src: url('font/iranyekannum/eot/iranyekanwebregularfanum.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/iranyekannum/woff/iranyekanwebregularfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/iranyekannum/ttf/iranyekanwebregularfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 500;
+	src: url('font/iranyekannum/eot/iranyekanwebmediumfanum.eot');
+	src: url('font/iranyekannum/eot/iranyekanwebmediumfanum.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/iranyekannum/woff/iranyekanwebmediumfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/iranyekannum/ttf/iranyekanwebmediumfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 800;
+	src: url('font/iranyekannum/eot/iranyekanwebextraboldfanum.eot');
+	src: url('font/iranyekannum/eot/iranyekanwebextraboldfanum.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/iranyekannum/woff/iranyekanwebextraboldfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/iranyekannum/ttf/iranyekanwebextraboldfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 900;
+	src: url('font/iranyekannum/eot/iranyekanwebblackfanum.eot');
+	src: url('font/iranyekannum/eot/iranyekanwebblackfanum.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/iranyekannum/woff/iranyekanwebblackfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/iranyekannum/ttf/iranyekanwebblackfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 950;
+	src: url('font/iranyekannum/eot/iranyekanwebextrablackfanum.eot');
+	src: url('font/iranyekannum/eot/iranyekanwebextrablackfanum.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/iranyekannum/woff/iranyekanwebextrablackfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/iranyekannum/ttf/iranyekanwebextrablackfanum.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: irsans;
+  src: url(https://dl-tornj.ir/wp-content/themes/woodmart/fonts/IRANSansWeb_Light.woff);
+}	
+
+
+
+
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 10;
+	src: url('font/dana/eot/dana-thin.eot');
+	src: url('font/dana/eot/dana-thin.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-thin.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-thin.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 200;
+	src: url('font/dana/eot/dana-extralight.eot');
+	src: url('font/dana/eot/dana-extralight.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-extralight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-extralight.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 300;
+	src: url('font/dana/eot/dana-light.eot');
+	src: url('font/dana/eot/dana-light.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-light.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 500;
+	src: url('font/dana/eot/dana-medium.eot');
+	src: url('font/dana/eot/dana-medium.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-medium.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 600;
+	src: url('font/dana/eot/dana-demibold.eot');
+	src: url('font/dana/eot/dana-demibold.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-demibold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-demibold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 750;
+	src: url('font/dana/eot/dana-ultrabold.eot');
+	src: url('font/dana/eot/dana-ultrabold.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-ultrabold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-ultrabold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 800;
+	src: url('font/dana/eot/dana-extrabold.eot');
+	src: url('font/dana/eot/dana-extrabold.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-extrabold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-extrabold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: 900;
+	src: url('font/dana/eot/dana-black.eot');
+	src: url('font/dana/eot/dana-black.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-black.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: bold;
+	src: url('font/dana/eot/dana-bold.eot');
+	src: url('font/dana/eot/dana-bold.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: normal;
+	font-weight: normal;
+	src: url('font/dana/eot/dana-regular.eot');
+	src: url('font/dana/eot/dana-regular.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+
+@font-face {
+	font-family: iransansdn;
+	font-style: normal;
+	font-weight: bold;
+	src: url('font/IRANSansDN/eot/iransansdnbold.eot');
+	src: url('font/IRANSansDN/eot/iransansdnbold.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/IRANSansDN/woff2/iransansdnbold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/IRANSansDN/woff/iransansdnbold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/IRANSansDN/ttf/iransansdnbold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iransansdn;
+	font-style: normal;
+	font-weight: 300;
+	src: url('font/IRANSansDN/eot/iransansdnlight.eot');
+	src: url('font/IRANSansDN/eot/iransansdnlight.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/IRANSansDN/woff2/iransansdnlight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/IRANSansDN/woff/iransansdnlight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/IRANSansDN/ttf/iransansdnlight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iransansdn;
+	font-style: normal;
+	font-weight: normal;
+	src: url('font/IRANSansDN/eot/iransansdn.eot');
+	src: url('font/IRANSansDN/eot/iransansdn.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/IRANSansDN/woff2/iransansdn.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/IRANSansDN/woff/iransansdn.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/IRANSansDN/ttf/iransansdn.ttf') format('truetype');
+}
+
+
+
+/**
+Iranic fonts	
+**/
+
+
+@font-face {
+	font-family: dana;
+	font-style: italic;
+	font-weight: 10;
+	src: url('font/dana/eot/dana-thinitalic.eot');
+	src: url('font/dana/eot/dana-thinitalic.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-thinitalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-thinitalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: italic;
+	font-weight: 200;
+	src: url('font/dana/eot/dana-extralightitalic.eot');
+	src: url('font/dana/eot/dana-extralightitalic.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-extralightitalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-extralightitalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: italic;
+	font-weight: 300;
+	src: url('font/dana/eot/dana-lightitalic.eot');
+	src: url('font/dana/eot/dana-lightitalic.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-lightitalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-lightitalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: italic;
+	font-weight: 500;
+	src: url('font/dana/eot/dana-mediumitalic.eot');
+	src: url('font/dana/eot/dana-mediumitalic.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-mediumitalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-mediumitalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: italic;
+	font-weight: 600;
+	src: url('font/dana/eot/dana-demibolditalic.eot');
+	src: url('font/dana/eot/dana-demibolditalic.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-demibolditalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-demibolditalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: italic;
+	font-weight: 750;
+	src: url('font/dana/eot/dana-ultrabolditalic.eot');
+	src: url('font/dana/eot/dana-ultrabolditalic.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-ultrabolditalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-ultrabolditalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: italic;
+	font-weight: 800;
+	src: url('font/dana/eot/dana-extrabolditalic.eot');
+	src: url('font/dana/eot/dana-extrabolditalic.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-extrabolditalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-extrabolditalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: italic;
+	font-weight: 900;
+	src: url('font/dana/eot/dana-blackitalic.eot');
+	src: url('font/dana/eot/dana-blackitalic.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-blackitalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-blackitalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: italic;
+	font-weight: bold;
+	src: url('font/dana/eot/dana-bolditalic.eot');
+	src: url('font/dana/eot/dana-bolditalic.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-bolditalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-bolditalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: dana;
+	font-style: italic;
+	font-weight: normal;
+	src: url('font/dana/eot/dana-regularitalic.eot');
+	src: url('font/dana/eot/dana-regularitalic.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/dana/woff2/dana-regularitalic.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/dana/woff/dana-regularitalic.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+@font-face {
+	font-family: iransharp;
+	font-style: normal;
+	font-weight: bold;
+	src: url('https://dl-tornj.ir/wp-content/themes/woodmart/font/IRANSharp/eot/iranyekanwebbold.eot');
+	src: url('font/IRANSharp/eot/iransharp_bold_web.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/IRANSharp/woff2/iransharp_bold_web.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/IRANSharp/woff/iransharp_bold_web.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/IRANSharp/ttf/iransharp_bold_web.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iransharp;
+	font-style: normal;
+	font-weight: 300;
+	src: url('font/IRANSharp/eot/iransharp_light_web.eot');
+	src: url('font/IRANSharp/eot/iransharp_light_web.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/IRANSharp/woff2/iransharp_light_web.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/IRANSharp/woff/iransharp_light_web.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/IRANSharp/ttf/iransharp_light_web.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iransharp;
+	font-style: normal;
+	font-weight: normal;
+	src: url('font/IRANSharp/eot/iransharp_regular_web.eot');
+	src: url('font/IRANSharp/eot/iransharp_regular_web.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/IRANSharp/woff2/iransharp_regular_web.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/IRANSharp/woff/iransharp_regular_web.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('font/IRANSharp/ttf/iransharp_regular_web.ttf') format('truetype');
+}
+@font-face {
+  font-family: aviny;
+  src: url(font/aviny/aviny.woff);
+}
+
+
+@font-face {
+  font-family: KalamehWeb;
+  src: url(font/KalamehWeb/woff/KalamehWeb_Black.woff);
+}
+
+
+@font-face {
+	font-family: mahboubeh_mehravar;
+	font-style: normal;
+	font-weight: 500;
+	src: url('font/mehravar/eot/mahboubeh_mehravar.eot');
+	src: url('font/mehravar/eot/mahboubeh_mehravar.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/mehravar/woff2/mahboubeh_mehravar.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/mehravar/woff/mahboubeh_mehravar.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/mehravar/ttf/mahboubeh_mehravar.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Anjoman;
+	font-style: normal;
+	font-weight: normal;
+	src: url('font/Anjoman/eot/Anjoman-FaNum-Regular.eot');
+	src: url('font/Anjoman/eot/Anjoman-FaNum-Regular.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/Anjoman/woff2/Anjoman-FaNum-Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/Anjoman/woff/Anjoman-FaNum-Regular.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: Anjoman;
+	font-style: normal;
+	font-weight: bold;
+	src: url('font/Anjoman/eot/Anjoman-FaNum-Bold.eot');
+	src: url('font/Anjoman/eot/Anjoman-FaNum-Bold.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/Anjoman/woff2/Anjoman-FaNum-Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('font/Anjoman/woff/Anjoman-FaNum-Bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+@font-face {
+	font-family: Anjoman;
+	font-style: normal;
+	font-weight: 300;
+	src: url('font/Anjoman/eot/Anjoman-FaNum-Light.eot');
+	src: url('font/Anjoman/eot/Anjoman-FaNum-Light.eot?') format('embedded-opentype'),  /* IE6-8 */
+		 url('font/Anjoman/woff2/Anjoman-FaNum-Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('https://dl-tornj.ir/wp-content/themes/woodmart/font/Anjoman/woff/Anjoman-FaNum-Light.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
+
+	
+html {
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.cart-empty:before,.cart-widget-side .widget_shopping_cart .empty:before
+{
+   
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+
+.woodmart-navigation.menu-left {
+    text-align: right;
+}
+.masonry-filter li a, .navigation-style-underline .nav-link-text, .woodmart-products-tabs.tabs-design-alt .products-tabs-title .tab-label, .woodmart-products-tabs.tabs-design-default .products-tabs-title .tab-label, .wpb-js-composer .vc_tta.vc_general.vc_tta-style-classic.vc_tta-tabs .vc_tta-tab .vc_tta-title-text {
+    position: relative;
+    display: inline-block;
+    padding-top: 1px;
+    padding-bottom: 1px;
+ 
+}
+.main-nav-style, .menu-opener, .categories-menu-dropdown .item-level-0 > a, .woodmart-burger-icon .woodmart-burger-label, .woodmart-wishlist-info-widget .wishlist-label, .woodmart-wishlist-info-widget .wishlist-count, .woodmart-shopping-cart .woodmart-cart-totals, .woodmart-header-links .item-level-0 > a, .main-nav .item-level-0 > a, .whb-secondary-menu .item-level-0 > a, .full-screen-nav .item-level-0 > a {
+    font-size: 13px;
+  
+}
+
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    font-weight: 700;
+}
+.product-image-summary .in-stock, .variations_form .in-stock, .wishlist_table tr td.product-stock-status span.wishlist-in-stock, .woodmart-sticky-btn .in-stock {
+    margin-bottom: 20px;
+}
+.product-image-summary .summary-inner>.price, .product-image-summary .woodmart-scroll-content>.price {
+    margin-bottom: 20px;
+}
+.menu-mega-dropdown .sub-menu>li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 220px;
+    flex: 0 0 200px;
+    max-width: 220px;
+    padding-left: 15px;
+    padding-right: 40px;
+    margin-bottom: 25px;
+}
+
+
+.wpb-js-composer .vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-right .vc_tta-controls-icon {
+    left: 20px;
+}
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel.vc_active .vc_tta-panel-title>a {
+    color: ¦666;
+    text-align: right;
+}
+.wpb-js-composer .vc_tta.vc_general.vc_tta-style-classic.vc_tta-accordion .vc_tta-panel-title>a {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: right;
+}
+
+.title-wrapper.text-center .title, .title-wrapper.text-center .title-after_title, .title-wrapper.text-center .title-subtitle {
+    direction: rtl;
+}
+
+.rtl .woodmart-header-links .sub-menu-dropdown {
+    right: auto;
+    left: auto;
+    text-align: right;
+}
+.rtl .search-by-category .list-wrapper {
+    right: auto;
+    left: auto;
+}
+.min-footer .col-right {
+    text-align: left;
+}
+.star-rating span:before {
+    color: rgba(255,255,255,.0);
+
+}
+.vc_sep_pos_align_left {
+    margin-left: auto;
+    margin-right: 0;
+}
+.woodmart-hover-base .woodmart-product-countdown {
+    direction: ltr;
+}
+.product-image-summary .woodmart-product-countdown {
+    direction: ltr;
+    text-align: right;
+}
+.woodmart-timer {
+    direction: ltr;
+}
+.vc_col-sm-offset-2 {
+    margin-right: 16.66666667%;
+}
+.blog-design-masonry .entry-title {
+    font-size: 18px;
+    line-height: 1.4;
+}
+.promo-banner .banner-title-wrap .banner-subtitle:first-child, .promo-banner .banner-title-wrap .banner-title:first-child
+{
+    text-align:right;
+}
+.reset-mb-10>:last-child
+{
+    text-align:right;
+}
+
+
+
+ .color-scheme-light table th {
+    border-color: rgba(255, 255, 255, 0.15); }
+  .color-scheme-light table td {
+    border-color: rgba(255, 255, 255, 0.15); }
+  .color-scheme-light table tbody th,
+  .color-scheme-light table tfoot th {
+    border-color: rgba(255, 255, 255, 0.15); }
+  .woodmart-dark table th {
+    border-color: rgba(255, 255, 255, 0.05); }
+  .woodmart-dark table td {
+    border-color: rgba(255, 255, 255, 0.05); }
+  .woodmart-dark table tbody th,
+  .woodmart-dark table tfoot th {
+    border-color: rgba(255, 255, 255, 0.05); }
+
+.table-bordered-style th,
+.table-bordered-style td {
+  border: 1px solid ¦EFEFEF; }
+.color-scheme-light .table-bordered-style th,
+.color-scheme-light .table-bordered-style td {
+  border-color: rgba(255, 255, 255, 0.4); }
+
+.responsive-table {
+  overflow-x: auto;
+  margin-bottom: 35px; }
+  .responsive-table table {
+    margin-bottom: 0; }
+  .responsive-table .responsive-table {
+    overflow-x: visible;
+    margin-bottom: 0; }
+
+.woodmart-vc-ajax-search {
+  margin-bottom: 35px; }
+
+.searchform {
+  position: relative; }
+  .searchform input[type="text"] {
+    padding-left: 50px;
+    height: 46px;
+    font-size: 15px; }
+    .searchform input[type="text"]::-ms-clear {
+      display: none; }
+  .searchform .searchsubmit {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    bottom: 0;
+    padding: 0;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    color: ¦777;
+    font-weight: 400;
+    font-size: 0; }
+    .searchform .searchsubmit:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: inline-block;
+      margin-top: -10px;
+      margin-left: -10px;
+      width: 20px;
+      font-size: 20px;
+      line-height: 20px;
+      transition: opacity .2s ease;
+    
+      font-family: "woodmart-font"; }
+    .searchform .searchsubmit:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      visibility: hidden;
+      margin-top: -9px;
+      margin-left: -9px;
+      opacity: 0;
+      transition: opacity .1s ease, visibility .1s ease;
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid ¦BBB;
+      border-left-color: ¦000;
+      border-radius: 50%;
+      vertical-align: middle; }
+    .searchform .searchsubmit:hover, .searchform .searchsubmit:focus {
+      box-shadow: none; }
+  .searchform.search-loading .searchsubmit:before {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .2s ease, visibility .2s ease;
+    -webkit-animation: wd-rotate 450ms infinite linear;
+            animation: wd-rotate 450ms infinite linear; }
+  .searchform.search-loading .searchsubmit:after {
+    opacity: 0;
+    transition: opacity .1s ease; }
+
+.woodmart-searchform-custom-icon .searchsubmit:after {
+  content: none; }
+.woodmart-searchform-custom-icon .woodmart-custom-icon {
+  min-width: auto;
+  max-width: 24px;
+  transition: opacity .2s ease; }
+.woodmart-searchform-custom-icon .searchsubmit:hover {
+  opacity: .6; }
+.woodmart-searchform-custom-icon.search-loading .woodmart-custom-icon {
+  opacity: 0;
+  transition: opacity .1s ease; }
+
+.search-results-wrapper {
+  position: relative; }
+  .search-results-wrapper .woodmart-scroll {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    width: auto;
+    height: auto;
+    background-color: ¦FFF;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15); }
+    .search-results-wrapper .woodmart-scroll .woodmart-search-results {
+      position: relative;
+      max-height: 50vh; }
+    .search-results-wrapper .woodmart-scroll .woodmart-scroll-pane {
+      z-index: 1002; }
+  .color-scheme-light .search-results-wrapper .woodmart-scroll, .woodmart-dark .search-results-wrapper .woodmart-scroll {
+    background-color: ¦101010; }
+
+.autocomplete-suggestions {
+  position: relative !important;
+  z-index: 1001 !important;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: -1px;
+  margin-left: -1px;
+  max-width: none !important;
+  max-height: none !important;
+  width: auto !important;
+  -webkit-animation: wd-fadeInBottomShort .2s ease both;
+          animation: wd-fadeInBottomShort .2s ease both; }
+
+.autocomplete-suggestion {
+  flex: 1 1 285px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  cursor: pointer;
+  transition: background-color .25s ease; }
+  .autocomplete-suggestion .suggestion-title strong {
+    text-decoration: underline; }
+  .autocomplete-suggestion .suggestion-thumb {
+    float: right;
+    margin-left: 15px;
+    max-width: 65px; }
+  .autocomplete-suggestion .suggestion-title {
+    margin-bottom: 0;
+    font-size: 14px; }
+  .autocomplete-suggestion .suggestion-price,
+  .autocomplete-suggestion .suggestion-sku {
+    margin-top: 10px;
+    line-height: 1; }
+  .autocomplete-suggestion .suggestion-sku {
+    color: ¦747474;
+    font-size: 12px; }
+  .autocomplete-suggestion.suggestion-divider {
+    flex-basis: 100% !important;
+    width: 100%;
+    background-color: ¦F9F9F9;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: default; }
+    .autocomplete-suggestion.suggestion-divider h5 {
+      font-size: 14px; }
+  .autocomplete-suggestion:hover, .autocomplete-suggestion.autocomplete-selected {
+    background-color: ¦F9F9F9; }
+  .color-scheme-light .autocomplete-suggestion.suggestion-divider, .woodmart-dark .autocomplete-suggestion.suggestion-divider {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: ¦FFF; }
+  .color-scheme-light .autocomplete-suggestion .suggestion-sku, .woodmart-dark .autocomplete-suggestion .suggestion-sku {
+    color: ¦FFF; }
+  .color-scheme-light .autocomplete-suggestion:hover, .color-scheme-light .autocomplete-suggestion.autocomplete-selected, .woodmart-dark .autocomplete-suggestion:hover, .woodmart-dark .autocomplete-suggestion.autocomplete-selected {
+    background-color: rgba(0, 0, 0, 0.3); }
+
+.suggestion-divider-text {
+  margin-bottom: 0; }
+
+.view-all-results {
+  flex: 1 1 100%;
+  margin-top: -1px;
+  height: 50px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  background-color: ¦FFF;
+  color: ¦333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2px;
+  font-weight: 600;
+  line-height: 50px;
+  cursor: pointer;
+  transition: background-color .25s ease;
+  -webkit-animation: wd-fadeIn .3s ease both;
+          animation: wd-fadeIn .3s ease both; }
+  .view-all-results:hover {
+    background-color: ¦F9F9F9; }
+  .color-scheme-light .view-all-results, .woodmart-dark .view-all-results {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: ¦FFF; }
+    .color-scheme-light .view-all-results:hover, .woodmart-dark .view-all-results:hover {
+      background-color: rgba(0, 0, 0, 0.9); }
+
+.woodmart-search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 340;
+  width: 300px;
+  background-color: ¦FFF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15); }
+  .woodmart-search-dropdown input[type="text"] {
+    padding-right: 25px;
+    padding-left: 55px;
+    height: 70px;
+    border-style: none; }
+  .woodmart-search-dropdown .searchsubmit {
+    width: 60px;
+    color: ¦333; }
+  .woodmart-search-dropdown .view-all-results {
+    border-bottom: none; }
+  .dropdowns-color-light .woodmart-search-dropdown {
+    background-color: ¦101010; }
+  .whb-col-left .woodmart-search-dropdown {
+    left: auto;
+    right: 0; }
+    
+    .fa.fa-life-ring
+{
+	    font-family: 'Font Awesome 5 Free' !important;
+}
+.fa
+{
+	    font: normal normal normal 14px/1 FontAwesome ;
+}
+.fab
+{
+	    font-family: 'Font Awesome 5 Brands' !important;
+}
+span.menu-label
+{
+	left:44%;
+}
+
+.wpcf7-form p
+{
+	text-align:right;
+}
+.wpcf7-form .btn-shape-semi-round
+{
+	    width: 100%;
+    margin-top: 7px;
+}
+.wpcf7-form label
+{
+	text-align:right !important;
+}
+
+.woodmart-tab-wrapper p
+{
+	font-size:14px;
+	line-height:1.9;
+}
+blockquote
+{
+	margin-top:20px;
+		margin-bottom:20px;	
+}
+
+
+.menu-item-381.menu-item-design-sized > .sub-menu-dropdown
+{
+	direction:ltr;
+}
+.menu-item-381 .woodmart-recent-posts-list li
+{
+	direction:rtl;
+}
+.vc_custom_1577118918920,.vc_custom_1577118961388
+{
+	text-align:right !important;
+}
+
+
+¦wpadminbar .ab-icon, ¦wpadminbar .ab-item:before, ¦wpadminbar>¦wp-toolbar>¦wp-admin-bar-root-default .ab-icon, .wp-admin-bar-arrow
+{
+	    font: normal 20px/1 dashicons !important;
+}
+.fa.fa-facebook
+{
+	font-family: 'Font Awesome 5 Brands' !important;
+}
+.wpcf7-form input[type=submit]
+{
+	margin-top: 15px !important;
+}
+.woodmart-popup-inner .icons-size-small i
+{
+
+}
+.labels-rounded .out-of-stock
+{
+	font-size:10px;
+}
+.icons-design-bordered .woodmart-social-icon i
+{
+	   
+}
+
+¦dokan-seller-listing-wrap ul.dokan-seller-wrap li
+{
+    
+    float:right;
+}
+
+
+
+
+.widget_price_filter .price_slider_amount .price_label
+{
+font-size: 11.5px;
+}
+.woodmart-social-icons.icons-size- i, .woodmart-social-icons.icons-size-small i
+{
+
+}
+
+
+
+.dokan-form-horizontal .dokan-control-label
+{
+	    text-align: right;
+    padding-right: 15px;
+}
+.dokan-settings-content .dokan-settings-area .dokan-banner
+{
+	width:100%;
+}
+.dokan-dashboard-wrap input[type=password], .dokan-dashboard-wrap input[type=email], .dokan-dashboard-wrap input[type=text], .dokan-dashboard-wrap input[type=search], .dokan-dashboard-wrap input[type=numbÎUÂ er], .dokan-dashboard-wrap textarea
+{
+	text-align:right;
+}
+.dokan-right-margin-30
+{
+	    margin-left: 30px;
+}
+.store-open-close label.day
+{
+	text-align:right;
+}
+.dokan-dashboard-wrap input[type=password], .dokan-dashboard-wrap input[type=email], .dokan-dashboard-wrap input[type=text], .dokan-dashboard-wrap input[type=search], .dokan-dashboard-wrap input[type=number], .dokan-dashboard-wrap textarea
+{
+	    padding: 4px 11px;
+	text-align: right;
+}
+.title-wrapper.text-center .title, .title-wrapper.text-center .title-after_title, .title-wrapper.text-center .title-subtitle
+{
+	    line-height: 1.6;
+}
+.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.active:after{
+	    left: 0px !important;
+    right: 93% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-grid-item .price > .amount, .product-grid-item .price ins > .amount
+{
+    font-size: 16px;
+}
+.wpcf7-validation-errors
+{
+	text-align:right !important;
+}
+.notifications-sticky .mc4wp-alert, .notifications-sticky .woocommerce-error, .notifications-sticky .woocommerce-info, .notifications-sticky .woocommerce-message, .notifications-sticky .yith_ywraq_add_item_product_message, .notifications-sticky div.wpcf7-response-output
+{
+	    text-align: right !important;
+
+	      padding-top: 21px;
+ }
+.dokan-alert-danger:before, .dokan-alert-info:before, .dokan-alert-warning:before, .dokan-error:before, .dokan-info:before, .mc4wp-error:before, .mc4wp-notice:before, .woocommerce-error:before, .woocommerce-info:before, div.wpcf7-mail-sent-ng:before, div.wpcf7-validation-errors:before{
+	    padding-top: 0px;
+}
+
+.woodmart-title-size-extra-large .woodmart-title-container
+{
+	    font-size: 37px !important ;
+}
+.woodmart-price-table .woodmart-price-value
+{
+	font-size: 28px !important;
+}
+.woodmart-price-table.price-style-default .woodmart-plan-price>span
+{
+	    margin-top: 17px !important; 
+}
+.woodmart-price-table .woodmart-price-suffix
+{
+	margin-top:16px !important;
+}
+.labels-rounded .product-label
+{
+	direction:ltr !important;
+}
+.labels-rectangular .product-label
+{
+    direction:ltr !important;
+}
+
+
+@media only screen and (max-width: 1024) {
+ 
+ 
+ 
+ 
+ 
+}
+

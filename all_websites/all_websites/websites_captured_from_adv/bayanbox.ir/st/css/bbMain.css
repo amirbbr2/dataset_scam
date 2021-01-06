@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font: 11px Tahoma, Geneva, sans-serif;
+	color: #333;
+	background: #ebe7da;
+}
+ul{ list-style-type:none;}
+a{
+	text-decoration:none;
+	color: #333;
+}
+img{
+	border-width: 0px;
+}
+.ltr{ direction:ltr;}
+.alr{ text-align:right;}
+.right{ float:right!important;}
+.left{ float:left!important;}
+#wrp{
+	margin: auto;
+	width: 560px;
+	direction:rtl;
+}
+
+#nav{
+	background: #c2baa2;
+	padding:5px 10px;
+	border-radius: 0px 0px 5px 5px;
+	float: right;
+	width: 540px;
+}
+#nav ul{}
+#nav li{ display:inline;}
+#nav li a{
+	color:#fff;
+	padding: 4px 5px;
+	border-radius:3px;
+	display:inline-block;
+}
+#nav li a img{vertical-align: text-bottom;}
+#nav li a:hover{
+	background: #aca388;
+}
+#nav .navLogo{
+	background: url(../images/others/navLogo.png) no-repeat;
+    height: 34px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 139px;
+}
+#hdr{
+	background: url(../images/others/bbLogoMain.png) no-repeat center top;
+	height: 190px;
+	width: 100%;
+	float:right;
+}
+
+#ctn{
+	width:100%;
+	display: inline-block;
+}
+
+.item {
+	background-color: #FFFFFF;
+    display: inline-block;
+    line-height: 17px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.item .tr, .item .tl, .item .br, .item .bl {
+    background: url("../images/others/dash-c.png") no-repeat scroll 0 0 transparent;
+    height: 6px;
+    overflow: hidden;
+    width: 6px;
+}
+.item .tr {
+    background-position: -6px 0;
+    float: right;
+}
+.item .tl {
+    background-position: 0 0;
+    float: left;
+}
+.item .itemIn {
+}
+.item .ib {
+    clear: both;
+    height: 6px;
+}
+.item .br {
+    background-position: -6px -6px;
+    float: right;
+}
+.item .bl {
+    background-position: 0 -6px;
+    float: left;
+}
+.bbLi{}
+.bbLi li{
+	background: url(../images/others/bbLi.png) repeat-x center bottom;
+}
+.bbLi li a{
+	padding: 10px 30px 10px 10px;
+	border-bottom: 1px solid #ebe7da;
+	display: block;
+	background: url(../images/others/bbTik.png) no-repeat 467px center;
+}
+.bbLi li:last-child a{border-bottom: 0px;}
+#ftr{
+	background: #797055 url(../images/others/bbFtr.png) repeat-x;
+	direction:rtl;
+	color:#fff;
+	margin: 15px 0px 0px;
+}
+#ftr a{
+	padding: 2px 0px 0px 8px;
+	display: inline-block;
+	color: #ccc;
+}
+#ftr span{
+	background-image: url(../images/others/cc.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	float: right;
+	padding-right: 24px;
+	height: 20px;
+	padding-top: 2px;
+	color: #6b6b6b;
+}
+#ftr label{
+	float: left;
+}
+.ftrIn{
+	margin: auto;
+	width: 540px;
+	padding: 15px;
+}
+.bbDlLnk{
+	float: right;
+    padding: 50px 0;
+    text-align: center;
+	width:100%;
+}
+.bbDlLnk a{ margin:0 5px;}
+.bblod{
+	font-size: 24px;
+	font-weight: bold;
+	color: #0C3;
+}
+.fileName{
+	margin: 15px 0px 0px;
+}
+.underNameltr, .underNamertl{
+	padding: 15px;
+	color: #333;
+	background: url(../images/others/under_name_ltr.png) no-repeat left bottom;
+	font: bold 22px Verdana, Geneva, sans-serif;
+	direction:ltr;
+}
+.underNamertl{
+	background: url(../images/others/under_name_rtl.png) no-repeat right bottom;
+	direction:rtl;
+}
+.signUpb{
+	background: url(../images/others/SingUpBut.png) no-repeat center top;
+	height: 43px;
+	width: 279px;
+	float: right;
+	margin: 15px 0px;
+}
+.signUpb:hover{
+	background: url(../images/others/SingUpBut.png) no-repeat center bottom;
+}
+.loginb{
+	background: url(../images/others/SingInBut.png) no-repeat center top;
+	display: inline-block;
+	height: 43px;
+	width: 279px;
+	margin: 15px 2px 15px 0px;
+}
+.loginb:hover{background: url(../images/others/SingInBut.png) no-repeat center bottom;}
+.noneSlide{
+	position:relative;
+	float: right;
+	margin: 0px 0px 15px;
+}
+.noneSlide p{
+	position:absolute;
+	padding: 68px 130px 0px 20px;
+	line-height: 17px;
+}
+.feat{
+	height: 202px;
+	overflow: hidden;
+	float: right;
+}
+.feaMore{
+	background: url(../images/others/moreFea.png) no-repeat center top;
+	display: inline-block;
+	margin: -15px 0px 0px 1px;
+	height: 42px;
+	width: 92px;
+	cursor: pointer;
+	float: left;
+}

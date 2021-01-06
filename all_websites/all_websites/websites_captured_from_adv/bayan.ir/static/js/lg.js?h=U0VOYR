@@ -1,0 +1,20 @@
+function initLogin() {
+
+    function updateInputs() {
+        var $this = $(this);
+        if ($this.val() !== "" && $this.length > 0) {
+            $this.css("background", "white");
+        } else {
+            $this.css("background", "transparent");
+        }
+    }
+
+    var $inputText = $(".-elm-text");
+    $inputText.focus(function () {
+        $(this).css("background", "white");
+        $inputText.removeClass("error bgWhite");
+    });
+
+    $inputText.blur(updateInputs);
+    $inputText.each(updateInputs);
+}

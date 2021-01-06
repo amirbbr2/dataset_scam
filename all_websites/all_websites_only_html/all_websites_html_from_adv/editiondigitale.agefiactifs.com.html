@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://editiondigitale.agefiactifs.com/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://editiondigitale.agefiactifs.com/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://editiondigitale.agefiactifs.com/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://editiondigitale.agefiactifs.com/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://editiondigitale.agefiactifs.com/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://editiondigitale.agefiactifs.com/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://editiondigitale.agefiactifs.com/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://editiondigitale.agefiactifs.com/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://editiondigitale.agefiactifs.com/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://editiondigitale.agefiactifs.com/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" href="https://editiondigitale.agefiactifs.com/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://editiondigitale.agefiactifs.com/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://editiondigitale.agefiactifs.com/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://editiondigitale.agefiactifs.com/favicons/manifest.json">
+    <link rel="icon" type="image/x-icon" href="https://editiondigitale.agefiactifs.com/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://editiondigitale.agefiactifs.com/favicons/ms-icon-144x144.png">    
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <title>L'Agefi Actifs</title>
+                        <link rel="stylesheet" type="text/css" href="/css/6a240c8.css"/>
+                        <link rel="stylesheet" href="/css/12c2bfb.css">
+            
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-46981090-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+        <div class="pop-up-mask">
+
+        <div class="content-pop-up" id="summaryPopup">
+            <div class="lefleat-content-img">
+                <img id="summary-popup-image" src="#" alt="">
+            </div>
+
+            <div class="lefleat-content-wrapper">
+                <h2 class="leaflet-pop-up-title" id="summary-popup-release"></h2>
+                <div class="lefleat-content mCustomScrollbar" id="summary-popup-content">
+                </div>
+                            </div>
+            <a href="javascript:;" class="close-btn close-content-pop-up"></a>
+        </div>
+            <div class="login-pop-up">
+                                <div class="login-pop-up-title-wrapper">
+                    <h3 class="login-pop-up-main-title">édition digitale</h3>
+                    <h4 class="login-pop-up-sub-title">Accès réservé aux abonnés de L'Agefi Actifs</h4>
+                </div>
+                <form name="form" method="post" action="/" class="login-form">
+                <div class="login-form-goup">
+                    <input type="text" id="form_login" name="form[login]" required="required" placeholder="Identifiant" />
+                    <input type="password" id="form_pass" name="form[pass]" required="required" placeholder="Mot de passe" />
+                    <a href="http://www.agefi.fr/user/password" target="_blank" class="forgot-password-ink">Mot de passe oublié?</a>
+                    <div class="login-form-btns">
+                        <a href="http://www.agefiactifs.com/offres-abonnement" target="_blank" class="subscribe-btn">abonnez-vous</a>
+                        <button type="submit" id="form_submit" name="form[submit]" class="login-btn">se connecter</button>
+                    </div>
+                </div>
+                <input type="hidden" id="form__token" name="form[_token]" value="kacSM8TYA3RtIhYw5YAxr1tEOmFo9xv6U9pywwHk3aI" />
+    </form>
+                                <a href="javascript:;" class="close-btn close-login-pop-up"></a>
+            </div>
+    </div>
+        <header class="header">
+        <nav class="navigation">
+            <div class="logo-wrapper">
+                <img src="/img/logo_actif.png" alt="">
+            </div>
+            <div class="user-wrapper">
+                                    <a href="http://www.agefiactifs.com/offres-abonnement" target="_blank" class="user-subscribe-btn">
+                        <span>Abonnez-vous</span>
+                    </a>
+                                <span class="devider"></span>
+                                        <a href="javascript:;" class="log-in-out-btn open-login-pop-up">
+                        <span>Connexion</span>
+                    </a>
+                                    </a>
+            </div>
+        </nav>
+                                            <div class="last-leaflet-wrapper">
+                                            <div class="subscribe">
+                    <div class="subscribe-img">
+                        <img src="/uploads/media/subscribe_block/0001/01/48ce2d8306504782fa7f8e0872235d82dbe52ff2.jpeg" alt="">
+                    </div>
+
+                    <div class="subscribe-info-title-wrapper">
+                        <div class="subscribe-info-title">
+                            <h4 class="main-title">Nouvelle formule</h4>
+                            <div class="main-note-text">
+                                <span></span><strong>259<sup>&euro;</sup></strong> HT/AN
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subscribe-info-copy-wrapper">
+                                                    <div class="subscribe-info-copy">
+                                <h5 class="sub-title">De nouvelles rubriques</h5>
+                                <div class="sub-note-text"></div>
+                            </div>
+                                                    <div class="subscribe-info-copy">
+                                <h5 class="sub-title">Des rubriques renforcées</h5>
+                                <div class="sub-note-text"></div>
+                            </div>
+                                                    <div class="subscribe-info-copy">
+                                <h5 class="sub-title">Une maquette modernisée et repensée</h5>
+                                <div class="sub-note-text"></div>
+                            </div>
+                                            </div>
+                    <a href="http://www.agefiactifs.com/offres-abonnement" target="_blank" class="subscribe-btn">Je m&#039;abonne</a>
+                </div>
+                                                    <div class="last-leaflet-content">
+                <div class="last-leaflet-img">
+                                     <a href="javascript:;" class="last-leaflet-info-btn-read open-login-pop-up"> 
+<img alt="COUV-785.jpg" title="COUV-785.jpg" src="/uploads/media/news_image/0001/01/thumb_197_news_image_big.jpeg" width="385" height="572" srcset="/uploads/media/news_image/0001/01/thumb_197_news_image_small.jpeg 315w, /uploads/media/news_image/0001/01/thumb_197_news_image_big.jpeg 385w, /uploads/media/news_image/0001/01/b20c668e34dc256eae81b56eb870640633b08c38.jpeg 4547w" sizes="(max-width: 385px) 100vw, 385px"  />
+</a>
+                                     
+                </div>
+                <div class="last-leaflet-info">
+                    <h2 class="last-leaflet-info-title">
+                        <strong>11 déc.</strong> 2020</h2>
+                    <div class="last-leaflet-info-text mCustomScrollbar">
+                        <div class="last-leaflet-info-text-title" style="padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#0c3c6c; text-transform: uppercase; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat,sans-serif; font-size: 12px; font-style: normal; font-weight: 600; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><span style="font-size:12px">&eacute;ditoRIAL&nbsp;</span></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>Bas de laine</strong>
+
+<div class="last-leaflet-info-text-title" style="padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#0c3c6c; text-transform: uppercase; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat,sans-serif; font-size: 12px; font-style: normal; font-weight: 600; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">&nbsp;</div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">
+<div class="last-leaflet-info-text-title" style="padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#0c3c6c; text-transform: uppercase; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat,sans-serif; font-size: 12px; font-style: normal; font-weight: 600; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">L&#39;INVITE</div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>Brice Anger</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">
+<div class="last-leaflet-info-text-title" style="padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#0c3c6c; text-transform: uppercase; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat,sans-serif; font-size: 12px; font-style: normal; font-weight: 600; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><span style="font-size:12px">L&#39;ACTUALITE DU PATRIMOINE</span></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>TRIBUNE : La retraite d&#39;Archim&egrave;de</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>Des conseillers financiers bons pilotes dans la crise&nbsp;</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>TRIBUNE : Cr&eacute;dits immobiliers : o&ugrave; en sommes-nous ?</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>L&#39;actualit&eacute; de la quinzaine</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>Veille internationale</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">
+<div class="last-leaflet-info-text-title" style="padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#0c3c6c; text-transform: uppercase; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat,sans-serif; font-size: 12px; font-style: normal; font-weight: 600; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><span style="font-size:12px">L&#39;enqu&ecirc;te</span></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>L&#39;ann&eacute;e de tous les dangers</strong></div>
+</div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">
+<div class="last-leaflet-info-text-title" style="padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#0c3c6c; text-transform: uppercase; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat,sans-serif; font-size: 12px; font-style: normal; font-weight: 600; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><span style="font-size:12px">Cadre legal</span></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>LFSS 2021 : des mesures &agrave; retenir</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>TRIBUNE : Un dispositif complexe mais s&eacute;duisant&nbsp;</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>TRIBUNE : Pacte Dutreil : vers une harmonisation bienvenue</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>L&#39;intelligence artificielle au service du contr&ocirc;le fiscal</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">
+<div class="last-leaflet-info-text-title" style="padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#0c3c6c; text-transform: uppercase; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat,sans-serif; font-size: 12px; font-style: normal; font-weight: 600; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><span style="font-size:12px">Allocation d&#39;actifs</span></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>TRIBUNE : Les r&egrave;gles d&#39;or des produits structur&eacute;s</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>LES PORTEFEUILLES Sycomore</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>Performances</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>La Fran&ccedil;aise r&eacute;volutionne l&#39;investissement en SCPI</strong></div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">
+<div class="last-leaflet-info-text-title" style="padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#0c3c6c; text-transform: uppercase; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat,sans-serif; font-size: 12px; font-style: normal; font-weight: 600; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">Cas pratique</div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>Philanthropie : du sens et de l&#39;int&eacute;r&ecirc;t</strong></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">
+<div class="last-leaflet-info-text-title" style="padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#0c3c6c; text-transform: uppercase; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat,sans-serif; font-size: 12px; font-style: normal; font-weight: 600; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;">Carnet</div>
+
+<div class="last-leaflet-info-text-copy" style="margin: 0px 0px 16px; padding: 0px; border: 0px currentColor; border-image: none; text-align: left; color:#000000; text-transform: none; line-height: 1.3; text-indent: 0px; letter-spacing: normal; font-family: Montserrat, sans-serif; font-size: 12px; font-style: normal; word-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-stretch: inherit; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; font-variant-numeric: inherit; text-decoration-color:initial; text-decoration-style: initial;"><strong>Nominations</strong></div>
+</div>
+                    </div>
+                    <div class="last-leaflet-info-btn">
+                            
+                            <a href="javascript:;" class="last-leaflet-info-btn-read open-login-pop-up">lire le num&eacute;ro</a>
+                                            </div>
+                </div>
+                <div class="last-leaflet-number">785</div>
+            </div>
+                    </div>
+            </header>
+        <div class="container">
+        <div class="previous-editions-title-wrapper">
+            <h3>nos prÉcÉdents numÉros</h3>
+        </div>
+                <div class="leaflet-wrapper">
+                        <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>11 déc.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_197_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>785</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="171" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>27 nov.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_195_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>784</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="170" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>13 nov.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_194_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>783</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="169" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>30 oct.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_192_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>782</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="168" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>16 oct.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_191_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>781</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="167" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>2 oct.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_189_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>780</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="166" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>18 sept.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_188_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>779</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="165" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>4 sept.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_186_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>778</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="164" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>24 juil.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_184_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>777</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="163" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>10 juil.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_183_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>776</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="162" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>26 juin</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_179_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>775</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="160" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>12 juin</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_176_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>774</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="158" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>29 mai</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_173_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>773</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="157" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>15 mai</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_172_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>772</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="156" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>30 avr.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_171_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>771</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="155" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>17 avr.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_170_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>770</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="154" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>3 avr.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_168_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>769</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="153" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>20 mars</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_167_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>768</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="152" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>6 mars</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_166_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>767</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="151" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>21 févr.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_165_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>766</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="150" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>7 févr.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_164_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>765</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="149" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>24 janv.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_163_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>764</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="148" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>10 janv.</strong> 2020</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_162_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>763</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="147" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>20 déc.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_161_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>762</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="146" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>6 déc.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_160_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>761</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="145" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>22 nov.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_159_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>760</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="144" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>8 nov.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_158_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>759</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="143" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>25 oct.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_157_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>758</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="142" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>11 oct.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_156_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>757</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="141" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>27 sept.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_152_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>756</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="140" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>13 sept.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_148_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>755</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="139" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>30 août</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_147_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>754</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="138" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>26 juil.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_146_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>753</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="137" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>12 juil.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_145_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>752</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="136" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>28 juin</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_144_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>751</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="135" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>14 juin</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_143_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>750</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="134" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>31 mai</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_142_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>749</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="133" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>17 mai</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_140_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>748</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="132" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>3 mai</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_139_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>747</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="131" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>19 avr.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_138_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>746</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="130" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>5 avr.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_137_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>745</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="129" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>22 mars</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_135_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>744</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="128" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>8 mars</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_134_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>743</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="127" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>22 févr.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_133_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>742</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="126" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>8 févr.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_132_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>741</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="125" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>25 janv.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_131_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>740</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="124" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>11 janv.</strong> 2019</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_129_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>739</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="123" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>21 déc.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_128_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>738</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="122" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>7 déc.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_126_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>737</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="118" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>23 nov.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_124_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>736</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="117" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>9 nov.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_123_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>735</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="116" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>26 oct.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_122_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>734</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="115" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>12 oct.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_119_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>733</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="114" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>28 sept.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_117_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>732</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="113" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>14 sept.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_116_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>731</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="112" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>31 août</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_114_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>730</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="111" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>27 juil.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_112_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>729</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="110" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>13 juil.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_111_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>728</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="109" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>29 juin</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_108_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>727</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="107" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>15 juin</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_106_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>726</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="106" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>1 juin</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_100_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>725</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="104" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>18 mai</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_99_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>724</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="103" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>4 mai</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_95_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>723</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="99" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>20 avr.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_94_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>722</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="98" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>6 avr.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_93_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>721</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="97" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>23 mars</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_91_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>720</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="95" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>9 mars</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_90_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>719</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="94" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>23 févr.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_89_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>718</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="93" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>9 févr.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_88_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>717</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="92" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>26 janv.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_87_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>716</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="91" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>12 janv.</strong> 2018</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_86_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>715</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="90" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>22 déc.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_85_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>714</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="89" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>8 déc.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_82_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>713</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="88" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>24 nov.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_81_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>712</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="87" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>10 nov.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_80_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>711</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="86" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>27 oct.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_79_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>710</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="85" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>13 oct.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_77_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>709</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="84" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>29 sept.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_71_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>708</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="73" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>15 sept.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_67_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>707</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="72" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>1 sept.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_72_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>706</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="71" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>21 juil.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_73_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>705</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="70" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>7 juil.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_66_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>704</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="69" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>23 juin</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_74_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>703</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="68" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>9 juin</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_65_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>702</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="67" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>26 mai</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_64_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>701</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="66" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>12 mai</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_63_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>700</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="65" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>28 avr.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_62_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>699</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="64" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                            <div class="leaflet-item">
+                <div class="leaflet-item-title"><strong>14 avr.</strong> 2017</div>
+                <div class="leaflet-item-img">
+
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up"><img src= '/uploads/media/news_image/0001/01/thumb_61_news_image_small.jpeg'></a>
+                                    </div>
+                <div class="leaflet-item-number">&eacute;dition N&deg; <strong>698</strong></div>
+                <div class="leaflet-item-btns">
+                                            <a href="javascript:;" class="leaflet-item-btns-read open-login-pop-up">lire le numéro</a>
+                                        <a href="javascript:;" id="63" class="leaflet-item-btns-add open-content-pop-up" title="Voir le sommaire">+</a>
+                </div>
+            </div>
+                        </div>
+            </div>
+                <footer class="footer">
+            <a href="http://agefiactifs.com/" target="_blank" class="footer-link">agefiactifs.com</a>
+            <div class="footer-copyright">2017&copy;AGEFI ACTIFS - tous droits r&eacute;serv&eacute;s</div>
+        </footer>
+    
+                            <script src="/js/19814a0.js"></script>
+            
+    <script type="text/javascript">
+        $(".leaflet-item-btns-add").click(function(event){
+            $.ajax({
+                url: "https://editiondigitale.agefiactifs.com"+"/get-summary/" + event.target.id
+            }).done(function(data) {
+                var obj = jQuery.parseJSON(data.news);
+                $('#summary-popup-image').attr('src', "https://editiondigitale.agefiactifs.com"+obj.image);
+                $('#summary-popup-release').html('<strong>'+obj.releaseDay+' '+obj.releaseMonth+'</strong> '+obj.releaseYear+'');
+                var content = obj.summary.replace(/color:#[0-9a-f]{3,6}/g,'color:#fff');
+                var summaryContent = $('#summary-popup-content');
+                summaryContent.mCustomScrollbar("destroy");
+                summaryContent.html(content);
+                summaryContent.mCustomScrollbar({theme:"dark"});
+            }).fail(function() {
+                $('#summary-popup-image').attr('src', "https://editiondigitale.agefiactifs.com/img/error-icon.png");
+                $('#summary-popup-release').html('<strong>Error, please try again. Thank you.</strong>');
+            }).always(function() {
+            });
+        });
+    </script>
+</body>
+</html>

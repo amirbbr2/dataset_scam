@@ -1,0 +1,159 @@
+.move-right .left-off-canvas-menu {
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+  z-index: 1000;
+}
+
+#mobileInfoBar {
+  background-color: transparent;
+  margin-top: 0;
+}
+
+.navName {
+    margin-left: 1.25rem;
+    color: #fff;
+    font-size: 1.25rem;
+    align-self: flex-start;
+}
+
+@media only screen and (max-width: 40.063em) {
+  #mobileInfoBar {
+    margin-left: -0.9375rem;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 65px;
+  }
+  #mobileInfoBar .logo {
+    top: unset;
+    margin: 0;
+    margin-left: 60px;
+    width: 10rem;
+    height: 2.4rem;
+    background-size: 10rem 2.4rem;
+  }
+  #mobileInfoBar .navigation-account-points {
+    margin-right: 50px;
+    margin-top: 0.65rem !important;
+  }
+  #mobileInfoBar .navigation-account-points .navigation-account-points-value {
+    color: white;
+  }
+  #mobileInfoBar .navigation-account-points .navigation-account-points-label {
+    font-weight: 600;
+    margin-right: .25rem;
+  }
+}
+
+
+.left-off-canvas-menu {
+  background-color: #1A1B1B;
+  width: 300px;
+}
+
+.left-off-canvas-menu .navigation-account-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-self: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left-off-canvas-menu .navigation-account-link .navigation-account-avatar {
+  margin-right: 10px;
+  margin-left: -6px;
+}
+
+.left-off-canvas-menu .navigation-account-link .navigation-account-level-value {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.left-off-canvas-menu .navigation-main-dropdown {
+  margin-top: .5rem;
+  width: 12.5rem;
+}
+
+.left-off-canvas-menu .navigation-main-dropdown-link {
+  padding: .25rem 0rem .25rem 0.625rem;
+}
+
+.left-off-canvas-menu .mobile-account-info {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0F1010;
+  align-items: center;
+  justify-content: center;  
+}
+
+.left-off-canvas-menu .mobile-account-info .navigation-account-link {
+  padding-bottom: 0;
+}
+
+.left-off-canvas-menu .mobile-account-info a.exit-off-canvas {
+  position: static;
+  margin-left: auto;
+  width: unset;
+  height: unset;
+  color: white;
+  background-color: transparent;
+}
+
+.left-off-canvas-menu .navigation-main-dropdown.with-gap {
+  margin-left: 1.5rem;
+}
+
+.left-off-canvas-menu .navigation-main-link .ss-icon {
+  margin-lefT: -3px;
+}
+
+.left-off-canvas-menu .navigation-main-link:hover .ss-icon {
+  color: #f13333;
+}
+
+.left-off-canvas-menu #promoCodeForm2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left-off-canvas-menu #promoCodeForm2 input.promoCodeBox {
+  width: 85%;
+}
+
+.move-right > .inner-wrap {
+  -webkit-transform: translate3d(300px, 0, 0);
+          transform: translate3d(300px, 0, 0);
+}
+
+@media only screen and (max-width: 40.063em) {
+  .off-canvas-toggle {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.main-content {
+  /* Temp do not migrate this main-content block */
+  min-height: 80vh;
+}

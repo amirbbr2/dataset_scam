@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /wp-content/uploads/
+Disallow: /wp-content/plugins/
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /readme.html
+Disallow: /comments/feed/
+
+sitemap: http://kharid-adams.ir/sitemap_index.xml

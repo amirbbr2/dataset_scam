@@ -1,0 +1,131 @@
+.header {
+	//background:white !important;
+}
+
+li.menu-item a { font-size:15px !important; padding-top:9px !important; }
+
+div.main-holder {
+	background: url('bg2.jpg') no-repeat 50% 0%;
+	background-attachment:fixed;
+    overflow: hidden;
+}
+
+table {
+    font-family: arial, sans-serif;
+	color: #666;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.button2,.button2:hover {
+	cursor:pointer !important;
+	background-color:rgb(221, 221, 221);
+border-bottom-color:rgb(221, 221, 221);
+border-bottom-style:outset;
+border-bottom-width:2px;
+border-collapse:separate;
+border-image-outset:0px;
+border-image-repeat:stretch;
+border-image-slice:100%;
+border-image-source:none;
+border-image-width:1;
+border-left-color:rgb(221, 221, 221);
+border-left-style:outset;
+border-left-width:2px;
+border-right-color:rgb(221, 221, 221);
+border-right-style:outset;
+border-right-width:2px;
+border-top-color:rgb(221, 221, 221);
+border-top-style:outset;
+border-top-width:2px;
+box-sizing:border-box;
+color:rgb(51, 51, 51);
+cursor:default;
+display:inline-block;
+font-family:"Open Sans", Helvetica, arial, sans-serif;
+font-size:18px;
+font-stretch:normal;
+font-style:normal;
+font-variant-caps:normal;
+font-variant-ligatures:normal;
+font-variant-numeric:normal;
+font-weight:normal;
+height:44px;
+letter-spacing:1px;
+line-height:normal;
+margin-bottom:0px;
+margin-left:0px;
+margin-right:0px;
+margin-top:8px;
+padding-bottom:8px;
+padding-left:14px;
+padding-right:14px;
+padding-top:8px;
+text-align:center;
+text-indent:0px;
+text-rendering:auto;
+text-shadow:none;
+text-transform:none;
+user-select:none;
+white-space:pre;
+width:165.203px;
+word-spacing:0px;
+writing-mode:horizontal-tb;
+-webkit-appearance:push-button;
+-webkit-border-horizontal-spacing:2px;
+-webkit-border-vertical-spacing:2px;
+-webkit-rtl-ordering:logical;
+-webkit-border-image:none;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.activeaccordian, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.activeaccordian:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+p.quote2 {
+	float: right;
+	padding-right: 250px;	
+}
+
+p.quote {
+	padding-left: 250px
+}

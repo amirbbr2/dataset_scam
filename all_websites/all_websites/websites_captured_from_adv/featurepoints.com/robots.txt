@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /account/
+
+User-agent: Googlebot
+Disallow: /r/
+
+User-agent: Bingbot
+Disallow: /r/
+
+User-agent: *
+Disallow: /appDetails
+
+Sitemap: http://www.featurepoints.com/sitemap.xml

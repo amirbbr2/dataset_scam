@@ -1,0 +1,1102 @@
+
+/* - ++resource++ContentWellPortlets.styles/ContentWellPortlets.css - */
+@media all {
+/* https://www.hautmont.org/portal_css/++resource++ContentWellPortlets.styles/ContentWellPortlets.css?original=1 */
+.managePortletsAboveLink,
+.managePortletsBelowLink,
+.manageFooterPortletsLink,
+.manageInHeaderPortletsLink,
+.managePortletsBelowTitleLink { text-align: center; margin: 0 auto 1em; clear:both;}
+.portlet-manager-row .porlet-well_manager { width: 30%; float:left; margin:1%; }
+.portlet-manager-row { width:100%; float:left; }
+/* */
+div.width-1\3a 5 { width:    17.75%; } /* */
+div.width-2\3a 5 { width:    37.75%; } /* */
+div.width-3\3a 5 { width:    57.75%; } /* */
+div.width-4\3a 5 { width:    77.75%; } /* */
+div.position-1\3a 5 {margin-left:    -78.875%;} /* */
+div.position-2\3a 5 {margin-left:    -58.875%;} /* */
+div.position-3\3a 5 {margin-left:    -38.875%;} /* */
+div.position-4\3a 5 {margin-left:    -18.875%;} /* */
+div.width-1\3a 6 { width:    14.416%; } /* */
+div.width-5\3a 6 { width:    81.083%; } /* */
+div.position-1\3a 6 {margin-left:    -82.208%;} /* */
+div.position-5\3a 6 {margin-left:    -15.542%;} /* */
+
+}
+
+
+/* - solgemaportletsmanager.css - */
+@media all {
+/* https://www.hautmont.org/portal_css/solgemaportletsmanager.css?original=1 */
+.portletLegend{margin-left:2em;}
+.portletLegend .portletLegendLine{margin:5px 0px 0px 0px;padding:0px;clear:both;}
+.portletLegend .portletHeader{height:10px;width:10px;float:left;margin:2px 5px 0px 0px;padding:0px;}
+.portletAssignments .portlet_here .portletHeader{background-color:#5A9BC6;border:1px solid #5A9BC6;}
+.portletAssignments .portlet_here.portlet_visible .portletHeader{background-color:#5A9BC6;border:1px solid #5A9BC6;}
+.portletAssignments .portlet_here.portlet_hidden .portletHeader{background-color:white;border:1px solid #5A9BC6;color:black;}
+.portletAssignments .portlet_here.portlet_visible .portletHeader a,.portletAssignments .portlet_here.portlet_visible .portletHeader span{color:white;}
+.portletAssignments .portlet_visible .portletHeader{background-color:#ADCDE2;border:1px solid #ADCDE2;}
+.portletAssignments .portlet_hidden .portletHeader{background-color:white;border:1px solid #ADCDE2;}
+.portletAssignments .portletHeader:hover{border-color:#FFDB0F !important;}
+.portletAssignments .ui-sortable-helper .portletHeader:hover{background-color:#FFDB0F !important;}
+.portletAssignments .portletHeader .managedPortletActions{position:relative;float:right;top:-3px;right:-2px;}
+.portletAssignments .portletHeader .managedPortletActions a,.portletAssignments .portletHeader .managedPortletActions a:link{text-decoration:none;}
+.portletAssignments .portletHeader a:hover{color:black;}
+.portletAssignments .portletHeader .managedPortletActions a:hover{color:black;}
+.dragging,.dragging .portletHeader{cursor:move;background-color:#ff6 !important;color:black !important;}
+.dragging a,.dragging .portletHeader a,.dragging span,.dragging .portletHeader span{color:black !important;}
+.draggingHook{cursor:ns-resize;}
+.notDraggable{}
+.portletAssignments .managedPortlet{margin:0;padding:1px 0;}
+.portletAssignments ul.sortable li{list-style-type:none;}
+.portletAssignments ul.sortable li:hover{cursor:pointer;border:1px solid #
+}
+
+}
+
+
+/* - fullcalendar.css - */
+@media screen {
+/* https://www.hautmont.org/portal_css/fullcalendar.css?original=1 */
+/* */
+.fc#calendar,
+.fc#calendar .fc-header,
+.fc#calendar .fc-content {
+font-size: 1em;
+}
+.fc#calendar {
+direction: ltr;
+text-align: left;
+}
+.fc#calendar table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+.fc#calendar td, .fc th {
+padding: 0;
+vertical-align: top;
+}
+table.fc-header {
+width: 100%;
+}
+.fc-header-left {
+width: 25%;
+}
+.fc-header-left table {
+float: left;
+}
+.fc-header-center {
+width: 50%;
+text-align: center;
+}
+.fc-header-center table {
+margin: 0 auto;
+}
+.fc-header-right {
+width: 25%;
+}
+.fc-header-right table {
+float: right;
+}
+.fc-header-title {
+margin-top: 0;
+white-space: nowrap;
+}
+.fc-header-space {
+padding-left: 10px;
+}
+/* */
+.fc-rtl .fc-header-title {
+direction: rtl;
+}
+.fc-header .fc-state-default,
+.fc-header .ui-state-default {
+margin-bottom: 1em;
+cursor: pointer;
+}
+.fc-header .fc-state-default {
+border-width: 1px 0;
+padding: 0 1px;
+}
+.fc-header .fc-state-default,
+.fc-header .fc-state-default a {
+border-style: solid;
+}
+.fc-header .fc-state-default a {
+display: block;
+border-width: 0 1px;
+margin: 0 -1px;
+width: 100%;
+text-decoration: none;
+}
+.fc-header .fc-state-default span {
+display: block;
+border-style: solid;
+border-width: 1px 0 1px 1px;
+padding: 3px 5px;
+}
+.fc-header .ui-state-default {
+padding: 4px 6px;
+}
+.fc-header .fc-state-default span,
+.fc-header .ui-state-default span {
+white-space: nowrap;
+}
+/* */
+.fc-header .fc-no-right {
+padding-right: 0;
+}
+.fc-header .fc-no-right a {
+margin-right: 0;
+border-right: 0;
+}
+.fc-header .ui-no-right {
+border-right: 0;
+}
+/* */
+.fc-header .fc-corner-left {
+margin-left: 1px;
+padding-left: 0;
+}
+.fc-header .fc-corner-right {
+margin-right: 1px;
+padding-right: 0;
+}
+/* */
+.fc-header .fc-state-default,
+.fc-header .fc-state-default a {
+border-color: #777; /* */
+color: #333;
+}
+.fc-header .fc-state-default span {
+border-color: #fff #fff #d1d1d1; /* */
+background: #e8e8e8;
+}
+/* */
+.fc-header .fc-state-active a {
+color: #fff;
+}
+.fc-header .fc-state-down span,
+.fc-header .fc-state-active span {
+background: #888;
+border-color: #808080 #808080 #909090; /* */
+}
+/* */
+.fc-header .fc-state-disabled a {
+color: #999;
+}
+.fc-header .fc-state-disabled,
+.fc-header .fc-state-disabled a {
+border-color: #ccc; /* */
+}
+.fc-header .fc-state-disabled span {
+border-color: #fff #fff #f0f0f0; /* */
+background: #f0f0f0;
+}
+.fc-widget-content {
+border: 1px solid #ccc; /* */
+}
+.fc-content {
+clear: both;
+}
+.fc-content .fc-state-default {
+border-style: solid;
+border-color: #ccc; /* */
+}
+.fc-content .fc-state-highlight { /* */
+background: #ffc;
+}
+.fc-content .fc-not-today { /* */
+background: none;
+}
+.fc-cell-overlay { /* */
+background: #9cf;
+opacity: .2;
+filter: alpha(opacity=20); /* */
+}
+.fc-view { /* */
+width: 100%;
+overflow: hidden;
+}
+.fc-event,
+.fc-agenda .fc-event-time,
+.fc-event a {
+border-style: solid;
+border-color: #36c;     /* */
+background-color: #36c; /* */
+color: #fff;            /* */
+}
+.fc-event {
+text-align: left;
+}
+.fc-event a {
+overflow: hidden;
+font-size: 1.2em;
+text-decoration: none;
+color: #fff !important;
+padding: 2px;
+cursor: pointer;
+}
+.fc-event-editable {
+cursor: pointer;
+}
+.fc-event-time,
+.fc-event-title {
+padding: 0 1px;
+}
+/* */
+.fc-event a {
+display: block;
+position: relative;
+width: 100%;
+height: 100%;
+}
+/* */
+.fc-rtl .fc-event a {
+text-align: right;
+}
+/* */
+.fc#calendar .ui-resizable-handle { /* ***/
+display: block;
+position: absolute;
+z-index: 99999;
+border: 0 !important; /* */
+background: url(data:image/gif;base64,AAAA) !important; /* */
+}
+.fc-event-hori {
+border-width: 1px 0;
+margin-bottom: 1px;
+}
+.fc-event-hori a {
+border-width: 0;
+}
+/* */
+.fc-content .fc-corner-left {
+margin-left: 1px;
+}
+.fc-content .fc-corner-left a {
+margin-left: -1px;
+border-left-width: 1px;
+}
+.fc-content .fc-corner-right {
+margin-right: 1px;
+}
+.fc-content .fc-corner-right a {
+margin-right: -1px;
+border-right-width: 1px;
+}
+/* */
+.fc-event-hori .ui-resizable-e {
+top: 0           !important; /* */
+right: -3px      !important;
+width: 7px       !important;
+height: 100%     !important;
+cursor: e-resize;
+}
+.fc-event-hori .ui-resizable-w {
+top: 0           !important;
+left: -3px       !important;
+width: 7px       !important;
+height: 100%     !important;
+cursor: w-resize;
+}
+.fc-event-hori .ui-resizable-handle {
+_padding-bottom: 14px; /* */
+}
+.fc-grid table {
+width: 100%;
+}
+.fc#calendar .fc-grid th {
+border-width: 0 0 0 1px;
+text-align: center;
+}
+.fc#calendar .fc-grid td {
+border-width: 1px 0 0 1px;
+}
+.fc-grid th.fc-leftmost,
+.fc-grid td.fc-leftmost {
+border-left: 0;
+}
+.fc-grid .fc-day-number {
+float: right;
+padding: 0 2px;
+}
+.fc-grid .fc-other-month .fc-day-number {
+opacity: 0.3;
+filter: alpha(opacity=30); /* */
+/* */
+}
+.fc-grid .fc-day-content {
+clear: both;
+padding: 2px 2px 0; /* */
+}
+/* */
+.fc-grid .fc-event-time {
+font-weight: bold;
+}
+/* */
+.fc-rtl .fc-grid {
+direction: rtl;
+}
+.fc-rtl .fc-grid .fc-day-number {
+float: left;
+}
+.fc-rtl .fc-grid .fc-event-time {
+float: right;
+}
+.fc#calendar .fc-agenda th,
+.fc#calendar .fc-agenda td {
+border-width: 1px 0 0 1px;
+}
+.fc .fc-agenda .fc-leftmost {
+border-left: 0;
+}
+.fc-agenda tr.fc-first th,
+.fc-agenda tr.fc-first td {
+border-top: 0;
+}
+.fc-agenda-head tr.fc-last th {
+border-bottom-width: 1px;
+}
+.fc#calendar .fc-agenda-head td,
+.fc#calendar .fc-agenda-body td {
+background: none;
+}
+.fc-agenda-head th {
+text-align: center;
+}
+/* */
+.fc-agenda .fc-axis {
+width: 50px;
+padding: 0 4px;
+vertical-align: middle;
+white-space: nowrap;
+text-align: right;
+font-weight: normal;
+}
+/* */
+.fc-agenda-head tr.fc-all-day th {
+height: 35px;
+}
+.fc-agenda-head td {
+padding-bottom: 10px;
+}
+.fc#calendar .fc-divider div {
+font-size: 1px; /* */
+height: 2px;
+}
+.fc#calendar .fc-divider .fc-state-default {
+background: #eee; /* */
+}
+/* */
+.fc#calendar .fc-agenda-body td div {
+height: 20px; /* */
+}
+.fc#calendar .fc-agenda-body tr.fc-minor th,
+.fc#calendar .fc-agenda-body tr.fc-minor td {
+border-top-style: dotted;
+}
+.fc-agenda .fc-day-content {
+padding: 2px 2px 0; /* */
+}
+/* */
+.fc#calendar .fc-agenda-bg .ui-state-highlight {
+background-image: none; /* */
+}
+.fc-event-vert {
+border-width: 0 1px;
+}
+.fc-event-vert a {
+border-width: 0;
+}
+/* */
+.fc-content .fc-corner-top {
+margin-top: 1px;
+}
+.fc-content .fc-corner-top a {
+margin-top: -1px;
+border-top-width: 1px;
+}
+.fc-content .fc-corner-bottom {
+margin-bottom: 1px;
+}
+.fc-content .fc-corner-bottom a {
+margin-bottom: -1px;
+border-bottom-width: 1px;
+}
+/* */
+.fc-event-vert span {
+display: block;
+position: relative;
+z-index: 2;
+}
+.fc-event-vert span.fc-event-time {
+white-space: nowrap;
+_white-space: normal;
+overflow: hidden;
+border: 0;
+font-size: 10px;
+}
+.fc-event-vert span.fc-event-title {
+line-height: 13px;
+}
+.fc-event-vert span.fc-event-bg { /* */
+position: absolute;
+z-index: 1;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #fff;
+opacity: .3;
+filter: alpha(opacity=30); /* */
+}
+/* */
+.fc-event-vert .ui-resizable-s {
+bottom: 0        !important; /* */
+width: 100%      !important;
+height: 8px      !important;
+line-height: 8px !important;
+font-size: 11px  !important;
+font-family: monospace;
+text-align: center;
+cursor: s-resize;
+}
+
+}
+
+
+/* - ftwcalendar.css - */
+@media screen {
+/* https://www.hautmont.org/portal_css/ftwcalendar.css?original=1 */
+/* */
+/* */
+div.fc#calendar {
+line-height: 1.1;
+}
+#content div.fc#calendar table {
+margin-bottom: 0;
+}
+#content div.fc#calendar a {
+border-style: none solid;
+}
+.fc-view {
+z-index: 0;
+}
+#content div.fc-event a,
+#content div.fc-event a:hover {
+color: inherit;
+}
+div.fc-event.editable a {
+background-image: url(../../transp.png);
+}
+/* */
+}
+
+
+/* - ++resource++bsw.sitegenerique.ressources/workflow.css - */
+@media screen {
+/* https://www.hautmont.org/portal_css/++resource++bsw.sitegenerique.ressources/workflow.css?original=1 */
+/* */
+.state-protected {
+color: #814DC4 !important
+}
+/* */
+#plone-contentmenu-workflow .state-protected {
+padding: 0 0.5em;
+background-color: #814DC4;
+border: 0.1em solid #814DC4;
+color: White !important;
+border-radius: 0.5em;
+-webkit-border-radius: 0.5em;
+-moz-border-radius: 0.5em;
+}
+}
+
+
+/* - ++resource++bsw.sitegenerique.ressources/popin.css - */
+@media screen {
+/* https://www.hautmont.org/portal_css/++resource++bsw.sitegenerique.ressources/popin.css?original=1 */
+.desc_role h2 {
+margin-bottom: 10px;
+color: #000;
+}
+.desc_role ul {
+padding-left: 15px;
+list-style: disc
+}
+.desc_role ul ul {
+margin-top: 5px;
+}
+.desc_role li {
+display: list-item;
+margin-bottom: 5px;
+}
+}
+
+
+/* - ++resource++bsw.sitegenerique.ressources/admin.css - */
+@media screen {
+/* https://www.hautmont.org/portal_css/++resource++bsw.sitegenerique.ressources/admin.css?original=1 */
+div.formControls{
+margin:20px 0;
+}
+.portalMessage#dashboard-info-message {
+display: none;
+}
+.ciric{
+margin:15px 0 0 20px;
+padding:0 0 0 5px;
+border-left:2px solid #999;
+}
+.ciric .marque{
+font-weight:bold;
+}
+.ciric #ciric-help{
+color: #76797C;
+font-size: 90%;
+margin: 0 0 0.2em;
+}
+.ciric .acces{
+margin:5px 0 0;
+}
+#hr_top {
+margin: 20px 0;
+}
+#hr_bottom {
+float: left;
+width: 100%;
+margin: 20px 0;
+}
+.managePortletsLink{
+clear:both;
+margin:10px 0;
+}
+.InHeaderPortletManager1 .managePortletsLink,
+.InHeaderPortletManager2 .managePortletsLink,
+.InHeaderPortletManager3 .managePortletsLink,
+.InHeaderPortletManager4 .managePortletsLink,
+.InHeaderPortletManager5 .managePortletsLink,
+.InHeaderPortletManager6 .managePortletsLink,
+.AbovePortletManager1 .managePortletsLink,
+.AbovePortletManager2 .managePortletsLink,
+.AbovePortletManager3 .managePortletsLink,
+.AbovePortletManager4 .managePortletsLink,
+.AbovePortletManager5 .managePortletsLink,
+.AbovePortletManager6 .managePortletsLink,
+.BelowPortletManager1 .managePortletsLink,
+.BelowPortletManager2 .managePortletsLink,
+.BelowPortletManager3 .managePortletsLink,
+.BelowPortletManager4 .managePortletsLink,
+.BelowPortletManager5 .managePortletsLink,
+.BelowPortletManager6 .managePortletsLink,
+.FooterPortletManager1 .managePortletsLink,
+.FooterPortletManager2 .managePortletsLink,
+.FooterPortletManager3 .managePortletsLink,
+.FooterPortletManager4 .managePortletsLink,
+.FooterPortletManager5 .managePortletsLink,
+.FooterPortletManager6 .managePortletsLink,
+.BelowTitlePortletManager1 .managePortletsLink,
+.BelowTitlePortletManager2 .managePortletsLink,
+.BelowTitlePortletManager3 .managePortletsLink,
+.BelowTitlePortletManager4 .managePortletsLink,
+.BelowTitlePortletManager5 .managePortletsLink,
+.BelowTitlePortletManager6 .managePortletsLink,
+#portletPageTopRow .managePortletsLink,
+#portletPageFirstColumn .managePortletsLink,
+#portletPageSecondColumn .managePortletsLink,
+#portletPageBottomRow .managePortletsLink{
+display:none;
+}
+.fc .btn-group {
+white-space:normal!important;
+}
+#edit-bar{
+position:relative;
+z-index:100;
+background:#626262;
+border-color:#626262;
+height: 29px;
+}
+#content-views{
+background:#626262;
+}
+#contentActionMenus{
+background:#626262;
+padding: 0.6em 0.24em 0 0;
+}
+#contentActionMenus dl.actionMenu a,
+#contentActionMenus dl.actionMenu.activated dd{
+background:#626262;
+border-color:#626262;
+}
+#edit-bar #contentActionMenus dl.actionMenu dd li a{
+padding:0!important;
+background:none!important;
+}
+#contentActionMenus dd li img{
+display:none;
+}
+#edit-bar #contentActionMenus dl.actionMenu dd li a:hover,
+#edit-bar #contentActionMenus dl.actionMenu dd li a:focus{
+color:#000;
+}
+dd.actionMenuContent a.actionMenuSelected{
+color:white!important;
+font-weight:bold;
+}
+#portal-column-content #content .link-parent{
+display:inline-block;
+margin:0 0 5px;
+font-weight:bold;
+font-size:1.2em;
+}
+#portal-column-content #content #folderlisting-main-table table{
+width:100%;
+}
+#folderContentsForm div{
+border:none!important;
+}
+#portal-column-content #content table .btn-group ul{
+position:absolute;
+left:auto;
+right:0;
+}
+#portal-column-content #content table .btn-group ul li a:hover,
+#portal-column-content #content table .btn-group ul li a:focus{
+background:#626262;
+color:#fff!important;
+}
+#portal-column-content #content .fc .btn-success,
+#portal-column-content #content .fc .btn-danger{
+padding-top:2px;
+padding-bottom:3px;
+background-color: #F5F5F5;
+background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+background-repeat: repeat-x;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #A2A2A2;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+color: #333333;
+text-shadow:none;
+}
+#portal-column-content #content .fc .btn-success:hover,
+#portal-column-content #content .fc .btn-danger:hover{
+color:#000!important;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset{
+margin:20px 0 0;
+padding:0;
+border:none;
+}
+.userrole-authenticated #portal-column-content #content form fieldset legend{
+margin:0 0 30px;
+text-transform:uppercase;
+font-size:1.5em;
+font-weight:bold;
+color:#999;
+}
+/* */
+/* */
+.userrole-authenticated #portal-column-content #content form > fieldset div.field textarea,
+.userrole-authenticated #portal-column-content #content form > fieldset div.field > select,
+.userrole-authenticated #portal-column-content #content form > fieldset div.widget select,
+.userrole-authenticated #portal-column-content #content form > div.field > input[type=text],
+.userrole-authenticated #portal-column-content #content form > fieldset div.field > input[type=text],
+.userrole-authenticated #portal-column-content #content form > fieldset div.widget > input[type=text]{
+width:50%;
+font-family:verdana;
+font-size:1.1em;
+font-weight:normal;
+color:#000;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset div.field > input[type=checkbox],
+.userrole-authenticated #portal-column-content #content form div.field > .widget > input[type=checkbox]{
+margin:0 5px 0 0;
+vertical-align:top;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset div.field textarea{
+width:100%;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset table{
+width:50%;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset table select{
+width:100%!important;
+}
+/* */
+.userrole-authenticated #portal-column-content #content form > div,
+.userrole-authenticated #portal-column-content #content form > fieldset > div,
+.userrole-authenticated #portal-column-content #content form#edit_form > div.field{
+margin:0 0 20px;
+padding:10px 0;
+border-top:3px solid #ccc;
+}
+.userrole-authenticated #portal-column-content #content form div.field .sortingField{
+margin:30px 0 0;
+padding:10px 0;
+border-top:3px solid #ccc;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset div.widget fieldset{
+margin:0 0 10px;
+padding:0;
+border:none;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset div.widget fieldset legend{
+display:block;
+margin:10px 0 0;
+padding:10px 0;
+width:100%;
+border-top:3px dotted #ccc;
+text-transform:none;
+}
+/* */
+.userrole-authenticated #portal-column-content #content form div.field > label,
+.userrole-authenticated #portal-column-content #content form div.widget > label,
+.userrole-authenticated #portal-column-content #content form div.field > .label,
+.userrole-authenticated #portal-column-content #content form div.field .sortingField div + label{
+display:inline-block;
+margin:0 0 5px;
+text-transform:uppercase;
+font-size:1.5em;
+}
+.userrole-authenticated #portal-column-content #content form div.field .sortingField div + label{
+display:block;
+}
+.userrole-authenticated #portal-column-content #content form div.field > .formHelp{
+font-style:italic;
+font-size:1.1em;
+}
+.userrole-authenticated #portal-column-content #content form div.field > .label .formHelp,
+.userrole-authenticated #portal-column-content #content form div.field > label .formHelp,
+.userrole-authenticated #portal-column-content #content form div.field > .widget .formHelp{
+margin:5px 0;
+font-size:0.8em;
+font-style:italic;
+text-transform:none;
+}
+.userrole-authenticated #portal-column-content #content form div.field .previewresultsLabel{
+margin:20px 0 0;
+padding:10px 0 0;
+border-top:3px solid #ccc;
+text-transform:uppercase;
+font-size:1.5em;
+}
+.userrole-authenticated #portal-column-content #content form div.field .previewresultsLabel + .formHelp{
+margin:5px 0;
+font-size:1.1em;
+font-style:italic;
+}
+/* */
+.userrole-authenticated #portal-column-content #content form div.field > label[for=image_nochange],
+.userrole-authenticated #portal-column-content #content form div.field > label[for=image_delete],
+.userrole-authenticated #portal-column-content #content form div.field > label[for=image_upload],
+.userrole-authenticated #portal-column-content #content form div.field > label[for=supp_logo_bandeau],
+.userrole-authenticated #portal-column-content #content form div.field > label[for=supp_img_slider_1],
+.userrole-authenticated #portal-column-content #content form div.field > label[for=supp_img_slider_2],
+.userrole-authenticated #portal-column-content #content form div.field > label[for=supp_img_slider_3],
+.userrole-authenticated #portal-column-content #content form div.field > label[for=supp_img_slider_4],
+.userrole-authenticated #portal-column-content #content form div.field > label[for=supp_img_slider_5]{
+text-transform:none;
+font-size:1.1em;
+}
+.userrole-authenticated #portal-column-content #content form div.field > label[for=contenus_correles_no_minisites] {
+display:inline;
+}
+/* */
+.userrole-authenticated #portal-column-content #content form div.field #sortfield{
+display:block;
+}
+/* */
+.userrole-authenticated #portal-column-content #content form > fieldset .criteria{
+margin:0 0 20px;
+overflow:hidden;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset .criteria > div{
+float:none;
+margin:0 0 5px;
+color:#000;
+font-size:1.2em;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset .criteria > div:first-child:before{
+content:"▶ ";
+font-size:0.8em;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset .criteria select{
+width:auto;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset .criteria input.removecriteria{}
+.userrole-authenticated #portal-column-content #content form div.field .previewresults{
+font-size:1.1em;
+}
+/* */
+.userrole-authenticated #portal-column-content #content form > fieldset #subject-tags{
+font-size:1.1em;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset #subject-tags div,
+.userrole-authenticated #portal-column-content #content form > fieldset #subject-tags dl{
+margin:10px 0 0;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset #subject-tags > div:before,
+.userrole-authenticated #portal-column-content #content form > fieldset #subject-tags > dl:before{
+content:"▶ ";
+float:left;
+margin:0 3px 0 0;
+font-size:0.8em;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset #subject-tags div .existingTags{
+margin:0 20px 0 0;
+}
+.userrole-authenticated #portal-column-content #content form > fieldset #subject-tags span.newTagsHelp{
+float:left;
+}
+.template-configpanel #portal-column-content #content form > fieldset legend{
+display:block;
+margin: 0;
+padding: 20px 0;
+width:100%;
+border-top: 3px solid #CCCCCC;
+font-size: 1.5em;
+font-weight:bold;
+text-transform: uppercase;
+color:#999;
+}
+.template-configpanel #portal-column-content #content form > fieldset > div{
+border-top: 3px dotted #CCCCCC;
+margin: 0 0 10px;
+}
+.template-configpanel #portal-column-content #content form > fieldset > div label{
+text-transform: none!important;
+}
+.template-portlets #portal-column-content #content form > div,
+body[class*=template-manage-] #portal-column-content #content form > div{
+margin:0;
+padding:0;
+border:none;
+}
+.template-portlets #portal-column-content #content div + .section,
+body[class*=template-manage-] #portal-column-content #content div + .section{
+padding:10px;
+background: #F0F0F0;
+}
+.template-portlets #portal-column-content #content .section:first-child + div,
+body[class*=template-manage-] #portal-column-content #content .section:first-child + div{
+margin:10px 0;
+}
+#portal-columns dl.portlet.portletPaletteAdministration,
+dl.portlet.portletPaletteAdministration {
+padding:10px;
+background:#626262;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
+border-radius:5px;
+behavior: url(../../++resource++bsw.sitegenerique.ressources/++resource++PIE.htc);
+}
+#portal-columns dl.portlet.portletPaletteAdministration dt,
+dl.portlet.portletPaletteAdministration dt {
+padding:0 0 10px 43px;
+min-height:34px;
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-palette-user.png) 0 0.2em no-repeat;
+border-bottom:1px solid #ccc;
+color:#fff;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dt #version,
+dl.portlet.portletPaletteAdministration dt #version {
+float:right;
+font-size:0.7em;
+font-weight:normal;
+text-transform:lowercase;
+padding:10px 0 0 0;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd,
+dl.portlet.portletPaletteAdministration dd {
+padding:5px 0;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd img,
+dl.portlet.portletPaletteAdministration dd img {
+display:none;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a,
+dl.portlet.portletPaletteAdministration dd a{
+display:block;
+padding:0 0 0 20px;
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-modif.png) 0 0 no-repeat;
+font-size:0.9em;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a,
+#portal-columns dl.portlet.portletPaletteAdministration dd a:hover,
+#portal-columns dl.portlet.portletPaletteAdministration dd a:focus,
+dl.portlet.portletPaletteAdministration dd a,
+dl.portlet.portletPaletteAdministration dd a:hover,
+dl.portlet.portletPaletteAdministration dd a:focus {
+color:#fff!important;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a[title="Mon espace privé"],
+dl.portlet.portletPaletteAdministration dd a[title="Mon espace privé"] {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-espace-prive.png) 0 0 no-repeat;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a[title="Se déconnecter"],
+dl.portlet.portletPaletteAdministration dd a[title="Se déconnecter"] {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-deconnexion.png) 0 0 no-repeat;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a#gestion_utilisateurs,
+dl.portlet.portletPaletteAdministration dd a#gestion_utilisateurs {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-utilisateurs.png) 0 0 no-repeat;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a#gestion_newsletter,
+dl.portlet.portletPaletteAdministration dd a#gestion_newsletter {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-newsletter.png) 0 0 no-repeat;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a#elements-non-publies,
+#portal-columns dl.portlet.portletPaletteAdministration dd a#elements-en-attente,
+dl.portlet.portletPaletteAdministration dd a#elements-non-publies,
+dl.portlet.portletPaletteAdministration dd a#elements-en-attente {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-elements.png) 0 0 no-repeat;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a#undo,
+dl.portlet.portletPaletteAdministration dd a#undo {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-annuler.png) 0 0 no-repeat;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a#aide-en-ligne,
+dl.portlet.portletPaletteAdministration dd a#aide-en-ligne {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-aide.png) 0 0 no-repeat;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a#gestion_motdepasse,
+dl.portlet.portletPaletteAdministration dd a#gestion_motdepasse {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-mdp.png) 0 0 no-repeat;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a#regles,
+dl.portlet.portletPaletteAdministration dd a#regles {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-regle.png) 0 0 no-repeat;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a#review-comments,
+dl.portlet.portletPaletteAdministration dd a#review-comments {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-commentaire.png) 0 0 no-repeat;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a#gestion-actualites,
+dl.portlet.portletPaletteAdministration dd a#gestion-actualites {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-actu.png) 0 0 no-repeat;
+}
+#portal-columns dl.portlet.portletPaletteAdministration dd a#gestion-agenda,
+dl.portlet.portletPaletteAdministration dd a#gestion-agenda {
+background:url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-agenda.png) 0 0 no-repeat;
+}
+#pfgWidgetWrapper {
+background: #626262 !important;
+-webkit-box-shadow: none;
+box-shadow: none;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+behavior: url(../../++resource++bsw.sitegenerique.ressources/++resource++PIE.htc)
+}
+#pfgWidgetWrapper .header{
+border-bottom: none;
+color: #FFFFFF;
+padding: 0;
+background: none;
+text-transform: uppercase;
+}
+#pfgWidgetWrapper .header h3{
+height:auto;
+}
+#pfgWidgetWrapper .fields-header,
+#pfgWidgetWrapper .fieldset-header,
+#pfgWidgetWrapper .actions-header{
+color: #FFFFFF;
+font-size: 1.5em;
+font-weight: normal;
+padding: 5px 0;
+}
+h4.widget-header,
+h4.widget-header-helper,
+.draggable .dragginghook {
+background-color: #f4f4f4;
+border: 1px solid #626262;
+}
+h4.widget-header:before {
+content: "+ ";
+}
+#portal-column-content #content .new-widget .field,
+#portal-column-content #content .new-widget .action,
+#portal-column-content #content .new-widget .PFGFieldsetWidget {
+width: auto;
+float: none;
+height:auto;
+}
+#content-views #contentview-enregistrements a {
+background: #75B81E url(../../++resource++bsw.sitegenerique.ressources/++resource++bsw.sitegenerique.ressources/images/picto-save.png) 0.8em 0.7em no-repeat;
+padding-left: 25px;
+border-top-right-radius: 0.5em;
+border-top-left-radius: 0.5em;
+-webkit-border-top-right-radius: 0.5em;
+-webkit-border-top-left-radius: 0.5em;
+-moz-border-radius-topleft: 0.5em;
+-moz-border-radius-topright: 0.5em;
+color:#FFF;
+}
+.pfg_saved_input {
+margin: 20px 0 !important;
+}
+.pfg_saved_input a {
+border: none;
+background: #75B81E;
+cursor: pointer;
+color:#FFFFFF !important;
+padding: 3px 10px 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+behavior: url(../../++resource++bsw.sitegenerique.ressources/++resource++PIE.htc);
+font-size: 1.5em;
+}
+#content .pfg_saved_input a:hover {
+color:#FFFFFF !important;
+}
+.pfg_saved_input a img{
+display: none;
+}
+#clearSavedFormInput {
+border: none;
+background: #E56385;
+cursor: pointer;
+color:#FFFFFF;
+padding: 3px 10px 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+behavior: url(../../++resource++bsw.sitegenerique.ressources/++resource++PIE.htc);
+font-size: 0.9em;
+}
+.template-tabular_extended_view #content table.listing {
+margin-bottom:0;
+}
+.template-tabular_extended_view #content #listing-table-scrollbar {
+display: block;
+overflow: scroll;
+}
+#portal-columns #above-content dl.portlet.portletPaletteAdministration {
+overflow:hidden;
+margin-bottom: 20px;
+}
+#portal-columns #above-content dl.portlet.portletPaletteAdministration dt{
+padding:10px 0 2px 43px;
+}
+#portal-columns #above-content dl.portlet.portletPaletteAdministration dd{
+float:left;
+width:20%;
+}
+#content dl.portlet.portletSearch form div{
+margin:0 !important;
+padding:0 !important;
+border:none !important;
+}
+.gestion_users table.listing tr.even th:nth-child(3), .gestion_users table.listing tr.even th:nth-child(4){
+width:80px;
+text-align: center;
+}
+.gestion_users table.listing .Manager,
+.gestion_users table.listing .Editor,
+.gestion_users table.listing .Reader,
+.gestion_users table.listing .Reviewer{
+display: none;
+}
+}
+

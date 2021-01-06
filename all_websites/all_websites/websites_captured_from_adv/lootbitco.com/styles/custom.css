@@ -1,0 +1,2038 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	background: #01131d;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 500;
+	padding: 0;
+	margin: 0
+}
+p {
+	text-align: justify;
+	margin: 0 0 20px;
+}
+a {
+	color: #fff;
+	outline: none;
+	text-decoration: none
+}
+a:hover, a:active, a:focus {
+	color: #ffd414;
+	text-decoration: none;
+	outline: none
+}
+img {
+	max-width: 100%
+}
+label {
+	font-weight: 400
+}
+input[type="text"], input[type="password"], input[type="email"] {
+	color: #fff;
+	width: 100%;
+	height: 40px;
+	background:#000000;
+	border: 2px solid #F2BA0F;
+	padding: 0 15px;
+	border-radius: 4px;
+	font-size: 15px;
+}
+textarea {
+	color: #fff;
+	width: 100%;
+	background:#000000;
+	border: 2px solid #F2BA0F;
+	padding: 10px;
+	border-radius: 4px;
+	resize: none;
+	font-size: 15px;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, .form-container textarea:focus {
+	border: 1px solid #fcc51e
+}
+input[type="submit"], input[type="button"] {
+    border-radius: 50px;
+    background: rgb(46,249,118);
+    background: linear-gradient(180deg, rgba(46,249,118,1) 0%, rgba(12,200,80,1) 100%);
+	border: none;
+	color: #01131d;
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 40px;
+	display: inline-block;
+	padding: 0 40px
+}
+input[type="submit"]:hover, input[type="button"]:hover {
+	color: #01131d;
+	 background: rgb(252,197,30);
+}
+select {
+	color: #fff;
+	font-size: 13px;
+	border: 1px solid #041521;
+	border-radius: 4px;
+	width: auto;
+	background: #041521;
+	padding: 5px 25px 5px 10px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+.wrapper, .bannerwrap,.investmentwrap,.calculatorwrap, .statwrap, .aboutwrap, .benifitwrap, .referralwrap,.footerwrap,.footerpayment {
+	width: 100%;
+	float: left;
+}
+.content {
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	z-index: 99;
+}
+.bannerwrap {
+	background: url(images/mainbanner.jpg) no-repeat top center;
+	color: #fff;
+	background-size: cover;
+}
+
+.bannerwrap_sub {
+    background: url(images/mainbanner.jpg) no-repeat center -100px;
+    color: #fff;
+    background-size: cover;
+    padding-bottom: 40px;
+    text-align: center;
+    border-bottom: 8px solid #f4bc12;
+}
+
+.planlistiwrap_sub {
+	width: 100%;
+	float: left;	
+	padding:50px 0px;
+}
+
+
+.navwrap {
+	width: 100%;
+	float: left;
+}
+.navinside {
+	background: rgb(15,57,84);
+	background: linear-gradient(180deg, rgba(15,57,84,0.75) 0%, rgba(6,24,38,0.75) 100%);
+	border-radius: 0 0 20px 20px;
+	padding: 15px 20px 25px;
+	width: 100%;
+	float: left;
+}
+.logo {
+	float: left;
+	width: 25%;
+}
+.menu {
+	width: 75%;
+	float: right;
+	text-align: right;
+	line-height: 41px;
+	padding: 5px 0;
+}
+.menu ul {
+}
+.menu ul li {
+	display: inline-block;
+	margin: 0 0 0 10px;
+}
+.menu ul li a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.menu ul li a:hover {
+	color: #f5be20
+}
+.menu ul li.login {
+	border-radius: 50px;
+	background: rgb(46,249,118);
+	background: linear-gradient(180deg, rgba(46,249,118,1) 0%, rgba(12,200,80,1) 100%);
+}
+.menu ul li.login:hover a, .menu ul li.signup:hover a {
+	color: #071928;
+}
+.menu ul li.signup {
+	background: rgb(252,197,30);
+	background: linear-gradient(180deg, rgba(252,197,30,1) 0%, rgba(236,179,6,1) 100%); 
+	border-radius: 50px;
+}
+.menu ul li.login a, .menu ul li.signup a {
+	padding: 0 30px;
+	color: #071928;
+	display: inline-block;
+}
+.banner {
+	width: 100%;
+	float: left;
+}
+.banner .left {
+	width: 80%;
+	float: left;
+	padding: 60px 0 0 0;
+}
+
+.bannerwrap_sub .banner .left {
+	width:100%;
+}
+
+.banner .left h1 {
+	margin: 0 0 10px;
+	font-size: 82px;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 82px;
+}
+
+
+
+.bannerwrap_sub .banner .left h1 {
+    margin: 0 0 10px;
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 82px;
+}
+
+.banner .left h1 span {
+	color: #ffd414;
+}
+.banner .left h2 {
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 48px;
+	margin: 0 0 20px;
+	text-transform: uppercase;
+}
+.banner .left p {
+	margin: 0 0 35px;
+	font-size: 16px;
+	line-height: 30px;
+}
+.banner .left .best {
+	font-size: 32px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #011926;
+	background: rgb(39,225,108);
+	background: linear-gradient(90deg, rgba(39,225,108,1) 37%, rgba(39,225,108,0) 100%); 
+	padding: 35px 25px;
+	border-radius: 25px 0 0 25px;
+	font-weight: 700;
+}
+.banner .left .action {
+	padding: 45px 0 175px 0;	
+}
+.banner .left .action a {
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height:56px;
+	border-radius: 50px;
+	display: inline-block;
+	text-align: center;
+	padding: 0 40px;
+	border: 2px solid #f5be20;
+}
+.banner .left .action a.openacc{
+	background: #f5be20;
+	color: #01131d;
+	margin: 0 20px 0 0;
+}
+.banner .left .action a.openacc:hover {
+	color: #f5be20;
+	background: #01131d;
+}
+.banner .left .action a.memlogin {
+	background: #01131da3;
+	color: #fff;
+	margin: 0;
+}
+.banner .left .action a.memlogin:hover {
+	color: #000;
+	background: #f5be20;
+}
+.banner .right {
+	width: 59%;
+	float: left;
+}
+.investmentwrap {
+	background: #01131d;
+	padding: 0 0 40px;
+	text-align: center;
+	color: #fff;
+}
+.investmentwrap h2 {
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #fff;
+	width: 735px;
+	text-align: center;
+	margin: -100px auto 0;
+	padding: 35px 0;
+	background: rgb(0,37,55);
+	background: linear-gradient(180deg, rgba(0,37,55,1) 0%, rgba(2,4,7,1) 100%);
+	border-radius: 15px 15px 0 0;
+}
+.investmentwrap h2 span {
+	color: #fcc51e;
+	font-weight: 700;
+}
+.planboxwrap {
+	padding: 30px 0 0 0;
+	width: 100%;
+	float: left;
+	margin: 0;
+	text-align:center;
+}
+
+.myaccount_wrap .planname span {
+    background-color: #f0b70c;
+    color: #01050a;
+    text-transform: uppercase;
+    width: 232px;
+    height: 44px;
+    display: inline-block;
+    border-radius: 0 0 10px 10px;
+    line-height: 44px;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: left;
+    padding: 0px 12px;
+}
+
+.myaccount_wrap .planname span font {float:right;}
+
+.planbox {
+	width: calc(25% - 23px);
+	float: left;
+	margin: 30px 30px 0 0;
+	background: #01050a;
+	border-radius: 15px;
+	position: relative;
+	z-index: 99;
+}
+.planbox:last-child {
+	margin-right: 0 !important;
+}
+.planbox .icon {
+	margin-top: -35px;
+}
+.planhead {
+	color: #edb407;
+	font-size: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding: 15px 0;
+	position: relative;
+	z-index: 99;
+	line-height: 60px;
+}
+.planhead span {
+	font-size: 48px;
+}
+.planbox .hourly {
+	color: #36657b;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.planpercentage {
+	width: 160px;
+	height: 160px;
+	background: #034770;
+	border-radius: 50%;
+	margin: 0 auto 0 84px;
+	padding: 40px 0;
+	position: relative;
+	z-index: 99;
+}
+.planinfos {
+	width: 100%;
+	float: left;
+}
+.planinfos ul {
+	margin: 10px 0 0 0;
+}
+.planinfos ul li {
+	background: #020a14;
+	line-height: 42px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 500;
+}
+.planinfos ul li:nth-child(2n) {
+	background: #030f1d;
+}
+.planinfos ul li span {
+	float: right;
+	padding: 0 30px 0 0;
+	background: url(images/plantick.html) no-repeat right center;
+}
+.planbox .deposit {
+	width: 100%;
+	float: left;
+	padding: 20px 0;
+}
+.planbox .deposit a {
+	color: #fcc51e;
+	text-transform: uppercase;
+	font-size: 12px;
+	border: 1px solid #fcc51e;
+	padding: 12px 25px;
+	border-radius: 50px;
+	line-height: 41px;
+}
+.planbox .deposit a:hover {
+	background: #fcc51e;
+	color: #000;
+}
+.planname {
+	background: #01131d;
+	width: 100%;
+	float: left;
+}
+.planname span {
+	background-color: #f0b70c;
+	color: #01050a;
+	text-transform: uppercase;
+	width: 192px;
+	height: 44px;
+	display: inline-block;
+	border-radius: 0 0 10px 10px;
+	line-height: 44px;
+	font-weight: 600;
+}
+.planbox:nth-child(odd) .planhead {
+	color: #2aee71;
+}
+.planbox:nth-child(odd) .planname span {
+	background-color: #2aee71;
+}
+.calculatorwrap {
+	background: #01131d;
+	padding: 0 0 40px 0;
+}
+.calculatorbox {
+	width: 100%;
+	float: left;
+	position:relative;
+}
+.calculatorbox .left {
+	background: #2cf974;
+	float: left;
+	width: 14%;
+	border-radius: 10px 10px 0 0;
+	transform: rotate(-90deg);
+	position: absolute;
+	left: -35px;
+	top: 70px;
+}
+.calculatorbox .left h4 {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+	color: #000;
+	text-align: center;
+	padding: 7px 0px;
+}
+.calculatorbox .right {
+	width: calc(100% - 70px);
+	float: right;
+	border-radius: 20px;
+	padding: 45px 25px 45px 45px;
+	background: url(images/calbg.png) no-repeat right center;
+}
+.enteramount {
+	float: left;
+	width: 28%;
+	padding: 0 25px 0 0;
+}
+.enteramount label {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 24px;
+	padding: 0 0 15px;
+	margin: 0;
+	width: 100%;
+	float: left;
+}
+.enteramount label span {
+	color: #2efb76;
+}
+.putfigure {
+	position: relative;
+	width: 100%;
+	float: left;
+	background: #000000;
+	border: 2px solid #fac21a;
+	border-radius: 8px;
+}
+.putfigure input {
+	height: 54px;
+	padding: 0 65px 0 15px;
+	width: 100%;
+	background: transparent;
+	border: none;
+	font-size: 24px;
+	color: #fff;
+}
+.putfigure input:focus {
+	border: none;
+}
+.putfigure .icon {
+	width: 54px;
+	background: #fac31b;
+	border-radius: 0 4px 4px 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 54px;
+	text-align: center;
+}
+.calculatorresults {
+	width: 18%;
+	padding: 0 22px;
+	float: left;
+	margin: 39px 0 0 0;
+}
+.calculatorresults p {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: left;
+	text-transform: uppercase;
+}
+.calculatorresults h4 {
+	margin: 0 0 10px;
+	font-size: 22px;
+	font-weight: 600;
+	color: #16d85a;
+}
+.statwrap {
+	width: 100%;
+	float: left;
+	padding: 40px 0;
+	background: #f2ba0f;
+	color: #000;
+}
+.statbox {
+	width: calc(25% - 16px);
+	float: left;
+	padding: 25px;
+	text-align: center;
+	border-radius: 4px;
+	border: 2px solid #000;
+	margin: 0 21px 0 0;
+}
+.statbox:last-child {
+	margin: 0;
+}
+.statbox .icon {
+	float: left;
+	width: 24%;
+	padding: 0 10px 0 0;
+}
+.statbox h4 {
+	margin: 15px 0 10px 0;
+	font-size: 24px;
+	font-weight: 600;
+}
+.statbox p {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+}
+.aboutwrap {
+	background: #01131d;
+	padding: 50px 0 150px;
+	color: #fff;
+}
+
+.aboutwrap_sub {
+    padding: 50px 0 50px;
+    background: url(images/account-bg.jpg) no-repeat center top;
+    background-attachment: fixed;
+}
+
+.aboutthumb {
+	width: 44%;
+	float: right;
+}
+.abutinfos {
+	width: 48%;
+	float: left;
+}
+.abutinfos h1 {
+	margin: 25px 0;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #0dcc51;
+}
+.abutinfos p {
+	margin: 0 0 30px;
+}
+.abutinfos a {
+	background: #f4bc12;
+	color: #000;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 0 50px;
+	border-radius: 50px;
+	line-height: 50px;
+	display: inline-block;
+}
+.abutinfos a:hover {
+	color: #fff;
+	background: #02283e;
+}
+.benifitwrap {
+	background: url(images/benifitbg.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+.benifitwrap h2 {
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #fff;
+	width: 735px;
+	text-align: center;
+	margin: -100px auto 0;
+	padding: 35px 0;
+	background: rgb(0,37,55);
+	background: linear-gradient(180deg, rgba(0,37,55,1) 0%, rgba(2,4,7,1) 100%);
+	border-radius: 15px 15px 0 0;
+}
+.benifitwrap h2 span {
+	color: #fcc51e;
+	font-weight: 700;
+}
+.benifitwrap .insidebox {
+	width: 100%;
+	float: left;
+	padding: 40px 0 80px;
+}
+.benifitwrap .insidebox .benifitbox {
+	width: calc(33.33% - 30px);
+	margin: 80px 30px 0 0;
+	float: left;
+	background: #02131d;
+	border-radius: 15px;
+	padding: 45px 30px;
+	position: relative;
+}
+.benifitwrap .insidebox .benifitbox .icon {
+	position: absolute;
+	right: 15px;
+	top: -40px;
+}
+.benifitwrap .insidebox .benifitbox h4 {
+	font-weight: 600;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fac31b;
+	margin: 0 0 20px;
+}
+.benifitwrap .insidebox .benifitbox p {
+	margin: 0;
+	min-height: 100px;
+	text-align: left;
+}
+.referralwrap {
+	background: #1be060;
+	color: #fff;
+	padding: 60px 0 250px;
+}
+.referralwrap .heading {
+	text-align: center;
+	padding: 0 0 25px;
+}
+.referralwrap .heading h4 {
+	font-size: 30px;
+	font-weight: 800;
+	margin: 0 0 25px;
+	color: #002132;
+	text-transform: uppercase;
+}
+.referralwrap .heading h4  span {
+	color: #066a29;
+}
+.referralwrap .heading p {
+	text-align: center;
+	font-size: 16px;
+	color: #000;
+}
+.referralwrap .infoarea {
+	width: 100%;
+	float: left;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 0 -330px;
+}
+.referralwrap .infoarea .refbox {
+	text-align: center;
+	width: 48%;
+	float: left;
+	background: rgb(0,37,56);
+	background: linear-gradient(180deg, rgba(0,37,56,1) 0%, rgba(2,3,5,1) 100%);
+	border-radius: 20px;
+	padding: 30px;
+}
+.referralwrap .infoarea .refbox .icon {
+	padding: 0 0 25px;
+}
+.referralwrap .infoarea .refbox h4 {
+	font-size: 24px;
+	font-weight: 700;
+	margin: 0 0 25px;
+	color: #fcc51e;
+	text-transform: uppercase;
+}
+.referralwrap .infoarea .refbox p {
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	min-height: 100px;
+}
+.footerpayment {
+	background: #01131d;
+	padding: 150px 0 50px;
+	text-align: center;
+	margin: -30px 0 0 0;
+}
+
+.footerwrap {
+	background: #020306;
+	color: #fff;
+	padding: 40px 0;
+}
+.copyright {
+	width: 50%;
+	float: left;
+}
+.copyright p {
+	text-align: left;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 500;
+}
+.footerlistings {
+	width: 50%;
+	float: right;
+	color: #f9c21a;
+	text-align: right;
+}
+.footerlistings a {
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 24px;
+	font-weight: 500;
+	display: inline-block;
+	color: #f9c21a;
+	margin: 0 8px;
+}
+.footerlistings a:hover {
+	color: #0cca4f;
+}
+
+@media (max-width: 1170px) {
+	.wrapper, .bannerwrap,.investmentwrap,.calculatorwrap, .statwrap, .aboutwrap, .benifitwrap, .referralwrap,.footerwrap,.footerpayment {
+	width: 1170px;
+}
+.content {
+	margin: 0 !important;
+}
+}
+
+
+
+
+/*-----Custom Pages-----*/
+.inside_wrap, .referralwrap.affiliatepage {
+	padding: 40px 0;
+}
+
+.welcome.aboutpage {
+	padding: 0 0 30px;
+}
+.faq .panel-default {
+	border-radius: 0;
+	border: 0;
+
+}
+.faq .panel-default > .panel-heading {
+    color: #fff;
+    background: rgb(0,37,55);
+    background: linear-gradient(180deg, rgba(0,37,55,1) 0%, rgba(2,4,7,1) 100%);
+    padding: 0;
+    border: 2px solid #17D85C;
+    box-shadow: 0 0 0 0 !important;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.faq .panel-title {
+	font-size: 15px;
+	text-transform: none;
+	background: url(images/faq.png) no-repeat 10px center;
+	font-weight: 500;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top:0px;
+}
+.inside_wrap.news {
+    background: #000f3b;
+    background-size: auto;
+    background-size: cover;
+    padding: 15px 0;
+}
+.faq .panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
+    color: #17d85c;
+    padding: 18px 15px 18px 45px;
+    display: block;
+    text-transform: none;
+    font-size: 16px;
+}
+.faq .panel {
+	background-color: transparent;
+}
+.news_block {
+    margin: 10px 0px;
+    width: 100%;
+    float: left;
+    padding: 0;
+    background: #172837;
+    border-bottom: 0px;
+    border: 0px;
+    border-radius: 6px;
+    padding: 0px;
+}
+.news_title {
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: none;
+    font-weight: 500;
+    color: #e4b21e;
+    line-height: 48px;
+    width: 70%;
+    float: left;
+}
+.news_time {
+    padding: 15px;
+    font-size: 11px;
+    color: #f0cb19;
+    width: 30%;
+    float: right;
+    text-align: right;
+    line-height: 40px;
+}
+.news_infos {
+    line-height: 26px;
+    font-weight: 500;
+    background: #020f1a;
+    padding: 20px;
+    width: 100%;
+    float: left;
+}
+.rules {
+	width: 100%;
+	float: left;
+
+}
+.rules h3.sectionhead {
+    margin: 0 0 25px;
+    font-weight: 600;
+    color: #208af3;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.welcome.aboutpage p {
+	margin: 0;
+}
+.supportleft {
+    width:45%;
+    float: left;
+
+}
+
+
+.contacts-container {
+    overflow: hidden;
+    border: 1px solid #05c248;
+    padding: 5px 15px;
+    border-radius: 4px;
+    background: #05c248;
+}
+
+.support-block {
+    float: left;
+    background: #F8D35C;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0px;
+    width: 100%;
+    margin: 0px;
+    color: #06326D;
+}
+
+.support-block h2 {
+	text-align:left;
+	 color: #06326D;
+	text-transform:none;
+}
+
+.support-block  a { color: #06326D; font-size:18px;}
+
+.supportright {
+    float: right;
+    width: 50%;
+    padding: 0px 0px;
+    border-radius: 16px;
+}
+.supportright h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	margin: 0 0 15px;
+	padding: 0 10px;
+	text-align:left;
+}
+.form-block.one, .form-block.two {
+	width: 50%;
+	float: left;
+	padding: 10px;
+}
+.form-block.three, .form-block.four {
+	padding: 10px;
+	width: 100%;
+	float: left;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #717171;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:#717171;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color:#717171;
+}
+
+
+.loginpages {
+    background: url(images/mainbanner.jpg) no-repeat center #031019;
+    background-size: cover;
+}
+.loginfooter {
+	text-align: center;
+	padding: 50px 0;
+	width: 100%;
+	float: left;
+}
+.loginwrappers {
+    width: 100%;
+    background: url(images/login-bg.jpg) no-repeat left center;
+    border-radius: 10px;
+    border: 3px solid #21e768;
+    max-width: 500px;
+    margin: 0 auto 0px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.signupwrappers {
+    max-width: 800px;
+    padding: 30px;
+    background-size: cover;
+}
+
+.signupwrappers  table {
+	width:48%;
+	float:left;
+	margin:1%;
+}
+
+.amount {
+	padding:5px 0px;
+}
+
+.login-button {text-align:center;}
+.benifit_wrap {
+    float: left;
+    width: 100%;
+    padding: 90px 0px 50px;
+}
+
+.benifit_wrap h2 {
+	color:#F7C017;
+	text-transform:uppercase;
+	
+}
+
+.amount h2 {
+    background: rgb(252,197,30);
+    background: linear-gradient(180deg, rgba(252,197,30,1) 0%, rgba(236,179,6,1) 100%);
+    border-radius: 6px;
+    color: black;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    
+}
+
+.iagree {
+	clear:both;
+	padding:20px 0px;
+	text-align:center;
+	font-size:18px;
+}
+
+.iagree input[type="checkbox"] {
+    margin: 0px 4px;
+    vertical-align: middle;
+}
+
+.signup-bottom {
+		text-align:center;
+}
+
+.loginwrappers input[type="text"], .loginwrappers input[type="password"], .loginwrappers input[type="email"] {
+	background:#000000;
+	border: 2px solid #F2BA0F;
+    height: 54px;
+    border-radius: 4px;
+    color: white;
+}
+
+
+
+.loginwrappers .logo {
+	width: 100%;
+	padding: 80px 0 0 0;
+	float: left;
+}
+.loginheads {
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    float: left;
+    font-weight: 600;
+    line-height: 42px;
+    padding: 10px 20px;
+    text-align: center;
+    background: #029ffd;
+    background: -moz-linear-gradient(top, #029ffd 0%, #016bbb 100%);
+    background: -webkit-linear-gradient(top, #029ffd 0%,#016bbb 100%);
+    background: linear-gradient(to bottom, #029ffd 0%,#016bbb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#029ffd', endColorstr='#016bbb',GradientType=0 );
+    color: white;
+}
+.form-container.login {
+	width: 100%;
+	float: left;
+}
+.loginpages .logo {
+	width: 100%;
+	text-align: center;
+	padding: 60px 0 30px;
+}
+.loginaction {
+    padding: 16px 0;
+    text-align: center;
+    margin: 20px 0 0px 0;
+    width: 100%;
+    float: left;
+    color:#F4BC12;
+}
+.form-container.login table td {
+	padding: 6px 0;
+}
+
+.form-container.login table td label {
+	font-weight:500;
+	margin-bottom:5px;
+}
+
+
+.loginaction a {
+    padding: 0px 5px;
+    color: #f4bc12;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.loginaction h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 0;
+    text-align: center;
+}
+.loginaction .signup {
+    color: #ffffff;
+    background: rgb(11,167,201);
+    background: linear-gradient(90deg, rgba(11,167,201,1) 0%, rgba(4,208,215,1) 50%, rgba(11,167,201,1) 100%);
+    border-radius: 6px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px 5px;
+    color: black;
+}
+
+.loginaction .signup:hover {
+	    background: rgb(11,167,201);
+}
+
+
+.supportleft p {
+    font-size: 14px;
+    text-align: left;
+}
+
+.supportleft h2 {
+    color: #1ee264;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+.loginwrappers .icon {
+    text-align: center;
+    float: none;
+    padding-top:20px;
+}
+.loginredirect {
+    width: 100%;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 600px;
+    margin: 100px auto;
+    overflow: hidden;
+    text-align: center;
+    background: #000a13b3;
+}
+.loginredirect p {
+	text-align: center
+}
+.loginredirect h3 {
+    color: #2af571;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.loginredirect h3 strong {
+	font-weight: 600;
+}
+.loginredirect h4 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+}
+.navbar {
+    float: right;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+
+.member-menu {text-align:center; margin-bottom:20px;}
+
+.member-menu li {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.member-menu li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 3px 15px 3px;
+    line-height: 32px;
+    background: rgb(46,249,118);
+    background: linear-gradient(180deg, rgba(46,249,118,1) 0%, rgba(12,200,80,1) 100%);
+    border-radius: 6px;
+    color: #041E2B;
+    margin: 0px 3px 5px;
+    font-size: 12px;
+    display: block;
+}
+
+
+.member-menu li a:hover {
+	background: rgb(46,249,118);
+}
+
+.member-menu li a i {
+	display:block;
+	font-size:24px;
+}
+
+.member-menu span {
+	margin: 0 0px 0 0;
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	text-align: center;
+}
+.member-menu span i {
+	font-size: 16px;
+}
+.navbar-nav > li.dropdown {
+	padding-right: 15px;
+	background: url(images/arrow.html) no-repeat center right;
+}
+
+.memright {
+	width: 52%;
+	float: left;
+}
+.membersidebar {
+    float: left;
+    width: 100%;
+    border-radius: 4px;
+    margin: 15px 0px 25px;
+    padding: 0px;
+}
+.membersidebar ul li {
+
+}
+.membersidebar ul li span {
+	float: left;
+	height: 44px;
+	width: 44px;
+}
+.membersidebar ul li:last-child, .membersidebar ul li:last-child:hover {
+	border-bottom: 0
+}
+.membersidebar ul li a {
+    text-transform: uppercase;
+    padding: 12px 15px;
+    font-size: 13px;
+}
+.membersidebar ul li:hover a {
+	color: #30caab
+}
+.membersidebar ul li:hover, .membersidebar ul li:hover a {
+	background: none
+}
+.membersidebar ul li:hover {
+	border-bottom: 1px solid #30caab
+}
+.memleft {
+    margin: 10px 0px;
+    padding: 0px;
+    text-align: center;
+    border: 2px solid #f0b70c;
+    background: #01050a;
+    border-radius: 10px;
+    padding: 30px 10px;
+    width: 277px;
+    float: left;
+    position: relative;
+    margin-bottom: 0px;
+    margin-right: 20px;
+}
+
+.memleft_middle {
+	
+}
+
+
+.memleft_2 {margin-right:0px;}
+
+.myaccount_wrap .planname {
+    background: #01131d;
+    width: 100%;
+    float: left;
+    border-radius: 0px 0px 16px 16px;
+}
+
+.memleft2 {
+    margin: 0px 10px 10px;
+    padding: 0px;
+    text-align: center;
+    background: transparent;
+    border-radius: 4px;
+    padding: 0px;
+
+    border:0px;
+}
+
+.memleft .icon {
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 5px auto 16px;
+    padding-top: 0px;
+}
+.memleft h2 {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+
+}
+
+.memleft h2 span {
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    text-transform: none;
+    color: #26ee6e;
+}
+
+.memleft2 h2 {
+    text-align: left;
+    background: #091c2d;
+    padding: 15px 20px;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px 0px 5px;
+    font-size: 18px;
+    border: 0px;
+    text-transform: none;
+    background: #029ffd;
+    background: -moz-linear-gradient(top, #029ffd 0%, #016bbb 100%);
+    background: -webkit-linear-gradient(top, #029ffd 0%,#016bbb 100%);
+    background: linear-gradient(to bottom, #029ffd 0%,#016bbb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#029ffd', endColorstr='#016bbb',GradientType=0 );
+}
+
+
+
+.memleft2 h2 span  {
+    float: right;
+    font-weight: 600;
+    color: #e3d272;
+    font-size: 14px;
+    display: block;
+}
+
+
+.deposit_text {
+    overflow: hidden;
+    padding: 15px;
+    text-transform: uppercase;
+    background:#030d15;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0px;
+    margin-bottom: 10px;
+}
+
+.copyurl {}
+
+.copyurl span {
+    margin: 0px 0px 10px;
+    color: #2cf974;
+    font-size: 20px;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.deposit_text {
+	margin: 0 0 30px;
+}
+#copyButton {
+    border: none;
+    width: auto;
+    height: 46px;
+    background: rgb(252,197,30);
+    background: linear-gradient(180deg, rgba(252,197,30,1) 0%, rgba(236,179,6,1) 100%);
+    border-radius: 50px;
+    margin-right: 10px;
+    padding: 0px 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:#000;
+}
+
+#copyButton:hover {
+	background: #c3a032;
+}
+
+#copyTarget {
+    width: 720px;
+    float: left;
+    height: 46px;
+    border: 2px solid #fac31b;
+    color: white;
+    padding: 0 15px;
+    font-size: 15px;
+    background: none;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    background: black;
+}
+#msg {
+}
+.btn-info {
+    color: #fff;
+    background-color: #047ef3;
+    border-color: #047ef3;
+}
+.btn-info:hover {
+	background-color: #1386f3;
+	border-color:#1386f3;
+}
+.getban {
+    padding: 0 25px;
+    text-transform: uppercase;
+    line-height: 46px;
+    display: inline-block;
+    font-weight: 500;
+    border-radius: 50px;
+    background: rgb(46,249,118);
+    background: linear-gradient(180deg, rgba(46,249,118,1) 0%, rgba(12,200,80,1) 100%);
+    border-radius: 36px;
+	color:#000;
+}
+
+.getban:hover {
+	 background: rgb(46,249,118);
+}
+
+.getban a {
+	color:#000;
+}
+
+.navbar-nav > li > .dropdown-menu {
+	background: #000;
+}
+.dropdown-menu li a {
+	font-size: 13px;
+	color: #fff;
+}
+.dropdown-menu li a:hover {
+	color: #cc9922;
+}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+	background-color: transparent;
+}
+.accbox-container {
+	width: 100%;
+	float: left;
+}
+.accbox {
+    border: 0px;
+    background: #06326D;
+    border-radius: 10px;
+    width: 48%;
+    padding: 10px 10px 10px;
+    color: #fff;
+    margin: 10px 0px 20px;
+}
+.accbox.left {
+	float: left;
+}
+.accbox.right {
+	float: right;
+}
+.accbox h3 {
+    text-align: center;
+    margin: 0;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    background: rgb(180,139,11);
+    background: linear-gradient(90deg, rgba(180,139,11,1) 0%, rgba(245,192,37,1) 50%, rgba(181,139,12,1) 100%);
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.accbox.right h3 {
+
+}
+
+.accbox .icon {
+    text-align: center;
+    padding: 0;
+}
+.accbox h4 {
+    width: 100%;
+    float: left;
+    padding: 20px 15px 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 0px 0 5px;
+    text-align: center;
+    line-height: 26px;
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.accbox h4 span {
+    display: block;
+    font-size: 36px;
+    color: #e2b006;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.accbox ul {
+	width: 100%;
+	float: left;
+}
+.accbox ul li {
+    float: left;
+    border-radius: 4px;
+    border-bottom: 0px;
+    padding: 10px;
+    margin: 5px 10px;
+    font-weight: 600;
+    width: 46%;
+    background: #03102b;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.accbox ul li span {
+display: block;
+    color: #e2b006;
+    font-weight: 500;
+    font-size: 18px;
+}
+.acc_button {
+    text-align: center;
+    padding: 18px 0 20px 0;
+}
+.acc_button a {
+    padding: 6px 24px;
+    text-transform: uppercase;
+    line-height: 32px;
+    display: inline-block;
+    font-weight: 600;
+    background: #f8f9f9;
+    background: -moz-linear-gradient(top, #f8f9f9 0%, #dee0e0 100%);
+    background: -webkit-linear-gradient(top, #f8f9f9 0%,#dee0e0 100%);
+    background: linear-gradient(to bottom, #f8f9f9 0%,#dee0e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9f9', endColorstr='#dee0e0',GradientType=0 );
+    border-radius: 36px;
+    margin-top: 10px;
+    font-size: 16px;
+    color:#06326D;
+}
+.acc_button a:hover {
+background: #f8f9f9;
+}
+
+
+
+.deposit_text span {
+	font-weight: 600;
+	font-size: 18px;
+	float: right;
+}
+.my_accont {
+    background: #030d15de;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 10px;
+    color: #fff;
+    float: left;
+    margin: 0 0 15px;
+}
+
+.paidouttop {
+	margin-bottom:5px;
+}
+
+.my_accont table {
+	margin-bottom:5px;
+}
+
+.my_accont h4 {
+	color:#F4BC12;
+}
+
+.my_accont table td, .my_accont table th, .paidoutbottom table td,  .paidouttop table td  {
+    padding: 10px;
+    border: 1px solid #162e40;
+    text-align: left;
+}
+.my_accont table td.inheader, .paidoutbottom table td.inheader {
+    background: #17d85c;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    border: 1px solid #162e40;
+    color: #030f17;
+}
+.alert {
+    text-align: left;
+    color: #052651;
+    background-color: #f1d735;
+    border-color: #f1d735;
+    font-weight: 500;
+    padding: 10px 15px;
+
+}
+.refheader {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: none;
+    margin: 10px 0 20px;
+    color: #f4bc12;
+}
+.aff-banners {
+    background: #01131d;
+    border: 2px solid #2af371;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.aff-banners .nav-tabs {
+    border-bottom: 2px solid #21e768;
+    margin: 0 0 15px;
+    float: none;
+    padding-bottom: 10px;
+      
+}
+.aff-banners .nav-tabs > li.active > a, .aff-banners .nav-tabs > li.active > a:focus, .aff-banners .nav-tabs > li.active > a:hover {
+   color: #001a30;
+    cursor: default;
+    border: 0px;
+    background: rgb(252,197,30);
+    background: linear-gradient(180deg, rgba(252,197,30,1) 0%, rgba(236,179,6,1) 100%);
+	
+    border-radius: 36px;
+}
+.aff-banners .nav > li a:hover {
+	   background: #14D459;
+	border:0px;
+}
+.aff-banners .nav > li > a {
+	color: #000;
+    border-radius: 50px;
+    background: rgb(46,249,118);
+    background: linear-gradient(180deg, rgba(46,249,118,1) 0%, rgba(12,200,80,1) 100%);
+	font-weight: 500;
+	font-size: 15px;
+	padding: 10px 25px;
+	  margin:5px;
+
+	      border:0px;
+}
+
+.tab-content img {
+	max-width:100%;
+}
+
+.memberplan {
+	margin-bottom:20px;
+}
+
+.memberplan .planbox .radio {
+    width: 140px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 4px;
+    line-height: 28px;
+    padding: 5px 0;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    border-radius: 50px;
+    background: rgb(46,249,118);
+    background: linear-gradient(180deg, rgba(46,249,118,1) 0%, rgba(12,200,80,1) 100%);
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.memberplan .planbox input[type=radio] {
+	display: none
+}
+.memberplan .planbox input[type="radio"]:checked + .radio {
+    background: rgb(252,197,30);
+    background: linear-gradient(180deg, rgba(252,197,30,1) 0%, rgba(236,179,6,1) 100%);
+    border-radius: 50px;
+    color:#000;
+}
+.certificate {
+	border: 18px solid #c99e29;
+	border-radius: 15px;
+}
+.modal-body p {
+	text-align: center;
+}
+.bannerwrap.insideheaders {
+	background: #000000e0;
+}
+.bannerwrap.insideheaders h1 {
+	font-size: 26px;
+	line-height: 40px;
+	margin: 0;
+}
+.benifitwrap.aboutpage {
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.toggle{
+  --uiToggleSize: var(--toggleSize, 1.25rem);
+  --uiToggleBorderWidth: var(--toggleBorderWidth, 2px);
+  --uiToggleColor: var(--toggleColor, #E8D730);
+
+  display: var(--toggleDisplay, inline-flex);
+  position: relative;
+}
+
+.toggle__input{
+  /*
+    The pattern by Sara Soueidan https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/
+  */
+  width: var(--uiToggleSize);
+  height: var(--uiToggleSize);
+  opacity: 0;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+/*
+ 1. Calculation of the gap for the custom checkbox
+*/
+
+.toggle__label{
+  display: inline-flex;
+  min-height: var(--uiToggleSize);
+  padding-left: calc(var(--uiToggleSize) + var(--toggleIndent, 0em));
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label{
+  cursor: pointer;
+}
+
+/*
+1. Ems helps to calculate size of the checkbox
+*/
+
+.toggle__label::before, 
+.toggle__label::after{
+  content: "";
+  box-sizing: border-box;  
+	width: 0.7em;
+    height: 0.7em;
+  font-size: var(--uiToggleSize); /* 1 */
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.toggle__label::before{
+  border: var(--uiToggleBorderWidth) solid var(--uiToggleColor);
+  z-index: 2;
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label::after{
+  background-color: var(--uiToggleColor);
+  opacity: 0;
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label::after{
+  opacity: 1;
+}
+
+.toggle__text{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: 4px 0px;
+    font-weight: 600;
+}
+
+/*
+The arrow size and position depends from sizes of square because I needed an arrow correct positioning from the top left corner of the element toggle
+
+1. Ems helps to calculate size and position of the arrow
+*/
+
+.toggle__input:not(:disabled) ~ .toggle__label .toggle__text::before{
+    content: "";
+    width: 0;
+    height: 0;
+    font-size: var(--uiToggleSize);
+    border-left-width: 0;
+    border-bottom-width: 0;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-color: var(--toggleArrowColor, #fff);
+    position: absolute;
+    top: .3428em;
+    left: .12em;
+    z-index: 3;
+    transform-origin: left top;
+    transform: rotate(-42deg) skew(0deg);
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text::before{
+  --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
+  
+  width: .4em;
+  height: .2em;
+  border-left-width: var(--uiToggleArrowWidth);
+  border-bottom-width: var(--uiToggleArrowWidth);
+}
+
+/*
+States
+*/
+
+/* focus state */
+
+.toggle:focus-within{
+
+  outline-offset: var(--toggleOutlineOffsetFocus, 5px);
+}
+
+/* disabled state */
+
+.toggle__input:disabled ~ .toggle__label{
+  opacity: var(--toggleOpacityDisabled, .24);
+  cursor: var(--toggleCursorDisabled, not-allowed);
+}
+
+/*
+=====
+PRESENTATION STYLES
+=====
+*/
+
+/* 
+The demo skin
+*/
+
+.toggle__label::before, 
+.toggle__label::after{
+border-radius: var(--toggleBorderRadius, 2px);
+}
+
+/* 
+The animation of switching states
+*/
+
+.toggle__input:not(:disabled) ~ .toggle__label::before,
+.toggle__input:not(:disabled) ~ .toggle__label::after{
+  opacity: 1;
+  transform-origin: center center;
+  will-change: transform;
+  transition: transform .2s ease-out;
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label::before{
+  transform: rotateY(0deg);
+  transition-delay: .2s;
+}
+
+.toggle__input:not(:disabled) ~ .toggle__label::after{
+  transform: rotateY(90deg);
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label::before{
+  transform: rotateY(-90deg);
+  transition-delay: 0s;
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label::after{
+  transform: rotateY(0deg);
+  transition-delay: .2s;
+}
+
+.toggle__text::before{
+  opacity: 0;
+}
+
+.toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text::before{
+  opacity: 1;
+  transition: opacity .1s ease-out .3s, width .1s ease-out .5s, height .2s ease-out .3s;
+}
+
+
+.toggle {
+--toggleColor: #debe42;
+    --toggleBackgroundColor: #debe42;
+    --toggleSize: 40px;
+}
+
+.commonfooter {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding: 25px 0;
+	text-transform: uppercase;
+	background: #2ed2b1;
+}
+.commonfooter h2 {
+	margin: 0;
+	line-height: 48px;
+	font-size: 34px;
+}
+.welcomewrap.aboutpage {
+	padding: 0 0 50px;
+}
+.welcomewrap.aboutpage .left {
+	width: 100%
+}
+.supportwrap {
+	overflow:hidden;
+}
+.referralwrap.refpage {
+	background: url(images/benifitbg.html) no-repeat top center #093234;
+}
+.logwrap {
+	width: 100%;
+	float: left;
+
+
+
+}
+
+.my_accont h2 {
+    font-size: 16px;
+    background-color: #f0b70c;
+    color: #01050a;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 0px;
+}
+
+.my_accont h2 span {
+  float:right;
+}
+
+.loginwrap {
+    background: url(images/banner_bg.html) no-repeat top center #170047;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 80px;
+} 
+
+
+.my_accont table {
+    width: 100%;
+    margin: 10px 0px;
+}
+ 
+
+.inside_wrap .bannerleft {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#011030+0,09409e+48,011030+100&0.6+1,0.6+100 */
+background: -moz-linear-gradient(left, rgba(1,16,48,0.6) 0%, rgba(1,17,50,0.6) 1%, rgba(9,64,158,0.6) 48%, rgba(1,16,48,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(1,16,48,0.6) 0%,rgba(1,17,50,0.6) 1%,rgba(9,64,158,0.6) 48%,rgba(1,16,48,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(1,16,48,0.6) 0%,rgba(1,17,50,0.6) 1%,rgba(9,64,158,0.6) 48%,rgba(1,16,48,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99011030', endColorstr='#99011030',GradientType=1 ); /* IE6-9 */
+    color: white;
+    text-align: center;
+    border-radius: 16px 16px 0px 0px;
+    margin: 40px 0px 0px;
+    width: 100%;
+}
+
+.inside_wrap .bannerleft h1 {
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 35px 0;
+    
+    }
+    
+  .headingwrap_sub {
+    background:#041839 url(images/bannerbg.html) no-repeat top center;
+    padding: 0 0 0px;
+}  
+
+  .headingwrap_sub .inside_wrap  {
+	padding:0px;
+  }
+
+.headingwrap_sub .bannerleft {
+    width: 100%;
+    float: right;
+    padding: 40px 30px 20px;
+    background-color: #1242af9c;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+    margin-bottom: 0px;
+    border-bottom: 6px solid #E7008C;
+}
+
+.headingwrap_sub .bannerleft h1 {
+	font-size:42px;
+}
+
+.accbal {
+    width: 100%;
+    float: left;
+    padding: 15px 20px 15px 45px;
+    border-radius: 4px;
+    margin: 0 0 30px;
+    background: #c19316 url(images/acbal.html) no-repeat left 10px center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.accbal span {
+	float: right;
+	font-weight: 600;
+}
+@media (max-width: 1170px) {
+.wrapper, .headerwrap, .menuwrap, .statwrap, .bestinvestent, .bannerwrap, .investmenwrap, .benifitwrap, .referralwrap, .footerwrap, .inside_wrap {
+	width: 1170px;
+}
+.content {
+	margin: 0 !important;
+}
+}
