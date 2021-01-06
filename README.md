@@ -7,6 +7,8 @@ One site is available in 2 form:
 * only the html page.
 * all the website downloaded throught *wget*. 
 
+Directories structure:
+
 * **all_websites**
     * **all_websites**
         * **websites_captured_from_adv**
