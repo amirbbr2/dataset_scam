@@ -3,6 +3,10 @@
 * *discard_phishtank.csv* all websites discared from the phishtank's websites
 * *discard_text_analysis.csv* all websites discared from the redirecting approach.
 
+One site is available in 2 form:
+* only the html page.
+* all the website downloaded throught *wget*. 
+
 * **all_websites**
     * **all_websites**
         * **websites_captured_from_adv**
@@ -14,4 +18,4 @@
     * **websites**
     * **websites_only_html**
     
-    
+   
